@@ -1,0 +1,82 @@
+# =========================
+# Unity generated folders
+# =========================
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# If you use Addressables
+[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+
+# =========================
+# Visual Studio / Rider / IDE files
+# =========================
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+*.mdb
+
+# Rider plugin for Unity
+[Aa]ssets/Plugins/Editor/JetBrains*
+[Aa]ssets/Plugins/Editor/JetBrains.meta
+
+# =========================
+# Unity / OS generated files
+# =========================
+*.unitypackage
+*.apk
+*.aab
+*.app
+*.ipa
+*.dmg
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Crash reports
+sysinfo.txt
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =========================
+# StreamingAssets - keep your actual content,
+# but ignore auto-generated stuff (optional)
+# =========================
+[Aa]ssets/[Ss]treamingAssets/**/*.meta~ 
+
+# =========================
+# IL2CPP / Burst artifacts
+# =========================
+[Bb]urstDebugInformation_DoNotShip/
+.il2cpp/
+
+# =========================
+# Unity Cloud / Collab (if applicable)
+# =========================
+/.collab/
+
