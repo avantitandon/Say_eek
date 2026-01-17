@@ -7,12 +7,12 @@ public class GhostController : MonoBehaviour
     [SerializeField] private float floatSpeed = 1f;
     [SerializeField] private float floatAmount = 0.5f;
 
-    private Vector3 startPosition;
     private float floatTimer;
+    private float baseYPosition;
 
     void Start()
     {
-        startPosition = transform.position;
+        baseYPosition = transform.position.y;
     }
 
     void Update()
@@ -34,8 +34,10 @@ public class GhostController : MonoBehaviour
     {
         // Create a floating effect for the ghost
         floatTimer += Time.deltaTime * floatSpeed;
-        float newY = startPosition.y + Mathf.Sin(floatTimer) * floatAmount;
-        transform.position = new Vector3(transform.position.x, newY, transform.position.z);
+        float floatOffset = Mathf.Sin(floatTimer) * floatAmount;
+        Vector3 newPosition = transform.position;
+        newPosition.y = baseYPosition + floatOffset;
+        transform.position = newPosition;
     }
 
     private void OnTriggerEnter(Collider other)

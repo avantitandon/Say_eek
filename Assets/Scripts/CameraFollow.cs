@@ -10,7 +10,7 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private float smoothSpeed = 0.125f;
     [SerializeField] private bool lookAtTarget = true;
 
-    void LateUpdate()
+    void Start()
     {
         if (target == null)
         {
@@ -20,6 +20,13 @@ public class CameraFollow : MonoBehaviour
             {
                 target = ghost.transform;
             }
+        }
+    }
+
+    void LateUpdate()
+    {
+        if (target == null)
+        {
             return;
         }
 
