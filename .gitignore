@@ -97,3 +97,15 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+
+# mac-specific files
+.DS_Store
+
+# programming hidden folders
+.git
+.vs
+.vscode
+
+# other metadata
+.slnx
