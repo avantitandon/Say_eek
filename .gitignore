@@ -106,6 +106,7 @@ InitTestScene*.unity*
 .git
 .vs
 .vscode
+.vsconfig
 
 # other metadata
 .slnx
