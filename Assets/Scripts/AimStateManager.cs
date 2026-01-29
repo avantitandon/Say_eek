@@ -4,6 +4,9 @@ using UnityEngine.InputSystem;
 // for saving screenshots
 using System.IO;
 
+// for ui text
+using TMPro;
+
 
 public class ThirdPersonCamera : MonoBehaviour
 {
@@ -33,6 +36,16 @@ public class ThirdPersonCamera : MonoBehaviour
     InputAction zoomAction;
 
     InputAction saveAction;
+    InputAction ghostAction;
+
+    bool ghostsOn = false;
+
+
+    public int photoScore = 0;
+    public TMP_Text UItext;
+
+
+    int ghostHit = 0;
 
 
     void Start()
@@ -46,18 +59,39 @@ public class ThirdPersonCamera : MonoBehaviour
         zoomAction = InputSystem.actions.FindAction("Zoom");
 
         saveAction = InputSystem.actions.FindAction("Interact");
+        ghostAction = InputSystem.actions.FindAction("GhostDbg");
     }
 
     void LateUpdate()
     {
+        UItext.text = "Last Photo Score: " + photoScore.ToString() + "\nGhost Hit: " + ghostHit.ToString();
         if (photoAction.WasPressedThisFrame())
         {
             TakePhoto();
+            photoScore += 10;
+            
         }
         if (saveAction.WasPressedThisFrame())
         {
             SavePhoto();
         }
+
+        if (ghostAction.WasPressedThisFrame())
+        {
+            if (!ghostsOn)
+            {
+                playerCamera.cullingMask = 127;
+                ghostsOn = true;
+            }
+            else
+            {
+                playerCamera.cullingMask = 63;
+                ghostsOn = false;
+            }
+        }
+
+
+
         Vector3 lookValue = lookAction.ReadValue<Vector2>();
         float mouseX = lookValue.x * mouseSensitivity * Time.deltaTime;
         float mouseY = lookValue.y * mouseSensitivity * Time.deltaTime;
@@ -104,6 +138,30 @@ public class ThirdPersonCamera : MonoBehaviour
         photoCamera.Render();
         Debug.Log("Screenshot captured");
         cameraAudio.PlayOneShot(shutter);
+
+
+        // needs to be recalculated for new camera position
+        Vector3 pos = new Vector3(0, 0, 0);
+        Ray ray = photoCamera.ScreenPointToRay(pos);
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            if (hit.collider.gameObject.layer == 6)
+            {
+                ghostHit = 1;
+            }
+            else
+            {
+                ghostHit = 2;
+            }
+        }
+        else
+        {
+            ghostHit = 3;
+        }
+
     }
 
     public void SavePhoto()
