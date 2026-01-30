@@ -6,6 +6,9 @@ using System.Collections;
 // for saving screenshots
 using System.IO;
 
+// for ui text
+using TMPro;
+
 
 public class ThirdPersonCamera : MonoBehaviour
 {
@@ -47,6 +50,16 @@ public class ThirdPersonCamera : MonoBehaviour
     InputAction zoomAction;
 
     InputAction saveAction;
+    InputAction ghostAction;
+
+    bool ghostsOn = false;
+
+
+    public int photoScore = 0;
+    public TMP_Text UItext;
+
+
+    int ghostHit = 0;
 
 
     void Start()
@@ -81,14 +94,34 @@ public class ThirdPersonCamera : MonoBehaviour
 
     void LateUpdate()
     {
+        UItext.text = "Last Photo Score: " + photoScore.ToString() + "\nGhost Hit: " + ghostHit.ToString();
         if (photoAction.WasPressedThisFrame())
         {
             TakePhoto();
+            photoScore += 10;
+            
         }
         if (saveAction.WasPressedThisFrame())
         {
             SavePhoto();
         }
+
+        if (ghostAction.WasPressedThisFrame())
+        {
+            if (!ghostsOn)
+            {
+                playerCamera.cullingMask = 127;
+                ghostsOn = true;
+            }
+            else
+            {
+                playerCamera.cullingMask = 63;
+                ghostsOn = false;
+            }
+        }
+
+
+
         Vector3 lookValue = lookAction.ReadValue<Vector2>();
         float mouseX = lookValue.x * mouseSensitivity * Time.deltaTime;
         float mouseY = lookValue.y * mouseSensitivity * Time.deltaTime;
@@ -129,6 +162,10 @@ public class ThirdPersonCamera : MonoBehaviour
 
     public void TakePhoto()
     {
+        if (photoCamera.targetTexture != photort)
+        {
+            photoCamera.targetTexture = photort;
+        }
         photoCamera.Render();
         Debug.Log("Screenshot captured");
         cameraAudio.PlayOneShot(shutter);
@@ -147,6 +184,35 @@ public class ThirdPersonCamera : MonoBehaviour
     public void SavePhoto()
     {
         SaveTextureToFileUtility.SaveRenderTextureToFile(photort, Application.dataPath + "/Screenshots/screenshot.png");
+
+        Texture2D screenshot = CapturePhotoTexture();
+        
+        if (panelScript != null)
+        {
+            Debug.Log("Calling DisplayScreenshot");
+            panelScript.DisplayScreenshot(screenshot);
+        }
+        else
+        {
+            Debug.LogError("panelScript is null! Assign it in the inspector.");
+        }
+    }
+
+    private Texture2D CapturePhotoTexture()
+    {
+        if (photort == null)
+        {
+            Debug.LogError("photort is null! Assign the RenderTexture in the inspector.");
+            return null;
+        }
+
+        Texture2D screenshot = new Texture2D(photort.width, photort.height, TextureFormat.RGB24, false);
+        RenderTexture previous = RenderTexture.active;
+        RenderTexture.active = photort;
+        screenshot.ReadPixels(new Rect(0, 0, photort.width, photort.height), 0, 0);
+        screenshot.Apply();
+        RenderTexture.active = previous;
+        return screenshot;
     }
 
     private IEnumerator ShowPreview()
