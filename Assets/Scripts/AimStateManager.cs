@@ -29,6 +29,8 @@ public class ThirdPersonCamera : MonoBehaviour
     public Camera photoCamera;
     public RenderTexture photort;
 
+    public PanelScript panelScript;
+
 
 
     InputAction lookAction;
@@ -133,11 +135,23 @@ public class ThirdPersonCamera : MonoBehaviour
         return right.normalized;
     }
 
+    // WE HAVE TO SPLIT UP FUNCTIONALOITY
+
     public void TakePhoto()
     {
+        if (photoCamera.targetTexture != photort)
+        {
+            photoCamera.targetTexture = photort;
+        }
         photoCamera.Render();
         Debug.Log("Screenshot captured");
         cameraAudio.PlayOneShot(shutter);
+
+        Texture2D screenshot = CapturePhotoTexture();
+        if (panelScript != null && screenshot != null)
+        {
+            panelScript.DisplayScreenshot(screenshot);
+        }
 
 
         // needs to be recalculated for new camera position
@@ -167,6 +181,35 @@ public class ThirdPersonCamera : MonoBehaviour
     public void SavePhoto()
     {
         SaveTextureToFileUtility.SaveRenderTextureToFile(photort, Application.dataPath + "/Screenshots/screenshot.png");
+
+        Texture2D screenshot = CapturePhotoTexture();
+        
+        if (panelScript != null)
+        {
+            Debug.Log("Calling DisplayScreenshot");
+            panelScript.DisplayScreenshot(screenshot);
+        }
+        else
+        {
+            Debug.LogError("panelScript is null! Assign it in the inspector.");
+        }
+    }
+
+    private Texture2D CapturePhotoTexture()
+    {
+        if (photort == null)
+        {
+            Debug.LogError("photort is null! Assign the RenderTexture in the inspector.");
+            return null;
+        }
+
+        Texture2D screenshot = new Texture2D(photort.width, photort.height, TextureFormat.RGB24, false);
+        RenderTexture previous = RenderTexture.active;
+        RenderTexture.active = photort;
+        screenshot.ReadPixels(new Rect(0, 0, photort.width, photort.height), 0, 0);
+        screenshot.Apply();
+        RenderTexture.active = previous;
+        return screenshot;
     }
 }
 
