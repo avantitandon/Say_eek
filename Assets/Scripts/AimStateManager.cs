@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
+using System.Collections;
 
 // for saving screenshots
 using System.IO;
@@ -29,7 +31,17 @@ public class ThirdPersonCamera : MonoBehaviour
     public Camera photoCamera;
     public RenderTexture photort;
 
-    public PanelScript panelScript;
+    [Header("Camera Mesh")]
+    [SerializeField] private GameObject cameraMeshPrefab;
+    [SerializeField] private Vector3 cameraMeshLocalPosition = new Vector3(0.25f, -0.15f, 0.4f);
+    [SerializeField] private Vector3 cameraMeshLocalEuler = new Vector3(0f, 180f, 0f);
+    private GameObject cameraMeshInstance;
+
+    [Header("Photo Preview")]
+    [SerializeField] private RawImage photoPreview;
+    [SerializeField] private float previewDuration = 1f;
+    private Coroutine previewRoutine;
+    private Texture2D previewTexture;
 
 
 
@@ -61,7 +73,23 @@ public class ThirdPersonCamera : MonoBehaviour
         zoomAction = InputSystem.actions.FindAction("Zoom");
 
         saveAction = InputSystem.actions.FindAction("Interact");
-        ghostAction = InputSystem.actions.FindAction("GhostDbg");
+
+        if (cameraMeshPrefab != null && playerCamera != null)
+        {
+            cameraMeshInstance = Instantiate(cameraMeshPrefab, playerCamera.transform);
+            cameraMeshInstance.transform.localPosition = cameraMeshLocalPosition;
+            cameraMeshInstance.transform.localEulerAngles = cameraMeshLocalEuler;
+        }
+
+        if (photoPreview != null)
+        {
+            photoPreview.texture = null;
+            photoPreview.gameObject.SetActive(false);
+        }
+        else
+        {
+            CreatePreviewUI();
+        }
     }
 
     void LateUpdate()
@@ -109,12 +137,9 @@ public class ThirdPersonCamera : MonoBehaviour
             photoCamera.fieldOfView += 10;
             Debug.Log(playerCamera.fieldOfView);
         }
-
         yRotation += mouseX;
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, minY, maxY);
-
-
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0f);
         transform.position = player.position + Vector3.up * 1.6f;
     }
@@ -126,8 +151,6 @@ public class ThirdPersonCamera : MonoBehaviour
         forward.y = 0;
         return forward.normalized;
     }
-
-
     public Vector3 GetCameraRight()
     {
         Vector3 right = transform.right;
@@ -135,7 +158,7 @@ public class ThirdPersonCamera : MonoBehaviour
         return right.normalized;
     }
 
-    // WE HAVE TO SPLIT UP FUNCTIONALOITY
+
 
     public void TakePhoto()
     {
@@ -147,35 +170,15 @@ public class ThirdPersonCamera : MonoBehaviour
         Debug.Log("Screenshot captured");
         cameraAudio.PlayOneShot(shutter);
 
-        Texture2D screenshot = CapturePhotoTexture();
-        if (panelScript != null && screenshot != null)
+        if (photoPreview != null)
         {
-            panelScript.DisplayScreenshot(screenshot);
-        }
-
-
-        // needs to be recalculated for new camera position
-        Vector3 pos = new Vector3(0, 0, 0);
-        Ray ray = photoCamera.ScreenPointToRay(pos);
-
-        RaycastHit hit;
-
-        if (Physics.Raycast(ray, out hit))
-        {
-            if (hit.collider.gameObject.layer == 6)
+            if (previewRoutine != null)
             {
-                ghostHit = 1;
+                
+                  StopCoroutine(previewRoutine);
             }
-            else
-            {
-                ghostHit = 2;
-            }
+            previewRoutine = StartCoroutine(ShowPreview());
         }
-        else
-        {
-            ghostHit = 3;
-        }
-
     }
 
     public void SavePhoto()
@@ -211,7 +214,74 @@ public class ThirdPersonCamera : MonoBehaviour
         RenderTexture.active = previous;
         return screenshot;
     }
+
+    private IEnumerator ShowPreview()
+    {
+        EnsurePreviewTexture();
+        var previous = RenderTexture.active;
+        RenderTexture.active = photort;
+        previewTexture.ReadPixels(new Rect(0, 0, photort.width, photort.height), 0, 0);
+        previewTexture.Apply();
+        RenderTexture.active = previous;
+        photoPreview.texture = previewTexture;
+        photoPreview.gameObject.SetActive(true);
+        yield return new WaitForSecondsRealtime(previewDuration);
+        photoPreview.gameObject.SetActive(false);
+        previewRoutine = null;
+    }
+
+    private void EnsurePreviewTexture()
+    {
+
+
+        if (photort == null)
+        {
+            return;
+        }
+
+        if (previewTexture != null && previewTexture.width == photort.width && previewTexture.height == photort.height)
+        {
+            return;
+        }
+
+        if (previewTexture != null)
+        {
+            Destroy(previewTexture);
+        }
+
+        previewTexture = new Texture2D(photort.width, photort.height, TextureFormat.RGB24, false);
+    }
+
+    private void CreatePreviewUI()
+    {
+        var canvasGO = new GameObject("PhotoPreviewCanvas", typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
+        var canvas = canvasGO.GetComponent<Canvas>();
+
+        canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+        canvas.sortingOrder = 1000;
+
+        var scaler = canvasGO.GetComponent<CanvasScaler>();
+
+        scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+        scaler.referenceResolution = new Vector2(1920f, 1080f);
+
+        var previewGO = new GameObject("PhotoPreview", typeof(RawImage));
+        previewGO.transform.SetParent(canvasGO.transform, false);
+        
+        photoPreview = previewGO.GetComponent<RawImage>();
+
+        var rect = photoPreview.rectTransform;
+        rect.anchorMin = new Vector2(1f, 0f);
+        rect.anchorMax = new Vector2(1f, 0f);
+        rect.pivot = new Vector2(1f, 0f);
+        rect.sizeDelta = new Vector2(256f, 144f);
+        rect.anchoredPosition = new Vector2(-140f, 100f);
+
+        photoPreview.texture = null;
+        photoPreview.gameObject.SetActive(false);
+    }
 }
+
 
 
 
