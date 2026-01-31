@@ -4175,6 +4175,16 @@ MonoBehaviour:
   playerCamera: {fileID: 330585545}
   photoCamera: {fileID: 967570935}
   photort: {fileID: 8400000, guid: 0c2d2d44c3fc48145b740e3fb9820732, type: 2}
+  normalFov: 60
+  zoomFov: 50
+  zoomInTime: 0.15
+  zoomOutTime: 0.2
+  cameraMeshPrefab: {fileID: 0}
+  cameraMeshLocalPosition: {x: 0.25, y: -0.15, z: 0.4}
+  cameraMeshLocalEuler: {x: 0, y: 180, z: 0}
+  photoPreview: {fileID: 0}
+  previewDuration: 1
+  panelScript: {fileID: 0}
   photoScore: 0
   UItext: {fileID: 863866095}
   ignoreLayers:

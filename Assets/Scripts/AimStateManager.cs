@@ -49,6 +49,7 @@ public class ThirdPersonCamera : MonoBehaviour
     private Coroutine previewRoutine;
     private Texture2D previewTexture;
 
+    public PanelScript panelScript;
 
 
     InputAction lookAction;
