@@ -29,6 +29,13 @@ public class ThirdPersonCamera : MonoBehaviour
     public Camera photoCamera;
     public RenderTexture photort;
 
+    public float normalFov = 60f;
+    public float zoomFov = 50f;
+    public float zoomInTime = 0.15f;
+    public float zoomOutTime = 0.20f;
+
+    private float _playerFovVel;
+    private float _photoFovVel;
 
 
     InputAction lookAction;
@@ -60,6 +67,10 @@ public class ThirdPersonCamera : MonoBehaviour
 
         saveAction = InputSystem.actions.FindAction("Interact");
         ghostAction = InputSystem.actions.FindAction("GhostDbg");
+
+        playerCamera.fieldOfView = normalFov;
+        photoCamera.fieldOfView  = normalFov;
+
     }
 
     void LateUpdate()
@@ -96,17 +107,16 @@ public class ThirdPersonCamera : MonoBehaviour
         float mouseX = lookValue.x * mouseSensitivity * Time.deltaTime;
         float mouseY = lookValue.y * mouseSensitivity * Time.deltaTime;
 
-        if (zoomAction.WasPressedThisFrame()) {
-            playerCamera.fieldOfView -= 10;
-            photoCamera.fieldOfView -= 10;
-            Debug.Log(playerCamera.fieldOfView);
-        }
-        if (zoomAction.WasReleasedThisFrame())
-        {
-            playerCamera.fieldOfView += 10;
-            photoCamera.fieldOfView += 10;
-            Debug.Log(playerCamera.fieldOfView);
-        }
+        bool zooming = zoomAction.IsPressed(); // hold zoom
+
+        float target = zooming ? zoomFov : normalFov;
+        float smoothTime = zooming ? zoomInTime : zoomOutTime;
+
+        playerCamera.fieldOfView = Mathf.SmoothDamp(
+            playerCamera.fieldOfView, target, ref _playerFovVel, smoothTime);
+
+        photoCamera.fieldOfView = Mathf.SmoothDamp(
+            photoCamera.fieldOfView, target, ref _photoFovVel, smoothTime);
 
         yRotation += mouseX;
         xRotation -= mouseY;
