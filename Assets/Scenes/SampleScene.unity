@@ -1327,7 +1327,7 @@ GameObject:
   m_Component:
   - component: {fileID: 332620748}
   - component: {fileID: 332620747}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3665,6 +3665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::hatscript
   inactive: {fileID: 2100000, guid: 58ebb32b9ac8c8b47b5ccb675dee19b8, type: 2}
   active: {fileID: 2100000, guid: 46780c7c529fbfd4bbe3dbdb6163ed86, type: 2}
+  spinning: 0
   hat: {fileID: 1663797676}
 --- !u!1 &967570934
 GameObject:
@@ -4176,6 +4177,9 @@ MonoBehaviour:
   photort: {fileID: 8400000, guid: 0c2d2d44c3fc48145b740e3fb9820732, type: 2}
   photoScore: 0
   UItext: {fileID: 863866095}
+  ignoreLayers:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!82 &1175432260
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4699,7 +4703,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1563681546}
   - component: {fileID: 1563681545}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4786,7 +4790,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1716471339}
   - component: {fileID: 1716471338}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5454,7 +5458,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 53af1dfeccc694d56bcd1349554fcda5, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.09
   m_Pitch: 1
   Loop: 1
   Mute: 0
