@@ -31,18 +31,25 @@ public class ThirdPersonCamera : MonoBehaviour
     public Camera photoCamera;
     public RenderTexture photort;
 
+    public float normalFov = 60f;
+    public float zoomFov = 50f;
+    public float zoomInTime = 0.15f;
+    public float zoomOutTime = 0.20f;
     [Header("Camera Mesh")]
     [SerializeField] private GameObject cameraMeshPrefab;
     [SerializeField] private Vector3 cameraMeshLocalPosition = new Vector3(0.25f, -0.15f, 0.4f);
     [SerializeField] private Vector3 cameraMeshLocalEuler = new Vector3(0f, 180f, 0f);
     private GameObject cameraMeshInstance;
 
+    private float _playerFovVel;
+    private float _photoFovVel;
     [Header("Photo Preview")]
     [SerializeField] private RawImage photoPreview;
     [SerializeField] private float previewDuration = 1f;
     private Coroutine previewRoutine;
     private Texture2D previewTexture;
 
+    public PanelScript panelScript;
 
 
     InputAction lookAction;
@@ -60,6 +67,9 @@ public class ThirdPersonCamera : MonoBehaviour
 
 
     int ghostHit = 0;
+    int ghostScore = 0;
+
+    public LayerMask ignoreLayers;
 
 
     void Start()
@@ -73,6 +83,11 @@ public class ThirdPersonCamera : MonoBehaviour
         zoomAction = InputSystem.actions.FindAction("Zoom");
 
         saveAction = InputSystem.actions.FindAction("Interact");
+        ghostAction = InputSystem.actions.FindAction("GhostDbg");
+
+        playerCamera.fieldOfView = normalFov;
+        photoCamera.fieldOfView  = normalFov;
+
 
         if (cameraMeshPrefab != null && playerCamera != null)
         {
@@ -94,7 +109,9 @@ public class ThirdPersonCamera : MonoBehaviour
 
     void LateUpdate()
     {
-        UItext.text = "Last Photo Score: " + photoScore.ToString() + "\nGhost Hit: " + ghostHit.ToString();
+        //UItext.text = "Last Photo Score: " + photoScore.ToString() + "\nGhost Hit: " + ghostScore.ToString();
+        UItext.text = "Last Photo Score: " + ghostScore.ToString();
+
         if (photoAction.WasPressedThisFrame())
         {
             TakePhoto();
@@ -126,17 +143,17 @@ public class ThirdPersonCamera : MonoBehaviour
         float mouseX = lookValue.x * mouseSensitivity * Time.deltaTime;
         float mouseY = lookValue.y * mouseSensitivity * Time.deltaTime;
 
-        if (zoomAction.WasPressedThisFrame()) {
-            playerCamera.fieldOfView -= 10;
-            photoCamera.fieldOfView -= 10;
-            Debug.Log(playerCamera.fieldOfView);
-        }
-        if (zoomAction.WasReleasedThisFrame())
-        {
-            playerCamera.fieldOfView += 10;
-            photoCamera.fieldOfView += 10;
-            Debug.Log(playerCamera.fieldOfView);
-        }
+        bool zooming = zoomAction.IsPressed(); // hold zoom
+
+        float target = zooming ? zoomFov : normalFov;
+        float smoothTime = zooming ? zoomInTime : zoomOutTime;
+
+        playerCamera.fieldOfView = Mathf.SmoothDamp(
+            playerCamera.fieldOfView, target, ref _playerFovVel, smoothTime);
+
+        photoCamera.fieldOfView = Mathf.SmoothDamp(
+            photoCamera.fieldOfView, target, ref _photoFovVel, smoothTime);
+
         yRotation += mouseX;
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, minY, maxY);
@@ -170,12 +187,80 @@ public class ThirdPersonCamera : MonoBehaviour
         Debug.Log("Screenshot captured");
         cameraAudio.PlayOneShot(shutter);
 
+
+        ghostScore = 0;
+
+        int step = Screen.width / 30;
+        Debug.Log(step);
+        Debug.Log(Screen.width);
+        Debug.Log(Screen.height);
+
+        // needs to be recalculated for new camera position
+        Vector3 pos = new Vector3(0, 0, 0);
+        Vector3 center = new Vector3(Screen.width, Screen.height, 0);
+        float radius = Screen.width / 4;
+        int pixel = 0;
+        Ray ray;
+        RaycastHit hit;
+
+        while (pos.x < (Screen.width * 2) && pos.y < (Screen.height * 2))
+        {
+
+            ray = photoCamera.ScreenPointToRay(pos);
+            if (Physics.Raycast(ray, out hit, 1000f, layerMask: ~ignoreLayers))
+            {
+
+                if (hit.collider.gameObject.layer == 6)
+                {
+                    ghostScore = ghostScore + 1;
+
+                    if (hit.collider.gameObject.GetComponent<ballscript>().spinning)
+                    {
+                        ghostScore = ghostScore + 2;
+                    }
+
+                }
+            }
+
+            if ((pos - center).magnitude < radius)
+            {
+                Debug.Log("centerhit");
+                pixel = pixel + (step / 3);
+                pos.x = pixel % (Screen.width * 2);
+                pos.y = step * (pixel / (Screen.width * 2));
+            }
+            else
+            {
+                pixel = pixel + step;
+                pos.x = pixel % (Screen.width * 2);
+                pos.y = step * (pixel / (Screen.width * 2));
+            }
+        }
+
+
+        //RaycastHit hit;
+
+        //if (Physics.Raycast(ray, out hit))
+        //{
+        //    if (hit.collider.gameObject.layer == 6)
+        //    {
+        //        ghostHit = 1;
+        //    }
+        //    else
+        //    {
+        //        ghostHit = 2;
+        //    }
+        //}
+        //else
+        //{
+        //    ghostHit = 3;
+        //}
         if (photoPreview != null)
         {
             if (previewRoutine != null)
             {
-                
-                  StopCoroutine(previewRoutine);
+
+                StopCoroutine(previewRoutine);
             }
             previewRoutine = StartCoroutine(ShowPreview());
         }
@@ -186,7 +271,7 @@ public class ThirdPersonCamera : MonoBehaviour
         SaveTextureToFileUtility.SaveRenderTextureToFile(photort, Application.dataPath + "/Screenshots/screenshot.png");
 
         Texture2D screenshot = CapturePhotoTexture();
-        
+
         if (panelScript != null)
         {
             Debug.Log("Calling DisplayScreenshot");
@@ -267,7 +352,7 @@ public class ThirdPersonCamera : MonoBehaviour
 
         var previewGO = new GameObject("PhotoPreview", typeof(RawImage));
         previewGO.transform.SetParent(canvasGO.transform, false);
-        
+
         photoPreview = previewGO.GetComponent<RawImage>();
 
         var rect = photoPreview.rectTransform;
@@ -281,10 +366,3 @@ public class ThirdPersonCamera : MonoBehaviour
         photoPreview.gameObject.SetActive(false);
     }
 }
-
-
-
-
-
-
-

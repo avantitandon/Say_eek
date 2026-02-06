@@ -5,7 +5,7 @@ public class ballscript : MonoBehaviour
     public Material inactive;
     public Material active;
 
-    bool spinning = false;
+    public bool spinning = false;
     float spinttime = 0;
 
 
