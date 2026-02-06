@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.InputSystem;
 
 
 
@@ -20,6 +21,8 @@ public class MovementStateManager : MonoBehaviour
     private Vector3 movementDirection;
     private Vector3 spherePosition;
 
+    InputAction moveAction;
+
 
     private void Awake()
     {
@@ -31,6 +34,11 @@ public class MovementStateManager : MonoBehaviour
             enabled = false;
             return;
         }
+    }
+
+    private void Start()
+    {
+        moveAction = InputSystem.actions.FindAction("Move");
     }
 
 
@@ -86,15 +94,14 @@ public class MovementStateManager : MonoBehaviour
     }
     private void GetDirection()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
+        Vector2 moveValue = moveAction.ReadValue<Vector2>();
 
 
         Vector3 camForward = cameraController.GetCameraForward();
         Vector3 camRight = cameraController.GetCameraRight();
 
 
-        movementDirection = camForward * verticalInput + camRight * horizontalInput;
+        movementDirection = camForward * moveValue.y + camRight * moveValue.x;
 
 
         if (movementDirection.magnitude > 0.1f)
