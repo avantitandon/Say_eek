@@ -16,6 +16,7 @@ public class ThirdPersonCamera : MonoBehaviour
     [SerializeField] private float mouseSensitivity = 150f;
     [SerializeField] private float minY = -35f;
     [SerializeField] private float maxY = 60f;
+    [SerializeField] private ApertureShot apertureFx;
     // audioSource;
 
     private float xRotation;
@@ -185,6 +186,7 @@ public class ThirdPersonCamera : MonoBehaviour
         }
         photoCamera.Render();
         Debug.Log("Screenshot captured");
+        apertureFx?.PlayShutter();
         cameraAudio.PlayOneShot(shutter);
 
 
