@@ -9,7 +9,7 @@ using UnityEngine.InputSystem;
 
 public class MovementStateManager : MonoBehaviour
 {
-    [SerializeField] private ThirdPersonCamera cameraController;
+    [SerializeField] private CameraControllerMonolith cameraController;
     [SerializeField] private float moveSpeed = 3f;
     [SerializeField] private float groundYOffset = 0.1f;
     [SerializeField] private LayerMask groundMask;

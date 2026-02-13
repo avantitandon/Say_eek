@@ -104,6 +104,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "EnableGame",
+                    "type": "Button",
+                    "id": "8928b991-0a9c-47fa-9983-bcb53675bd32",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -522,6 +531,17 @@
                     "processors": "",
                     "groups": ";Gamepad",
                     "action": "GhostDbg",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2e6ef6e2-7a53-4e69-ae2f-97b0a095fc48",
+                    "path": "<Keyboard>/numpad5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EnableGame",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
