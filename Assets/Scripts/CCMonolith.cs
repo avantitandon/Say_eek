@@ -55,7 +55,6 @@ public class CameraControllerMonolith : MonoBehaviour
 
 
     InputAction lookAction;
-    InputAction photoAction;
     InputAction zoomAction;
 
     InputAction saveAction;
@@ -81,7 +80,6 @@ public class CameraControllerMonolith : MonoBehaviour
         Cursor.visible = false;
 
         lookAction = InputSystem.actions.FindAction("Look");
-        photoAction = InputSystem.actions.FindAction("Attack");
         zoomAction = InputSystem.actions.FindAction("Zoom");
 
         saveAction = InputSystem.actions.FindAction("Interact");
@@ -112,14 +110,8 @@ public class CameraControllerMonolith : MonoBehaviour
     void LateUpdate()
     {
         //UI_text.text = "Last Photo Score: " + photoScore.ToString() + "\nGhost Hit: " + ghostScore.ToString();
-        //UI_text.text = "Last Photo Score: " + ghostScore.ToString();
+        UI_text.text = "Last Photo Score: " + ghostScore.ToString();
 
-        if (photoAction.WasPressedThisFrame())
-        {
-            TakePhoto();
-            photoScore += 10;
-            
-        }
         if (saveAction.WasPressedThisFrame())
         {
             SavePhoto();
@@ -179,7 +171,7 @@ public class CameraControllerMonolith : MonoBehaviour
 
 
 
-    public void TakePhoto()
+    public int TakePhoto()
     {
         if (photoCamera.targetTexture != photort)
         {
@@ -191,7 +183,7 @@ public class CameraControllerMonolith : MonoBehaviour
         cameraAudio.PlayOneShot(shutter);
 
 
-        ghostScore = 0;
+        int score = 0;
 
         int step = Screen.width / 30;
         Debug.Log(step);
@@ -215,11 +207,14 @@ public class CameraControllerMonolith : MonoBehaviour
 
                 if (hit.collider.gameObject.layer == 6)
                 {
-                    ghostScore = ghostScore + 1;
+                    score = score + 1;
 
-                    if (hit.collider.gameObject.GetComponent<ballscript>().spinning)
+                    if (hit.collider.gameObject.TryGetComponent<ballscript>(out ballscript ball))
                     {
-                        ghostScore = ghostScore + 2;
+                        if (ball.spinning)
+                        {
+                            score = score + 2;
+                        }
                     }
 
                 }
@@ -227,7 +222,7 @@ public class CameraControllerMonolith : MonoBehaviour
 
             if ((pos - center).magnitude < radius)
             {
-                Debug.Log("centerhit");
+                //Debug.Log("centerhit");
                 pixel = pixel + (step / 3);
                 pos.x = pixel % (Screen.width * 2);
                 pos.y = step * (pixel / (Screen.width * 2));
@@ -238,6 +233,7 @@ public class CameraControllerMonolith : MonoBehaviour
                 pos.x = pixel % (Screen.width * 2);
                 pos.y = step * (pixel / (Screen.width * 2));
             }
+
         }
 
 
@@ -267,6 +263,10 @@ public class CameraControllerMonolith : MonoBehaviour
             }
             previewRoutine = StartCoroutine(ShowPreview());
         }
+
+        ghostScore = score;
+
+        return score;
     }
 
     public void SavePhoto()
