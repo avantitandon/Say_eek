@@ -25,6 +25,10 @@ public class GameController : MonoBehaviour
     // a camera controller should take care of # of photos taken
 
     // all input should enter through this controller, to be neat (i think?)
+    // no, should be based on concern. good as is. think about what controller should control what
+    // makes sense for game controller to orchestrate actions that cause scoring (?)
+    // game controller shouldn't change camera fov/zoom, i think. camera controller could do that?
+    // i guess should research unity input organization.
     InputAction enableGameAction;
     InputAction photoAction;
 
