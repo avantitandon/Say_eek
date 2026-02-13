@@ -1141,11 +1141,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c70cc44b2024450294d2815ee420a09, type: 3}
---- !u!1 &266499586 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8416272007918961125, guid: 590c236ca374d4c979932897bb17913f, type: 3}
-  m_PrefabInstance: {fileID: 1815319689}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -4239,8 +4234,6 @@ MonoBehaviour:
   minY: -35
   maxY: 60
   apertureFx: {fileID: 1295244706}
-  body1: {fileID: 266499586}
-  body2: {fileID: 1520540656}
   shutter: {fileID: 8300000, guid: d3790cf0925264defb4c4e7e326df41c, type: 3}
   playerCamera: {fileID: 330585545}
   photoCamera: {fileID: 967570935}
@@ -4256,7 +4249,7 @@ MonoBehaviour:
   previewDuration: 1
   panelScript: {fileID: 0}
   photoScore: 0
-  UItext: {fileID: 863866095}
+  UI_text: {fileID: 863866095}
   ignoreLayers:
     serializedVersion: 2
     m_Bits: 128
@@ -4942,11 +4935,6 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: -3459086654757045570, guid: 21a3d26940644467d9a60fcb1d2195b4, type: 3}
   m_PrefabInstance: {fileID: 1500280639}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1520540656 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8416272007918961125, guid: 1c4402d9d85f641d98f0c7721b759e26, type: 3}
-  m_PrefabInstance: {fileID: 923321639}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1563681544
 GameObject:
