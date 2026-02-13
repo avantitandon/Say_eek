@@ -10,7 +10,10 @@ using System.IO;
 using TMPro;
 
 
-public class ThirdPersonCamera : MonoBehaviour
+
+// Camera Controller Monolith
+// functionality still needs to be split into other components
+public class CameraControllerMonolith : MonoBehaviour
 {
     [SerializeField] private Transform player;
     [SerializeField] private float mouseSensitivity = 150f;
@@ -22,8 +25,6 @@ public class ThirdPersonCamera : MonoBehaviour
     private float xRotation;
     private float yRotation;
 
-    public GameObject body1;
-    public GameObject body2;
 
     public AudioClip shutter;
     AudioSource cameraAudio;
@@ -64,7 +65,7 @@ public class ThirdPersonCamera : MonoBehaviour
 
 
     public int photoScore = 0;
-    public TMP_Text UItext;
+    public TMP_Text UI_text;
 
 
     int ghostHit = 0;
@@ -110,8 +111,8 @@ public class ThirdPersonCamera : MonoBehaviour
 
     void LateUpdate()
     {
-        //UItext.text = "Last Photo Score: " + photoScore.ToString() + "\nGhost Hit: " + ghostScore.ToString();
-        UItext.text = "Last Photo Score: " + ghostScore.ToString();
+        //UI_text.text = "Last Photo Score: " + photoScore.ToString() + "\nGhost Hit: " + ghostScore.ToString();
+        //UI_text.text = "Last Photo Score: " + ghostScore.ToString();
 
         if (photoAction.WasPressedThisFrame())
         {
