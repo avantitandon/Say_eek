@@ -4387,7 +4387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ApertureShot
   overlay: {fileID: 1417159762}
-  closeTime: 0.12
+  closeTime: 0.11
   holdTime: 0.02
   openTime: 0.18
   openRadius: 1.2
