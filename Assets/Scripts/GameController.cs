@@ -1,11 +1,13 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 public class GameController : MonoBehaviour
 {
 
     [SerializeField] private CameraControllerMonolith cameraController;
     [SerializeField] private EndUIController endUIController;
+    [SerializeField] private PhoneUIController phoneUIController;
 
 
     public bool gameActive = false;
@@ -15,7 +17,8 @@ public class GameController : MonoBehaviour
     public int[] scores;
 
     public GameObject player;
-    public GameObject camera;
+    [FormerlySerializedAs("camera")]
+    public GameObject cameraObject;
     public GameObject debugOverlay;
     public GameObject endUI;
 
@@ -46,11 +49,26 @@ public class GameController : MonoBehaviour
 
         // create score array
         scores = new int[MAX_PHOTOS];
+
+        if (phoneUIController == null)
+        {
+            phoneUIController = FindFirstObjectByType<PhoneUIController>();
+        }
+
+        if (phoneUIController == null)
+        {
+            phoneUIController = gameObject.AddComponent<PhoneUIController>();
+        }
+
+        phoneUIController.Initialize(
+            () => endUI == null || !endUI.activeSelf);
     }
 
     // Update is called once per frame
     void Update()
     {
+        bool isPhoneOpen = phoneUIController != null && phoneUIController.IsOpen;
+
         // score of any photos taken this turn
         int curr_score = 0;
 
@@ -68,8 +86,19 @@ public class GameController : MonoBehaviour
             debugOverlay.SetActive(true);
         }
 
+        if (isPhoneOpen)
+        {
+            return;
+        }
+
         // if the game is inactive and the end screen is off and we ask to turn on the game, start it
-        if (!gameActive && enableGameAction.WasPressedThisFrame() && !endUI.activeSelf)
+        bool startPressed = enableGameAction != null && enableGameAction.WasPressedThisFrame();
+        if (!startPressed && Keyboard.current != null)
+        {
+            startPressed = Keyboard.current.enterKey.wasPressedThisFrame || Keyboard.current.numpadEnterKey.wasPressedThisFrame;
+        }
+
+        if (!gameActive && startPressed && !endUI.activeSelf)
         {
             gameActive = true;
             debugOverlay.SetActive(false);

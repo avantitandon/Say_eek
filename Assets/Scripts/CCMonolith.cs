@@ -52,6 +52,7 @@ public class CameraControllerMonolith : MonoBehaviour
     private Texture2D previewTexture;
 
     public PanelScript panelScript;
+    [SerializeField] private PhoneUIController phoneUIController;
 
 
     InputAction lookAction;
@@ -67,7 +68,6 @@ public class CameraControllerMonolith : MonoBehaviour
     public TMP_Text UI_text;
 
 
-    int ghostHit = 0;
     int ghostScore = 0;
 
     public LayerMask ignoreLayers;
@@ -105,10 +105,21 @@ public class CameraControllerMonolith : MonoBehaviour
         {
             CreatePreviewUI();
         }
+
+        if (phoneUIController == null)
+        {
+            phoneUIController = FindFirstObjectByType<PhoneUIController>();
+        }
     }
 
     void LateUpdate()
     {
+        if ((panelScript != null && panelScript.IsPhoneOpen) ||
+            (phoneUIController != null && phoneUIController.IsOpen))
+        {
+            return;
+        }
+
         //UI_text.text = "Last Photo Score: " + photoScore.ToString() + "\nGhost Hit: " + ghostScore.ToString();
         UI_text.text = "Last Photo Score: " + ghostScore.ToString();
 
@@ -181,6 +192,17 @@ public class CameraControllerMonolith : MonoBehaviour
         Debug.Log("Screenshot captured");
         apertureFx?.PlayShutter();
         cameraAudio.PlayOneShot(shutter);
+
+        Texture2D capturedPhoto = CapturePhotoTexture();
+        if (phoneUIController == null)
+        {
+            phoneUIController = FindFirstObjectByType<PhoneUIController>();
+        }
+
+        if (capturedPhoto != null && phoneUIController != null)
+        {
+            phoneUIController.AddPhoto(capturedPhoto);
+        }
 
 
         int score = 0;
