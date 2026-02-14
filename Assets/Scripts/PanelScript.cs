@@ -7,6 +7,7 @@ public class PanelScript : MonoBehaviour
 
     public GameObject panel;
     public Image screenshotDisplay;
+    public bool IsPhoneOpen => panel != null && panel.activeSelf;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,7 +18,7 @@ public class PanelScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Keyboard.current.iKey.wasPressedThisFrame)
+        if (Keyboard.current != null && Keyboard.current.iKey.wasPressedThisFrame)
         {
             if (panel != null)
             {
