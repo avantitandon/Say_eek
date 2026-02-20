@@ -421,7 +421,7 @@ GameObject:
   - component: {fileID: 38183424}
   - component: {fileID: 38183423}
   - component: {fileID: 38183422}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (65)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -458,7 +458,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -535,7 +535,7 @@ GameObject:
   - component: {fileID: 80323888}
   - component: {fileID: 80323887}
   - component: {fileID: 80323886}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -572,7 +572,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -649,7 +649,7 @@ GameObject:
   - component: {fileID: 105998022}
   - component: {fileID: 105998021}
   - component: {fileID: 105998020}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -686,7 +686,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -863,6 +863,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1103195800}
   m_LocalEulerAnglesHint: {x: -4.585, y: 4.815, z: -22.573}
+--- !u!1 &141557715 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1716375771029881135, guid: 6040513e4ae2ac1428f7bf7adab773a3, type: 3}
+  m_PrefabInstance: {fileID: 298266284}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &165843000
 GameObject:
   m_ObjectHideFlags: 0
@@ -875,7 +880,7 @@ GameObject:
   - component: {fileID: 165843004}
   - component: {fileID: 165843003}
   - component: {fileID: 165843002}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -912,7 +917,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -989,7 +994,7 @@ GameObject:
   - component: {fileID: 171661020}
   - component: {fileID: 171661019}
   - component: {fileID: 171661018}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (62)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1026,7 +1031,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1103,7 +1108,7 @@ GameObject:
   - component: {fileID: 177749514}
   - component: {fileID: 177749513}
   - component: {fileID: 177749512}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1140,7 +1145,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1395,7 +1400,7 @@ GameObject:
   - component: {fileID: 208351097}
   - component: {fileID: 208351096}
   - component: {fileID: 208351095}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (69)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1432,7 +1437,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1681,8 +1686,12 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 367172674}
     m_Modifications:
+    - target: {fileID: 2484505299256134017, guid: ab2bbd69014eff44699b435cfc1658d3, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5080035975576119210, guid: ab2bbd69014eff44699b435cfc1658d3, type: 3}
       propertyPath: m_Name
       value: billy_puffles
@@ -1701,15 +1710,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5563134530108996880, guid: ab2bbd69014eff44699b435cfc1658d3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.5
+      value: 10.5217705
       objectReference: {fileID: 0}
     - target: {fileID: 5563134530108996880, guid: ab2bbd69014eff44699b435cfc1658d3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.02
+      value: -6.72782
       objectReference: {fileID: 0}
     - target: {fileID: 5563134530108996880, guid: ab2bbd69014eff44699b435cfc1658d3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.76
+      value: 18.8
       objectReference: {fileID: 0}
     - target: {fileID: 5563134530108996880, guid: ab2bbd69014eff44699b435cfc1658d3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1756,7 +1765,7 @@ GameObject:
   - component: {fileID: 235468961}
   - component: {fileID: 235468960}
   - component: {fileID: 235468959}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1793,7 +1802,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1870,7 +1879,7 @@ GameObject:
   - component: {fileID: 278938722}
   - component: {fileID: 278938721}
   - component: {fileID: 278938720}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1907,7 +1916,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1984,7 +1993,7 @@ GameObject:
   - component: {fileID: 284517353}
   - component: {fileID: 284517352}
   - component: {fileID: 284517351}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2021,7 +2030,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2094,6 +2103,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4149476626950871873, guid: 6040513e4ae2ac1428f7bf7adab773a3, type: 3}
+      propertyPath: gameController
+      value: 
+      objectReference: {fileID: 1722821552}
     - target: {fileID: 4619240280853443353, guid: 6040513e4ae2ac1428f7bf7adab773a3, type: 3}
       propertyPath: m_Name
       value: ScoreUI
@@ -2178,16 +2191,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7121765641848616276, guid: 6040513e4ae2ac1428f7bf7adab773a3, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7121765641848616276, guid: 6040513e4ae2ac1428f7bf7adab773a3, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7121765641848616276, guid: 6040513e4ae2ac1428f7bf7adab773a3, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7537566293699358713, guid: 6040513e4ae2ac1428f7bf7adab773a3, type: 3}
+      propertyPath: m_Name
+      value: debug_score_text
+      objectReference: {fileID: 0}
+    - target: {fileID: 9140098027165772611, guid: 6040513e4ae2ac1428f7bf7adab773a3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6040513e4ae2ac1428f7bf7adab773a3, type: 3}
---- !u!1 &298266285 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4619240280853443353, guid: 6040513e4ae2ac1428f7bf7adab773a3, type: 3}
-  m_PrefabInstance: {fileID: 298266284}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &319052030
 GameObject:
   m_ObjectHideFlags: 0
@@ -2200,7 +2228,7 @@ GameObject:
   - component: {fileID: 319052034}
   - component: {fileID: 319052033}
   - component: {fileID: 319052032}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2237,7 +2265,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2302,6 +2330,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319052030}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &328257103 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4506818364687871928, guid: 6040513e4ae2ac1428f7bf7adab773a3, type: 3}
+  m_PrefabInstance: {fileID: 298266284}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &333612010
 GameObject:
   m_ObjectHideFlags: 0
@@ -2314,7 +2347,7 @@ GameObject:
   - component: {fileID: 333612014}
   - component: {fileID: 333612013}
   - component: {fileID: 333612012}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2351,7 +2384,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2426,7 +2459,7 @@ GameObject:
   m_Component:
   - component: {fileID: 367172674}
   - component: {fileID: 367172675}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost placement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2525,6 +2558,9 @@ Transform:
   - {fileID: 436639314}
   - {fileID: 1475146748}
   - {fileID: 406612757}
+  - {fileID: 425796500}
+  - {fileID: 2096056249}
+  - {fileID: 1305966869}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &367172675
@@ -2560,7 +2596,7 @@ GameObject:
   - component: {fileID: 368395031}
   - component: {fileID: 368395030}
   - component: {fileID: 368395029}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SAD GHOST
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2597,7 +2633,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2674,7 +2710,7 @@ GameObject:
   - component: {fileID: 406612760}
   - component: {fileID: 406612759}
   - component: {fileID: 406612758}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2711,7 +2747,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2954,6 +2990,11 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!4 &425796500 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6891449468959600506, guid: ff47bf41a413c9843b6485360f2d2c0a, type: 3}
+  m_PrefabInstance: {fileID: 1715666318}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &426620220
 GameObject:
   m_ObjectHideFlags: 0
@@ -2966,7 +3007,7 @@ GameObject:
   - component: {fileID: 426620224}
   - component: {fileID: 426620223}
   - component: {fileID: 426620222}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (48)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3003,7 +3044,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3080,7 +3121,7 @@ GameObject:
   - component: {fileID: 431458017}
   - component: {fileID: 431458016}
   - component: {fileID: 431458015}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3117,7 +3158,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3194,7 +3235,7 @@ GameObject:
   - component: {fileID: 434331387}
   - component: {fileID: 434331386}
   - component: {fileID: 434331385}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (43)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3231,7 +3272,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3308,7 +3349,7 @@ GameObject:
   - component: {fileID: 436639317}
   - component: {fileID: 436639316}
   - component: {fileID: 436639315}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (77)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3345,7 +3386,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3422,7 +3463,7 @@ GameObject:
   - component: {fileID: 440159643}
   - component: {fileID: 440159642}
   - component: {fileID: 440159641}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (66)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3459,7 +3500,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3536,7 +3577,7 @@ GameObject:
   - component: {fileID: 468891056}
   - component: {fileID: 468891055}
   - component: {fileID: 468891054}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3573,7 +3614,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3650,7 +3691,7 @@ GameObject:
   - component: {fileID: 474654993}
   - component: {fileID: 474654992}
   - component: {fileID: 474654991}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3687,7 +3728,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3764,7 +3805,7 @@ GameObject:
   - component: {fileID: 492636381}
   - component: {fileID: 492636380}
   - component: {fileID: 492636379}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3801,7 +3842,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3878,7 +3919,7 @@ GameObject:
   - component: {fileID: 497620922}
   - component: {fileID: 497620921}
   - component: {fileID: 497620920}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (76)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3915,7 +3956,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3992,7 +4033,7 @@ GameObject:
   - component: {fileID: 501886253}
   - component: {fileID: 501886252}
   - component: {fileID: 501886251}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (73)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4029,7 +4070,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -4106,7 +4147,7 @@ GameObject:
   - component: {fileID: 505975855}
   - component: {fileID: 505975854}
   - component: {fileID: 505975853}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (68)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4143,7 +4184,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -4527,12 +4568,36 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1972958453}
     - target: {fileID: 2715827852174621968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: hearts1
+      value: 
+      objectReference: {fileID: 141557715}
+    - target: {fileID: 2715827852174621968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: hearts2
+      value: 
+      objectReference: {fileID: 821917181}
+    - target: {fileID: 2715827852174621968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: hearts3
+      value: 
+      objectReference: {fileID: 1430394436}
+    - target: {fileID: 2715827852174621968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: scoreui
+      value: 
+      objectReference: {fileID: 537169768}
+    - target: {fileID: 2715827852174621968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: zoomFov
       value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 2715827852174621968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: backplate
+      value: 
+      objectReference: {fileID: 328257103}
+    - target: {fileID: 2715827852174621968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: normalFov
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2715827852174621968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: previewDuration
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3360846623374960824, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4632,6 +4697,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9663957240d8d0447bfeb09fcff08e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraControllerMonolith
+--- !u!1 &537169768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4619240280853443353, guid: 6040513e4ae2ac1428f7bf7adab773a3, type: 3}
+  m_PrefabInstance: {fileID: 298266284}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &538576133
 GameObject:
   m_ObjectHideFlags: 0
@@ -4934,7 +5004,7 @@ GameObject:
   - component: {fileID: 565682519}
   - component: {fileID: 565682518}
   - component: {fileID: 565682517}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (75)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4971,7 +5041,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -5048,7 +5118,7 @@ GameObject:
   - component: {fileID: 579454320}
   - component: {fileID: 579454319}
   - component: {fileID: 579454318}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5085,7 +5155,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -5162,7 +5232,7 @@ GameObject:
   - component: {fileID: 582615339}
   - component: {fileID: 582615338}
   - component: {fileID: 582615337}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (54)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5199,7 +5269,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -5276,7 +5346,7 @@ GameObject:
   - component: {fileID: 592555365}
   - component: {fileID: 592555364}
   - component: {fileID: 592555363}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (53)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5313,7 +5383,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -5390,7 +5460,7 @@ GameObject:
   - component: {fileID: 629212733}
   - component: {fileID: 629212732}
   - component: {fileID: 629212731}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5427,7 +5497,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -5616,7 +5686,7 @@ GameObject:
   - component: {fileID: 721952377}
   - component: {fileID: 721952376}
   - component: {fileID: 721952375}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5653,7 +5723,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -5896,6 +5966,32 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!1 &729215755 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 501857512115926136, guid: 4057b09d577f5ff49b8285b94cf6e495, type: 3}
+  m_PrefabInstance: {fileID: 3013875879630881900}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &729215757
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729215755}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.001, y: 0.01, z: 0.021}
+  m_Center: {x: 0.084229656, y: 0.0058321916, z: -0.0039525838}
 --- !u!1 &729866284
 GameObject:
   m_ObjectHideFlags: 0
@@ -5908,7 +6004,7 @@ GameObject:
   - component: {fileID: 729866288}
   - component: {fileID: 729866287}
   - component: {fileID: 729866286}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5945,7 +6041,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -6134,7 +6230,7 @@ GameObject:
   - component: {fileID: 752789336}
   - component: {fileID: 752789335}
   - component: {fileID: 752789334}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6171,7 +6267,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -6360,7 +6456,7 @@ GameObject:
   - component: {fileID: 765347262}
   - component: {fileID: 765347261}
   - component: {fileID: 765347260}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6397,7 +6493,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -6574,6 +6670,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 787929487}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &821917181 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3993408230465830848, guid: 6040513e4ae2ac1428f7bf7adab773a3, type: 3}
+  m_PrefabInstance: {fileID: 298266284}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &862495718
 GameObject:
   m_ObjectHideFlags: 0
@@ -6723,7 +6824,7 @@ GameObject:
   - component: {fileID: 883616544}
   - component: {fileID: 883616543}
   - component: {fileID: 883616542}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6760,7 +6861,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -6837,7 +6938,7 @@ GameObject:
   - component: {fileID: 916496797}
   - component: {fileID: 916496796}
   - component: {fileID: 916496795}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6874,7 +6975,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -6951,7 +7052,7 @@ GameObject:
   - component: {fileID: 930688027}
   - component: {fileID: 930688026}
   - component: {fileID: 930688025}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (49)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6988,7 +7089,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -7065,7 +7166,7 @@ GameObject:
   - component: {fileID: 983741081}
   - component: {fileID: 983741080}
   - component: {fileID: 983741079}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7102,7 +7203,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -7291,7 +7392,7 @@ GameObject:
   - component: {fileID: 1036345126}
   - component: {fileID: 1036345125}
   - component: {fileID: 1036345124}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (61)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7328,7 +7429,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -7583,7 +7684,7 @@ GameObject:
   - component: {fileID: 1085875762}
   - component: {fileID: 1085875761}
   - component: {fileID: 1085875760}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7620,7 +7721,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -7697,7 +7798,7 @@ GameObject:
   - component: {fileID: 1092502368}
   - component: {fileID: 1092502367}
   - component: {fileID: 1092502366}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7734,7 +7835,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -7860,7 +7961,7 @@ GameObject:
   - component: {fileID: 1105328985}
   - component: {fileID: 1105328984}
   - component: {fileID: 1105328983}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (58)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7897,7 +7998,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -7974,7 +8075,7 @@ GameObject:
   - component: {fileID: 1122695561}
   - component: {fileID: 1122695560}
   - component: {fileID: 1122695559}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8011,7 +8112,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -8088,7 +8189,7 @@ GameObject:
   - component: {fileID: 1130882740}
   - component: {fileID: 1130882739}
   - component: {fileID: 1130882738}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (45)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8125,7 +8226,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -8202,7 +8303,7 @@ GameObject:
   - component: {fileID: 1131674525}
   - component: {fileID: 1131674524}
   - component: {fileID: 1131674523}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8239,7 +8340,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -8381,6 +8482,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1d00831388baa640a216d959b7ae0b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EndUIController
+--- !u!1 &1150990072 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7537566293699358713, guid: 6040513e4ae2ac1428f7bf7adab773a3, type: 3}
+  m_PrefabInstance: {fileID: 298266284}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1159713861
 GameObject:
   m_ObjectHideFlags: 0
@@ -8393,7 +8499,7 @@ GameObject:
   - component: {fileID: 1159713865}
   - component: {fileID: 1159713864}
   - component: {fileID: 1159713863}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (46)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8430,7 +8536,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -8507,7 +8613,7 @@ GameObject:
   - component: {fileID: 1161346738}
   - component: {fileID: 1161346737}
   - component: {fileID: 1161346736}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (50)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8544,7 +8650,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -8621,7 +8727,7 @@ GameObject:
   - component: {fileID: 1177875894}
   - component: {fileID: 1177875893}
   - component: {fileID: 1177875892}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (71)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8658,7 +8764,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -8735,7 +8841,7 @@ GameObject:
   - component: {fileID: 1196359440}
   - component: {fileID: 1196359439}
   - component: {fileID: 1196359438}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8772,7 +8878,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -8961,7 +9067,7 @@ GameObject:
   - component: {fileID: 1224068339}
   - component: {fileID: 1224068338}
   - component: {fileID: 1224068337}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8998,7 +9104,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -9075,7 +9181,7 @@ GameObject:
   - component: {fileID: 1232933280}
   - component: {fileID: 1232933279}
   - component: {fileID: 1232933278}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9112,7 +9218,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -9189,7 +9295,7 @@ GameObject:
   - component: {fileID: 1234636363}
   - component: {fileID: 1234636362}
   - component: {fileID: 1234636361}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (56)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9226,7 +9332,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -9403,6 +9509,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1257346955}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1305966869 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 350145164192864023, guid: d2da16265435632478517274ab5574ff, type: 3}
+  m_PrefabInstance: {fileID: 1971487675}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1313638842
 GameObject:
   m_ObjectHideFlags: 0
@@ -9415,7 +9526,7 @@ GameObject:
   - component: {fileID: 1313638846}
   - component: {fileID: 1313638845}
   - component: {fileID: 1313638844}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (60)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9452,7 +9563,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -9529,7 +9640,7 @@ GameObject:
   - component: {fileID: 1330409577}
   - component: {fileID: 1330409576}
   - component: {fileID: 1330409575}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9566,7 +9677,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -9643,7 +9754,7 @@ GameObject:
   - component: {fileID: 1334836011}
   - component: {fileID: 1334836010}
   - component: {fileID: 1334836009}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9680,7 +9791,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -9884,7 +9995,7 @@ GameObject:
   - component: {fileID: 1357817957}
   - component: {fileID: 1357817956}
   - component: {fileID: 1357817955}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9921,7 +10032,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -9998,7 +10109,7 @@ GameObject:
   - component: {fileID: 1374977060}
   - component: {fileID: 1374977059}
   - component: {fileID: 1374977058}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10035,7 +10146,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -10112,7 +10223,7 @@ GameObject:
   - component: {fileID: 1380280958}
   - component: {fileID: 1380280957}
   - component: {fileID: 1380280956}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (51)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10149,7 +10260,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -10326,6 +10437,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1418330346}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1430394436 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5428888737233226522, guid: 6040513e4ae2ac1428f7bf7adab773a3, type: 3}
+  m_PrefabInstance: {fileID: 298266284}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1448983137
 GameObject:
   m_ObjectHideFlags: 0
@@ -10549,7 +10665,7 @@ GameObject:
   - component: {fileID: 1451356345}
   - component: {fileID: 1451356344}
   - component: {fileID: 1451356343}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10586,7 +10702,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -10663,7 +10779,7 @@ GameObject:
   - component: {fileID: 1459646084}
   - component: {fileID: 1459646083}
   - component: {fileID: 1459646082}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10700,7 +10816,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -10777,7 +10893,7 @@ GameObject:
   - component: {fileID: 1469404318}
   - component: {fileID: 1469404317}
   - component: {fileID: 1469404316}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (74)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10814,7 +10930,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -10891,7 +11007,7 @@ GameObject:
   - component: {fileID: 1475146751}
   - component: {fileID: 1475146750}
   - component: {fileID: 1475146749}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10928,7 +11044,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -11005,7 +11121,7 @@ GameObject:
   - component: {fileID: 1477833815}
   - component: {fileID: 1477833814}
   - component: {fileID: 1477833813}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (64)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11042,7 +11158,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -11814,13 +11930,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 523158213}
     - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
+      propertyPath: gameUI
+      value: 
+      objectReference: {fileID: 537169768}
+    - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 523158214}
     - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
       propertyPath: debugOverlay
       value: 
-      objectReference: {fileID: 298266285}
+      objectReference: {fileID: 1150990072}
     - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
       propertyPath: endUIController
       value: 
@@ -11846,7 +11966,7 @@ GameObject:
   - component: {fileID: 1610750677}
   - component: {fileID: 1610750676}
   - component: {fileID: 1610750675}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (47)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11883,7 +12003,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -12250,7 +12370,7 @@ GameObject:
   - component: {fileID: 1624184245}
   - component: {fileID: 1624184244}
   - component: {fileID: 1624184243}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (52)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12287,7 +12407,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -12364,7 +12484,7 @@ GameObject:
   - component: {fileID: 1656996325}
   - component: {fileID: 1656996324}
   - component: {fileID: 1656996323}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12401,7 +12521,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -12478,7 +12598,7 @@ GameObject:
   - component: {fileID: 1673288407}
   - component: {fileID: 1673288406}
   - component: {fileID: 1673288405}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (57)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12515,7 +12635,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -12698,8 +12818,12 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 367172674}
     m_Modifications:
+    - target: {fileID: 3230237314096740064, guid: ff47bf41a413c9843b6485360f2d2c0a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6118290087099004352, guid: ff47bf41a413c9843b6485360f2d2c0a, type: 3}
       propertyPath: m_Name
       value: celebrity ghost 1
@@ -12722,15 +12846,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6891449468959600506, guid: ff47bf41a413c9843b6485360f2d2c0a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.0637
+      value: -2.0419302
       objectReference: {fileID: 0}
     - target: {fileID: 6891449468959600506, guid: ff47bf41a413c9843b6485360f2d2c0a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.000001674
+      value: -7.747818
       objectReference: {fileID: 0}
     - target: {fileID: 6891449468959600506, guid: ff47bf41a413c9843b6485360f2d2c0a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 120.78
+      value: 125.82
       objectReference: {fileID: 0}
     - target: {fileID: 6891449468959600506, guid: ff47bf41a413c9843b6485360f2d2c0a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12777,7 +12901,7 @@ GameObject:
   - component: {fileID: 1717178826}
   - component: {fileID: 1717178825}
   - component: {fileID: 1717178824}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (70)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12814,7 +12938,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -12879,6 +13003,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1717178822}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1722821552 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
+  m_PrefabInstance: {fileID: 1575849459}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e58c2fd2f0fa63d4c96543fa9fc719ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameController
 --- !u!1 &1766029269
 GameObject:
   m_ObjectHideFlags: 0
@@ -12891,7 +13026,7 @@ GameObject:
   - component: {fileID: 1766029273}
   - component: {fileID: 1766029272}
   - component: {fileID: 1766029271}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12928,7 +13063,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -13005,7 +13140,7 @@ GameObject:
   - component: {fileID: 1769129309}
   - component: {fileID: 1769129308}
   - component: {fileID: 1769129307}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (72)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13042,7 +13177,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -13119,7 +13254,7 @@ GameObject:
   - component: {fileID: 1788352139}
   - component: {fileID: 1788352138}
   - component: {fileID: 1788352137}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (67)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13156,7 +13291,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -13345,7 +13480,7 @@ GameObject:
   - component: {fileID: 1817146540}
   - component: {fileID: 1817146539}
   - component: {fileID: 1817146538}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (55)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13382,7 +13517,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -13459,7 +13594,7 @@ GameObject:
   - component: {fileID: 1886135819}
   - component: {fileID: 1886135818}
   - component: {fileID: 1886135817}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13496,7 +13631,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -13573,7 +13708,7 @@ GameObject:
   - component: {fileID: 1888859021}
   - component: {fileID: 1888859020}
   - component: {fileID: 1888859019}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13610,7 +13745,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -13799,7 +13934,7 @@ GameObject:
   - component: {fileID: 1913912828}
   - component: {fileID: 1913912827}
   - component: {fileID: 1913912826}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (63)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13836,7 +13971,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -14091,7 +14226,7 @@ GameObject:
   - component: {fileID: 1937861436}
   - component: {fileID: 1937861435}
   - component: {fileID: 1937861434}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (44)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14128,7 +14263,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -14205,7 +14340,7 @@ GameObject:
   - component: {fileID: 1952334854}
   - component: {fileID: 1952334853}
   - component: {fileID: 1952334852}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14242,7 +14377,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -14597,17 +14732,100 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1968431377}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1971487675
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 367172674}
+    m_Modifications:
+    - target: {fileID: 350145164192864023, guid: d2da16265435632478517274ab5574ff, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.733469
+      objectReference: {fileID: 0}
+    - target: {fileID: 350145164192864023, guid: d2da16265435632478517274ab5574ff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 350145164192864023, guid: d2da16265435632478517274ab5574ff, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15.036024
+      objectReference: {fileID: 0}
+    - target: {fileID: 350145164192864023, guid: d2da16265435632478517274ab5574ff, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.15548153
+      objectReference: {fileID: 0}
+    - target: {fileID: 350145164192864023, guid: d2da16265435632478517274ab5574ff, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 350145164192864023, guid: d2da16265435632478517274ab5574ff, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9878388
+      objectReference: {fileID: 0}
+    - target: {fileID: 350145164192864023, guid: d2da16265435632478517274ab5574ff, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 350145164192864023, guid: d2da16265435632478517274ab5574ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 350145164192864023, guid: d2da16265435632478517274ab5574ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 197.889
+      objectReference: {fileID: 0}
+    - target: {fileID: 350145164192864023, guid: d2da16265435632478517274ab5574ff, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1121439769754668461, guid: d2da16265435632478517274ab5574ff, type: 3}
+      propertyPath: m_Name
+      value: npc1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d2da16265435632478517274ab5574ff, type: 3}
 --- !u!114 &1972958453 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4021605507843220082, guid: 6040513e4ae2ac1428f7bf7adab773a3, type: 3}
   m_PrefabInstance: {fileID: 298266284}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1150990072}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!1 &2010023310 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4080554434550740270, guid: 4057b09d577f5ff49b8285b94cf6e495, type: 3}
+  m_PrefabInstance: {fileID: 3013875879630881900}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2010023312
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010023310}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.001, y: 0.01, z: 0.01}
+  m_Center: {x: 0, y: 0, z: -0.0035}
 --- !u!1 &2043385555
 GameObject:
   m_ObjectHideFlags: 0
@@ -14620,7 +14838,7 @@ GameObject:
   - component: {fileID: 2043385559}
   - component: {fileID: 2043385558}
   - component: {fileID: 2043385557}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (59)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14657,7 +14875,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -14722,6 +14940,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043385555}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2096056249 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5563134530108996880, guid: ab2bbd69014eff44699b435cfc1658d3, type: 3}
+  m_PrefabInstance: {fileID: 229363555}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &2129799612
 Mesh:
   m_ObjectHideFlags: 0
@@ -14912,7 +15135,7 @@ GameObject:
   - component: {fileID: 2139720581}
   - component: {fileID: 2139720580}
   - component: {fileID: 2139720579}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ghost (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14949,7 +15172,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -19097,7 +19320,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 501857512115926136, guid: 4057b09d577f5ff49b8285b94cf6e495, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 729215757}
+    - targetCorrespondingSourceObject: {fileID: 4080554434550740270, guid: 4057b09d577f5ff49b8285b94cf6e495, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2010023312}
   m_SourcePrefab: {fileID: 100100000, guid: 4057b09d577f5ff49b8285b94cf6e495, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -19111,7 +19340,5 @@ SceneRoots:
   - {fileID: 1575849459}
   - {fileID: 1132812694}
   - {fileID: 3013875879630881900}
-  - {fileID: 229363555}
-  - {fileID: 1715666318}
   - {fileID: 367172674}
   - {fileID: 1103195800}

@@ -28,7 +28,7 @@ public class EndUIController : MonoBehaviour
 
         for (int i = 0; i < numPhotos; i++) 
         {
-            resultsText = string.Concat(resultsText, "\n\n Photo ", (i+1).ToString(), " : ", scores[i].ToString(), "K likes \n");
+            resultsText = string.Concat(resultsText, "\n Photo ", (i+1).ToString(), " : ", scores[i].ToString(), "K likes");
         }
 
         ResultsText.text = resultsText;
