@@ -27,7 +27,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BackTex:
-        m_Texture: {fileID: 2800000, guid: fd889cc22edb2e4479ab153cf60a3f05, type: 3}
+        m_Texture: {fileID: 2800000, guid: eac5637dec2879343812d67a267d5223, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -51,7 +51,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DownTex:
-        m_Texture: {fileID: 2800000, guid: fd889cc22edb2e4479ab153cf60a3f05, type: 3}
+        m_Texture: {fileID: 2800000, guid: a9158591c9f6fd246b613153810fa72e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
@@ -59,11 +59,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FrontTex:
-        m_Texture: {fileID: 2800000, guid: fd889cc22edb2e4479ab153cf60a3f05, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9a85161b5ec993449beadcb67234403b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _LeftTex:
-        m_Texture: {fileID: 2800000, guid: fd889cc22edb2e4479ab153cf60a3f05, type: 3}
+        m_Texture: {fileID: 2800000, guid: a290c633359c9bf46ac13c9b2b2852e7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -83,7 +83,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RightTex:
-        m_Texture: {fileID: 2800000, guid: fd889cc22edb2e4479ab153cf60a3f05, type: 3}
+        m_Texture: {fileID: 2800000, guid: cd3bc895bc4e02e41a377c1d23402125, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
@@ -95,7 +95,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _UpTex:
-        m_Texture: {fileID: 2800000, guid: fd889cc22edb2e4479ab153cf60a3f05, type: 3}
+        m_Texture: {fileID: 2800000, guid: 537fcd276dc4af943a0dfdbb2a8201d5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
