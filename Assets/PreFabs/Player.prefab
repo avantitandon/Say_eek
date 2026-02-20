@@ -171,7 +171,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5220988437639093409}
-  - component: {fileID: 1614709472656678029}
+  - component: {fileID: 8559810237424051519}
   m_Layer: 0
   m_Name: followPos
   m_TagString: Untagged
@@ -194,7 +194,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6339869094924770840}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1614709472656678029
+--- !u!82 &8559810237424051519
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -205,11 +205,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_Resource: {fileID: 8300000, guid: 53af1dfeccc694d56bcd1349554fcda5, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

@@ -10,13 +10,14 @@ public class GameController : MonoBehaviour
 
     public bool gameActive = false;
 
-    public const int MAX_PHOTOS = 3;
+    public const int MAX_PHOTOS = 10;
     public int photosTaken = 0;
     public int[] scores;
 
     public GameObject player;
     public GameObject camera;
     public GameObject debugOverlay;
+    public GameObject gameUI;
     public GameObject endUI;
 
     private float endTime = 0;
@@ -46,6 +47,12 @@ public class GameController : MonoBehaviour
 
         // create score array
         scores = new int[MAX_PHOTOS];
+
+
+        // keep these 2 lines for prod builds
+        // auto starts the game
+        gameActive = true;
+        debugOverlay.SetActive(false);
     }
 
     // Update is called once per frame
@@ -64,6 +71,7 @@ public class GameController : MonoBehaviour
         if (endUI.activeSelf && (Time.time > endTime + 7))
         {
             endUI.SetActive(false);
+            gameUI.SetActive(true);
             // bring back the debug overlay
             debugOverlay.SetActive(true);
         }
@@ -74,6 +82,7 @@ public class GameController : MonoBehaviour
             gameActive = true;
             debugOverlay.SetActive(false);
             scores = new int[MAX_PHOTOS]; // garabage collection to do? maybe? could this have garbage?
+            photosTaken = 0;
 
         }
 
@@ -93,6 +102,7 @@ public class GameController : MonoBehaviour
                 endUIController.SetScoreText(scores, photosTaken);
 
                 endTime = Time.time;
+                gameUI.SetActive(false);
                 endUI.SetActive(true);
                 gameActive = false;
             }

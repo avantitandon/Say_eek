@@ -64,6 +64,7 @@ public class CameraControllerMonolith : MonoBehaviour
 
 
     public int photoScore = 0;
+    public GameObject scoreui;
     public TMP_Text UI_text;
 
 
@@ -71,6 +72,13 @@ public class CameraControllerMonolith : MonoBehaviour
     int ghostScore = 0;
 
     public LayerMask ignoreLayers;
+
+
+    [SerializeField] private GameObject hearts1;
+    [SerializeField] private GameObject hearts2;
+    [SerializeField] private GameObject hearts3;
+    [SerializeField] private GameObject backplate;
+
 
 
     void Start()
@@ -254,6 +262,8 @@ public class CameraControllerMonolith : MonoBehaviour
         //{
         //    ghostHit = 3;
         //}
+        ghostScore = score;
+
         if (photoPreview != null)
         {
             if (previewRoutine != null)
@@ -264,7 +274,7 @@ public class CameraControllerMonolith : MonoBehaviour
             previewRoutine = StartCoroutine(ShowPreview());
         }
 
-        ghostScore = score;
+        
 
         return score;
     }
@@ -312,9 +322,22 @@ public class CameraControllerMonolith : MonoBehaviour
         previewTexture.Apply();
         RenderTexture.active = previous;
         photoPreview.texture = previewTexture;
+
         photoPreview.gameObject.SetActive(true);
+        if (ghostScore > 600) { hearts1.SetActive(true); hearts2.SetActive(true); hearts3.SetActive(true); }
+        else if (ghostScore > 200) { hearts1.SetActive(true); hearts2.SetActive(true); hearts3.SetActive(false); }
+        else if (ghostScore > 50) { hearts1.SetActive(true); hearts2.SetActive(false); hearts3.SetActive(false); }
+        else { hearts1.SetActive(false); hearts2.SetActive(false); hearts3.SetActive(false); }
+        backplate.SetActive(true);
+
         yield return new WaitForSecondsRealtime(previewDuration);
+
         photoPreview.gameObject.SetActive(false);
+        hearts1.SetActive(false);
+        hearts2.SetActive(false);
+        hearts3.SetActive(false);
+        backplate.SetActive(false);
+
         previewRoutine = null;
     }
 
@@ -345,8 +368,14 @@ public class CameraControllerMonolith : MonoBehaviour
         var canvasGO = new GameObject("PhotoPreviewCanvas", typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
         var canvas = canvasGO.GetComponent<Canvas>();
 
+        canvasGO.transform.SetParent(scoreui.transform, false);
+
         canvas.renderMode = RenderMode.ScreenSpaceOverlay;
-        canvas.sortingOrder = 1000;
+
+        // want hearts appearing ontop
+        canvas.overrideSorting = true; // this canvas is a child of scoreui for now, so we need this
+        canvas.sortingOrder = 2;
+
 
         var scaler = canvasGO.GetComponent<CanvasScaler>();
 
@@ -362,8 +391,8 @@ public class CameraControllerMonolith : MonoBehaviour
         rect.anchorMin = new Vector2(1f, 0f);
         rect.anchorMax = new Vector2(1f, 0f);
         rect.pivot = new Vector2(1f, 0f);
-        rect.sizeDelta = new Vector2(256f, 144f);
-        rect.anchoredPosition = new Vector2(-140f, 100f);
+        rect.sizeDelta = new Vector2(256f * 5, 144f * 5);
+        rect.anchoredPosition = new Vector2(570, -270);
 
         photoPreview.texture = null;
         photoPreview.gameObject.SetActive(false);
