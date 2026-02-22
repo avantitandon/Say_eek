@@ -213,12 +213,18 @@ public class CameraControllerMonolith : MonoBehaviour
             if (Physics.Raycast(ray, out hit, 1000f, layerMask: ~ignoreLayers))
             {
 
+                // if we hit the ghost layer
                 if (hit.collider.gameObject.layer == 6)
                 {
-                    score = score + 1;
-
-                    if (hit.collider.gameObject.TryGetComponent<ballscript>(out ballscript ball))
+                    if (hit.collider.gameObject.TryGetComponent<GhostController>(out GhostController ghost))
                     {
+                        score = score + ghost.baseScore;
+                    }
+
+                    // legacy for ball ghost
+                    else if (hit.collider.gameObject.TryGetComponent<ballscript>(out ballscript ball))
+                    {
+                        score = score + 1;
                         if (ball.spinning)
                         {
                             score = score + 2;
@@ -228,6 +234,9 @@ public class CameraControllerMonolith : MonoBehaviour
                 }
             }
 
+
+            // if we are near the center of the screen, reduce the step towards the next ray
+            // this increases density of rays, meaning more points.
             if ((pos - center).magnitude < radius)
             {
                 //Debug.Log("centerhit");

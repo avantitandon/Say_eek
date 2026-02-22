@@ -421,6 +421,7 @@ GameObject:
   - component: {fileID: 38183424}
   - component: {fileID: 38183423}
   - component: {fileID: 38183422}
+  - component: {fileID: 38183425}
   m_Layer: 6
   m_Name: ghost (65)
   m_TagString: Untagged
@@ -523,6 +524,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 38183420}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &38183425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38183420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &80323884
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,6 +551,7 @@ GameObject:
   - component: {fileID: 80323888}
   - component: {fileID: 80323887}
   - component: {fileID: 80323886}
+  - component: {fileID: 80323889}
   m_Layer: 6
   m_Name: ghost (10)
   m_TagString: Untagged
@@ -637,6 +654,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 80323884}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &80323889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80323884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &105998018
 GameObject:
   m_ObjectHideFlags: 0
@@ -649,6 +681,7 @@ GameObject:
   - component: {fileID: 105998022}
   - component: {fileID: 105998021}
   - component: {fileID: 105998020}
+  - component: {fileID: 105998023}
   m_Layer: 6
   m_Name: ghost (38)
   m_TagString: Untagged
@@ -751,6 +784,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105998018}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &105998023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105998018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &110537749
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,6 +928,7 @@ GameObject:
   - component: {fileID: 165843004}
   - component: {fileID: 165843003}
   - component: {fileID: 165843002}
+  - component: {fileID: 165843005}
   m_Layer: 6
   m_Name: ghost (13)
   m_TagString: Untagged
@@ -982,6 +1031,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 165843000}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &165843005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165843000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &171661016
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,6 +1058,7 @@ GameObject:
   - component: {fileID: 171661020}
   - component: {fileID: 171661019}
   - component: {fileID: 171661018}
+  - component: {fileID: 171661021}
   m_Layer: 6
   m_Name: ghost (62)
   m_TagString: Untagged
@@ -1096,6 +1161,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171661016}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &171661021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171661016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &177749510
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,6 +1188,7 @@ GameObject:
   - component: {fileID: 177749514}
   - component: {fileID: 177749513}
   - component: {fileID: 177749512}
+  - component: {fileID: 177749515}
   m_Layer: 6
   m_Name: ghost (11)
   m_TagString: Untagged
@@ -1210,6 +1291,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 177749510}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &177749515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177749510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!43 &202671004
 Mesh:
   m_ObjectHideFlags: 0
@@ -1400,6 +1496,7 @@ GameObject:
   - component: {fileID: 208351097}
   - component: {fileID: 208351096}
   - component: {fileID: 208351095}
+  - component: {fileID: 208351098}
   m_Layer: 6
   m_Name: ghost (69)
   m_TagString: Untagged
@@ -1502,6 +1599,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 208351093}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &208351098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208351093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!43 &219786561
 Mesh:
   m_ObjectHideFlags: 0
@@ -1765,6 +1877,7 @@ GameObject:
   - component: {fileID: 235468961}
   - component: {fileID: 235468960}
   - component: {fileID: 235468959}
+  - component: {fileID: 235468962}
   m_Layer: 6
   m_Name: ghost
   m_TagString: Untagged
@@ -1867,6 +1980,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235468957}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &235468962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235468957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &278938718
 GameObject:
   m_ObjectHideFlags: 0
@@ -1879,6 +2007,7 @@ GameObject:
   - component: {fileID: 278938722}
   - component: {fileID: 278938721}
   - component: {fileID: 278938720}
+  - component: {fileID: 278938723}
   m_Layer: 6
   m_Name: ghost (32)
   m_TagString: Untagged
@@ -1981,6 +2110,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278938718}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &278938723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278938718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &284517349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1993,6 +2137,7 @@ GameObject:
   - component: {fileID: 284517353}
   - component: {fileID: 284517352}
   - component: {fileID: 284517351}
+  - component: {fileID: 284517354}
   m_Layer: 6
   m_Name: ghost (40)
   m_TagString: Untagged
@@ -2095,6 +2240,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284517349}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &284517354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284517349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1001 &298266284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2228,6 +2388,7 @@ GameObject:
   - component: {fileID: 319052034}
   - component: {fileID: 319052033}
   - component: {fileID: 319052032}
+  - component: {fileID: 319052035}
   m_Layer: 6
   m_Name: ghost (4)
   m_TagString: Untagged
@@ -2330,6 +2491,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319052030}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &319052035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319052030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &328257103 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4506818364687871928, guid: 6040513e4ae2ac1428f7bf7adab773a3, type: 3}
@@ -2347,6 +2523,7 @@ GameObject:
   - component: {fileID: 333612014}
   - component: {fileID: 333612013}
   - component: {fileID: 333612012}
+  - component: {fileID: 333612015}
   m_Layer: 6
   m_Name: ghost (39)
   m_TagString: Untagged
@@ -2449,6 +2626,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 333612010}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &333612015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333612010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &367172673
 GameObject:
   m_ObjectHideFlags: 0
@@ -2596,6 +2788,7 @@ GameObject:
   - component: {fileID: 368395031}
   - component: {fileID: 368395030}
   - component: {fileID: 368395029}
+  - component: {fileID: 368395032}
   m_Layer: 6
   m_Name: SAD GHOST
   m_TagString: Untagged
@@ -2698,6 +2891,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 368395027}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &368395032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368395027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &406612756
 GameObject:
   m_ObjectHideFlags: 0
@@ -2710,6 +2918,7 @@ GameObject:
   - component: {fileID: 406612760}
   - component: {fileID: 406612759}
   - component: {fileID: 406612758}
+  - component: {fileID: 406612761}
   m_Layer: 6
   m_Name: ghost (2)
   m_TagString: Untagged
@@ -2812,6 +3021,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 406612756}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &406612761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406612756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!43 &414988027
 Mesh:
   m_ObjectHideFlags: 0
@@ -3007,6 +3231,7 @@ GameObject:
   - component: {fileID: 426620224}
   - component: {fileID: 426620223}
   - component: {fileID: 426620222}
+  - component: {fileID: 426620225}
   m_Layer: 6
   m_Name: ghost (48)
   m_TagString: Untagged
@@ -3109,6 +3334,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 426620220}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &426620225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426620220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &431458013
 GameObject:
   m_ObjectHideFlags: 0
@@ -3121,6 +3361,7 @@ GameObject:
   - component: {fileID: 431458017}
   - component: {fileID: 431458016}
   - component: {fileID: 431458015}
+  - component: {fileID: 431458018}
   m_Layer: 6
   m_Name: ghost (34)
   m_TagString: Untagged
@@ -3223,6 +3464,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 431458013}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &431458018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431458013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &434331383
 GameObject:
   m_ObjectHideFlags: 0
@@ -3235,6 +3491,7 @@ GameObject:
   - component: {fileID: 434331387}
   - component: {fileID: 434331386}
   - component: {fileID: 434331385}
+  - component: {fileID: 434331388}
   m_Layer: 6
   m_Name: ghost (43)
   m_TagString: Untagged
@@ -3337,6 +3594,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 434331383}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &434331388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434331383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &436639313
 GameObject:
   m_ObjectHideFlags: 0
@@ -3349,6 +3621,7 @@ GameObject:
   - component: {fileID: 436639317}
   - component: {fileID: 436639316}
   - component: {fileID: 436639315}
+  - component: {fileID: 436639318}
   m_Layer: 6
   m_Name: ghost (77)
   m_TagString: Untagged
@@ -3451,6 +3724,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 436639313}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &436639318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436639313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &440159639
 GameObject:
   m_ObjectHideFlags: 0
@@ -3463,6 +3751,7 @@ GameObject:
   - component: {fileID: 440159643}
   - component: {fileID: 440159642}
   - component: {fileID: 440159641}
+  - component: {fileID: 440159644}
   m_Layer: 6
   m_Name: ghost (66)
   m_TagString: Untagged
@@ -3565,6 +3854,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440159639}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &440159644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440159639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &468891052
 GameObject:
   m_ObjectHideFlags: 0
@@ -3577,6 +3881,7 @@ GameObject:
   - component: {fileID: 468891056}
   - component: {fileID: 468891055}
   - component: {fileID: 468891054}
+  - component: {fileID: 468891057}
   m_Layer: 6
   m_Name: ghost (29)
   m_TagString: Untagged
@@ -3679,6 +3984,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 468891052}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &468891057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468891052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &474654989
 GameObject:
   m_ObjectHideFlags: 0
@@ -3691,6 +4011,7 @@ GameObject:
   - component: {fileID: 474654993}
   - component: {fileID: 474654992}
   - component: {fileID: 474654991}
+  - component: {fileID: 474654994}
   m_Layer: 6
   m_Name: ghost (25)
   m_TagString: Untagged
@@ -3793,6 +4114,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474654989}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &474654994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474654989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &492636377
 GameObject:
   m_ObjectHideFlags: 0
@@ -3805,6 +4141,7 @@ GameObject:
   - component: {fileID: 492636381}
   - component: {fileID: 492636380}
   - component: {fileID: 492636379}
+  - component: {fileID: 492636382}
   m_Layer: 6
   m_Name: ghost (14)
   m_TagString: Untagged
@@ -3907,6 +4244,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492636377}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &492636382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492636377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &497620918
 GameObject:
   m_ObjectHideFlags: 0
@@ -3919,6 +4271,7 @@ GameObject:
   - component: {fileID: 497620922}
   - component: {fileID: 497620921}
   - component: {fileID: 497620920}
+  - component: {fileID: 497620923}
   m_Layer: 6
   m_Name: ghost (76)
   m_TagString: Untagged
@@ -4021,6 +4374,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 497620918}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &497620923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497620918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &501886249
 GameObject:
   m_ObjectHideFlags: 0
@@ -4033,6 +4401,7 @@ GameObject:
   - component: {fileID: 501886253}
   - component: {fileID: 501886252}
   - component: {fileID: 501886251}
+  - component: {fileID: 501886254}
   m_Layer: 6
   m_Name: ghost (73)
   m_TagString: Untagged
@@ -4135,6 +4504,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 501886249}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &501886254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501886249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &505975851
 GameObject:
   m_ObjectHideFlags: 0
@@ -4147,6 +4531,7 @@ GameObject:
   - component: {fileID: 505975855}
   - component: {fileID: 505975854}
   - component: {fileID: 505975853}
+  - component: {fileID: 505975856}
   m_Layer: 6
   m_Name: ghost (68)
   m_TagString: Untagged
@@ -4249,6 +4634,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 505975851}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &505975856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505975851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &509334678
 GameObject:
   m_ObjectHideFlags: 0
@@ -5004,6 +5404,7 @@ GameObject:
   - component: {fileID: 565682519}
   - component: {fileID: 565682518}
   - component: {fileID: 565682517}
+  - component: {fileID: 565682520}
   m_Layer: 6
   m_Name: ghost (75)
   m_TagString: Untagged
@@ -5106,6 +5507,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 565682515}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &565682520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565682515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &579454316
 GameObject:
   m_ObjectHideFlags: 0
@@ -5118,6 +5534,7 @@ GameObject:
   - component: {fileID: 579454320}
   - component: {fileID: 579454319}
   - component: {fileID: 579454318}
+  - component: {fileID: 579454321}
   m_Layer: 6
   m_Name: ghost (21)
   m_TagString: Untagged
@@ -5220,6 +5637,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579454316}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &579454321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579454316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &582615335
 GameObject:
   m_ObjectHideFlags: 0
@@ -5232,6 +5664,7 @@ GameObject:
   - component: {fileID: 582615339}
   - component: {fileID: 582615338}
   - component: {fileID: 582615337}
+  - component: {fileID: 582615340}
   m_Layer: 6
   m_Name: ghost (54)
   m_TagString: Untagged
@@ -5334,6 +5767,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582615335}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &582615340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582615335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &592555361
 GameObject:
   m_ObjectHideFlags: 0
@@ -5346,6 +5794,7 @@ GameObject:
   - component: {fileID: 592555365}
   - component: {fileID: 592555364}
   - component: {fileID: 592555363}
+  - component: {fileID: 592555366}
   m_Layer: 6
   m_Name: ghost (53)
   m_TagString: Untagged
@@ -5448,6 +5897,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 592555361}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &592555366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592555361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &629212729
 GameObject:
   m_ObjectHideFlags: 0
@@ -5460,6 +5924,7 @@ GameObject:
   - component: {fileID: 629212733}
   - component: {fileID: 629212732}
   - component: {fileID: 629212731}
+  - component: {fileID: 629212734}
   m_Layer: 6
   m_Name: ghost (12)
   m_TagString: Untagged
@@ -5562,6 +6027,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 629212729}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &629212734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629212729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &700886885
 GameObject:
   m_ObjectHideFlags: 0
@@ -5686,6 +6166,7 @@ GameObject:
   - component: {fileID: 721952377}
   - component: {fileID: 721952376}
   - component: {fileID: 721952375}
+  - component: {fileID: 721952378}
   m_Layer: 6
   m_Name: ghost (22)
   m_TagString: Untagged
@@ -5788,6 +6269,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 721952373}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &721952378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721952373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!43 &724144241
 Mesh:
   m_ObjectHideFlags: 0
@@ -6004,6 +6500,7 @@ GameObject:
   - component: {fileID: 729866288}
   - component: {fileID: 729866287}
   - component: {fileID: 729866286}
+  - component: {fileID: 729866289}
   m_Layer: 6
   m_Name: ghost (17)
   m_TagString: Untagged
@@ -6106,6 +6603,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 729866284}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &729866289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729866284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &731644270
 GameObject:
   m_ObjectHideFlags: 0
@@ -6230,6 +6742,7 @@ GameObject:
   - component: {fileID: 752789336}
   - component: {fileID: 752789335}
   - component: {fileID: 752789334}
+  - component: {fileID: 752789337}
   m_Layer: 6
   m_Name: ghost (19)
   m_TagString: Untagged
@@ -6332,6 +6845,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752789332}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &752789337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752789332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &765343052
 GameObject:
   m_ObjectHideFlags: 0
@@ -6456,6 +6984,7 @@ GameObject:
   - component: {fileID: 765347262}
   - component: {fileID: 765347261}
   - component: {fileID: 765347260}
+  - component: {fileID: 765347263}
   m_Layer: 6
   m_Name: ghost (15)
   m_TagString: Untagged
@@ -6558,6 +7087,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765347258}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &765347263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765347258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &787929487
 GameObject:
   m_ObjectHideFlags: 0
@@ -6824,6 +7368,7 @@ GameObject:
   - component: {fileID: 883616544}
   - component: {fileID: 883616543}
   - component: {fileID: 883616542}
+  - component: {fileID: 883616545}
   m_Layer: 6
   m_Name: ghost (9)
   m_TagString: Untagged
@@ -6926,6 +7471,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 883616540}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &883616545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883616540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &916496793
 GameObject:
   m_ObjectHideFlags: 0
@@ -6938,6 +7498,7 @@ GameObject:
   - component: {fileID: 916496797}
   - component: {fileID: 916496796}
   - component: {fileID: 916496795}
+  - component: {fileID: 916496798}
   m_Layer: 6
   m_Name: ghost (7)
   m_TagString: Untagged
@@ -7040,6 +7601,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 916496793}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &916496798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916496793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &930688023
 GameObject:
   m_ObjectHideFlags: 0
@@ -7052,6 +7628,7 @@ GameObject:
   - component: {fileID: 930688027}
   - component: {fileID: 930688026}
   - component: {fileID: 930688025}
+  - component: {fileID: 930688028}
   m_Layer: 6
   m_Name: ghost (49)
   m_TagString: Untagged
@@ -7154,6 +7731,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930688023}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &930688028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930688023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &983741077
 GameObject:
   m_ObjectHideFlags: 0
@@ -7166,6 +7758,7 @@ GameObject:
   - component: {fileID: 983741081}
   - component: {fileID: 983741080}
   - component: {fileID: 983741079}
+  - component: {fileID: 983741082}
   m_Layer: 6
   m_Name: ghost (30)
   m_TagString: Untagged
@@ -7268,6 +7861,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983741077}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &983741082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983741077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &999935521
 GameObject:
   m_ObjectHideFlags: 0
@@ -7392,6 +8000,7 @@ GameObject:
   - component: {fileID: 1036345126}
   - component: {fileID: 1036345125}
   - component: {fileID: 1036345124}
+  - component: {fileID: 1036345127}
   m_Layer: 6
   m_Name: ghost (61)
   m_TagString: Untagged
@@ -7494,6 +8103,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036345122}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1036345127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036345122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!43 &1075973229
 Mesh:
   m_ObjectHideFlags: 0
@@ -7684,6 +8308,7 @@ GameObject:
   - component: {fileID: 1085875762}
   - component: {fileID: 1085875761}
   - component: {fileID: 1085875760}
+  - component: {fileID: 1085875763}
   m_Layer: 6
   m_Name: ghost (24)
   m_TagString: Untagged
@@ -7786,6 +8411,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1085875758}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1085875763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085875758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1092502364
 GameObject:
   m_ObjectHideFlags: 0
@@ -7798,6 +8438,7 @@ GameObject:
   - component: {fileID: 1092502368}
   - component: {fileID: 1092502367}
   - component: {fileID: 1092502366}
+  - component: {fileID: 1092502369}
   m_Layer: 6
   m_Name: ghost (26)
   m_TagString: Untagged
@@ -7900,6 +8541,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1092502364}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1092502369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092502364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1103195799
 GameObject:
   m_ObjectHideFlags: 0
@@ -7961,6 +8617,7 @@ GameObject:
   - component: {fileID: 1105328985}
   - component: {fileID: 1105328984}
   - component: {fileID: 1105328983}
+  - component: {fileID: 1105328986}
   m_Layer: 6
   m_Name: ghost (58)
   m_TagString: Untagged
@@ -8063,6 +8720,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105328981}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1105328986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105328981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1122695557
 GameObject:
   m_ObjectHideFlags: 0
@@ -8075,6 +8747,7 @@ GameObject:
   - component: {fileID: 1122695561}
   - component: {fileID: 1122695560}
   - component: {fileID: 1122695559}
+  - component: {fileID: 1122695562}
   m_Layer: 6
   m_Name: ghost (42)
   m_TagString: Untagged
@@ -8177,6 +8850,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122695557}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1122695562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122695557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1130882736
 GameObject:
   m_ObjectHideFlags: 0
@@ -8189,6 +8877,7 @@ GameObject:
   - component: {fileID: 1130882740}
   - component: {fileID: 1130882739}
   - component: {fileID: 1130882738}
+  - component: {fileID: 1130882741}
   m_Layer: 6
   m_Name: ghost (45)
   m_TagString: Untagged
@@ -8291,6 +8980,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1130882736}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1130882741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130882736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1131674521
 GameObject:
   m_ObjectHideFlags: 0
@@ -8303,6 +9007,7 @@ GameObject:
   - component: {fileID: 1131674525}
   - component: {fileID: 1131674524}
   - component: {fileID: 1131674523}
+  - component: {fileID: 1131674526}
   m_Layer: 6
   m_Name: ghost (28)
   m_TagString: Untagged
@@ -8405,6 +9110,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131674521}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1131674526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131674521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1001 &1132812694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8499,6 +9219,7 @@ GameObject:
   - component: {fileID: 1159713865}
   - component: {fileID: 1159713864}
   - component: {fileID: 1159713863}
+  - component: {fileID: 1159713866}
   m_Layer: 6
   m_Name: ghost (46)
   m_TagString: Untagged
@@ -8601,6 +9322,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1159713861}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1159713866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159713861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1161346734
 GameObject:
   m_ObjectHideFlags: 0
@@ -8613,6 +9349,7 @@ GameObject:
   - component: {fileID: 1161346738}
   - component: {fileID: 1161346737}
   - component: {fileID: 1161346736}
+  - component: {fileID: 1161346739}
   m_Layer: 6
   m_Name: ghost (50)
   m_TagString: Untagged
@@ -8715,6 +9452,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161346734}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1161346739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161346734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1177875890
 GameObject:
   m_ObjectHideFlags: 0
@@ -8727,6 +9479,7 @@ GameObject:
   - component: {fileID: 1177875894}
   - component: {fileID: 1177875893}
   - component: {fileID: 1177875892}
+  - component: {fileID: 1177875895}
   m_Layer: 6
   m_Name: ghost (71)
   m_TagString: Untagged
@@ -8829,6 +9582,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177875890}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1177875895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177875890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1196359436
 GameObject:
   m_ObjectHideFlags: 0
@@ -8841,6 +9609,7 @@ GameObject:
   - component: {fileID: 1196359440}
   - component: {fileID: 1196359439}
   - component: {fileID: 1196359438}
+  - component: {fileID: 1196359441}
   m_Layer: 6
   m_Name: ghost (18)
   m_TagString: Untagged
@@ -8943,6 +9712,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196359436}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1196359441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196359436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1210817925
 GameObject:
   m_ObjectHideFlags: 0
@@ -9067,6 +9851,7 @@ GameObject:
   - component: {fileID: 1224068339}
   - component: {fileID: 1224068338}
   - component: {fileID: 1224068337}
+  - component: {fileID: 1224068340}
   m_Layer: 6
   m_Name: ghost (35)
   m_TagString: Untagged
@@ -9169,6 +9954,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1224068335}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1224068340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224068335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1232933276
 GameObject:
   m_ObjectHideFlags: 0
@@ -9181,6 +9981,7 @@ GameObject:
   - component: {fileID: 1232933280}
   - component: {fileID: 1232933279}
   - component: {fileID: 1232933278}
+  - component: {fileID: 1232933281}
   m_Layer: 6
   m_Name: ghost (33)
   m_TagString: Untagged
@@ -9283,6 +10084,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1232933276}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1232933281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232933276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1234636359
 GameObject:
   m_ObjectHideFlags: 0
@@ -9295,6 +10111,7 @@ GameObject:
   - component: {fileID: 1234636363}
   - component: {fileID: 1234636362}
   - component: {fileID: 1234636361}
+  - component: {fileID: 1234636364}
   m_Layer: 6
   m_Name: ghost (56)
   m_TagString: Untagged
@@ -9397,6 +10214,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234636359}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1234636364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234636359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1257346955
 GameObject:
   m_ObjectHideFlags: 0
@@ -9526,6 +10358,7 @@ GameObject:
   - component: {fileID: 1313638846}
   - component: {fileID: 1313638845}
   - component: {fileID: 1313638844}
+  - component: {fileID: 1313638847}
   m_Layer: 6
   m_Name: ghost (60)
   m_TagString: Untagged
@@ -9628,6 +10461,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1313638842}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1313638847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313638842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1330409573
 GameObject:
   m_ObjectHideFlags: 0
@@ -9640,6 +10488,7 @@ GameObject:
   - component: {fileID: 1330409577}
   - component: {fileID: 1330409576}
   - component: {fileID: 1330409575}
+  - component: {fileID: 1330409578}
   m_Layer: 6
   m_Name: ghost (31)
   m_TagString: Untagged
@@ -9742,6 +10591,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330409573}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1330409578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330409573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1334836007
 GameObject:
   m_ObjectHideFlags: 0
@@ -9754,6 +10618,7 @@ GameObject:
   - component: {fileID: 1334836011}
   - component: {fileID: 1334836010}
   - component: {fileID: 1334836009}
+  - component: {fileID: 1334836012}
   m_Layer: 6
   m_Name: ghost (36)
   m_TagString: Untagged
@@ -9856,6 +10721,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1334836007}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1334836012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334836007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1336762813
 GameObject:
   m_ObjectHideFlags: 0
@@ -9995,6 +10875,7 @@ GameObject:
   - component: {fileID: 1357817957}
   - component: {fileID: 1357817956}
   - component: {fileID: 1357817955}
+  - component: {fileID: 1357817958}
   m_Layer: 6
   m_Name: ghost (20)
   m_TagString: Untagged
@@ -10097,6 +10978,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1357817953}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1357817958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357817953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1374977056
 GameObject:
   m_ObjectHideFlags: 0
@@ -10109,6 +11005,7 @@ GameObject:
   - component: {fileID: 1374977060}
   - component: {fileID: 1374977059}
   - component: {fileID: 1374977058}
+  - component: {fileID: 1374977061}
   m_Layer: 6
   m_Name: ghost (1)
   m_TagString: Untagged
@@ -10211,6 +11108,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1374977056}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1374977061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374977056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1380280954
 GameObject:
   m_ObjectHideFlags: 0
@@ -10223,6 +11135,7 @@ GameObject:
   - component: {fileID: 1380280958}
   - component: {fileID: 1380280957}
   - component: {fileID: 1380280956}
+  - component: {fileID: 1380280959}
   m_Layer: 6
   m_Name: ghost (51)
   m_TagString: Untagged
@@ -10325,6 +11238,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380280954}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1380280959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380280954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1418330346
 GameObject:
   m_ObjectHideFlags: 0
@@ -10665,6 +11593,7 @@ GameObject:
   - component: {fileID: 1451356345}
   - component: {fileID: 1451356344}
   - component: {fileID: 1451356343}
+  - component: {fileID: 1451356346}
   m_Layer: 6
   m_Name: ghost (16)
   m_TagString: Untagged
@@ -10767,6 +11696,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451356341}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1451356346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451356341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1459646080
 GameObject:
   m_ObjectHideFlags: 0
@@ -10779,6 +11723,7 @@ GameObject:
   - component: {fileID: 1459646084}
   - component: {fileID: 1459646083}
   - component: {fileID: 1459646082}
+  - component: {fileID: 1459646085}
   m_Layer: 6
   m_Name: ghost (5)
   m_TagString: Untagged
@@ -10881,6 +11826,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459646080}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1459646085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459646080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1469404314
 GameObject:
   m_ObjectHideFlags: 0
@@ -10893,6 +11853,7 @@ GameObject:
   - component: {fileID: 1469404318}
   - component: {fileID: 1469404317}
   - component: {fileID: 1469404316}
+  - component: {fileID: 1469404319}
   m_Layer: 6
   m_Name: ghost (74)
   m_TagString: Untagged
@@ -10995,6 +11956,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469404314}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1469404319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469404314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1475146747
 GameObject:
   m_ObjectHideFlags: 0
@@ -11007,6 +11983,7 @@ GameObject:
   - component: {fileID: 1475146751}
   - component: {fileID: 1475146750}
   - component: {fileID: 1475146749}
+  - component: {fileID: 1475146752}
   m_Layer: 6
   m_Name: ghost (6)
   m_TagString: Untagged
@@ -11109,6 +12086,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475146747}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1475146752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475146747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1477833811
 GameObject:
   m_ObjectHideFlags: 0
@@ -11121,6 +12113,7 @@ GameObject:
   - component: {fileID: 1477833815}
   - component: {fileID: 1477833814}
   - component: {fileID: 1477833813}
+  - component: {fileID: 1477833816}
   m_Layer: 6
   m_Name: ghost (64)
   m_TagString: Untagged
@@ -11223,6 +12216,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477833811}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1477833816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477833811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!43 &1486893376
 Mesh:
   m_ObjectHideFlags: 0
@@ -11966,6 +12974,7 @@ GameObject:
   - component: {fileID: 1610750677}
   - component: {fileID: 1610750676}
   - component: {fileID: 1610750675}
+  - component: {fileID: 1610750678}
   m_Layer: 6
   m_Name: ghost (47)
   m_TagString: Untagged
@@ -12068,6 +13077,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1610750673}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1610750678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610750673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1619779986
 GameObject:
   m_ObjectHideFlags: 0
@@ -12370,6 +13394,7 @@ GameObject:
   - component: {fileID: 1624184245}
   - component: {fileID: 1624184244}
   - component: {fileID: 1624184243}
+  - component: {fileID: 1624184246}
   m_Layer: 6
   m_Name: ghost (52)
   m_TagString: Untagged
@@ -12472,6 +13497,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624184241}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1624184246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624184241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1656996321
 GameObject:
   m_ObjectHideFlags: 0
@@ -12484,6 +13524,7 @@ GameObject:
   - component: {fileID: 1656996325}
   - component: {fileID: 1656996324}
   - component: {fileID: 1656996323}
+  - component: {fileID: 1656996326}
   m_Layer: 6
   m_Name: ghost (23)
   m_TagString: Untagged
@@ -12586,6 +13627,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1656996321}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1656996326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656996321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1673288403
 GameObject:
   m_ObjectHideFlags: 0
@@ -12598,6 +13654,7 @@ GameObject:
   - component: {fileID: 1673288407}
   - component: {fileID: 1673288406}
   - component: {fileID: 1673288405}
+  - component: {fileID: 1673288408}
   m_Layer: 6
   m_Name: ghost (57)
   m_TagString: Untagged
@@ -12700,6 +13757,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673288403}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1673288408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673288403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1695112209
 GameObject:
   m_ObjectHideFlags: 0
@@ -12901,6 +13973,7 @@ GameObject:
   - component: {fileID: 1717178826}
   - component: {fileID: 1717178825}
   - component: {fileID: 1717178824}
+  - component: {fileID: 1717178827}
   m_Layer: 6
   m_Name: ghost (70)
   m_TagString: Untagged
@@ -13003,6 +14076,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1717178822}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1717178827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717178822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!114 &1722821552 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
@@ -13026,6 +14114,7 @@ GameObject:
   - component: {fileID: 1766029273}
   - component: {fileID: 1766029272}
   - component: {fileID: 1766029271}
+  - component: {fileID: 1766029274}
   m_Layer: 6
   m_Name: ghost (41)
   m_TagString: Untagged
@@ -13128,6 +14217,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766029269}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1766029274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766029269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1769129305
 GameObject:
   m_ObjectHideFlags: 0
@@ -13140,6 +14244,7 @@ GameObject:
   - component: {fileID: 1769129309}
   - component: {fileID: 1769129308}
   - component: {fileID: 1769129307}
+  - component: {fileID: 1769129310}
   m_Layer: 6
   m_Name: ghost (72)
   m_TagString: Untagged
@@ -13242,6 +14347,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1769129305}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1769129310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769129305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1788352135
 GameObject:
   m_ObjectHideFlags: 0
@@ -13254,6 +14374,7 @@ GameObject:
   - component: {fileID: 1788352139}
   - component: {fileID: 1788352138}
   - component: {fileID: 1788352137}
+  - component: {fileID: 1788352140}
   m_Layer: 6
   m_Name: ghost (67)
   m_TagString: Untagged
@@ -13356,6 +14477,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1788352135}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1788352140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788352135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1799812889
 GameObject:
   m_ObjectHideFlags: 0
@@ -13480,6 +14616,7 @@ GameObject:
   - component: {fileID: 1817146540}
   - component: {fileID: 1817146539}
   - component: {fileID: 1817146538}
+  - component: {fileID: 1817146541}
   m_Layer: 6
   m_Name: ghost (55)
   m_TagString: Untagged
@@ -13582,6 +14719,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817146536}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1817146541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817146536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1886135815
 GameObject:
   m_ObjectHideFlags: 0
@@ -13594,6 +14746,7 @@ GameObject:
   - component: {fileID: 1886135819}
   - component: {fileID: 1886135818}
   - component: {fileID: 1886135817}
+  - component: {fileID: 1886135820}
   m_Layer: 6
   m_Name: ghost (27)
   m_TagString: Untagged
@@ -13696,6 +14849,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886135815}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1886135820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886135815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1888859017
 GameObject:
   m_ObjectHideFlags: 0
@@ -13708,6 +14876,7 @@ GameObject:
   - component: {fileID: 1888859021}
   - component: {fileID: 1888859020}
   - component: {fileID: 1888859019}
+  - component: {fileID: 1888859022}
   m_Layer: 6
   m_Name: ghost (3)
   m_TagString: Untagged
@@ -13810,6 +14979,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888859017}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1888859022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888859017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1901736576
 GameObject:
   m_ObjectHideFlags: 0
@@ -13934,6 +15118,7 @@ GameObject:
   - component: {fileID: 1913912828}
   - component: {fileID: 1913912827}
   - component: {fileID: 1913912826}
+  - component: {fileID: 1913912829}
   m_Layer: 6
   m_Name: ghost (63)
   m_TagString: Untagged
@@ -14036,6 +15221,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913912824}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1913912829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913912824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!43 &1916389816
 Mesh:
   m_ObjectHideFlags: 0
@@ -14226,6 +15426,7 @@ GameObject:
   - component: {fileID: 1937861436}
   - component: {fileID: 1937861435}
   - component: {fileID: 1937861434}
+  - component: {fileID: 1937861437}
   m_Layer: 6
   m_Name: ghost (44)
   m_TagString: Untagged
@@ -14328,6 +15529,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1937861432}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1937861437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937861432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1 &1952334850
 GameObject:
   m_ObjectHideFlags: 0
@@ -14340,6 +15556,7 @@ GameObject:
   - component: {fileID: 1952334854}
   - component: {fileID: 1952334853}
   - component: {fileID: 1952334852}
+  - component: {fileID: 1952334855}
   m_Layer: 6
   m_Name: ghost (37)
   m_TagString: Untagged
@@ -14442,6 +15659,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952334850}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1952334855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952334850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!43 &1961580233
 Mesh:
   m_ObjectHideFlags: 0
@@ -14838,6 +16070,7 @@ GameObject:
   - component: {fileID: 2043385559}
   - component: {fileID: 2043385558}
   - component: {fileID: 2043385557}
+  - component: {fileID: 2043385560}
   m_Layer: 6
   m_Name: ghost (59)
   m_TagString: Untagged
@@ -14940,6 +16173,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043385555}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2043385560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043385555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!4 &2096056249 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5563134530108996880, guid: ab2bbd69014eff44699b435cfc1658d3, type: 3}
@@ -15135,6 +16383,7 @@ GameObject:
   - component: {fileID: 2139720581}
   - component: {fileID: 2139720580}
   - component: {fileID: 2139720579}
+  - component: {fileID: 2139720582}
   m_Layer: 6
   m_Name: ghost (8)
   m_TagString: Untagged
@@ -15237,6 +16486,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2139720577}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2139720582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139720577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 1
+  isCelebrity: 0
+  baseScore: 1
 --- !u!1001 &3013875879630881900
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -166,6 +166,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f5fe04787788481489a5834155342946, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8317080526662424115}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f5fe04787788481489a5834155342946, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5403044850636362187}
   m_SourcePrefab: {fileID: 100100000, guid: f5fe04787788481489a5834155342946, type: 3}
 --- !u!1 &6118290087099004352 stripped
 GameObject:
@@ -217,3 +220,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5403044850636362187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6118290087099004352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 3
+  isCelebrity: 1
+  baseScore: 10

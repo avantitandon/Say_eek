@@ -190,6 +190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5563134530108996880}
   - component: {fileID: 2484505299256134017}
+  - component: {fileID: 5132892095741319424}
   m_Layer: 6
   m_Name: billy_puffles
   m_TagString: Untagged
@@ -236,6 +237,21 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 1.12
   m_Center: {x: -0.011, y: 0.7, z: 0}
+--- !u!114 &5132892095741319424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5080035975576119210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7307c101c8f925c4e83fcbe87d8e97d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 2
+  isCelebrity: 0
+  baseScore: 3
 --- !u!1 &6416525804959167549
 GameObject:
   m_ObjectHideFlags: 0
