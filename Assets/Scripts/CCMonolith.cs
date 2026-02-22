@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 
 // for saving screenshots
 using System.IO;
@@ -10,400 +11,486 @@ using System.IO;
 using TMPro;
 
 
+// for summing across lists
+using System.Linq;
 
-// Camera Controller Monolith
-// functionality still needs to be split into other components
-public class CameraControllerMonolith : MonoBehaviour
+
+
+namespace PlayerCamera
 {
-    [SerializeField] private Transform player;
-    [SerializeField] private float mouseSensitivity = 150f;
-    [SerializeField] private float minY = -35f;
-    [SerializeField] private float maxY = 60f;
-    [SerializeField] private ApertureShot apertureFx;
-    // audioSource;
+    // maps ghost id to data collected about it by the camera
+    using ScoreMap = Dictionary<int, HitData>;
 
-    private float xRotation;
-    private float yRotation;
-
-
-    public AudioClip shutter;
-    AudioSource cameraAudio;
-
-    public Camera playerCamera;
-    public Camera photoCamera;
-    public RenderTexture photort;
-
-    public float normalFov = 60f;
-    public float zoomFov = 50f;
-    public float zoomInTime = 0.15f;
-    public float zoomOutTime = 0.20f;
-    [Header("Camera Mesh")]
-    [SerializeField] private GameObject cameraMeshPrefab;
-    [SerializeField] private Vector3 cameraMeshLocalPosition = new Vector3(0.25f, -0.15f, 0.4f);
-    [SerializeField] private Vector3 cameraMeshLocalEuler = new Vector3(0f, 180f, 0f);
-    private GameObject cameraMeshInstance;
-
-    private float _playerFovVel;
-    private float _photoFovVel;
-    [Header("Photo Preview")]
-    [SerializeField] private RawImage photoPreview;
-    [SerializeField] private float previewDuration = 1f;
-    private Coroutine previewRoutine;
-    private Texture2D previewTexture;
-
-    public PanelScript panelScript;
-
-
-    InputAction lookAction;
-    InputAction zoomAction;
-
-    InputAction saveAction;
-    InputAction ghostAction;
-
-    bool ghostsOn = false;
-
-
-    public int photoScore = 0;
-    public GameObject scoreui;
-    public TMP_Text UI_text;
-
-
-    int ghostHit = 0;
-    int ghostScore = 0;
-
-    public LayerMask ignoreLayers;
-
-
-    [SerializeField] private GameObject hearts1;
-    [SerializeField] private GameObject hearts2;
-    [SerializeField] private GameObject hearts3;
-    [SerializeField] private GameObject backplate;
-
-
-
-    void Start()
+    // Camera Controller Monolith
+    // functionality still needs to be split into other components
+    public class Controller : MonoBehaviour
     {
-        cameraAudio = GetComponent<AudioSource>();
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        [SerializeField] private Transform player;
+        [SerializeField] private float mouseSensitivity = 150f;
+        [SerializeField] private float minY = -35f;
+        [SerializeField] private float maxY = 60f;
+        [SerializeField] private ApertureShot apertureFx;
+        // audioSource;
 
-        lookAction = InputSystem.actions.FindAction("Look");
-        zoomAction = InputSystem.actions.FindAction("Zoom");
-
-        saveAction = InputSystem.actions.FindAction("Interact");
-        ghostAction = InputSystem.actions.FindAction("GhostDbg");
-
-        playerCamera.fieldOfView = normalFov;
-        photoCamera.fieldOfView  = normalFov;
+        private float xRotation;
+        private float yRotation;
 
 
-        if (cameraMeshPrefab != null && playerCamera != null)
+        public AudioClip shutter;
+        AudioSource cameraAudio;
+
+        public Camera playerCamera;
+        public Camera photoCamera;
+        public RenderTexture photort;
+
+        public float normalFov = 60f;
+        public float zoomFov = 50f;
+        public float zoomInTime = 0.15f;
+        public float zoomOutTime = 0.20f;
+        [Header("Camera Mesh")]
+        [SerializeField] private GameObject cameraMeshPrefab;
+        [SerializeField] private Vector3 cameraMeshLocalPosition = new Vector3(0.25f, -0.15f, 0.4f);
+        [SerializeField] private Vector3 cameraMeshLocalEuler = new Vector3(0f, 180f, 0f);
+        private GameObject cameraMeshInstance;
+
+        private float _playerFovVel;
+        private float _photoFovVel;
+        [Header("Photo Preview")]
+        [SerializeField] private RawImage photoPreview;
+        [SerializeField] private float previewDuration = 1f;
+        private Coroutine previewRoutine;
+        private Texture2D previewTexture;
+
+        public PanelScript panelScript;
+
+
+        InputAction lookAction;
+        InputAction zoomAction;
+
+        InputAction saveAction;
+        InputAction ghostAction;
+
+        bool ghostsOn = false;
+
+
+        public int photoScore = 0;
+        public GameObject scoreui;
+        public TMP_Text UI_text;
+
+
+        int ghostHit = 0;
+        int ghostScore = 0;
+
+        public LayerMask ignoreLayers;
+
+
+        [SerializeField] private GameObject hearts1;
+        [SerializeField] private GameObject hearts2;
+        [SerializeField] private GameObject hearts3;
+        [SerializeField] private GameObject backplate;
+
+
+
+        void Start()
         {
-            cameraMeshInstance = Instantiate(cameraMeshPrefab, playerCamera.transform);
-            cameraMeshInstance.transform.localPosition = cameraMeshLocalPosition;
-            cameraMeshInstance.transform.localEulerAngles = cameraMeshLocalEuler;
-        }
+            cameraAudio = GetComponent<AudioSource>();
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
 
-        if (photoPreview != null)
-        {
-            photoPreview.texture = null;
-            photoPreview.gameObject.SetActive(false);
-        }
-        else
-        {
-            CreatePreviewUI();
-        }
-    }
+            lookAction = InputSystem.actions.FindAction("Look");
+            zoomAction = InputSystem.actions.FindAction("Zoom");
 
-    void LateUpdate()
-    {
-        //UI_text.text = "Last Photo Score: " + photoScore.ToString() + "\nGhost Hit: " + ghostScore.ToString();
-        UI_text.text = "Last Photo Score: " + ghostScore.ToString();
+            saveAction = InputSystem.actions.FindAction("Interact");
+            ghostAction = InputSystem.actions.FindAction("GhostDbg");
 
-        if (saveAction.WasPressedThisFrame())
-        {
-            SavePhoto();
-        }
+            playerCamera.fieldOfView = normalFov;
+            photoCamera.fieldOfView = normalFov;
 
-        if (ghostAction.WasPressedThisFrame())
-        {
-            if (!ghostsOn)
+
+            if (cameraMeshPrefab != null && playerCamera != null)
             {
-                playerCamera.cullingMask = 127;
-                ghostsOn = true;
+                cameraMeshInstance = Instantiate(cameraMeshPrefab, playerCamera.transform);
+                cameraMeshInstance.transform.localPosition = cameraMeshLocalPosition;
+                cameraMeshInstance.transform.localEulerAngles = cameraMeshLocalEuler;
+            }
+
+            if (photoPreview != null)
+            {
+                photoPreview.texture = null;
+                photoPreview.gameObject.SetActive(false);
             }
             else
             {
-                playerCamera.cullingMask = 63;
-                ghostsOn = false;
+                CreatePreviewUI();
             }
         }
 
-
-
-        Vector3 lookValue = lookAction.ReadValue<Vector2>();
-        float mouseX = lookValue.x * mouseSensitivity * Time.deltaTime;
-        float mouseY = lookValue.y * mouseSensitivity * Time.deltaTime;
-
-        bool zooming = zoomAction.IsPressed(); // hold zoom
-
-        float target = zooming ? zoomFov : normalFov;
-        float smoothTime = zooming ? zoomInTime : zoomOutTime;
-
-        playerCamera.fieldOfView = Mathf.SmoothDamp(
-            playerCamera.fieldOfView, target, ref _playerFovVel, smoothTime);
-
-        photoCamera.fieldOfView = Mathf.SmoothDamp(
-            photoCamera.fieldOfView, target, ref _photoFovVel, smoothTime);
-
-        yRotation += mouseX;
-        xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, minY, maxY);
-        transform.rotation = Quaternion.Euler(xRotation, yRotation, 0f);
-        transform.position = player.position + Vector3.up * 1.6f;
-    }
-
-
-    public Vector3 GetCameraForward()
-    {
-        Vector3 forward = transform.forward;
-        forward.y = 0;
-        return forward.normalized;
-    }
-    public Vector3 GetCameraRight()
-    {
-        Vector3 right = transform.right;
-        right.y = 0;
-        return right.normalized;
-    }
-
-
-
-    public int TakePhoto()
-    {
-        if (photoCamera.targetTexture != photort)
+        void LateUpdate()
         {
-            photoCamera.targetTexture = photort;
-        }
-        photoCamera.Render();
-        Debug.Log("Screenshot captured");
-        apertureFx?.PlayShutter();
-        cameraAudio.PlayOneShot(shutter);
+            //UI_text.text = "Last Photo Score: " + photoScore.ToString() + "\nGhost Hit: " + ghostScore.ToString();
+            UI_text.text = "Last Photo Score: " + ghostScore.ToString();
 
-
-        int score = 0;
-
-        int step = Screen.width / 30;
-        Debug.Log(step);
-        Debug.Log(Screen.width);
-        Debug.Log(Screen.height);
-
-        // needs to be recalculated for new camera position
-        Vector3 pos = new Vector3(0, 0, 0);
-        Vector3 center = new Vector3(Screen.width, Screen.height, 0);
-        float radius = Screen.width / 4;
-        int pixel = 0;
-        Ray ray;
-        RaycastHit hit;
-
-        while (pos.x < (Screen.width * 2) && pos.y < (Screen.height * 2))
-        {
-
-            ray = photoCamera.ScreenPointToRay(pos);
-            if (Physics.Raycast(ray, out hit, 1000f, layerMask: ~ignoreLayers))
+            if (saveAction.WasPressedThisFrame())
             {
+                SavePhoto();
+            }
 
-                // if we hit the ghost layer
-                if (hit.collider.gameObject.layer == 6)
+            if (ghostAction.WasPressedThisFrame())
+            {
+                if (!ghostsOn)
                 {
-                    if (hit.collider.gameObject.TryGetComponent<GhostController>(out GhostController ghost))
-                    {
-                        score = score + ghost.baseScore;
-                    }
-
-                    // legacy for ball ghost
-                    else if (hit.collider.gameObject.TryGetComponent<ballscript>(out ballscript ball))
-                    {
-                        score = score + 1;
-                        if (ball.spinning)
-                        {
-                            score = score + 2;
-                        }
-                    }
-
+                    playerCamera.cullingMask = 127;
+                    ghostsOn = true;
+                }
+                else
+                {
+                    playerCamera.cullingMask = 63;
+                    ghostsOn = false;
                 }
             }
 
 
-            // if we are near the center of the screen, reduce the step towards the next ray
-            // this increases density of rays, meaning more points.
-            if ((pos - center).magnitude < radius)
+
+            Vector3 lookValue = lookAction.ReadValue<Vector2>();
+            float mouseX = lookValue.x * mouseSensitivity * Time.deltaTime;
+            float mouseY = lookValue.y * mouseSensitivity * Time.deltaTime;
+
+            bool zooming = zoomAction.IsPressed(); // hold zoom
+
+            float target = zooming ? zoomFov : normalFov;
+            float smoothTime = zooming ? zoomInTime : zoomOutTime;
+
+            playerCamera.fieldOfView = Mathf.SmoothDamp(
+                playerCamera.fieldOfView, target, ref _playerFovVel, smoothTime);
+
+            photoCamera.fieldOfView = Mathf.SmoothDamp(
+                photoCamera.fieldOfView, target, ref _photoFovVel, smoothTime);
+
+            yRotation += mouseX;
+            xRotation -= mouseY;
+            xRotation = Mathf.Clamp(xRotation, minY, maxY);
+            transform.rotation = Quaternion.Euler(xRotation, yRotation, 0f);
+            transform.position = player.position + Vector3.up * 1.6f;
+        }
+
+
+        public Vector3 GetCameraForward()
+        {
+            Vector3 forward = transform.forward;
+            forward.y = 0;
+            return forward.normalized;
+        }
+        public Vector3 GetCameraRight()
+        {
+            Vector3 right = transform.right;
+            right.y = 0;
+            return right.normalized;
+        }
+
+
+
+        public int TakePhoto()
+        {
+
+            if (photoCamera.targetTexture != photort)
             {
-                //Debug.Log("centerhit");
-                pixel = pixel + (step / 3);
-                pos.x = pixel % (Screen.width * 2);
-                pos.y = step * (pixel / (Screen.width * 2));
+                photoCamera.targetTexture = photort;
+            }
+            photoCamera.Render();
+            //Debug.Log("Screenshot captured");
+            apertureFx?.PlayShutter();
+            cameraAudio.PlayOneShot(shutter);
+
+
+            int score = 0;
+            ScoreMap scoreMap = new ScoreMap();
+
+            int step = Screen.width / 30;
+            Debug.Log(step);
+            Debug.Log(Screen.width);
+            Debug.Log(Screen.height);
+
+            // needs to be recalculated for new camera position
+            Vector3 pos = new Vector3(0, 0, 0);
+            Vector3 center = new Vector3(Screen.width, Screen.height, 0);
+            float radius = Screen.width / 4;
+            int pixel = 0;
+            Ray ray;
+            RaycastHit hit;
+
+            while (pos.x < (Screen.width * 2) && pos.y < (Screen.height * 2))
+            {
+
+                ray = photoCamera.ScreenPointToRay(pos);
+                if (Physics.Raycast(ray, out hit, 1000f, layerMask: ~ignoreLayers))
+                {
+
+                    // if we hit the ghost layer
+                    if (hit.collider.gameObject.layer == 6)
+                    {
+                        if (hit.collider.gameObject.TryGetComponent<GhostController>(out GhostController ghost))
+                        {
+                            ProcessHit(scoreMap, ghost, pos);
+                        }
+
+                        // legacy for ball ghost
+                        else if (hit.collider.gameObject.TryGetComponent<ballscript>(out ballscript ball))
+                        {
+                            score = score + 1;
+                            if (ball.spinning)
+                            {
+                                score = score + 2;
+                            }
+                        }
+
+                    }
+                }
+
+
+                // if we are near the center of the screen, reduce the step towards the next ray
+                // this increases density of rays, meaning more points.
+                if ((pos - center).magnitude < radius)
+                {
+                    //Debug.Log("centerhit");
+                    pixel = pixel + (step / 3);
+                    pos.x = pixel % (Screen.width * 2);
+                    pos.y = step * (pixel / (Screen.width * 2));
+                }
+                else
+                {
+                    pixel = pixel + step;
+                    pos.x = pixel % (Screen.width * 2);
+                    pos.y = step * (pixel / (Screen.width * 2));
+                }
+
+            }
+
+
+            PenalizeProximity(scoreMap);
+
+            score = score + GetFinalScore(scoreMap);
+
+            //RaycastHit hit;
+
+            //if (Physics.Raycast(ray, out hit))
+            //{
+            //    if (hit.collider.gameObject.layer == 6)
+            //    {
+            //        ghostHit = 1;
+            //    }
+            //    else
+            //    {
+            //        ghostHit = 2;
+            //    }
+            //}
+            //else
+            //{
+            //    ghostHit = 3;
+            //}
+            ghostScore = score;
+
+            if (photoPreview != null)
+            {
+                if (previewRoutine != null)
+                {
+
+                    StopCoroutine(previewRoutine);
+                }
+                previewRoutine = StartCoroutine(ShowPreview());
+            }
+
+
+
+            return score;
+        }
+
+        public void SavePhoto()
+        {
+            SaveTextureToFileUtility.SaveRenderTextureToFile(photort, Application.dataPath + "/Screenshots/screenshot.png");
+
+            Texture2D screenshot = CapturePhotoTexture();
+
+            if (panelScript != null)
+            {
+                //Debug.Log("Calling DisplayScreenshot");
+                panelScript.DisplayScreenshot(screenshot);
             }
             else
             {
-                pixel = pixel + step;
-                pos.x = pixel % (Screen.width * 2);
-                pos.y = step * (pixel / (Screen.width * 2));
+                //Debug.LogError("panelScript is null! Assign it in the inspector.");
             }
-
         }
 
-
-        //RaycastHit hit;
-
-        //if (Physics.Raycast(ray, out hit))
-        //{
-        //    if (hit.collider.gameObject.layer == 6)
-        //    {
-        //        ghostHit = 1;
-        //    }
-        //    else
-        //    {
-        //        ghostHit = 2;
-        //    }
-        //}
-        //else
-        //{
-        //    ghostHit = 3;
-        //}
-        ghostScore = score;
-
-        if (photoPreview != null)
+        private Texture2D CapturePhotoTexture()
         {
-            if (previewRoutine != null)
+            if (photort == null)
             {
-
-                StopCoroutine(previewRoutine);
+                Debug.LogError("photort is null! Assign the RenderTexture in the inspector.");
+                return null;
             }
-            previewRoutine = StartCoroutine(ShowPreview());
+
+            Texture2D screenshot = new Texture2D(photort.width, photort.height, TextureFormat.RGB24, false);
+            RenderTexture previous = RenderTexture.active;
+            RenderTexture.active = photort;
+            screenshot.ReadPixels(new Rect(0, 0, photort.width, photort.height), 0, 0);
+            screenshot.Apply();
+            RenderTexture.active = previous;
+            return screenshot;
         }
 
-        
+        private IEnumerator ShowPreview()
+        {
+            EnsurePreviewTexture();
+            var previous = RenderTexture.active;
+            RenderTexture.active = photort;
+            previewTexture.ReadPixels(new Rect(0, 0, photort.width, photort.height), 0, 0);
+            previewTexture.Apply();
+            RenderTexture.active = previous;
+            photoPreview.texture = previewTexture;
 
-        return score;
+            photoPreview.gameObject.SetActive(true);
+            if (ghostScore > 600) { hearts1.SetActive(true); hearts2.SetActive(true); hearts3.SetActive(true); }
+            else if (ghostScore > 200) { hearts1.SetActive(true); hearts2.SetActive(true); hearts3.SetActive(false); }
+            else if (ghostScore > 50) { hearts1.SetActive(true); hearts2.SetActive(false); hearts3.SetActive(false); }
+            else { hearts1.SetActive(false); hearts2.SetActive(false); hearts3.SetActive(false); }
+            backplate.SetActive(true);
+
+            yield return new WaitForSecondsRealtime(previewDuration);
+
+            photoPreview.gameObject.SetActive(false);
+            hearts1.SetActive(false);
+            hearts2.SetActive(false);
+            hearts3.SetActive(false);
+            backplate.SetActive(false);
+
+            previewRoutine = null;
+        }
+
+        private void EnsurePreviewTexture()
+        {
+
+
+            if (photort == null)
+            {
+                return;
+            }
+
+            if (previewTexture != null && previewTexture.width == photort.width && previewTexture.height == photort.height)
+            {
+                return;
+            }
+
+            if (previewTexture != null)
+            {
+                Destroy(previewTexture);
+            }
+
+            previewTexture = new Texture2D(photort.width, photort.height, TextureFormat.RGB24, false);
+        }
+
+        private void CreatePreviewUI()
+        {
+            var canvasGO = new GameObject("PhotoPreviewCanvas", typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
+            var canvas = canvasGO.GetComponent<Canvas>();
+
+            canvasGO.transform.SetParent(scoreui.transform, false);
+
+            canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+
+            // want hearts appearing ontop
+            canvas.overrideSorting = true; // this canvas is a child of scoreui for now, so we need this
+            canvas.sortingOrder = 2;
+
+
+            var scaler = canvasGO.GetComponent<CanvasScaler>();
+
+            scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+            scaler.referenceResolution = new Vector2(1920f, 1080f);
+
+            var previewGO = new GameObject("PhotoPreview", typeof(RawImage));
+            previewGO.transform.SetParent(canvasGO.transform, false);
+
+            photoPreview = previewGO.GetComponent<RawImage>();
+
+            var rect = photoPreview.rectTransform;
+            rect.anchorMin = new Vector2(1f, 0f);
+            rect.anchorMax = new Vector2(1f, 0f);
+            rect.pivot = new Vector2(1f, 0f);
+            rect.sizeDelta = new Vector2(256f * 5, 144f * 5);
+            rect.anchoredPosition = new Vector2(570, -270);
+
+            photoPreview.texture = null;
+            photoPreview.gameObject.SetActive(false);
+        }
+
+
+        // accumulate points contributed from ghost
+        void ProcessHit(ScoreMap scoreMap, GhostController ghost, Vector3 pos)
+        {
+            // if the ghost has been seen before
+            if (!scoreMap.ContainsKey(ghost.ID))
+            {
+                // can cast here because pos is supposed to be ints
+                scoreMap.Add(ghost.ID, new HitData((int)pos.x));
+
+            }
+            HitData hitdata = scoreMap[ghost.ID];
+
+            if (pos.x > hitdata.maxX)
+            {
+                hitdata.maxX = (int) pos.x;
+            }
+            if (pos.x < hitdata.minX)
+            {
+                hitdata.minX = (int) pos.x;
+            }
+
+            // increment score
+            hitdata.score += ghost.baseScore;
+
+            scoreMap[ghost.ID] = hitdata;
+        }
+
+        // penalize proximity
+        void PenalizeProximity(ScoreMap scoreMap)
+        {
+            ScoreMap origmap = new ScoreMap(scoreMap);
+            foreach (var (id, data) in origmap)
+            {
+                HitData hitdata = data;
+                
+                if (hitdata.maxX - hitdata.minX > Screen.width * 2 * 0.5)
+                {
+                    Debug.Log(Screen.width * 2);
+                    Debug.Log(hitdata.minX);
+                    Debug.Log(hitdata.maxX);
+                    hitdata.score = (int) (hitdata.score * 0.1);
+                }
+                scoreMap[id] = hitdata;
+            }
+        }
+
+        // get final score
+        int GetFinalScore(ScoreMap scoreMap)
+        {
+            return scoreMap.Values.Sum(HitData => HitData.score);
+        }
     }
 
-    public void SavePhoto()
+    // ok so this works magically
+    // class/struct defined without monobehaviour has to come AFTER
+    // monobehaviour class
+    public struct HitData
     {
-        SaveTextureToFileUtility.SaveRenderTextureToFile(photort, Application.dataPath + "/Screenshots/screenshot.png");
-
-        Texture2D screenshot = CapturePhotoTexture();
-
-        if (panelScript != null)
+        public HitData(int x)
         {
-            Debug.Log("Calling DisplayScreenshot");
-            panelScript.DisplayScreenshot(screenshot);
-        }
-        else
-        {
-            Debug.LogError("panelScript is null! Assign it in the inspector.");
-        }
-    }
-
-    private Texture2D CapturePhotoTexture()
-    {
-        if (photort == null)
-        {
-            Debug.LogError("photort is null! Assign the RenderTexture in the inspector.");
-            return null;
+            minX = x;
+            maxX = x;
+            score = 0;
         }
 
-        Texture2D screenshot = new Texture2D(photort.width, photort.height, TextureFormat.RGB24, false);
-        RenderTexture previous = RenderTexture.active;
-        RenderTexture.active = photort;
-        screenshot.ReadPixels(new Rect(0, 0, photort.width, photort.height), 0, 0);
-        screenshot.Apply();
-        RenderTexture.active = previous;
-        return screenshot;
-    }
-
-    private IEnumerator ShowPreview()
-    {
-        EnsurePreviewTexture();
-        var previous = RenderTexture.active;
-        RenderTexture.active = photort;
-        previewTexture.ReadPixels(new Rect(0, 0, photort.width, photort.height), 0, 0);
-        previewTexture.Apply();
-        RenderTexture.active = previous;
-        photoPreview.texture = previewTexture;
-
-        photoPreview.gameObject.SetActive(true);
-        if (ghostScore > 600) { hearts1.SetActive(true); hearts2.SetActive(true); hearts3.SetActive(true); }
-        else if (ghostScore > 200) { hearts1.SetActive(true); hearts2.SetActive(true); hearts3.SetActive(false); }
-        else if (ghostScore > 50) { hearts1.SetActive(true); hearts2.SetActive(false); hearts3.SetActive(false); }
-        else { hearts1.SetActive(false); hearts2.SetActive(false); hearts3.SetActive(false); }
-        backplate.SetActive(true);
-
-        yield return new WaitForSecondsRealtime(previewDuration);
-
-        photoPreview.gameObject.SetActive(false);
-        hearts1.SetActive(false);
-        hearts2.SetActive(false);
-        hearts3.SetActive(false);
-        backplate.SetActive(false);
-
-        previewRoutine = null;
-    }
-
-    private void EnsurePreviewTexture()
-    {
-
-
-        if (photort == null)
-        {
-            return;
-        }
-
-        if (previewTexture != null && previewTexture.width == photort.width && previewTexture.height == photort.height)
-        {
-            return;
-        }
-
-        if (previewTexture != null)
-        {
-            Destroy(previewTexture);
-        }
-
-        previewTexture = new Texture2D(photort.width, photort.height, TextureFormat.RGB24, false);
-    }
-
-    private void CreatePreviewUI()
-    {
-        var canvasGO = new GameObject("PhotoPreviewCanvas", typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
-        var canvas = canvasGO.GetComponent<Canvas>();
-
-        canvasGO.transform.SetParent(scoreui.transform, false);
-
-        canvas.renderMode = RenderMode.ScreenSpaceOverlay;
-
-        // want hearts appearing ontop
-        canvas.overrideSorting = true; // this canvas is a child of scoreui for now, so we need this
-        canvas.sortingOrder = 2;
-
-
-        var scaler = canvasGO.GetComponent<CanvasScaler>();
-
-        scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
-        scaler.referenceResolution = new Vector2(1920f, 1080f);
-
-        var previewGO = new GameObject("PhotoPreview", typeof(RawImage));
-        previewGO.transform.SetParent(canvasGO.transform, false);
-
-        photoPreview = previewGO.GetComponent<RawImage>();
-
-        var rect = photoPreview.rectTransform;
-        rect.anchorMin = new Vector2(1f, 0f);
-        rect.anchorMax = new Vector2(1f, 0f);
-        rect.pivot = new Vector2(1f, 0f);
-        rect.sizeDelta = new Vector2(256f * 5, 144f * 5);
-        rect.anchoredPosition = new Vector2(570, -270);
-
-        photoPreview.texture = null;
-        photoPreview.gameObject.SetActive(false);
+        public int minX;
+        public int maxX;
+        public int score;
     }
 }

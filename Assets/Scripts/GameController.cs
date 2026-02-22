@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class GameController : MonoBehaviour
 {
 
-    [SerializeField] private CameraControllerMonolith cameraController;
+    [SerializeField] private PlayerCamera.Controller cameraController;
     [SerializeField] private EndUIController endUIController;
 
 
