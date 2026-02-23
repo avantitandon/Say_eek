@@ -44,3 +44,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e58c2fd2f0fa63d4c96543fa9fc719ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameController
+  cameraController: {fileID: 0}
+  endUIController: {fileID: 0}
+  camUpScript: {fileID: 0}
+  gameActive: 0
+  photosTaken: 0
+  scores: 
+  player: {fileID: 0}
+  camera: {fileID: 0}
+  debugOverlay: {fileID: 0}
+  gameUI: {fileID: 0}
+  endUI: {fileID: 0}
