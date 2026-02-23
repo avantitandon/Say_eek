@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private CameraControllerMonolith cameraController;
     [SerializeField] private EndUIController endUIController;
     [SerializeField] private PhoneUIController phoneUIController;
+    [SerializeField] private CameraUpScript camUp;          // gotta add camera animation before running, i cant add to prefab idk y
 
 
     public bool gameActive = false;
@@ -85,7 +86,7 @@ public class GameController : MonoBehaviour
 
         // take a photo
         // dont want to take a photo when clicking on the phone
-        if (photoAction.WasPressedThisFrame() && !isPhoneOpen)
+        if (photoAction.WasPressedThisFrame() && !isPhoneOpen && camUp.IsCameraUp())
         {
             curr_score = cameraController.TakePhoto();
         }

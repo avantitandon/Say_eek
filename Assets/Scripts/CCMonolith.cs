@@ -54,6 +54,11 @@ public class CameraControllerMonolith : MonoBehaviour
     public PanelScript panelScript;
     [SerializeField] private PhoneUIController phoneUIController;
 
+    [Header("Camera Pull-Up Animation")]
+    [SerializeField] private Animator cameraPullUpAnimator;
+    [SerializeField] private string cameraUpTrigger = "CameraUp";
+    private bool _zoomWasHeldLastFrame = false;
+
 
     InputAction lookAction;
     InputAction zoomAction;
@@ -102,6 +107,8 @@ public class CameraControllerMonolith : MonoBehaviour
             cameraMeshInstance = Instantiate(cameraMeshPrefab, playerCamera.transform);
             cameraMeshInstance.transform.localPosition = cameraMeshLocalPosition;
             cameraMeshInstance.transform.localEulerAngles = cameraMeshLocalEuler;
+            if (cameraPullUpAnimator == null)
+                cameraPullUpAnimator = cameraMeshInstance.GetComponentInChildren<Animator>();
         }
 
         if (photoPreview != null)
@@ -157,6 +164,13 @@ public class CameraControllerMonolith : MonoBehaviour
         float mouseY = lookValue.y * mouseSensitivity * Time.deltaTime;
 
         bool zooming = zoomAction.IsPressed(); // hold zoom
+        if (zooming && !_zoomWasHeldLastFrame)
+        {
+            if (cameraPullUpAnimator != null)
+                cameraPullUpAnimator.SetTrigger(cameraUpTrigger);
+        }
+
+        _zoomWasHeldLastFrame = zooming;
 
         float target = zooming ? zoomFov : normalFov;
         float smoothTime = zooming ? zoomInTime : zoomOutTime;
