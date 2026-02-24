@@ -84,7 +84,8 @@ public class GameController : MonoBehaviour
         int curr_score = 0;
 
         // take a photo
-        if (photoAction.WasPressedThisFrame())
+        // dont want to take a photo when clicking on the phone
+        if (photoAction.WasPressedThisFrame() && !isPhoneOpen)
         {
             curr_score = cameraController.TakePhoto();
         }
