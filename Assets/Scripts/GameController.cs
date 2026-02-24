@@ -84,10 +84,14 @@ public class GameController : MonoBehaviour
         // score of any photos taken this turn
         int curr_score = 0;
 
+
+        bool phototaken = false;
+
         // take a photo
         // dont want to take a photo when clicking on the phone
         if (photoAction.WasPressedThisFrame() && !isPhoneOpen && camUp.IsCameraUp())
         {
+            phototaken = true;
             curr_score = cameraController.TakePhoto();
         }
 
@@ -129,7 +133,7 @@ public class GameController : MonoBehaviour
             }
 
             // save photo score from this frame
-            if (photoAction.WasPressedThisFrame())
+            if (phototaken)
             {
                 scores[photosTaken] = curr_score;
                 photosTaken = photosTaken + 1;
