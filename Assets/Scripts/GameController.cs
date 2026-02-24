@@ -12,6 +12,11 @@ public class GameController : MonoBehaviour
 
     public bool gameActive = false;
 
+    // VARIABLES for the thingy 
+    [SerializeField] private float roundDurationSeconds = 60f; // keeping this a minute
+    // for alpha testing? // will change later
+    public float TimeRemainingSeconds {get;private set;} // curr value
+
     public const int MAX_PHOTOS = 10;
     public int photosTaken = 0;
     public int[] scores;
@@ -24,6 +29,8 @@ public class GameController : MonoBehaviour
     public GameObject endUI;
 
     private float endTime = 0;
+    // starting timestamp?
+    private float roundStartTime = 0;
 
 
     // a camera controller should take care of # of photos taken
@@ -64,10 +71,8 @@ public class GameController : MonoBehaviour
         phoneUIController.Initialize(
             () => endUI == null || !endUI.activeSelf);
 
-        // keep these 2 lines for prod builds
-        // auto starts the game
-        gameActive = true;
-        debugOverlay.SetActive(false);
+        // Martin im switching this into start round with added protection incase 
+        startRound();
     }
 
     // Update is called once per frame
@@ -107,16 +112,20 @@ public class GameController : MonoBehaviour
 
         if (!gameActive && startPressed && !endUI.activeSelf)
         {
-            gameActive = true;
-            debugOverlay.SetActive(false);
-            scores = new int[MAX_PHOTOS]; // garabage collection to do? maybe? could this have garbage?
-            photosTaken = 0;
-
+            startRound();
         }
 
         // if the game is on
         if (gameActive)
         {
+            // count remaining time here
+            TimeRemainingSeconds = Mathf.Max(0f, roundDurationSeconds - (Time.time - roundStartTime));
+            // if time is 0
+            if (TimeRemainingSeconds <= 0f)
+            {EndRound();
+                return;
+            }
+
             // save photo score from this frame
             if (photoAction.WasPressedThisFrame())
             {
@@ -127,13 +136,46 @@ public class GameController : MonoBehaviour
             // end the game if we have max photos
             if (photosTaken == MAX_PHOTOS)
             {
-                endUIController.SetScoreText(scores, photosTaken);
-
-                endTime = Time.time;
-                gameUI.SetActive(false);
-                endUI.SetActive(true);
-                gameActive = false;
+                EndRound();
             }
+        }
+    }
+
+    private void startRound()
+    {
+        // keep these 2 lines for prod builds
+        // auto starts the game
+        
+        gameActive = true;
+        debugOverlay.SetActive(false);
+        // null check 
+        if (gameUI != null)
+        {gameUI.SetActive(true);
+        }
+        if (endUI != null)
+        { endUI.SetActive(false);
+        }
+        scores = new int[MAX_PHOTOS];
+        photosTaken = 0;
+        roundStartTime = Time.time;
+        TimeRemainingSeconds = roundDurationSeconds;
+    }
+
+    private void EndRound()
+    {
+        gameActive = false;
+        endUIController.SetScoreText(scores, photosTaken);
+
+        endTime = Time.time;
+        if (gameUI!=null)
+        {
+            // adding proteccc
+            gameUI.SetActive(false);
+        }
+        if (endUI!=null)
+        {
+            // added proteccccc
+            endUI.SetActive(true);
         }
     }
 }
