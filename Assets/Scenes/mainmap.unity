@@ -9851,6 +9851,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330409573}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1333458078 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3951148059499550630, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+  m_PrefabInstance: {fileID: 523158212}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a4ba7b46329740229c7557947d56d0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &1334836007
 GameObject:
   m_ObjectHideFlags: 0
@@ -12031,6 +12042,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
+      propertyPath: camUp
+      value: 
+      objectReference: {fileID: 1333458078}
+    - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
       propertyPath: endUI
       value: 
       objectReference: {fileID: 1132812695}
@@ -12046,6 +12061,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 523158214}
+    - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
+      propertyPath: cameraObject
+      value: 
+      objectReference: {fileID: 523158213}
     - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
       propertyPath: debugOverlay
       value: 
