@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3484989405",
+    "Type": "Event",
+    "GUID": "{E7CED2FA-B1AF-418C-B406-B74FE94FDFBC}",
+    "Language": "SFX",
+    "Hash": "{996D2DAB-1FDA-4CA5-AC6B-30FA8897F329}",
+    "ObjectPath": "Stop_CameraZoomIn",
+    "ShortName": "Stop_CameraZoomIn",
+    "Path": "Event/Stop_CameraZoomIn.bnk",
+    "Events": [
+     {
+      "Id": "3484989405",
+      "Name": "Stop_CameraZoomIn",
+      "ObjectPath": "\\Events\\Default Work Unit\\Camera\\Stop_CameraZoomIn",
+      "GUID": "{E7CED2FA-B1AF-418C-B406-B74FE94FDFBC}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{C11F1901-ADA4-B2AE-9DA6-0279842B5532}"
+ }
+}

@@ -1,0 +1,60 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3080007124",
+    "Type": "Event",
+    "GUID": "{B40EF29A-E628-417A-B108-709FD07A281C}",
+    "Language": "SFX",
+    "Hash": "{44131398-A99A-B278-D2FE-029F36F89992}",
+    "ObjectPath": "Play_CameraViewClose",
+    "ShortName": "Play_CameraViewClose",
+    "Path": "Event/Play_CameraViewClose.bnk",
+    "Media": [
+     {
+      "Id": "758388812",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_camera_flap_close.wav",
+      "Path": "Media/758388812.wem",
+      "CachePath": "80/{80FE4807-AEED-4C23-697A-630C71DF6827}.wem"
+     },
+     {
+      "Id": "901638200",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_camera_flash_close.wav",
+      "Path": "Media/901638200.wem",
+      "CachePath": "81/{814A8DE4-4A7B-C3BC-399D-DAA9BB92FAAB}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3080007124",
+      "Name": "Play_CameraViewClose",
+      "ObjectPath": "\\Events\\Default Work Unit\\Camera\\Play_CameraViewClose",
+      "GUID": "{B40EF29A-E628-417A-B108-709FD07A281C}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.10458333",
+      "DurationMax": "0.10458333",
+      "MediaRefs": [
+       {
+        "Id": "758388812"
+       },
+       {
+        "Id": "901638200"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{BE3C29D7-E6B2-42EB-1A91-D06ADBC7968D}"
+ }
+}

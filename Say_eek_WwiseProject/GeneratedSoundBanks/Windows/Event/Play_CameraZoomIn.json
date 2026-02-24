@@ -1,0 +1,66 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "187507839",
+    "Type": "Event",
+    "GUID": "{DE61BDE4-9B02-4EFB-AFB8-55371B9240F7}",
+    "Language": "SFX",
+    "Hash": "{1C2AD809-5778-903C-D867-F5078FF56B47}",
+    "ObjectPath": "Play_CameraZoomIn",
+    "ShortName": "Play_CameraZoomIn",
+    "Path": "Event/Play_CameraZoomIn.bnk",
+    "Media": [
+     {
+      "Id": "399941450",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_camera_zoom_in_lp.wav",
+      "Path": "Media/399941450.wem",
+      "CachePath": "8E/{8EB4E11C-D652-BF84-3029-93884CE4FDAD}.wem"
+     },
+     {
+      "Id": "1062687532",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_camera_lens_05.wav",
+      "Path": "Media/1062687532.wem",
+      "CachePath": "71/{71A4811C-0E94-8630-4E14-0DD797517609}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "187507839",
+      "Name": "Play_CameraZoomIn",
+      "ObjectPath": "\\Events\\Default Work Unit\\Camera\\Play_CameraZoomIn",
+      "GUID": "{DE61BDE4-9B02-4EFB-AFB8-55371B9240F7}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "399941450"
+       },
+       {
+        "Id": "1062687532"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "965791921",
+      "Name": "CameraZoomPercentage",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\CameraZoomPercentage",
+      "GUID": "{FD305284-2D1E-4BAE-BC2E-C27C5F217B6A}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{209136E8-CF11-4F02-DE33-88125FA4400D}"
+ }
+}

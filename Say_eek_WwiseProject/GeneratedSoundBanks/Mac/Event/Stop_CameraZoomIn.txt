@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3484989405	Stop_CameraZoomIn			\Default Work Unit\Camera\Stop_CameraZoomIn	
+

@@ -1,0 +1,66 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1363090",
+    "Type": "Event",
+    "GUID": "{9C66E699-5929-46E0-9A3D-D0442981C4D9}",
+    "Language": "SFX",
+    "Hash": "{438EC663-B908-69AF-5D11-2D4CE6BD3D16}",
+    "ObjectPath": "Play_CameraZoomOut",
+    "ShortName": "Play_CameraZoomOut",
+    "Path": "Event/Play_CameraZoomOut.bnk",
+    "Media": [
+     {
+      "Id": "399941450",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_camera_zoom_in_lp.wav",
+      "Path": "Media/399941450.wem",
+      "CachePath": "8E/{8EB4E11C-D652-BF84-3029-93884CE4FDAD}.wem"
+     },
+     {
+      "Id": "1030966298",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_camera_lens_04.wav",
+      "Path": "Media/1030966298.wem",
+      "CachePath": "07/{07B89091-53EE-9751-D096-1F2E9256E3EE}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1363090",
+      "Name": "Play_CameraZoomOut",
+      "ObjectPath": "\\Events\\Default Work Unit\\Camera\\Play_CameraZoomOut",
+      "GUID": "{9C66E699-5929-46E0-9A3D-D0442981C4D9}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "399941450"
+       },
+       {
+        "Id": "1030966298"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "965791921",
+      "Name": "CameraZoomPercentage",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\CameraZoomPercentage",
+      "GUID": "{FD305284-2D1E-4BAE-BC2E-C27C5F217B6A}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{BB25E982-445C-FF15-B69D-40D4F59F2656}"
+ }
+}
