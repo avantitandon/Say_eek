@@ -241,6 +241,42 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_Ambience1" ID="{94406FF3-99F7-41E5-91D8-8EC64B06C772}">
+					<ChildrenList>
+						<Action Name="" ID="{3B77C85A-AAAC-46E6-83CF-98BD2C1D2C3D}" ShortID="960973079">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience1" ID="{866C19B0-188B-49B8-A9E1-35B908E7EF24}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Ambience1" ID="{606340F5-AB23-4EC3-82CD-1EEEA0E00FD7}">
+					<ChildrenList>
+						<Action Name="" ID="{B39BE7E3-7D5F-4271-9941-32C542CAE9DC}" ShortID="529746409">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience1" ID="{866C19B0-188B-49B8-A9E1-35B908E7EF24}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_amb_water_001" ID="{4345C293-4B11-429C-A5C2-F99CA1893650}">
+					<ChildrenList>
+						<Action Name="" ID="{B1BB6C27-C94A-4C73-B677-B3194B743406}" ShortID="797875793">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="amb_water_001" ID="{F6434004-6C47-4678-88EC-1B5640C084DB}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

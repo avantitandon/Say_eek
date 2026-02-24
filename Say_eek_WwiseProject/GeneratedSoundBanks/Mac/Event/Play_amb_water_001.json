@@ -1,0 +1,66 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "4200714142",
+    "Type": "Event",
+    "GUID": "{4345C293-4B11-429C-A5C2-F99CA1893650}",
+    "Language": "SFX",
+    "Hash": "{B0C8469D-9075-66E1-0D5C-79BF2CD610DB}",
+    "ObjectPath": "Play_amb_water_001",
+    "ShortName": "Play_amb_water_001",
+    "Path": "Event/Play_amb_water_001.bnk",
+    "Media": [
+     {
+      "Id": "1008516716",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "amb_water_001.wav",
+      "Path": "Media/1008516716.wem",
+      "CachePath": "21/{2155EBA0-011F-0C1E-B80C-1D86A6272EB4}.wem"
+     }
+    ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2178157228",
+       "Name": "fountain_reverb",
+       "ObjectPath": "\\Effects\\Default Work Unit\\fountain_reverb",
+       "GUID": "{59BEC06E-5385-456E-A2A8-5EA6ADEB2F15}",
+       "LibName": "Wwise Matrix Reverb",
+       "LibId": "7536643"
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "4200714142",
+      "Name": "Play_amb_water_001",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_amb_water_001",
+      "GUID": "{4345C293-4B11-429C-A5C2-F99CA1893650}",
+      "MaxAttenuation": "75",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "1008516716"
+       }
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2178157228"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "FileHash": "{55B25E7C-BCFE-CA5A-622F-4CCE76619208}"
+ }
+}

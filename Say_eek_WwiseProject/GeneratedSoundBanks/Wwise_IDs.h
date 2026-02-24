@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_AMB_WATER_001 = 4200714142U;
+        static const AkUniqueID PLAY_AMBIENCE1 = 1117071627U;
         static const AkUniqueID PLAY_CAMERACAPTURE = 3730852459U;
         static const AkUniqueID PLAY_CAMERAVIEWCLOSE = 3080007124U;
         static const AkUniqueID PLAY_CAMERAVIEWOPEN = 2617086320U;
@@ -20,6 +22,7 @@ namespace AK
         static const AkUniqueID PLAY_CAMERAZOOMOUT = 1363090U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_MUS_THEME1_4_4_70BPM_LP = 2317739990U;
+        static const AkUniqueID STOP_AMBIENCE1 = 3294285673U;
         static const AkUniqueID STOP_CAMERAZOOMIN = 3484989405U;
         static const AkUniqueID STOP_CAMERAZOOMOUT = 3252179076U;
         static const AkUniqueID STOP_FOOTSTEPS = 2963349357U;
