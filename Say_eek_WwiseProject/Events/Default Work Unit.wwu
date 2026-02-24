@@ -3,31 +3,193 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{AF0A40B9-1457-45DC-90D3-30139620BE61}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_FlashBulb" ID="{E4BCC9E2-1B16-4B3D-A6E9-7A3E34F7C358}">
+				<Folder Name="Camera" ID="{3C7943FB-1691-41CB-A701-D2BAE5147C00}" ShortID="817001139">
 					<ChildrenList>
-						<Action Name="" ID="{BA399435-9997-4E74-ADF7-E5480A44D996}" ShortID="1000848013">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="FlashBulb" ID="{23FE7C02-43D4-4285-A329-B3FFA7CC0483}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{9A2E77D3-1E69-4A5A-997E-B6BEE8A84BED}" ShortID="386968381">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="FlashBulb" ID="{23FE7C02-43D4-4285-A329-B3FFA7CC0483}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{642EA8CD-F613-41BA-949B-7D048C3F3BE2}" ShortID="347073948">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="sfx_camera_shutter" ID="{6A930ADA-2386-47B3-B7D9-359457D5D575}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Play_CameraCapture" ID="{E4BCC9E2-1B16-4B3D-A6E9-7A3E34F7C358}">
+							<ChildrenList>
+								<Action Name="" ID="{BA399435-9997-4E74-ADF7-E5480A44D996}" ShortID="1000848013">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FlashBulb" ID="{23FE7C02-43D4-4285-A329-B3FFA7CC0483}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{642EA8CD-F613-41BA-949B-7D048C3F3BE2}" ShortID="347073948">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_camera_shutter" ID="{6A930ADA-2386-47B3-B7D9-359457D5D575}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EE5D5C3D-7504-4B17-93ED-B88B5DAF6779}" ShortID="90589297">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_camera_charge_nl" ID="{C57F2224-F7D8-470A-A339-CB6F9971AE22}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_CameraViewClose" ID="{B40EF29A-E628-417A-B108-709FD07A281C}">
+							<ChildrenList>
+								<Action Name="" ID="{3BCBDD2F-421D-4AA6-AE44-99618F3DF822}" ShortID="134536171">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_camera_flap_close" ID="{C145F3C3-558A-4F0C-8F30-5117A2DF451A}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4F5E95DF-25C4-45A7-9457-0A268A7C6CD0}" ShortID="303009185">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_camera_flash_close" ID="{50A7FEBD-8CF1-4BD1-BC30-30018278EDAD}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_CameraViewOpen" ID="{F2AE1400-9F3A-4BBC-9233-392C041395CF}">
+							<ChildrenList>
+								<Action Name="" ID="{C7B3DB76-0C53-4E2E-B813-4690E45949C3}" ShortID="113840667">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_camera_flash_open" ID="{C2829023-36AB-4CB2-B9AE-57DD59C87C15}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{035004BB-5FAB-40EF-8505-EF306130EA0F}" ShortID="1015114381">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.25"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_camera_view_beeps" ID="{9A73F017-E5FF-4004-AF8E-5D955DD9DF19}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_CameraZoomIn" ID="{DE61BDE4-9B02-4EFB-AFB8-55371B9240F7}">
+							<ChildrenList>
+								<Action Name="" ID="{F9A0DCFA-1F18-406B-A4FC-F8D720358DE2}" ShortID="128194533">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_camera_zoom_lp" ID="{329F30D3-1C77-4B47-A3BC-FC2344A2D783}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8102D250-3F60-49E7-A17C-FCAE72FBEB26}" ShortID="140795616">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_camera_lens_05" ID="{7E6083D1-49F3-4CE8-AF3E-A4D49FEFAEEE}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_CameraZoomOut" ID="{9C66E699-5929-46E0-9A3D-D0442981C4D9}">
+							<ChildrenList>
+								<Action Name="" ID="{1307F8E6-9BD4-4292-B39B-2D538D9C0FD1}" ShortID="516663081">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_camera_zoom_lp" ID="{329F30D3-1C77-4B47-A3BC-FC2344A2D783}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8962E906-2C57-41E6-AE80-ADCE6903C03B}" ShortID="319896173">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_camera_lens_04" ID="{0EF90611-75F7-404C-A597-EB83D9C56827}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_CameraZoomOut" ID="{5F1CB558-F1CC-49F8-9D5A-630F18B483B2}">
+							<ChildrenList>
+								<Action Name="" ID="{5A9E9402-7676-4A2F-A147-4E4D46121B9D}" ShortID="889566403">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_camera_zoom_lp" ID="{329F30D3-1C77-4B47-A3BC-FC2344A2D783}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5DB51E68-C0A6-434D-B900-C5E2A7F6DDED}" ShortID="173303617">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_camera_lens_04" ID="{0EF90611-75F7-404C-A597-EB83D9C56827}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_CameraZoomIn" ID="{E7CED2FA-B1AF-418C-B406-B74FE94FDFBC}">
+							<ChildrenList>
+								<Action Name="" ID="{FE412E67-8E77-4923-AB2E-39DA2E7AC241}" ShortID="794174273">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_camera_zoom_lp" ID="{329F30D3-1C77-4B47-A3BC-FC2344A2D783}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{867D0F92-440F-445D-A8D3-E5ED228BEB76}" ShortID="875453078">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_camera_lens_05" ID="{7E6083D1-49F3-4CE8-AF3E-A4D49FEFAEEE}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
+				<Folder Name="Footsteps" ID="{7CD74B49-DE5A-4FB7-AD33-6D1F77C837DA}" ShortID="774031364">
+					<ChildrenList>
+						<Event Name="Play_Footsteps" ID="{C588512F-4B98-4DB1-9B8E-281CA20F5B31}">
+							<ChildrenList>
+								<Action Name="" ID="{C5D0DB8D-252D-4FCD-AA38-E83984D23C57}" ShortID="789924020">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FootstepsDirt" ID="{8931990B-0FC3-4730-9912-A17A571934C3}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C6AC0664-9D52-45CF-9131-A3CE3D9A3A14}" ShortID="390924081">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FootstepsStone" ID="{1BD4DA99-8E1C-4F3D-8552-137A9464BC1A}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C0DD23A2-3B2A-4777-9A61-D9E40A07C544}" ShortID="497619625">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FootstepsLeaves" ID="{A28494D8-938E-4DE1-BC96-F4946E4562A3}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

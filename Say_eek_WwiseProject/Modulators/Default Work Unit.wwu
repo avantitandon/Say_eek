@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C6C1152C-9AB3-4C83-8C4F-E53CD0FFB980}" SchemaVersion="133">
 	<Modulators>
-		<WorkUnit Name="Default Work Unit" ID="{C6C1152C-9AB3-4C83-8C4F-E53CD0FFB980}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C6C1152C-9AB3-4C83-8C4F-E53CD0FFB980}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorEnvelope Name="CameraZoomPitch" ID="{A0E2A457-ADA2-4606-AF86-7B30BCA66375}" ShortID="1016560306"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Modulators>
 </WwiseDocument>

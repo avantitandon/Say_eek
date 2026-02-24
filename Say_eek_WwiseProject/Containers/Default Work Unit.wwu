@@ -5,17 +5,9 @@
 			<ChildrenList>
 				<Folder Name="Camera" ID="{90C397D5-78C0-49DD-9786-3F5F9D82331B}" ShortID="223871659">
 					<ChildrenList>
-						<RandomSequenceContainer Name="FlashBulb" ID="{23FE7C02-43D4-4285-A329-B3FFA7CC0483}" ShortID="92315884">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-								</Reference>
-							</ReferenceList>
+						<Folder Name="Capture" ID="{13D09587-57F1-400A-998F-04C375E2A6FF}" ShortID="716282874">
 							<ChildrenList>
-								<Sound Name="sfx_camera_flashBulb-001" ID="{37A1F036-8AD0-40E0-BD3E-CE2AAB5CADF7}" ShortID="569908938">
+								<RandomSequenceContainer Name="FlashBulb" ID="{23FE7C02-43D4-4285-A329-B3FFA7CC0483}" ShortID="92315884">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
@@ -25,19 +17,131 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="sfx_camera_flashBulb-001" ID="{59EA3FDB-8847-41B4-BE42-E3B54882FD2D}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_camera_flashBulb-001.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="989641648"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<Sound Name="sfx_camera_flashBulb-001" ID="{37A1F036-8AD0-40E0-BD3E-CE2AAB5CADF7}" ShortID="569908938">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_camera_flashBulb-001" ID="{59EA3FDB-8847-41B4-BE42-E3B54882FD2D}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_camera_flashBulb-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="989641648"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_camera_flashBulb-001" ID="{59EA3FDB-8847-41B4-BE42-E3B54882FD2D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_camera_flashBulb-002" ID="{6FE14F69-57A8-43A7-ACB5-43B8C4E0B9A0}" ShortID="792621222">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_camera_flashBulb-002" ID="{2C2DF07F-72FB-4C4C-9D2C-DE61DCB6E36A}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_camera_flashBulb-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="170753148"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_camera_flashBulb-002" ID="{2C2DF07F-72FB-4C4C-9D2C-DE61DCB6E36A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_camera_flashBulb-003" ID="{5B6CA42F-456E-4828-A62A-668B8EBA756C}" ShortID="348576994">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_camera_flashBulb-003" ID="{857B7FD3-DB72-4924-97EB-E68767CC08B9}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00379456343120849"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>sfx_camera_flashBulb-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1057636670"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_camera_flashBulb-003" ID="{857B7FD3-DB72-4924-97EB-E68767CC08B9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_camera_flashBulb-004" ID="{B83E6E84-6880-4D69-A677-31F9E0F95CD2}" ShortID="362610818">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_camera_flashBulb-004" ID="{9C7FE5FF-58E8-4F3C-9F4D-F0F57D04BEE6}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_camera_flashBulb-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="661682384"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_camera_flashBulb-004" ID="{9C7FE5FF-58E8-4F3C-9F4D-F0F57D04BEE6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_camera_flashBulb-005" ID="{34830BA0-A188-4F7B-876F-EC964647AF91}" ShortID="495761149">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_camera_flashBulb-005" ID="{936B9B68-5010-4235-92C7-E1C87512BA6E}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_camera_flashBulb-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="608407045"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_camera_flashBulb-005" ID="{936B9B68-5010-4235-92C7-E1C87512BA6E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_camera_flashBulb-001" ID="{59EA3FDB-8847-41B4-BE42-E3B54882FD2D}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_camera_flashBulb-002" ID="{6FE14F69-57A8-43A7-ACB5-43B8C4E0B9A0}" ShortID="792621222">
+								</RandomSequenceContainer>
+								<Sound Name="sfx_camera_charge_nl" ID="{C57F2224-F7D8-470A-A339-CB6F9971AE22}" ShortID="914956658">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-19</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
@@ -47,46 +151,24 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="sfx_camera_flashBulb-002" ID="{2C2DF07F-72FB-4C4C-9D2C-DE61DCB6E36A}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_camera_flashBulb-002.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="170753148"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_camera_flashBulb-002" ID="{2C2DF07F-72FB-4C4C-9D2C-DE61DCB6E36A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_camera_flashBulb-003" ID="{5B6CA42F-456E-4828-A62A-668B8EBA756C}" ShortID="348576994">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_camera_flashBulb-003" ID="{857B7FD3-DB72-4924-97EB-E68767CC08B9}">
+										<AudioFileSource Name="sfx_camera_charge_nl" ID="{046C4947-B66D-45F5-86F6-67ED25360263}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.00379456343120849"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.20022297860171"/>
 												<Property Name="LoopBegin" Type="Real64" Value="0"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>sfx_camera_flashBulb-003.wav</AudioFile>
+											<AudioFile>sfx_camera_charge_nl.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="1057636670"/>
+												<MediaID ID="334851992"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="sfx_camera_flashBulb-003" ID="{857B7FD3-DB72-4924-97EB-E68767CC08B9}" Platform="Linked"/>
+										<ActiveSource Name="sfx_camera_charge_nl" ID="{046C4947-B66D-45F5-86F6-67ED25360263}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="sfx_camera_flashBulb-004" ID="{B83E6E84-6880-4D69-A677-31F9E0F95CD2}" ShortID="362610818">
+								<Sound Name="sfx_camera_shutter" ID="{6A930ADA-2386-47B3-B7D9-359457D5D575}" ShortID="925811734">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
@@ -96,43 +178,306 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="sfx_camera_flashBulb-004" ID="{9C7FE5FF-58E8-4F3C-9F4D-F0F57D04BEE6}">
+										<AudioFileSource Name="sfx_camera_shutter" ID="{4ECA41A7-55E7-4497-A351-0D4AC668FD8E}">
 											<Language>SFX</Language>
-											<AudioFile>sfx_camera_flashBulb-004.wav</AudioFile>
+											<AudioFile>sfx_camera_shutter.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="661682384"/>
+												<MediaID ID="79997468"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="sfx_camera_flashBulb-004" ID="{9C7FE5FF-58E8-4F3C-9F4D-F0F57D04BEE6}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_camera_flashBulb-005" ID="{34830BA0-A188-4F7B-876F-EC964647AF91}" ShortID="495761149">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_camera_flashBulb-005" ID="{936B9B68-5010-4235-92C7-E1C87512BA6E}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_camera_flashBulb-005.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="608407045"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_camera_flashBulb-005" ID="{936B9B68-5010-4235-92C7-E1C87512BA6E}" Platform="Linked"/>
+										<ActiveSource Name="sfx_camera_shutter" ID="{4ECA41A7-55E7-4497-A351-0D4AC668FD8E}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
-						</RandomSequenceContainer>
-						<Sound Name="sfx_camera_shutter" ID="{6A930ADA-2386-47B3-B7D9-359457D5D575}" ShortID="925811734">
+						</Folder>
+						<Folder Name="ViewOpen" ID="{FCC4E611-92C4-4406-8ACB-C7C2BAF7FD3E}" ShortID="941559566">
+							<ChildrenList>
+								<Sound Name="sfx_camera_view_beeps" ID="{9A73F017-E5FF-4004-AF8E-5D955DD9DF19}" ShortID="832690368">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-17</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_camera_view_beeps" ID="{CC139CBA-743F-4860-B495-7A1B11447706}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_camera_view_beeps.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="435627783"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_camera_view_beeps" ID="{CC139CBA-743F-4860-B495-7A1B11447706}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_camera_flash_open" ID="{C2829023-36AB-4CB2-B9AE-57DD59C87C15}" ShortID="788000736">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_camera_flash_open" ID="{B56FAEA9-39A9-4FF4-803F-8D126A32CD75}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.0209417346964382"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_camera_flash_open.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1063289208"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_camera_flash_open" ID="{B56FAEA9-39A9-4FF4-803F-8D126A32CD75}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="ViewClose" ID="{FFBDAE0D-8929-48C5-9E1A-D0249A489800}" ShortID="814563187">
+							<ChildrenList>
+								<Sound Name="sfx_camera_flash_close" ID="{50A7FEBD-8CF1-4BD1-BC30-30018278EDAD}" ShortID="708949234">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_camera_flash_close" ID="{D6215053-1061-490B-BC7B-A0C673EE58E8}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_camera_flash_close.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="901638200"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_camera_flash_close" ID="{D6215053-1061-490B-BC7B-A0C673EE58E8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_camera_flap_close" ID="{C145F3C3-558A-4F0C-8F30-5117A2DF451A}" ShortID="477565886">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_camera_flap_close" ID="{A387F660-2B7C-4E8A-B147-50A4483F72D3}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_camera_flap_close.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="758388812"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_camera_flap_close" ID="{A387F660-2B7C-4E8A-B147-50A4483F72D3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Zoom" ID="{B6D3273F-9F5B-4A1F-8CA3-4839EA5C4784}" ShortID="243227754">
+							<ChildrenList>
+								<Sound Name="sfx_camera_zoom_lp" ID="{329F30D3-1C77-4B47-A3BC-FC2344A2D783}" ShortID="709829543">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-17</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_camera_zoom_in_lp" ID="{DA397E0D-C9AB-4721-B731-A818B7CA1F69}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0958803916613913"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.123716634401795"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_camera_zoom_in_lp.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="399941450"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<RTPC Name="" ID="{924C6DC9-AD7C-4052-A2F8-AE2B65B91053}" ShortID="86113979">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="CameraZoomPercentage" ID="{FD305284-2D1E-4BAE-BC2E-C27C5F217B6A}" WorkUnitID="{802E5EDB-ADCF-44E6-915D-2040187550B2}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{099DAC63-F0E3-4289-B28D-108F0390C2A4}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>193</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_camera_zoom_in_lp" ID="{DA397E0D-C9AB-4721-B731-A818B7CA1F69}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_camera_lens_05" ID="{7E6083D1-49F3-4CE8-AF3E-A4D49FEFAEEE}" ShortID="916525943">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-17</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_camera_lens_05" ID="{30E5F7D3-19BD-4ABB-9424-C83EF6039E6B}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.147266427104723"/>
+												<Property Name="LoopEnd" Type="Real64" Value="0.291067761806982"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_camera_lens_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1062687532"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_camera_lens_05" ID="{30E5F7D3-19BD-4ABB-9424-C83EF6039E6B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_camera_lens_04" ID="{0EF90611-75F7-404C-A597-EB83D9C56827}" ShortID="228069656">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_camera_lens_04" ID="{1FD129D8-6CC5-4092-AE44-3AEC2CC4DC0D}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.117846901606387"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.311033014146356"/>
+												<Property Name="LoopEnd" Type="Real64" Value="0.529139314435632"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_camera_lens_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1030966298"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_camera_lens_04" ID="{1FD129D8-6CC5-4092-AE44-3AEC2CC4DC0D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Natural Ambience" ID="{33F2C755-A69E-44CB-8519-8F0ED1772D6D}" ShortID="100013608"/>
+				<Folder Name="Player Footsteps" ID="{CC297412-5B01-49F0-83F5-15E8243942F9}" ShortID="984278196">
+					<ChildrenList>
+						<RandomSequenceContainer Name="FootstepsStone" ID="{1BD4DA99-8E1C-4F3D-8552-137A9464BC1A}" ShortID="960347493">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{FE05EA8B-8CF2-4FC9-8EC9-FD32D346E3AC}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.4"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
@@ -142,23 +487,178 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="sfx_camera_shutter" ID="{4ECA41A7-55E7-4497-A351-0D4AC668FD8E}">
-									<Language>SFX</Language>
-									<AudioFile>sfx_camera_shutter.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="79997468"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="sfx_footstep_stony_nl_01" ID="{824DF15B-3DA0-419F-B3D3-C72109A017BE}" ShortID="916086444">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_footstep_stony_nl_01" ID="{3A511FF1-635D-4A8A-BC8B-9A5FD39CC8B1}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_footstep_stony_nl_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="404653251"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_footstep_stony_nl_01" ID="{3A511FF1-635D-4A8A-BC8B-9A5FD39CC8B1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_footstep_stony_nl_02" ID="{29A50BC9-F24E-4CDC-8C0A-2B6F8A69C863}" ShortID="416548269">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_footstep_stony_nl_02" ID="{F5F22444-4657-4348-81DE-781BD9830470}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_footstep_stony_nl_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="98312570"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_footstep_stony_nl_02" ID="{F5F22444-4657-4348-81DE-781BD9830470}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_footstep_stony_nl_03" ID="{33C9E924-3123-4050-950A-704BB072CC6D}" ShortID="239008373">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_footstep_stony_nl_03" ID="{1ABCC682-794F-4876-A00F-4CDCC5ECE4BF}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_footstep_stony_nl_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="787841457"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_footstep_stony_nl_03" ID="{1ABCC682-794F-4876-A00F-4CDCC5ECE4BF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_footstep_stony_nl_04" ID="{5E60E12B-89E3-4447-872D-579AC1B98685}" ShortID="593480121">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_footstep_stony_nl_04" ID="{EBA18A2A-52B5-43E3-A415-1039A7640562}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_footstep_stony_nl_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="692004553"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_footstep_stony_nl_04" ID="{EBA18A2A-52B5-43E3-A415-1039A7640562}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_footstep_stony_nl_05" ID="{01297293-E4E4-4BFC-8C60-BA738F9FDF9D}" ShortID="519038004">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_footstep_stony_nl_05" ID="{D018C502-B946-44F0-A150-D182478E990F}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_footstep_stony_nl_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="558416445"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_footstep_stony_nl_05" ID="{D018C502-B946-44F0-A150-D182478E990F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_footstep_stony_nl_06" ID="{C74A2DE3-67C1-40DF-B6E6-26B1EEC623E6}" ShortID="476661716">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_footstep_stony_nl_06" ID="{630F31C9-3FF0-48AB-9329-97206497BE22}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_footstep_stony_nl_06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="725283265"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_footstep_stony_nl_06" ID="{630F31C9-3FF0-48AB-9329-97206497BE22}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_footstep_stony_nl_07" ID="{5FB28AB7-7EF3-492C-8461-40204A0865A4}" ShortID="355059067">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_footstep_stony_nl_07" ID="{D6E53C1E-1D03-4F17-B244-A2C5918A207C}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_footstep_stony_nl_07.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="653789722"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_footstep_stony_nl_07" ID="{D6E53C1E-1D03-4F17-B244-A2C5918A207C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="sfx_camera_shutter" ID="{4ECA41A7-55E7-4497-A351-0D4AC668FD8E}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="sfx_camera_charge_nl" ID="{C57F2224-F7D8-470A-A339-CB6F9971AE22}" ShortID="914956658">
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="FootstepsDirt" ID="{8931990B-0FC3-4730-9912-A17A571934C3}" ShortID="642384294">
 							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-680</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.4"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-12</Value>
+										<Value>-13</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -171,18 +671,391 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="sfx_camera_charge_nl" ID="{046C4947-B66D-45F5-86F6-67ED25360263}">
-									<Language>SFX</Language>
-									<AudioFile>sfx_camera_charge_nl.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="334851992"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="sfx_footstep_dirt_nl-001" ID="{6F3737AD-920B-4D3F-AEBA-8FCE478C14D6}" ShortID="711551872">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_footstep_dirt_nl-001" ID="{396AE958-BE14-408C-83EF-BC6FE8A88BCB}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_footstep_dirt_nl-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="174481025"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_footstep_dirt_nl-001" ID="{396AE958-BE14-408C-83EF-BC6FE8A88BCB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_footstep_dirt_nl-002" ID="{E8D57F90-7AD9-4964-A3E2-B8F819DB1D7D}" ShortID="549967187">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_footstep_dirt_nl-002" ID="{3E184BBB-1DAA-4E4E-B993-054CD5DA0766}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_footstep_dirt_nl-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="722238843"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_footstep_dirt_nl-002" ID="{3E184BBB-1DAA-4E4E-B993-054CD5DA0766}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_footstep_dirt_nl-003" ID="{BD0AD666-B7DC-492D-8381-055AD39F6C8B}" ShortID="624166014">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_footstep_dirt_nl-003" ID="{BA20F58A-DC3E-45FE-AFA9-8445233A4D1E}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_footstep_dirt_nl-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="344453596"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_footstep_dirt_nl-003" ID="{BA20F58A-DC3E-45FE-AFA9-8445233A4D1E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_footstep_dirt_nl-004" ID="{CCFECA30-2D39-4280-9F26-8C09DB9BC1BB}" ShortID="858586275">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_footstep_dirt_nl-004" ID="{F5414CFA-328E-47A1-BA79-0FFBEB4A1F62}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_footstep_dirt_nl-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="852914401"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_footstep_dirt_nl-004" ID="{F5414CFA-328E-47A1-BA79-0FFBEB4A1F62}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_footstep_dirt_nl-005" ID="{0A7645CA-E93E-49D2-86DB-C8E5D774882C}" ShortID="629676006">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_footstep_dirt_nl-005" ID="{6F29C0BE-E4A1-446F-85A3-A1C073262D6E}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_footstep_dirt_nl-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="85671713"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_footstep_dirt_nl-005" ID="{6F29C0BE-E4A1-446F-85A3-A1C073262D6E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_footstep_dirt_nl-006" ID="{674B2D99-2F2D-403D-8EEE-B0C4439DC8D9}" ShortID="165206240">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_footstep_dirt_nl-006" ID="{9BFCF284-85B1-49ED-B822-D631E11A5F52}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_footstep_dirt_nl-006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="741003922"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_footstep_dirt_nl-006" ID="{9BFCF284-85B1-49ED-B822-D631E11A5F52}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_footstep_dirt_nl-007" ID="{EE54825C-15F4-4D33-8FBC-AE25200B9233}" ShortID="610413324">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_footstep_dirt_nl-007" ID="{19085B2D-D23C-4DF0-99D9-C14D168284FA}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_footstep_dirt_nl-007.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="659140263"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_footstep_dirt_nl-007" ID="{19085B2D-D23C-4DF0-99D9-C14D168284FA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="sfx_camera_charge_nl" ID="{046C4947-B66D-45F5-86F6-67ED25360263}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="FootstepsLeaves" ID="{A28494D8-938E-4DE1-BC96-F4946E4562A3}" ShortID="417449861">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-770</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.4"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{81AFBAD6-AC4E-4E8B-A0AE-E385FA4D6171}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-16"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_footstep_leaves_nl_01" ID="{5C8631D1-6F37-4FD4-9FE5-9DCBB9EF152E}" ShortID="330652897">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_footstep_leaves_nl_01" ID="{FF29E682-390D-4AA9-8534-E1EC989F44B7}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.737958333333333"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_footstep_leaves_nl_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="671572995"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_footstep_leaves_nl_01" ID="{FF29E682-390D-4AA9-8534-E1EC989F44B7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_footstep_leaves_nl_02" ID="{277B6CD3-A559-4DCC-8BB8-E806592C48D9}" ShortID="749977056">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_footstep_leaves_nl_02" ID="{342DE59D-291B-4958-B8AF-9E8E1FAF4E89}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.6908125"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_footstep_leaves_nl_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="952479663"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_footstep_leaves_nl_02" ID="{342DE59D-291B-4958-B8AF-9E8E1FAF4E89}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_footstep_leaves_nl_03" ID="{B890DE8C-8987-46FC-A4B9-28ABC4D7E268}" ShortID="342835492">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_footstep_leaves_nl_03" ID="{3D1893EA-8A8C-42FF-B06D-BC00EFBF7F9E}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.767770833333333"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_footstep_leaves_nl_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="8893099"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_footstep_leaves_nl_03" ID="{3D1893EA-8A8C-42FF-B06D-BC00EFBF7F9E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_footstep_leaves_nl_04" ID="{48FBAA29-98F0-42DC-950A-51B725A4E862}" ShortID="755664141">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_footstep_leaves_nl_04" ID="{A64A60C4-15EC-4C96-BE90-CC6C5979A82A}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.767666666666667"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_footstep_leaves_nl_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="895363010"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_footstep_leaves_nl_04" ID="{A64A60C4-15EC-4C96-BE90-CC6C5979A82A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_footstep_leaves_nl_05" ID="{25E2A622-3CAC-4D50-A81A-A66D9D3579CD}" ShortID="605119699">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_footstep_leaves_nl_05" ID="{306C25D0-5DCA-4C2B-AAA4-6A34BA852CF8}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.834354166666667"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_footstep_leaves_nl_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="83740562"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_footstep_leaves_nl_05" ID="{306C25D0-5DCA-4C2B-AAA4-6A34BA852CF8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_footstep_leaves_nl_06" ID="{F153CF3F-F28A-45A1-B677-3E1FBA97EFD5}" ShortID="805730143">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_footstep_leaves_nl_06" ID="{234DFEC3-237C-482A-98BA-C0BE78809C65}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.777479166666667"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_footstep_leaves_nl_06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="543362049"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_footstep_leaves_nl_06" ID="{234DFEC3-237C-482A-98BA-C0BE78809C65}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_footstep_leaves_nl_07" ID="{7C0BBCA8-FFCF-480F-9635-21F47D54EC62}" ShortID="927952357">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_footstep_leaves_nl_07" ID="{0EFA6439-E279-49A5-AFBF-230B1EE90A1C}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.710604166666667"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_footstep_leaves_nl_07.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="130826581"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_footstep_leaves_nl_07" ID="{0EFA6439-E279-49A5-AFBF-230B1EE90A1C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

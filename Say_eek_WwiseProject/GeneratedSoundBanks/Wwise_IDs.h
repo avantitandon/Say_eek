@@ -18,6 +18,7 @@ namespace AK
         static const AkUniqueID PLAY_CAMERAVIEWOPEN = 2617086320U;
         static const AkUniqueID PLAY_CAMERAZOOMIN = 187507839U;
         static const AkUniqueID PLAY_CAMERAZOOMOUT = 1363090U;
+        static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID STOP_CAMERAZOOMIN = 3484989405U;
         static const AkUniqueID STOP_CAMERAZOOMOUT = 3252179076U;
     } // namespace EVENTS

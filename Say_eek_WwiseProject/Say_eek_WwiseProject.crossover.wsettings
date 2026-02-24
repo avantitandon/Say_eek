@@ -5,7 +5,14 @@
 			<PropertyList>
 				<Property Name="AudioFileImporter\x64_FilesToImport" Type="string" Value="AAAAAAAAAAA="/>
 				<Property Name="AudioFilesImporter\DestinationFolder" Type="string" Value="Y:\Documents\Work\Game Projects\Say Eek! (DMU412 2025)\Game\Say_eek\Say_eek_WwiseProject\Originals\SFX\"/>
+				<Property Name="Event Action List\{5F1CB558-F1CC-49F8-9D5A-630F18B483B2}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{9C66E699-5929-46E0-9A3D-D0442981C4D9}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B40EF29A-E628-417A-B108-709FD07A281C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C588512F-4B98-4DB1-9B8E-281CA20F5B31}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{DE61BDE4-9B02-4EFB-AFB8-55371B9240F7}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E4BCC9E2-1B16-4B3D-A6E9-7A3E34F7C358}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E7CED2FA-B1AF-418C-B406-B74FE94FDFBC}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{F2AE1400-9F3A-4BBC-9233-392C041395CF}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="EventView\FilterMode2" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
@@ -23,6 +30,8 @@
 				<Property Name="Game Profiler\Voice Monitor\LastBus" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
 				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
+				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value=""/>
+				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value=""/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
