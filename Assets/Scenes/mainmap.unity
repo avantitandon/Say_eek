@@ -4599,6 +4599,18 @@ PrefabInstance:
       propertyPath: previewDuration
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2715827852174621968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: playCamerViewOpen.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 041c0a57d9e924d638865a743dc3e398, type: 2}
+    - target: {fileID: 2715827852174621968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: playCameraCapture.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: a237dfafae9804ba4a2c93034ee01369, type: 2}
+    - target: {fileID: 2715827852174621968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: playCameraViewClose.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 9ce67e9b9e3cb4fae8f17ad03185b032, type: 2}
     - target: {fileID: 3360846623374960824, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
