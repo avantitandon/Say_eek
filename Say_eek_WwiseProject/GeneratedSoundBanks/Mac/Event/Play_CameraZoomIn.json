@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{DE61BDE4-9B02-4EFB-AFB8-55371B9240F7}",
     "Language": "SFX",
-    "Hash": "{1C2AD809-5778-903C-D867-F5078FF56B47}",
+    "Hash": "{0E972968-5E0D-B4A7-31BC-8F66752E45C7}",
     "ObjectPath": "Play_CameraZoomIn",
     "ShortName": "Play_CameraZoomIn",
     "Path": "Event/Play_CameraZoomIn.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "sfx_camera_zoom_in_lp.wav",
       "Path": "Media/399941450.wem",
-      "CachePath": "8E/{8EB4E11C-D652-BF84-3029-93884CE4FDAD}.wem"
+      "CachePath": "6F/{6F014D57-7C6C-2973-E366-F1C8EA6FE7F1}.wem"
      },
      {
       "Id": "1062687532",
@@ -31,7 +31,7 @@
       "Location": "Loose",
       "ShortName": "sfx_camera_lens_05.wav",
       "Path": "Media/1062687532.wem",
-      "CachePath": "71/{71A4811C-0E94-8630-4E14-0DD797517609}.wem"
+      "CachePath": "81/{8102E779-E1D2-5783-5436-2C5A5DD81D63}.wem"
      }
     ],
     "Events": [
@@ -61,6 +61,6 @@
     ]
    }
   ],
-  "FileHash": "{5C9973E6-5D47-574D-4A9F-B8E757846240}"
+  "FileHash": "{F9BBFC98-7B50-007A-7FF7-9D69065378D9}"
  }
 }

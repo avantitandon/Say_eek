@@ -14,6 +14,11 @@ public class MovementStateManager : MonoBehaviour
     [SerializeField] private float groundYOffset = 0.1f;
     [SerializeField] private LayerMask groundMask;
     [SerializeField] private float gravity = -9.81f;
+    // Wwise events for footsteps
+    [SerializeField] private AK.Wwise.Event playFootsteps;
+    [SerializeField] private AK.Wwise.Event stopFootsteps;
+    // Flag to track if footsteps are currently playing
+    private bool isPlayingFootsteps = false;
 
 
     private CharacterController controller;
@@ -53,11 +58,32 @@ public class MovementStateManager : MonoBehaviour
         // Combine movement and gravity, then move the character
         Vector3 finalMove = movementDirection * moveSpeed + velocity;
         controller.Move(finalMove * Time.deltaTime);
+        // Handle footstep sounds
+        HandleFootsteps();
     }
 
+    private void HandleFootsteps()
+{
+    bool isMoving = movementDirection.magnitude > 0.1f;
 
-
-
+    if (isMoving)
+    {
+        Debug.Log("boing");
+        if (!isPlayingFootsteps)
+        {
+            playFootsteps.Post(gameObject);
+            isPlayingFootsteps = true;
+        }
+    }
+    else
+    {
+        if (isPlayingFootsteps)
+        {
+            stopFootsteps.Post(gameObject);
+            isPlayingFootsteps = false;
+        }
+    }
+}
     private bool IsGrounded()
     {
         spherePosition = new Vector3(transform.position.x, transform.position.y - groundYOffset, transform.position.z);

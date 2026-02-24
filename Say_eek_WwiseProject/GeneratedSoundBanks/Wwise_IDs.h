@@ -21,10 +21,12 @@ namespace AK
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID STOP_CAMERAZOOMIN = 3484989405U;
         static const AkUniqueID STOP_CAMERAZOOMOUT = 3252179076U;
+        static const AkUniqueID STOP_FOOTSTEPS = 2963349357U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID AMBIENCESPREAD = 2341644420U;
         static const AkUniqueID CAMERAZOOMPERCENTAGE = 965791921U;
     } // namespace GAME_PARAMETERS
 
