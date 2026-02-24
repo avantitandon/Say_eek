@@ -521,6 +521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HUDController
   gameController: {fileID: 0}
   PhotosLeft: {fileID: 1558097104365208289}
+  TimerText: {fileID: 0}
 --- !u!1 &4783178603620735817
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,7 +1276,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -35.305237, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
