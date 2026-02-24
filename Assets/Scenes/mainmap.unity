@@ -539,6 +539,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &80323884
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,6 +670,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &105998018
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,6 +801,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &110537749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,6 +1049,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &171661016
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,6 +1180,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &177749510
 GameObject:
   m_ObjectHideFlags: 0
@@ -1306,6 +1311,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!43 &202671004
 Mesh:
   m_ObjectHideFlags: 0
@@ -1614,6 +1620,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!43 &219786561
 Mesh:
   m_ObjectHideFlags: 0
@@ -1995,6 +2002,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &278938718
 GameObject:
   m_ObjectHideFlags: 0
@@ -2125,6 +2133,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &284517349
 GameObject:
   m_ObjectHideFlags: 0
@@ -2255,6 +2264,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1001 &298266284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2506,6 +2516,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &328257103 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4506818364687871928, guid: 6040513e4ae2ac1428f7bf7adab773a3, type: 3}
@@ -2641,6 +2652,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &367172673
 GameObject:
   m_ObjectHideFlags: 0
@@ -2906,6 +2918,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &406612756
 GameObject:
   m_ObjectHideFlags: 0
@@ -3036,6 +3049,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!43 &414988027
 Mesh:
   m_ObjectHideFlags: 0
@@ -3349,6 +3363,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &431458013
 GameObject:
   m_ObjectHideFlags: 0
@@ -3479,6 +3494,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &434331383
 GameObject:
   m_ObjectHideFlags: 0
@@ -3609,6 +3625,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &436639313
 GameObject:
   m_ObjectHideFlags: 0
@@ -3739,6 +3756,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &440159639
 GameObject:
   m_ObjectHideFlags: 0
@@ -3869,6 +3887,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &468891052
 GameObject:
   m_ObjectHideFlags: 0
@@ -3999,6 +4018,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &474654989
 GameObject:
   m_ObjectHideFlags: 0
@@ -4129,6 +4149,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &492636377
 GameObject:
   m_ObjectHideFlags: 0
@@ -4259,6 +4280,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &497620918
 GameObject:
   m_ObjectHideFlags: 0
@@ -4389,6 +4411,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &501886249
 GameObject:
   m_ObjectHideFlags: 0
@@ -4519,6 +4542,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &505975851
 GameObject:
   m_ObjectHideFlags: 0
@@ -4649,6 +4673,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &509334678
 GameObject:
   m_ObjectHideFlags: 0
@@ -5522,6 +5547,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &579454316
 GameObject:
   m_ObjectHideFlags: 0
@@ -5652,6 +5678,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &582615335
 GameObject:
   m_ObjectHideFlags: 0
@@ -5782,6 +5809,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &592555361
 GameObject:
   m_ObjectHideFlags: 0
@@ -5912,6 +5940,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &629212729
 GameObject:
   m_ObjectHideFlags: 0
@@ -6042,6 +6071,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &700886885
 GameObject:
   m_ObjectHideFlags: 0
@@ -6284,6 +6314,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!43 &724144241
 Mesh:
   m_ObjectHideFlags: 0
@@ -6618,6 +6649,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &731644270
 GameObject:
   m_ObjectHideFlags: 0
@@ -6860,6 +6892,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &765343052
 GameObject:
   m_ObjectHideFlags: 0
@@ -7102,6 +7135,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &787929487
 GameObject:
   m_ObjectHideFlags: 0
@@ -7486,6 +7520,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &916496793
 GameObject:
   m_ObjectHideFlags: 0
@@ -7616,6 +7651,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &930688023
 GameObject:
   m_ObjectHideFlags: 0
@@ -7746,6 +7782,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &983741077
 GameObject:
   m_ObjectHideFlags: 0
@@ -7876,6 +7913,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &999935521
 GameObject:
   m_ObjectHideFlags: 0
@@ -8118,6 +8156,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!43 &1075973229
 Mesh:
   m_ObjectHideFlags: 0
@@ -8426,6 +8465,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1092502364
 GameObject:
   m_ObjectHideFlags: 0
@@ -8556,6 +8596,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1103195799
 GameObject:
   m_ObjectHideFlags: 0
@@ -8735,6 +8776,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1122695557
 GameObject:
   m_ObjectHideFlags: 0
@@ -8865,6 +8907,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1130882736
 GameObject:
   m_ObjectHideFlags: 0
@@ -8995,6 +9038,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1131674521
 GameObject:
   m_ObjectHideFlags: 0
@@ -9125,6 +9169,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1001 &1132812694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9337,6 +9382,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1161346734
 GameObject:
   m_ObjectHideFlags: 0
@@ -9467,6 +9513,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1177875890
 GameObject:
   m_ObjectHideFlags: 0
@@ -9597,6 +9644,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1196359436
 GameObject:
   m_ObjectHideFlags: 0
@@ -9727,6 +9775,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1210817925
 GameObject:
   m_ObjectHideFlags: 0
@@ -9969,6 +10018,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1232933276
 GameObject:
   m_ObjectHideFlags: 0
@@ -10099,6 +10149,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1234636359
 GameObject:
   m_ObjectHideFlags: 0
@@ -10229,6 +10280,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1257346955
 GameObject:
   m_ObjectHideFlags: 0
@@ -10476,6 +10528,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1330409573
 GameObject:
   m_ObjectHideFlags: 0
@@ -10606,6 +10659,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1334836007
 GameObject:
   m_ObjectHideFlags: 0
@@ -10736,6 +10790,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1336762813
 GameObject:
   m_ObjectHideFlags: 0
@@ -10993,6 +11048,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1374977056
 GameObject:
   m_ObjectHideFlags: 0
@@ -11123,6 +11179,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1380280954
 GameObject:
   m_ObjectHideFlags: 0
@@ -11253,6 +11310,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1418330346
 GameObject:
   m_ObjectHideFlags: 0
@@ -11711,6 +11769,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1459646080
 GameObject:
   m_ObjectHideFlags: 0
@@ -11841,6 +11900,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1469404314
 GameObject:
   m_ObjectHideFlags: 0
@@ -11971,6 +12031,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1475146747
 GameObject:
   m_ObjectHideFlags: 0
@@ -12101,6 +12162,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1477833811
 GameObject:
   m_ObjectHideFlags: 0
@@ -12231,6 +12293,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!43 &1486893376
 Mesh:
   m_ObjectHideFlags: 0
@@ -13092,6 +13155,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1619779986
 GameObject:
   m_ObjectHideFlags: 0
@@ -13512,6 +13576,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1656996321
 GameObject:
   m_ObjectHideFlags: 0
@@ -13642,6 +13707,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1673288403
 GameObject:
   m_ObjectHideFlags: 0
@@ -13772,6 +13838,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1695112209
 GameObject:
   m_ObjectHideFlags: 0
@@ -14091,6 +14158,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!114 &1722821552 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
@@ -14232,6 +14300,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1769129305
 GameObject:
   m_ObjectHideFlags: 0
@@ -14362,6 +14431,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1788352135
 GameObject:
   m_ObjectHideFlags: 0
@@ -14492,6 +14562,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1799812889
 GameObject:
   m_ObjectHideFlags: 0
@@ -14734,6 +14805,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1886135815
 GameObject:
   m_ObjectHideFlags: 0
@@ -14864,6 +14936,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1888859017
 GameObject:
   m_ObjectHideFlags: 0
@@ -14994,6 +15067,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1901736576
 GameObject:
   m_ObjectHideFlags: 0
@@ -15236,6 +15310,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!43 &1916389816
 Mesh:
   m_ObjectHideFlags: 0
@@ -15544,6 +15619,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1 &1952334850
 GameObject:
   m_ObjectHideFlags: 0
@@ -15674,6 +15750,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!43 &1961580233
 Mesh:
   m_ObjectHideFlags: 0
@@ -16188,6 +16265,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!4 &2096056249 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5563134530108996880, guid: ab2bbd69014eff44699b435cfc1658d3, type: 3}
@@ -16501,6 +16579,7 @@ MonoBehaviour:
   ID: 1
   isCelebrity: 0
   baseScore: 1
+  isPlaceholder: 1
 --- !u!1001 &3013875879630881900
 PrefabInstance:
   m_ObjectHideFlags: 0
