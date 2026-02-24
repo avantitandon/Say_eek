@@ -241,6 +241,24 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_AmbiencePath" ID="{4B3B4610-AC60-4078-A873-6FEE2CD266A7}">
+					<PropertyList>
+						<Property Name="LimitScope" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{73A58114-D0D2-4B99-96FB-67273AEB4603}" ShortID="193924354">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AmbiencePath" ID="{EC2F5AC5-B47B-49A9-A75C-FADED832BC53}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

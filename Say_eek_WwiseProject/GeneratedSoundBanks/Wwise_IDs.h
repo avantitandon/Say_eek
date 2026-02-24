@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_AMBIENCEPATH = 2736933459U;
         static const AkUniqueID PLAY_CAMERACAPTURE = 3730852459U;
         static const AkUniqueID PLAY_CAMERAVIEWCLOSE = 3080007124U;
         static const AkUniqueID PLAY_CAMERAVIEWOPEN = 2617086320U;

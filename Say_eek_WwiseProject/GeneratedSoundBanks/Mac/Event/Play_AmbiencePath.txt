@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2736933459	Play_AmbiencePath			\Default Work Unit\Play_AmbiencePath	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2341644420	AmbienceSpread			\Default Work Unit\AmbienceSpread	
+
