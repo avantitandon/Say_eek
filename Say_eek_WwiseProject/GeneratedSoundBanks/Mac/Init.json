@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{F6CD827E-ED6B-02D1-506A-CC7EE2D9E715}",
+    "Hash": "{C6896DD2-2BDE-2F93-A2E5-60E1B9705C8A}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -48,10 +48,16 @@
       "Name": "CameraZoomPercentage",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\CameraZoomPercentage",
       "GUID": "{FD305284-2D1E-4BAE-BC2E-C27C5F217B6A}"
+     },
+     {
+      "Id": "2341644420",
+      "Name": "AmbienceSpread",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\AmbienceSpread",
+      "GUID": "{24F120A9-1730-448D-BB04-5ED932729CD5}"
      }
     ]
    }
   ],
-  "FileHash": "{9B97781E-80B8-99B1-295A-7E2D16B0F7E6}"
+  "FileHash": "{5A33E42B-237F-5E5C-A564-B145835E4DE0}"
  }
 }

@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2963349357",
+    "Type": "Event",
+    "GUID": "{AE263D2E-7C12-4092-9A0F-0DCC72FAE2D9}",
+    "Language": "SFX",
+    "Hash": "{C4D75322-7EC3-0CDB-C266-EDEADDB9D363}",
+    "ObjectPath": "Stop_Footsteps",
+    "ShortName": "Stop_Footsteps",
+    "Path": "Event/Stop_Footsteps.bnk",
+    "Events": [
+     {
+      "Id": "2963349357",
+      "Name": "Stop_Footsteps",
+      "ObjectPath": "\\Events\\Default Work Unit\\Footsteps\\Stop_Footsteps",
+      "GUID": "{AE263D2E-7C12-4092-9A0F-0DCC72FAE2D9}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{055C9442-CA1D-1C1E-F13C-EE1E9F83CDE2}"
+ }
+}

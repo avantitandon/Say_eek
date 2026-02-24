@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{C588512F-4B98-4DB1-9B8E-281CA20F5B31}",
     "Language": "SFX",
-    "Hash": "{CCFB68FC-5F08-5A2C-478E-CE0B02EFCF56}",
+    "Hash": "{FC2F985B-C65F-EA8D-F655-4AD92943E683}",
     "ObjectPath": "Play_Footsteps",
     "ShortName": "Play_Footsteps",
     "Path": "Event/Play_Footsteps.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "sfx_footstep_leaves_nl_03.wav",
       "Path": "Media/8893099.wem",
-      "CachePath": "01/{01247D8C-9F8A-C77C-F45C-C75B6B3DE3EE}.wem"
+      "CachePath": "72/{7286E35A-C771-1769-603F-7F8A799C13BE}.wem"
      },
      {
       "Id": "83740562",
@@ -31,7 +31,7 @@
       "Location": "Loose",
       "ShortName": "sfx_footstep_leaves_nl_05.wav",
       "Path": "Media/83740562.wem",
-      "CachePath": "9C/{9C650587-EAD1-C124-05DF-B028D57AB57F}.wem"
+      "CachePath": "01/{01DB88F9-13AF-5AE2-8723-7DAE4CE02205}.wem"
      },
      {
       "Id": "85671713",
@@ -58,7 +58,7 @@
       "Location": "Loose",
       "ShortName": "sfx_footstep_leaves_nl_07.wav",
       "Path": "Media/130826581.wem",
-      "CachePath": "31/{31CDA4E5-6DAD-7666-F59F-D4FCDCBDCC84}.wem"
+      "CachePath": "75/{758A24BD-C511-6DDC-C852-3FC03B4DE276}.wem"
      },
      {
       "Id": "174481025",
@@ -94,7 +94,7 @@
       "Location": "Loose",
       "ShortName": "sfx_footstep_leaves_nl_06.wav",
       "Path": "Media/543362049.wem",
-      "CachePath": "A2/{A2CD7691-27D4-A153-3365-98B512B0C2E8}.wem"
+      "CachePath": "16/{1688D733-1D29-1229-C4C7-BAAAD8E1372E}.wem"
      },
      {
       "Id": "558416445",
@@ -130,7 +130,7 @@
       "Location": "Loose",
       "ShortName": "sfx_footstep_leaves_nl_01.wav",
       "Path": "Media/671572995.wem",
-      "CachePath": "C4/{C4E979FC-CB2B-B516-0AC7-18E7E5362096}.wem"
+      "CachePath": "01/{011E7344-9099-866A-A22D-182290FE8850}.wem"
      },
      {
       "Id": "692004553",
@@ -193,7 +193,7 @@
       "Location": "Loose",
       "ShortName": "sfx_footstep_leaves_nl_04.wav",
       "Path": "Media/895363010.wem",
-      "CachePath": "4B/{4B42E665-9C8E-59BB-2E34-DCA5C0AAF7D6}.wem"
+      "CachePath": "F7/{F78AC406-262C-B6CE-2EFC-A9765BC29F5B}.wem"
      },
      {
       "Id": "952479663",
@@ -281,6 +281,6 @@
     ]
    }
   ],
-  "FileHash": "{F29B29CD-D8A2-14C4-55B2-AE8B1D6CD505}"
+  "FileHash": "{24BB53A9-0B7C-5FD4-B2F5-2BE7396988A8}"
  }
 }

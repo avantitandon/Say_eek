@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{E4BCC9E2-1B16-4B3D-A6E9-7A3E34F7C358}",
     "Language": "SFX",
-    "Hash": "{31BC55F1-FAE0-08E7-AC45-14CFF651DC3F}",
+    "Hash": "{B67202D9-241F-0713-41C0-AE8C836B61AF}",
     "ObjectPath": "Play_CameraCapture",
     "ShortName": "Play_CameraCapture",
     "Path": "Event/Play_CameraCapture.bnk",
@@ -40,7 +40,7 @@
       "Location": "Loose",
       "ShortName": "sfx_camera_charge_nl.wav",
       "Path": "Media/334851992.wem",
-      "CachePath": "C0/{C01123C2-4F9B-BC5C-73F0-850353205AAA}.wem"
+      "CachePath": "58/{58610A55-E008-5E4F-84CD-514A268B640F}.wem"
      },
      {
       "Id": "608407045",
@@ -115,6 +115,6 @@
     ]
    }
   ],
-  "FileHash": "{85D47540-D927-7BE0-DA71-B458E3789A84}"
+  "FileHash": "{4B44DD21-F4C3-40E5-265B-B9A063E634CC}"
  }
 }
