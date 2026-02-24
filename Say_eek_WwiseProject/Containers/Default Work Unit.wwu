@@ -1308,6 +1308,102 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Music" ID="{0BF17607-90EF-4080-85E0-ACBE6B0DF1ED}" ShortID="139038727">
+					<ChildrenList>
+						<Sound Name="mus_Theme1_4-4_70bpm_lp" ID="{6A2C49F9-5F52-431A-B7C8-092E52294514}" ShortID="834812802">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="mus_Theme1_4-4_70bpm_lp" ID="{00FF7362-972F-41CA-8C12-A94D6EAC2633}">
+									<Language>SFX</Language>
+									<AudioFile>mus_Theme1_4-4_70bpm_lp.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="223783472"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{6994D8A4-BBEC-4CF2-BDD8-7C4E1079FF0A}" ShortID="1029701097">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="CameraView" ID="{03F6CEC2-07DB-4DD6-A719-936291B9C02D}" WorkUnitID="{802E5EDB-ADCF-44E6-915D-2040187550B2}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{B68026B6-A80F-4553-B1E8-AAC21161B6F9}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>51</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+									<RTPC Name="" ID="{975E9171-1E8E-4B6F-9334-DF1ADE29F2A9}" ShortID="20697286">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="CameraView" ID="{03F6CEC2-07DB-4DD6-A719-936291B9C02D}" WorkUnitID="{802E5EDB-ADCF-44E6-915D-2040187550B2}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{E24171B9-0441-4E1E-B585-6E661A567184}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Exp2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>-5.90706</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="mus_Theme1_4-4_70bpm_lp" ID="{00FF7362-972F-41CA-8C12-A94D6EAC2633}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>

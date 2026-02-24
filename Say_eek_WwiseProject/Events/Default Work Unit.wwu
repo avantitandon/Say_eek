@@ -226,6 +226,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Music" ID="{505A48C5-78A4-4B7B-9EE8-77DD6629B196}" ShortID="331096648">
+					<ChildrenList>
+						<Event Name="Play_mus_Theme1_4_4_70bpm_lp" ID="{EBD8662F-C315-47A2-9D79-FFC72F6A60CA}">
+							<ChildrenList>
+								<Action Name="" ID="{DE7C5A92-951C-48B1-A003-F97659FFA485}" ShortID="432625871">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mus_Theme1_4-4_70bpm_lp" ID="{6A2C49F9-5F52-431A-B7C8-092E52294514}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
