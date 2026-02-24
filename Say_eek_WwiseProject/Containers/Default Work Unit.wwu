@@ -641,6 +641,41 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{3009F95E-E155-4628-9624-7CED9CED738D}" ShortID="1494610">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="SpeakerPanning3DSpatializationMix"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="AmbienceSpread" ID="{24F120A9-1730-448D-BB04-5ED932729CD5}" WorkUnitID="{802E5EDB-ADCF-44E6-915D-2040187550B2}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{121F4DF0-6654-4776-A082-5FB2B99FEC32}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="amb_birds_001" ID="{16D06091-DE6D-4152-BE75-6C78BBF3233E}" Platform="Linked"/>
 							</ActiveSourceList>
