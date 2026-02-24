@@ -4555,6 +4555,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 927212241487036968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 1803097094263659584, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4600,6 +4604,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2715827852174621968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: pathAmbienceCollider
+      value: 
+      objectReference: {fileID: 5363676803448446654, guid: f53c563b403c24859b6c468e97acd0df, type: 3}
+    - target: {fileID: 2715827852174621968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: playMusic.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: b9d51558a7b7c482c955acbf3e09bb37, type: 2}
@@ -4607,6 +4615,10 @@ PrefabInstance:
       propertyPath: CameraViewRTPC.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: d6a0480d0644549f1912304d816a5896, type: 2}
+    - target: {fileID: 2715827852174621968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: playPathAmbience.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 34fa20ff5f22c466eb13c07ced9eb3b6, type: 2}
     - target: {fileID: 2715827852174621968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: playCamerViewOpen.WwiseObjectReference
       value: 
@@ -15469,6 +15481,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 509877136}
+    - target: {fileID: 2415576610479068562, guid: 4057b09d577f5ff49b8285b94cf6e495, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2744785766562718860, guid: 4057b09d577f5ff49b8285b94cf6e495, type: 3}
       propertyPath: m_Mesh
       value: 

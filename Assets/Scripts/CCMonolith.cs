@@ -85,6 +85,7 @@ public class CameraControllerMonolith : MonoBehaviour
     [SerializeField] private AK.Wwise.Event playCameraViewClose;
     [SerializeField] private AK.Wwise.Event playMusic;
     [SerializeField] private AK.Wwise.RTPC CameraViewRTPC;
+
     
 
 

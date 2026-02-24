@@ -241,6 +241,35 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_PathAmbience" ID="{A5DC05D2-9BB9-4362-ACCC-3D9F54CCCB50}">
+					<ChildrenList>
+						<Action Name="" ID="{11D8A255-3E6C-4C92-97E0-E12EC3D1CD40}" ShortID="430625248">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AmbiencePath" ID="{FCBDD6A2-BA18-4B07-ADC7-2C54641A050B}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_PathAmbience" ID="{130671DF-106B-434D-991A-E6D8419ACB55}">
+					<ChildrenList>
+						<Action Name="" ID="{CD130BF6-D9F3-4203-86A2-0B57A4DE8C1B}" ShortID="82407133">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="amb_birds_001" ID="{B86B7382-D486-4C2A-B9D2-5D60F8E0DC1E}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{62B4F5C6-135A-4A9F-A6B2-FE3587569226}" ShortID="641751868">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="amb_leaves_001" ID="{A80FCD11-BEE5-46FD-80D7-88215445146A}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

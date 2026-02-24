@@ -20,9 +20,11 @@ namespace AK
         static const AkUniqueID PLAY_CAMERAZOOMOUT = 1363090U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_MUS_THEME1_4_4_70BPM_LP = 2317739990U;
+        static const AkUniqueID PLAY_PATHAMBIENCE = 707395031U;
         static const AkUniqueID STOP_CAMERAZOOMIN = 3484989405U;
         static const AkUniqueID STOP_CAMERAZOOMOUT = 3252179076U;
         static const AkUniqueID STOP_FOOTSTEPS = 2963349357U;
+        static const AkUniqueID STOP_PATHAMBIENCE = 3292035641U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

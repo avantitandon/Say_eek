@@ -1,0 +1,69 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "707395031",
+    "Type": "Event",
+    "GUID": "{A5DC05D2-9BB9-4362-ACCC-3D9F54CCCB50}",
+    "Language": "SFX",
+    "Hash": "{D58BFEE3-1B1A-AF81-75CA-4FB81BEC29B9}",
+    "ObjectPath": "Play_PathAmbience",
+    "ShortName": "Play_PathAmbience",
+    "Path": "Event/Play_PathAmbience.bnk",
+    "Media": [
+     {
+      "Id": "282051045",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "amb_birds_001.wav",
+      "Path": "Media/282051045.wem",
+      "CachePath": "3A/{3A628B0D-585E-21CB-C298-8F7C5E2C74C5}.wem"
+     },
+     {
+      "Id": "526911781",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "amb_leaves_001.wav",
+      "Path": "Media/526911781.wem",
+      "CachePath": "1C/{1CD7F50A-AF6C-2D9A-4167-4519FA246C8F}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "707395031",
+      "Name": "Play_PathAmbience",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_PathAmbience",
+      "GUID": "{A5DC05D2-9BB9-4362-ACCC-3D9F54CCCB50}",
+      "MaxAttenuation": "100",
+      "DurationType": "OneShot",
+      "DurationMin": "50",
+      "DurationMax": "50",
+      "MediaRefs": [
+       {
+        "Id": "282051045"
+       },
+       {
+        "Id": "526911781"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "2341644420",
+      "Name": "AmbienceSpread",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\AmbienceSpread",
+      "GUID": "{24F120A9-1730-448D-BB04-5ED932729CD5}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{EE3C7C22-882C-2945-A792-731DF3880542}"
+ }
+}
