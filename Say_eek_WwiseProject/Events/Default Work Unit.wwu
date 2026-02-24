@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{AF0A40B9-1457-45DC-90D3-30139620BE61}" SchemaVersion="133">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{AF0A40B9-1457-45DC-90D3-30139620BE61}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{AF0A40B9-1457-45DC-90D3-30139620BE61}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_FlashBulb" ID="{E4BCC9E2-1B16-4B3D-A6E9-7A3E34F7C358}">
+					<ChildrenList>
+						<Action Name="" ID="{BA399435-9997-4E74-ADF7-E5480A44D996}" ShortID="1000848013">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FlashBulb" ID="{23FE7C02-43D4-4285-A329-B3FFA7CC0483}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9A2E77D3-1E69-4A5A-997E-B6BEE8A84BED}" ShortID="386968381">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FlashBulb" ID="{23FE7C02-43D4-4285-A329-B3FFA7CC0483}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{642EA8CD-F613-41BA-949B-7D048C3F3BE2}" ShortID="347073948">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_camera_shutter" ID="{6A930ADA-2386-47B3-B7D9-359457D5D575}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

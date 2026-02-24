@@ -1,0 +1,120 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3730852459",
+    "Type": "Event",
+    "GUID": "{E4BCC9E2-1B16-4B3D-A6E9-7A3E34F7C358}",
+    "Language": "SFX",
+    "Hash": "{31BC55F1-FAE0-08E7-AC45-14CFF651DC3F}",
+    "ObjectPath": "Play_CameraCapture",
+    "ShortName": "Play_CameraCapture",
+    "Path": "Event/Play_CameraCapture.bnk",
+    "Media": [
+     {
+      "Id": "79997468",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_camera_shutter.wav",
+      "Path": "Media/79997468.wem",
+      "CachePath": "3D/{3DB5361A-E824-F6B6-1154-0FD986F5DAF2}.wem"
+     },
+     {
+      "Id": "170753148",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_camera_flashBulb-002.wav",
+      "Path": "Media/170753148.wem",
+      "CachePath": "36/{366A1F68-49E7-ADAF-817F-AE7E89CE8B5F}.wem"
+     },
+     {
+      "Id": "334851992",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_camera_charge_nl.wav",
+      "Path": "Media/334851992.wem",
+      "CachePath": "C0/{C01123C2-4F9B-BC5C-73F0-850353205AAA}.wem"
+     },
+     {
+      "Id": "608407045",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_camera_flashBulb-005.wav",
+      "Path": "Media/608407045.wem",
+      "CachePath": "55/{55FFB058-99EB-66E9-52CE-2C2A5C8EDD25}.wem"
+     },
+     {
+      "Id": "661682384",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_camera_flashBulb-004.wav",
+      "Path": "Media/661682384.wem",
+      "CachePath": "8A/{8A0B2CF3-3AFB-30E6-3A75-E62619160643}.wem"
+     },
+     {
+      "Id": "989641648",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_camera_flashBulb-001.wav",
+      "Path": "Media/989641648.wem",
+      "CachePath": "BD/{BD0B4325-957C-DB2A-DC28-45F3D198282F}.wem"
+     },
+     {
+      "Id": "1057636670",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_camera_flashBulb-003.wav",
+      "Path": "Media/1057636670.wem",
+      "CachePath": "C1/{C115DCB3-0439-85BC-FB1B-CD6BA8E944E8}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3730852459",
+      "Name": "Play_CameraCapture",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_CameraCapture",
+      "GUID": "{E4BCC9E2-1B16-4B3D-A6E9-7A3E34F7C358}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.521354",
+      "DurationMax": "3.521354",
+      "MediaRefs": [
+       {
+        "Id": "79997468"
+       },
+       {
+        "Id": "170753148"
+       },
+       {
+        "Id": "334851992"
+       },
+       {
+        "Id": "608407045"
+       },
+       {
+        "Id": "661682384"
+       },
+       {
+        "Id": "989641648"
+       },
+       {
+        "Id": "1057636670"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{7AA4143D-B478-1AEE-326F-31C5652E451C}"
+ }
+}

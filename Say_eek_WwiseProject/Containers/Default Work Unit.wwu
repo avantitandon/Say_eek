@@ -1,6 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0479B030-3012-4385-8F59-7BBEA1865604}" SchemaVersion="133">
 	<Containers>
-		<WorkUnit Name="Default Work Unit" ID="{0479B030-3012-4385-8F59-7BBEA1865604}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0479B030-3012-4385-8F59-7BBEA1865604}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Camera" ID="{90C397D5-78C0-49DD-9786-3F5F9D82331B}" ShortID="223871659">
+					<ChildrenList>
+						<RandomSequenceContainer Name="FlashBulb" ID="{23FE7C02-43D4-4285-A329-B3FFA7CC0483}" ShortID="92315884">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_camera_flashBulb-001" ID="{37A1F036-8AD0-40E0-BD3E-CE2AAB5CADF7}" ShortID="569908938">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_camera_flashBulb-001" ID="{59EA3FDB-8847-41B4-BE42-E3B54882FD2D}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_camera_flashBulb-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="989641648"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_camera_flashBulb-001" ID="{59EA3FDB-8847-41B4-BE42-E3B54882FD2D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_camera_flashBulb-002" ID="{6FE14F69-57A8-43A7-ACB5-43B8C4E0B9A0}" ShortID="792621222">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_camera_flashBulb-002" ID="{2C2DF07F-72FB-4C4C-9D2C-DE61DCB6E36A}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_camera_flashBulb-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="170753148"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_camera_flashBulb-002" ID="{2C2DF07F-72FB-4C4C-9D2C-DE61DCB6E36A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_camera_flashBulb-003" ID="{5B6CA42F-456E-4828-A62A-668B8EBA756C}" ShortID="348576994">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_camera_flashBulb-003" ID="{857B7FD3-DB72-4924-97EB-E68767CC08B9}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00379456343120849"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_camera_flashBulb-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1057636670"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_camera_flashBulb-003" ID="{857B7FD3-DB72-4924-97EB-E68767CC08B9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_camera_flashBulb-004" ID="{B83E6E84-6880-4D69-A677-31F9E0F95CD2}" ShortID="362610818">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_camera_flashBulb-004" ID="{9C7FE5FF-58E8-4F3C-9F4D-F0F57D04BEE6}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_camera_flashBulb-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="661682384"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_camera_flashBulb-004" ID="{9C7FE5FF-58E8-4F3C-9F4D-F0F57D04BEE6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_camera_flashBulb-005" ID="{34830BA0-A188-4F7B-876F-EC964647AF91}" ShortID="495761149">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_camera_flashBulb-005" ID="{936B9B68-5010-4235-92C7-E1C87512BA6E}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_camera_flashBulb-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="608407045"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_camera_flashBulb-005" ID="{936B9B68-5010-4235-92C7-E1C87512BA6E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="sfx_camera_shutter" ID="{6A930ADA-2386-47B3-B7D9-359457D5D575}" ShortID="925811734">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_camera_shutter" ID="{4ECA41A7-55E7-4497-A351-0D4AC668FD8E}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_camera_shutter.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="79997468"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_camera_shutter" ID="{4ECA41A7-55E7-4497-A351-0D4AC668FD8E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sfx_camera_charge_nl" ID="{C57F2224-F7D8-470A-A339-CB6F9971AE22}" ShortID="914956658">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sfx_camera_charge_nl" ID="{046C4947-B66D-45F5-86F6-67ED25360263}">
+									<Language>SFX</Language>
+									<AudioFile>sfx_camera_charge_nl.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="334851992"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sfx_camera_charge_nl" ID="{046C4947-B66D-45F5-86F6-67ED25360263}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Containers>
 </WwiseDocument>
