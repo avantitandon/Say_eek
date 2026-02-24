@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{AE263D2E-7C12-4092-9A0F-0DCC72FAE2D9}",
     "Language": "SFX",
-    "Hash": "{C4D75322-7EC3-0CDB-C266-EDEADDB9D363}",
+    "Hash": "{757D32DE-1A1B-68E9-108E-0F5DE924E580}",
     "ObjectPath": "Stop_Footsteps",
     "ShortName": "Stop_Footsteps",
     "Path": "Event/Stop_Footsteps.bnk",
@@ -28,6 +28,6 @@
     ]
    }
   ],
-  "FileHash": "{ABF026B2-B3A5-0173-8359-243C764F082A}"
+  "FileHash": "{5AD66F4E-F703-448E-F3CE-C01E1BC5E7A9}"
  }
 }

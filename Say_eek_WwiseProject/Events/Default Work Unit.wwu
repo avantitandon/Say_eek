@@ -188,6 +188,42 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Stop_Footsteps" ID="{AE263D2E-7C12-4092-9A0F-0DCC72FAE2D9}">
+							<ChildrenList>
+								<Action Name="" ID="{A2FCEF6E-8E7E-4AFA-B4C5-2C903860B7F8}" ShortID="951345373">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.35"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FootstepsDirt" ID="{8931990B-0FC3-4730-9912-A17A571934C3}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6EB74033-496E-43AE-A2F6-FB60EAE07FBC}" ShortID="762926693">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FootstepsStone" ID="{1BD4DA99-8E1C-4F3D-8552-137A9464BC1A}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{225B5FC4-A3CB-4D0A-BF2A-5DD2536AADA8}" ShortID="1016702024">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FootstepsLeaves" ID="{A28494D8-938E-4DE1-BC96-F4946E4562A3}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
