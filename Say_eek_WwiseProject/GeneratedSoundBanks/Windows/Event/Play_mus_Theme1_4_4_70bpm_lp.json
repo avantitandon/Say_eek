@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{EBD8662F-C315-47A2-9D79-FFC72F6A60CA}",
     "Language": "SFX",
-    "Hash": "{F8D9C1D9-625B-EB07-3141-2B9A0F02B241}",
+    "Hash": "{10657F00-F11C-4EC8-F96F-F3FB655BB181}",
     "ObjectPath": "Play_mus_Theme1_4_4_70bpm_lp",
     "ShortName": "Play_mus_Theme1_4_4_70bpm_lp",
     "Path": "Event/Play_mus_Theme1_4_4_70bpm_lp.bnk",
@@ -49,6 +49,6 @@
     ]
    }
   ],
-  "FileHash": "{03612206-887C-4BD4-835C-6FD528C8FA28}"
+  "FileHash": "{466A8782-1EBA-F561-B4B0-317B169174AF}"
  }
 }

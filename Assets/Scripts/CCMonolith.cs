@@ -90,6 +90,7 @@ public class CameraControllerMonolith : MonoBehaviour
     [SerializeField] private AK.Wwise.Event playCameraViewClose;
     [SerializeField] private AK.Wwise.Event playMusic;
     [SerializeField] private AK.Wwise.RTPC CameraViewRTPC;
+    [SerializeField] private AK.Wwise.Event playAmbience1;
     
 
 
@@ -97,6 +98,7 @@ public class CameraControllerMonolith : MonoBehaviour
     void Start()
     {
         playMusic.Post(gameObject);
+        playAmbience1.Post(gameObject);
         cameraAudio = GetComponent<AudioSource>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;

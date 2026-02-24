@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1F5F240F-C21F-4A6B-A2EE-98372BFF171C}" SchemaVersion="133">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{1F5F240F-C21F-4A6B-A2EE-98372BFF171C}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1F5F240F-C21F-4A6B-A2EE-98372BFF171C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="fountain_reverb" ID="{59BEC06E-5385-456E-A2A8-5EA6ADEB2F15}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+					<PropertyList>
+						<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
+						<Property Name="PreDelay" Type="Real32" Value="0.2"/>
+						<Property Name="ProcessLFE" Type="bool" Value="False"/>
+						<Property Name="ReverbTime" Type="Real32" Value="1.5"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>
