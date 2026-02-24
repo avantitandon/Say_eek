@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{C6896DD2-2BDE-2F93-A2E5-60E1B9705C8A}",
+    "Hash": "{5A329474-A8E5-B7CA-E3DC-C0A061342195}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -50,6 +50,12 @@
       "GUID": "{FD305284-2D1E-4BAE-BC2E-C27C5F217B6A}"
      },
      {
+      "Id": "1232093211",
+      "Name": "CameraView",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\CameraView",
+      "GUID": "{03F6CEC2-07DB-4DD6-A719-936291B9C02D}"
+     },
+     {
       "Id": "2341644420",
       "Name": "AmbienceSpread",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\AmbienceSpread",
@@ -58,6 +64,6 @@
     ]
    }
   ],
-  "FileHash": "{5A33E42B-237F-5E5C-A564-B145835E4DE0}"
+  "FileHash": "{56443BFD-34A5-F435-B760-E1798B3D3BBE}"
  }
 }
