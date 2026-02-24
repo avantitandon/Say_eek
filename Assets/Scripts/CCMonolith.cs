@@ -84,8 +84,10 @@ public class CameraControllerMonolith : MonoBehaviour
     [SerializeField] private GameObject hearts3;
     [SerializeField] private GameObject backplate;
 
-    // Wwise event for camera capture
+    [Header("Wwise Events")]
     [SerializeField] private AK.Wwise.Event playCameraCapture;
+    [SerializeField] private AK.Wwise.Event playCamerViewOpen;
+    [SerializeField] private AK.Wwise.Event playCameraViewClose;
 
 
 
@@ -174,6 +176,18 @@ public class CameraControllerMonolith : MonoBehaviour
         }
 
         _zoomWasHeldLastFrame = zooming;
+
+        //for wwise cameraView events
+        bool zoomingOn = zoomAction.WasPressedThisFrame();
+        bool zoomingOff = zoomAction.WasReleasedThisFrame();
+        if (zoomingOn)
+        {
+            playCamerViewOpen.Post(gameObject);
+        }
+        if (zoomingOff)
+        {
+            playCameraViewClose.Post(gameObject);
+        }
 
         float target = zooming ? zoomFov : normalFov;
         float smoothTime = zooming ? zoomInTime : zoomOutTime;
