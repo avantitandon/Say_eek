@@ -84,6 +84,9 @@ public class CameraControllerMonolith : MonoBehaviour
     [SerializeField] private GameObject hearts3;
     [SerializeField] private GameObject backplate;
 
+    // Wwise event for camera capture
+    [SerializeField] private AK.Wwise.Event playCameraCapture;
+
 
 
     void Start()
@@ -212,6 +215,7 @@ public class CameraControllerMonolith : MonoBehaviour
         }
         photoCamera.Render();
         Debug.Log("Screenshot captured");
+        playCameraCapture.Post(gameObject);
         apertureFx?.PlayShutter();
         cameraAudio.PlayOneShot(shutter);
 
