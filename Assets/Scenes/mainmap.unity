@@ -4600,6 +4600,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2715827852174621968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: playMusic.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: b9d51558a7b7c482c955acbf3e09bb37, type: 2}
+    - target: {fileID: 2715827852174621968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: playCamerViewOpen.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: 041c0a57d9e924d638865a743dc3e398, type: 2}

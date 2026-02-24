@@ -88,11 +88,15 @@ public class CameraControllerMonolith : MonoBehaviour
     [SerializeField] private AK.Wwise.Event playCameraCapture;
     [SerializeField] private AK.Wwise.Event playCamerViewOpen;
     [SerializeField] private AK.Wwise.Event playCameraViewClose;
+    [SerializeField] private AK.Wwise.Event playMusic;
+    [SerializeField] private AK.Wwise.RTPC CameraViewRTPC;
+    
 
 
 
     void Start()
     {
+        playMusic.Post(gameObject);
         cameraAudio = GetComponent<AudioSource>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -183,10 +187,13 @@ public class CameraControllerMonolith : MonoBehaviour
         if (zoomingOn)
         {
             playCamerViewOpen.Post(gameObject);
+            CameraViewRTPC.SetGlobalValue(1f);
+
         }
         if (zoomingOff)
         {
             playCameraViewClose.Post(gameObject);
+            CameraViewRTPC.SetGlobalValue(0f);
         }
 
         float target = zooming ? zoomFov : normalFov;
