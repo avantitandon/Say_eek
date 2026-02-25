@@ -378,6 +378,8 @@ public class CameraControllerMonolith : MonoBehaviour
 
     private IEnumerator ShowPreview()
     {
+        Debug.Log("PHOTO RT HEIGHT: " + photort.height);
+        Debug.Log("PHOTO RT WIDTH: " + photort.width);
         EnsurePreviewTexture();
         var previous = RenderTexture.active;
         RenderTexture.active = photort;
@@ -437,13 +439,13 @@ public class CameraControllerMonolith : MonoBehaviour
 
         // want hearts appearing ontop
         canvas.overrideSorting = true; // this canvas is a child of scoreui for now, so we need this
-        canvas.sortingOrder = 2;
+        canvas.sortingOrder = 8;
 
 
         var scaler = canvasGO.GetComponent<CanvasScaler>();
 
         scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
-        scaler.referenceResolution = new Vector2(1920f, 1080f);
+        scaler.referenceResolution = new Vector2(1350f, 1080f);
 
         var previewGO = new GameObject("PhotoPreview", typeof(RawImage));
         previewGO.transform.SetParent(canvasGO.transform, false);
@@ -451,11 +453,11 @@ public class CameraControllerMonolith : MonoBehaviour
         photoPreview = previewGO.GetComponent<RawImage>();
 
         var rect = photoPreview.rectTransform;
-        rect.anchorMin = new Vector2(1f, 0f);
-        rect.anchorMax = new Vector2(1f, 0f);
-        rect.pivot = new Vector2(1f, 0f);
-        rect.sizeDelta = new Vector2(256f * 5, 144f * 5);
-        rect.anchoredPosition = new Vector2(570, -270);
+        rect.anchorMin = new Vector2(0.5f, 0.5f);
+        rect.anchorMax = new Vector2(0.5f, 0.5f);
+        rect.pivot = new Vector2(0.5f, 0.5f);
+        rect.sizeDelta = new Vector2(900f, 720f); // 5:4 resolution, but scaled smaller
+        rect.anchoredPosition = new Vector2(0, 0);
 
         photoPreview.texture = null;
         photoPreview.gameObject.SetActive(false);

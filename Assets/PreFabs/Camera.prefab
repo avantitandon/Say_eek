@@ -585,6 +585,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -13
       objectReference: {fileID: 0}
+    - target: {fileID: 1886532652231646656, guid: ec61670869060c04fae5fd016d63e869, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886532652231646656, guid: ec61670869060c04fae5fd016d63e869, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886532652231646656, guid: ec61670869060c04fae5fd016d63e869, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886532652231646656, guid: ec61670869060c04fae5fd016d63e869, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391878430012189596, guid: ec61670869060c04fae5fd016d63e869, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6723051557167992306, guid: ec61670869060c04fae5fd016d63e869, type: 3}
       propertyPath: m_UiScaleMode
       value: 1
@@ -618,9 +638,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1033269296358567715, guid: ec61670869060c04fae5fd016d63e869, type: 3}
   m_PrefabInstance: {fileID: 6406089534301501947}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6709617160930610850 stripped
+--- !u!1 &8643919563295871591 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 430754845029381977, guid: ec61670869060c04fae5fd016d63e869, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3391878430012189596, guid: ec61670869060c04fae5fd016d63e869, type: 3}
   m_PrefabInstance: {fileID: 6406089534301501947}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7899858974089813229
@@ -746,7 +766,7 @@ MonoBehaviour:
   stateName: CameraUp
   layer: 0
   speed: 1
-  framelines: {fileID: 6709617160930610850}
+  framelines: {fileID: 8643919563295871591}
   holdNormalized: 0.454
   minProgressBeforeHold: 0.02
 --- !u!4 &7650303623405206278 stripped

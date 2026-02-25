@@ -14,11 +14,11 @@ public class GameController : MonoBehaviour
     public bool gameActive = false;
 
     // VARIABLES for the thingy 
-    [SerializeField] private float roundDurationSeconds = 60f; // keeping this a minute
+    [SerializeField] private float roundDurationSeconds = 150f; // keeping this 2 min thirty for demo
     // for alpha testing? // will change later
     public float TimeRemainingSeconds {get;private set;} // curr value
 
-    public const int MAX_PHOTOS = 10;
+    public const int MAX_PHOTOS = 20;
     public int photosTaken = 0;
     public int[] scores;
 
