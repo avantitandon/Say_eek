@@ -113,6 +113,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "ToggleCamera",
+                    "type": "Button",
+                    "id": "7b40566f-1323-4539-ac80-75d10cdec75b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PhoneToggle",
+                    "type": "Button",
+                    "id": "e3602cde-4ee8-4837-8d02-06e46a6533f5",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -493,7 +511,7 @@
                 {
                     "name": "",
                     "id": "bff33ec6-9141-47f4-a499-d17b3b29ad6e",
-                    "path": "<Mouse>/rightButton",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
@@ -504,7 +522,7 @@
                 {
                     "name": "",
                     "id": "46eb0c1f-a34b-4f7c-8b25-65ca6567fc2e",
-                    "path": "<Gamepad>/leftTrigger",
+                    "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
@@ -526,7 +544,7 @@
                 {
                     "name": "",
                     "id": "c1aec2b0-0ed0-4487-bc3d-3db8beed62a5",
-                    "path": "<Gamepad>/buttonEast",
+                    "path": "<Gamepad>/dpad/right",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
@@ -542,6 +560,50 @@
                     "processors": "",
                     "groups": "",
                     "action": "EnableGame",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "813340f2-69ca-454b-a1c0-cf6c65e8b1f6",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "ToggleCamera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a6322051-5e41-4285-abe9-56de17e79464",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "ToggleCamera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8e86cddf-9065-4dec-a211-c23c7ef3c27e",
+                    "path": "<Gamepad>/dpad/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "PhoneToggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8f8524a1-7c4b-4f63-9710-1089f68cfda2",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "PhoneToggle",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
