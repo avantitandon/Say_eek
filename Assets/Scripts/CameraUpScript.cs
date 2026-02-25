@@ -26,7 +26,9 @@ public class CameraUpScript : MonoBehaviour
 
     // if the camera is usable (overlay on and etc) 
     private bool camActive = false;
-    private bool rightClickBlocked = false;
+    private bool toggleBlocked = false;
+
+    InputAction cameraToggleAction;
 
     public bool IsCameraUp() {
         return camUp;
@@ -48,16 +50,21 @@ public class CameraUpScript : MonoBehaviour
         framelines.SetActive(false);
     }
 
+    void Start()
+    {
+        cameraToggleAction = InputSystem.actions.FindAction("ToggleCamera");
+    }
+
     void Update()
     {
         if (Mouse.current == null || anim == null) return;
 
-        if (Mouse.current.rightButton.wasPressedThisFrame)
+        if (cameraToggleAction.WasPressedThisFrame())
         {
-            if (rightClickBlocked) return;
+            if (toggleBlocked) return;
 
             if (!camActive) {  // camera going up animation
-                rightClickBlocked = true; // block right click until we let go to prevent double triggering
+                toggleBlocked = true; // block right click until we let go to prevent double triggering
                 anim.speed = speed;
                 anim.Play(stateName, layer, 0f);
                 anim.Update(0f);
@@ -66,7 +73,7 @@ public class CameraUpScript : MonoBehaviour
                 camUp = true;
                 camActive = false;
             } else {    // camera going down animation
-                rightClickBlocked = true;
+                toggleBlocked = true;
                 framelines.SetActive(false);
                 cameraModel.SetActive(true);
                 anim.speed = speed;
@@ -86,7 +93,7 @@ public class CameraUpScript : MonoBehaviour
                 framelines.SetActive(true);
                 cameraModel.SetActive(false);
                 anim.speed = 0f;
-                rightClickBlocked = false;
+                toggleBlocked = false;
 
                 camUp = false;
                 camActive = true;
@@ -105,7 +112,7 @@ public class CameraUpScript : MonoBehaviour
                 camDown = false;
                 camActive = false;
 
-                rightClickBlocked = false;
+                toggleBlocked = false;
             }
         }
     }
