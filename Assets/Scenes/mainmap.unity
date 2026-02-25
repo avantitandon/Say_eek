@@ -12292,6 +12292,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 523158218}
     - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
+      propertyPath: photoPreviewOverlay
+      value: 
+      objectReference: {fileID: 177886111}
+    - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
       propertyPath: playerMovementManager
       value: 
       objectReference: {fileID: 523158227}

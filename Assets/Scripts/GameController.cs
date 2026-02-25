@@ -29,6 +29,8 @@ public class GameController : MonoBehaviour
     public GameObject debugOverlay;
     public GameObject gameUI;
     public GameObject endUI;
+    
+    public GameObject photoPreviewOverlay;
 
     private float endTime = 0;
     // starting timestamp?
@@ -126,6 +128,7 @@ public class GameController : MonoBehaviour
             gameUI.SetActive(true);
             // bring back the debug overlay
             debugOverlay.SetActive(true);
+            photoPreviewOverlay.SetActive(true);
         }
 
         if (isPhoneOpen)
@@ -185,6 +188,10 @@ public class GameController : MonoBehaviour
         if (endUI != null)
         { endUI.SetActive(false);
         }
+        if (photoPreviewOverlay != null)
+        {
+            photoPreviewOverlay.SetActive(true);
+        }
         scores = new int[MAX_PHOTOS];
         photosTaken = 0;
         roundStartTime = Time.time;
@@ -206,6 +213,10 @@ public class GameController : MonoBehaviour
         {
             // added proteccccc
             endUI.SetActive(true);
+        }
+        if (photoPreviewOverlay != null)
+        {
+            photoPreviewOverlay.SetActive(false);
         }
     }
 }
