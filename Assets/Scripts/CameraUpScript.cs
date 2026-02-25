@@ -18,13 +18,28 @@ public class CameraUpScript : MonoBehaviour
     // How far from the start we must get before we allow clamping to holdNormalized
     [SerializeField] private float minProgressBeforeHold = 0.02f;
 
+    // if the camera is on the way up
     private bool camUp = false;
-    private bool camDown = false; 
 
+    // if the camera is on the way down
+    private bool camDown = false;
+
+    // if the camera is usable (overlay on and etc) 
+    private bool camActive = false;
     private bool rightClickBlocked = false;
 
     public bool IsCameraUp() {
         return camUp;
+    }
+
+    public bool IsCameraDown()
+    {
+        return camDown;
+    }
+
+    public bool IsCameraActive()
+    {
+        return camActive;
     }
 
     void Awake()
@@ -41,14 +56,15 @@ public class CameraUpScript : MonoBehaviour
         {
             if (rightClickBlocked) return;
 
-            if (!camUp) {  // camera going up animation
+            if (!camActive) {  // camera going up animation
                 rightClickBlocked = true; // block right click until we let go to prevent double triggering
                 anim.speed = speed;
                 anim.Play(stateName, layer, 0f);
                 anim.Update(0f);
 
-                camDown = false; 
+                camDown = false;
                 camUp = true;
+                camActive = false;
             } else {    // camera going down animation
                 rightClickBlocked = true;
                 framelines.SetActive(false);
@@ -59,6 +75,7 @@ public class CameraUpScript : MonoBehaviour
 
                 camDown = true;
                 camUp = false;
+                camActive = false;
             }
         }
 
@@ -70,6 +87,10 @@ public class CameraUpScript : MonoBehaviour
                 cameraModel.SetActive(false);
                 anim.speed = 0f;
                 rightClickBlocked = false;
+
+                camUp = false;
+                camActive = true;
+                camDown = false;
             } else if (st.normalizedTime < minProgressBeforeHold) { // allow going back up if we haven't reached the hold point
                 anim.speed = speed;
             }
@@ -80,7 +101,10 @@ public class CameraUpScript : MonoBehaviour
         if (camDown) {
             var st = anim.GetCurrentAnimatorStateInfo(layer);
             if (st.IsName(stateName) && st.normalizedTime >= 1f) { // finished going down
+                camUp = false;
                 camDown = false;
+                camActive = false;
+
                 rightClickBlocked = false;
             }
         }

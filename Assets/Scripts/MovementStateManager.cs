@@ -10,7 +10,11 @@ using UnityEngine.InputSystem;
 public class MovementStateManager : MonoBehaviour
 {
     [SerializeField] private CameraControllerMonolith cameraController;
-    [SerializeField] private float moveSpeed = 3f;
+    public float moveSpeed;
+
+    public const float WALK_SPEED = 15f;
+    public const float CAMERA_UP_WALK_SPEED = 5f;
+
     [SerializeField] private float groundYOffset = 0.1f;
     [SerializeField] private LayerMask groundMask;
     [SerializeField] private float gravity = -9.81f;
@@ -44,6 +48,7 @@ public class MovementStateManager : MonoBehaviour
     private void Start()
     {
         moveAction = InputSystem.actions.FindAction("Move");
+        //moveSpeed = WALK_SPEED;
     }
 
 

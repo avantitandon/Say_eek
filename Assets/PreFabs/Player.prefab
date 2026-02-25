@@ -131,12 +131,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovementStateManager
   cameraController: {fileID: 2715827852174621968}
-  moveSpeed: 20
+  moveSpeed: 15
   groundYOffset: -0.46
   groundMask:
     serializedVersion: 2
     m_Bits: 8
   gravity: -9.81
+  playFootsteps:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  stopFootsteps:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!143 &176324037569557310
 CharacterController:
   m_ObjectHideFlags: 0

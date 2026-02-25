@@ -71,6 +71,8 @@ public class CameraControllerMonolith : MonoBehaviour
 
     public int photoScore = 0;
     public GameObject scoreui;
+
+    public GameObject photopreviewui;
     public TMP_Text UI_text;
 
 
@@ -433,13 +435,13 @@ public class CameraControllerMonolith : MonoBehaviour
         var canvasGO = new GameObject("PhotoPreviewCanvas", typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
         var canvas = canvasGO.GetComponent<Canvas>();
 
-        canvasGO.transform.SetParent(scoreui.transform, false);
+        canvasGO.transform.SetParent(photopreviewui.transform, false);
 
         canvas.renderMode = RenderMode.ScreenSpaceOverlay;
 
         // want hearts appearing ontop
-        canvas.overrideSorting = true; // this canvas is a child of scoreui for now, so we need this
-        canvas.sortingOrder = 8;
+        canvas.overrideSorting = true; // this canvas is a child of photopreviewui for now, so we need this
+        canvas.sortingOrder = 5;
 
 
         var scaler = canvasGO.GetComponent<CanvasScaler>();
@@ -456,7 +458,7 @@ public class CameraControllerMonolith : MonoBehaviour
         rect.anchorMin = new Vector2(0.5f, 0.5f);
         rect.anchorMax = new Vector2(0.5f, 0.5f);
         rect.pivot = new Vector2(0.5f, 0.5f);
-        rect.sizeDelta = new Vector2(900f, 720f); // 5:4 resolution, but scaled smaller
+        rect.sizeDelta = new Vector2(1350f * 15/32, 1080f * 15/32); // 5:4 resolution, but scaled smaller
         rect.anchoredPosition = new Vector2(0, 0);
 
         photoPreview.texture = null;

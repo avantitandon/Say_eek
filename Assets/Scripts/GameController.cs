@@ -5,6 +5,7 @@ using UnityEngine.Serialization;
 public class GameController : MonoBehaviour
 {
 
+    [SerializeField] private MovementStateManager playerMovementManager;
     [SerializeField] private CameraControllerMonolith cameraController;
     [SerializeField] private EndUIController endUIController;
     [SerializeField] private PhoneUIController phoneUIController;
@@ -79,6 +80,15 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (camUp.IsCameraUp() || camUp.IsCameraActive())
+        {
+            playerMovementManager.moveSpeed = MovementStateManager.CAMERA_UP_WALK_SPEED;
+        }
+        else
+        {
+            playerMovementManager.moveSpeed = MovementStateManager.WALK_SPEED;
+        }
+
         bool isPhoneOpen = phoneUIController != null && phoneUIController.IsOpen;
 
         // score of any photos taken this turn
@@ -89,11 +99,25 @@ public class GameController : MonoBehaviour
 
         // take a photo
         // dont want to take a photo when clicking on the phone
-        if (photoAction.WasPressedThisFrame() && !isPhoneOpen && camUp.IsCameraUp())
+        // and only when the camera is active
+        if (photoAction.WasPressedThisFrame() && !isPhoneOpen && camUp.IsCameraActive())
         {
             phototaken = true;
             curr_score = cameraController.TakePhoto();
         }
+
+        // if camera has gone up, disable game ui
+        if (camUp.IsCameraActive())
+        {
+            gameUI.SetActive(false);
+        }
+
+        // if camera has started to go down, renable game ui
+        if (camUp.IsCameraDown())
+        {
+            gameUI.SetActive(true);
+        }
+
 
         // if the end screen has been on for more than 7 seconds, turn it off
         if (endUI.activeSelf && (Time.time > endTime + 7))
