@@ -8,6 +8,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AK.Wwise.Event playFootsteps;
     [SerializeField] private AK.Wwise.Event stopFootsteps;
     [SerializeField] private AK.Wwise.Event playCameraCapture;
+    [SerializeField] private AK.Wwise.Event playCamerViewOpen;
+    [SerializeField] private AK.Wwise.Event playCameraViewClose;
     // Flag to track if footsteps are currently playing
     private bool isPlayingFootsteps = false;
 
@@ -45,5 +47,18 @@ public class AudioManager : MonoBehaviour
     {
         playCameraCapture.Post(player);
     }
+    public void playViewOpen()
+    {
+        playCamerViewOpen.Post(player);
+    }
+    public void playViewClose()
+    {
+        playCameraViewClose.Post(player);
+    }
+
+
+
+
+    
 }
     
