@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8281631571337489113}
+  - component: {fileID: 7516107929183428955}
   m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
@@ -33,6 +34,18 @@ Transform:
   - {fileID: 5901756757788302324}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7516107929183428955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412950086528719260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec8d3f057e70e40d29fb697ff4514f36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &767435736103922827
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,7 +212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8781243903449707213, guid: 4057b09d577f5ff49b8285b94cf6e495, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
