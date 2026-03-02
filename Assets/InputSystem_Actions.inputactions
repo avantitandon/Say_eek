@@ -302,7 +302,7 @@
                 {
                     "name": "",
                     "id": "143bb1cd-cc10-4eca-a2f0-a3664166fe91",
-                    "path": "<Gamepad>/buttonWest",
+                    "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
@@ -532,6 +532,17 @@
                 },
                 {
                     "name": "",
+                    "id": "7dee68d0-3de7-429a-8b17-006ead8b6ae5",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Zoom",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "1336d3fc-7029-43d6-bf5f-418f7cf39fe1",
                     "path": "<Keyboard>/g",
                     "interactions": "",
@@ -555,10 +566,21 @@
                 {
                     "name": "",
                     "id": "2e6ef6e2-7a53-4e69-ae2f-97b0a095fc48",
-                    "path": "<Keyboard>/numpad5",
+                    "path": "<Keyboard>/r",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "EnableGame",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c5f900f7-bca3-4145-bfc4-ffd251ceb589",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
                     "action": "EnableGame",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -566,7 +588,7 @@
                 {
                     "name": "",
                     "id": "813340f2-69ca-454b-a1c0-cf6c65e8b1f6",
-                    "path": "<Gamepad>/rightShoulder",
+                    "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
