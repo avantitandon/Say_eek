@@ -67,6 +67,7 @@ public class CameraUpScript : MonoBehaviour
 
         if (cameraToggleAction.WasPressedThisFrame())
         {
+            Debug.Log("cameratrigger!");
             if (!camActive && !camUp && !camDown) {  // camera going up animation
                 anim.speed = speed;
                 anim.Play(stateName, layer, 0f);

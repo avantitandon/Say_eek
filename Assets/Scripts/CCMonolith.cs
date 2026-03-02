@@ -177,11 +177,13 @@ public class CameraControllerMonolith : MonoBehaviour
         float mouseY = lookValue.y * mouseSensitivity * Time.deltaTime;
 
         bool zooming = zoomAction.IsPressed(); // hold zoom
-        if (zooming && !_zoomWasHeldLastFrame)
-        {
-            if (cameraPullUpAnimator != null)
-                cameraPullUpAnimator.SetTrigger(cameraUpTrigger);
-        }
+
+        // dunno why this is here, makes camera go up on first press?
+        // if (zooming && !_zoomWasHeldLastFrame)
+        // {
+        //     if (cameraPullUpAnimator != null)
+        //         cameraPullUpAnimator.SetTrigger(cameraUpTrigger);
+        // }
 
         _zoomWasHeldLastFrame = zooming;
 
