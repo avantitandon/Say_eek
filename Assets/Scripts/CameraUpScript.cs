@@ -13,7 +13,15 @@ public class CameraUpScript : MonoBehaviour
 
     [Header("Hold Behavior")]
     [Range(0f, 1f)]
-    [SerializeField] private float holdNormalized = 0.45f;
+    
+    [SerializeField] private float holdStart;
+    // like holdcontinue but where we want the animation to end on the way up
+
+    [Header("Hold Behavior")]
+    [Range(0f, 1f)]
+    [SerializeField] private float holdContinue = 0.15f; // was 0.45
+    // changing this doesn't matter much, overriden by prefab (good thing i checked editor in game)
+    // was 0.454 in prefab before trimming
 
     // How far from the start we must get before we allow clamping to holdNormalized
     [SerializeField] private float minProgressBeforeHold = 0.02f;
@@ -26,8 +34,6 @@ public class CameraUpScript : MonoBehaviour
 
     // if the camera is usable (overlay on and etc) 
     private bool camActive = false;
-    private bool toggleBlocked = false;
-
     InputAction cameraToggleAction;
 
     public bool IsCameraUp() {
@@ -61,10 +67,7 @@ public class CameraUpScript : MonoBehaviour
 
         if (cameraToggleAction.WasPressedThisFrame())
         {
-            if (toggleBlocked) return;
-
-            if (!camActive) {  // camera going up animation
-                toggleBlocked = true; // block right click until we let go to prevent double triggering
+            if (!camActive && !camUp && !camDown) {  // camera going up animation
                 anim.speed = speed;
                 anim.Play(stateName, layer, 0f);
                 anim.Update(0f);
@@ -72,32 +75,52 @@ public class CameraUpScript : MonoBehaviour
                 camDown = false;
                 camUp = true;
                 camActive = false;
-            } else {    // camera going down animation
-                toggleBlocked = true;
+            } 
+        }
+
+        if (!cameraToggleAction.IsPressed())
+        {
+            if (camActive) {    // camera going down animation
                 framelines.SetActive(false);
                 cameraModel.SetActive(true);
                 anim.speed = speed;
-                anim.Play(stateName, layer, holdNormalized);
+                anim.Play(stateName, layer, holdContinue);
                 anim.Update(0f);
 
                 camDown = true;
                 camUp = false;
                 camActive = false;
-            }
+            } 
         }
-
+            
         if (camUp) {
             var st = anim.GetCurrentAnimatorStateInfo(layer);
-            if (st.normalizedTime >= holdNormalized) { // holding at holdNormalized
-                anim.Play(stateName, layer, holdNormalized);
-                framelines.SetActive(true);
-                cameraModel.SetActive(false);
-                anim.speed = 0f;
-                toggleBlocked = false;
+            if (st.normalizedTime >= holdStart) { // holding at holdNormalized
 
-                camUp = false;
-                camActive = true;
-                camDown = false;
+                // don't want the camera ui to flash on screen if going down right away. just copied code from start camera down.
+                if (!cameraToggleAction.IsPressed())
+                {
+                    framelines.SetActive(false);
+                    cameraModel.SetActive(true);
+                    anim.speed = speed;
+                    anim.Play(stateName, layer, holdContinue);
+                    anim.Update(0f);
+
+                    camDown = true;
+                    camUp = false;
+                    camActive = false;
+                }
+                else
+                {
+                    anim.Play(stateName, layer, holdContinue);
+                    framelines.SetActive(true);
+                    cameraModel.SetActive(false);
+                    anim.speed = 0f;
+
+                    camUp = false;
+                    camActive = true;
+                    camDown = false;
+                }
             } else if (st.normalizedTime < minProgressBeforeHold) { // allow going back up if we haven't reached the hold point
                 anim.speed = speed;
             }
@@ -111,8 +134,6 @@ public class CameraUpScript : MonoBehaviour
                 camUp = false;
                 camDown = false;
                 camActive = false;
-
-                toggleBlocked = false;
             }
         }
     }
