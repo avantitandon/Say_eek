@@ -455,28 +455,6 @@
 				</Folder>
 				<Folder Name="Natural Ambience" ID="{33F2C755-A69E-44CB-8519-8F0ED1772D6D}" ShortID="100013608">
 					<ChildrenList>
-						<Sound Name="amb_trees_001" ID="{59D03A96-67F1-43BB-9370-07DC1D2D2F7D}" ShortID="830163058">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="amb_trees_001" ID="{D8BD4B70-C778-4768-88BC-AA2CDDFB1231}">
-									<Language>SFX</Language>
-									<AudioFile>amb_trees_001.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="295136930"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="amb_trees_001" ID="{D8BD4B70-C778-4768-88BC-AA2CDDFB1231}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="amb_water_001" ID="{F6434004-6C47-4678-88EC-1B5640C084DB}" ShortID="241953993">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
@@ -619,28 +597,6 @@
 							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="amb_water_001" ID="{EA4F3BC5-89CC-413E-95B1-C56A653166F9}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="amb_wind_001" ID="{17308E8B-95FA-4E1C-BD7B-BBCA7FAEC0F9}" ShortID="256171361">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="amb_wind_001" ID="{BAFA545A-614D-4026-8792-1AE2D34AB7C8}">
-									<Language>SFX</Language>
-									<AudioFile>amb_wind_001.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="234414967"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="amb_wind_001" ID="{BAFA545A-614D-4026-8792-1AE2D34AB7C8}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<BlendContainer Name="Ambience1" ID="{866C19B0-188B-49B8-A9E1-35B908E7EF24}" ShortID="934394924">
@@ -843,6 +799,62 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="amb_leaves_001" ID="{315C54B1-C5BD-4B94-A8BA-F850549682E4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="Ambience2" ID="{3E211AA1-7324-42A6-B012-6E0A82FDF45E}" ShortID="781337434">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="amb_trees_001" ID="{59D03A96-67F1-43BB-9370-07DC1D2D2F7D}" ShortID="830163058">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_trees_001" ID="{D8BD4B70-C778-4768-88BC-AA2CDDFB1231}">
+											<Language>SFX</Language>
+											<AudioFile>amb_trees_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="295136930"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_trees_001" ID="{D8BD4B70-C778-4768-88BC-AA2CDDFB1231}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="amb_wind_001" ID="{17308E8B-95FA-4E1C-BD7B-BBCA7FAEC0F9}" ShortID="256171361">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_wind_001" ID="{BAFA545A-614D-4026-8792-1AE2D34AB7C8}">
+											<Language>SFX</Language>
+											<AudioFile>amb_wind_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="234414967"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_wind_001" ID="{BAFA545A-614D-4026-8792-1AE2D34AB7C8}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
