@@ -13,7 +13,7 @@ public class MovementStateManager : MonoBehaviour
     public float moveSpeed;
 
     public const float WALK_SPEED = 15f;
-    public const float CAMERA_UP_WALK_SPEED = 5f;
+    public const float CAMERA_UP_WALK_SPEED = 7f;
 
     [SerializeField] private float groundYOffset = 0.1f;
     [SerializeField] private LayerMask groundMask;
