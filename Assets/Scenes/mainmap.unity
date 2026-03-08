@@ -194,7 +194,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6118290087099004352, guid: ff47bf41a413c9843b6485360f2d2c0a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1859006094}
   m_SourcePrefab: {fileID: 100100000, guid: ff47bf41a413c9843b6485360f2d2c0a, type: 3}
 --- !u!43 &18264478
 Mesh:
@@ -786,7 +789,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1121439769754668461, guid: d2da16265435632478517274ab5574ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1985070521}
   m_SourcePrefab: {fileID: 100100000, guid: d2da16265435632478517274ab5574ff, type: 3}
 --- !u!4 &57711974 stripped
 Transform:
@@ -5776,7 +5782,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 893645620064323523, guid: c0200a1f684103e45836c7b61e3aac2b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1334841236}
   m_SourcePrefab: {fileID: 100100000, guid: c0200a1f684103e45836c7b61e3aac2b, type: 3}
 --- !u!1 &105998018
 GameObject:
@@ -7120,7 +7129,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5080035975576119210, guid: ab2bbd69014eff44699b435cfc1658d3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2096056251}
   m_SourcePrefab: {fileID: 100100000, guid: ab2bbd69014eff44699b435cfc1658d3, type: 3}
 --- !u!1 &235468957
 GameObject:
@@ -7645,7 +7657,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1121439769754668461, guid: d2da16265435632478517274ab5574ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2085691512}
   m_SourcePrefab: {fileID: 100100000, guid: d2da16265435632478517274ab5574ff, type: 3}
 --- !u!1 &260943878
 GameObject:
@@ -9108,6 +9123,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367645068}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &369998089 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9167218968404972662, guid: 6576ef9a83c906341a0424f5daac950c, type: 3}
+  m_PrefabInstance: {fileID: 783234097}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &387241113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13867,7 +13887,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5971818542010027819, guid: d22521f492ac25a46b0ad1c4e8c22c72, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 603976206}
   m_SourcePrefab: {fileID: 100100000, guid: d22521f492ac25a46b0ad1c4e8c22c72, type: 3}
 --- !u!1 &393919054
 GameObject:
@@ -19149,7 +19172,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 893645620064323523, guid: c0200a1f684103e45836c7b61e3aac2b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1832471115}
   m_SourcePrefab: {fileID: 100100000, guid: c0200a1f684103e45836c7b61e3aac2b, type: 3}
 --- !u!4 &425901267 stripped
 Transform:
@@ -20296,6 +20322,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 498866687}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &501420136 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4784034245683225063, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
+  m_PrefabInstance: {fileID: 694565583}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &501886249
 GameObject:
   m_ObjectHideFlags: 0
@@ -22053,6 +22084,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582615335}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &589491598 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5080035975576119210, guid: ab2bbd69014eff44699b435cfc1658d3, type: 3}
+  m_PrefabInstance: {fileID: 229363555}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &592555361
 GameObject:
   m_ObjectHideFlags: 0
@@ -22167,6 +22203,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 592555361}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &603976203 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5971818542010027819, guid: d22521f492ac25a46b0ad1c4e8c22c72, type: 3}
+  m_PrefabInstance: {fileID: 387241113}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &603976206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603976203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1 &607889433
 GameObject:
   m_ObjectHideFlags: 0
@@ -22472,7 +22539,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1121439769754668461, guid: d2da16265435632478517274ab5574ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1683044621}
   m_SourcePrefab: {fileID: 100100000, guid: d2da16265435632478517274ab5574ff, type: 3}
 --- !u!4 &654355900 stripped
 Transform:
@@ -22622,8 +22692,21 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 799689680050072846, guid: aefafff19d7315b4685bc57c4e340b34, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1993131998}
   m_SourcePrefab: {fileID: 100100000, guid: aefafff19d7315b4685bc57c4e340b34, type: 3}
+--- !u!1 &679878035 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5971818542010027819, guid: d22521f492ac25a46b0ad1c4e8c22c72, type: 3}
+  m_PrefabInstance: {fileID: 1930932440}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &683929273 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 893645620064323523, guid: c0200a1f684103e45836c7b61e3aac2b, type: 3}
+  m_PrefabInstance: {fileID: 90257974}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &694565583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27415,7 +27498,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4784034245683225063, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1871009820}
   m_SourcePrefab: {fileID: 100100000, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
 --- !u!1 &700886885
 GameObject:
@@ -27757,6 +27843,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 721952373}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &722130639 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1121439769754668461, guid: d2da16265435632478517274ab5574ff, type: 3}
+  m_PrefabInstance: {fileID: 255599862}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &724144241
 Mesh:
   m_ObjectHideFlags: 0
@@ -33511,13 +33602,42 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9167218968404972662, guid: 6576ef9a83c906341a0424f5daac950c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 783234101}
   m_SourcePrefab: {fileID: 100100000, guid: 6576ef9a83c906341a0424f5daac950c, type: 3}
 --- !u!4 &783234098 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8391140383394893516, guid: 6576ef9a83c906341a0424f5daac950c, type: 3}
   m_PrefabInstance: {fileID: 783234097}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &783234101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369998089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1 &787929487
 GameObject:
   m_ObjectHideFlags: 0
@@ -38495,7 +38615,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9167218968404972662, guid: 6576ef9a83c906341a0424f5daac950c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1773702566}
   m_SourcePrefab: {fileID: 100100000, guid: 6576ef9a83c906341a0424f5daac950c, type: 3}
 --- !u!1 &839447950
 GameObject:
@@ -38611,6 +38734,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 839447950}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &842200281 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9167218968404972662, guid: 6576ef9a83c906341a0424f5daac950c, type: 3}
+  m_PrefabInstance: {fileID: 1224950487}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &862495718
 GameObject:
   m_ObjectHideFlags: 0
@@ -43735,7 +43863,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5971818542010027819, guid: d22521f492ac25a46b0ad1c4e8c22c72, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1400609869}
   m_SourcePrefab: {fileID: 100100000, guid: d22521f492ac25a46b0ad1c4e8c22c72, type: 3}
 --- !u!4 &898234003 stripped
 Transform:
@@ -44084,6 +44215,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930688023}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &944857183 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9167218968404972662, guid: 6576ef9a83c906341a0424f5daac950c, type: 3}
+  m_PrefabInstance: {fileID: 3092580257199162306}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &944857186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944857183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1 &954010655
 GameObject:
   m_ObjectHideFlags: 0
@@ -49448,7 +49610,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9167218968404972662, guid: 6576ef9a83c906341a0424f5daac950c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1696842104}
   m_SourcePrefab: {fileID: 100100000, guid: 6576ef9a83c906341a0424f5daac950c, type: 3}
 --- !u!1 &1025115200
 GameObject:
@@ -54543,7 +54708,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9167218968404972662, guid: 6576ef9a83c906341a0424f5daac950c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1596592059}
   m_SourcePrefab: {fileID: 100100000, guid: 6576ef9a83c906341a0424f5daac950c, type: 3}
 --- !u!4 &1067061724 stripped
 Transform:
@@ -54956,6 +55124,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1092502364}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1101703331 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4784034245683225063, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
+  m_PrefabInstance: {fileID: 1286330762}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1103195799
 GameObject:
   m_ObjectHideFlags: 0
@@ -55462,6 +55635,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122695557}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1125588705 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 799689680050072846, guid: aefafff19d7315b4685bc57c4e340b34, type: 3}
+  m_PrefabInstance: {fileID: 6012844560743062295}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1126665571
 GameObject:
   m_ObjectHideFlags: 0
@@ -55576,6 +55754,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1126665571}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1126705018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4784034245683225063, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
+  m_PrefabInstance: {fileID: 1801602221}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1130882736
 GameObject:
   m_ObjectHideFlags: 0
@@ -56233,6 +56416,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161346734}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1169909646 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6118290087099004352, guid: ff47bf41a413c9843b6485360f2d2c0a, type: 3}
+  m_PrefabInstance: {fileID: 5708429}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1177875890
 GameObject:
   m_ObjectHideFlags: 0
@@ -56461,6 +56649,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196359436}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1202709836 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5971818542010027819, guid: d22521f492ac25a46b0ad1c4e8c22c72, type: 3}
+  m_PrefabInstance: {fileID: 5054426161517794204}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1202709839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202709836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1 &1210817925
 GameObject:
   m_ObjectHideFlags: 0
@@ -61728,13 +61947,42 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9167218968404972662, guid: 6576ef9a83c906341a0424f5daac950c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1224950491}
   m_SourcePrefab: {fileID: 100100000, guid: 6576ef9a83c906341a0424f5daac950c, type: 3}
 --- !u!4 &1224950488 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8391140383394893516, guid: 6576ef9a83c906341a0424f5daac950c, type: 3}
   m_PrefabInstance: {fileID: 1224950487}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1224950491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842200281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1 &1228306206
 GameObject:
   m_ObjectHideFlags: 0
@@ -62191,6 +62439,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234636359}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1238233641 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5080035975576119210, guid: ab2bbd69014eff44699b435cfc1658d3, type: 3}
+  m_PrefabInstance: {fileID: 1242729193}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1242729193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62262,13 +62515,42 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5080035975576119210, guid: ab2bbd69014eff44699b435cfc1658d3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1242729196}
   m_SourcePrefab: {fileID: 100100000, guid: ab2bbd69014eff44699b435cfc1658d3, type: 3}
 --- !u!4 &1242729194 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5563134530108996880, guid: ab2bbd69014eff44699b435cfc1658d3, type: 3}
   m_PrefabInstance: {fileID: 1242729193}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1242729196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238233641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1 &1249891899
 GameObject:
   m_ObjectHideFlags: 0
@@ -67400,12 +67682,51 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4784034245683225063, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1784138966}
   m_SourcePrefab: {fileID: 100100000, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
+--- !u!1 &1295444807 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6118290087099004352, guid: ff47bf41a413c9843b6485360f2d2c0a, type: 3}
+  m_PrefabInstance: {fileID: 1715666318}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1295444810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295444807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!4 &1305966869 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 350145164192864023, guid: d2da16265435632478517274ab5574ff, type: 3}
   m_PrefabInstance: {fileID: 1971487675}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1306762846 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4784034245683225063, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
+  m_PrefabInstance: {fileID: 6984109355196986861}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1313638842
 GameObject:
@@ -67879,6 +68200,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 517084205733436793, guid: c0200a1f684103e45836c7b61e3aac2b, type: 3}
   m_PrefabInstance: {fileID: 90257974}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1334841236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683929273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1 &1335921132
 GameObject:
   m_ObjectHideFlags: 0
@@ -72932,7 +73279,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 893645620064323523, guid: c0200a1f684103e45836c7b61e3aac2b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1549712791}
   m_SourcePrefab: {fileID: 100100000, guid: c0200a1f684103e45836c7b61e3aac2b, type: 3}
 --- !u!4 &1369295989 stripped
 Transform:
@@ -73286,6 +73636,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5273606725221546845, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
   m_PrefabInstance: {fileID: 6984109355196986861}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1382848395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306762846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1001 &1400142971
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78077,13 +78453,47 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4784034245683225063, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2007783017}
   m_SourcePrefab: {fileID: 100100000, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
 --- !u!4 &1400142972 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5273606725221546845, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
   m_PrefabInstance: {fileID: 1400142971}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1400609866 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5971818542010027819, guid: d22521f492ac25a46b0ad1c4e8c22c72, type: 3}
+  m_PrefabInstance: {fileID: 898234002}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1400609869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400609866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1 &1418330346
 GameObject:
   m_ObjectHideFlags: 0
@@ -78280,6 +78690,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8391140383394893516, guid: 6576ef9a83c906341a0424f5daac950c, type: 3}
   m_PrefabInstance: {fileID: 1038125756}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1446123310 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1121439769754668461, guid: d2da16265435632478517274ab5574ff, type: 3}
+  m_PrefabInstance: {fileID: 1971487675}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1446123313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446123310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1 &1448983137
 GameObject:
   m_ObjectHideFlags: 0
@@ -79359,8 +79800,42 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1121439769754668461, guid: d2da16265435632478517274ab5574ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1689574318}
   m_SourcePrefab: {fileID: 100100000, guid: d2da16265435632478517274ab5574ff, type: 3}
+--- !u!1 &1549712788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 893645620064323523, guid: c0200a1f684103e45836c7b61e3aac2b, type: 3}
+  m_PrefabInstance: {fileID: 1369295988}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1549712791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549712788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!43 &1556779510
 Mesh:
   m_ObjectHideFlags: 0
@@ -84586,7 +85061,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 893645620064323523, guid: c0200a1f684103e45836c7b61e3aac2b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2085476331}
   m_SourcePrefab: {fileID: 100100000, guid: c0200a1f684103e45836c7b61e3aac2b, type: 3}
 --- !u!4 &1567066198 stripped
 Transform:
@@ -85034,6 +85512,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1594169779}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1596592056 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9167218968404972662, guid: 6576ef9a83c906341a0424f5daac950c, type: 3}
+  m_PrefabInstance: {fileID: 1038125756}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1596592059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596592056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1 &1597362619
 GameObject:
   m_ObjectHideFlags: 0
@@ -85894,6 +86403,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624184241}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1654916019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5080035975576119210, guid: ab2bbd69014eff44699b435cfc1658d3, type: 3}
+  m_PrefabInstance: {fileID: 2027211459}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1656996321
 GameObject:
   m_ObjectHideFlags: 0
@@ -86012,6 +86526,11 @@ MeshFilter:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4747488069758003649, guid: 93c125048a700214f83c5f09a08c099a, type: 3}
   m_PrefabInstance: {fileID: 9087471931180258534}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1667452869 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 799689680050072846, guid: aefafff19d7315b4685bc57c4e340b34, type: 3}
+  m_PrefabInstance: {fileID: 666391058}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1673288403
 GameObject:
@@ -86246,6 +86765,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675667557}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1683044618 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1121439769754668461, guid: d2da16265435632478517274ab5574ff, type: 3}
+  m_PrefabInstance: {fileID: 654355899}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1683044621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683044618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1 &1687474969
 GameObject:
   m_ObjectHideFlags: 0
@@ -86358,6 +86908,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687474969}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1689574315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1121439769754668461, guid: d2da16265435632478517274ab5574ff, type: 3}
+  m_PrefabInstance: {fileID: 1544638950}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1689574318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689574315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1 &1694922474
 GameObject:
   m_ObjectHideFlags: 0
@@ -86584,6 +87165,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1695112209}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1696842101 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9167218968404972662, guid: 6576ef9a83c906341a0424f5daac950c, type: 3}
+  m_PrefabInstance: {fileID: 1013838445}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1696842104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696842101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1 &1708102461
 GameObject:
   m_ObjectHideFlags: 0
@@ -86887,7 +87499,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6118290087099004352, guid: ff47bf41a413c9843b6485360f2d2c0a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1295444810}
   m_SourcePrefab: {fileID: 100100000, guid: ff47bf41a413c9843b6485360f2d2c0a, type: 3}
 --- !u!1 &1716788163
 GameObject:
@@ -87242,6 +87857,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1742537813}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1745341060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 893645620064323523, guid: c0200a1f684103e45836c7b61e3aac2b, type: 3}
+  m_PrefabInstance: {fileID: 1948783793161145861}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1766029269
 GameObject:
   m_ObjectHideFlags: 0
@@ -87470,6 +88090,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1769129305}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1773702563 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9167218968404972662, guid: 6576ef9a83c906341a0424f5daac950c, type: 3}
+  m_PrefabInstance: {fileID: 809806669}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1773702566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773702563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1 &1779378194
 GameObject:
   m_ObjectHideFlags: 0
@@ -87589,6 +88240,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5273606725221546845, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
   m_PrefabInstance: {fileID: 1286330762}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1784138966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101703331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1 &1788352135
 GameObject:
   m_ObjectHideFlags: 0
@@ -92720,13 +93397,42 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4784034245683225063, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1801602225}
   m_SourcePrefab: {fileID: 100100000, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
 --- !u!4 &1801602222 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5273606725221546845, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
   m_PrefabInstance: {fileID: 1801602221}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1801602225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126705018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1 &1817146536
 GameObject:
   m_ObjectHideFlags: 0
@@ -92841,11 +93547,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817146536}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1832471112 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 893645620064323523, guid: c0200a1f684103e45836c7b61e3aac2b, type: 3}
+  m_PrefabInstance: {fileID: 425901266}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1832471115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832471112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!4 &1859006091 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6891449468959600506, guid: ff47bf41a413c9843b6485360f2d2c0a, type: 3}
   m_PrefabInstance: {fileID: 5708429}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1859006094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169909646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1 &1860256238 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4517242420399255410, guid: 42c69a132c6924046990e6895d979e76, type: 3}
@@ -92970,6 +93733,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5273606725221546845, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
   m_PrefabInstance: {fileID: 694565583}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1871009820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501420136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1 &1883280983
 GameObject:
   m_ObjectHideFlags: 0
@@ -98764,13 +99553,42 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5971818542010027819, guid: d22521f492ac25a46b0ad1c4e8c22c72, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1930932444}
   m_SourcePrefab: {fileID: 100100000, guid: d22521f492ac25a46b0ad1c4e8c22c72, type: 3}
 --- !u!4 &1930932441 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6461532961608635793, guid: d22521f492ac25a46b0ad1c4e8c22c72, type: 3}
   m_PrefabInstance: {fileID: 1930932440}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1930932444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679878035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1 &1937861432
 GameObject:
   m_ObjectHideFlags: 0
@@ -99356,7 +100174,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1121439769754668461, guid: d2da16265435632478517274ab5574ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1446123313}
   m_SourcePrefab: {fileID: 100100000, guid: d2da16265435632478517274ab5574ff, type: 3}
 --- !u!114 &1972958453 stripped
 MonoBehaviour:
@@ -99369,11 +100190,99 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!1 &1985070518 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1121439769754668461, guid: d2da16265435632478517274ab5574ff, type: 3}
+  m_PrefabInstance: {fileID: 57711973}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1985070521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985070518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!4 &1993131995 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 23293336225740724, guid: aefafff19d7315b4685bc57c4e340b34, type: 3}
   m_PrefabInstance: {fileID: 666391058}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1993131998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667452869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
+--- !u!1 &2007783014 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4784034245683225063, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
+  m_PrefabInstance: {fileID: 1400142971}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2007783017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007783014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1 &2010023310 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4080554434550740270, guid: 4057b09d577f5ff49b8285b94cf6e495, type: 3}
@@ -99405,6 +100314,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 517084205733436793, guid: c0200a1f684103e45836c7b61e3aac2b, type: 3}
   m_PrefabInstance: {fileID: 1948783793161145861}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2014013812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745341060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1 &2024994338
 GameObject:
   m_ObjectHideFlags: 0
@@ -99590,13 +100525,42 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5080035975576119210, guid: ab2bbd69014eff44699b435cfc1658d3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2027211462}
   m_SourcePrefab: {fileID: 100100000, guid: ab2bbd69014eff44699b435cfc1658d3, type: 3}
 --- !u!4 &2027211460 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5563134530108996880, guid: ab2bbd69014eff44699b435cfc1658d3, type: 3}
   m_PrefabInstance: {fileID: 2027211459}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2027211462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654916019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!4 &2035496606 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8889837735116209733, guid: 4057b09d577f5ff49b8285b94cf6e495, type: 3}
@@ -99924,16 +100888,99 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2069269027}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2085476328 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 893645620064323523, guid: c0200a1f684103e45836c7b61e3aac2b, type: 3}
+  m_PrefabInstance: {fileID: 1567066197}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2085476331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085476328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!4 &2085691509 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 350145164192864023, guid: d2da16265435632478517274ab5574ff, type: 3}
   m_PrefabInstance: {fileID: 255599862}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2085691512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722130639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!4 &2096056249 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5563134530108996880, guid: ab2bbd69014eff44699b435cfc1658d3, type: 3}
   m_PrefabInstance: {fileID: 229363555}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2096056251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589491598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1 &2100962502
 GameObject:
   m_ObjectHideFlags: 0
@@ -100345,6 +101392,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 23293336225740724, guid: aefafff19d7315b4685bc57c4e340b34, type: 3}
   m_PrefabInstance: {fileID: 6012844560743062295}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2142090978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125588705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
 --- !u!1 &2143859185
 GameObject:
   m_ObjectHideFlags: 0
@@ -105311,7 +106384,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 893645620064323523, guid: c0200a1f684103e45836c7b61e3aac2b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2014013812}
   m_SourcePrefab: {fileID: 100100000, guid: c0200a1f684103e45836c7b61e3aac2b, type: 3}
 --- !u!1001 &3013875879630881900
 PrefabInstance:
@@ -115017,7 +116093,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9167218968404972662, guid: 6576ef9a83c906341a0424f5daac950c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 944857186}
   m_SourcePrefab: {fileID: 100100000, guid: 6576ef9a83c906341a0424f5daac950c, type: 3}
 --- !u!1001 &5054426161517794204
 PrefabInstance:
@@ -119778,7 +120857,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5971818542010027819, guid: d22521f492ac25a46b0ad1c4e8c22c72, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1202709839}
   m_SourcePrefab: {fileID: 100100000, guid: d22521f492ac25a46b0ad1c4e8c22c72, type: 3}
 --- !u!1001 &6012844560743062295
 PrefabInstance:
@@ -119923,7 +121005,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 799689680050072846, guid: aefafff19d7315b4685bc57c4e340b34, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2142090978}
   m_SourcePrefab: {fileID: 100100000, guid: aefafff19d7315b4685bc57c4e340b34, type: 3}
 --- !u!1001 &6707601889600028110
 PrefabInstance:
@@ -124785,7 +125870,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4784034245683225063, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1382848395}
   m_SourcePrefab: {fileID: 100100000, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
 --- !u!1001 &9087471931180258534
 PrefabInstance:

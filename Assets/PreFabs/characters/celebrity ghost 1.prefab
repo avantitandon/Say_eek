@@ -166,6 +166,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f5fe04787788481489a5834155342946, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8317080526662424115}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f5fe04787788481489a5834155342946, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6088290963308871348}
   m_SourcePrefab: {fileID: 100100000, guid: f5fe04787788481489a5834155342946, type: 3}
 --- !u!1 &6118290087099004352 stripped
 GameObject:
@@ -217,3 +220,29 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6088290963308871348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6118290087099004352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
+  moveSpeed: 1.5
+  roamRadius: 4
+  arrivalDistance: 0.2
+  minRetargetTime: 1.2
+  maxRetargetTime: 3.2
+  turnSpeed: 6
+  bobAmplitude: 0.1
+  bobFrequency: 1.6
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  groundProbeHeight: 3
+  groundProbeDistance: 10
+  maxTargetPickAttempts: 20
