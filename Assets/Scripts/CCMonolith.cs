@@ -206,17 +206,46 @@ public class CameraControllerMonolith : MonoBehaviour
             CameraViewRTPC.SetGlobalValue(0f);
         }
 
-        AdjustFrameFactor();
+        //AdjustFrameFactor();
 
-        float target = zooming ? (BASE_FOV * ZOOM_FACTOR) : BASE_FOV;
-        float frame_target = zooming ? (BASE_FOV * ZOOM_FACTOR * frame_factor) : BASE_FOV * frame_factor;
-        float smoothTime = zooming ? zoomInTime : zoomOutTime;
+        if (Screen.width / Screen.height >= 16/9f)
+        {
+            Debug.Log("wide");
+            //playerCamera.fieldOfViewAxis = Camera.FieldOfViewAxis.Vertical;
+            //photoCamera.fieldOfViewAxis = Camera.FieldOfViewAxis.Vertical;
 
-        playerCamera.fieldOfView = Mathf.SmoothDamp(
-            playerCamera.fieldOfView, target, ref _playerFovVel, smoothTime);
+            float target = zooming ? (BASE_FOV * ZOOM_FACTOR) : BASE_FOV;
+            float frame_target = zooming ? (BASE_FOV * ZOOM_FACTOR * frame_factor) : BASE_FOV * frame_factor;
+            float smoothTime = zooming ? zoomInTime : zoomOutTime;
 
-        photoCamera.fieldOfView = Mathf.SmoothDamp(
-            photoCamera.fieldOfView, frame_target, ref _photoFovVel, smoothTime);
+            playerCamera.fieldOfView = Mathf.SmoothDamp(
+                playerCamera.fieldOfView, target, ref _playerFovVel, smoothTime);
+
+            photoCamera.fieldOfView = Mathf.SmoothDamp(
+                photoCamera.fieldOfView, frame_target, ref _photoFovVel, smoothTime);
+        }
+        else
+        {
+            float target_aspect = 16/9f;
+
+            //playerCamera.fieldOfViewAxis = Camera.FieldOfViewAxis.Horizontal;
+            //photoCamera.fieldOfViewAxis = Camera.FieldOfViewAxis.Horizontal;
+
+            float player_in = Camera.HorizontalToVerticalFieldOfView(Camera.VerticalToHorizontalFieldOfView(BASE_FOV * ZOOM_FACTOR, target_aspect), playerCamera.aspect);
+            float player_out = Camera.HorizontalToVerticalFieldOfView(Camera.VerticalToHorizontalFieldOfView(BASE_FOV , target_aspect), playerCamera.aspect);
+            float photo_in = Camera.HorizontalToVerticalFieldOfView(Camera.VerticalToHorizontalFieldOfView(BASE_FOV * ZOOM_FACTOR * frame_factor, 5/4f), photoCamera.aspect);
+            float photo_out = Camera.HorizontalToVerticalFieldOfView(Camera.VerticalToHorizontalFieldOfView(BASE_FOV * frame_factor, 5/4f), photoCamera.aspect); 
+
+            float target = zooming ? player_in : player_out;
+            float frame_target = zooming ? photo_in : photo_out;
+            float smoothTime = zooming ? zoomInTime : zoomOutTime;
+
+            playerCamera.fieldOfView = Mathf.SmoothDamp(
+                playerCamera.fieldOfView, target, ref _playerFovVel, smoothTime);
+
+            photoCamera.fieldOfView = Mathf.SmoothDamp(
+                photoCamera.fieldOfView, frame_target, ref _photoFovVel, smoothTime);
+        }
 
         yRotation += mouseX;
         xRotation -= mouseY;
@@ -225,17 +254,18 @@ public class CameraControllerMonolith : MonoBehaviour
         transform.position = player.position + Vector3.up * 1.6f;
     }
 
-    private void AdjustFrameFactor()
-    {
-        if (Screen.width / Screen.height < 16/9f)
-        {
-            frame_factor = 13/14f * (Screen.width * 9/16f / Screen.height);
-        }
-        else
-        {
-            frame_factor = 13/14f;
-        }
-    }
+    // private void AdjustFrameFactor()
+    // {
+    //     if (Screen.width / Screen.height < 16/9f)
+    //     {
+    //         frame_factor = 13/14f * (Screen.width * 9/16f / Screen.height);
+    //     }
+    //     else
+    //     {
+
+    //         frame_factor = 13/14f;
+    //     }
+    // }
 
     public Vector3 GetCameraForward()
     {

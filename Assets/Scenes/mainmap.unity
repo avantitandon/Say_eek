@@ -21054,6 +21054,10 @@ PrefabInstance:
       propertyPath: field of view
       value: 40.915676
       objectReference: {fileID: 0}
+    - target: {fileID: 654462918188102771, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: m_FOVAxisMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 927212241487036968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: m_Name
       value: Player
@@ -21141,6 +21145,10 @@ PrefabInstance:
     - target: {fileID: 2766070503200198333, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: field of view
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766070503200198333, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: m_FOVAxisMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3360846623374960824, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: m_LocalPosition.x
