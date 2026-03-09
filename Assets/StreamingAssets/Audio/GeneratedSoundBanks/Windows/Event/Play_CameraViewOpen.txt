@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2617086320	Play_CameraViewOpen			\Default Work Unit\Camera\Play_CameraViewOpen	
+

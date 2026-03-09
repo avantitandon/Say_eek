@@ -1,0 +1,69 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "Type": "User",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "{206AC75A-DE47-BC55-6A1B-A299ED7B016B}",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk",
+    "Plugins": {
+     "AudioDevices": [
+      {
+       "Id": "2317455096",
+       "Name": "No_Output",
+       "ObjectPath": "\\Devices\\Default Work Unit\\No_Output",
+       "GUID": "{9A29C2EC-482D-4DDB-B63A-A2BD240378C9}",
+       "LibName": "No Output",
+       "LibId": "11862023"
+      },
+      {
+       "Id": "3859886410",
+       "Name": "System",
+       "ObjectPath": "\\Devices\\Default Work Unit\\System",
+       "GUID": "{A6C6932E-39AB-4F8B-A959-16DD11FCB7B6}",
+       "LibName": "System",
+       "LibId": "11403271"
+      }
+     ]
+    },
+    "Busses": [
+     {
+      "Id": "2246998526",
+      "Name": "Main Audio Bus",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "965791921",
+      "Name": "CameraZoomPercentage",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\CameraZoomPercentage",
+      "GUID": "{FD305284-2D1E-4BAE-BC2E-C27C5F217B6A}"
+     },
+     {
+      "Id": "1232093211",
+      "Name": "CameraView",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\CameraView",
+      "GUID": "{03F6CEC2-07DB-4DD6-A719-936291B9C02D}"
+     },
+     {
+      "Id": "2341644420",
+      "Name": "AmbienceSpread",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\AmbienceSpread",
+      "GUID": "{24F120A9-1730-448D-BB04-5ED932729CD5}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{3FA46A50-F362-6653-4102-4A8BE593A249}"
+ }
+}
