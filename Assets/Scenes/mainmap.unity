@@ -21050,6 +21050,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 654462918188102771, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: field of view
+      value: 40.915676
+      objectReference: {fileID: 0}
     - target: {fileID: 927212241487036968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: m_Name
       value: Player
@@ -21134,6 +21138,10 @@ PrefabInstance:
       propertyPath: playCameraViewClose.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: 9ce67e9b9e3cb4fae8f17ad03185b032, type: 2}
+    - target: {fileID: 2766070503200198333, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: field of view
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3360846623374960824, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
