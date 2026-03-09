@@ -464,6 +464,8 @@ MonoBehaviour:
   hearts1: {fileID: 0}
   hearts2: {fileID: 0}
   hearts3: {fileID: 0}
+  heartsprite: {fileID: 0}
+  heartCanvas: {fileID: 6579877502008676241}
   backplate: {fileID: 0}
   playCameraCapture:
     idInternal: 0
@@ -1018,7 +1020,8 @@ MonoBehaviour:
   layer: 0
   speed: 1
   framelines: {fileID: 6579877502008676241}
-  holdNormalized: 0.578
+  holdStart: 0
+  holdContinue: 0.15
   minProgressBeforeHold: 0.02
 --- !u!4 &7650303623405206278 stripped
 Transform:

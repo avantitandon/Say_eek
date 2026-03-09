@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using System.Collections;
+using System;
 
 // for saving screenshots
 using System.IO;
@@ -84,6 +85,8 @@ public class CameraControllerMonolith : MonoBehaviour
     [SerializeField] private GameObject hearts1;
     [SerializeField] private GameObject hearts2;
     [SerializeField] private GameObject hearts3;
+    [SerializeField] private GameObject heartsprite;
+    [SerializeField] private GameObject heartCanvas;
     [SerializeField] private GameObject backplate;
 
     [Header("Wwise Events")]
@@ -393,10 +396,12 @@ public class CameraControllerMonolith : MonoBehaviour
         photoPreview.texture = previewTexture;
 
         photoPreview.gameObject.SetActive(true);
-        if (ghostScore > 600) { hearts1.SetActive(true); hearts2.SetActive(true); hearts3.SetActive(true); }
-        else if (ghostScore > 200) { hearts1.SetActive(true); hearts2.SetActive(true); hearts3.SetActive(false); }
-        else if (ghostScore > 50) { hearts1.SetActive(true); hearts2.SetActive(false); hearts3.SetActive(false); }
-        else { hearts1.SetActive(false); hearts2.SetActive(false); hearts3.SetActive(false); }
+
+        generateHearts();
+        // if (ghostScore > 600) { hearts1.SetActive(true); hearts2.SetActive(true); hearts3.SetActive(true); }
+        // else if (ghostScore > 200) { hearts1.SetActive(true); hearts2.SetActive(true); hearts3.SetActive(false); }
+        // else if (ghostScore > 50) { hearts1.SetActive(true); hearts2.SetActive(false); hearts3.SetActive(false); }
+        // else { hearts1.SetActive(false); hearts2.SetActive(false); hearts3.SetActive(false); }
         backplate.SetActive(true);
 
         yield return new WaitForSecondsRealtime(previewDuration);
@@ -408,6 +413,42 @@ public class CameraControllerMonolith : MonoBehaviour
         backplate.SetActive(false);
 
         previewRoutine = null;
+    }
+
+    private Tuple<float, float> generatePoint()
+    {
+        float x1 = UnityEngine.Random.Range(-900f, -700f);
+        float x2 = UnityEngine.Random.Range(700f, 900f);
+        RectTransform canvasRect = heartCanvas.GetComponent<RectTransform>();
+        float x;
+        if (UnityEngine.Random.Range(0f, 1f) < 0.5f) {
+            x = x1;
+        } else {
+            x = x2;
+        }
+        float y = UnityEngine.Random.Range(-canvasRect.rect.height / 3f, canvasRect.rect.height / 3f);
+        return new Tuple<float, float>(x, y);
+    }
+
+    private void generateHearts()
+    {
+        int count = 0;
+
+        if (ghostScore > 600) count = 3;
+        else if (ghostScore > 200) count = 2;
+        else if (ghostScore > 50) count = 1;
+
+        for (int i = 0; i < count; i++)
+        {
+            var p = generatePoint();
+            GameObject heart = Instantiate(heartsprite, heartCanvas.transform, false);
+            RectTransform rt = heart.GetComponent<RectTransform>();
+
+            rt.anchoredPosition = new Vector2(p.Item1, p.Item2);
+
+            heart.transform.localScale = Vector3.one;
+            heart.transform.SetAsLastSibling();
+        }
     }
 
     private void EnsurePreviewTexture()
