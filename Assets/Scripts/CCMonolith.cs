@@ -208,7 +208,7 @@ public class CameraControllerMonolith : MonoBehaviour
 
         AdjustFrameFactor();
 
-        float target = zooming ? (BASE_FOV * ZOOM_FACTOR) : BASE_FOV;
+        float target = zooming ? (BASE_FOV * ZOOM_FACTOR * player_factor) : BASE_FOV * player_factor;
         float frame_target = zooming ? (BASE_FOV * ZOOM_FACTOR * frame_factor) : BASE_FOV * frame_factor;
         float smoothTime = zooming ? zoomInTime : zoomOutTime;
 
@@ -229,11 +229,11 @@ public class CameraControllerMonolith : MonoBehaviour
     {
         if (Screen.width / Screen.height < 16/9f)
         {
-            frame_factor = 13/14f * (Screen.width * 9/16f / Screen.height);
+            player_factor = Screen.height * 16/9f / Screen.width;
         }
         else
         {
-            frame_factor = 13/14f;
+            player_factor = 1f;
         }
     }
 
