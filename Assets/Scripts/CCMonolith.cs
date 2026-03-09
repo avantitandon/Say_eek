@@ -33,8 +33,10 @@ public class CameraControllerMonolith : MonoBehaviour
     public Camera photoCamera;
     public RenderTexture photort;
 
-    public float normalFov = 60f;
-    public float zoomFov = 50f;
+    private const float BASE_FOV = 50f;
+
+    private const float ZOOM_FACTOR = 0.7f;
+    private float frame_factor = 13/14f;
     public float zoomInTime = 0.15f;
     public float zoomOutTime = 0.20f;
     [Header("Camera Mesh")]
@@ -111,8 +113,8 @@ public class CameraControllerMonolith : MonoBehaviour
         saveAction = InputSystem.actions.FindAction("Interact");
         ghostAction = InputSystem.actions.FindAction("GhostDbg");
 
-        playerCamera.fieldOfView = normalFov;
-        photoCamera.fieldOfView  = normalFov;
+        playerCamera.fieldOfView = BASE_FOV;
+        photoCamera.fieldOfView  = BASE_FOV * frame_factor;
 
 
         if (cameraMeshPrefab != null && playerCamera != null)
@@ -202,14 +204,19 @@ public class CameraControllerMonolith : MonoBehaviour
             CameraViewRTPC.SetGlobalValue(0f);
         }
 
-        float target = zooming ? zoomFov : normalFov;
+        AdjustFrameFactor();
+
+        Debug.Log(BASE_FOV * frame_factor);
+
+        float target = zooming ? (BASE_FOV * ZOOM_FACTOR) : BASE_FOV;
+        float frame_target = zooming ? (BASE_FOV * ZOOM_FACTOR * frame_factor) : BASE_FOV * frame_factor;
         float smoothTime = zooming ? zoomInTime : zoomOutTime;
 
         playerCamera.fieldOfView = Mathf.SmoothDamp(
             playerCamera.fieldOfView, target, ref _playerFovVel, smoothTime);
 
         photoCamera.fieldOfView = Mathf.SmoothDamp(
-            photoCamera.fieldOfView, target, ref _photoFovVel, smoothTime);
+            photoCamera.fieldOfView, frame_target, ref _photoFovVel, smoothTime);
 
         yRotation += mouseX;
         xRotation -= mouseY;
@@ -218,6 +225,17 @@ public class CameraControllerMonolith : MonoBehaviour
         transform.position = player.position + Vector3.up * 1.6f;
     }
 
+    private void AdjustFrameFactor()
+    {
+        if (Screen.width / Screen.height < 16/9f)
+        {
+            frame_factor = 13/14f * (Screen.width * 9/16f / Screen.height);
+        }
+        else
+        {
+            frame_factor = 13/14f;
+        }
+    }
 
     public Vector3 GetCameraForward()
     {
