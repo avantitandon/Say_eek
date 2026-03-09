@@ -206,8 +206,6 @@ public class CameraControllerMonolith : MonoBehaviour
 
         AdjustFrameFactor();
 
-        Debug.Log(BASE_FOV * frame_factor);
-
         float target = zooming ? (BASE_FOV * ZOOM_FACTOR) : BASE_FOV;
         float frame_target = zooming ? (BASE_FOV * ZOOM_FACTOR * frame_factor) : BASE_FOV * frame_factor;
         float smoothTime = zooming ? zoomInTime : zoomOutTime;
@@ -467,7 +465,8 @@ public class CameraControllerMonolith : MonoBehaviour
         var scaler = canvasGO.GetComponent<CanvasScaler>();
 
         scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
-        scaler.referenceResolution = new Vector2(1350f, 1080f);
+        scaler.screenMatchMode = UnityEngine.UI.CanvasScaler.ScreenMatchMode.Expand;
+        scaler.referenceResolution = new Vector2(1920f, 1080f);
 
         var previewGO = new GameObject("PhotoPreview", typeof(RawImage));
         previewGO.transform.SetParent(canvasGO.transform, false);
@@ -478,7 +477,7 @@ public class CameraControllerMonolith : MonoBehaviour
         rect.anchorMin = new Vector2(0.5f, 0.5f);
         rect.anchorMax = new Vector2(0.5f, 0.5f);
         rect.pivot = new Vector2(0.5f, 0.5f);
-        rect.sizeDelta = new Vector2(1350f * 15/32, 1080f * 15/32); // 5:4 resolution, but scaled smaller
+        rect.sizeDelta = new Vector2(1350f * 21/32, 1080f * 21/32); // 5:4 resolution, but scaled smaller
         rect.anchoredPosition = new Vector2(0, 0);
 
         photoPreview.texture = null;
