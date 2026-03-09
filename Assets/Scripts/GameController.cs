@@ -180,7 +180,7 @@ public class GameController : MonoBehaviour
         // auto starts the game
         
         gameActive = true;
-        //debugOverlay.SetActive(false);
+        debugOverlay.SetActive(false);
         // null check 
         if (gameUI != null)
         {gameUI.SetActive(true);
