@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	187507839	Play_CameraZoomIn			\Default Work Unit\Camera\Play_CameraZoomIn	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	965791921	CameraZoomPercentage			\Default Work Unit\CameraZoomPercentage	
+
