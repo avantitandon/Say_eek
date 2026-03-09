@@ -210,7 +210,7 @@ public class CameraControllerMonolith : MonoBehaviour
 
         if (Screen.width / Screen.height >= 16/9f)
         {
-            Debug.Log("wide");
+            //Debug.Log("wide");
             //playerCamera.fieldOfViewAxis = Camera.FieldOfViewAxis.Vertical;
             //photoCamera.fieldOfViewAxis = Camera.FieldOfViewAxis.Vertical;
 
@@ -284,8 +284,8 @@ public class CameraControllerMonolith : MonoBehaviour
 
     public int TakePhoto()
     {
-        Debug.Log("CAMERA PIXELHEIGHT: " + photoCamera.pixelHeight);
-        Debug.Log("CAMERA PIXELWIDTH: " + photoCamera.pixelWidth);
+        //Debug.Log("CAMERA PIXELHEIGHT: " + photoCamera.pixelHeight);
+        //Debug.Log("CAMERA PIXELWIDTH: " + photoCamera.pixelWidth);
 
         if (photoCamera.targetTexture != photort)
         {
@@ -313,7 +313,7 @@ public class CameraControllerMonolith : MonoBehaviour
 
         float xstep = 1/30f;
         float ystep = 1/20f;
-        Debug.Log("XSTEP" + xstep);
+        //Debug.Log("XSTEP" + xstep);
         //Debug.Log("SCREEN WIDTH: " + Screen.width);
         //Debug.Log("SCREEN HEIGHT: " + Screen.height);
 
@@ -434,8 +434,8 @@ public class CameraControllerMonolith : MonoBehaviour
 
     private IEnumerator ShowPreview()
     {
-        Debug.Log("PHOTO RT HEIGHT: " + photort.height);
-        Debug.Log("PHOTO RT WIDTH: " + photort.width);
+        //Debug.Log("PHOTO RT HEIGHT: " + photort.height);
+        //Debug.Log("PHOTO RT WIDTH: " + photort.width);
         EnsurePreviewTexture();
         var previous = RenderTexture.active;
         RenderTexture.active = photort;
