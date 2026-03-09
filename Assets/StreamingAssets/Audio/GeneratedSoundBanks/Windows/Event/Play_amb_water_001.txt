@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4200714142	Play_amb_water_001			\Default Work Unit\Play_amb_water_001	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2178157228	fountain_reverb	Wwise Matrix Reverb			
+
