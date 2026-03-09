@@ -606,6 +606,8 @@ MonoBehaviour:
   hearts1: {fileID: 0}
   hearts2: {fileID: 0}
   hearts3: {fileID: 0}
+  heartsprite: {fileID: 0}
+  heartCanvas: {fileID: 6579877502008676241}
   backplate: {fileID: 0}
   playCameraCapture:
     idInternal: 0
