@@ -37,6 +37,8 @@ public class CameraControllerMonolith : MonoBehaviour
 
     private const float ZOOM_FACTOR = 0.7f;
     private float frame_factor = 13/14f;
+
+    private float player_factor = 1f;
     public float zoomInTime = 0.15f;
     public float zoomOutTime = 0.20f;
     [Header("Camera Mesh")]
@@ -113,7 +115,7 @@ public class CameraControllerMonolith : MonoBehaviour
         saveAction = InputSystem.actions.FindAction("Interact");
         ghostAction = InputSystem.actions.FindAction("GhostDbg");
 
-        playerCamera.fieldOfView = BASE_FOV;
+        playerCamera.fieldOfView = BASE_FOV * player_factor;
         photoCamera.fieldOfView  = BASE_FOV * frame_factor;
 
 
@@ -252,6 +254,9 @@ public class CameraControllerMonolith : MonoBehaviour
 
     public int TakePhoto()
     {
+        Debug.Log("CAMERA PIXELHEIGHT: " + photoCamera.pixelHeight);
+        Debug.Log("CAMERA PIXELWIDTH: " + photoCamera.pixelWidth);
+
         if (photoCamera.targetTexture != photort)
         {
             photoCamera.targetTexture = photort;
@@ -276,23 +281,24 @@ public class CameraControllerMonolith : MonoBehaviour
 
         int score = 0;
 
-        int step = Screen.width / 30;
-        Debug.Log(step);
-        Debug.Log(Screen.width);
-        Debug.Log(Screen.height);
+        float xstep = 1/30f;
+        float ystep = 1/20f;
+        Debug.Log("XSTEP" + xstep);
+        //Debug.Log("SCREEN WIDTH: " + Screen.width);
+        //Debug.Log("SCREEN HEIGHT: " + Screen.height);
 
         // needs to be recalculated for new camera position
-        Vector3 pos = new Vector3(0, 0, 0);
-        Vector3 center = new Vector3(Screen.width, Screen.height, 0);
-        float radius = Screen.width / 4;
-        int pixel = 0;
+        Vector3 pos = new Vector3(0.0f, 0.0f, 0.0f);
+        Vector3 center = new Vector3(0.5f, 0.5f, 0.0f);
+        float radius = 0.1f;
+        float pixel = 0.0f;
         Ray ray;
         RaycastHit hit;
 
-        while (pos.x < (Screen.width * 2) && pos.y < (Screen.height * 2))
+        while (pos.x < 1.0f && pos.y < 1.0f)
         {
 
-            ray = photoCamera.ScreenPointToRay(pos);
+            ray = photoCamera.ViewportPointToRay(pos);
             if (Physics.Raycast(ray, out hit, 1000f, layerMask: ~ignoreLayers))
             {
 
@@ -314,15 +320,15 @@ public class CameraControllerMonolith : MonoBehaviour
             if ((pos - center).magnitude < radius)
             {
                 //Debug.Log("centerhit");
-                pixel = pixel + (step / 3);
-                pos.x = pixel % (Screen.width * 2);
-                pos.y = step * (pixel / (Screen.width * 2));
+                pixel = pixel + (xstep);
+                pos.x = pixel - Mathf.Floor(pixel);
+                pos.y = ystep * Mathf.Floor(pixel);
             }
             else
             {
-                pixel = pixel + step;
-                pos.x = pixel % (Screen.width * 2);
-                pos.y = step * (pixel / (Screen.width * 2));
+                pixel = pixel + xstep;
+                pos.x = pixel - Mathf.Floor(pixel);
+                pos.y = ystep * Mathf.Floor(pixel);
             }
 
         }
