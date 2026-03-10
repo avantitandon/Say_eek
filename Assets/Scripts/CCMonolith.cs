@@ -97,7 +97,9 @@ public class CameraControllerMonolith : MonoBehaviour
     [SerializeField] private AK.Wwise.Event playMusic;
     [SerializeField] private AK.Wwise.RTPC CameraViewRTPC;
     [SerializeField] private AK.Wwise.Event playAmbience1;
-    
+ 
+    [Header("Playtest Logging")]
+    [SerializeField] private bool enablePlaytestLogs = true;
 
 
 
@@ -292,7 +294,7 @@ public class CameraControllerMonolith : MonoBehaviour
             photoCamera.targetTexture = photort;
         }
         photoCamera.Render();
-        Debug.Log("Screenshot captured");
+        LogPlaytest("Screenshot captured to RenderTexture");
         playCameraCapture.Post(gameObject);
         apertureFx?.PlayShutter();
         cameraAudio.PlayOneShot(shutter);
@@ -382,6 +384,7 @@ public class CameraControllerMonolith : MonoBehaviour
         //    ghostHit = 3;
         //}
         ghostScore = score;
+        LogPlaytest($"Photo scored. ghostScore={ghostScore}");
 
         if (photoPreview != null)
         {
@@ -406,7 +409,7 @@ public class CameraControllerMonolith : MonoBehaviour
 
         if (panelScript != null)
         {
-            Debug.Log("Calling DisplayScreenshot");
+            LogPlaytest("Saving screenshot and pushing to panel UI.");
             panelScript.DisplayScreenshot(screenshot);
         }
         else
@@ -460,6 +463,16 @@ public class CameraControllerMonolith : MonoBehaviour
         backplate.SetActive(false);
 
         previewRoutine = null;
+    }
+
+    private void LogPlaytest(string message)
+    {
+        if (!enablePlaytestLogs && !PlaytestLogWriter.RuntimeLoggingEnabled)
+        {
+            return;
+        }
+
+        PlaytestLogWriter.Log("CameraController", message);
     }
 
     private void EnsurePreviewTexture()

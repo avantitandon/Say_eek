@@ -25,6 +25,8 @@ public class CameraUpScript : MonoBehaviour
 
     // How far from the start we must get before we allow clamping to holdNormalized
     [SerializeField] private float minProgressBeforeHold = 0.02f;
+    [Header("Playtest Logging")]
+    [SerializeField] private bool enablePlaytestLogs = true;
 
     // if the camera is on the way up
     private bool camUp = false;
@@ -67,7 +69,7 @@ public class CameraUpScript : MonoBehaviour
 
         if (cameraToggleAction.WasPressedThisFrame())
         {
-            Debug.Log("cameratrigger!");
+            LogPlaytest("ToggleCamera pressed.");
             if (!camActive && !camUp && !camDown) {  // camera going up animation
                 anim.speed = speed;
                 anim.Play(stateName, layer, 0f);
@@ -76,6 +78,7 @@ public class CameraUpScript : MonoBehaviour
                 camDown = false;
                 camUp = true;
                 camActive = false;
+                LogPlaytest("Camera moving up.");
             } 
         }
 
@@ -91,6 +94,7 @@ public class CameraUpScript : MonoBehaviour
                 camDown = true;
                 camUp = false;
                 camActive = false;
+                LogPlaytest("Camera moving down.");
             } 
         }
             
@@ -110,6 +114,7 @@ public class CameraUpScript : MonoBehaviour
                     camDown = true;
                     camUp = false;
                     camActive = false;
+                    LogPlaytest("Camera moving down before activation.");
                 }
                 else
                 {
@@ -121,6 +126,7 @@ public class CameraUpScript : MonoBehaviour
                     camUp = false;
                     camActive = true;
                     camDown = false;
+                    LogPlaytest("Camera active.");
                 }
             } else if (st.normalizedTime < minProgressBeforeHold) { // allow going back up if we haven't reached the hold point
                 anim.speed = speed;
@@ -135,7 +141,18 @@ public class CameraUpScript : MonoBehaviour
                 camUp = false;
                 camDown = false;
                 camActive = false;
+                LogPlaytest("Camera idle/down.");
             }
         }
+    }
+
+    private void LogPlaytest(string message)
+    {
+        if (!enablePlaytestLogs && !PlaytestLogWriter.RuntimeLoggingEnabled)
+        {
+            return;
+        }
+
+        PlaytestLogWriter.Log("CameraUp", message);
     }
 }
