@@ -44,14 +44,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e58c2fd2f0fa63d4c96543fa9fc719ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameController
+  GameEndEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  playerMovementManager: {fileID: 0}
   cameraController: {fileID: 0}
   endUIController: {fileID: 0}
-  camUpScript: {fileID: 0}
+  phoneUIController: {fileID: 0}
+  camUp: {fileID: 0}
+  enablePlaytestLogs: 1
   gameActive: 0
+  roundDurationSeconds: 300
   photosTaken: 0
   scores: 
   player: {fileID: 0}
-  camera: {fileID: 0}
+  cameraObject: {fileID: 0}
   debugOverlay: {fileID: 0}
   gameUI: {fileID: 0}
   endUI: {fileID: 0}
+  photoPreviewOverlay: {fileID: 0}

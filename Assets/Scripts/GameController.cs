@@ -19,7 +19,7 @@ public class GameController : MonoBehaviour
     public bool gameActive = false;
 
     // VARIABLES for the thingy 
-    [SerializeField] private float roundDurationSeconds = 150f; // keeping this 2 min thirty for demo
+    [SerializeField] private float roundDurationSeconds = 300f; // keeping this 2 min thirty for demo // upped to 5min for ubisoft
     // for alpha testing? // will change later
     public float TimeRemainingSeconds {get;private set;} // curr value
 
