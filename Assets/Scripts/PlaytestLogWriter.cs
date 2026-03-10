@@ -6,7 +6,7 @@ using UnityEngine;
 
 public static class PlaytestLogWriter
 {
-    public static bool RuntimeLoggingEnabled = true;
+    public static bool RuntimeLoggingEnabled = true; // did this instead of manually enabling the logs on each script
 
     private static readonly object FileLock = new object();
     private static bool initialized;
