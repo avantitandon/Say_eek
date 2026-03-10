@@ -146,7 +146,7 @@ Camera:
   m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 319
+    m_Bits: 831
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -633,6 +633,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  enablePlaytestLogs: 1
 --- !u!82 &4325590518965537614
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1304,6 +1305,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a4ba7b46329740229c7557947d56d0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  cameraUpEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  cameraDownEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   cameraModel: {fileID: 8894735655353275215}
   anim: {fileID: 853746975799016240}
   stateName: CameraUp
@@ -1313,6 +1322,7 @@ MonoBehaviour:
   holdStart: 0
   holdContinue: 0.15
   minProgressBeforeHold: 0.02
+  enablePlaytestLogs: 1
 --- !u!4 &7650303623405206278 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 26f557e7950bb43198920892968c6798, type: 3}
