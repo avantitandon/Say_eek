@@ -1838,6 +1838,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
+--- !u!1 &673505242 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1469655021334403597, guid: 42c69a132c6924046990e6895d979e76, type: 3}
+  m_PrefabInstance: {fileID: 1955124165}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &679003411
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4226,6 +4231,10 @@ PrefabInstance:
       propertyPath: normalFov
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 2715827852174621968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: heartsprite
+      value: 
+      objectReference: {fileID: 673505242}
     - target: {fileID: 2715827852174621968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: photopreviewui
       value: 
