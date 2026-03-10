@@ -108,7 +108,7 @@ public class GameController : MonoBehaviour
         // dont want to take a photo when clicking on the phone
         // and only when the camera is active
 
-        
+
         // log when photo is captures
         if (photoAction.WasPressedThisFrame() && !isPhoneOpen && camUp.IsCameraActive())
         {
@@ -238,19 +238,16 @@ public class GameController : MonoBehaviour
             photoPreviewOverlay.SetActive(false);
         }
 
+// added a total score? we will use this in the future for winning/losing endings i think
         int totalScore = 0;
-        int bestScore = 0;
         for (int i = 0; i < photosTaken; i++)
         {
             totalScore += scores[i];
-            if (scores[i] > bestScore)
-            {
-                bestScore = scores[i];
-            }
         }
 
-        LogPlaytest($"Round ended. reason={reason} photosTaken={photosTaken} totalScore={totalScore} bestPhoto={bestScore}");
+        LogPlaytest($"Round ended. reason={reason} photosTaken={photosTaken} totalScore={totalScore}");
     }
+
 
     private void LogPlaytest(string message)
     {
