@@ -11,6 +11,9 @@ public class GameController : MonoBehaviour
     [SerializeField] private PhoneUIController phoneUIController;
     [SerializeField] private CameraUpScript camUp;          // gotta add camera animation before running, i cant add to prefab idk y
 
+    [Header("Playtest Logging")]
+    [SerializeField] private bool enablePlaytestLogs = true;
+
 
     public bool gameActive = false;
 
@@ -35,6 +38,7 @@ public class GameController : MonoBehaviour
     private float endTime = 0;
     // starting timestamp?
     private float roundStartTime = 0;
+    private float lastBlockedPhotoLogTime = -999f;
 
 
     // a camera controller should take care of # of photos taken
@@ -77,6 +81,7 @@ public class GameController : MonoBehaviour
 
         // Martin im switching this into start round with added protection incase 
         startRound();
+        LogPlaytest($"Initialized. roundDuration={roundDurationSeconds:0.0}s maxPhotos={MAX_PHOTOS}");
     }
 
     // Update is called once per frame
@@ -106,6 +111,13 @@ public class GameController : MonoBehaviour
         {
             phototaken = true;
             curr_score = cameraController.TakePhoto();
+            LogPlaytest($"Photo taken. index={photosTaken + 1}/{MAX_PHOTOS} score={curr_score} timeRemaining={TimeRemainingSeconds:0.0}s");
+        }
+        else if (photoAction.WasPressedThisFrame() && Time.unscaledTime - lastBlockedPhotoLogTime > 0.5f)
+        {
+            string reason = isPhoneOpen ? "phone_open" : (camUp.IsCameraActive() ? "unknown" : "camera_not_active");
+            LogPlaytest($"Photo input ignored. reason={reason}");
+            lastBlockedPhotoLogTime = Time.unscaledTime;
         }
 
         // if camera has gone up, disable game ui
@@ -145,6 +157,7 @@ public class GameController : MonoBehaviour
 
         if (!gameActive && startPressed && !endUI.activeSelf)
         {
+            LogPlaytest("Start input detected. Starting round.");
             startRound();
         }
 
@@ -155,7 +168,8 @@ public class GameController : MonoBehaviour
             TimeRemainingSeconds = Mathf.Max(0f, roundDurationSeconds - (Time.time - roundStartTime));
             // if time is 0
             if (TimeRemainingSeconds <= 0f)
-            {EndRound();
+            {
+                EndRound("timer_expired");
                 return;
             }
 
@@ -169,7 +183,7 @@ public class GameController : MonoBehaviour
             // end the game if we have max photos
             if (photosTaken == MAX_PHOTOS)
             {
-                EndRound();
+                EndRound("max_photos_reached");
             }
         }
     }
@@ -196,9 +210,10 @@ public class GameController : MonoBehaviour
         photosTaken = 0;
         roundStartTime = Time.time;
         TimeRemainingSeconds = roundDurationSeconds;
+        LogPlaytest($"Round started. duration={roundDurationSeconds:0.0}s maxPhotos={MAX_PHOTOS}");
     }
 
-    private void EndRound()
+    private void EndRound(string reason)
     {
         gameActive = false;
         endUIController.SetScoreText(scores, photosTaken);
@@ -218,5 +233,28 @@ public class GameController : MonoBehaviour
         {
             photoPreviewOverlay.SetActive(false);
         }
+
+        int totalScore = 0;
+        int bestScore = 0;
+        for (int i = 0; i < photosTaken; i++)
+        {
+            totalScore += scores[i];
+            if (scores[i] > bestScore)
+            {
+                bestScore = scores[i];
+            }
+        }
+
+        LogPlaytest($"Round ended. reason={reason} photosTaken={photosTaken} totalScore={totalScore} bestPhoto={bestScore}");
+    }
+
+    private void LogPlaytest(string message)
+    {
+        if (!enablePlaytestLogs && !PlaytestLogWriter.RuntimeLoggingEnabled)
+        {
+            return;
+        }
+
+        PlaytestLogWriter.Log("GameController", message);
     }
 }

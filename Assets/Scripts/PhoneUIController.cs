@@ -21,6 +21,8 @@ public class PhoneUIController : MonoBehaviour
     [SerializeField] private string titleText = "Photo Library";
     // memory cap -> change to 15/25/30/ whatever 
     [SerializeField] private int maxStoredPhotos = 30;
+    [Header("Playtest Logging")]
+    [SerializeField] private bool enablePlaytestLogs = true;
 
     private Func<bool> canOpenPredicate;
     private Action<bool> onPhoneToggled;
@@ -134,6 +136,7 @@ public class PhoneUIController : MonoBehaviour
 
         if (canOpenPredicate != null && !canOpenPredicate())
         {
+            LogPlaytest("Open request blocked by predicate.");
             return;
         }
 
@@ -165,10 +168,12 @@ public class PhoneUIController : MonoBehaviour
         // Append photo and creates ui card
         storedPhotos.Add(photo);
         CreateGalleryEntry(photo, storedPhotos.Count);
+        LogPlaytest($"Photo added to gallery. count={storedPhotos.Count}/{maxStoredPhotos}");
 
         // right now it just deletes old photos. Will change to max out/ stop gameplay
         while (storedPhotos.Count > maxStoredPhotos && storedPhotos.Count > 0)
         {
+            LogPlaytest("Photo cap exceeded. Removing oldest photo.");
             RemoveOldestPhoto();
         }
 
@@ -211,7 +216,18 @@ public class PhoneUIController : MonoBehaviour
             }
         }
 
+        LogPlaytest($"Phone {(isOpen ? "opened" : "closed")}. timescale={Time.timeScale:0.##}");
         onPhoneToggled?.Invoke(isOpen);
+    }
+
+    private void LogPlaytest(string message)
+    {
+        if (!enablePlaytestLogs && !PlaytestLogWriter.RuntimeLoggingEnabled)
+        {
+            return;
+        }
+
+        PlaytestLogWriter.Log("PhoneUI", message);
     }
 
     private void RefreshButtonVisibility()

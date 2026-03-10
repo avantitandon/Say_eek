@@ -21,6 +21,8 @@ public class MovementStateManager : MonoBehaviour
     // Wwise events for footsteps
     [SerializeField] private AK.Wwise.Event playFootsteps;
     [SerializeField] private AK.Wwise.Event stopFootsteps;
+    [Header("Playtest Logging")]
+    [SerializeField] private bool enablePlaytestLogs = true;
     // Flag to track if footsteps are currently playing
     private bool isPlayingFootsteps = false;
 
@@ -68,27 +70,28 @@ public class MovementStateManager : MonoBehaviour
     }
 
     private void HandleFootsteps()
-{
-    bool isMoving = movementDirection.magnitude > 0.1f;
+    {
+        bool isMoving = movementDirection.magnitude > 0.1f;
 
-    if (isMoving)
-    {
-        Debug.Log("boing");
-        if (!isPlayingFootsteps)
+        if (isMoving)
         {
-            playFootsteps.Post(gameObject);
-            isPlayingFootsteps = true;
+            if (!isPlayingFootsteps)
+            {
+                playFootsteps.Post(gameObject);
+                isPlayingFootsteps = true;
+                LogPlaytest("Movement started. Footsteps playing.");
+            }
+        }
+        else
+        {
+            if (isPlayingFootsteps)
+            {
+                stopFootsteps.Post(gameObject);
+                isPlayingFootsteps = false;
+                LogPlaytest("Movement stopped. Footsteps stopped.");
+            }
         }
     }
-    else
-    {
-        if (isPlayingFootsteps)
-        {
-            stopFootsteps.Post(gameObject);
-            isPlayingFootsteps = false;
-        }
-    }
-}
     private bool IsGrounded()
     {
         spherePosition = new Vector3(transform.position.x, transform.position.y - groundYOffset, transform.position.z);
@@ -142,6 +145,14 @@ public class MovementStateManager : MonoBehaviour
         }
     }
 
+    private void LogPlaytest(string message)
+    {
+        if (!enablePlaytestLogs && !PlaytestLogWriter.RuntimeLoggingEnabled)
+        {
+            return;
+        }
+
+        PlaytestLogWriter.Log("Movement", message);
+    }
+
 }
-
-
