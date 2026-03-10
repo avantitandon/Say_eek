@@ -22,15 +22,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c0dd322d1f0a19340981e9a2597cf62d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.53
+      value: 4.624994
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c0dd322d1f0a19340981e9a2597cf62d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.91
+      value: 0.11961818
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c0dd322d1f0a19340981e9a2597cf62d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.66
+      value: 3.2794755
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c0dd322d1f0a19340981e9a2597cf62d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: c0dd322d1f0a19340981e9a2597cf62d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8b113227f0b0fdf4fad57c6c4e14e54e, type: 2}
     - target: {fileID: 919132149155446097, guid: c0dd322d1f0a19340981e9a2597cf62d, type: 3}
       propertyPath: m_Name
       value: FOUNTAIN
