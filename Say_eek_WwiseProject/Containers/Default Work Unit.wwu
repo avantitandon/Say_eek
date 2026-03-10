@@ -663,6 +663,7 @@
 								<Sound Name="amb_birds_001" ID="{B86B7382-D486-4C2A-B9D2-5D60F8E0DC1E}" ShortID="664697754">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -820,6 +821,9 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="amb_leaves_001" ID="{A80FCD11-BEE5-46FD-80D7-88215445146A}" ShortID="1013104241">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
@@ -1546,6 +1550,35 @@
 							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="mus_Theme1_4-4_70bpm_lp" ID="{00FF7362-972F-41CA-8C12-A94D6EAC2633}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="First Dance in Hell - Mar10" ID="{E97EA716-04F1-439B-9620-58724F8AF2D4}" ShortID="735552581">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="First Dance in Hell - Mar10" ID="{A37FFC79-2163-47D4-9CAB-32C386C35B78}">
+									<Language>SFX</Language>
+									<AudioFile>First Dance in Hell - Mar10.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="709278586"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="First Dance in Hell - Mar10" ID="{A37FFC79-2163-47D4-9CAB-32C386C35B78}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

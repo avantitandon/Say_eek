@@ -3,6 +3,8 @@ using UnityEngine.InputSystem;
 
 public class CameraUpScript : MonoBehaviour
 {
+    [SerializeField] private AK.Wwise.Event cameraUpEvent;
+    [SerializeField] private AK.Wwise.Event cameraDownEvent;
     [Header("Animator")]
     [SerializeField] private GameObject cameraModel;
     [SerializeField] private Animator anim;
@@ -94,6 +96,7 @@ public class CameraUpScript : MonoBehaviour
                 camDown = true;
                 camUp = false;
                 camActive = false;
+                cameraDownEvent.Post(gameObject);
                 LogPlaytest("Camera moving down.");
             } 
         }
@@ -126,6 +129,7 @@ public class CameraUpScript : MonoBehaviour
                     camUp = false;
                     camActive = true;
                     camDown = false;
+                    cameraUpEvent.Post(gameObject);
                     LogPlaytest("Camera active.");
                 }
             } else if (st.normalizedTime < minProgressBeforeHold) { // allow going back up if we haven't reached the hold point
