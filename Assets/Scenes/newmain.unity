@@ -2578,6 +2578,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &940382237 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3951148059499550630, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+  m_PrefabInstance: {fileID: 1838387330}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a4ba7b46329740229c7557947d56d0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1001 &1019275546
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2842,6 +2853,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6461532961608635793, guid: d22521f492ac25a46b0ad1c4e8c22c72, type: 3}
   m_PrefabInstance: {fileID: 1171529772}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1208467858 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5155867693341555410, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+  m_PrefabInstance: {fileID: 1838387330}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1208467859 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2715827852174621968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+  m_PrefabInstance: {fileID: 1838387330}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208467858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9663957240d8d0447bfeb09fcff08e38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraControllerMonolith
 --- !u!4 &1215397792 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 517084205733436793, guid: c0200a1f684103e45836c7b61e3aac2b, type: 3}
@@ -4424,6 +4451,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 165ea3f2714b84081bbb673e96427bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+--- !u!114 &1838387341 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5294426710492027799, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+  m_PrefabInstance: {fileID: 1838387330}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838387336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e59acc2472d30c418b2a8bac4098e78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovementStateManager
 --- !u!1001 &1840011523
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4479,7 +4517,7 @@ PrefabInstance:
     - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
       propertyPath: camUp
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 940382237}
     - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
       propertyPath: endUI
       value: 
@@ -4495,11 +4533,15 @@ PrefabInstance:
     - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
       propertyPath: player
       value: 
+      objectReference: {fileID: 1838387336}
+    - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
+      propertyPath: gameActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
       propertyPath: cameraObject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1208467858}
     - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
       propertyPath: debugOverlay
       value: 
@@ -4511,7 +4553,7 @@ PrefabInstance:
     - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
       propertyPath: cameraController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1208467859}
     - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
       propertyPath: photoPreviewOverlay
       value: 
@@ -4519,7 +4561,7 @@ PrefabInstance:
     - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
       propertyPath: playerMovementManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1838387341}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
