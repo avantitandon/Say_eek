@@ -107,12 +107,16 @@ public class GameController : MonoBehaviour
         // take a photo
         // dont want to take a photo when clicking on the phone
         // and only when the camera is active
+
+        
+        // log when photo is captures
         if (photoAction.WasPressedThisFrame() && !isPhoneOpen && camUp.IsCameraActive())
         {
             phototaken = true;
             curr_score = cameraController.TakePhoto();
             LogPlaytest($"Photo taken. index={photosTaken + 1}/{MAX_PHOTOS} score={curr_score} timeRemaining={TimeRemainingSeconds:0.0}s");
         }
+        // If photo input is blocked log why 
         else if (photoAction.WasPressedThisFrame() && Time.unscaledTime - lastBlockedPhotoLogTime > 0.5f)
         {
             string reason = isPhoneOpen ? "phone_open" : (camUp.IsCameraActive() ? "unknown" : "camera_not_active");
