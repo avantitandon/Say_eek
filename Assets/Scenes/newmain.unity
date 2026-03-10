@@ -4031,6 +4031,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Map v2
       objectReference: {fileID: 0}
+    - target: {fileID: 2436904034193194992, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 3799766092311696268, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.5
@@ -4086,6 +4090,10 @@ PrefabInstance:
     - target: {fileID: 3799766092311696268, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6655287457865418537, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
