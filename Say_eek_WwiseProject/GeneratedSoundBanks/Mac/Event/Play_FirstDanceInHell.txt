@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	793759845	Play_FirstDanceInHell			\Default Work Unit\Music\Play_FirstDanceInHell	
+

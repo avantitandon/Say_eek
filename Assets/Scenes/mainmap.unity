@@ -85303,6 +85303,10 @@ PrefabInstance:
       propertyPath: playerMovementManager
       value: 
       objectReference: {fileID: 523158227}
+    - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
+      propertyPath: GameEndEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 29e73f5f179144e8893e246f42a9ac41, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

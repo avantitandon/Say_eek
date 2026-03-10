@@ -20,11 +20,14 @@ namespace AK
         static const AkUniqueID PLAY_CAMERAVIEWOPEN = 2617086320U;
         static const AkUniqueID PLAY_CAMERAZOOMIN = 187507839U;
         static const AkUniqueID PLAY_CAMERAZOOMOUT = 1363090U;
+        static const AkUniqueID PLAY_ENDSCOREMUSIC = 1600600422U;
+        static const AkUniqueID PLAY_FIRSTDANCEINHELL = 793759845U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
-        static const AkUniqueID PLAY_MUS_THEME1_4_4_70BPM_LP = 2317739990U;
         static const AkUniqueID STOP_AMBIENCE1 = 3294285673U;
         static const AkUniqueID STOP_CAMERAZOOMIN = 3484989405U;
         static const AkUniqueID STOP_CAMERAZOOMOUT = 3252179076U;
+        static const AkUniqueID STOP_ENDSCOREMUSIC = 261268628U;
+        static const AkUniqueID STOP_FIRST_DANCE_IN_HELL___MAR10 = 4038005146U;
         static const AkUniqueID STOP_FOOTSTEPS = 2963349357U;
     } // namespace EVENTS
 

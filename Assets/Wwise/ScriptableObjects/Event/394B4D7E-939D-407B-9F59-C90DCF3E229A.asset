@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3715f12cd9be34194833e6eb0a06c023, type: 3}
-  m_Name: EBD8662F-C315-47A2-9D79-FFC72F6A60CA
+  m_Name: 394B4D7E-939D-407B-9F59-C90DCF3E229A
   m_EditorClassIdentifier: AK.Wwise.Unity.API.WwiseTypes::WwiseEventReference
-  objectName: Play_FirstDanceInHell
-  id: 793759845
-  guid: EBD8662F-C315-47A2-9D79-FFC72F6A60CA
+  objectName: Stop_ENDSCOREMUSIC
+  id: 261268628
+  guid: 394B4D7E-939D-407B-9F59-C90DCF3E229A
   IsInUserDefinedSoundBank: 0

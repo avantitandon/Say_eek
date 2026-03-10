@@ -1,3 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	2317739990	Play_mus_Theme1_4_4_70bpm_lp			\Default Work Unit\Music\Play_mus_Theme1_4_4_70bpm_lp	
-

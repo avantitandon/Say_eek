@@ -5,6 +5,7 @@ using UnityEngine.Serialization;
 public class GameController : MonoBehaviour
 {
 
+    [SerializeField] private AK.Wwise.Event GameEndEvent;
     [SerializeField] private MovementStateManager playerMovementManager;
     [SerializeField] private CameraControllerMonolith cameraController;
     [SerializeField] private EndUIController endUIController;
@@ -219,6 +220,7 @@ public class GameController : MonoBehaviour
 
     private void EndRound(string reason)
     {
+        GameEndEvent.Post(gameObject);
         gameActive = false;
         endUIController.SetScoreText(scores, photosTaken);
 

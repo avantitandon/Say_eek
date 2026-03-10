@@ -1,0 +1,46 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1600600422",
+    "Type": "Event",
+    "GUID": "{5CB63139-2FC6-4180-B394-402FBD52D9CF}",
+    "Language": "SFX",
+    "Hash": "{33FA1AC9-6690-6188-8AF4-D752EB56A26D}",
+    "ObjectPath": "Play_ENDSCOREMUSIC",
+    "ShortName": "Play_ENDSCOREMUSIC",
+    "Path": "Event/Play_ENDSCOREMUSIC.bnk",
+    "Media": [
+     {
+      "Id": "236633345",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "ENDSCOREMUSIC.wav",
+      "Path": "Media/236633345.wem",
+      "CachePath": "D2/{D283F5E3-8601-E239-48C8-03E9C3D3DCAF}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1600600422",
+      "Name": "Play_ENDSCOREMUSIC",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_ENDSCOREMUSIC",
+      "GUID": "{5CB63139-2FC6-4180-B394-402FBD52D9CF}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "236633345"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{7F4C2DDD-94E5-5283-4404-5B1B36CC77E6}"
+ }
+}

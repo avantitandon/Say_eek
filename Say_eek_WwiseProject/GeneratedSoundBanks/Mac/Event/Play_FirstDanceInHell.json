@@ -6,14 +6,14 @@
   "SoundBankVersion": "172",
   "SoundBanks": [
    {
-    "Id": "2317739990",
+    "Id": "793759845",
     "Type": "Event",
     "GUID": "{EBD8662F-C315-47A2-9D79-FFC72F6A60CA}",
     "Language": "SFX",
-    "Hash": "{B8681B0C-7733-C20B-E017-D1E37B3B7459}",
-    "ObjectPath": "Play_mus_Theme1_4_4_70bpm_lp",
-    "ShortName": "Play_mus_Theme1_4_4_70bpm_lp",
-    "Path": "Event/Play_mus_Theme1_4_4_70bpm_lp.bnk",
+    "Hash": "{69385A0A-AC38-1D2B-4389-11FD89346F31}",
+    "ObjectPath": "Play_FirstDanceInHell",
+    "ShortName": "Play_FirstDanceInHell",
+    "Path": "Event/Play_FirstDanceInHell.bnk",
     "Media": [
      {
       "Id": "709278586",
@@ -22,18 +22,16 @@
       "Location": "Loose",
       "ShortName": "First Dance in Hell - Mar10.wav",
       "Path": "Media/709278586.wem",
-      "CachePath": "CD/{CDD60638-2D2C-B1EF-0409-CF19BBA746B5}.wem"
+      "CachePath": "6F/{6F735D9B-D742-5A61-1F00-9B363F9765B2}.wem"
      }
     ],
     "Events": [
      {
-      "Id": "2317739990",
-      "Name": "Play_mus_Theme1_4_4_70bpm_lp",
-      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_mus_Theme1_4_4_70bpm_lp",
+      "Id": "793759845",
+      "Name": "Play_FirstDanceInHell",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_FirstDanceInHell",
       "GUID": "{EBD8662F-C315-47A2-9D79-FFC72F6A60CA}",
-      "DurationType": "OneShot",
-      "DurationMin": "68.727295",
-      "DurationMax": "68.727295",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "709278586"
@@ -43,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{251E0C87-F30D-C06B-0A2E-68B6A367E4A1}"
+  "FileHash": "{340F04C2-3119-2D57-9DA6-473EE31FD152}"
  }
 }
