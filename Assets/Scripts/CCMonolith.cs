@@ -86,9 +86,9 @@ public class CameraControllerMonolith : MonoBehaviour
     public LayerMask ignoreLayers;
 
 
-    [SerializeField] private GameObject hearts1;
-    [SerializeField] private GameObject hearts2;
-    [SerializeField] private GameObject hearts3;
+    [SerializeField] private GameObject t1_border;
+    [SerializeField] private GameObject t2_border;
+    [SerializeField] private GameObject t3_border;
     [SerializeField] private GameObject heartsprite;
 
     [SerializeField] private GameObject emptyheart;
@@ -455,18 +455,19 @@ public class CameraControllerMonolith : MonoBehaviour
         photoPreview.gameObject.SetActive(true);
 
         generateHearts();
-        // if (ghostScore > 600) { hearts1.SetActive(true); hearts2.SetActive(true); hearts3.SetActive(true); }
-        // else if (ghostScore > 200) { hearts1.SetActive(true); hearts2.SetActive(true); hearts3.SetActive(false); }
-        // else if (ghostScore > 50) { hearts1.SetActive(true); hearts2.SetActive(false); hearts3.SetActive(false); }
-        // else { hearts1.SetActive(false); hearts2.SetActive(false); hearts3.SetActive(false); }
+        // need to simplify this code
+        if (ghostScore > 200) { t1_border.SetActive(false); t2_border.SetActive(false); t3_border.SetActive(true); }
+        else if (ghostScore > 100) { t1_border.SetActive(false); t2_border.SetActive(true); t3_border.SetActive(false); }
+        else if (ghostScore > 50) { t1_border.SetActive(true); t2_border.SetActive(false); t3_border.SetActive(false); }
+        else { t1_border.SetActive(false); t2_border.SetActive(false); t3_border.SetActive(false); }
         backplate.SetActive(true);
 
         yield return new WaitForSecondsRealtime(previewDuration);
 
         photoPreview.gameObject.SetActive(false);
-        hearts1.SetActive(false);
-        hearts2.SetActive(false);
-        hearts3.SetActive(false);
+        t1_border.SetActive(false);
+        t2_border.SetActive(false);
+        t3_border.SetActive(false);
         backplate.SetActive(false);
 
         previewRoutine = null;
