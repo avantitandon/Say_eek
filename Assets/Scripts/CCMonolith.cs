@@ -90,6 +90,8 @@ public class CameraControllerMonolith : MonoBehaviour
     [SerializeField] private GameObject hearts2;
     [SerializeField] private GameObject hearts3;
     [SerializeField] private GameObject heartsprite;
+
+    [SerializeField] private GameObject emptyheart;
     [SerializeField] private GameObject heartCanvas;
     [SerializeField] private GameObject backplate;
 
@@ -506,10 +508,12 @@ public class CameraControllerMonolith : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             var p = generatePoint();
-            GameObject heart = Instantiate(heartsprite, heartCanvas.transform, false);
+            GameObject heart = Instantiate(heartsprite, emptyheart.transform, false);
             RectTransform rt = heart.GetComponent<RectTransform>();
 
             rt.anchoredPosition = new Vector2(p.Item1, p.Item2);
+            rt.localPosition = new Vector3(rt.localPosition.x, rt.localPosition.y, 0f);
+            //rt.position.z = 0;
 
             heart.transform.localScale = Vector3.one;
             heart.transform.SetAsLastSibling();
