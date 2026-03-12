@@ -4647,6 +4647,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2113839144}
     - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
+      propertyPath: BossTextScript
+      value: 
+      objectReference: {fileID: 2113839154}
+    - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
+      propertyPath: bossTextScript
+      value: 
+      objectReference: {fileID: 2113839154}
+    - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
       propertyPath: endUIController
       value: 
       objectReference: {fileID: 1708864008}
@@ -4654,6 +4662,10 @@ PrefabInstance:
       propertyPath: cameraController
       value: 
       objectReference: {fileID: 1208467859}
+    - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
+      propertyPath: enablePlaytestLogs
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5511428558271366835, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
       propertyPath: photoPreviewOverlay
       value: 
