@@ -2541,6 +2541,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 517084205733436793, guid: c0200a1f684103e45836c7b61e3aac2b, type: 3}
   m_PrefabInstance: {fileID: 8918371213289640519}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &890414940 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4790816481803156942, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
+  m_PrefabInstance: {fileID: 1710006835}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &890414946
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890414940}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &927387962
 GameObject:
   m_ObjectHideFlags: 0
@@ -4055,6 +4087,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 3430324779857702776, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
+      propertyPath: bossText
+      value: 
+      objectReference: {fileID: 2113839154}
     - target: {fileID: 3799766092311696268, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.5
@@ -4118,7 +4154,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4790816481803156942, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 890414946}
   m_SourcePrefab: {fileID: 100100000, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
 --- !u!1001 &1730648592
 PrefabInstance:
@@ -4215,9 +4254,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 927212241487036968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 1768314550061284499, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: m_Height
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768314550061284499, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1803097094263659584, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4900,6 +4947,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff47bf41a413c9843b6485360f2d2c0a, type: 3}
+--- !u!114 &1950219762 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2283804344139842422, guid: 6040513e4ae2ac1428f7bf7adab773a3, type: 3}
+  m_PrefabInstance: {fileID: 2113839143}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1001 &1955124165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5441,7 +5499,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4619240280853443353, guid: 6040513e4ae2ac1428f7bf7adab773a3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2113839154}
   m_SourcePrefab: {fileID: 100100000, guid: 6040513e4ae2ac1428f7bf7adab773a3, type: 3}
 --- !u!1 &2113839144 stripped
 GameObject:
@@ -5464,6 +5525,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4619240280853443353, guid: 6040513e4ae2ac1428f7bf7adab773a3, type: 3}
   m_PrefabInstance: {fileID: 2113839143}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2113839154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113839146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad6106a72772c4cd780822c3f1f7b66a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossTextScript
+  resultsText: {fileID: 1950219762}
+  bossTextRoot: {fileID: 2130771888}
 --- !u!1001 &2114281061
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5599,6 +5674,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d22521f492ac25a46b0ad1c4e8c22c72, type: 3}
+--- !u!1 &2130771888 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1265406397584187221, guid: 6040513e4ae2ac1428f7bf7adab773a3, type: 3}
+  m_PrefabInstance: {fileID: 2113839143}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2054326225665420861
 PrefabInstance:
   m_ObjectHideFlags: 0

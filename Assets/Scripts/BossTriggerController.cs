@@ -12,7 +12,7 @@ public class BossTriggerController : MonoBehaviour
     // each game object will have its own text and only be triggered once
     [SerializeField] private string text = "Take as many well framed photos as you can!";
     [SerializeField] private float duration = 3f;
-    
+
     [SerializeField] private bool triggerOnce = true;
 
 // extra check for triggered for later 
@@ -25,6 +25,7 @@ public class BossTriggerController : MonoBehaviour
         if (triggerOnce && hasTriggered) return;
         if (!other.CompareTag("Player")) return;
         if (bossText == null) return;
+        Debug.Log("Trigger hit: " + other.name);
 
         bossText.SetTextMessage(text, duration);
         hasTriggered = true;
