@@ -11,6 +11,8 @@ public class GameController : MonoBehaviour
     [SerializeField] private EndUIController endUIController;
     [SerializeField] private PhoneUIController phoneUIController;
     [SerializeField] private CameraUpScript camUp;          // gotta add camera animation before running, i cant add to prefab idk y
+    [SerializeField] private BossTextScript BossTextScript;
+
 
     [Header("Playtest Logging")]
     [SerializeField] private bool enablePlaytestLogs = true;
@@ -177,6 +179,15 @@ public class GameController : MonoBehaviour
                 EndRound("timer_expired");
                 return;
             }
+
+            // PLACEHOLDER LOGIC!!!!!!!!!
+
+            if ( TimeRemainingSeconds <= 290f  && TimeRemainingSeconds >= 289f)
+            {
+                BossTextScript.SetTextMessage("Boss Says Something", 1f);
+            }
+
+            // END OF PLACEHOLDER LOGIC!!!!!1
 
             // save photo score from this frame
             if (phototaken)
