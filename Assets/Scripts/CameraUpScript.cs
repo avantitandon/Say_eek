@@ -3,15 +3,37 @@ using UnityEngine.InputSystem;
 
 public class CameraUpScript : MonoBehaviour
 {
+    // camera states
+
+    public enum State
+    {
+        Down,
+        Rising,
+        Up,
+        Falling
+    }
+
+    // CONSTANTS //
+
+    // AUDIO //
     [SerializeField] private AK.Wwise.Event cameraUpEvent;
     [SerializeField] private AK.Wwise.Event cameraDownEvent;
+
+
+    // GAME COMPONENTS //
+
     [Header("Animator")]
     [SerializeField] private GameObject cameraModel;
+
+    [SerializeField] private GameObject framelines;
     [SerializeField] private Animator anim;
+
+
+    // VARIABLES //
     [SerializeField] private string stateName = "CameraUp";
     [SerializeField] private int layer = 0;
     [SerializeField] private float speed = 1f;
-    [SerializeField] private GameObject framelines;
+    
 
     [Header("Hold Behavior")]
     [Range(0f, 1f)]
@@ -21,7 +43,7 @@ public class CameraUpScript : MonoBehaviour
 
     [Header("Hold Behavior")]
     [Range(0f, 1f)]
-    [SerializeField] private float holdContinue = 0.15f; // was 0.45
+    [SerializeField] private float holdContinue;
     // changing this doesn't matter much, overriden by prefab (good thing i checked editor in game)
     // was 0.454 in prefab before trimming
 
@@ -31,27 +53,12 @@ public class CameraUpScript : MonoBehaviour
     [SerializeField] private bool enablePlaytestLogs = true;
 
     // if the camera is on the way up
-    private bool camUp = false;
+    private State state;
 
-    // if the camera is on the way down
-    private bool camDown = false;
 
-    // if the camera is usable (overlay on and etc) 
-    private bool camActive = false;
-    InputAction cameraToggleAction;
-
-    public bool IsCameraUp() {
-        return camUp;
-    }
-
-    public bool IsCameraDown()
+    public bool IsCameraUp()
     {
-        return camDown;
-    }
-
-    public bool IsCameraActive()
-    {
-        return camActive;
+        return state == State.Up;
     }
 
     void Awake()
@@ -62,89 +69,80 @@ public class CameraUpScript : MonoBehaviour
 
     void Start()
     {
-        cameraToggleAction = InputSystem.actions.FindAction("ToggleCamera");
+        state = State.Down;
     }
 
     void Update()
     {
-        if (Mouse.current == null || anim == null) return;
 
-        if (cameraToggleAction.WasPressedThisFrame())
+    }
+
+    // call this function every frame that the camera key is held down
+    public void Hold()
+    {
+        // if the camera is down, make it rise
+        if (state == State.Down)
         {
-            LogPlaytest("ToggleCamera pressed.");
-            if (!camActive && !camUp && !camDown) {  // camera going up animation
-                anim.speed = speed;
-                anim.Play(stateName, layer, 0f);
-                anim.Update(0f);
+            anim.speed = speed;
+            anim.Play(stateName, layer, 0f);
+            anim.Update(0f);
 
-                camDown = false;
-                camUp = true;
-                camActive = false;
-                LogPlaytest("Camera moving up.");
-            } 
+            state = State.Rising;
+            LogPlaytest("Camera moving up.");
         }
-
-        if (!cameraToggleAction.IsPressed())
+        // if the camera is rising, check if we should stop
+        else if (state == State.Rising)
         {
-            if (camActive) {    // camera going down animation
-                framelines.SetActive(false);
-                cameraModel.SetActive(true);
-                anim.speed = speed;
+            // get the current animation state
+            var st = anim.GetCurrentAnimatorStateInfo(layer);
+
+            // if we are at the top, stop
+            if (st.normalizedTime >= holdStart)
+            { // holding at holdNormalized
+
                 anim.Play(stateName, layer, holdContinue);
-                anim.Update(0f);
+                framelines.SetActive(true);
+                cameraModel.SetActive(false);
+                anim.speed = 0f;
 
-                camDown = true;
-                camUp = false;
-                camActive = false;
-                cameraDownEvent.Post(gameObject);
-                LogPlaytest("Camera moving down.");
-            } 
-        }
-            
-        if (camUp) {
-            var st = anim.GetCurrentAnimatorStateInfo(layer);
-            if (st.normalizedTime >= holdStart) { // holding at holdNormalized
-
-                // don't want the camera ui to flash on screen if going down right away. just copied code from start camera down.
-                if (!cameraToggleAction.IsPressed())
-                {
-                    framelines.SetActive(false);
-                    cameraModel.SetActive(true);
-                    anim.speed = speed;
-                    anim.Play(stateName, layer, holdContinue);
-                    anim.Update(0f);
-
-                    camDown = true;
-                    camUp = false;
-                    camActive = false;
-                    LogPlaytest("Camera moving down before activation.");
-                }
-                else
-                {
-                    anim.Play(stateName, layer, holdContinue);
-                    framelines.SetActive(true);
-                    cameraModel.SetActive(false);
-                    anim.speed = 0f;
-
-                    camUp = false;
-                    camActive = true;
-                    camDown = false;
-                    cameraUpEvent.Post(gameObject);
-                    LogPlaytest("Camera active.");
-                }
-            } else if (st.normalizedTime < minProgressBeforeHold) { // allow going back up if we haven't reached the hold point
-                anim.speed = speed;
+                state = State.Up;
+                cameraUpEvent.Post(gameObject);
+                LogPlaytest("Camera active.");
             }
-
+            // continue otherwise
+            else if (st.normalizedTime < minProgressBeforeHold) {
+                anim.speed = speed;
+            }    
         }
 
-        // playing the rest of the animation
-        if (camDown) {
+        // consider allowing the player to pull up the camera while it is falling
+    }
+
+    // call this function every frame that the camera key is released
+    public void Release()
+    {
+        // if the camera is up, have it start coming down
+        if (state == State.Up)
+        {
+            framelines.SetActive(false);
+            cameraModel.SetActive(true);
+            anim.speed = speed;
+            anim.Play(stateName, layer, holdContinue);
+            anim.Update(0f);
+
+            state = State.Falling;
+            cameraDownEvent.Post(gameObject);
+            LogPlaytest("Camera moving down.");
+        }
+        // if the camera is falling, check if it is done
+        else if (state == State.Falling)
+        {
+            // get the animation state
             var st = anim.GetCurrentAnimatorStateInfo(layer);
-            if (st.IsName(stateName) && st.normalizedTime >= 1f) { // finished going down
-                camUp = false;
-                camDown = false;
-                camActive = false;
+            
+            // if the camera finished falling
+            if (st.IsName(stateName) && st.normalizedTime >= 1f) {
+                state = State.Down;
                 LogPlaytest("Camera idle/down.");
             }
         }

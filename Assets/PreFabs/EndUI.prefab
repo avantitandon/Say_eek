@@ -146,7 +146,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 177996771643729566}
-  - component: {fileID: 3172103924768995141}
   m_Layer: 0
   m_Name: EndUI
   m_TagString: Untagged
@@ -163,27 +162,13 @@ Transform:
   m_GameObject: {fileID: 671892977526458709}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.85429, y: -0, z: 38.03666}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1103490326743284921}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3172103924768995141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 671892977526458709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1d00831388baa640a216d959b7ae0b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EndUIController
-  ResultsText: {fileID: 2903981205565127569}
-  ResultsText2: {fileID: 2739739145509833999}
 --- !u!1 &5577329701081645876
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,8 +648,8 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_VertexColorAlwaysGammaSpace: 1
+  m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 150

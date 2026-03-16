@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1973012350405842231}
-  - component: {fileID: 5511428558271366835}
+  - component: {fileID: 6398434740384984267}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -26,13 +26,13 @@ Transform:
   m_GameObject: {fileID: 1667046843245566198}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -85.23964, y: 0.85343, z: 28.79659}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5511428558271366835
+--- !u!114 &6398434740384984267
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,26 +41,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1667046843245566198}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e58c2fd2f0fa63d4c96543fa9fc719ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b72fe4e0b7d9e942b3c37a9ed0535fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameController
-  GameEndEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  playerMovementManager: {fileID: 0}
-  cameraController: {fileID: 0}
-  endUIController: {fileID: 0}
-  phoneUIController: {fileID: 0}
-  camUp: {fileID: 0}
-  enablePlaytestLogs: 1
-  gameActive: 0
-  roundDurationSeconds: 300
-  photosTaken: 0
-  scores: 
-  player: {fileID: 0}
-  cameraObject: {fileID: 0}
-  debugOverlay: {fileID: 0}
-  gameUI: {fileID: 0}
-  endUI: {fileID: 0}
-  photoPreviewOverlay: {fileID: 0}
+  playerController: {fileID: 0}
+  hudManager: {fileID: 0}
+  enablePlaytestLogs: 0

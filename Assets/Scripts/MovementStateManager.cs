@@ -9,37 +9,49 @@ using UnityEngine.InputSystem;
 
 public class MovementStateManager : MonoBehaviour
 {
-    [SerializeField] private CameraControllerMonolith cameraController;
-    public float moveSpeed;
+    // CONSTANTS //
 
     public const float WALK_SPEED = 15f;
     public const float CAMERA_UP_WALK_SPEED = 7f;
 
+    // AUDIO //
+
+    [SerializeField] private AK.Wwise.Event playFootsteps;
+    [SerializeField] private AK.Wwise.Event stopFootsteps;
+
+    // GAME COMPONENTS //
+    [SerializeField] private CameraController cameraController;
+
+    // coming from the player object itself
+    [SerializeField] private CharacterController characterController;
+
+    // VARIABLES //
+
+    // LOGGING //
+   
+    [SerializeField] public float moveSpeed;
+
     [SerializeField] private float groundYOffset = 0.1f;
     [SerializeField] private LayerMask groundMask;
     [SerializeField] private float gravity = -9.81f;
-    // Wwise events for footsteps
-    [SerializeField] private AK.Wwise.Event playFootsteps;
-    [SerializeField] private AK.Wwise.Event stopFootsteps;
+
+    private Vector3 velocity;
+    private Vector3 movementDirection;
+    private Vector3 spherePosition;
+
+
+    // LOGGING //
+
     [Header("Playtest Logging")]
     [SerializeField] private bool enablePlaytestLogs = true;
     // Flag to track if footsteps are currently playing
     private bool isPlayingFootsteps = false;
 
 
-    private CharacterController controller;
-    private Vector3 velocity;
-    private Vector3 movementDirection;
-    private Vector3 spherePosition;
-
-    InputAction moveAction;
-
 
     private void Awake()
     {
-        // Cache the CharacterController component for performance
-        controller = GetComponent<CharacterController>();
-        if (controller == null)
+        if (characterController == null)
         {
             Debug.LogError("CharacterController component is missing!");
             enabled = false;
@@ -49,24 +61,38 @@ public class MovementStateManager : MonoBehaviour
 
     private void Start()
     {
-        moveAction = InputSystem.actions.FindAction("Move");
-        //moveSpeed = WALK_SPEED;
+        moveSpeed = WALK_SPEED;
     }
 
 
     private void Update()
     {
+
+    }
+
+    public void MovePlayer(Vector2 input)
+    {
         // Calculate movement direction
-        GetDirection();
+        GetDirection(input);
 
 
         // Apply gravity
         ApplyGravity();
         // Combine movement and gravity, then move the character
         Vector3 finalMove = movementDirection * moveSpeed + velocity;
-        controller.Move(finalMove * Time.deltaTime);
+        characterController.Move(finalMove * Time.deltaTime);
         // Handle footstep sounds
         HandleFootsteps();
+    }
+
+    public void SetWalkSpeed()
+    {
+        moveSpeed = WALK_SPEED;
+    }
+
+    public void SetCameraUpWalkSpeed()
+    {
+        moveSpeed = CAMERA_UP_WALK_SPEED;
     }
 
     private void HandleFootsteps()
@@ -95,7 +121,7 @@ public class MovementStateManager : MonoBehaviour
     private bool IsGrounded()
     {
         spherePosition = new Vector3(transform.position.x, transform.position.y - groundYOffset, transform.position.z);
-        return Physics.CheckSphere(spherePosition, controller.radius - 0.05f, groundMask);
+        return Physics.CheckSphere(spherePosition, characterController.radius - 0.05f, groundMask);
     }
 
 
@@ -123,14 +149,11 @@ public class MovementStateManager : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(
             new Vector3(transform.position.x, transform.position.y - groundYOffset, transform.position.z),
-            controller != null ? controller.radius - 0.05f : 0.5f
+            characterController != null ? characterController.radius - 0.05f : 0.5f
         );
     }
-    private void GetDirection()
+    private void GetDirection(Vector2 moveValue)
     {
-        Vector2 moveValue = moveAction.ReadValue<Vector2>();
-
-
         Vector3 camForward = cameraController.GetCameraForward();
         Vector3 camRight = cameraController.GetCameraRight();
 
