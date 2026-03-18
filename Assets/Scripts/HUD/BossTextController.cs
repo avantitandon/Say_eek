@@ -1,17 +1,26 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
-
+// I hate CA
 public class BossTextController : MonoBehaviour
 {
-    // The TMP field that displays the current dialogue line.
+    //Moved everything about the hUD STATE manager for cleaner code? 
+    private const int T1_THRESHOLD = 50;
+    private const int T2_THRESHOLD = 100;
+    private const int T3_THRESHOLD = 200;
+
+    // The TMP field that displays the current dialogue.
     [SerializeField] private TMP_Text bossTextMessage;
 
-    // The panel that slides in and out, plus the timing and distance of the slide.
+    // The panel that slides in and out, plus the timing and distance
     [SerializeField] private RectTransform dialoguePanel;
     [SerializeField] private float slideDuration = 0.2f;
     [SerializeField] private float slideOffsetX = 0f;
     [SerializeField] private float slideOffsetY = 140f;
+    [SerializeField] private string lowScoreMessage = "Are you even trying intern? Or just trying to make me mad";
+    [SerializeField] private string t1Message = "Better. Keep moving.";
+    [SerializeField] private string t2Message = "Now that looks usable.";
+    [SerializeField] private string t3Message = "This is going to POP Off on the gram!.";
     private string[] dialogueLines;
     private int Currlineindex;
 
@@ -133,6 +142,11 @@ public class BossTextController : MonoBehaviour
         autoHideRoutine = StartCoroutine(AutoHideAfterDelay(durationSeconds));
     }
 
+    public void ShowTemporaryMessageForScore(int score, float durationSeconds)
+    {
+        ShowTemporaryMessage(GetMessageForScore(score), durationSeconds);
+    }
+
     private void UpdateDisplayedLine()
     {
         if (bossTextMessage == null || dialogueLines == null || Currlineindex >= dialogueLines.Length)
@@ -227,5 +241,26 @@ public class BossTextController : MonoBehaviour
 
         StopCoroutine(autoHideRoutine);
         autoHideRoutine = null;
+    }
+    // Have score be sent to this 
+
+    private string GetMessageForScore(int score)
+    {
+        if (score > T3_THRESHOLD)
+        {
+            return t3Message;
+        }
+
+        if (score > T2_THRESHOLD)
+        {
+            return t2Message;
+        }
+
+        if (score > T1_THRESHOLD)
+        {
+            return t1Message;
+        }
+
+        return lowScoreMessage;
     }
 }
