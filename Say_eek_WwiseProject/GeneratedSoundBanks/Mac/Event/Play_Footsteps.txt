@@ -1,3 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	3854155799	Play_Footsteps			\Default Work Unit\Footsteps\Play_Footsteps	
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2984997679	IsSlowWalking			\Default Work Unit\IsSlowWalking	
+

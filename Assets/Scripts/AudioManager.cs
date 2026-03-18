@@ -4,6 +4,7 @@ public class AudioManager : MonoBehaviour
 {
     //COPY PASTAS
         // [SerializeField] private AK.Wwise.Event
+        // AkSoundEngine.SetRTPCValue("RTPC_Name", value, gameObject);
 
 
     [Header("Music and Ambience Events")]
@@ -35,7 +36,7 @@ public class AudioManager : MonoBehaviour
     
     
     
-    
+    // VARIABLES //
     private bool isPlayingFootsteps = false;
 
 
@@ -49,17 +50,12 @@ public class AudioManager : MonoBehaviour
         playMusic.Post(player);
         playAmbience.Post(player);
     }
-
-    public void Footsteps()
-    {
-        
-
-    }
-
     void LateUpdate()
     {
         
     }
+
+
 
     // CAMERA EVENTS //
     public void CameraCapture()
@@ -89,14 +85,21 @@ public class AudioManager : MonoBehaviour
     }
 
 
-    
-    public void HandleFootsteps(Vector3 movementDirection)
+    // PLAYER EVENTS
+    public void HandleFootsteps(Vector3 movementDirection, bool isSlowWalking)
     {
         bool isMoving = movementDirection.magnitude > 0.1f;
-
+        if (isSlowWalking)
+        {
+            Debug.Log("Player is slow walking. Setting RTPC value to 1.");
+            AkSoundEngine.SetRTPCValue("IsSlowWalking", 1f, player);
+        }
+        else
+        {
+            AkSoundEngine.SetRTPCValue("IsSlowWalking", 0f, player);
+        }
         if (isMoving)
         {
-            Debug.Log("boing");
             if (!isPlayingFootsteps)
             {
                 playFootsteps.Post(player);
