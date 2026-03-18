@@ -145,7 +145,7 @@ public class PlayerController : MonoBehaviour
 
             // display the photo
             hudManager.DisplayPhotoPreview(curr_score, curr_photo);
-            hudManager.ShowPictureBossText();
+            hudManager.ShowPictureBossText(curr_score);
 
 
             // LogPlaytest($"Photo taken. index={photosTaken + 1}/{MAX_PHOTOS} score={curr_score} timeRemaining={TimeRemainingSeconds:0.0}s");
