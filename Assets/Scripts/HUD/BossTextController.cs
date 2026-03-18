@@ -23,6 +23,12 @@ public class BossTextController : MonoBehaviour
 // enter dialogue
     public void BeginDialogue(string[] lines) // all dialogue in string array, allows iterating
     {
+        if (bossTextMessage == null)
+        {
+            Debug.LogError("bossTextMessage is not assigned. Check BossTextTutorial prefab wiring.");
+            return;
+        }
+
         if (lines == null || lines.Length == 0)
         {
             Hide();
@@ -67,7 +73,13 @@ public class BossTextController : MonoBehaviour
 
     private void UpdateDisplayedLine()
     {
-        if (bossTextMessage == null || dialogueLines == null || currentLineIndex >= dialogueLines.Length)
+        if (bossTextMessage == null)
+        {
+            Debug.LogError("BossTextController: cannot update dialogue because bossTextMessage is not assigned.");
+            return;
+        }
+
+        if (dialogueLines == null || currentLineIndex >= dialogueLines.Length)
         {
             // end 
             return;
