@@ -158,6 +158,7 @@ public class StickerOverlayController : MonoBehaviour
             //rt.position.z = 0;
 
             stickerObject.transform.SetAsLastSibling();
+            stickerObject.SetActive(true);
         }
     }
 }

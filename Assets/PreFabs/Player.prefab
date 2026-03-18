@@ -190,7 +190,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 578625182422816961}
-  - {fileID: 6317849454762258741}
+  - {fileID: 4220850834333868317}
   - {fileID: 1761178416332307552}
   - {fileID: 542809531779195564}
   - {fileID: 6370828215605112237}
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HUDManager
   photoPreviewController: {fileID: 5230104173153174620}
   statusUIController: {fileID: 1314357487982060342}
-  stickerOverlayController: {fileID: 8441690231459064498}
+  stickerOverlayController: {fileID: 4038024817165189495}
 --- !u!1 &3307369355531649007
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,7 +506,11 @@ PrefabInstance:
     - target: {fileID: 8595660369119096435, guid: 3e05f9c879dbdc3468c991d0aa2aaba2, type: 3}
       propertyPath: framelines
       value: 
-      objectReference: {fileID: 7992553383644435425}
+      objectReference: {fileID: 887276956885273113}
+    - target: {fileID: 8595660369119096435, guid: 3e05f9c879dbdc3468c991d0aa2aaba2, type: 3}
+      propertyPath: cameraOverlay
+      value: 
+      objectReference: {fileID: 887276956885273113}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -528,6 +532,84 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aa56314319f46a4eaa3cbd9ce3ddc56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraController
+--- !u!1001 &4104980462643128578
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6384662198149280696}
+    m_Modifications:
+    - target: {fileID: 172447969757530143, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.57865
+      objectReference: {fileID: 0}
+    - target: {fileID: 172447969757530143, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 172447969757530143, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 27.25022
+      objectReference: {fileID: 0}
+    - target: {fileID: 172447969757530143, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 172447969757530143, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 172447969757530143, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 172447969757530143, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 172447969757530143, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 172447969757530143, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 172447969757530143, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3794261020991185691, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
+      propertyPath: m_Name
+      value: CameraOverlay
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
+--- !u!1 &887276956885273113 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3794261020991185691, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
+  m_PrefabInstance: {fileID: 4104980462643128578}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4038024817165189495 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 71534046258456693, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
+  m_PrefabInstance: {fileID: 4104980462643128578}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887276956885273113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d34b940b6dc048a0af3bac441279462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StickerOverlayController
+--- !u!4 &4220850834333868317 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 172447969757530143, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
+  m_PrefabInstance: {fileID: 4104980462643128578}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5349318367225635436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -601,123 +683,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74f553a6e88d60b459d33e734adea625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PhotoPreviewController
---- !u!1 &6798706739265239137 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1469655021334403597, guid: 42c69a132c6924046990e6895d979e76, type: 3}
-  m_PrefabInstance: {fileID: 5349318367225635436}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &6181518249413146922
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 6384662198149280696}
-    m_Modifications:
-    - target: {fileID: 172447969757530143, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 172447969757530143, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 172447969757530143, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 172447969757530143, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 172447969757530143, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 172447969757530143, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 172447969757530143, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 172447969757530143, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 172447969757530143, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 172447969757530143, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3794261020991185691, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
-      propertyPath: m_Name
-      value: CameraOverlay
-      objectReference: {fileID: 0}
-    - target: {fileID: 4901131900159438618, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
-      propertyPath: m_Name
-      value: StickerCanvas
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3794261020991185691, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8441690231459064498}
-    - targetCorrespondingSourceObject: {fileID: 4261085759368620747, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4240653594755561249}
-  m_SourcePrefab: {fileID: 100100000, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
---- !u!4 &6317849454762258741 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 172447969757530143, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
-  m_PrefabInstance: {fileID: 6181518249413146922}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7020766930807495217 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3794261020991185691, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
-  m_PrefabInstance: {fileID: 6181518249413146922}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8441690231459064498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7020766930807495217}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d34b940b6dc048a0af3bac441279462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StickerOverlayController
-  heartsprite: {fileID: 6798706739265239137}
-  emptyheart: {fileID: 7992553383644435425}
-  heartCanvas: {fileID: 7992553383644435425}
---- !u!1 &7992553383644435425 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4261085759368620747, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
-  m_PrefabInstance: {fileID: 6181518249413146922}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4240653594755561249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7992553383644435425}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d34b940b6dc048a0af3bac441279462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StickerOverlayController
-  heartsprite: {fileID: 6798706739265239137}
-  emptyheart: {fileID: 0}
-  heartCanvas: {fileID: 0}
 --- !u!1001 &6967420321767314328
 PrefabInstance:
   m_ObjectHideFlags: 0

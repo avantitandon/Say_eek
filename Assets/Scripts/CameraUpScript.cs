@@ -25,7 +25,7 @@ public class CameraUpScript : MonoBehaviour
     [Header("Animator")]
     [SerializeField] private GameObject cameraModel;
 
-    [SerializeField] private GameObject framelines;
+    [SerializeField] private GameObject cameraOverlay;
     [SerializeField] private Animator anim;
 
 
@@ -64,7 +64,7 @@ public class CameraUpScript : MonoBehaviour
     void Awake()
     {
         if (anim == null) anim = GetComponentInChildren<Animator>();
-        framelines.SetActive(false);
+        cameraOverlay.SetActive(false);
     }
 
     void Start()
@@ -101,7 +101,7 @@ public class CameraUpScript : MonoBehaviour
             { // holding at holdNormalized
 
                 anim.Play(stateName, layer, holdContinue);
-                framelines.SetActive(true);
+                cameraOverlay.SetActive(true);
                 cameraModel.SetActive(false);
                 anim.speed = 0f;
 
@@ -124,7 +124,7 @@ public class CameraUpScript : MonoBehaviour
         // if the camera is up, have it start coming down
         if (state == State.Up)
         {
-            framelines.SetActive(false);
+            cameraOverlay.SetActive(false);
             cameraModel.SetActive(true);
             anim.speed = speed;
             anim.Play(stateName, layer, holdContinue);
