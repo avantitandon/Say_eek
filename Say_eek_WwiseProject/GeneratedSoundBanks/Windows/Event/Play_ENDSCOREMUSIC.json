@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{5CB63139-2FC6-4180-B394-402FBD52D9CF}",
     "Language": "SFX",
-    "Hash": "{33FA1AC9-6690-6188-8AF4-D752EB56A26D}",
+    "Hash": "{CA2F6BE1-57D9-2F45-F46E-DC03BB9300D4}",
     "ObjectPath": "Play_ENDSCOREMUSIC",
     "ShortName": "Play_ENDSCOREMUSIC",
     "Path": "Event/Play_ENDSCOREMUSIC.bnk",
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{7F4C2DDD-94E5-5283-4404-5B1B36CC77E6}"
+  "FileHash": "{9FA10F1D-1F1F-C116-F893-938B1E1FBD78}"
  }
 }
