@@ -1,3 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	3080007124	Play_CameraViewClose			\Default Work Unit\Camera\Play_CameraViewClose	
-

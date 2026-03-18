@@ -1,19 +1,19 @@
 {
  "SoundBanksInfo": {
-  "Platform": "Mac",
-  "BasePlatform": "Mac",
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
   "SchemaVersion": "16",
   "SoundBankVersion": "172",
   "SoundBanks": [
    {
-    "Id": "3080007124",
+    "Id": "2825339271",
     "Type": "Event",
     "GUID": "{B40EF29A-E628-417A-B108-709FD07A281C}",
     "Language": "SFX",
-    "Hash": "{44131398-A99A-B278-D2FE-029F36F89992}",
-    "ObjectPath": "Play_CameraViewClose",
-    "ShortName": "Play_CameraViewClose",
-    "Path": "Event/Play_CameraViewClose.bnk",
+    "Hash": "{9A53D14C-C61E-69A7-9E11-E50415B20F6A}",
+    "ObjectPath": "Play_CameraDown",
+    "ShortName": "Play_CameraDown",
+    "Path": "Event/Play_CameraDown.bnk",
     "Media": [
      {
       "Id": "758388812",
@@ -36,9 +36,9 @@
     ],
     "Events": [
      {
-      "Id": "3080007124",
-      "Name": "Play_CameraViewClose",
-      "ObjectPath": "\\Events\\Default Work Unit\\Camera\\Play_CameraViewClose",
+      "Id": "2825339271",
+      "Name": "Play_CameraDown",
+      "ObjectPath": "\\Events\\Default Work Unit\\Camera\\Activity\\Play_CameraDown",
       "GUID": "{B40EF29A-E628-417A-B108-709FD07A281C}",
       "DurationType": "OneShot",
       "DurationMin": "0.10458333",
@@ -55,6 +55,6 @@
     ]
    }
   ],
-  "FileHash": "{BE3C29D7-E6B2-42EB-1A91-D06ADBC7968D}"
+  "FileHash": "{F8E6D22A-DB6B-A5E5-C5EB-FCE54F90B00A}"
  }
 }

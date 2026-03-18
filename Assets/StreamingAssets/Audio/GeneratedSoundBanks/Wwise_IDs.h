@@ -15,11 +15,14 @@ namespace AK
     {
         static const AkUniqueID PLAY_AMB_WATER_001 = 4200714142U;
         static const AkUniqueID PLAY_AMBIENCE1 = 1117071627U;
+        static const AkUniqueID PLAY_CAMERAACTIVE = 2895583013U;
         static const AkUniqueID PLAY_CAMERACAPTURE = 3730852459U;
-        static const AkUniqueID PLAY_CAMERAVIEWCLOSE = 3080007124U;
-        static const AkUniqueID PLAY_CAMERAVIEWOPEN = 2617086320U;
+        static const AkUniqueID PLAY_CAMERADOWN = 2825339271U;
+        static const AkUniqueID PLAY_CAMERAUP = 3639359056U;
         static const AkUniqueID PLAY_CAMERAZOOMIN = 187507839U;
+        static const AkUniqueID PLAY_CAMERAZOOMIN_BETATEMP = 3116297798U;
         static const AkUniqueID PLAY_CAMERAZOOMOUT = 1363090U;
+        static const AkUniqueID PLAY_CAMERAZOOMOUT_BETATEMP = 1653393465U;
         static const AkUniqueID PLAY_ENDSCOREMUSIC = 1600600422U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_MAINMUSIC = 1346240278U;

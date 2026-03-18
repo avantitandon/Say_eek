@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1653393465",
+    "Type": "Event",
+    "GUID": "{8604FE67-03B1-4F7A-8630-9BBFCAFD6859}",
+    "Language": "SFX",
+    "Hash": "{F6369CDC-64A0-6854-C333-6F222519C50E}",
+    "ObjectPath": "Play_CameraZoomOut_BETATEMP",
+    "ShortName": "Play_CameraZoomOut_BETATEMP",
+    "Path": "Event/Play_CameraZoomOut_BETATEMP.bnk",
+    "Media": [
+     {
+      "Id": "269544030",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_camera_lens_04.wav",
+      "Path": "Media/269544030.wem",
+      "CachePath": "C5/{C5E8E1BE-9A43-10CE-BDD6-80C62DACCCF4}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1653393465",
+      "Name": "Play_CameraZoomOut_BETATEMP",
+      "ObjectPath": "\\Events\\Default Work Unit\\Camera\\Zoom\\Play_CameraZoomOut_BETATEMP",
+      "GUID": "{8604FE67-03B1-4F7A-8630-9BBFCAFD6859}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.33634672",
+      "DurationMax": "0.33634672",
+      "MediaRefs": [
+       {
+        "Id": "269544030"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{FEA582F4-5776-706F-AD72-A47053060CAA}"
+ }
+}
