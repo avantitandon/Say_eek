@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2895583013",
+    "Type": "Event",
+    "GUID": "{07853014-695C-48EA-96E5-46BCEE7EC6C1}",
+    "Language": "SFX",
+    "Hash": "{9CB1E865-CA1C-034E-0CA3-CCD9B4B73F61}",
+    "ObjectPath": "Play_CameraActive",
+    "ShortName": "Play_CameraActive",
+    "Path": "Event/Play_CameraActive.bnk",
+    "Media": [
+     {
+      "Id": "435627783",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_camera_view_beeps.wav",
+      "Path": "Media/435627783.wem",
+      "CachePath": "98/{9861C235-2C29-9839-91EC-0E8914AE0ACC}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2895583013",
+      "Name": "Play_CameraActive",
+      "ObjectPath": "\\Events\\Default Work Unit\\Camera\\Activity\\Play_CameraActive",
+      "GUID": "{07853014-695C-48EA-96E5-46BCEE7EC6C1}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.13185416",
+      "DurationMax": "0.13185416",
+      "MediaRefs": [
+       {
+        "Id": "435627783"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{1EC7789B-C800-7E9C-A83F-6131E3FC79E8}"
+ }
+}

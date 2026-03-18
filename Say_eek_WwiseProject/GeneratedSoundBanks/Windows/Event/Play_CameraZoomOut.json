@@ -38,7 +38,7 @@
      {
       "Id": "1363090",
       "Name": "Play_CameraZoomOut",
-      "ObjectPath": "\\Events\\Default Work Unit\\Camera\\Play_CameraZoomOut",
+      "ObjectPath": "\\Events\\Default Work Unit\\Camera\\Zoom\\Play_CameraZoomOut",
       "GUID": "{9C66E699-5929-46E0-9A3D-D0442981C4D9}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -61,6 +61,6 @@
     ]
    }
   ],
-  "FileHash": "{42EBF286-6040-3F90-E734-5263C3D7BF04}"
+  "FileHash": "{7C78C055-3E4B-57CC-9911-9F00C94CA648}"
  }
 }

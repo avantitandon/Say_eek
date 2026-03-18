@@ -1489,6 +1489,38 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1838387336}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: playMusic.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: b9d51558a7b7c482c955acbf3e09bb37, type: 2}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: playAmbience.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 50e921f7c1b8742c288b068386fe3186, type: 2}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: playCameraUp.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 22f64705ca14e49a09ea8590c725166d, type: 2}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: playCameraDown.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 9ce67e9b9e3cb4fae8f17ad03185b032, type: 2}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: playCameraActive.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a77ec7c84c6842b089078630d3a59df, type: 2}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: playCameraZoomIn.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: cb8f8a271fe0d43789f219b7124ac7f8, type: 2}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: playCameraCapture.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: a237dfafae9804ba4a2c93034ee01369, type: 2}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: playCameraZoomOut.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 0043789aa0e88484e9e1f64ab35ea26d, type: 2}
     - target: {fileID: 8210140832290947555, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -4056,16 +4088,19 @@ PrefabInstance:
       propertyPath: m_listeners.initialListenerList.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7835200063904136857, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 2126608635}
     - target: {fileID: 9061201787728579177, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: m_UiScaleMode
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 5232596657757492839, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
-    - {fileID: 3133926112096893165, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+    - {fileID: 0}
     - {fileID: 3130095446512156192, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
     - {fileID: 7684149946702456705, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
-    - {fileID: 7811848752955635734, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

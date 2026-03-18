@@ -192,37 +192,8 @@
 								</Sound>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="ViewOpen" ID="{FCC4E611-92C4-4406-8ACB-C7C2BAF7FD3E}" ShortID="941559566">
+						<Folder Name="CameraUp" ID="{FCC4E611-92C4-4406-8ACB-C7C2BAF7FD3E}" ShortID="941559566">
 							<ChildrenList>
-								<Sound Name="sfx_camera_view_beeps" ID="{9A73F017-E5FF-4004-AF8E-5D955DD9DF19}" ShortID="832690368">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-17</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_camera_view_beeps" ID="{CC139CBA-743F-4860-B495-7A1B11447706}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_camera_view_beeps.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="435627783"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_camera_view_beeps" ID="{CC139CBA-743F-4860-B495-7A1B11447706}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="sfx_camera_flash_open" ID="{C2829023-36AB-4CB2-B9AE-57DD59C87C15}" ShortID="788000736">
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
@@ -447,6 +418,141 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="sfx_camera_lens_04" ID="{1FD129D8-6CC5-4092-AE44-3AEC2CC4DC0D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_camera_zoom_in_BETATEMP" ID="{A0D31314-740D-4A62-A44A-644178690A45}" ShortID="60078699">
+									<PropertyList>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>450</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_camera_lens_04" ID="{BB057C79-1939-4084-B6DF-E3A105AC9D6D}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.166757610070685"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.226913591154663"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.311033014146356"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.426565499476141"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_camera_lens_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="666545803"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_camera_lens_04" ID="{BB057C79-1939-4084-B6DF-E3A105AC9D6D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_camera_zoom_out_BETATEMP" ID="{1C5438EC-5F53-4DEB-A875-7953AB4A4C4C}" ShortID="506575995">
+									<PropertyList>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>110</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_camera_lens_04" ID="{66E6BCBC-F645-484F-B47A-318D43565987}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.166757610070685"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.226913591154663"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.311033014146356"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.358411233583267"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_camera_lens_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="269544030"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_camera_lens_04" ID="{66E6BCBC-F645-484F-B47A-318D43565987}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="CameraActive" ID="{3281D11A-6EED-4ADE-A25D-4B4CE366C24F}" ShortID="1017472599">
+							<ChildrenList>
+								<Sound Name="sfx_camera_view_beeps" ID="{9A73F017-E5FF-4004-AF8E-5D955DD9DF19}" ShortID="832690368">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-17</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_camera_view_beeps" ID="{CC139CBA-743F-4860-B495-7A1B11447706}">
+											<Language>SFX</Language>
+											<AudioFile>sfx_camera_view_beeps.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="435627783"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_camera_view_beeps" ID="{CC139CBA-743F-4860-B495-7A1B11447706}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

@@ -4,6 +4,7 @@
 		<WorkUnit Name="Default Work Unit" ID="{C6C1152C-9AB3-4C83-8C4F-E53CD0FFB980}" PersistMode="Standalone">
 			<ChildrenList>
 				<ModulatorEnvelope Name="CameraZoomPitch" ID="{A0E2A457-ADA2-4606-AF86-7B30BCA66375}" ShortID="1016560306"/>
+				<ModulatorEnvelope Name="BETA ZOOM PITCH" ID="{F5E52CEE-B6EE-492A-B4AB-8FB155DAA879}" ShortID="63708374"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Modulators>

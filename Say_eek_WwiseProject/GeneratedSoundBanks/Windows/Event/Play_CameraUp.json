@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3639359056",
+    "Type": "Event",
+    "GUID": "{90F54CE0-A871-4B4C-A7F6-3CFEC08537CD}",
+    "Language": "SFX",
+    "Hash": "{576DAAB4-7385-F01C-8062-FC921391B985}",
+    "ObjectPath": "Play_CameraUp",
+    "ShortName": "Play_CameraUp",
+    "Path": "Event/Play_CameraUp.bnk",
+    "Media": [
+     {
+      "Id": "1063289208",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_camera_flash_open.wav",
+      "Path": "Media/1063289208.wem",
+      "CachePath": "13/{13176FA9-A3D0-D004-5CC0-7E90FB76F5E8}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3639359056",
+      "Name": "Play_CameraUp",
+      "ObjectPath": "\\Events\\Default Work Unit\\Camera\\Activity\\Play_CameraUp",
+      "GUID": "{90F54CE0-A871-4B4C-A7F6-3CFEC08537CD}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.24575",
+      "DurationMax": "0.24575",
+      "MediaRefs": [
+       {
+        "Id": "1063289208"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{9622DE71-C209-25FA-7BE5-00077E51BBA1}"
+ }
+}

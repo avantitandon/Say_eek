@@ -45,14 +45,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec8d3f057e70e40d29fb697ff4514f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  PlayMusic:
+  playMusic:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b9d51558a7b7c482c955acbf3e09bb37, type: 2}
-  PlayAmbience:
+    WwiseObjectReference: {fileID: 0}
+  playAmbience:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 50e921f7c1b8742c288b068386fe3186, type: 2}
+    WwiseObjectReference: {fileID: 0}
   playFootsteps:
     idInternal: 0
     valueGuidInternal: 
@@ -64,8 +64,12 @@ MonoBehaviour:
   playCameraCapture:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a237dfafae9804ba4a2c93034ee01369, type: 2}
+    WwiseObjectReference: {fileID: 0}
   playCameraUp:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  playCameraActive:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}

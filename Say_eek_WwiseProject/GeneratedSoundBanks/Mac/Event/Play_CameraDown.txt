@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2825339271	Play_CameraDown			\Default Work Unit\Camera\Play_CameraDown	
+

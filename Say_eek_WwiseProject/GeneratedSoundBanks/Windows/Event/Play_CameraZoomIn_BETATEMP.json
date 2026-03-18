@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3116297798",
+    "Type": "Event",
+    "GUID": "{D0937515-5B4E-4C8B-AB8F-CA1700B2AD3B}",
+    "Language": "SFX",
+    "Hash": "{4432351A-F005-967F-8BE2-B45A27429180}",
+    "ObjectPath": "Play_CameraZoomIn_BETATEMP",
+    "ShortName": "Play_CameraZoomIn_BETATEMP",
+    "Path": "Event/Play_CameraZoomIn_BETATEMP.bnk",
+    "Media": [
+     {
+      "Id": "666545803",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_camera_lens_04.wav",
+      "Path": "Media/666545803.wem",
+      "CachePath": "19/{1932A8C4-EA53-F4B5-DD19-D43DE4F12D7C}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3116297798",
+      "Name": "Play_CameraZoomIn_BETATEMP",
+      "ObjectPath": "\\Events\\Default Work Unit\\Camera\\Zoom\\Play_CameraZoomIn_BETATEMP",
+      "GUID": "{D0937515-5B4E-4C8B-AB8F-CA1700B2AD3B}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.32892695",
+      "DurationMax": "0.32892695",
+      "MediaRefs": [
+       {
+        "Id": "666545803"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{40327524-89CC-A658-C21B-5BAF40A2DDC0}"
+ }
+}
