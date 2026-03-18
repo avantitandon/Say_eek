@@ -1882,6 +1882,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 22f64705ca14e49a09ea8590c725166d, type: 2}
     - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: playFootsteps.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 1500a337bffdd473897ca7c4ed36ff05, type: 2}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: stopFootsteps.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: c498d14ac97c04ed29fa294801873343, type: 2}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
       propertyPath: playCameraDown.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: 9ce67e9b9e3cb4fae8f17ad03185b032, type: 2}
@@ -4877,6 +4885,10 @@ PrefabInstance:
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 2126608635}
+    - target: {fileID: 1887433851811149895, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 2126608635}
     - target: {fileID: 2715827852174621968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: UI_text
       value: 
@@ -5079,8 +5091,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
-    - {fileID: 3130095446512156192, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
-    - {fileID: 7684149946702456705, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
     - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
