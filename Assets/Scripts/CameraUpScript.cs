@@ -16,8 +16,7 @@ public class CameraUpScript : MonoBehaviour
     // CONSTANTS //
 
     // AUDIO //
-    [SerializeField] private AK.Wwise.Event cameraUpEvent;
-    [SerializeField] private AK.Wwise.Event cameraDownEvent;
+    [SerializeField] private AudioManager audioManager;
 
 
     // GAME COMPONENTS //
@@ -88,6 +87,7 @@ public class CameraUpScript : MonoBehaviour
             anim.Update(0f);
 
             state = State.Rising;
+            audioManager.CameraUp();
             LogPlaytest("Camera moving up.");
         }
         // if the camera is rising, check if we should stop
@@ -104,9 +104,8 @@ public class CameraUpScript : MonoBehaviour
                 cameraOverlay.SetActive(true);
                 cameraModel.SetActive(false);
                 anim.speed = 0f;
-
                 state = State.Up;
-                cameraUpEvent.Post(gameObject);
+                audioManager.CameraActive();
                 LogPlaytest("Camera active.");
             }
             // continue otherwise
@@ -131,7 +130,7 @@ public class CameraUpScript : MonoBehaviour
             anim.Update(0f);
 
             state = State.Falling;
-            cameraDownEvent.Post(gameObject);
+            audioManager.CameraDown();
             LogPlaytest("Camera moving down.");
         }
         // if the camera is falling, check if it is done

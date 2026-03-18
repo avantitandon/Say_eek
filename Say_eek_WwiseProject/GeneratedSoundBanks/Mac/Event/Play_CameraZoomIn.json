@@ -38,7 +38,7 @@
      {
       "Id": "187507839",
       "Name": "Play_CameraZoomIn",
-      "ObjectPath": "\\Events\\Default Work Unit\\Camera\\Play_CameraZoomIn",
+      "ObjectPath": "\\Events\\Default Work Unit\\Camera\\Zoom\\Play_CameraZoomIn",
       "GUID": "{DE61BDE4-9B02-4EFB-AFB8-55371B9240F7}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -61,6 +61,6 @@
     ]
    }
   ],
-  "FileHash": "{F9BBFC98-7B50-007A-7FF7-9D69065378D9}"
+  "FileHash": "{0C48E198-E996-A3C1-6EE4-3AEA790DA587}"
  }
 }

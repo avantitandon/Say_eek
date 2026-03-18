@@ -38,7 +38,7 @@
      {
       "Id": "1117071627",
       "Name": "Play_Ambience1",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_Ambience1",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\Play_Ambience1",
       "GUID": "{94406FF3-99F7-41E5-91D8-8EC64B06C772}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -61,6 +61,6 @@
     ]
    }
   ],
-  "FileHash": "{F109BF00-7B41-02D9-E1C0-BCE830766D8D}"
+  "FileHash": "{F9AAF17B-1DDA-4348-E583-6425DD1AE391}"
  }
 }
