@@ -50,6 +50,10 @@ MonoBehaviour:
   slideDuration: 0.2
   slideOffsetX: 0
   slideOffsetY: 140
+  lowScoreMessage: Are you even trying intern? Or just trying to make me mad
+  t1Message: Better. Keep moving.
+  t2Message: Now that looks usable.
+  t3Message: This is going to POP Off on the gram!.
 --- !u!1 &4486383137439754503
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,9 +467,9 @@ RectTransform:
   - {fileID: 4956523019452993370}
   m_Father: {fileID: 8092626182938038333}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 328, y: 203}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 5, y: 203}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &548565054756682237
