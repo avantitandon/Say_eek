@@ -63,7 +63,7 @@ public class GameController : MonoBehaviour
     {
         // ensure we are starting with tutorial
         tutorialStep = TutorialStep.IntroDelay;
-        tutorialStepStartTime = Time.time;
+        tutorialStepStartTime = Time.unscaledTime;
         // double check functionality; do we need this? does it help with lag?
         Application.targetFrameRate = 60;
 
@@ -72,6 +72,7 @@ public class GameController : MonoBehaviour
         bossDialogueStarted = false;
         playerController.SetGameplayInputEnabled(false);
         hudManager.HideBossText();
+        Debug.Log("GameController: entered tutorial intro delay.");
     }
 
     // Update is called once per frame
@@ -92,10 +93,11 @@ public class GameController : MonoBehaviour
         switch (tutorialStep)
         {
             case TutorialStep.IntroDelay:
-                if (Time.time - tutorialStepStartTime >= TUTORIAL_INTRO_DELAY_SECONDS)
+                if (Time.unscaledTime - tutorialStepStartTime >= TUTORIAL_INTRO_DELAY_SECONDS)
                 {
                     tutorialStep = TutorialStep.ShowBossDialogue;
-                    tutorialStepStartTime = Time.time;
+                    tutorialStepStartTime = Time.unscaledTime;
+                    Debug.Log("GameController: tutorial intro delay complete, showing boss dialogue.");
                 }
                 break;
 
@@ -104,6 +106,7 @@ public class GameController : MonoBehaviour
                 {
                     hudManager.BeginBossDialogue(BossDialogueLines);
                     bossDialogueStarted = true;
+                    Debug.Log("GameController: boss dialogue started.");
                 }
 
                 if (playerController.WasDialogueAdvancePressedThisFrame())
@@ -114,6 +117,7 @@ public class GameController : MonoBehaviour
                 if (hudManager.IsBossDialogueComplete())
                 {
                     tutorialStep = TutorialStep.Complete;
+                    Debug.Log("GameController: boss dialogue complete.");
                 }
                 break;
 
@@ -163,6 +167,7 @@ public class GameController : MonoBehaviour
         roundStartTime = Time.time;
         playerController.ResetState();
         playerController.SetGameplayInputEnabled(true);
+        Debug.Log("GameController: tutorial finished, gameplay enabled.");
     }
 
     private void StartEndSequence()

@@ -15,7 +15,7 @@ public class BossTextController : MonoBehaviour
     public bool IsDialogueActive => gameObject.activeSelf;
     public bool IsDialogueComplete => dialogueLines == null || currentLineIndex >= dialogueLines.Length;
 
-    void Start()
+    void Awake()
     {
         Hide();
     }
@@ -33,6 +33,7 @@ public class BossTextController : MonoBehaviour
         currentLineIndex = 0;
         gameObject.SetActive(true);
         UpdateDisplayedLine();
+        Debug.Log($"BossTextController: dialogue opened with {dialogueLines.Length} lines.");
 
     }
 
@@ -48,6 +49,7 @@ public class BossTextController : MonoBehaviour
 
         if (currentLineIndex >= dialogueLines.Length)
         {
+            Debug.Log("BossTextController: reached end of dialogue lines.");
             return;
         }
         // updates the string
@@ -60,6 +62,7 @@ public class BossTextController : MonoBehaviour
         gameObject.SetActive(false);
         dialogueLines = null;
         currentLineIndex = 0;
+        Debug.Log("BossTextController: dialogue hidden.");
     }
 
     private void UpdateDisplayedLine()
