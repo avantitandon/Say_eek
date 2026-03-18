@@ -18,6 +18,7 @@ public class ZoomManager : MonoBehaviour
     private const float ZOOM_OUT_TIME = 0.20f;
 
     // AUDIO //
+    [SerializeField] private AudioManager audioManager;
 
     // GAME COMPONENTS //
 

@@ -1,19 +1,19 @@
 {
  "SoundBanksInfo": {
-  "Platform": "Mac",
-  "BasePlatform": "Mac",
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
   "SchemaVersion": "16",
   "SoundBankVersion": "172",
   "SoundBanks": [
    {
-    "Id": "793759845",
+    "Id": "1346240278",
     "Type": "Event",
     "GUID": "{EBD8662F-C315-47A2-9D79-FFC72F6A60CA}",
     "Language": "SFX",
-    "Hash": "{69385A0A-AC38-1D2B-4389-11FD89346F31}",
-    "ObjectPath": "Play_FirstDanceInHell",
-    "ShortName": "Play_FirstDanceInHell",
-    "Path": "Event/Play_FirstDanceInHell.bnk",
+    "Hash": "{4AA3C588-70E1-127B-004B-3DC79B29335D}",
+    "ObjectPath": "Play_MainMusic",
+    "ShortName": "Play_MainMusic",
+    "Path": "Event/Play_MainMusic.bnk",
     "Media": [
      {
       "Id": "709278586",
@@ -27,9 +27,9 @@
     ],
     "Events": [
      {
-      "Id": "793759845",
-      "Name": "Play_FirstDanceInHell",
-      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_FirstDanceInHell",
+      "Id": "1346240278",
+      "Name": "Play_MainMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_MainMusic",
       "GUID": "{EBD8662F-C315-47A2-9D79-FFC72F6A60CA}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{340F04C2-3119-2D57-9DA6-473EE31FD152}"
+  "FileHash": "{898DE95C-3D28-866A-483C-3707E23C9FA5}"
  }
 }

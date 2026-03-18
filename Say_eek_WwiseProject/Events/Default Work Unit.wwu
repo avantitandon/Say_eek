@@ -228,7 +228,7 @@
 				</Folder>
 				<Folder Name="Music" ID="{505A48C5-78A4-4B7B-9EE8-77DD6629B196}" ShortID="331096648">
 					<ChildrenList>
-						<Event Name="Play_FirstDanceInHell" ID="{EBD8662F-C315-47A2-9D79-FFC72F6A60CA}">
+						<Event Name="Play_MainMusic" ID="{EBD8662F-C315-47A2-9D79-FFC72F6A60CA}">
 							<ChildrenList>
 								<Action Name="" ID="{DE7C5A92-951C-48B1-A003-F97659FFA485}" ShortID="432625871">
 									<ReferenceList>
