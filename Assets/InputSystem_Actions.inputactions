@@ -639,6 +639,17 @@
                     "action": "PhoneToggle",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "edd8bbcf-b47b-4489-8422-8c9ab0c6e6de",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "PhoneToggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },

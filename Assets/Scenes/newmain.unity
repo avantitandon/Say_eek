@@ -1514,11 +1514,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66da4888458164c40b42a2c64fb5c085, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HUDManager
---- !u!4 &689493063 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6384662198149280696, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
-  m_PrefabInstance: {fileID: 1838387330}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &690151975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2797,6 +2792,17 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!114 &1145593172 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8069334596344993869, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+  m_PrefabInstance: {fileID: 1838387330}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc18a41932564096a48afd114c6c80f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossTextController
 --- !u!4 &1159633684 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5273606725221546845, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
@@ -3026,22 +3032,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1167216119}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1252278598 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5803718462901617382, guid: 54bf0e4c42e8b4e4ba522934d9ae49bb, type: 3}
-  m_PrefabInstance: {fileID: 932445117}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fc18a41932564096a48afd114c6c80f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BossTextController
---- !u!4 &1252278599 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7438061723885662516, guid: 54bf0e4c42e8b4e4ba522934d9ae49bb, type: 3}
-  m_PrefabInstance: {fileID: 932445117}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1299457503 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5273606725221546845, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
@@ -4913,7 +4903,7 @@ PrefabInstance:
     - target: {fileID: 2479029984853724862, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: bossTextController
       value: 
-      objectReference: {fileID: 1252278598}
+      objectReference: {fileID: 1145593172}
     - target: {fileID: 2715827852174621968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: UI_text
       value: 
@@ -5025,6 +5015,22 @@ PrefabInstance:
     - target: {fileID: 4761129856363775633, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970867444989610939, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970867444989610939, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: m_ScreenMatchMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970867444989610939, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970867444989610939, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 5294426710492027799, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: moveSpeed
