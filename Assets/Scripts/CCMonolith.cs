@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 using System;
 
 // for saving screenshots
@@ -89,7 +90,10 @@ public class CameraControllerMonolith : MonoBehaviour
     [SerializeField] private GameObject t1_border;
     [SerializeField] private GameObject t2_border;
     [SerializeField] private GameObject t3_border;
+
     [SerializeField] private GameObject heartsprite;
+    // [SerializeField] private GameObject firesprite;
+    // [SerializeField] private GameObject starsprite;
 
     [SerializeField] private GameObject emptyheart;
     [SerializeField] private GameObject heartCanvas;
@@ -454,7 +458,7 @@ public class CameraControllerMonolith : MonoBehaviour
 
         photoPreview.gameObject.SetActive(true);
 
-        generateHearts();
+        generateSticker();
         // need to simplify this code
         if (ghostScore > 200) { t1_border.SetActive(false); t2_border.SetActive(false); t3_border.SetActive(true); }
         else if (ghostScore > 100) { t1_border.SetActive(false); t2_border.SetActive(true); t3_border.SetActive(false); }
@@ -483,41 +487,142 @@ public class CameraControllerMonolith : MonoBehaviour
         PlaytestLogWriter.Log("CameraController", message);
     }
 
-    private Tuple<float, float> generatePoint()
+    //////////////////////////////////////////////////////// sticker generation
+
+    private class StickerPlacement {
+        public Vector2 position;
+        public float radius;
+    }
+
+    private List<StickerPlacement> stickerPlacements = new List<StickerPlacement>();
+
+    private int leftCount = 0;
+    private int rightCount = 0;
+
+    private bool IsValidPlacement(Vector2 candidatePos, float candidateRadius)
     {
-        float x1 = UnityEngine.Random.Range(-900f, -700f);
-        float x2 = UnityEngine.Random.Range(700f, 900f);
+        foreach (var placement in stickerPlacements)
+        {
+            if (Vector2.Distance(candidatePos, placement.position) < candidateRadius + placement.radius) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private Tuple<float, float> generatePoint(float candidateRadius)
+    {
         RectTransform canvasRect = heartCanvas.GetComponent<RectTransform>();
+        float x1;
+        float x2;
+        float leftProbability;
         float x;
-        if (UnityEngine.Random.Range(0f, 1f) < 0.5f) {
+        float y;
+
+        // try 20 times to find valid placement
+        for (int i = 0; i < 20; i++) {
+            x1 = UnityEngine.Random.Range(-900f, -700f);
+            x2 = UnityEngine.Random.Range(700f, 900f);
+            
+            leftProbability = 0.5f;
+            if (leftCount < rightCount) {
+                leftProbability = 0.8f; // increase probability of spawning on the left
+            } else if (rightCount < leftCount) {
+                leftProbability = 0.2f;
+            }
+            
+            bool leftSide;
+            if (UnityEngine.Random.Range(0f, 1f) < leftProbability) {
+                x = x1;
+                leftSide = true;
+            } else {
+                x = x2;
+                leftSide = false;
+            }
+
+            y = UnityEngine.Random.Range(-canvasRect.rect.height / 3f, canvasRect.rect.height / 3f);
+            Vector2 candidatePos = new Vector2(x, y);
+
+            if (IsValidPlacement(candidatePos, candidateRadius)) {
+                stickerPlacements.Add(new StickerPlacement { position = candidatePos, radius = candidateRadius });
+                if (leftSide) leftCount++; else rightCount++;
+                return new Tuple<float, float>(x, y);
+            }
+        }
+
+        // fallback
+        x1 = UnityEngine.Random.Range(-900f, -700f);
+        x2 = UnityEngine.Random.Range(700f, 900f);
+        
+        leftProbability = 0.5f;
+        if (leftCount < rightCount) {
+            leftProbability = 0.8f; // increase probability of spawning on the left
+        } else if (rightCount < leftCount) {
+            leftProbability = 0.2f;
+        }
+        
+        if (UnityEngine.Random.Range(0f, 1f) < leftProbability) {
             x = x1;
+            leftCount++;
         } else {
             x = x2;
+            rightCount++;
         }
-        float y = UnityEngine.Random.Range(-canvasRect.rect.height / 3f, canvasRect.rect.height / 3f);
+        y = UnityEngine.Random.Range(-canvasRect.rect.height / 3f, canvasRect.rect.height / 3f);
         return new Tuple<float, float>(x, y);
     }
 
-    private void generateHearts()
+    // variable sticker scale
+    private float varyScale(GameObject sticker, int relative_score)
+    {
+        float size = UnityEngine.Random.Range(0.8f, relative_score);
+        sticker.transform.localScale = new Vector3(size, size, 1f);
+        return size;
+    }
+
+    // variable sticker Orientation
+    private void varyOrientation(GameObject sticker)
+    {
+        float angle = UnityEngine.Random.Range(-30f, 30f);
+        Vector3 rotation = sticker.transform.localEulerAngles;
+        rotation.z = angle;
+        sticker.transform.localEulerAngles = rotation;
+    }
+
+    private GameObject getStickerPrefab()
+    {
+        // if (ghostScore > 200) return Instantiate(starsprite, emptyheart.transform, false);
+        // else if (ghostScore > 100) return Instantiate(heartsprite, emptyheart.transform, false);
+        // else return Instantiate(firesprite, emptyheart.transform, false);
+        return Instantiate(heartsprite, emptyheart.transform, false);
+    }
+
+    private void generateSticker()
     {
         int count = 0;
 
-        if (ghostScore > 600) count = 3;
-        else if (ghostScore > 200) count = 2;
+        Debug.LogError("Ghost Score: " + ghostScore);
+
+        if (ghostScore > 200) count = 3;
+        else if (ghostScore > 100) count = 2;
         else if (ghostScore > 50) count = 1;
 
         for (int i = 0; i < count; i++)
         {
-            var p = generatePoint();
-            GameObject heart = Instantiate(heartsprite, emptyheart.transform, false);
-            RectTransform rt = heart.GetComponent<RectTransform>();
+            GameObject stickerobject = getStickerPrefab();
+
+            float scale = varyScale(stickerobject, count);
+            varyOrientation(stickerobject); // set variable orientation
+            float radius = 50f * scale; // 50 is constant, can adjust
+
+            var p = generatePoint(radius);
+            RectTransform rt = stickerobject.GetComponent<RectTransform>();
 
             rt.anchoredPosition = new Vector2(p.Item1, p.Item2);
             rt.localPosition = new Vector3(rt.localPosition.x, rt.localPosition.y, 0f);
             //rt.position.z = 0;
 
-            heart.transform.localScale = Vector3.one;
-            heart.transform.SetAsLastSibling();
+            stickerobject.transform.SetAsLastSibling();
         }
     }
 
