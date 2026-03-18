@@ -10,6 +10,7 @@ public class HUDManager : MonoBehaviour
 
     [SerializeField] private PhotoPreviewController photoPreviewController;
     [SerializeField] private StatusUIController statusUIController;
+    [SerializeField] private StickerOverlayController stickerOverlayController;
 
     // VARIABLES //
 
@@ -30,6 +31,7 @@ public class HUDManager : MonoBehaviour
     public void DisplayPhotoPreview(int score, Texture2D photo)
     {
         photoPreviewController.DisplayPhotoPreview(score, photo);
+        stickerOverlayController.DisplayStickerOverlay(score);
     }
 
     public void SetStatusUI (float timeElapsed, int photosLeft)
