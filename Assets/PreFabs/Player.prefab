@@ -673,11 +673,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 4240653594755561249}
   m_SourcePrefab: {fileID: 100100000, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
---- !u!1 &1282817147802474032 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4901131900159438618, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
-  m_PrefabInstance: {fileID: 6181518249413146922}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6317849454762258741 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 172447969757530143, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
@@ -701,8 +696,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StickerOverlayController
   heartsprite: {fileID: 6798706739265239137}
-  emptyheart: {fileID: 1282817147802474032}
-  heartCanvas: {fileID: 1282817147802474032}
+  emptyheart: {fileID: 7992553383644435425}
+  heartCanvas: {fileID: 7992553383644435425}
 --- !u!1 &7992553383644435425 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4261085759368620747, guid: 8b67dc1897bf9884fb7e50b14c668f28, type: 3}
