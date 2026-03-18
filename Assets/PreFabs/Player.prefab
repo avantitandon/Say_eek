@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 1768314550061284499}
   - component: {fileID: 176324037569557310}
   - component: {fileID: 8310256775960096490}
+  - component: {fileID: 3708822509355853171}
+  - component: {fileID: 5692511886544444435}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -159,6 +161,46 @@ MonoBehaviour:
   moveManager: {fileID: 1887433851811149895}
   cameraController: {fileID: 9148971523940127002}
   hudManager: {fileID: 2479029984853724862}
+--- !u!114 &3708822509355853171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927212241487036968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 582fd0735f77845f9b0c1192253f5ee2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkGameObj
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  usePositionOffsetData: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  scalingFactor: 1
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &5692511886544444435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927212241487036968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520808f401c3a454c8d66b8851be7c5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkAudioListener
+  isDefaultListener: 1
+  bOverrideScalingFactor: 0
+  scalingFactor: -1
+  listenerId: 0
 --- !u!1 &3071013414097779620
 GameObject:
   m_ObjectHideFlags: 0
