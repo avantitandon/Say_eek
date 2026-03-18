@@ -1,79 +1,188 @@
-using UnityEngine;
+using System.Collections;
 using TMPro;
+using UnityEngine;
 
 public class BossTextController : MonoBehaviour
 {
+    // The TMP field that displays the current dialogue line.
     [SerializeField] private TMP_Text bossTextMessage;
 
-// Line and index varable
+    // The panel that slides in and out, plus the timing and distance of the slide.
+    [SerializeField] private RectTransform dialoguePanel;
+    [SerializeField] private float slideDuration = 0.2f;
+    [SerializeField] private float slideOffsetY = 140f;
     private string[] dialogueLines;
-    private int currentLineIndex;
+    private int Currlineindex;
 
-// Ok i didn't know you could do this in C# lowkinuenly, i saw this guy do it in a yt video 
-// i'm impress
-// avoids messy function code
+    // Stores the curr position.
+    private Vector2 Vispos;
+    private Coroutine animationRoutine;
+
     public bool IsDialogueActive => gameObject.activeSelf;
-    public bool IsDialogueComplete => dialogueLines == null || currentLineIndex >= dialogueLines.Length;
+    public bool IsDialogueComplete => dialogueLines == null || Currlineindex >= dialogueLines.Length;
 
     void Awake()
     {
-        Hide();
+        ResolveReferences();
+        if (dialoguePanel != null)
+        {
+            Vispos = dialoguePanel.anchoredPosition;
+        }
+
+        // Start fully hidden without playing the animation on load.
+        HideImmediate();
     }
 
-// enter dialogue
-    public void BeginDialogue(string[] lines) // all dialogue in string array, allows iterating
+    public void BeginDialogue(string[] lines)
     {
+        ResolveReferences();
+
         if (lines == null || lines.Length == 0)
         {
-            Hide();
+            HideImmediate();
             return;
         }
 
         dialogueLines = lines;
-        currentLineIndex = 0;
-        gameObject.SetActive(true);
-        UpdateDisplayedLine();
-        Debug.Log($"BossTextController: dialogue opened with {dialogueLines.Length} lines.");
+        Currlineindex = 0;
 
+        gameObject.SetActive(true);
+
+        if (dialoguePanel != null)
+        {
+            // Move the panel below its visible spot before sliding it in.
+            dialoguePanel.anchoredPosition = HiddenPosition();
+        }
+
+        UpdateDisplayedLine();
+        // Slide in only when the dialogue shows up?
+        StartSlide(Vispos, false);
     }
 
     public void AdvanceDialogue()
-    // walk through dialogue, mapped to tab, will keep updating the text
     {
         if (!IsDialogueActive || dialogueLines == null)
         {
             return;
         }
 
-        currentLineIndex += 1;
+        Currlineindex += 1;
 
-        if (currentLineIndex >= dialogueLines.Length)
+        if (Currlineindex >= dialogueLines.Length)
         {
-            Debug.Log("BossTextController: reached end of dialogue lines.");
             return;
         }
-        // updates the string
 
         UpdateDisplayedLine();
     }
 
     public void Hide()
     {
-        gameObject.SetActive(false);
+        if (!gameObject.activeSelf)
+        {
+            HideImmediate();
+            return;
+        }
+
         dialogueLines = null;
-        currentLineIndex = 0;
-        Debug.Log("BossTextController: dialogue hidden.");
+        Currlineindex = 0;
+        // Slide out once when the dialogue finishes,
+        StartSlide(HiddenPosition(), true);
+    }
+    private void HideImmediate()
+    {
+        if (animationRoutine != null)
+        {
+            StopCoroutine(animationRoutine);
+            animationRoutine = null;
+        }
+
+        dialogueLines = null;
+        Currlineindex = 0;
+
+        if (dialoguePanel != null)
+        {
+            dialoguePanel.anchoredPosition = HiddenPosition();
+        }
+
+        gameObject.SetActive(false);
     }
 
     private void UpdateDisplayedLine()
     {
-        if (bossTextMessage == null || dialogueLines == null || currentLineIndex >= dialogueLines.Length)
+        if (bossTextMessage == null || dialogueLines == null || Currlineindex >= dialogueLines.Length)
         {
-            // end 
+            return;
+        }
+        bossTextMessage.text = dialogueLines[Currlineindex];
+    }
+
+    private void ResolveReferences()
+    {
+        // If the panel wasn't assigned manually, use the text's parent panel.
+  if (bossTextMessage != null && dialoguePanel == null)
+        {
+            dialoguePanel = bossTextMessage.transform.parent as RectTransform;
+        }
+    }
+
+    private Vector2 HiddenPosition()
+    {
+        // same anchored position shifted downward out of screen
+        return Vispos + new Vector2(0f, -slideOffsetY);
+    }
+
+    private void StartSlide(Vector2 target, bool deactivateAfter)
+    {
+        if (dialoguePanel == null)
+        {
+            if (deactivateAfter)
+            {
+                gameObject.SetActive(false);
+            }
             return;
         }
 
-// set the current text to the index 
-        bossTextMessage.text = dialogueLines[currentLineIndex];
+        if (animationRoutine != null)
+        {
+            StopCoroutine(animationRoutine);
+        }
+
+        // Use unscaled time so it still works during tutorial lock-> issues with any ui object
+        animationRoutine = StartCoroutine(SlideTo(target, deactivateAfter));
+    }
+
+    private IEnumerator SlideTo(Vector2 target, bool deactivateAfter)
+    {
+        if (slideDuration <= 0f)
+        {
+            dialoguePanel.anchoredPosition = target;
+            if (deactivateAfter)
+            {
+                gameObject.SetActive(false);
+            }
+            animationRoutine = null;
+            yield break;
+        }
+
+        Vector2 start = dialoguePanel.anchoredPosition;
+        float elapsed = 0f;
+
+        while (elapsed < slideDuration)
+        {
+            elapsed += Time.unscaledDeltaTime;
+            float t = Mathf.Clamp01(elapsed / slideDuration);
+            // Hehe lerp. I cannot believe they actually call it that
+            dialoguePanel.anchoredPosition = Vector2.Lerp(start, target, t);
+            yield return null;
+        }
+
+        dialoguePanel.anchoredPosition = target;
+        animationRoutine = null;
+
+        if (deactivateAfter)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }
