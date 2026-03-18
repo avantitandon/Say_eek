@@ -1988,6 +1988,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54bf0e4c42e8b4e4ba522934d9ae49bb, type: 3}
+--- !u!1001 &2033441100
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 689493063}
+    m_Modifications:
+    - target: {fileID: 3280624861431124356, guid: 183df3bc87fab4417b9858f4d4915fcb, type: 3}
+      propertyPath: m_Name
+      value: BossTextPicture
+      objectReference: {fileID: 0}
+    - target: {fileID: 7438061723885662516, guid: 183df3bc87fab4417b9858f4d4915fcb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 262.5875
+      objectReference: {fileID: 0}
+    - target: {fileID: 7438061723885662516, guid: 183df3bc87fab4417b9858f4d4915fcb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7438061723885662516, guid: 183df3bc87fab4417b9858f4d4915fcb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 495.7474
+      objectReference: {fileID: 0}
+    - target: {fileID: 7438061723885662516, guid: 183df3bc87fab4417b9858f4d4915fcb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7438061723885662516, guid: 183df3bc87fab4417b9858f4d4915fcb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7438061723885662516, guid: 183df3bc87fab4417b9858f4d4915fcb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7438061723885662516, guid: 183df3bc87fab4417b9858f4d4915fcb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7438061723885662516, guid: 183df3bc87fab4417b9858f4d4915fcb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7438061723885662516, guid: 183df3bc87fab4417b9858f4d4915fcb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7438061723885662516, guid: 183df3bc87fab4417b9858f4d4915fcb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 183df3bc87fab4417b9858f4d4915fcb, type: 3}
 --- !u!1001 &1019275546
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2450,6 +2507,22 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7438061723885662516, guid: 54bf0e4c42e8b4e4ba522934d9ae49bb, type: 3}
   m_PrefabInstance: {fileID: 932445117}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2033441101 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5803718462901617382, guid: 183df3bc87fab4417b9858f4d4915fcb, type: 3}
+  m_PrefabInstance: {fileID: 2033441100}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc18a41932564096a48afd114c6c80f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossTextController
+--- !u!4 &2033441102 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7438061723885662516, guid: 183df3bc87fab4417b9858f4d4915fcb, type: 3}
+  m_PrefabInstance: {fileID: 2033441100}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1299457503 stripped
 Transform:
@@ -3935,6 +4008,10 @@ PrefabInstance:
       propertyPath: bossTextController
       value: 
       objectReference: {fileID: 1252278598}
+    - target: {fileID: 2479029984853724862, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: pictureBossTextController
+      value: 
+      objectReference: {fileID: 2033441101}
     - target: {fileID: 2715827852174621968, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: UI_text
       value: 

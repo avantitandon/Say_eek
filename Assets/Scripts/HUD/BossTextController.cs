@@ -10,6 +10,7 @@ public class BossTextController : MonoBehaviour
     // The panel that slides in and out, plus the timing and distance of the slide.
     [SerializeField] private RectTransform dialoguePanel;
     [SerializeField] private float slideDuration = 0.2f;
+    [SerializeField] private float slideOffsetX = 0f;
     [SerializeField] private float slideOffsetY = 140f;
     private string[] dialogueLines;
     private int Currlineindex;
@@ -17,6 +18,7 @@ public class BossTextController : MonoBehaviour
     // Stores the curr position.
     private Vector2 Vispos;
     private Coroutine animationRoutine;
+    private Coroutine autoHideRoutine;
 
     public bool IsDialogueActive => gameObject.activeSelf;
     public bool IsDialogueComplete => dialogueLines == null || Currlineindex >= dialogueLines.Length;
@@ -35,6 +37,7 @@ public class BossTextController : MonoBehaviour
 
     public void BeginDialogue(string[] lines)
     {
+        CancelAutoHide();
         ResolveReferences();
 
         if (lines == null || lines.Length == 0)
@@ -78,6 +81,8 @@ public class BossTextController : MonoBehaviour
 
     public void Hide()
     {
+        CancelAutoHide();
+
         if (!gameObject.activeSelf)
         {
             HideImmediate();
@@ -97,6 +102,8 @@ public class BossTextController : MonoBehaviour
             animationRoutine = null;
         }
 
+        CancelAutoHide();
+
         dialogueLines = null;
         Currlineindex = 0;
 
@@ -106,6 +113,24 @@ public class BossTextController : MonoBehaviour
         }
 
         gameObject.SetActive(false);
+    }
+
+    public void ShowTemporaryMessage(string line, float durationSeconds)
+    {
+        if (string.IsNullOrWhiteSpace(line))
+        {
+            HideImmediate();
+            return;
+        }
+
+        BeginDialogue(new[] { line });
+
+        if (durationSeconds <= 0f)
+        {
+            return;
+        }
+
+        autoHideRoutine = StartCoroutine(AutoHideAfterDelay(durationSeconds));
     }
 
     private void UpdateDisplayedLine()
@@ -128,8 +153,8 @@ public class BossTextController : MonoBehaviour
 
     private Vector2 HiddenPosition()
     {
-        // same anchored position shifted downward out of screen
-        return Vispos + new Vector2(0f, -slideOffsetY);
+        // same anchored position shifted by the configured hidden offset
+        return Vispos + new Vector2(slideOffsetX, -slideOffsetY);
     }
 
     private void StartSlide(Vector2 target, bool deactivateAfter)
@@ -184,5 +209,23 @@ public class BossTextController : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+    }
+
+    private IEnumerator AutoHideAfterDelay(float durationSeconds)
+    {
+        yield return new WaitForSecondsRealtime(durationSeconds);
+        autoHideRoutine = null;
+        Hide();
+    }
+
+    private void CancelAutoHide()
+    {
+        if (autoHideRoutine == null)
+        {
+            return;
+        }
+
+        StopCoroutine(autoHideRoutine);
+        autoHideRoutine = null;
     }
 }

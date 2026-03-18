@@ -11,6 +11,9 @@ public class HUDManager : MonoBehaviour
     [SerializeField] private PhotoPreviewController photoPreviewController;
     [SerializeField] private StatusUIController statusUIController;
     [SerializeField] private BossTextController bossTextController;
+    [SerializeField] private BossTextController pictureBossTextController;
+    [SerializeField] private string pictureBossMessage = "Keep the photos coming, INTERN.";
+    [SerializeField] private float pictureBossMessageDuration = 1.5f;
 
 
     // VARIABLES //
@@ -51,6 +54,16 @@ public bool IsBossDialogueComplete()
 public void HideBossText()
 {
     bossTextController.Hide();
+}
+
+public void ShowPictureBossText()
+{
+    if (pictureBossTextController == null)
+    {
+        return;
+    }
+
+    pictureBossTextController.ShowTemporaryMessage(pictureBossMessage, pictureBossMessageDuration);
 }
 
 
