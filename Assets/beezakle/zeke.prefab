@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3669633094364030563
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ead122ec297671e4cb519b69cb7c8d7d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.664412
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ead122ec297671e4cb519b69cb7c8d7d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.005000304
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ead122ec297671e4cb519b69cb7c8d7d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.340974
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ead122ec297671e4cb519b69cb7c8d7d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ead122ec297671e4cb519b69cb7c8d7d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ead122ec297671e4cb519b69cb7c8d7d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ead122ec297671e4cb519b69cb7c8d7d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ead122ec297671e4cb519b69cb7c8d7d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ead122ec297671e4cb519b69cb7c8d7d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ead122ec297671e4cb519b69cb7c8d7d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5913391991450766180, guid: ead122ec297671e4cb519b69cb7c8d7d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c49c9ea79a9330d4f94d700cddcd76d0, type: 2}
+    - target: {fileID: 919132149155446097, guid: ead122ec297671e4cb519b69cb7c8d7d, type: 3}
+      propertyPath: m_Name
+      value: zeke
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ead122ec297671e4cb519b69cb7c8d7d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -4578389118900438728}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ead122ec297671e4cb519b69cb7c8d7d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8797372132592436597}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ead122ec297671e4cb519b69cb7c8d7d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -5104721642498289506}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ead122ec297671e4cb519b69cb7c8d7d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7537454510155363827}
+  m_SourcePrefab: {fileID: 100100000, guid: ead122ec297671e4cb519b69cb7c8d7d, type: 3}
+--- !u!1 &4480041537163025202 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ead122ec297671e4cb519b69cb7c8d7d, type: 3}
+  m_PrefabInstance: {fileID: 3669633094364030563}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &-4578389118900438728
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4480041537163025202}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 93a27978ed106b44f99ea72cab6c5630, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8797372132592436597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4480041537163025202}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239c10b5fbd0d0844bb40f3b63365460, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  target: {fileID: 2336724147989701002, guid: 4c6127fdee4096f40a7f97bd8bcc2b6e, type: 3}
+--- !u!195 &-5104721642498289506
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4480041537163025202}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 10.71
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 1
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &7537454510155363827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4480041537163025202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7c9f60b268d24b44bd92aa1b55fc096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::followAI
+  ai: {fileID: 0}
+  player: {fileID: 0}
+  zekeAnim: {fileID: 0}
+  ZekeTetherfront: {fileID: 0}
+  ZekeTetherup: {fileID: 0}
+  ZekeTetherback: {fileID: 0}
+  SPECIAL_SPOT: {fileID: 0}
+  ZekeBehaviour: 0
+  aggro: 10
+  CameraUp: 0
+  TimedEvent: 0
