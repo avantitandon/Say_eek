@@ -13,16 +13,23 @@ public class GameController : MonoBehaviour
 
     private const float ROUND_DURATION_SECONDS = 300f;
     private const float TUTORIAL_INTRO_DELAY_SECONDS = 3f;
+    // private const float TUTORIAL_POST_PHOTO_DELAY_SECONDS = 0.6f;
+    private const float TUTORIAL_POST_PHOTO_DELAY_SECONDS = 2f; // 
 
     private const int MAX_PHOTOS = 20;
 
     private static readonly string[] BossDialogueLines =
     {
         "INTERN! You’re at the venue now? Good. ",
-        "Explore the venue and take a variety of photos, understood?",
-        "The event ends at 12AM, by the way.",
-        "I’ll text you updates throughout the night.",
+        "Raise the camera and take one photo for me.",
+    };
 
+// come after camera
+    private static readonly string[] TutorialPhotoCompleteLines =
+    {
+        "Good. That camera still works.",
+        "Now explore the venue and take a variety of photos.",
+        "The event ends at 12AM. I’ll text you updates throughout the night.",
     };
 
     // AUDIO //
@@ -51,12 +58,16 @@ public class GameController : MonoBehaviour
     {
         IntroDelay,
         ShowBossDialogue,
+        WaitForPhoto,
+        PhotoDelay,
+        ShowPhotoCompleteDialogue,
         Complete
     }
 
     private TutorialStep tutorialStep;
     private float tutorialStepStartTime = 0.0f;
     private bool bossDialogueStarted = false;
+    private bool photoCompleteDialogueStarted = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -72,6 +83,7 @@ public class GameController : MonoBehaviour
         bossDialogueStarted = false;
         playerController.SetGameplayInputEnabled(false);
         hudManager.HideBossText();
+        hudManager.SetPictureBossTextEnabled(false);
         Debug.Log("GameController: entered tutorial intro delay.");
     }
 
@@ -109,6 +121,47 @@ public class GameController : MonoBehaviour
                     Debug.Log("GameController: boss dialogue started.");
                 }
 
+                // add logic for tutorial camera display thing
+
+                if (playerController.WasDialogueAdvancePressedThisFrame())
+                {
+                    hudManager.AdvanceBossDialogue();
+                }
+
+                if (hudManager.IsBossDialogueComplete())
+                {
+                    hudManager.HideBossText();
+                    playerController.SetGameplayInputEnabled(true);
+                    tutorialStep = TutorialStep.WaitForPhoto;
+                }
+                break;
+
+            case TutorialStep.WaitForPhoto:
+                if (playerController.GetPhotosTaken() > 0)
+                {
+                    playerController.SetGameplayInputEnabled(false);
+                    tutorialStep = TutorialStep.PhotoDelay;
+                    tutorialStepStartTime = Time.unscaledTime;
+
+                }
+                break;
+
+            case TutorialStep.PhotoDelay:
+                if (Time.unscaledTime - tutorialStepStartTime >= TUTORIAL_POST_PHOTO_DELAY_SECONDS)
+                {
+                    tutorialStep = TutorialStep.ShowPhotoCompleteDialogue;
+
+                }
+                break;
+            // might remove all of this from game controller after? just hard to figure out how to seperate and BossText is 
+            case TutorialStep.ShowPhotoCompleteDialogue:
+                if (!photoCompleteDialogueStarted)
+                {
+                    hudManager.BeginBossDialogue(TutorialPhotoCompleteLines);
+                    photoCompleteDialogueStarted = true;
+
+                }
+
                 if (playerController.WasDialogueAdvancePressedThisFrame())
                 {
                     hudManager.AdvanceBossDialogue();
@@ -117,7 +170,7 @@ public class GameController : MonoBehaviour
                 if (hudManager.IsBossDialogueComplete())
                 {
                     tutorialStep = TutorialStep.Complete;
-                    Debug.Log("GameController: boss dialogue complete.");
+                    Debug.Log("GameController: tutorial c dialogue complete.");
                 }
                 break;
 
@@ -167,6 +220,7 @@ public class GameController : MonoBehaviour
         roundStartTime = Time.time;
         playerController.ResetState();
         playerController.SetGameplayInputEnabled(true);
+        hudManager.SetPictureBossTextEnabled(true);
         Debug.Log("GameController: tutorial finished, gameplay enabled.");
     }
 

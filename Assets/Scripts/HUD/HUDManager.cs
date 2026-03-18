@@ -14,6 +14,9 @@ public class HUDManager : MonoBehaviour
     [SerializeField] private BossTextController pictureBossTextController;
     [SerializeField] private float pictureBossMessageDuration = 1.5f;
 
+    // to distinguish between picturebosstext and tutorial
+    [SerializeField] private bool pictureBossTextEnabled = true;
+
 
     // VARIABLES //
 
@@ -57,12 +60,24 @@ public void HideBossText()
 
 public void ShowPictureBossText(int score)
 {
-    if (pictureBossTextController == null)
+    if (!pictureBossTextEnabled || pictureBossTextController == null)
     {
         return;
     }
 
     pictureBossTextController.ShowTemporaryMessageForScore(score, pictureBossMessageDuration);
+}
+
+// function for bosstext
+
+public void SetPictureBossTextEnabled(bool isEnabled)
+{
+    pictureBossTextEnabled = isEnabled;
+
+    if (!isEnabled && pictureBossTextController != null)
+    {
+        pictureBossTextController.Hide();
+    }
 }
 
 
