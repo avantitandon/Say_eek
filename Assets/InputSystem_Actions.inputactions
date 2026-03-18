@@ -598,6 +598,17 @@
                 },
                 {
                     "name": "",
+                    "id": "6f4ae45c-c1b5-4700-9c66-40f9cff0f312",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "ToggleCamera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "a6322051-5e41-4285-abe9-56de17e79464",
                     "path": "<Mouse>/rightButton",
                     "interactions": "",
