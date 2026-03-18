@@ -4,6 +4,10 @@ public class HUDManager : MonoBehaviour
 {
     // CONSTANTS //
 
+    private const int T1_THRESHOLD = 50;
+    private const int T2_THRESHOLD = 100;
+    private const int T3_THRESHOLD = 200;
+
     // AUDIO //
 
     // GAME COMPONENTS //
@@ -12,7 +16,10 @@ public class HUDManager : MonoBehaviour
     [SerializeField] private StatusUIController statusUIController;
     [SerializeField] private BossTextController bossTextController;
     [SerializeField] private BossTextController pictureBossTextController;
-    [SerializeField] private string pictureBossMessage = "Keep the photos coming, INTERN.";
+    [SerializeField] private string pictureBossLowScoreMessage = "Are you even trying intern? Or just trying to make me mad";
+    [SerializeField] private string pictureBossT1Message = "Better. Keep moving.";
+    [SerializeField] private string pictureBossT2Message = "Now that looks usable.";
+    [SerializeField] private string pictureBossT3Message = "This is going to POP Off on the gram!.";
     [SerializeField] private float pictureBossMessageDuration = 1.5f;
 
 
@@ -56,14 +63,14 @@ public void HideBossText()
     bossTextController.Hide();
 }
 
-public void ShowPictureBossText()
+public void ShowPictureBossText(int score)
 {
     if (pictureBossTextController == null)
     {
         return;
     }
 
-    pictureBossTextController.ShowTemporaryMessage(pictureBossMessage, pictureBossMessageDuration);
+    pictureBossTextController.ShowTemporaryMessage(GetPictureBossMessage(score), pictureBossMessageDuration);
 }
 
 
@@ -76,5 +83,25 @@ public void ShowPictureBossText()
     public void SetStatusUI (float timeElapsed, int photosLeft)
     {
         statusUIController.SetStatusUI(timeElapsed, photosLeft);
+    }
+
+    private string GetPictureBossMessage(int score)
+    {
+        if (score > T3_THRESHOLD)
+        {
+            return pictureBossT3Message;
+        }
+
+        if (score > T2_THRESHOLD)
+        {
+            return pictureBossT2Message;
+        }
+
+        if (score > T1_THRESHOLD)
+        {
+            return pictureBossT1Message;
+        }
+
+        return pictureBossLowScoreMessage;
     }
 }
