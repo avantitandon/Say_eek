@@ -40,7 +40,7 @@ public class beezakaAI : MonoBehaviour
 
         if (BeezakaSeekCamera)
         {   
-            bzNavMesh.speed = 30; 
+            bzNavMesh.speed = 12; 
             if ((transform.position-BeezakaTether.transform.position).magnitude > 6)
             {
                 transform.LookAt(BeezakaTether.transform.position);
@@ -66,7 +66,7 @@ public class beezakaAI : MonoBehaviour
             {
                 CurrentTime = 0;
                 IsWaiting = false;
-                bzNavMesh.speed = 15;
+                bzNavMesh.speed = 8;
             }
             else
             {
