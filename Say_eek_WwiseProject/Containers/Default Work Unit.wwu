@@ -1143,6 +1143,51 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{9770E3AB-3751-46AB-82A2-0FAFDF841393}" ShortID="594737813">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="PlayMechanismSpecialTransitionsValue"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="IsSlowWalking" ID="{E6C8F175-6921-46CD-A5B3-FA96DE1C9C48}" WorkUnitID="{802E5EDB-ADCF-44E6-915D-2040187550B2}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{343BD3AD-0B18-4082-8FEB-27C616059FB6}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>0.49844</XPos>
+																<YPos>0.00259000000005472</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>0.49944</XPos>
+																<YPos>0.184630000000652</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0.182749999999942</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="FootstepsDirt" ID="{8931990B-0FC3-4730-9912-A17A571934C3}" ShortID="642384294">
 							<PropertyList>
@@ -1327,6 +1372,51 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{1BA6A432-4006-4DFF-A59F-5CA0ADAD627F}" ShortID="868915489">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="PlayMechanismSpecialTransitionsValue"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="IsSlowWalking" ID="{E6C8F175-6921-46CD-A5B3-FA96DE1C9C48}" WorkUnitID="{802E5EDB-ADCF-44E6-915D-2040187550B2}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{B367939C-5411-4CC0-94D6-6E6FF35D3609}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>0.49844</XPos>
+																<YPos>0.00259</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>0.49944</XPos>
+																<YPos>0.18463</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0.18275</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="FootstepsLeaves" ID="{A28494D8-938E-4DE1-BC96-F4946E4562A3}" ShortID="417449861">
 							<PropertyList>
@@ -1556,6 +1646,51 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{DE5D61A3-FF80-4E9E-9FE8-0C0D9A982A5F}" ShortID="38283145">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="PlayMechanismSpecialTransitionsValue"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="IsSlowWalking" ID="{E6C8F175-6921-46CD-A5B3-FA96DE1C9C48}" WorkUnitID="{802E5EDB-ADCF-44E6-915D-2040187550B2}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{8A92E6E0-8360-4E89-9543-038B171CC552}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>0.49844</XPos>
+																<YPos>0.00259000000005472</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>0.49944</XPos>
+																<YPos>0.184630000000652</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0.182749999999942</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
