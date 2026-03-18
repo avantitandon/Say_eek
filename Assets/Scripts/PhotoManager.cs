@@ -15,6 +15,7 @@ public class PhotoManager : MonoBehaviour
 
 
     // AUDIO //
+    [SerializeField] private AudioManager audioManager;
 
     // GAME COMPONENTS //
 
@@ -48,7 +49,8 @@ public class PhotoManager : MonoBehaviour
         {
             photoCamera.targetTexture = photoTexture;
         }
-
+        //ref camer capture method from audio manager
+        audioManager.CameraCapture();
 
         // "take" the photo (writes to rendertexture)
         photoCamera.Render();
