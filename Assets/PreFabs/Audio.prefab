@@ -13,7 +13,7 @@ GameObject:
   m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -45,14 +45,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec8d3f057e70e40d29fb697ff4514f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  playMusic:
+  PlayMusic:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: b9d51558a7b7c482c955acbf3e09bb37, type: 2}
-  playAmbience:
+  PlayAmbience:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 50e921f7c1b8742c288b068386fe3186, type: 2}
+  playFootsteps:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  stopFootsteps:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  playCameraCapture:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a237dfafae9804ba4a2c93034ee01369, type: 2}
+  playCameraUp:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  playCameraDown:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &767435736103922827
 GameObject:
   m_ObjectHideFlags: 0
