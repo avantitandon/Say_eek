@@ -83,7 +83,7 @@
      {
       "Id": "3730852459",
       "Name": "Play_CameraCapture",
-      "ObjectPath": "\\Events\\Default Work Unit\\Camera\\Play_CameraCapture",
+      "ObjectPath": "\\Events\\Default Work Unit\\Camera\\Activity\\Play_CameraCapture",
       "GUID": "{E4BCC9E2-1B16-4B3D-A6E9-7A3E34F7C358}",
       "DurationType": "OneShot",
       "DurationMin": "3.521354",
@@ -115,6 +115,6 @@
     ]
    }
   ],
-  "FileHash": "{4B44DD21-F4C3-40E5-265B-B9A063E634CC}"
+  "FileHash": "{89230FE1-8CFB-FC58-D699-844C66AA1F5B}"
  }
 }

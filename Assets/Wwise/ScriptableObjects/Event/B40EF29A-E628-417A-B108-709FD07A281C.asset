@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3715f12cd9be34194833e6eb0a06c023, type: 3}
   m_Name: B40EF29A-E628-417A-B108-709FD07A281C
   m_EditorClassIdentifier: AK.Wwise.Unity.API.WwiseTypes::WwiseEventReference
-  objectName: Play_CameraViewClose
-  id: 3080007124
+  objectName: Play_CameraDown
+  id: 2825339271
   guid: B40EF29A-E628-417A-B108-709FD07A281C
   IsInUserDefinedSoundBank: 0

@@ -41,7 +41,7 @@
      {
       "Id": "4200714142",
       "Name": "Play_amb_water_001",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_amb_water_001",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\Play_amb_water_001",
       "GUID": "{4345C293-4B11-429C-A5C2-F99CA1893650}",
       "MaxAttenuation": "75",
       "DurationType": "Infinite",
@@ -61,6 +61,6 @@
     ]
    }
   ],
-  "FileHash": "{55B25E7C-BCFE-CA5A-622F-4CCE76619208}"
+  "FileHash": "{B1F806EA-88AD-7669-1784-DBF2038607C8}"
  }
 }

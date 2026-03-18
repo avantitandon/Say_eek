@@ -87,11 +87,19 @@ public class ZoomManager : MonoBehaviour
 
     public void ZoomIn()
     {
+        if (!zooming)
+        {
+            audioManager.CameraZoomIn();
+        }
         zooming = true;
     }
 
     public void ZoomOut()
     {
+        if (zooming)
+        {
+            audioManager.CameraZoomOut();
+        }
         zooming = false;
     }
 }

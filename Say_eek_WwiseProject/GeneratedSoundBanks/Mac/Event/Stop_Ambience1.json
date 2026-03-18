@@ -18,7 +18,7 @@
      {
       "Id": "3294285673",
       "Name": "Stop_Ambience1",
-      "ObjectPath": "\\Events\\Default Work Unit\\Stop_Ambience1",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\Stop_Ambience1",
       "GUID": "{606340F5-AB23-4EC3-82CD-1EEEA0E00FD7}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
@@ -28,6 +28,6 @@
     ]
    }
   ],
-  "FileHash": "{6F7D1A0F-7259-8192-3C76-630D00FCB370}"
+  "FileHash": "{A012D389-9C61-B306-ADED-92D4D2872113}"
  }
 }
