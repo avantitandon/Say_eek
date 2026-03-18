@@ -18,7 +18,7 @@
      {
       "Id": "3252179076",
       "Name": "Stop_CameraZoomOut",
-      "ObjectPath": "\\Events\\Default Work Unit\\Camera\\Stop_CameraZoomOut",
+      "ObjectPath": "\\Events\\Default Work Unit\\Camera\\Zoom\\Stop_CameraZoomOut",
       "GUID": "{5F1CB558-F1CC-49F8-9D5A-630F18B483B2}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
@@ -28,6 +28,6 @@
     ]
    }
   ],
-  "FileHash": "{992679CE-1FEE-1C19-E70D-A194BD4348E0}"
+  "FileHash": "{99AEDF6B-ADD9-18C4-D9B1-5A10C98CDDF4}"
  }
 }
