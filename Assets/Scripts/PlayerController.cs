@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
 
     InputAction photoAction;
 
+    InputAction dialogueAdvanceAction;
+
     // AUDIO //
 
     // GAME COMPONENTS //
@@ -32,6 +34,7 @@ public class PlayerController : MonoBehaviour
     // VARIABLES //
 
     private int photosTaken = 0;
+    private bool gameplayInputEnabled = true;
 
     private List<int> scores;
     private List<Texture2D> photos;
@@ -42,6 +45,16 @@ public class PlayerController : MonoBehaviour
     public int GetPhotosTaken()
     {
         return photosTaken;
+    }
+
+    public void SetGameplayInputEnabled(bool isEnabled)
+    {
+        gameplayInputEnabled = isEnabled;
+    }
+
+    public bool WasDialogueAdvancePressedThisFrame()
+    {
+        return dialogueAdvanceAction != null && dialogueAdvanceAction.WasPressedThisFrame();
     }
 
     public void ResetState()
@@ -63,6 +76,7 @@ public class PlayerController : MonoBehaviour
         holdCameraAction = InputSystem.actions.FindAction("ToggleCamera");
         zoomAction = InputSystem.actions.FindAction("Zoom");
         photoAction = InputSystem.actions.FindAction("Attack");
+        dialogueAdvanceAction = InputSystem.actions.FindAction("PhoneToggle");
 
         // check what this does
         Cursor.lockState = CursorLockMode.Locked;
@@ -75,6 +89,15 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // blocking some things the player can do. We can change this
+        if (!gameplayInputEnabled)
+        {
+            cameraController.Release();
+            cameraController.ZoomOut();
+            moveManager.SetWalkSpeed();
+            return;
+        }
+
         // move the player with the current move input
         moveManager.MovePlayer(moveAction.ReadValue<Vector2>());
 
