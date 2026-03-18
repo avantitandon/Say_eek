@@ -2,6 +2,8 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 // I hate CA
+
+// All the functions to animate boss text exist here, 
 public class BossTextController : MonoBehaviour
 {
     //Moved everything about the hUD STATE manager for cleaner code? 
@@ -158,7 +160,7 @@ public class BossTextController : MonoBehaviour
 
     private void ResolveReferences()
     {
-        // If the panel wasn't assigned manually, use the text's parent panel.
+        // failsafe!!!!
   if (bossTextMessage != null && dialoguePanel == null)
         {
             dialoguePanel = bossTextMessage.transform.parent as RectTransform;
@@ -170,6 +172,9 @@ public class BossTextController : MonoBehaviour
         // same anchored position shifted by the configured hidden offset
         return Vispos + new Vector2(slideOffsetX, -slideOffsetY);
     }
+
+    // Ask artists to have text animation instead of this?
+    // Actually despise this lowkey
 
     private void StartSlide(Vector2 target, bool deactivateAfter)
     {
@@ -225,6 +230,7 @@ public class BossTextController : MonoBehaviour
         }
     }
 
+// end coroutinr
     private IEnumerator AutoHideAfterDelay(float durationSeconds)
     {
         yield return new WaitForSecondsRealtime(durationSeconds);
@@ -242,7 +248,9 @@ public class BossTextController : MonoBehaviour
         StopCoroutine(autoHideRoutine);
         autoHideRoutine = null;
     }
+
     // Have score be sent to this 
+    // copy pasted this from the hearts logic
 
     private string GetMessageForScore(int score)
     {
