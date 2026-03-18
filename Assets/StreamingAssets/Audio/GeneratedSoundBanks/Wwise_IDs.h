@@ -39,6 +39,7 @@ namespace AK
         static const AkUniqueID AMBIENCESPREAD = 2341644420U;
         static const AkUniqueID CAMERAVIEW = 1232093211U;
         static const AkUniqueID CAMERAZOOMPERCENTAGE = 965791921U;
+        static const AkUniqueID ISSLOWWALKING = 2984997679U;
     } // namespace GAME_PARAMETERS
 
     namespace BUSSES

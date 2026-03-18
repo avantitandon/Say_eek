@@ -15,9 +15,7 @@ public class MovementStateManager : MonoBehaviour
     public const float CAMERA_UP_WALK_SPEED = 7f;
 
     // AUDIO //
-
-    [SerializeField] private AK.Wwise.Event playFootsteps;
-    [SerializeField] private AK.Wwise.Event stopFootsteps;
+    [SerializeField] private AudioManager audioManager;
 
     // GAME COMPONENTS //
     [SerializeField] private CameraController cameraController;
@@ -82,7 +80,7 @@ public class MovementStateManager : MonoBehaviour
         Vector3 finalMove = movementDirection * moveSpeed + velocity;
         characterController.Move(finalMove * Time.deltaTime);
         // Handle footstep sounds
-        HandleFootsteps();
+        audioManager.HandleFootsteps(movementDirection, moveSpeed == CAMERA_UP_WALK_SPEED);
     }
 
     public void SetWalkSpeed()
@@ -95,29 +93,7 @@ public class MovementStateManager : MonoBehaviour
         moveSpeed = CAMERA_UP_WALK_SPEED;
     }
 
-    private void HandleFootsteps()
-    {
-        bool isMoving = movementDirection.magnitude > 0.1f;
 
-        if (isMoving)
-        {
-            if (!isPlayingFootsteps)
-            {
-                playFootsteps.Post(gameObject);
-                isPlayingFootsteps = true;
-                LogPlaytest("Movement started. Footsteps playing.");
-            }
-        }
-        else
-        {
-            if (isPlayingFootsteps)
-            {
-                stopFootsteps.Post(gameObject);
-                isPlayingFootsteps = false;
-                LogPlaytest("Movement stopped. Footsteps stopped.");
-            }
-        }
-    }
     private bool IsGrounded()
     {
         spherePosition = new Vector3(transform.position.x, transform.position.y - groundYOffset, transform.position.z);
