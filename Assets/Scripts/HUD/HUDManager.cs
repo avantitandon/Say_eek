@@ -10,6 +10,8 @@ public class HUDManager : MonoBehaviour
 
     [SerializeField] private PhotoPreviewController photoPreviewController;
     [SerializeField] private StatusUIController statusUIController;
+    [SerializeField] private BossTextController bossTextController;
+
 
     // VARIABLES //
 
@@ -26,6 +28,32 @@ public class HUDManager : MonoBehaviour
     {
 
     }
+
+    // messy for now, thinking of ways to condense this in a seperate script? just so hud sta
+
+    // hud state manager has one begin boss dialogue
+
+    public void BeginBossDialogue(string[] lines)
+{
+    bossTextController.BeginDialogue(lines);
+}
+
+public void AdvanceBossDialogue()
+{
+    bossTextController.AdvanceDialogue();
+}
+
+public bool IsBossDialogueComplete()
+{
+    return bossTextController.IsDialogueComplete;
+}
+
+public void HideBossText()
+{
+    bossTextController.Hide();
+}
+
+
 
     public void DisplayPhotoPreview(int score, Texture2D photo)
     {

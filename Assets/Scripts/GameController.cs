@@ -12,8 +12,18 @@ public class GameController : MonoBehaviour
     // CONSTANTS //
 
     private const float ROUND_DURATION_SECONDS = 300f;
+    private const float TUTORIAL_INTRO_DELAY_SECONDS = 3f;
 
     private const int MAX_PHOTOS = 20;
+
+    private static readonly string[] BossDialogueLines =
+    {
+        "INTERN! You’re at the venue now? Good. ",
+        "Explore the venue and take a variety of photos, understood?",
+        "The event ends at 12AM, by the way.",
+        "I’ll text you updates throughout the night.",
+
+    };
 
     // AUDIO //
 
@@ -26,7 +36,6 @@ public class GameController : MonoBehaviour
     // VARIABLES //
 
     private State gameState;
-
     private float roundStartTime = 0.0f;
 
     // LOGGING //
@@ -34,15 +43,35 @@ public class GameController : MonoBehaviour
     [SerializeField] private bool enablePlaytestLogs = true;
 
 
+    // sorry about messing up your flow martin, will clean up the code later!! want it working for the tut
+    // Tutorial  code starts here
+
+
+    private enum TutorialStep
+    {
+        IntroDelay,
+        ShowBossDialogue,
+        Complete
+    }
+
+    private TutorialStep tutorialStep;
+    private float tutorialStepStartTime = 0.0f;
+    private bool bossDialogueStarted = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        // ensure we are starting with tutorial
+        tutorialStep = TutorialStep.IntroDelay;
+        tutorialStepStartTime = Time.time;
         // double check functionality; do we need this? does it help with lag?
         Application.targetFrameRate = 60;
 
         // start the game in the tutorial
         gameState = State.Tutorial;
+        bossDialogueStarted = false;
+        playerController.SetGameplayInputEnabled(false);
+        hudManager.HideBossText();
     }
 
     // Update is called once per frame
@@ -52,20 +81,47 @@ public class GameController : MonoBehaviour
         HandleGame();
         HandleEndSequence();
     }
-
+    
     private void HandleTutorial()
     {
-        // only run if in the tutorial state
         if (gameState != State.Tutorial)
         {
             return;
         }
 
-        // we don't have a tutorial yet, move to game state
-        gameState = State.Active;
+        switch (tutorialStep)
+        {
+            case TutorialStep.IntroDelay:
+                if (Time.time - tutorialStepStartTime >= TUTORIAL_INTRO_DELAY_SECONDS)
+                {
+                    tutorialStep = TutorialStep.ShowBossDialogue;
+                    tutorialStepStartTime = Time.time;
+                }
+                break;
 
-        // if this was the tutorial, we can have substates and restrict player movement
+            case TutorialStep.ShowBossDialogue:
+                if (!bossDialogueStarted)
+                {
+                    hudManager.BeginBossDialogue(BossDialogueLines);
+                    bossDialogueStarted = true;
+                }
 
+                if (playerController.WasDialogueAdvancePressedThisFrame())
+                {
+                    hudManager.AdvanceBossDialogue();
+                }
+
+                if (hudManager.IsBossDialogueComplete())
+                {
+                    tutorialStep = TutorialStep.Complete;
+                }
+                break;
+
+            case TutorialStep.Complete:
+                hudManager.HideBossText();
+                StartGame();
+                break;
+        }
     }
 
     private void HandleGame()
@@ -106,6 +162,7 @@ public class GameController : MonoBehaviour
         gameState = State.Active;
         roundStartTime = Time.time;
         playerController.ResetState();
+        playerController.SetGameplayInputEnabled(true);
     }
 
     private void StartEndSequence()
