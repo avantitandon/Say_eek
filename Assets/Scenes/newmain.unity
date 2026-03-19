@@ -3979,6 +3979,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1592584008717805501, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 2126608635}
+    - target: {fileID: 1670134188598921005, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 2126608635}
+    - target: {fileID: 1887433851811149895, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 2126608635}
     - target: {fileID: 2479029984853724862, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: bossTextController
       value: 
