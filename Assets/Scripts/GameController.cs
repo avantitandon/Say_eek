@@ -40,6 +40,8 @@ public class GameController : MonoBehaviour
 
     [SerializeField] private HUDManager hudManager;
 
+    [SerializeField] private EndSeqManager endSeqManager;
+
     // VARIABLES //
 
     private State gameState;

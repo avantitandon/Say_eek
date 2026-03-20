@@ -363,6 +363,50 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6576ef9a83c906341a0424f5daac950c, type: 3}
+--- !u!1 &183161367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 183161369}
+  - component: {fileID: 183161368}
+  m_Layer: 0
+  m_Name: EndSeqManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &183161368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183161367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1423b5ff80294b84aaaddc48e704519d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EndSeqManager
+--- !u!4 &183161369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183161367}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &229809227 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5273606725221546845, guid: c4da838dd4cc820489702fef16c95d96, type: 3}
@@ -4388,6 +4432,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 689493062}
     - target: {fileID: 6398434740384984267, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
+      propertyPath: endSeqManager
+      value: 
+      objectReference: {fileID: 183161368}
+    - target: {fileID: 6398434740384984267, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
       propertyPath: playerController
       value: 
       objectReference: {fileID: 1838387341}
@@ -5634,3 +5682,4 @@ SceneRoots:
   - {fileID: 1337033628}
   - {fileID: 1730648592}
   - {fileID: 147030130}
+  - {fileID: 183161369}
