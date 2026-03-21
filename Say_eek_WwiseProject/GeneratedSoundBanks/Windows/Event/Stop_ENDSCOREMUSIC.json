@@ -18,7 +18,7 @@
      {
       "Id": "261268628",
       "Name": "Stop_ENDSCOREMUSIC",
-      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Stop_ENDSCOREMUSIC",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\OLD\\Stop_ENDSCOREMUSIC",
       "GUID": "{394B4D7E-939D-407B-9F59-C90DCF3E229A}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
@@ -28,6 +28,6 @@
     ]
    }
   ],
-  "FileHash": "{EC0AF142-54FC-38E7-F6C2-4B670B4E67E7}"
+  "FileHash": "{CB2ED697-8443-C521-355C-ED2BCB524E8C}"
  }
 }

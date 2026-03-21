@@ -279,61 +279,100 @@
 				</Folder>
 				<Folder Name="Music" ID="{505A48C5-78A4-4B7B-9EE8-77DD6629B196}" ShortID="331096648">
 					<ChildrenList>
-						<Event Name="Play_MainMusic" ID="{EBD8662F-C315-47A2-9D79-FFC72F6A60CA}">
+						<Event Name="Play_mus_55BPM_2_4_MainMusic_Stage_DJDevil_GUITAR_nl" ID="{B0F3E58A-E8F3-4EB0-A00D-DFB686AD451B}">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool" Value="False"/>
+							</PropertyList>
 							<ChildrenList>
-								<Action Name="" ID="{DE7C5A92-951C-48B1-A003-F97659FFA485}" ShortID="432625871">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="First Dance in Hell - Mar10" ID="{E97EA716-04F1-439B-9620-58724F8AF2D4}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_ENDSCOREMUSIC" ID="{5CB63139-2FC6-4180-B394-402FBD52D9CF}">
-							<ChildrenList>
-								<Action Name="" ID="{2D308467-6241-4178-A0CE-8BE9ADFD13DE}" ShortID="773814681">
+								<Action Name="" ID="{8353358B-806C-4112-BEF9-03E9DE7A26B7}" ShortID="699718436">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="First Dance in Hell - Mar10" ID="{E97EA716-04F1-439B-9620-58724F8AF2D4}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+											<ObjectRef Name="mus_55BPM_2-4_MainMusic_Stage_DJDevil_GUITAR_nl" ID="{2D83177A-194E-488F-863F-13C08076A97F}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{D703537B-39F2-4F0F-BF26-B2A46C45E21D}" ShortID="93407022">
+								<Action Name="" ID="{9AD2B247-6C8F-4D96-87A7-45BA466D63D6}" ShortID="518876685">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="ENDSCOREMUSIC" ID="{76463721-A918-456B-B805-FC635647933A}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Stop_ENDSCOREMUSIC" ID="{394B4D7E-939D-407B-9F59-C90DCF3E229A}">
-							<ChildrenList>
-								<Action Name="" ID="{8FBF9530-23B2-4376-8B3C-F82DF0CDA6FC}" ShortID="981553872">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="ENDSCOREMUSIC" ID="{76463721-A918-456B-B805-FC635647933A}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+											<ObjectRef Name="mus_55BPM_2-4_MainMusic_Stage_DJDevil_GUITAR_nl" ID="{2D83177A-194E-488F-863F-13C08076A97F}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Stop_First_Dance_in_Hell___Mar10" ID="{48E5D7D5-7153-469B-95C1-3A9FAC12C57A}">
+						<Folder Name="OLD" ID="{16A16158-F5A2-41D7-8C05-FB1E935B7E97}" ShortID="1004139569">
 							<ChildrenList>
-								<Action Name="" ID="{C4F6B8EA-A2F9-4542-B6B0-0AF90CDD08EE}" ShortID="574361737">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
+								<Event Name="Play_ENDSCOREMUSIC" ID="{5CB63139-2FC6-4180-B394-402FBD52D9CF}">
+									<ChildrenList>
+										<Action Name="" ID="{2D308467-6241-4178-A0CE-8BE9ADFD13DE}" ShortID="773814681">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="First Dance in Hell - Mar10" ID="{E97EA716-04F1-439B-9620-58724F8AF2D4}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{D703537B-39F2-4F0F-BF26-B2A46C45E21D}" ShortID="93407022">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ENDSCOREMUSIC" ID="{76463721-A918-456B-B805-FC635647933A}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_MainMusic" ID="{EBD8662F-C315-47A2-9D79-FFC72F6A60CA}">
+									<ChildrenList>
+										<Action Name="" ID="{DE7C5A92-951C-48B1-A003-F97659FFA485}" ShortID="432625871">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="First Dance in Hell - Mar10" ID="{E97EA716-04F1-439B-9620-58724F8AF2D4}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_ENDSCOREMUSIC" ID="{394B4D7E-939D-407B-9F59-C90DCF3E229A}">
+									<ChildrenList>
+										<Action Name="" ID="{8FBF9530-23B2-4376-8B3C-F82DF0CDA6FC}" ShortID="981553872">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ENDSCOREMUSIC" ID="{76463721-A918-456B-B805-FC635647933A}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_First_Dance_in_Hell___Mar10" ID="{48E5D7D5-7153-469B-95C1-3A9FAC12C57A}">
+									<ChildrenList>
+										<Action Name="" ID="{C4F6B8EA-A2F9-4542-B6B0-0AF90CDD08EE}" ShortID="574361737">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="First Dance in Hell - Mar10" ID="{E97EA716-04F1-439B-9620-58724F8AF2D4}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Event Name="Play_MainMusicPlaylist" ID="{B8A400CA-C1BB-4F34-876B-C21DAFDBEEDD}">
+							<ChildrenList>
+								<Action Name="" ID="{EC95049F-9BC3-49E1-BC73-C797838CF859}" ShortID="5071747">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="First Dance in Hell - Mar10" ID="{E97EA716-04F1-439B-9620-58724F8AF2D4}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+											<ObjectRef Name="MainMusicPlaylist" ID="{D826E8D9-FB74-4F3B-B479-58E3D7C254DF}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

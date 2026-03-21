@@ -5,11 +5,17 @@ public class AudioManager : MonoBehaviour
     //COPY PASTAS
         // [SerializeField] private AK.Wwise.Event
         // AkSoundEngine.SetRTPCValue("RTPC_Name", value, gameObject);
+        // AkSoundEngine.SetState("StateGroup_Name", "State_Value");
+
+
 
 
     [Header("Music and Ambience Events")]
+    //Old
     [SerializeField] private AK.Wwise.Event playMusic;
     [SerializeField] private AK.Wwise.Event playAmbience;
+    //New
+    [SerializeField] private AK.Wwise.Event playMainMusicSwitchContainer;
 
 
     [Header("Player Events")]
@@ -47,8 +53,13 @@ public class AudioManager : MonoBehaviour
     {   
         Debug.Log("Music and Ambience is playing");
 
-        playMusic.Post(player);
+        //playMusic.Post(player);
         playAmbience.Post(player);
+        AkSoundEngine.SetState("Area", "SpawnStart");
+        AkSoundEngine.SetState("StageState", "DjDevil");
+        AkSoundEngine.SetState("TutorialState", "Start");
+
+        playMainMusicSwitchContainer.Post(player);
     }
     void LateUpdate()
     {

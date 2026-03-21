@@ -1,0 +1,24 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3815700291	Play_MainMusicSwitchContainer			\Default Work Unit\Play_MainMusicSwitchContainer	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1762393188	StageState			\Default Work Unit\StageState	
+	2332787646	TutorialState			\Default Work Unit\TutorialState	
+	3686139462	Area			\Default Work Unit\Area	
+
+State	ID	Name	State Group			Notes
+	748895195	None	StageState			
+	1408961167	DjDevil	StageState			
+	3647113020	DjDevilRockstar	StageState			
+	529726532	End	TutorialState			
+	748895195	None	TutorialState			
+	945962381	Picture	TutorialState			
+	1281810935	Start	TutorialState			
+	71202558	Spawn	Area			
+	359097558	SpawnStart	Area			
+	748895195	None	Area			
+	1063701865	Stage	Area			
+	1362338037	Fountain	Area			
+	2101617846	Brides	Area			
+	2943799864	Maze	Area			
+

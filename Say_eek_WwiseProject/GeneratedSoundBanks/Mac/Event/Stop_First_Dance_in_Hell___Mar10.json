@@ -18,7 +18,7 @@
      {
       "Id": "4038005146",
       "Name": "Stop_First_Dance_in_Hell___Mar10",
-      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Stop_First_Dance_in_Hell___Mar10",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\OLD\\Stop_First_Dance_in_Hell___Mar10",
       "GUID": "{48E5D7D5-7153-469B-95C1-3A9FAC12C57A}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
@@ -28,6 +28,6 @@
     ]
    }
   ],
-  "FileHash": "{A0A96173-010B-1497-BC95-85436E26927F}"
+  "FileHash": "{0230722D-9D9A-002A-428D-07595C8AA5D0}"
  }
 }

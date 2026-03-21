@@ -1578,6 +1578,10 @@ PrefabInstance:
       propertyPath: playCameraZoomOut.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: 0043789aa0e88484e9e1f64ab35ea26d, type: 2}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: playMainMusicSwitchContainer.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: a4a88a555d7564ca991ae46a87edfb74, type: 2}
     - target: {fileID: 8210140832290947555, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -4431,6 +4435,10 @@ PrefabInstance:
       propertyPath: hudManager
       value: 
       objectReference: {fileID: 689493062}
+    - target: {fileID: 6398434740384984267, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 2126608635}
     - target: {fileID: 6398434740384984267, guid: 9fed8461e2b627a4c873d305f2d240ca, type: 3}
       propertyPath: endSeqManager
       value: 
