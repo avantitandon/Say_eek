@@ -29,7 +29,7 @@
      {
       "Id": "1346240278",
       "Name": "Play_MainMusic",
-      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_MainMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\OLD\\Play_MainMusic",
       "GUID": "{EBD8662F-C315-47A2-9D79-FFC72F6A60CA}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{898DE95C-3D28-866A-483C-3707E23C9FA5}"
+  "FileHash": "{BCA0A7AD-5B16-1AB0-C163-05BF3A41BDA4}"
  }
 }

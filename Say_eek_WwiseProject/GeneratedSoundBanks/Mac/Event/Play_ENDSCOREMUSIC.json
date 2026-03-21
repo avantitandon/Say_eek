@@ -29,7 +29,7 @@
      {
       "Id": "1600600422",
       "Name": "Play_ENDSCOREMUSIC",
-      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_ENDSCOREMUSIC",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\OLD\\Play_ENDSCOREMUSIC",
       "GUID": "{5CB63139-2FC6-4180-B394-402FBD52D9CF}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -41,6 +41,6 @@
     ]
    }
   ],
-  "FileHash": "{836CFBB8-C809-4385-59A7-12A114FDB8B1}"
+  "FileHash": "{40F921DE-3412-C3B8-2C2C-A5C896D109F9}"
  }
 }

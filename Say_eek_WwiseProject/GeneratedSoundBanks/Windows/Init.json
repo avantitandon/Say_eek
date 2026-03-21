@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{114679F9-6BBB-4908-4171-8E62DAF78BEB}",
+    "Hash": "{468ADBF8-D9C8-CC50-8E08-0BDD37B6754D}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -67,9 +67,151 @@
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\IsSlowWalking",
       "GUID": "{E6C8F175-6921-46CD-A5B3-FA96DE1C9C48}"
      }
+    ],
+    "StateGroups": [
+     {
+      "Id": "1762393188",
+      "Name": "StageState",
+      "ObjectPath": "\\States\\Default Work Unit\\StageState",
+      "GUID": "{0B13CB48-7005-4192-897C-91A26EAB8CF2}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\StageState\\None",
+        "GUID": "{A72DC104-B688-4E85-8097-2B04CA63D994}"
+       },
+       {
+        "Id": "1408961167",
+        "Name": "DjDevil",
+        "ObjectPath": "\\States\\Default Work Unit\\StageState\\DjDevil",
+        "GUID": "{B0C35606-7482-4A35-861F-1E71B9EC41A4}"
+       },
+       {
+        "Id": "3647113020",
+        "Name": "DjDevilRockstar",
+        "ObjectPath": "\\States\\Default Work Unit\\StageState\\DjDevilRockstar",
+        "GUID": "{E1B7E26C-3CC0-4776-A843-E7646B013991}"
+       }
+      ]
+     },
+     {
+      "Id": "2332787646",
+      "Name": "TutorialState",
+      "ObjectPath": "\\States\\Default Work Unit\\TutorialState",
+      "GUID": "{BD4AEB84-F90F-494B-9BBF-12E703688C82}",
+      "States": [
+       {
+        "Id": "529726532",
+        "Name": "End",
+        "ObjectPath": "\\States\\Default Work Unit\\TutorialState\\End",
+        "GUID": "{A0D21E91-69A6-4DBD-B376-1C099A2AC0E6}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\TutorialState\\None",
+        "GUID": "{5668DC51-E3CA-4481-AB22-EFCF7502E623}"
+       },
+       {
+        "Id": "945962381",
+        "Name": "Picture",
+        "ObjectPath": "\\States\\Default Work Unit\\TutorialState\\Picture",
+        "GUID": "{169AE084-A911-4E70-B68E-6E1CE7370089}"
+       },
+       {
+        "Id": "1281810935",
+        "Name": "Start",
+        "ObjectPath": "\\States\\Default Work Unit\\TutorialState\\Start",
+        "GUID": "{07F1CAE3-F0F1-48B4-823D-B00529B9435F}"
+       }
+      ]
+     },
+     {
+      "Id": "3686139462",
+      "Name": "Area",
+      "ObjectPath": "\\States\\Default Work Unit\\Area",
+      "GUID": "{68631624-C252-41ED-BBC6-D61D5294D3A9}",
+      "States": [
+       {
+        "Id": "71202558",
+        "Name": "Spawn",
+        "ObjectPath": "\\States\\Default Work Unit\\Area\\Spawn",
+        "GUID": "{3FDF8AF1-932C-442B-89B9-7893B01A1117}"
+       },
+       {
+        "Id": "359097558",
+        "Name": "SpawnStart",
+        "ObjectPath": "\\States\\Default Work Unit\\Area\\SpawnStart",
+        "GUID": "{960242BD-8341-4CDF-9AA8-1FD38379AA37}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Area\\None",
+        "GUID": "{1B7F7CB3-B1C4-4A1D-85B6-6D74194B5EFC}"
+       },
+       {
+        "Id": "1063701865",
+        "Name": "Stage",
+        "ObjectPath": "\\States\\Default Work Unit\\Area\\Stage",
+        "GUID": "{57557D36-413E-454C-8506-2EF645298017}"
+       },
+       {
+        "Id": "1362338037",
+        "Name": "Fountain",
+        "ObjectPath": "\\States\\Default Work Unit\\Area\\Fountain",
+        "GUID": "{EC09C213-14DB-45A6-AFC8-960F45070C33}"
+       },
+       {
+        "Id": "2101617846",
+        "Name": "Brides",
+        "ObjectPath": "\\States\\Default Work Unit\\Area\\Brides",
+        "GUID": "{B7B63A58-C06A-43CB-B923-712C8EBF8219}"
+       },
+       {
+        "Id": "2943799864",
+        "Name": "Maze",
+        "ObjectPath": "\\States\\Default Work Unit\\Area\\Maze",
+        "GUID": "{EE2B974E-DB3D-4CD4-A748-4845A3453CD5}"
+       }
+      ]
+     },
+     {
+      "Id": "4091656514",
+      "Name": "GameState",
+      "ObjectPath": "\\States\\Default Work Unit\\GameState",
+      "GUID": "{BE15BF94-7AFA-41B5-9127-3A9A06B8171A}",
+      "States": [
+       {
+        "Id": "58138747",
+        "Name": "Active",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\Active",
+        "GUID": "{1A3A5B8C-2913-4C5A-A613-546CBFDA0A93}"
+       },
+       {
+        "Id": "529726532",
+        "Name": "End",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\End",
+        "GUID": "{946C7D51-16F4-4B76-85F2-40EC0B9CDE42}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\None",
+        "GUID": "{1CB5C13C-5044-41AD-BE6A-34A1EA47CEE9}"
+       },
+       {
+        "Id": "3762955427",
+        "Name": "Tutorial",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\Tutorial",
+        "GUID": "{37D1CC34-A0A7-402D-AFC1-E6A04B44B971}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{E81797AC-4661-ABDE-B9F4-87A08FFED9D0}"
+  "FileHash": "{E20DC9FB-A261-9D5E-B938-696ED95DA256}"
  }
 }

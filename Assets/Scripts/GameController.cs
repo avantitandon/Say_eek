@@ -33,6 +33,7 @@ public class GameController : MonoBehaviour
     };
 
     // AUDIO //
+    [SerializeField] private AudioManager audioManager;
 
     // GAME COMPONENTS //
 

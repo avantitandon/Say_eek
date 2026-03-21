@@ -1,3 +1,29 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1762393188	StageState			\Default Work Unit\StageState	
+	2332787646	TutorialState			\Default Work Unit\TutorialState	
+	3686139462	Area			\Default Work Unit\Area	
+	4091656514	GameState			\Default Work Unit\GameState	
+
+State	ID	Name	State Group			Notes
+	748895195	None	StageState			
+	1408961167	DjDevil	StageState			
+	3647113020	DjDevilRockstar	StageState			
+	529726532	End	TutorialState			
+	748895195	None	TutorialState			
+	945962381	Picture	TutorialState			
+	1281810935	Start	TutorialState			
+	71202558	Spawn	Area			
+	359097558	SpawnStart	Area			
+	748895195	None	Area			
+	1063701865	Stage	Area			
+	1362338037	Fountain	Area			
+	2101617846	Brides	Area			
+	2943799864	Maze	Area			
+	58138747	Active	GameState			
+	529726532	End	GameState			
+	748895195	None	GameState			
+	3762955427	Tutorial	GameState			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
 
