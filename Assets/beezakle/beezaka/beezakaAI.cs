@@ -4,7 +4,7 @@ using UnityEngine.AI;
 
 public class beezakaAI : MonoBehaviour
 {
-    float period = 3;
+    float period = 6;
     float CurrentTime = 0;
     public bool IsWaiting = false;
     public Vector3 desiredVelocity;
