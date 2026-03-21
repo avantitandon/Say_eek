@@ -52,9 +52,6 @@
             "m_Id": "01c55a7045a7908f8b7b7c42a5decc86"
         },
         {
-            "m_Id": "49b61d6d1859178ca3a0462784187e7f"
-        },
-        {
             "m_Id": "a3bb497aebe09a8e87d146791c740373"
         },
         {
@@ -144,20 +141,6 @@
                     "m_Id": "a075e3241eac3186b1fe467d49d126b8"
                 },
                 "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
-                    "m_Id": "49b61d6d1859178ca3a0462784187e7f"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "01c55a7045a7908f8b7b7c42a5decc86"
-                },
-                "m_SlotId": 1
             }
         },
         {
@@ -468,8 +451,8 @@
     "m_ObjectId": "02492909ca444426b1a0fb730d1aa442",
     "m_Title": "Apply Dither Transparency Threshold",
     "m_Position": {
-        "x": -707.0000610351563,
-        "y": 305.9999694824219
+        "x": -707.1998901367188,
+        "y": 304.0
     }
 }
 
@@ -522,7 +505,7 @@
     "m_AllowMaterialOverride": false,
     "m_SurfaceType": 0,
     "m_ZTestMode": 4,
-    "m_ZWriteControl": 0,
+    "m_ZWriteControl": 2,
     "m_AlphaMode": 0,
     "m_RenderFace": 0,
     "m_AlphaClip": true,
@@ -863,7 +846,7 @@
     "m_ShaderOutputName": "B",
     "m_StageCapability": 3,
     "m_Value": {
-        "e00": 2.0,
+        "e00": 0.6800000071525574,
         "e01": 2.0,
         "e02": 2.0,
         "e03": 2.0,
@@ -1034,42 +1017,6 @@
     },
     "m_Labels": [],
     "m_Space": 0
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
-    "m_ObjectId": "49b61d6d1859178ca3a0462784187e7f",
-    "m_Group": {
-        "m_Id": "e17638ac6bd1454689dd8bd6c23c010d"
-    },
-    "m_Name": "Property",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": -385.0,
-            "y": -77.0,
-            "width": 122.0,
-            "height": 34.0
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "b8f601523d7a148c94e4719197711984"
-        }
-    ],
-    "synonyms": [],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_DismissedVersion": 0,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_Property": {
-        "m_Id": "0726f716da1c3a83b3e0e98135cd8037"
-    }
 }
 
 {
@@ -1824,24 +1771,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "b8f601523d7a148c94e4719197711984",
-    "m_Id": 0,
-    "m_DisplayName": "Opacity",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 3,
-    "m_Value": 0.0,
-    "m_DefaultValue": 0.0,
-    "m_Labels": [
-        "X"
-    ],
-    "m_LiteralMode": false
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
     "m_ObjectId": "ba569641f49e408f89082825f8e5bc83",
     "m_Group": {
@@ -2255,8 +2184,8 @@
     "m_ObjectId": "e17638ac6bd1454689dd8bd6c23c010d",
     "m_Title": "Read Albedo texture, calculate pixel opacity",
     "m_Position": {
-        "x": -1020.0,
-        "y": -324.0
+        "x": -1020.0001220703125,
+        "y": -325.5999755859375
     }
 }
 
@@ -2346,7 +2275,7 @@
     "m_ShaderOutputName": "In",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": 1.0,
+        "x": 1.0099999904632569,
         "y": 0.0,
         "z": 0.0,
         "w": 0.0
