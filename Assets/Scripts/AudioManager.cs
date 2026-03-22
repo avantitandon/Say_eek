@@ -11,41 +11,46 @@ public class AudioManager : MonoBehaviour
 
 
     [Header("Music and Ambience Events")]
-    //Old
-    [SerializeField] private AK.Wwise.Event playMusic;
-    [SerializeField] private AK.Wwise.Event playAmbience;
-    //New
-    [SerializeField] private AK.Wwise.Event playMainMusicSwitchContainer;
+        //Old
+        [SerializeField] private AK.Wwise.Event playMusic;
+        [SerializeField] private AK.Wwise.Event playAmbience;
+        //New
+        [SerializeField] private AK.Wwise.Event playMainMusicSwitchContainer;
+        private string currentBarSwitch = "Bar_01";
 
 
     [Header("Player Events")]
-    [SerializeField] private AK.Wwise.Event playFootsteps;
-    [SerializeField] private AK.Wwise.Event stopFootsteps;
+        [SerializeField] private float maxSpeedStepInterval = 0.48f; //fullspeed
+        [SerializeField] private float maxSlowSpeedInterval = 1.3f; //slowest
+        [SerializeField] private float minMoveThreshold = 0.15f; //minmovement
+        [SerializeField] private AK.Wwise.Event playRubbleFootstep;
+        [SerializeField] private AK.Wwise.Event playStoneFootstep;
+        [Header("Footstep Settings")]
+        [SerializeField] private float distanceToFeet = 0.5f;
+        [SerializeField] private float emitterLifetime = 1f;
+        private float footstepTimer = 0f;
 
 
     [Header("Camera Events")]
-    //Camera Capture
-    [SerializeField] private AK.Wwise.Event playCameraCapture;
-    [SerializeField] private AK.Wwise.Event playHarpPlayer;
+        //Camera Capture
+        [SerializeField] private AK.Wwise.Event playCameraCapture;
+        [SerializeField] private AK.Wwise.Event playHarpPlayer;
+        //Camera Activety
+        [SerializeField] private AK.Wwise.Event playCameraUp;
+        [SerializeField] private AK.Wwise.Event playCameraActive;
+        [SerializeField] private AK.Wwise.Event playCameraDown;
+        //Camera Zoom
+        [SerializeField] private AK.Wwise.Event playCameraZoomIn;
+        [SerializeField] private AK.Wwise.Event playCameraZoomOut;
 
-    //Camera Activety
-    [SerializeField] private AK.Wwise.Event playCameraUp;
-    [SerializeField] private AK.Wwise.Event playCameraActive;
-    [SerializeField] private AK.Wwise.Event playCameraDown;
-
-    //Camera Zoom
-    [SerializeField] private AK.Wwise.Event playCameraZoomIn;
-    [SerializeField] private AK.Wwise.Event playCameraZoomOut;
+    [Header("Audio Game Objects")]
+        [SerializeField] private GameObject feetEmitter;
+        [SerializeField] private float feetYWorldPosition = 0f;
 
 
-    [Header("Game Objects")]
-    [SerializeField] private GameObject player; 
-    
-    
-    
-    // VARIABLES //
-    private bool isPlayingFootsteps = false;
-    private string currentBarSwitch = "Bar_01";
+    [Header("Scene Objects")]
+        [SerializeField] private GameObject player; 
+
 
 
 
@@ -64,6 +69,15 @@ public class AudioManager : MonoBehaviour
         AkSoundEngine.SetState("StageState", "DjDevil");
         AkSoundEngine.SetState("TutorialState", "Start");
     }
+   void LateUpdate()
+    {
+        Vector3 playerPosition = player.transform.position;
+        
+        feetEmitter.transform.position = new Vector3(playerPosition.x, feetYWorldPosition, playerPosition.z);
+    }
+
+
+   // MUSIC Methods //
     private void MusicCueCallback(object in_cookie, AkCallbackType in_type, AkCallbackInfo in_info)
     {  
         if (in_type != AkCallbackType.AK_MusicSyncUserCue)
@@ -106,7 +120,7 @@ public class AudioManager : MonoBehaviour
         AkSoundEngine.SetState("Area", areaStateName);
     }
 
-    // CAMERA EVENTS //
+    // CAMERA methods //
     public void CameraCapture()
     {
         playCameraCapture.Post(player);
@@ -133,42 +147,35 @@ public class AudioManager : MonoBehaviour
         playCameraZoomIn.Post(player);
     }
     public void CameraZoomOut()
-    {
-        playCameraZoomOut.Post(player);
-    }
+{
+    playCameraZoomOut.Post(player);
+}
 
 
-    // PLAYER EVENTS
-    public void HandleFootsteps(Vector3 movementDirection, bool isSlowWalking)
+    // PLAYER Methods //
+    public void HandleFootsteps(Vector3 movementDirection)
     {
-        bool isMoving = movementDirection.magnitude > 0.1f;
-        if (isSlowWalking)
+        float moveAmount = movementDirection.magnitude;
+        bool isMoving = moveAmount > 0.01f;
+
+        if (!isMoving)
         {
-            Debug.Log("Player is slow walking. Setting RTPC value to 1.");
-            AkSoundEngine.SetRTPCValue("IsSlowWalking", 1f, player);
+            footstepTimer = 0f;
+            return;
         }
-        else
+
+        float currentStepInterval = maxSpeedStepInterval / moveAmount;
+
+        footstepTimer += Time.deltaTime;
+
+        if (footstepTimer >= currentStepInterval)
         {
-            AkSoundEngine.SetRTPCValue("IsSlowWalking", 0f, player);
-        }
-        if (isMoving)
-        {
-            if (!isPlayingFootsteps)
-            {
-                playFootsteps.Post(player);
-                isPlayingFootsteps = true;
-            }
-        }
-        else
-        {
-            if (isPlayingFootsteps)
-            {
-                stopFootsteps.Post(player);
-                isPlayingFootsteps = false;
-            }
+            playRubbleFootstep.Post(feetEmitter);
+            playStoneFootstep.Post(player);
+            footstepTimer = 0f;
         }
     }
-
+    // bruh I had a whole function here to make a gameobject at the players feet and played a footstep texture. I realized I can do this IN WWISE SO COOL
 }
 
 

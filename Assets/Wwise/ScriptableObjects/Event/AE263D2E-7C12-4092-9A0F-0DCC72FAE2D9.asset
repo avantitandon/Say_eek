@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Stop_Footsteps
   id: 2963349357
   guid: AE263D2E-7C12-4092-9A0F-0DCC72FAE2D9
-  IsInUserDefinedSoundBank: 0
+  IsInUserDefinedSoundBank: 1

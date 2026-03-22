@@ -119,7 +119,7 @@
      {
       "Id": "3815700291",
       "Name": "Play_MainMusicSwitchContainer",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_MainMusicSwitchContainer",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_MainMusicSwitchContainer",
       "GUID": "{3B3CE729-D122-439D-A386-420D87E0A968}",
       "DurationType": "Infinite",
       "SwitchContainers": [
@@ -237,6 +237,6 @@
     ]
    }
   ],
-  "FileHash": "{8DC979D4-58A0-3AAE-60D0-2423FA54F045}"
+  "FileHash": "{6A897CC5-A590-91C2-2EEA-61AA47ABD1AD}"
  }
 }

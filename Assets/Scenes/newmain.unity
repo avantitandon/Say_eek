@@ -1615,6 +1615,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 0043789aa0e88484e9e1f64ab35ea26d, type: 2}
     - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: playStoneFootstep.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 1500a337bffdd473897ca7c4ed36ff05, type: 2}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: playRubbleFootstep.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: ecb4a3c35a95a457cb800b67e42f36a5, type: 2}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
       propertyPath: playMainMusicSwitchContainer.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: a4a88a555d7564ca991ae46a87edfb74, type: 2}

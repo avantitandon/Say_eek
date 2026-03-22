@@ -33,6 +33,7 @@ Transform:
   - {fileID: 3580039316663995820}
   - {fileID: 4471017455099896209}
   - {fileID: 1263646039610663711}
+  - {fileID: 4607429423734329086}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7516107929183428955
@@ -59,15 +60,24 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
-  playFootsteps:
+  maxSpeedStepInterval: 0.48
+  maxSlowSpeedInterval: 1.3
+  minMoveThreshold: 0.15
+  playRubbleFootstep:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
-  stopFootsteps:
+  playStoneFootstep:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  distanceToFeet: 0.5
+  emitterLifetime: 1
   playCameraCapture:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  playHarpPlayer:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
@@ -91,6 +101,8 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  feetEmitter: {fileID: 5188557503325101693}
+  feetYWorldPosition: 0
   player: {fileID: 0}
 --- !u!1 &620317980245466297
 GameObject:
@@ -217,7 +229,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2d6d469ac224bee908c6e39eb6dd01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AreaTriggers
-  player: {fileID: 0}
   audioManager: {fileID: 7516107929183428955}
   areaStateName: Stage
 --- !u!1 &767435736103922827
@@ -489,7 +500,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2d6d469ac224bee908c6e39eb6dd01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AreaTriggers
-  player: {fileID: 0}
   audioManager: {fileID: 7516107929183428955}
   areaStateName: Stage
 --- !u!1 &1346867712940557635
@@ -684,7 +694,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2d6d469ac224bee908c6e39eb6dd01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AreaTriggers
-  player: {fileID: 0}
   audioManager: {fileID: 7516107929183428955}
   areaStateName: Fountain
 --- !u!1 &2418578682286234113
@@ -849,7 +858,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2d6d469ac224bee908c6e39eb6dd01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AreaTriggers
-  player: {fileID: 0}
   audioManager: {fileID: 7516107929183428955}
   areaStateName: Fountain
 --- !u!1 &3161398765907013721
@@ -977,7 +985,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2d6d469ac224bee908c6e39eb6dd01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AreaTriggers
-  player: {fileID: 0}
   audioManager: {fileID: 7516107929183428955}
   areaStateName: Stage
 --- !u!1 &3374651235086713779
@@ -1137,7 +1144,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2d6d469ac224bee908c6e39eb6dd01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AreaTriggers
-  player: {fileID: 0}
   audioManager: {fileID: 7516107929183428955}
   areaStateName: Stage
 --- !u!1 &3639617125838905857
@@ -1265,7 +1271,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2d6d469ac224bee908c6e39eb6dd01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AreaTriggers
-  player: {fileID: 0}
   audioManager: {fileID: 7516107929183428955}
   areaStateName: Brides
 --- !u!1 &4790375560823920937
@@ -1393,9 +1398,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2d6d469ac224bee908c6e39eb6dd01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AreaTriggers
-  player: {fileID: 0}
   audioManager: {fileID: 7516107929183428955}
   areaStateName: Maze
+--- !u!1 &5188557503325101693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5579570324103549458}
+  m_Layer: 0
+  m_Name: FeetEmitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5579570324103549458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5188557503325101693}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4607429423734329086}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6156622320139319109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1521,7 +1556,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2d6d469ac224bee908c6e39eb6dd01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AreaTriggers
-  player: {fileID: 0}
   audioManager: {fileID: 7516107929183428955}
   areaStateName: Stage
 --- !u!1 &6224269414224677269
@@ -1649,7 +1683,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2d6d469ac224bee908c6e39eb6dd01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AreaTriggers
-  player: {fileID: 0}
   audioManager: {fileID: 7516107929183428955}
   areaStateName: Maze
 --- !u!1 &6597741191437038665
@@ -1777,7 +1810,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2d6d469ac224bee908c6e39eb6dd01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AreaTriggers
-  player: {fileID: 0}
   audioManager: {fileID: 7516107929183428955}
   areaStateName: Fountain
 --- !u!1 &7002255500915274260
@@ -1905,7 +1937,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2d6d469ac224bee908c6e39eb6dd01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AreaTriggers
-  player: {fileID: 0}
   audioManager: {fileID: 7516107929183428955}
   areaStateName: Spawn
 --- !u!1 &7571894741901663330
@@ -2067,9 +2098,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2d6d469ac224bee908c6e39eb6dd01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AreaTriggers
-  player: {fileID: 0}
   audioManager: {fileID: 7516107929183428955}
   areaStateName: Maze
+--- !u!1 &7803472487089723673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4607429423734329086}
+  m_Layer: 0
+  m_Name: PlayerEmitters
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4607429423734329086
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7803472487089723673}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 73.94646, y: 13.91576, z: 56.96869}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5579570324103549458}
+  m_Father: {fileID: 8281631571337489113}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7862091776620549884
 GameObject:
   m_ObjectHideFlags: 0
@@ -2232,7 +2294,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2d6d469ac224bee908c6e39eb6dd01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AreaTriggers
-  player: {fileID: 0}
   audioManager: {fileID: 7516107929183428955}
   areaStateName: Stage
 --- !u!1 &8361534226807592310
@@ -2360,7 +2421,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2d6d469ac224bee908c6e39eb6dd01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AreaTriggers
-  player: {fileID: 0}
   audioManager: {fileID: 7516107929183428955}
   areaStateName: Spawn
 --- !u!1 &8823611190867056077
@@ -2488,7 +2548,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2d6d469ac224bee908c6e39eb6dd01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AreaTriggers
-  player: {fileID: 0}
   audioManager: {fileID: 7516107929183428955}
   areaStateName: Stage
 --- !u!1001 &772162340964332061

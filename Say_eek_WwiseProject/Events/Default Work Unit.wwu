@@ -214,7 +214,7 @@
 				</Folder>
 				<Folder Name="Footsteps" ID="{7CD74B49-DE5A-4FB7-AD33-6D1F77C837DA}" ShortID="774031364">
 					<ChildrenList>
-						<Event Name="Play_Footsteps" ID="{C588512F-4B98-4DB1-9B8E-281CA20F5B31}">
+						<Event Name="Play_StoneFootstep" ID="{C588512F-4B98-4DB1-9B8E-281CA20F5B31}">
 							<ChildrenList>
 								<Action Name="" ID="{C5D0DB8D-252D-4FCD-AA38-E83984D23C57}" ShortID="789924020">
 									<ReferenceList>
@@ -230,46 +230,21 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{C0DD23A2-3B2A-4777-9A61-D9E40A07C544}" ShortID="497619625">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="FootstepsLeaves" ID="{A28494D8-938E-4DE1-BC96-F4946E4562A3}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Stop_Footsteps" ID="{AE263D2E-7C12-4092-9A0F-0DCC72FAE2D9}">
+						<Event Name="Play_RubbleFootstep" ID="{C688E6E1-BB09-446C-ABC9-9EA22EF301E3}">
 							<ChildrenList>
-								<Action Name="" ID="{A2FCEF6E-8E7E-4AFA-B4C5-2C903860B7F8}" ShortID="951345373">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.35"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="FootstepsDirt" ID="{8931990B-0FC3-4730-9912-A17A571934C3}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{6EB74033-496E-43AE-A2F6-FB60EAE07FBC}" ShortID="762926693">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="FootstepsStone" ID="{1BD4DA99-8E1C-4F3D-8552-137A9464BC1A}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{225B5FC4-A3CB-4D0A-BF2A-5DD2536AADA8}" ShortID="1016702024">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
+								<Action Name="" ID="{CE2B8E8A-35D2-4C4C-A020-7A8651EEF380}" ShortID="389980177">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="FootstepsLeaves" ID="{A28494D8-938E-4DE1-BC96-F4946E4562A3}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{1BEB403A-0F04-4F4A-AF12-8AEA39C331DC}" ShortID="545486874">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FootstepsRock" ID="{B35EB57A-D14A-474B-9FB0-EE1701F7547D}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -367,6 +342,28 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="Play_MainMusicSwitchContainer" ID="{3B3CE729-D122-439D-A386-420D87E0A968}">
+							<ChildrenList>
+								<Action Name="" ID="{50EBEEC8-376F-40A6-B8B9-F1E9F02118A5}" ShortID="991626365">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MainMusicSwitchContainer" ID="{D8E48CDC-4AD3-4F50-8122-EA6127C4B1CD}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_HarpPlayer" ID="{1DFEE0EA-D98A-498C-8A72-DAE25F0DB5D5}">
+							<ChildrenList>
+								<Action Name="" ID="{C59A6774-D80D-48B4-8A43-72ACB059C0CE}" ShortID="13301647">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HarpPlayer" ID="{F3FD0514-0593-402B-9F86-13A25B9A4273}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ambience" ID="{319772EC-2BE1-4FC2-91A1-0F56659CD7ED}" ShortID="271105192">
@@ -409,28 +406,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Play_MainMusicSwitchContainer" ID="{3B3CE729-D122-439D-A386-420D87E0A968}">
-					<ChildrenList>
-						<Action Name="" ID="{50EBEEC8-376F-40A6-B8B9-F1E9F02118A5}" ShortID="991626365">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="MainMusicSwitchContainer" ID="{D8E48CDC-4AD3-4F50-8122-EA6127C4B1CD}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_HarpPlayer" ID="{1DFEE0EA-D98A-498C-8A72-DAE25F0DB5D5}">
-					<ChildrenList>
-						<Action Name="" ID="{C59A6774-D80D-48B4-8A43-72ACB059C0CE}" ShortID="13301647">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="HarpPlayer" ID="{F3FD0514-0593-402B-9F86-13A25B9A4273}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
