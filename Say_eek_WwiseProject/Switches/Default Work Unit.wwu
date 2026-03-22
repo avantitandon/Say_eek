@@ -1,6 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A5FDBD19-8B53-4A82-821E-C414AE6CDECF}" SchemaVersion="133">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{A5FDBD19-8B53-4A82-821E-C414AE6CDECF}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{A5FDBD19-8B53-4A82-821E-C414AE6CDECF}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="HarpSwitch" ID="{C928B950-D5E0-481D-86E9-E3ECD4A72F70}">
+					<ChildrenList>
+						<Switch Name="Bar_01" ID="{5FAF6CE1-0CEB-4090-A087-9EE3B4124C71}"/>
+						<Switch Name="Bar_02" ID="{36166787-DF9C-4549-A1F5-BF74510F52ED}"/>
+						<Switch Name="Bar_03" ID="{00BE21B0-736A-478F-A239-39DFE95A6B58}"/>
+						<Switch Name="Bar_04" ID="{1DD6C622-BF90-49F4-B733-D563A18E4E0D}"/>
+						<Switch Name="Bar_05" ID="{D3B6E3BA-97B1-487C-A688-13F4E5DD5075}"/>
+						<Switch Name="Bar_06" ID="{D68F331C-C544-4E6E-9A8A-D4293F348510}"/>
+						<Switch Name="Bar_07" ID="{931ADB9E-78FB-48BA-B8B5-9D99388B2D75}"/>
+						<Switch Name="Bar_08" ID="{951722F4-ACC3-4A0D-9554-2C8BBE500306}"/>
+						<Switch Name="Bar_09" ID="{71CFA30B-622E-4DB0-86DF-DE1C30CB4DE5}"/>
+						<Switch Name="Bar_10" ID="{7AF7C223-150B-43CB-9B2B-C197369EC087}"/>
+						<Switch Name="Bar_11" ID="{18301DB1-B351-4DCA-815B-31BF0AA53EAC}"/>
+						<Switch Name="Bar_12" ID="{440B502A-B272-4F4C-AF14-22EF2055B59C}"/>
+						<Switch Name="Bar_13" ID="{FC2A92D1-02BE-432D-9E82-8D98C407C5A5}"/>
+						<Switch Name="Bar_14" ID="{7E054714-572F-455F-9C5E-6E31A65476C4}"/>
+						<Switch Name="Bar_15" ID="{F155FB5C-F045-4267-8964-897113EB3C23}"/>
+						<Switch Name="Bar_16" ID="{FF1D7614-2E8E-4DCC-A00D-EC23EABD590E}"/>
+						<Switch Name="Bar_17" ID="{E8E81F47-74F9-4F17-B3C5-E81A50A7C4CA}"/>
+						<Switch Name="Bar_18" ID="{381BFBDE-0FC9-4B6A-811A-6D3F724A9D00}"/>
+						<Switch Name="Bar_19" ID="{32E9CD63-1419-438D-AEA6-1B2E4EE451CC}"/>
+						<Switch Name="Bar_20" ID="{DCBE9008-BAF6-457A-B252-F74E3AF08994}"/>
+						<Switch Name="Bar_21" ID="{890BDD9E-E379-4522-8488-AFA69F3A3CA2}"/>
+						<Switch Name="Bar_22" ID="{41955AB5-C630-4C2D-8117-68FAE15CB5FA}"/>
+						<Switch Name="Bar_23" ID="{3F3BDB59-6461-4446-A67D-0CE9E1025B13}"/>
+						<Switch Name="Bar_24" ID="{89CE74C5-F80B-4038-9620-EA4F7AE88048}"/>
+						<Switch Name="Bar_25" ID="{A59B9421-887E-47E8-A360-DD79E3559990}"/>
+						<Switch Name="Bar_26" ID="{BD0B26DD-38F3-453C-BC3A-45E45201416A}"/>
+						<Switch Name="Bar_27" ID="{55C84423-21B7-48CB-BB08-D6676A60B0AE}"/>
+						<Switch Name="Bar_28" ID="{27E9CA9F-381C-47FB-90EF-4D31508EABA3}"/>
+						<Switch Name="Bar_29" ID="{94361827-D4F5-4240-AF77-5FD68ABEF381}"/>
+						<Switch Name="Bar_30" ID="{67D0ED93-8098-432F-B0EC-A657EEB1E524}"/>
+						<Switch Name="Bar_31" ID="{B5BDC674-CED0-477D-A773-F3E728ED2BF8}"/>
+						<Switch Name="Bar_32" ID="{58D90F09-E92D-42FD-9902-FBD833D9455A}"/>
+						<Switch Name="Bar_33" ID="{9BF47DCB-F106-4694-9392-E73D9321AC38}"/>
+						<Switch Name="Bar_34" ID="{BEFC26F5-B9A1-4C1A-A939-9CC627017CAB}"/>
+						<Switch Name="Bar_35" ID="{953202CB-C578-4855-8681-0D3F8143C534}"/>
+						<Switch Name="Bar_36" ID="{4B451C32-481B-4E02-A4A6-0827FECC1677}"/>
+						<Switch Name="Bar_37" ID="{5A6C74F5-2DC7-42BB-8DBC-C481A401C14D}"/>
+						<Switch Name="Bar_38" ID="{0E6E571F-10CC-4CDE-94A0-363D2038FF94}"/>
+						<Switch Name="Bar_39" ID="{7964AF70-960F-41BA-8A4C-3F638DC42992}"/>
+						<Switch Name="Bar_40" ID="{3B562E5D-BBAA-49BB-9A14-A131CB2B51A9}"/>
+						<Switch Name="Bar_41" ID="{DEB21510-1A38-4AA5-BA8E-49DA2285F502}"/>
+						<Switch Name="Bar_42" ID="{78CCF225-D553-42FE-A950-2141B6F96463}"/>
+						<Switch Name="Bar_43" ID="{75D0A965-E7D5-488F-B6BB-88B7DB18DC37}"/>
+						<Switch Name="Bar_44" ID="{913590D7-3F9F-42DD-8625-3BA627282442}"/>
+						<Switch Name="Bar_45" ID="{1B31B98E-B879-4FDE-A0CC-A1A104026E1C}"/>
+						<Switch Name="Bar_46" ID="{8EE71530-6F41-428C-9680-E715F52B440D}"/>
+						<Switch Name="Bar_47" ID="{714EDB08-14BA-4696-BF12-924CFFD28086}"/>
+						<Switch Name="Bar_48" ID="{6A04211F-F23C-4DB7-97E3-3CF9BD242ED1}"/>
+						<Switch Name="Bar_49" ID="{210A41D9-B025-4624-BA53-191A8D638E3F}"/>
+						<Switch Name="Bar_50" ID="{75353567-CFEF-4B03-BE46-B5AEF4FE78E2}"/>
+						<Switch Name="Bar_51" ID="{6197C8F0-6B71-4F31-9F42-20672789EF71}"/>
+						<Switch Name="Bar_52" ID="{D58B2F5A-F8A7-44BB-8032-FC128F817326}"/>
+						<Switch Name="Bar_53" ID="{90EB6899-D498-4FB8-BEAB-7DB2EEE943A9}"/>
+						<Switch Name="Bar_54" ID="{12CE69E0-2FD6-4480-821F-104E8B842E75}"/>
+						<Switch Name="Bar_55" ID="{8848B5D9-76A5-477E-8845-066B51A3D737}"/>
+						<Switch Name="Bar_56" ID="{1E95AC12-CA3F-4D4F-97B2-A03F44B5A4F8}"/>
+						<Switch Name="Bar_57" ID="{94DCF484-C61B-40FE-B970-2C8544728B68}"/>
+						<Switch Name="Bar_58" ID="{832906BC-41C4-424B-871C-26E34AF35FD8}"/>
+						<Switch Name="Bar_59" ID="{1261C55F-6E87-4563-8ED6-A2DE79D06013}"/>
+						<Switch Name="Bar_60" ID="{F01B51CD-DAA0-447A-904B-E475BD183BC9}"/>
+						<Switch Name="Bar_61" ID="{D38E08C6-5AAE-4A09-9A3C-DE9E6720D1A8}"/>
+						<Switch Name="Bar_62" ID="{2E56F634-2476-4DB4-8C0D-BF8C5C1F38DB}"/>
+						<Switch Name="Bar_63" ID="{B14D68BA-329C-45A0-B3A7-4453A25FBDFD}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

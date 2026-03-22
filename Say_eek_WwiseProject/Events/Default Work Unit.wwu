@@ -367,17 +367,6 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
-						<Event Name="Play_MainMusicPlaylist" ID="{B8A400CA-C1BB-4F34-876B-C21DAFDBEEDD}">
-							<ChildrenList>
-								<Action Name="" ID="{EC95049F-9BC3-49E1-BC73-C797838CF859}" ShortID="5071747">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="MainMusicPlaylist" ID="{D826E8D9-FB74-4F3B-B479-58E3D7C254DF}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ambience" ID="{319772EC-2BE1-4FC2-91A1-0F56659CD7ED}" ShortID="271105192">
@@ -420,6 +409,28 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_MainMusicSwitchContainer" ID="{3B3CE729-D122-439D-A386-420D87E0A968}">
+					<ChildrenList>
+						<Action Name="" ID="{50EBEEC8-376F-40A6-B8B9-F1E9F02118A5}" ShortID="991626365">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainMusicSwitchContainer" ID="{D8E48CDC-4AD3-4F50-8122-EA6127C4B1CD}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_HarpPlayer" ID="{1DFEE0EA-D98A-498C-8A72-DAE25F0DB5D5}">
+					<ChildrenList>
+						<Action Name="" ID="{C59A6774-D80D-48B4-8A43-72ACB059C0CE}" ShortID="13301647">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="HarpPlayer" ID="{F3FD0514-0593-402B-9F86-13A25B9A4273}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

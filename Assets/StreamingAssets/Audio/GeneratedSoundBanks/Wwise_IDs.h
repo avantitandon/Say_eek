@@ -25,6 +25,7 @@ namespace AK
         static const AkUniqueID PLAY_CAMERAZOOMOUT_BETATEMP = 1653393465U;
         static const AkUniqueID PLAY_ENDSCOREMUSIC = 1600600422U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
+        static const AkUniqueID PLAY_HARPPLAYER = 1985769550U;
         static const AkUniqueID PLAY_MAINMUSIC = 1346240278U;
         static const AkUniqueID PLAY_MAINMUSICSWITCHCONTAINER = 3815700291U;
         static const AkUniqueID STOP_AMBIENCE1 = 3294285673U;
@@ -92,6 +93,82 @@ namespace AK
         } // namespace TUTORIALSTATE
 
     } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace HARPSWITCH
+        {
+            static const AkUniqueID GROUP = 2581616850U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BAR_01 = 3687766678U;
+                static const AkUniqueID BAR_02 = 3687766677U;
+                static const AkUniqueID BAR_03 = 3687766676U;
+                static const AkUniqueID BAR_04 = 3687766675U;
+                static const AkUniqueID BAR_05 = 3687766674U;
+                static const AkUniqueID BAR_06 = 3687766673U;
+                static const AkUniqueID BAR_07 = 3687766672U;
+                static const AkUniqueID BAR_08 = 3687766687U;
+                static const AkUniqueID BAR_09 = 3687766686U;
+                static const AkUniqueID BAR_10 = 3670989092U;
+                static const AkUniqueID BAR_11 = 3670989093U;
+                static const AkUniqueID BAR_12 = 3670989094U;
+                static const AkUniqueID BAR_13 = 3670989095U;
+                static const AkUniqueID BAR_14 = 3670989088U;
+                static const AkUniqueID BAR_15 = 3670989089U;
+                static const AkUniqueID BAR_16 = 3670989090U;
+                static const AkUniqueID BAR_17 = 3670989091U;
+                static const AkUniqueID BAR_18 = 3670989100U;
+                static const AkUniqueID BAR_19 = 3670989101U;
+                static const AkUniqueID BAR_20 = 3721321981U;
+                static const AkUniqueID BAR_21 = 3721321980U;
+                static const AkUniqueID BAR_22 = 3721321983U;
+                static const AkUniqueID BAR_23 = 3721321982U;
+                static const AkUniqueID BAR_24 = 3721321977U;
+                static const AkUniqueID BAR_25 = 3721321976U;
+                static const AkUniqueID BAR_26 = 3721321979U;
+                static const AkUniqueID BAR_27 = 3721321978U;
+                static const AkUniqueID BAR_28 = 3721321973U;
+                static const AkUniqueID BAR_29 = 3721321972U;
+                static const AkUniqueID BAR_30 = 3704544266U;
+                static const AkUniqueID BAR_31 = 3704544267U;
+                static const AkUniqueID BAR_32 = 3704544264U;
+                static const AkUniqueID BAR_33 = 3704544265U;
+                static const AkUniqueID BAR_34 = 3704544270U;
+                static const AkUniqueID BAR_35 = 3704544271U;
+                static const AkUniqueID BAR_36 = 3704544268U;
+                static const AkUniqueID BAR_37 = 3704544269U;
+                static const AkUniqueID BAR_38 = 3704544258U;
+                static const AkUniqueID BAR_39 = 3704544259U;
+                static const AkUniqueID BAR_40 = 3620656235U;
+                static const AkUniqueID BAR_41 = 3620656234U;
+                static const AkUniqueID BAR_42 = 3620656233U;
+                static const AkUniqueID BAR_43 = 3620656232U;
+                static const AkUniqueID BAR_44 = 3620656239U;
+                static const AkUniqueID BAR_45 = 3620656238U;
+                static const AkUniqueID BAR_46 = 3620656237U;
+                static const AkUniqueID BAR_47 = 3620656236U;
+                static const AkUniqueID BAR_48 = 3620656227U;
+                static const AkUniqueID BAR_49 = 3620656226U;
+                static const AkUniqueID BAR_50 = 3603878648U;
+                static const AkUniqueID BAR_51 = 3603878649U;
+                static const AkUniqueID BAR_52 = 3603878650U;
+                static const AkUniqueID BAR_53 = 3603878651U;
+                static const AkUniqueID BAR_54 = 3603878652U;
+                static const AkUniqueID BAR_55 = 3603878653U;
+                static const AkUniqueID BAR_56 = 3603878654U;
+                static const AkUniqueID BAR_57 = 3603878655U;
+                static const AkUniqueID BAR_58 = 3603878640U;
+                static const AkUniqueID BAR_59 = 3603878641U;
+                static const AkUniqueID BAR_60 = 3654211505U;
+                static const AkUniqueID BAR_61 = 3654211504U;
+                static const AkUniqueID BAR_62 = 3654211507U;
+                static const AkUniqueID BAR_63 = 3654211506U;
+            } // namespace SWITCH
+        } // namespace HARPSWITCH
+
+    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {
