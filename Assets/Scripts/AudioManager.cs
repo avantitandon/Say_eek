@@ -55,17 +55,36 @@ public class AudioManager : MonoBehaviour
 
         //playMusic.Post(player);
         playAmbience.Post(player);
+        playMainMusicSwitchContainer.Post(player);
         AkSoundEngine.SetState("Area", "SpawnStart");
         AkSoundEngine.SetState("StageState", "DjDevil");
         AkSoundEngine.SetState("TutorialState", "Start");
-
-        playMainMusicSwitchContainer.Post(player);
     }
     void LateUpdate()
     {
         
     }
-
+    public void HandleTutorialAudio(GameController.TutorialStep tutorialStep)
+    {
+        switch (tutorialStep)
+        {
+            case GameController.TutorialStep.IntroDelay:
+                AkSoundEngine.SetState("TutorialState", "Start");
+                break;
+            case GameController.TutorialStep.ShowBossDialogue:
+                break;
+            case GameController.TutorialStep.WaitForPhoto:
+                break;
+            case GameController.TutorialStep.PhotoDelay:
+                AkSoundEngine.SetState("TutorialState", "Picture");
+                break;
+            case GameController.TutorialStep.ShowPhotoCompleteDialogue:
+                break;
+            case GameController.TutorialStep.Complete:
+                AkSoundEngine.SetState("TutorialState", "End");
+                break;
+        }
+    }
 
 
     // CAMERA EVENTS //
