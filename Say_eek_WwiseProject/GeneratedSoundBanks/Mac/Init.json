@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{17F343EC-07FA-AEE1-C89E-00C0C3A81D13}",
+    "Hash": "{4CEE67C5-50CD-2F89-DFC7-8A69AAF96B9B}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -60,6 +60,12 @@
       "Name": "AmbienceSpread",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\AmbienceSpread",
       "GUID": "{24F120A9-1730-448D-BB04-5ED932729CD5}"
+     },
+     {
+      "Id": "2913793422",
+      "Name": "MoveAmount",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MoveAmount",
+      "GUID": "{BDE53784-FD07-4390-9DCC-D4D0DBDC6C30}"
      },
      {
       "Id": "2984997679",
@@ -600,6 +606,6 @@
     ]
    }
   ],
-  "FileHash": "{C84C8FB7-8506-943C-A30E-385B07089D5C}"
+  "FileHash": "{7071952E-64A0-F4E1-582A-873AD465FA3F}"
  }
 }

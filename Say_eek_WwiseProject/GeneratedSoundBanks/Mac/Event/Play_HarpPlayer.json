@@ -587,7 +587,7 @@
      {
       "Id": "1985769550",
       "Name": "Play_HarpPlayer",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_HarpPlayer",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_HarpPlayer",
       "GUID": "{1DFEE0EA-D98A-498C-8A72-DAE25F0DB5D5}",
       "DurationType": "OneShot",
       "DurationMin": "2.99225",
@@ -1805,6 +1805,6 @@
     ]
    }
   ],
-  "FileHash": "{8BA9C7CE-FDA7-47AE-6759-32B018AC6CA3}"
+  "FileHash": "{13B99286-749B-5457-96CB-ACBFB6E171AB}"
  }
 }

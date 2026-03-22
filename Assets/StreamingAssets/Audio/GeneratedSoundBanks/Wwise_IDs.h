@@ -24,16 +24,16 @@ namespace AK
         static const AkUniqueID PLAY_CAMERAZOOMOUT = 1363090U;
         static const AkUniqueID PLAY_CAMERAZOOMOUT_BETATEMP = 1653393465U;
         static const AkUniqueID PLAY_ENDSCOREMUSIC = 1600600422U;
-        static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_HARPPLAYER = 1985769550U;
         static const AkUniqueID PLAY_MAINMUSIC = 1346240278U;
         static const AkUniqueID PLAY_MAINMUSICSWITCHCONTAINER = 3815700291U;
+        static const AkUniqueID PLAY_RUBBLEFOOTSTEP = 4003335362U;
+        static const AkUniqueID PLAY_STONEFOOTSTEP = 1749496171U;
         static const AkUniqueID STOP_AMBIENCE1 = 3294285673U;
         static const AkUniqueID STOP_CAMERAZOOMIN = 3484989405U;
         static const AkUniqueID STOP_CAMERAZOOMOUT = 3252179076U;
         static const AkUniqueID STOP_ENDSCOREMUSIC = 261268628U;
         static const AkUniqueID STOP_FIRST_DANCE_IN_HELL___MAR10 = 4038005146U;
-        static const AkUniqueID STOP_FOOTSTEPS = 2963349357U;
     } // namespace EVENTS
 
     namespace STATES
@@ -176,6 +176,7 @@ namespace AK
         static const AkUniqueID CAMERAVIEW = 1232093211U;
         static const AkUniqueID CAMERAZOOMPERCENTAGE = 965791921U;
         static const AkUniqueID ISSLOWWALKING = 2984997679U;
+        static const AkUniqueID MOVEAMOUNT = 2913793422U;
     } // namespace GAME_PARAMETERS
 
     namespace BUSSES

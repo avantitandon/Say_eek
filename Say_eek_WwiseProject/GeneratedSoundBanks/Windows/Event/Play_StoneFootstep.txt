@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1749496171	Play_StoneFootstep			\Default Work Unit\Footsteps\Play_StoneFootstep	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2913793422	MoveAmount			\Default Work Unit\MoveAmount	
+	2984997679	IsSlowWalking			\Default Work Unit\IsSlowWalking	
+

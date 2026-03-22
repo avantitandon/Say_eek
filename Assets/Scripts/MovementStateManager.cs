@@ -80,7 +80,7 @@ public class MovementStateManager : MonoBehaviour
         Vector3 finalMove = movementDirection * moveSpeed + velocity;
         characterController.Move(finalMove * Time.deltaTime);
         // Handle footstep sounds
-        audioManager.HandleFootsteps(movementDirection, moveSpeed == CAMERA_UP_WALK_SPEED);
+        audioManager.HandleFootsteps(movementDirection);
     }
 
     public void SetWalkSpeed()
