@@ -26,6 +26,7 @@ public class AudioManager : MonoBehaviour
     [Header("Camera Events")]
     //Camera Capture
     [SerializeField] private AK.Wwise.Event playCameraCapture;
+    [SerializeField] private AK.Wwise.Event playHarpPlayer;
 
     //Camera Activety
     [SerializeField] private AK.Wwise.Event playCameraUp;
@@ -44,7 +45,7 @@ public class AudioManager : MonoBehaviour
     
     // VARIABLES //
     private bool isPlayingFootsteps = false;
-
+    private string currentBarSwitch = "Bar_01";
 
 
 
@@ -55,14 +56,29 @@ public class AudioManager : MonoBehaviour
 
         //playMusic.Post(player);
         playAmbience.Post(player);
-        playMainMusicSwitchContainer.Post(player);
+
+        //this plays the mainmusiccontainer and gets the cues in the music segment to switch the harp switch
+        playMainMusicSwitchContainer.Post(player, (uint)AkCallbackType.AK_MusicSyncUserCue, MusicCueCallback, null);
+
         AkSoundEngine.SetState("Area", "SpawnStart");
         AkSoundEngine.SetState("StageState", "DjDevil");
         AkSoundEngine.SetState("TutorialState", "Start");
     }
-    void LateUpdate()
-    {
-        
+    private void MusicCueCallback(object in_cookie, AkCallbackType in_type, AkCallbackInfo in_info)
+    {  
+        if (in_type != AkCallbackType.AK_MusicSyncUserCue)
+            return;
+
+        AkMusicSyncCallbackInfo cueInfo = in_info as AkMusicSyncCallbackInfo;
+        if (cueInfo == null)
+            return;
+
+        string cueName = cueInfo.userCueName;
+
+        if (cueName.StartsWith("Bar_"))
+        {
+            currentBarSwitch = cueName;
+        }
     }
     public void HandleTutorialAudio(GameController.TutorialStep tutorialStep)
     {
@@ -85,12 +101,19 @@ public class AudioManager : MonoBehaviour
                 break;
         }
     }
-
+    public void HandleMusic(string areaStateName)
+    {
+        AkSoundEngine.SetState("Area", areaStateName);
+    }
 
     // CAMERA EVENTS //
     public void CameraCapture()
     {
         playCameraCapture.Post(player);
+
+        // Harp strum w/ switch based on current bar cue
+        AkSoundEngine.SetSwitch("HarpSwitch", currentBarSwitch, player);
+        playHarpPlayer.Post(player);
     }
     public void CameraUp()
     {
