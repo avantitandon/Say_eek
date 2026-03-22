@@ -57,7 +57,7 @@ public class GameController : MonoBehaviour
     // Tutorial  code starts here
 
 
-    private enum TutorialStep
+    public enum TutorialStep
     {
         IntroDelay,
         ShowBossDialogue,
@@ -96,6 +96,7 @@ public class GameController : MonoBehaviour
         HandleTutorial();
         HandleGame();
         HandleEndSequence();
+        audioManager.HandleTutorialAudio(tutorialStep); 
     }
     
     private void HandleTutorial()
