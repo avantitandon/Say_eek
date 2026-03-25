@@ -544,7 +544,7 @@
     "m_ObjectId": "02492909ca444426b1a0fb730d1aa442",
     "m_Title": "Apply Dither Transparency Threshold",
     "m_Position": {
-        "x": -707.1998901367188,
+        "x": -707.199951171875,
         "y": 304.0
     }
 }
@@ -1411,7 +1411,7 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     },
-    "m_BlendMode": 3
+    "m_BlendMode": 13
 }
 
 {
@@ -1879,8 +1879,8 @@
     "m_StageCapability": 3,
     "m_Value": {
         "x": 0.0,
-        "y": 0.16981130838394166,
-        "z": 0.15824837982654572
+        "y": 0.6288129091262817,
+        "z": 0.8264150619506836
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -2699,8 +2699,8 @@
     "m_ObjectId": "e17638ac6bd1454689dd8bd6c23c010d",
     "m_Title": "Read Albedo texture, calculate pixel opacity",
     "m_Position": {
-        "x": -888.7999877929688,
-        "y": -300.800048828125
+        "x": -888.7999267578125,
+        "y": -300.79998779296877
     }
 }
 
