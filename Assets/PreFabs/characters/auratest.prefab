@@ -2788,7 +2788,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f274b2b5f985a7040aa2daf77eff99ca, type: 3}
       propertyPath: m_Name
-      value: npc2 1
+      value: auratest
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f274b2b5f985a7040aa2daf77eff99ca, type: 3}
       propertyPath: m_Layer
