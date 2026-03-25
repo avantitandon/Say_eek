@@ -1303,7 +1303,7 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     },
-    "m_BlendMode": 3
+    "m_BlendMode": 13
 }
 
 {
@@ -1803,8 +1803,8 @@
     "m_StageCapability": 3,
     "m_Value": {
         "x": 0.0,
-        "y": 0.16981130838394166,
-        "z": 0.15824837982654572
+        "y": 0.7187175154685974,
+        "z": 0.796226441860199
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -2699,8 +2699,8 @@
     "m_ObjectId": "e17638ac6bd1454689dd8bd6c23c010d",
     "m_Title": "Read Albedo texture, calculate pixel opacity",
     "m_Position": {
-        "x": -813.599853515625,
-        "y": -300.7999572753906
+        "x": -813.5999755859375,
+        "y": -300.79998779296877
     }
 }
 
