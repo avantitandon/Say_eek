@@ -145,7 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::followAI
   ai: {fileID: 4782168732526156222}
   player: {fileID: 0}
-  zekeAnim: {fileID: 0}
+  zekeAnim: {fileID: 4470227222756495179}
   ZekeTetherfront: {fileID: 0}
   ZekeTetherup: {fileID: 0}
   ZekeTetherback: {fileID: 0}
