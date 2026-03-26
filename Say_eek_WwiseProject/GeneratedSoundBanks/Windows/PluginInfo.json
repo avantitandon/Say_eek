@@ -4,6 +4,13 @@
   "BasePlatform": "Windows",
   "PluginLibs": [
    {
+    "LibName": "Wwise Parametric EQ",
+    "LibId": "6881283",
+    "Type": "Effect",
+    "DLL": "AkParametricEQ",
+    "StaticLib": "AkParametricEQFX"
+   },
+   {
     "LibName": "Wwise Matrix Reverb",
     "LibId": "7536643",
     "Type": "Effect",
@@ -21,6 +28,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{DB72216A-A588-6D16-11D7-E0544479EA85}"
+  "FileHash": "{7D16C1E9-5DE9-5085-966A-B621DD39437E}"
  }
 }

@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAY_AMB_WATER_001 = 4200714142U;
         static const AkUniqueID PLAY_AMBIENCE1 = 1117071627U;
+        static const AkUniqueID PLAY_BEEZAKA_LAUGHING = 2572452617U;
         static const AkUniqueID PLAY_CAMERAACTIVE = 2895583013U;
         static const AkUniqueID PLAY_CAMERACAPTURE = 3730852459U;
         static const AkUniqueID PLAY_CAMERADOWN = 2825339271U;

@@ -34,6 +34,7 @@ Transform:
   - {fileID: 4471017455099896209}
   - {fileID: 1263646039610663711}
   - {fileID: 4607429423734329086}
+  - {fileID: 2354399384700115923}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7516107929183428955
@@ -73,6 +74,10 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 0}
   distanceToFeet: 0.5
   emitterLifetime: 1
+  playBeezakaDialogue:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   playCameraCapture:
     idInternal: 0
     valueGuidInternal: 
@@ -103,6 +108,7 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 0}
   feetEmitter: {fileID: 5188557503325101693}
   feetYWorldPosition: 0
+  beezakaEmitter: {fileID: 3564933643643155320}
   player: {fileID: 0}
 --- !u!1 &620317980245466297
 GameObject:
@@ -696,6 +702,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AreaTriggers
   audioManager: {fileID: 7516107929183428955}
   areaStateName: Fountain
+--- !u!1 &2412837359389722349
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2354399384700115923}
+  m_Layer: 0
+  m_Name: NPC Emitters
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2354399384700115923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2412837359389722349}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.602898, y: 0.0000040322543, z: -58.339134}
+  m_LocalScale: {x: 0.88, y: 0.88, z: 0.88}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7345749345691725331}
+  m_Father: {fileID: 8281631571337489113}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2418578682286234113
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,6 +1056,37 @@ Transform:
   m_Children:
   - {fileID: 1885103755013943582}
   m_Father: {fileID: 1263646039610663711}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3564933643643155320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7345749345691725331}
+  m_Layer: 0
+  m_Name: BeezakaEmitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7345749345691725331
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3564933643643155320}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2354399384700115923}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3569565769663427474
 GameObject:
@@ -2561,6 +2630,10 @@ PrefabInstance:
     - target: {fileID: 2338060768258555703, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
       propertyPath: m_Name
       value: Map v2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2338060768258555703, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3799766092311696268, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
       propertyPath: m_LocalPosition.x

@@ -406,6 +406,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="NPCs" ID="{48DBD4FC-ADC8-44E9-B8BD-07EA3A35338A}" ShortID="815306913">
+					<ChildrenList>
+						<Event Name="Play_Beezaka_Laughing" ID="{3252F208-C7C0-4ABC-94F4-406880EAE27A}">
+							<ChildrenList>
+								<Action Name="" ID="{E4DA0406-A2F3-4607-930A-39BA8F552F77}" ShortID="769906569">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Beezaka Laughing" ID="{2C07D402-1152-4E5F-AB15-1ED72AFD5702}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

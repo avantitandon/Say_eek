@@ -397,6 +397,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6994138588148163104}
   - component: {fileID: 7278518773588230640}
+  - component: {fileID: 3132028923108682701}
+  - component: {fileID: 2565284074288323164}
   m_Layer: 8
   m_Name: Camera
   m_TagString: Untagged
@@ -443,6 +445,46 @@ MonoBehaviour:
   mouseSensitivity: 150
   minY: -35
   maxY: 60
+--- !u!114 &3132028923108682701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4582582933180286130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 582fd0735f77845f9b0c1192253f5ee2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkGameObj
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  usePositionOffsetData: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  scalingFactor: 1
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &2565284074288323164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4582582933180286130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520808f401c3a454c8d66b8851be7c5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkAudioListener
+  isDefaultListener: 1
+  bOverrideScalingFactor: 0
+  scalingFactor: -1
+  listenerId: 0
 --- !u!1 &7683020063188261827
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,16 +529,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a4ba7b46329740229c7557947d56d0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraUpScript
-  cameraUpEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  cameraDownEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+  audioManager: {fileID: 0}
   cameraModel: {fileID: 2956776323039878491}
-  framelines: {fileID: 0}
+  cameraOverlay: {fileID: 0}
   anim: {fileID: 6861076767802045244}
   stateName: CameraUp
   layer: 0

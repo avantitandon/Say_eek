@@ -6728,6 +6728,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 75547782544656967, guid: d36ab8aa116fb864bafafb8c6cf1f3e2, type: 3}
   m_PrefabInstance: {fileID: 257558829}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &512329412 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2390931174643076358, guid: ba1dcc75dc555b343b67b8a67a0a9e9b, type: 3}
+  m_PrefabInstance: {fileID: 371785112}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &521635899 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 75547782544656967, guid: d36ab8aa116fb864bafafb8c6cf1f3e2, type: 3}
@@ -7931,6 +7936,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1838387336}
     - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: beezaka
+      value: 
+      objectReference: {fileID: 512329412}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
       propertyPath: playMusic.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: b9d51558a7b7c482c955acbf3e09bb37, type: 2}
@@ -7982,6 +7991,10 @@ PrefabInstance:
       propertyPath: playRubbleFootstep.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: ecb4a3c35a95a457cb800b67e42f36a5, type: 2}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: playBeezakaDialogue.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 5968ed2cfbd5840c3bfc4d140726a4d1, type: 2}
     - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
       propertyPath: playMainMusicSwitchContainer.WwiseObjectReference
       value: 
@@ -12626,6 +12639,10 @@ PrefabInstance:
     - target: {fileID: 3951148059499550630, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: holdContinue
       value: 0.574
+      objectReference: {fileID: 0}
+    - target: {fileID: 4702175046100267586, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4761129856363775633, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
       propertyPath: m_IsActive

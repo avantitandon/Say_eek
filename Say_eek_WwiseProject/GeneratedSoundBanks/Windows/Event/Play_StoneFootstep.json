@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{C588512F-4B98-4DB1-9B8E-281CA20F5B31}",
     "Language": "SFX",
-    "Hash": "{E9EFF5D7-99DE-F037-8CD7-A18D0FA3BAD0}",
+    "Hash": "{476FB485-565F-33CC-8CD8-136F86555603}",
     "ObjectPath": "Play_StoneFootstep",
     "ShortName": "Play_StoneFootstep",
     "Path": "Event/Play_StoneFootstep.bnk",
@@ -201,6 +201,6 @@
     ]
    }
   ],
-  "FileHash": "{C0B29D82-3B01-8C0D-9ADA-52419B7D848A}"
+  "FileHash": "{CE5C4F0C-5014-81C9-D8E4-9DD60AE8D06F}"
  }
 }
