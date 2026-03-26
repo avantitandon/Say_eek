@@ -11,6 +11,51 @@
 						<Property Name="ReverbTime" Type="Real32" Value="1.5"/>
 					</PropertyList>
 				</Effect>
+				<Effect Name="ListenerConeEQ" ID="{1055158E-9666-4073-AF90-C4597A82DE80}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="5"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="2067"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="582.689"/>
+						<Property Name="GainBand1" Type="Real32" Value="-11"/>
+						<Property Name="GainBand3" Type="Real32" Value="0.15"/>
+					</PropertyList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<RTPC Name="" ID="{365BD286-1C2F-4231-808F-29E5B604857E}" ShortID="385108435">
+								<PropertyList>
+									<Property Name="PropertyName" Type="string" Value="FrequencyBand1"/>
+								</PropertyList>
+								<ReferenceList>
+									<Reference Name="ControlInput">
+										<ObjectRef Name="ListenerCone" ID="{BF03D322-83B3-4F06-A541-BF82DDE4E736}" WorkUnitID="{802E5EDB-ADCF-44E6-915D-2040187550B2}"/>
+									</Reference>
+									<Reference Name="Curve">
+										<Custom>
+											<Curve Name="" ID="{E82962DC-B231-4637-9661-827CC282705E}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="5"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>20000</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Exp3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>180</XPos>
+														<YPos>385.244</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</Custom>
+									</Reference>
+								</ReferenceList>
+							</RTPC>
+						</ObjectList>
+					</ObjectLists>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

@@ -177,6 +177,7 @@ namespace AK
         static const AkUniqueID CAMERAVIEW = 1232093211U;
         static const AkUniqueID CAMERAZOOMPERCENTAGE = 965791921U;
         static const AkUniqueID ISSLOWWALKING = 2984997679U;
+        static const AkUniqueID LISTENERCONE = 2035457160U;
         static const AkUniqueID MOVEAMOUNT = 2913793422U;
     } // namespace GAME_PARAMETERS
 

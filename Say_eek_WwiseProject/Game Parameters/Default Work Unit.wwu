@@ -37,6 +37,13 @@
 						<Property Name="SlewRateUp" Type="Real64" Value="100"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="ListenerCone" ID="{BF03D322-83B3-4F06-A541-BF82DDE4E736}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="7"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="180"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
