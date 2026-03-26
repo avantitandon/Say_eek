@@ -33,6 +33,7 @@ public class AudioManager : MonoBehaviour
     [Header("NPC Events")]
         [SerializeField] private AK.Wwise.Event playBeezakaDialogue;
         bool beezakaEvent = true;
+        [SerializeField] private AK.Wwise.Event playBeezakaFootstep;
 
 
     [Header("Camera Events")]
@@ -198,6 +199,10 @@ public class AudioManager : MonoBehaviour
             beezakaEvent = false;
         }
         else return;
+    }
+    public void HandleBeezakaFootsteps()
+    {
+        playBeezakaFootstep.Post(beezakaEmitter);
     }
 }
 
