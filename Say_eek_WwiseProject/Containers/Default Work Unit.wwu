@@ -6524,31 +6524,27 @@
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="InitialDelay" Type="Real64">
 									<ValueList>
-										<Value>2</Value>
+										<Value>3</Value>
 									</ValueList>
 								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2">
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{6DBFDAFB-4BCF-46E8-BA0C-42C34E0143C6}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
 													<Property Name="Max" Type="Real64" Value="1"/>
-													<Property Name="Min" Type="Real64" Value="-2"/>
+													<Property Name="Min" Type="Real64" Value="-1"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>3</Value>
-									</ValueList>
-								</Property>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -6563,13 +6559,6 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Bounce 22 Witch Laughs (Bounce) [2026-03-26 142920]-1" ID="{9D053A75-9AAA-41D8-AA10-046C2662F544}" ShortID="562441563">
-									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>80</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
@@ -6597,13 +6586,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Bounce 22 Witch Laughs (Bounce) [2026-03-26 142921]-1" ID="{BE7A100F-ECDA-450B-83D3-2818F448AC53}" ShortID="368873580">
-									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>150</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
@@ -6631,13 +6613,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Bounce 22 Witch Laughs (Bounce) [2026-03-26 142923]-1" ID="{BA6D719A-144B-406A-845C-52B5D7F89EB2}" ShortID="893039697">
-									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
@@ -6858,83 +6833,8 @@
 											</Reference>
 										</ReferenceList>
 									</EffectSlot>
-									<EffectSlot Name="" ID="{4750FBAE-A5EC-4812-B73E-368A5BA45442}" ShortID="955388635">
-										<ReferenceList>
-											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-												<ObjectRef Name="ListenerConeEQ" ID="{1055158E-9666-4073-AF90-C4597A82DE80}" WorkUnitID="{1F5F240F-C21F-4A6B-A2EE-98372BFF171C}"/>
-											</Reference>
-										</ReferenceList>
-									</EffectSlot>
-								</ObjectList>
-								<ObjectList Name="RTPC">
-									<RTPC Name="" ID="{92534EC0-3A90-4287-ADDF-42536F7D3FEC}" ShortID="807440544">
-										<PropertyList>
-											<Property Name="PropertyName" Type="string" Value="MakeUpGain"/>
-										</PropertyList>
-										<ReferenceList>
-											<Reference Name="ControlInput">
-												<ObjectRef Name="ListenerCone" ID="{BF03D322-83B3-4F06-A541-BF82DDE4E736}" WorkUnitID="{802E5EDB-ADCF-44E6-915D-2040187550B2}"/>
-											</Reference>
-											<Reference Name="Curve">
-												<Custom>
-													<Curve Name="" ID="{A5886DDA-C9BF-4EB7-809B-98B1FC5A3D54}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>0.00014</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Exp3</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>180</XPos>
-																<YPos>-4.0085</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</RTPC>
 								</ObjectList>
 							</ObjectLists>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="BeezakaFootsteps" ID="{37E6D58D-AED7-4497-B497-641237643472}" ShortID="533543573">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="FOOTSTEP TEST SOUND" ID="{FC4A2C09-EC0A-41D1-9C26-272D7EFD0F96}" ShortID="328751672">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="FOOTSTEP TEST SOUND" ID="{058216E4-E4BF-44DA-9BD5-EC731D454B24}">
-											<Language>SFX</Language>
-											<AudioFile>FOOTSTEP TEST SOUND.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="399048562"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="FOOTSTEP TEST SOUND" ID="{058216E4-E4BF-44DA-9BD5-EC731D454B24}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
