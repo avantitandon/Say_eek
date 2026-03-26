@@ -343,13 +343,6 @@
 							</ChildrenList>
 						</Folder>
 						<Event Name="Play_MainMusicSwitchContainer" ID="{3B3CE729-D122-439D-A386-420D87E0A968}">
-							<PropertyList>
-								<Property Name="InstanceLimit" Type="int16">
-									<ValueList>
-										<Value>1</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ChildrenList>
 								<Action Name="" ID="{50EBEEC8-376F-40A6-B8B9-F1E9F02118A5}" ShortID="991626365">
 									<ReferenceList>
@@ -387,13 +380,6 @@
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_Ambience1" ID="{94406FF3-99F7-41E5-91D8-8EC64B06C772}">
-							<PropertyList>
-								<Property Name="InstanceLimit" Type="int16">
-									<ValueList>
-										<Value>1</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ChildrenList>
 								<Action Name="" ID="{3B77C85A-AAAC-46E6-83CF-98BD2C1D2C3D}" ShortID="960973079">
 									<ReferenceList>
@@ -428,17 +414,6 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Beezaka Laughing" ID="{2C07D402-1152-4E5F-AB15-1ED72AFD5702}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_BeezakaFootsteps" ID="{224378E3-4957-4305-8576-F4EB130E563F}">
-							<ChildrenList>
-								<Action Name="" ID="{C090C477-225A-498F-8144-E6731F234638}" ShortID="779097989">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="BeezakaFootsteps" ID="{37E6D58D-AED7-4497-B497-641237643472}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
