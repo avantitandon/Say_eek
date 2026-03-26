@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{C813D63D-61E8-39F2-35F8-FB512B94250C}",
+    "Hash": "{C5604CA6-EC70-7946-A5C4-1974C27ABA12}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -54,6 +54,12 @@
       "Name": "CameraView",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\CameraView",
       "GUID": "{03F6CEC2-07DB-4DD6-A719-936291B9C02D}"
+     },
+     {
+      "Id": "2035457160",
+      "Name": "ListenerCone",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\ListenerCone",
+      "GUID": "{BF03D322-83B3-4F06-A541-BF82DDE4E736}"
      },
      {
       "Id": "2341644420",
@@ -606,6 +612,6 @@
     ]
    }
   ],
-  "FileHash": "{4AFA457A-D60A-6FFC-EA8B-1D483DA0D99F}"
+  "FileHash": "{D6B957D1-B8BB-88B5-F973-896938099716}"
  }
 }
