@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2291923122	Play_BeezakaFootsteps			\Default Work Unit\NPCs\Play_BeezakaFootsteps	
+

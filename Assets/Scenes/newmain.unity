@@ -7937,6 +7937,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 5968ed2cfbd5840c3bfc4d140726a4d1, type: 2}
     - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: playBeezakaFootstep.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 660e9c8e217e848c1ae4d025c968cf1f, type: 2}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
       propertyPath: playMainMusicSwitchContainer.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: a4a88a555d7564ca991ae46a87edfb74, type: 2}
