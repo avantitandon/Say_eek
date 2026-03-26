@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{3252F208-C7C0-4ABC-94F4-406880EAE27A}",
     "Language": "SFX",
-    "Hash": "{D8CA62C2-BE34-0C77-6156-DBAEECF5383A}",
+    "Hash": "{15960ED8-99B5-D2B7-1377-04B22DC267C0}",
     "ObjectPath": "Play_Beezaka_Laughing",
     "ShortName": "Play_Beezaka_Laughing",
     "Path": "Event/Play_Beezaka_Laughing.bnk",
@@ -86,15 +86,6 @@
       "ShortName": "Bounce 22 Witch Laughs (Bounce) [2026-03-26 142921]-1.wav",
       "Path": "Media/772329582.wem",
       "CachePath": "DF/{DF040F30-175C-3600-9FF2-357615E90BD3}.wem"
-     },
-     {
-      "Id": "873477946",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "Bounce 22 Witch Laughs (Bounce) [2026-03-26 142923]-1.wav",
-      "Path": "Media/873477946.wem",
-      "CachePath": "18/{180C8F7A-831F-284D-952A-31FA8086743E}.wem"
      }
     ],
     "Plugins": {
@@ -104,6 +95,14 @@
        "Name": "Boost_3dB_100Hz",
        "ObjectPath": "\\Effects\\Factory Effects\\Parametric EQ\\Shelving EQ\\Low Shelf\\Boost_3dB_100Hz",
        "GUID": "{3EA7C9BD-6F9A-4000-A227-F86B5B4328EE}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
+      {
+       "Id": "4018905782",
+       "Name": "ListenerConeEQ",
+       "ObjectPath": "\\Effects\\Default Work Unit\\ListenerConeEQ",
+       "GUID": "{1055158E-9666-4073-AF90-C4597A82DE80}",
        "LibName": "Wwise Parametric EQ",
        "LibId": "6881283"
       }
@@ -141,22 +140,30 @@
        },
        {
         "Id": "772329582"
-       },
-       {
-        "Id": "873477946"
        }
       ],
       "PluginRefs": {
        "ShareSets": [
         {
          "Id": "2547645744"
+        },
+        {
+         "Id": "4018905782"
         }
        ]
       }
      }
+    ],
+    "GameParameters": [
+     {
+      "Id": "2035457160",
+      "Name": "ListenerCone",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\ListenerCone",
+      "GUID": "{BF03D322-83B3-4F06-A541-BF82DDE4E736}"
+     }
     ]
    }
   ],
-  "FileHash": "{23C944CE-88CB-AB22-84E3-2AEC0E6E7464}"
+  "FileHash": "{2D65051C-407A-FFAA-ED98-69D5A0BCEBBF}"
  }
 }

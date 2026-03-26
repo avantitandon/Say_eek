@@ -6,6 +6,8 @@
 				<Property Name="AudioFileImporter\x64_FilesToImport" Type="string" Value="AAAAAAAAAAA="/>
 				<Property Name="AudioFilesImporter\DestinationFolder" Type="string" Value="Y:\Documents\Work\Game Projects\Say Eek! (DMU412 2025)\Game\Say_eek\Say_eek_WwiseProject\Originals\SFX\"/>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Documents\Work\Game Projects\Say Eek! (DMU412 2025)\Say Eek! Project\Music\"/>
+				<Property Name="EffectsView\MeteringObject\{1055158E-9666-4073-AF90-C4597A82DE80}" Type="string" Value="{2C07D402-1152-4E5F-AB15-1ED72AFD5702}"/>
+				<Property Name="EffectsView\MeteringObject\{83EAB3EA-A43D-470F-A183-7F02DAA44A4D}" Type="string" Value="{2C07D402-1152-4E5F-AB15-1ED72AFD5702}"/>
 				<Property Name="Event Action List\{07853014-695C-48EA-96E5-46BCEE7EC6C1}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{130671DF-106B-434D-991A-E6D8419ACB55}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{1DFEE0EA-D98A-498C-8A72-DAE25F0DB5D5}\x64_Expand States" Type="string" Value=""/>
