@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2291923122",
+    "Type": "Event",
+    "GUID": "{224378E3-4957-4305-8576-F4EB130E563F}",
+    "Language": "SFX",
+    "Hash": "{3F334CFA-FAD5-B01F-AEF0-6730B5DD3311}",
+    "ObjectPath": "Play_BeezakaFootsteps",
+    "ShortName": "Play_BeezakaFootsteps",
+    "Path": "Event/Play_BeezakaFootsteps.bnk",
+    "Media": [
+     {
+      "Id": "399048562",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "FOOTSTEP TEST SOUND.wav",
+      "Path": "Media/399048562.wem",
+      "CachePath": "98/{9861C235-2C29-9839-91EC-0E8914AE0ACC}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2291923122",
+      "Name": "Play_BeezakaFootsteps",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_BeezakaFootsteps",
+      "GUID": "{224378E3-4957-4305-8576-F4EB130E563F}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.13185416",
+      "DurationMax": "0.13185416",
+      "MediaRefs": [
+       {
+        "Id": "399048562"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{50F507A7-737F-5F6D-7CA0-19AC6AFFCEC1}"
+ }
+}

@@ -419,6 +419,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_BeezakaFootsteps" ID="{224378E3-4957-4305-8576-F4EB130E563F}">
+							<ChildrenList>
+								<Action Name="" ID="{C090C477-225A-498F-8144-E6731F234638}" ShortID="779097989">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BeezakaFootsteps" ID="{37E6D58D-AED7-4497-B497-641237643472}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
