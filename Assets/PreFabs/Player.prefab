@@ -253,6 +253,10 @@ MonoBehaviour:
   photoPreviewController: {fileID: 5230104173153174620}
   statusUIController: {fileID: 1314357487982060342}
   stickerOverlayController: {fileID: 4038024817165189495}
+  bossTextController: {fileID: 0}
+  pictureBossTextController: {fileID: 0}
+  pictureBossMessageDuration: 1.5
+  pictureBossTextEnabled: 1
 --- !u!1 &3307369355531649007
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,14 +301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e59acc2472d30c418b2a8bac4098e78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovementStateManager
-  playFootsteps:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  stopFootsteps:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+  audioManager: {fileID: 0}
   cameraController: {fileID: 9148971523940127002}
   characterController: {fileID: 176324037569557310}
   moveSpeed: 0

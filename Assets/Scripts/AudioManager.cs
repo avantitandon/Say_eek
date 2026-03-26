@@ -29,6 +29,10 @@ public class AudioManager : MonoBehaviour
         [SerializeField] private float distanceToFeet = 0.5f;
         [SerializeField] private float emitterLifetime = 1f;
         private float footstepTimer = 0f;
+    
+    [Header("NPC Events")]
+        [SerializeField] private AK.Wwise.Event playBeezakaDialogue;
+        bool beezakaEvent = true;
 
 
     [Header("Camera Events")]
@@ -47,9 +51,12 @@ public class AudioManager : MonoBehaviour
         [SerializeField] private GameObject feetEmitter;
         [SerializeField] private float feetYWorldPosition = 0f;
 
+        [SerializeField] private GameObject beezakaEmitter;
+
 
     [Header("Scene Objects")]
-        [SerializeField] private GameObject player; 
+        [SerializeField] private GameObject player;
+        [SerializeField] private GameObject beezaka; 
 
 
 
@@ -68,12 +75,16 @@ public class AudioManager : MonoBehaviour
         AkSoundEngine.SetState("Area", "SpawnStart");
         AkSoundEngine.SetState("StageState", "DjDevil");
         AkSoundEngine.SetState("TutorialState", "Start");
+
+        HandleNPCEvents();
     }
-   void LateUpdate()
+   void Update()
     {
         Vector3 playerPosition = player.transform.position;
-        
         feetEmitter.transform.position = new Vector3(playerPosition.x, feetYWorldPosition, playerPosition.z);
+        
+        Vector3 beezakaPosition = beezaka.transform.position;
+        beezakaEmitter.transform.position = new Vector3(beezakaPosition.x, beezakaPosition.y, beezakaPosition.z);
     }
 
 
@@ -176,6 +187,18 @@ public class AudioManager : MonoBehaviour
         }
     }
     // bruh I had a whole function here to make a gameobject at the players feet and played a footstep texture. I realized I can do this IN WWISE SO COOL
+
+    // NPC Methods //
+    public void HandleNPCEvents()
+    {
+        //BEEZAKA//
+        if (beezakaEvent = true)
+        {
+            playBeezakaDialogue.Post(beezakaEmitter);
+            beezakaEvent = false;
+        }
+        else return;
+    }
 }
 
 
