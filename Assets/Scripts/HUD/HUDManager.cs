@@ -28,8 +28,6 @@ public class HUDManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        ResolveIncomingCallPromptReferences();
-
         if (incomingCallPrompt != null)
         {
             incomingCallPrompt.SetActive(false);
@@ -53,14 +51,15 @@ public void BeginBossDialogue(string[] lines)
 
 public void ShowIncomingCallPrompt()
 {
-    ResolveIncomingCallPromptReferences();
-
-    if (incomingCallPrompt == null)
+    if (incomingCallPrompt != null)
     {
-        return;
+        incomingCallPrompt.SetActive(true);
     }
 
-    incomingCallPrompt.SetActive(true);
+    if (incomingCallPromptShake != null)
+    {
+        incomingCallPromptShake.gameObject.SetActive(true);
+    }
 
     if (incomingCallPromptShake != null)
     {
@@ -70,11 +69,10 @@ public void ShowIncomingCallPrompt()
 
 public void HideIncomingCallPrompt()
 {
-    ResolveIncomingCallPromptReferences();
-
     if (incomingCallPromptShake != null)
     {
         incomingCallPromptShake.SetRinging(false);
+        incomingCallPromptShake.gameObject.SetActive(false);
     }
 
     if (incomingCallPrompt != null)
@@ -98,6 +96,13 @@ public void HideBossText()
     bossTextController.Hide();
 }
 
+// switch to text
+
+public void ShowTemporaryBossText(string line, float durationSeconds)
+{
+    bossTextController.ShowTemporaryMessage(line, durationSeconds);
+}
+
 public void ShowPictureBossText(int score)
 {
     if (!pictureBossTextEnabled || pictureBossTextController == null)
@@ -106,6 +111,27 @@ public void ShowPictureBossText(int score)
     }
 
     pictureBossTextController.ShowTemporaryMessageForScore(score, pictureBossMessageDuration);
+}
+// forgot to switch to boss text this was a pain in the 
+
+public void ShowCustomPictureBossText(string line, float durationSeconds)
+{
+    if (pictureBossTextController == null)
+    {
+        return;
+    }
+
+    pictureBossTextController.ShowTemporaryMessage(line, durationSeconds);
+}
+
+public void HidePictureBossText()
+{
+    if (pictureBossTextController == null)
+    {
+        return;
+    }
+
+    pictureBossTextController.Hide();
 }
 
 // function for bosstext
@@ -124,43 +150,12 @@ public void SetPictureBossTextEnabled(bool isEnabled)
 
     public void DisplayPhotoPreview(int score, Texture2D photo)
     {
-        photoPreviewController.DisplayPhotoPreview(score, photo);
-        stickerOverlayController.DisplayStickerOverlay(score);
+    photoPreviewController.DisplayPhotoPreview(score, photo);
+    stickerOverlayController.DisplayStickerOverlay(score);
     }
 
     public void SetStatusUI (float timeElapsed, int photosLeft)
     {
         statusUIController.SetStatusUI(timeElapsed, photosLeft);
-    }
-
-    private void ResolveIncomingCallPromptReferences()
-    {
-        if (incomingCallPrompt != null && incomingCallPromptShake != null)
-        {
-            return;
-        }
-
-        foreach (UIRingShake ringShake in Resources.FindObjectsOfTypeAll<UIRingShake>())
-        {
-            if (ringShake == null || ringShake.gameObject.scene.rootCount == 0)
-            {
-                continue;
-            }
-
-            if (incomingCallPromptShake == null)
-            {
-                incomingCallPromptShake = ringShake;
-            }
-
-            if (incomingCallPrompt == null)
-            {
-                incomingCallPrompt = ringShake.transform.root.gameObject;
-            }
-
-            if (incomingCallPrompt != null && incomingCallPromptShake != null)
-            {
-                return;
-            }
-        }
     }
 }

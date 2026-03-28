@@ -46,6 +46,17 @@ public class PlayerController : MonoBehaviour
     {
         return photosTaken;
     }
+    // to get score
+
+    public int GetLastPhotoScore()
+    {
+        if (scores == null || scores.Count == 0)
+        {
+            return -1;
+        }
+
+        return scores[scores.Count - 1];
+    }
 
     public void SetGameplayInputEnabled(bool isEnabled)
     {
