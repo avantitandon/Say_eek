@@ -13,6 +13,8 @@ public class HUDManager : MonoBehaviour
     [SerializeField] private StickerOverlayController stickerOverlayController;
     [SerializeField] private BossTextController bossTextController;
     [SerializeField] private BossTextController pictureBossTextController;
+    [SerializeField] private GameObject incomingCallPrompt;
+    [SerializeField] private UIRingShake incomingCallPromptShake;
     [SerializeField] private float pictureBossMessageDuration = 1.5f;
 
     // to distinguish between picturebosstext and tutorial
@@ -26,7 +28,12 @@ public class HUDManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        ResolveIncomingCallPromptReferences();
+
+        if (incomingCallPrompt != null)
+        {
+            incomingCallPrompt.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -39,9 +46,41 @@ public class HUDManager : MonoBehaviour
 
     // hud state manager has one begin boss dialogue
 
-    public void BeginBossDialogue(string[] lines)
+public void BeginBossDialogue(string[] lines)
 {
     bossTextController.BeginDialogue(lines);
+}
+
+public void ShowIncomingCallPrompt()
+{
+    ResolveIncomingCallPromptReferences();
+
+    if (incomingCallPrompt == null)
+    {
+        return;
+    }
+
+    incomingCallPrompt.SetActive(true);
+
+    if (incomingCallPromptShake != null)
+    {
+        incomingCallPromptShake.SetRinging(true);
+    }
+}
+
+public void HideIncomingCallPrompt()
+{
+    ResolveIncomingCallPromptReferences();
+
+    if (incomingCallPromptShake != null)
+    {
+        incomingCallPromptShake.SetRinging(false);
+    }
+
+    if (incomingCallPrompt != null)
+    {
+        incomingCallPrompt.SetActive(false);
+    }
 }
 
 public void AdvanceBossDialogue()
@@ -92,5 +131,36 @@ public void SetPictureBossTextEnabled(bool isEnabled)
     public void SetStatusUI (float timeElapsed, int photosLeft)
     {
         statusUIController.SetStatusUI(timeElapsed, photosLeft);
+    }
+
+    private void ResolveIncomingCallPromptReferences()
+    {
+        if (incomingCallPrompt != null && incomingCallPromptShake != null)
+        {
+            return;
+        }
+
+        foreach (UIRingShake ringShake in Resources.FindObjectsOfTypeAll<UIRingShake>())
+        {
+            if (ringShake == null || ringShake.gameObject.scene.rootCount == 0)
+            {
+                continue;
+            }
+
+            if (incomingCallPromptShake == null)
+            {
+                incomingCallPromptShake = ringShake;
+            }
+
+            if (incomingCallPrompt == null)
+            {
+                incomingCallPrompt = ringShake.transform.root.gameObject;
+            }
+
+            if (incomingCallPrompt != null && incomingCallPromptShake != null)
+            {
+                return;
+            }
+        }
     }
 }

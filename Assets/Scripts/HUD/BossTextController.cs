@@ -13,18 +13,21 @@ public class BossTextController : MonoBehaviour
 
     // The TMP field that displays the current dialogue.
     [SerializeField] private TMP_Text bossTextMessage;
+    [SerializeField] private TMP_Text instructionText;
 
     // The panel that slides in and out, plus the timing and distance
     [SerializeField] private RectTransform dialoguePanel;
     [SerializeField] private float slideDuration = 0.2f;
     [SerializeField] private float slideOffsetX = 0f;
     [SerializeField] private float slideOffsetY = 140f;
+    [SerializeField] private string defaultInstructionMessage = "Press Tab/Left D-Pad to continue";
     [SerializeField] private string lowScoreMessage = "Are you even trying intern? Or just trying to make me mad";
     [SerializeField] private string t1Message = "Better. Keep moving.";
     [SerializeField] private string t2Message = "Now that looks usable.";
     [SerializeField] private string t3Message = "This is going to POP Off on the gram!.";
     private string[] dialogueLines;
     private int Currlineindex;
+    private string instructionOverride;
 
     // Stores the curr position.
     private Vector2 Vispos;
@@ -41,6 +44,8 @@ public class BossTextController : MonoBehaviour
         {
             Vispos = dialoguePanel.anchoredPosition;
         }
+
+        RefreshInstructionText();
 
         // Start fully hidden without playing the animation on load.
         HideImmediate();
@@ -149,6 +154,18 @@ public class BossTextController : MonoBehaviour
         ShowTemporaryMessage(GetMessageForScore(score), durationSeconds);
     }
 
+    public void SetInstructionText(string instruction)
+    {
+        instructionOverride = string.IsNullOrWhiteSpace(instruction) ? null : instruction;
+        RefreshInstructionText();
+    }
+
+    public void ResetInstructionText()
+    {
+        instructionOverride = null;
+        RefreshInstructionText();
+    }
+
     private void UpdateDisplayedLine()
     {
         if (bossTextMessage == null || dialogueLines == null || Currlineindex >= dialogueLines.Length)
@@ -165,6 +182,18 @@ public class BossTextController : MonoBehaviour
         {
             dialoguePanel = bossTextMessage.transform.parent as RectTransform;
         }
+    }
+
+    private void RefreshInstructionText()
+    {
+        if (instructionText == null)
+        {
+            return;
+        }
+
+        instructionText.text = string.IsNullOrWhiteSpace(instructionOverride)
+            ? defaultInstructionMessage
+            : instructionOverride;
     }
 
     private Vector2 HiddenPosition()

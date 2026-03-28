@@ -15,21 +15,23 @@ public class GameController : MonoBehaviour
     private const float TUTORIAL_INTRO_DELAY_SECONDS = 3f;
     // private const float TUTORIAL_POST_PHOTO_DELAY_SECONDS = 0.6f;
     private const float TUTORIAL_POST_PHOTO_DELAY_SECONDS = 2f; // 
-
     private const int MAX_PHOTOS = 20;
 
     private static readonly string[] BossDialogueLines =
     {
-        "INTERN! You’re at the venue now? Good. ",
-        "Raise the camera and take one photo for me.",
+        "You made it to the party. Good.",
+        "The brides are waiting.",
+        "Take a photo of one of the guests.",
     };
 
 // come after camera
     private static readonly string[] TutorialPhotoCompleteLines =
     {
-        "Good. That camera still works.",
-        "Now explore the venue and take a variety of photos.",
-        "The event ends at 12AM. I’ll text you updates throughout the night.",
+        "Good. You should be getting live engagement now, so pay attention.",
+        "The event ends at 12:00 AM.",
+        "I’ll send updates throughout the night.",
+        "Explore the venue and take a variety of photos. Ghosts only.",
+        "Show me I was right to hire you. Good luck.",
     };
 
     // AUDIO //
@@ -60,6 +62,7 @@ public class GameController : MonoBehaviour
     public enum TutorialStep
     {
         IntroDelay,
+        WaitForAnswerCall,
         ShowBossDialogue,
         WaitForPhoto,
         PhotoDelay,
@@ -69,6 +72,7 @@ public class GameController : MonoBehaviour
 
     private TutorialStep tutorialStep;
     private float tutorialStepStartTime = 0.0f;
+    private bool answerCallPromptStarted = false;
     private bool bossDialogueStarted = false;
     private bool photoCompleteDialogueStarted = false;
 
@@ -111,9 +115,25 @@ public class GameController : MonoBehaviour
             case TutorialStep.IntroDelay:
                 if (Time.unscaledTime - tutorialStepStartTime >= TUTORIAL_INTRO_DELAY_SECONDS)
                 {
+                    tutorialStep = TutorialStep.WaitForAnswerCall;
+                    tutorialStepStartTime = Time.unscaledTime;
+                    Debug.Log("GameController: tutorial intro delay complete, waiting for answer call input.");
+                }
+                break;
+
+            case TutorialStep.WaitForAnswerCall:
+                if (!answerCallPromptStarted)
+                {
+                    hudManager.ShowIncomingCallPrompt();
+                    answerCallPromptStarted = true;
+                }
+
+                if (playerController.WasDialogueAdvancePressedThisFrame())
+                {
+                    hudManager.HideIncomingCallPrompt();
                     tutorialStep = TutorialStep.ShowBossDialogue;
                     tutorialStepStartTime = Time.unscaledTime;
-                    Debug.Log("GameController: tutorial intro delay complete, showing boss dialogue.");
+                    Debug.Log("GameController: answer call prompt acknowledged, showing boss dialogue.");
                 }
                 break;
 
