@@ -13,9 +13,11 @@ public class GameController : MonoBehaviour
 
     private const float ROUND_DURATION_SECONDS = 300f;
     private const float TUTORIAL_INTRO_DELAY_SECONDS = 3f;
-    // private const float TUTORIAL_POST_PHOTO_DELAY_SECONDS = 0.6f;
-    private const float TUTORIAL_POST_PHOTO_DELAY_SECONDS = 2f; // 
+    private const float TUTORIAL_PHOTO_RESPONSE_DELAY_SECONDS = 2f;
+    private const float TUTORIAL_RETRY_MESSAGE_DURATION_SECONDS = 2.5f;
     private const int MAX_PHOTOS = 20;
+    private const int TUTORIAL_VALID_PHOTO_SCORE_THRESHOLD = 0;
+    private const string TUTORIAL_RETRY_LINE = "Try again. The guests need to be in frame.";
 
     private static readonly string[] BossDialogueLines =
     {
@@ -29,9 +31,13 @@ public class GameController : MonoBehaviour
     {
         "Good. You should be getting live engagement now, so pay attention.",
         "The event ends at 12:00 AM.",
-        "I’ll send updates throughout the night.",
-        "Explore the venue and take a variety of photos. Ghosts only.",
         "Show me I was right to hire you. Good luck.",
+    };
+
+    private static readonly string[] TutorialFollowupTextLines =
+    {
+        "I’ll text you updates throughout the night.",
+        "Explore the venue and take a variety of photos, understood? Ghosts only.",
     };
 
     // AUDIO //
@@ -67,11 +73,16 @@ public class GameController : MonoBehaviour
         WaitForPhoto,
         PhotoDelay,
         ShowPhotoCompleteDialogue,
+        ShowTutorialFollowupText,
         Complete
     }
 
     private TutorialStep tutorialStep;
     private float tutorialStepStartTime = 0.0f;
+    private int lastEvaluatedTutorialPhotoCount = 0;
+    private int pendingTutorialPhotoScore = -1;
+    private int tutorialFollowupTextIndex = 0;
+    private bool tutorialFollowupTextStarted = false;
     private bool answerCallPromptStarted = false;
     private bool bossDialogueStarted = false;
     private bool photoCompleteDialogueStarted = false;
@@ -140,6 +151,7 @@ public class GameController : MonoBehaviour
             case TutorialStep.ShowBossDialogue:
                 if (!bossDialogueStarted)
                 {
+                    hudManager.HideIncomingCallPrompt();
                     hudManager.BeginBossDialogue(BossDialogueLines);
                     bossDialogueStarted = true;
                     Debug.Log("GameController: boss dialogue started.");
@@ -161,20 +173,32 @@ public class GameController : MonoBehaviour
                 break;
 
             case TutorialStep.WaitForPhoto:
-                if (playerController.GetPhotosTaken() > 0)
+                if (playerController.GetPhotosTaken() > lastEvaluatedTutorialPhotoCount)
                 {
+                    lastEvaluatedTutorialPhotoCount = playerController.GetPhotosTaken();
+                    pendingTutorialPhotoScore = playerController.GetLastPhotoScore();
                     playerController.SetGameplayInputEnabled(false);
                     tutorialStep = TutorialStep.PhotoDelay;
                     tutorialStepStartTime = Time.unscaledTime;
-
                 }
                 break;
 
             case TutorialStep.PhotoDelay:
-                if (Time.unscaledTime - tutorialStepStartTime >= TUTORIAL_POST_PHOTO_DELAY_SECONDS)
+                if (Time.unscaledTime - tutorialStepStartTime >= TUTORIAL_PHOTO_RESPONSE_DELAY_SECONDS)
                 {
-                    tutorialStep = TutorialStep.ShowPhotoCompleteDialogue;
-
+                    if (pendingTutorialPhotoScore <= TUTORIAL_VALID_PHOTO_SCORE_THRESHOLD)
+                    {
+                        hudManager.ShowTemporaryBossText(TUTORIAL_RETRY_LINE, TUTORIAL_RETRY_MESSAGE_DURATION_SECONDS);
+                        playerController.SetGameplayInputEnabled(true);
+                        pendingTutorialPhotoScore = -1;
+                        tutorialStep = TutorialStep.WaitForPhoto;
+                    }
+                    else
+                    {
+                        hudManager.HideBossText();
+                        pendingTutorialPhotoScore = -1;
+                        tutorialStep = TutorialStep.ShowPhotoCompleteDialogue;
+                    }
                 }
                 break;
             // might remove all of this from game controller after? just hard to figure out how to seperate and BossText is 
@@ -193,8 +217,45 @@ public class GameController : MonoBehaviour
 
                 if (hudManager.IsBossDialogueComplete())
                 {
-                    tutorialStep = TutorialStep.Complete;
+                    hudManager.HideBossText();
+                    tutorialFollowupTextIndex = 0;
+                    tutorialFollowupTextStarted = false;
+                    tutorialStep = TutorialStep.ShowTutorialFollowupText;
+                    tutorialStepStartTime = Time.unscaledTime;
                     Debug.Log("GameController: tutorial c dialogue complete.");
+                }
+                break;
+
+            case TutorialStep.ShowTutorialFollowupText:
+                if (tutorialFollowupTextIndex < TutorialFollowupTextLines.Length)
+                {
+                    if (!tutorialFollowupTextStarted)
+                    {
+                        hudManager.ShowCustomPictureBossText(
+                            TutorialFollowupTextLines[tutorialFollowupTextIndex],
+                            0f);
+                        tutorialFollowupTextStarted = true;
+                    }
+
+                    if (playerController.WasDialogueAdvancePressedThisFrame())
+                    {
+                        tutorialFollowupTextIndex += 1;
+                        tutorialFollowupTextStarted = false;
+
+                        if (tutorialFollowupTextIndex < TutorialFollowupTextLines.Length)
+                        {
+                            hudManager.ShowCustomPictureBossText(
+                                TutorialFollowupTextLines[tutorialFollowupTextIndex],
+                                0f);
+                            tutorialFollowupTextStarted = true;
+                        }
+                    }
+                }
+
+                if (tutorialFollowupTextIndex >= TutorialFollowupTextLines.Length)
+                {
+                    hudManager.HidePictureBossText();
+                    tutorialStep = TutorialStep.Complete;
                 }
                 break;
 

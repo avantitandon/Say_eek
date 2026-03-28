@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7438061723885662516}
+  - component: {fileID: 4634968803835209821}
   m_Layer: 0
   m_Name: IncomingCall
   m_TagString: Untagged
@@ -32,6 +33,23 @@ Transform:
   - {fileID: 8092626182938038333}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4634968803835209821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3280624861431124356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdbbd4315acf345c2a24225e51f021ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIRingShake
+  target: {fileID: 1732279277996138947}
+  amplitude: 8
+  speed: 30
+  rotationAmplitude: 3
+  playOnEnable: 1
 --- !u!1 &4094733897867525156
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,7 +274,6 @@ GameObject:
   - component: {fileID: 8310813854318145399}
   - component: {fileID: 8902186703551303952}
   - component: {fileID: 4747338503964658923}
-  - component: {fileID: 7733644680784989654}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -348,20 +365,3 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &7733644680784989654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8142672622467531947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdbbd4315acf345c2a24225e51f021ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIRingShake
-  target: {fileID: 1732279277996138947}
-  amplitude: 6
-  speed: 50
-  rotationAmplitude: 2
-  playOnEnable: 1
