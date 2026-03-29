@@ -7,12 +7,13 @@ using System.Collections.Generic;
 
 public class GameController : MonoBehaviour
 {
-    private enum State
+    public enum State
     {
         Tutorial,
         Active,
         End
     }
+
 
     // CONSTANTS //
 
