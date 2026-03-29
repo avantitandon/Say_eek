@@ -2,12 +2,13 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    private enum State
+    public enum State
     {
         Tutorial,
         Active,
         End
     }
+
 
     // CONSTANTS //
 
