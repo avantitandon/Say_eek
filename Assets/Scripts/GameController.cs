@@ -55,7 +55,7 @@ public class GameController : MonoBehaviour
     // VARIABLES //
 
     private State gameState;
-    private float roundStartTime = 0.0f;
+    public float roundStartTime = 0.0f;
 
     // LOGGING //
 
@@ -267,7 +267,7 @@ public class GameController : MonoBehaviour
         }
     }
 
-    private void HandleGame()
+    public void HandleGame()
     {
         // only run if the game is active
         if (gameState != State.Active)
@@ -286,7 +286,7 @@ public class GameController : MonoBehaviour
         {
             StartEndSequence();
         }
-    }
+    } 
 
     private void HandleEndSequence()
     {
