@@ -13,6 +13,8 @@ public class HUDManager : MonoBehaviour
     [SerializeField] private StickerOverlayController stickerOverlayController;
     [SerializeField] private BossTextController bossTextController;
     [SerializeField] private BossTextController pictureBossTextController;
+    [SerializeField] private GameObject incomingCallPrompt;
+    [SerializeField] private UIRingShake incomingCallPromptShake;
     [SerializeField] private float pictureBossMessageDuration = 1.5f;
 
     // to distinguish between picturebosstext and tutorial
@@ -26,7 +28,10 @@ public class HUDManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        if (incomingCallPrompt != null)
+        {
+            incomingCallPrompt.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -39,9 +44,41 @@ public class HUDManager : MonoBehaviour
 
     // hud state manager has one begin boss dialogue
 
-    public void BeginBossDialogue(string[] lines)
+public void BeginBossDialogue(string[] lines)
 {
     bossTextController.BeginDialogue(lines);
+}
+
+public void ShowIncomingCallPrompt()
+{
+    if (incomingCallPrompt != null)
+    {
+        incomingCallPrompt.SetActive(true);
+    }
+
+    if (incomingCallPromptShake != null)
+    {
+        incomingCallPromptShake.gameObject.SetActive(true);
+    }
+
+    if (incomingCallPromptShake != null)
+    {
+        incomingCallPromptShake.SetRinging(true);
+    }
+}
+
+public void HideIncomingCallPrompt()
+{
+    if (incomingCallPromptShake != null)
+    {
+        incomingCallPromptShake.SetRinging(false);
+        incomingCallPromptShake.gameObject.SetActive(false);
+    }
+
+    if (incomingCallPrompt != null)
+    {
+        incomingCallPrompt.SetActive(false);
+    }
 }
 
 public void AdvanceBossDialogue()
@@ -59,6 +96,13 @@ public void HideBossText()
     bossTextController.Hide();
 }
 
+// switch to text
+
+public void ShowTemporaryBossText(string line, float durationSeconds)
+{
+    bossTextController.ShowTemporaryMessage(line, durationSeconds);
+}
+
 public void ShowPictureBossText(int score)
 {
     if (!pictureBossTextEnabled || pictureBossTextController == null)
@@ -67,6 +111,27 @@ public void ShowPictureBossText(int score)
     }
 
     pictureBossTextController.ShowTemporaryMessageForScore(score, pictureBossMessageDuration);
+}
+// forgot to switch to boss text this was a pain in the 
+
+public void ShowCustomPictureBossText(string line, float durationSeconds)
+{
+    if (pictureBossTextController == null)
+    {
+        return;
+    }
+
+    pictureBossTextController.ShowTemporaryMessage(line, durationSeconds);
+}
+
+public void HidePictureBossText()
+{
+    if (pictureBossTextController == null)
+    {
+        return;
+    }
+
+    pictureBossTextController.Hide();
 }
 
 // function for bosstext
@@ -85,8 +150,8 @@ public void SetPictureBossTextEnabled(bool isEnabled)
 
     public void DisplayPhotoPreview(int score, Texture2D photo)
     {
-        photoPreviewController.DisplayPhotoPreview(score, photo);
-        stickerOverlayController.DisplayStickerOverlay(score);
+    photoPreviewController.DisplayPhotoPreview(score, photo);
+    stickerOverlayController.DisplayStickerOverlay(score);
     }
 
     public void SetStatusUI (float timeElapsed, int photosLeft)
