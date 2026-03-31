@@ -1,5 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
-	3815700291	Play_MainMusicSwitchContainer			\Default Work Unit\Music\Play_MainMusicSwitchContainer	
+	3815700291	Play_MainMusicSwitchContainer			\Default Work Unit\Play_MainMusicSwitchContainer	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1762393188	StageState			\Default Work Unit\StageState	

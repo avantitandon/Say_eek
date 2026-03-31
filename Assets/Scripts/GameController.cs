@@ -1,8 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
-
-using System.Collections.Generic;
-
 
 public class GameController : MonoBehaviour
 {
@@ -299,16 +295,7 @@ public class GameController : MonoBehaviour
             return;
         }
 
-        endSeqManager.HandleEndSequence();
-
-
-        if (endSeqManager.IsComplete())
-        {
-            string scene = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene(scene);
-        }
-
-        //Debug.Log("Game Ended");
+        Debug.Log("Game Ended");
     }
 
 
@@ -325,13 +312,5 @@ public class GameController : MonoBehaviour
     private void StartEndSequence()
     {
         gameState = State.End;
-
-        playerController.SetGameplayInputEnabled(false);
-        
-
-        List<int> scores = playerController.GetScores();
-        List<Texture2D> photos = playerController.GetPhotos();
-        endSeqManager.Init(scores, photos);
-        //player.SetActive(false); // only do this after using it
     }
 }

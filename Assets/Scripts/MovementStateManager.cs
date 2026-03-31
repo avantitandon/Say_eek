@@ -70,7 +70,6 @@ public class MovementStateManager : MonoBehaviour
 
     public void MovePlayer(Vector2 input)
     {
-        //Debug.Log(input);
         // Calculate movement direction
         GetDirection(input);
 

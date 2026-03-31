@@ -48,17 +48,6 @@ public class PlayerController : MonoBehaviour
     }
     // to get score
 
-    public List<int> GetScores()
-    {
-        return scores;
-
-    }
-
-    public List<Texture2D> GetPhotos()
-    {
-        return photos;
-    }
-
     public int GetLastPhotoScore()
     {
         if (scores == null || scores.Count == 0)

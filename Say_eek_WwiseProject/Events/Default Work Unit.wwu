@@ -343,13 +343,6 @@
 							</ChildrenList>
 						</Folder>
 						<Event Name="Play_MainMusicSwitchContainer" ID="{3B3CE729-D122-439D-A386-420D87E0A968}">
-							<PropertyList>
-								<Property Name="InstanceLimit" Type="int16">
-									<ValueList>
-										<Value>1</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ChildrenList>
 								<Action Name="" ID="{50EBEEC8-376F-40A6-B8B9-F1E9F02118A5}" ShortID="991626365">
 									<ReferenceList>
@@ -387,13 +380,6 @@
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_Ambience1" ID="{94406FF3-99F7-41E5-91D8-8EC64B06C772}">
-							<PropertyList>
-								<Property Name="InstanceLimit" Type="int16">
-									<ValueList>
-										<Value>1</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ChildrenList>
 								<Action Name="" ID="{3B77C85A-AAAC-46E6-83CF-98BD2C1D2C3D}" ShortID="960973079">
 									<ReferenceList>
