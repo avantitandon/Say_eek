@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1930652505",
+    "Type": "Event",
+    "GUID": "{95E96AFC-114D-4CB8-B809-02FB44AAE860}",
+    "Language": "SFX",
+    "Hash": "{7B42C64F-9B61-B07D-DE22-601F1BCDD034}",
+    "ObjectPath": "Play_sfx_boss_text__2026_03_31_055720_",
+    "ShortName": "Play_sfx_boss_text__2026_03_31_055720_",
+    "Path": "Event/Play_sfx_boss_text__2026_03_31_055720_.bnk",
+    "Media": [
+     {
+      "Id": "502942210",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_boss_text [2026-03-31 055720].wav",
+      "Path": "Media/502942210.wem",
+      "CachePath": "B3/{B313E364-D25E-CC13-B900-D6B5794BF44A}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1930652505",
+      "Name": "Play_sfx_boss_text__2026_03_31_055720_",
+      "ObjectPath": "\\Events\\Default Work Unit\\HUD\\Play_sfx_boss_text__2026_03_31_055720_",
+      "GUID": "{95E96AFC-114D-4CB8-B809-02FB44AAE860}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.96875",
+      "DurationMax": "0.96875",
+      "MediaRefs": [
+       {
+        "Id": "502942210"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{2B0DE7B5-9A8A-D90E-E57E-5F0E3C60ED8C}"
+ }
+}

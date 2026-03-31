@@ -1,5 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1985769550	Play_HarpPlayer			\Default Work Unit\Play_HarpPlayer	
+	1985769550	Play_HarpPlayer			\Default Work Unit\Music\Play_HarpPlayer	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	2581616850	HarpSwitch			\Default Work Unit\HarpSwitch	

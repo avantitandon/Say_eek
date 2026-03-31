@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{C688E6E1-BB09-446C-ABC9-9EA22EF301E3}",
     "Language": "SFX",
-    "Hash": "{B4A5F316-FB0E-5444-37C7-C0DC2E004F85}",
+    "Hash": "{89F7BC2B-4DA6-839A-6DA9-5D01970C0064}",
     "ObjectPath": "Play_RubbleFootstep",
     "ShortName": "Play_RubbleFootstep",
     "Path": "Event/Play_RubbleFootstep.bnk",
@@ -226,6 +226,6 @@
     ]
    }
   ],
-  "FileHash": "{69DF8CF6-84BE-0222-E0FF-66348E20424D}"
+  "FileHash": "{EAE3E59D-B382-CCF5-EF99-57695924FBD0}"
  }
 }

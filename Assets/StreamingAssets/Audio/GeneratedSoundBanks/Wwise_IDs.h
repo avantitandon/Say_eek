@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID PLAY_AMBIENCE1 = 1117071627U;
         static const AkUniqueID PLAY_BEEZAKA_LAUGHING = 2572452617U;
         static const AkUniqueID PLAY_BEEZAKAFOOTSTEPS = 2291923122U;
+        static const AkUniqueID PLAY_BEEZAKAFOOTSTEPSSOFT = 1869899254U;
         static const AkUniqueID PLAY_CAMERAACTIVE = 2895583013U;
         static const AkUniqueID PLAY_CAMERACAPTURE = 3730852459U;
         static const AkUniqueID PLAY_CAMERADOWN = 2825339271U;
@@ -25,11 +26,13 @@ namespace AK
         static const AkUniqueID PLAY_CAMERAZOOMIN_BETATEMP = 3116297798U;
         static const AkUniqueID PLAY_CAMERAZOOMOUT = 1363090U;
         static const AkUniqueID PLAY_CAMERAZOOMOUT_BETATEMP = 1653393465U;
+        static const AkUniqueID PLAY_CHURCHBELL_LOOP_ = 2759615908U;
         static const AkUniqueID PLAY_ENDSCOREMUSIC = 1600600422U;
         static const AkUniqueID PLAY_HARPPLAYER = 1985769550U;
         static const AkUniqueID PLAY_MAINMUSIC = 1346240278U;
         static const AkUniqueID PLAY_MAINMUSICSWITCHCONTAINER = 3815700291U;
         static const AkUniqueID PLAY_RUBBLEFOOTSTEP = 4003335362U;
+        static const AkUniqueID PLAY_SFX_BOSS_TEXT__2026_03_31_055720_ = 1930652505U;
         static const AkUniqueID PLAY_STONEFOOTSTEP = 1749496171U;
         static const AkUniqueID STOP_AMBIENCE1 = 3294285673U;
         static const AkUniqueID STOP_CAMERAZOOMIN = 3484989405U;
