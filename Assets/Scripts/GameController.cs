@@ -25,17 +25,17 @@ public class GameController : MonoBehaviour
 
     private static readonly string[] BossDialogueLines =
     {
-        "You made it to the party. Good.",
-        "The brides are waiting.",
-        "Take a photo of one of the guests.",
+        "You're at the party now? Good.",
+        "The brides have been waiting.",
+        "Take a photo of a guest there.",
     };
 
 // come after camera
     private static readonly string[] TutorialPhotoCompleteLines =
     {
-        "Good. You should be getting live engagement now, so pay attention.",
+        "Good. You should be receiving live engagement now, so pay attention.",
         "The event ends at 12:00 AM.",
-        "Show me I was right to hire you. Good luck.",
+        "Prove to me it was worth hiring you. Good luck.",
     };
 
     private static readonly string[] TutorialFollowupTextLines =
