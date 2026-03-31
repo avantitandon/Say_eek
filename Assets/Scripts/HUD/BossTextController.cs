@@ -21,10 +21,10 @@ public class BossTextController : MonoBehaviour
     [SerializeField] private float slideOffsetX = 0f;
     [SerializeField] private float slideOffsetY = 140f;
     [SerializeField] private string defaultInstructionMessage = "Press Tab/Left D-Pad to continue";
-    [SerializeField] private string lowScoreMessage = "Are you even trying intern? Or just trying to make me mad";
-    [SerializeField] private string t1Message = "Better. Keep moving.";
-    [SerializeField] private string t2Message = "Now that looks usable.";
-    [SerializeField] private string t3Message = "This is going to POP Off on the gram!.";
+    [SerializeField] private string lowScoreMessage = "That... has nothing in it.";
+    [SerializeField] private string t1Message = "...Interesting. Try framing it closer.";
+    [SerializeField] private string t2Message = "There's potential in this. Can you get closer?";
+    [SerializeField] private string t3Message = "Perfect. This might go viral.";
     private string[] dialogueLines;
     private int Currlineindex;
     private string instructionOverride;

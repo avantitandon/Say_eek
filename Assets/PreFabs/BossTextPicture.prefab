@@ -46,10 +46,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossTextController
   bossTextMessage: {fileID: 3866468015534708880}
+  instructionText: {fileID: 0}
   dialoguePanel: {fileID: 2640845263100714560}
   slideDuration: 0.2
   slideOffsetX: -320
   slideOffsetY: 0
+  defaultInstructionMessage: Press Tab/Left D-Pad to continue
+  lowScoreMessage: Are you even trying intern? Or just trying to make me mad
+  t1Message: Better. Keep moving.
+  t2Message: Now that looks usable.
+  t3Message: This is going to POP Off on the gram!.
 --- !u!1 &6944174161602458906
 GameObject:
   m_ObjectHideFlags: 0
@@ -84,7 +90,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 89.75204, y: -30.3}
+  m_AnchoredPosition: {x: 88.608475, y: -27.81425}
   m_SizeDelta: {x: 187.70407, y: 52.3074}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2796894301766785833
@@ -115,7 +121,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' Testing 2'
+  m_text: "There\u2019s potential in this. Can you get closer?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f1551ca021cef8b4f885c2fb1302872c, type: 2}
   m_sharedMaterial: {fileID: -4571761293353074430, guid: f1551ca021cef8b4f885c2fb1302872c, type: 2}
@@ -124,8 +130,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4283896371
+  m_fontColor: {r: 0.20028253, g: 0.07208972, b: 0.33962262, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -142,20 +148,20 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 2.5
-  m_fontSizeBase: 2.5
+  m_fontSize: 2.3
+  m_fontSizeBase: 2.3
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 1.9
+  m_fontSizeMax: 2.3
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 34.5
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -181,7 +187,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -4.9020844, y: 2.7412891, z: 167.13231, w: 40.50234}
+  m_margin: {x: -4.9020844, y: 2.7111702, z: 164.30266, w: 38.77299}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -261,11 +267,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -316,8 +322,8 @@ RectTransform:
   m_GameObject: {fileID: 8294370466917255369}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.3669252, y: 3.6117296, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 11.75, y: 6.665356, z: 1.8454748}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2302815607895618844}
   - {fileID: 4956523019452993370}
@@ -325,7 +331,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 154, y: 39}
+  m_AnchoredPosition: {x: 274.2589, y: 143.14447}
   m_SizeDelta: {x: 46.7798, y: 73.837}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &548565054756682237
@@ -349,7 +355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.77713424, b: 0.3537736, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -393,14 +399,14 @@ RectTransform:
   m_GameObject: {fileID: 8741305411389963553}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.52442586, y: 0.79285675, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.75592834, z: 0.9534236}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2640845263100714560}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 23.577, y: 36.2}
+  m_AnchoredPosition: {x: 22.273304, y: 36.023216}
   m_SizeDelta: {x: 88.49, y: 103.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7246777427608170538
@@ -431,7 +437,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 68f87498851294c6099b2f6d999fd6fe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 95d1b146ddc99f24e92d5d379073d487, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
