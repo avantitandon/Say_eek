@@ -5,6 +5,7 @@ public class HUDManager : MonoBehaviour
     // CONSTANTS //
 
     // AUDIO //
+    [SerializeField] private AudioManager audioManager;
 
     // GAME COMPONENTS //
 
