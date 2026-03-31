@@ -466,8 +466,8 @@
 										</Effect>
 										<Effect Name="Boost_3dB_100Hz" ID="{3EA7C9BD-6F9A-4000-A227-F86B5B4328EE}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 											<PropertyList>
-												<Property Name="FrequencyBand1" Type="Real32" Value="382"/>
-												<Property Name="GainBand1" Type="Real32" Value="6"/>
+												<Property Name="FrequencyBand1" Type="Real32" Value="271.085"/>
+												<Property Name="GainBand1" Type="Real32" Value="0.5633803"/>
 												<Property Name="OnOffBand2" Type="bool" Value="False"/>
 											</PropertyList>
 										</Effect>
@@ -573,7 +573,11 @@
 								<Effect Name="High_Pass_60Hz" ID="{F9627628-0B10-4272-BC30-D4C20423CB38}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<PropertyList>
 										<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+										<Property Name="FrequencyBand1" Type="Real32" Value="847.9856"/>
+										<Property Name="FrequencyBand3" Type="Real32" Value="7050.173"/>
+										<Property Name="GainBand3" Type="Real32" Value="6.87324"/>
 										<Property Name="OnOffBand2" Type="bool" Value="False"/>
+										<Property Name="OnOffBand3" Type="bool" Value="True"/>
 									</PropertyList>
 								</Effect>
 							</ChildrenList>
@@ -1931,8 +1935,8 @@
 							<ChildrenList>
 								<Effect Name="Octave_Up" ID="{A98F423C-EC97-49D8-8698-445CE91F24B7}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
 									<PropertyList>
-										<Property Name="DryLevel" Type="Real32" Value="0"/>
-										<Property Name="Pitch" Type="Real32" Value="1200"/>
+										<Property Name="DryLevel" Type="Real32" Value="8"/>
+										<Property Name="Pitch" Type="Real32" Value="600"/>
 									</PropertyList>
 								</Effect>
 								<Effect Name="Octave_Down" ID="{062EC4B1-5372-4D1E-917B-C757293F2B42}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
