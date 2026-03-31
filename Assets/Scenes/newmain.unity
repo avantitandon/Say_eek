@@ -622,7 +622,7 @@ MonoBehaviour:
   m_TileSize: 256
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
-  m_MinRegionArea: 2
+  m_MinRegionArea: 0.37
   m_NavMeshData: {fileID: 23800000, guid: 246e72301aeeeaf4097d8938bd0a9eff, type: 2}
   m_BuildHeightMesh: 0
 --- !u!1001 &133224758
@@ -5864,6 +5864,37 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1410588004}
   m_SourcePrefab: {fileID: 100100000, guid: 84a8626e1ae3b494fae32cfc1470922c, type: 3}
+--- !u!1 &253067767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 253067768}
+  m_Layer: 0
+  m_Name: beezakaportal
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &253067768
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253067767}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -73.59, y: 0, z: -32.73}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &257558829
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6088,17 +6119,21 @@ PrefabInstance:
       propertyPath: CameraUpOrNot
       value: 
       objectReference: {fileID: 51380532}
+    - target: {fileID: 2960881115544233359, guid: ba1dcc75dc555b343b67b8a67a0a9e9b, type: 3}
+      propertyPath: beezakaportal
+      value: 
+      objectReference: {fileID: 253067767}
     - target: {fileID: 3055018968402253756, guid: ba1dcc75dc555b343b67b8a67a0a9e9b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.08
+      value: -73.68
       objectReference: {fileID: 0}
     - target: {fileID: 3055018968402253756, guid: ba1dcc75dc555b343b67b8a67a0a9e9b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.83
+      value: -80.9
       objectReference: {fileID: 0}
     - target: {fileID: 3055018968402253756, guid: ba1dcc75dc555b343b67b8a67a0a9e9b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -59.5
+      value: -33.05
       objectReference: {fileID: 0}
     - target: {fileID: 3055018968402253756, guid: ba1dcc75dc555b343b67b8a67a0a9e9b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11760,6 +11795,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 716291076162141896, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2197434505766860268, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
       propertyPath: m_TagString
       value: navmeshbaking
@@ -11832,6 +11871,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: c4aaef52cc1d50d41900af8fd51f8ebf, type: 2}
+    - target: {fileID: 6037685504861004935, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: d98408f7bacbf144fb4abf15e1f97d8a, type: 3}
     - target: {fileID: 6231203805721093464, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
       propertyPath: m_TagString
       value: navmeshbaking
@@ -11843,6 +11886,10 @@ PrefabInstance:
     - target: {fileID: 6655287457865418537, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452672993553056455, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15073,3 +15120,4 @@ SceneRoots:
   - {fileID: 1264940646}
   - {fileID: 576466828}
   - {fileID: 1608048061}
+  - {fileID: 253067768}
