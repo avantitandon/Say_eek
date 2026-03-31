@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1869899254	Play_BeezakaFootstepsSoft			\Default Work Unit\NPCs\Play_BeezakaFootstepsSoft	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2913793422	MoveAmount			\Default Work Unit\MoveAmount	
+

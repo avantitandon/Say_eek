@@ -428,6 +428,78 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{0A541290-2338-435C-AF3E-44D7D979D415}" ShortID="41827771">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BeezakaBootsRattle" ID="{F7923535-C813-479F-95DC-33DD9EFEB7FD}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{36F6B5AE-B3C7-4489-ACB4-2821C6EBA7FB}" ShortID="997882052">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BeezakaFootstepsRock" ID="{E9B4730E-EB58-4139-ACBC-D63629998D7D}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_BeezakaFootstepsSoft" ID="{AFBC21C2-063E-4C1F-B64B-50FD3D95BB88}">
+							<ChildrenList>
+								<Action Name="" ID="{C6E72D21-D252-4481-9AD0-75EEE04A48BA}" ShortID="794063342">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BeezakaFootstepsRock" ID="{E9B4730E-EB58-4139-ACBC-D63629998D7D}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{FA155C23-A983-492E-BD80-D76E5CADF54F}" ShortID="427498834">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_highheel_soft" ID="{0333EFDF-232F-4BC4-B871-3D568CEC231D}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="World" ID="{7858524C-4670-48E6-9E52-BADFFFD78057}" ShortID="495517472">
+					<ChildrenList>
+						<Event Name="Play_Churchbell_loop_" ID="{B34FED38-666E-49E7-9F1C-D60F4486CC1F}">
+							<ChildrenList>
+								<Action Name="" ID="{F4CA53B1-BFF2-4A44-A534-9BB15F3C1967}" ShortID="231341420">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Churchbell(loop)" ID="{CA8E0AE6-A73E-468C-B724-693012C1017E}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="HUD" ID="{7110972B-B88C-4FA9-B6B2-AC65C9F20EC3}" ShortID="311776701">
+					<ChildrenList>
+						<Event Name="Play_sfx_boss_text__2026_03_31_055720_" ID="{95E96AFC-114D-4CB8-B809-02FB44AAE860}">
+							<ChildrenList>
+								<Action Name="" ID="{84FCB126-FBEC-4585-BA89-4C8CCA5C87DA}" ShortID="525935274">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_boss_text [2026-03-31 055720]" ID="{2C721BB7-1DF0-46C1-A794-3CAC60DA38F1}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F8B7870B-FF33-4E3A-9CC7-3BA274E4164C}" ShortID="1021434097">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="sfx_boss_text [2026-03-31 055720]" ID="{2C721BB7-1DF0-46C1-A794-3CAC60DA38F1}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>

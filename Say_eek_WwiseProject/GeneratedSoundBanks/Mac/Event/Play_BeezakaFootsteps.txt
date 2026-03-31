@@ -1,3 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
 	2291923122	Play_BeezakaFootsteps			\Default Work Unit\NPCs\Play_BeezakaFootsteps	
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2035457160	ListenerCone			\Default Work Unit\ListenerCone	
+	2913793422	MoveAmount			\Default Work Unit\MoveAmount	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1237275451	Octave_Up	Wwise Pitch Shifter			
+	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
+	4018905782	ListenerConeEQ	Wwise Parametric EQ			
+
