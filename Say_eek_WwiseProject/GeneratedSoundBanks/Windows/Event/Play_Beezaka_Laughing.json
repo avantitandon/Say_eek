@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{3252F208-C7C0-4ABC-94F4-406880EAE27A}",
     "Language": "SFX",
-    "Hash": "{15960ED8-99B5-D2B7-1377-04B22DC267C0}",
+    "Hash": "{25A5AFD1-B834-9B8C-7BB9-58017AADB6A6}",
     "ObjectPath": "Play_Beezaka_Laughing",
     "ShortName": "Play_Beezaka_Laughing",
     "Path": "Event/Play_Beezaka_Laughing.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "Bounce 23 Witch Laughs (Bounce) [2026-03-26 142915]-1.wav",
       "Path": "Media/133179455.wem",
-      "CachePath": "A2/{A221A359-CDC3-94B9-1D7B-33ABA0C0FE0C}.wem"
+      "CachePath": "58/{58344346-4461-A552-7E0B-D1F0CFCE3003}.wem"
      },
      {
       "Id": "191526671",
@@ -31,7 +31,7 @@
       "Location": "Loose",
       "ShortName": "Bounce 18 Witch Laughs (Bounce) [2026-03-26 142911]-1.wav",
       "Path": "Media/191526671.wem",
-      "CachePath": "5F/{5FA8A796-8F3D-8FFF-C466-E19817F7B432}.wem"
+      "CachePath": "BA/{BA0D6354-AE8A-CC55-D70B-2E0900C9ECFF}.wem"
      },
      {
       "Id": "224652438",
@@ -40,7 +40,7 @@
       "Location": "Loose",
       "ShortName": "Bounce 18 Witch Laughs (Bounce) [2026-03-26 142909]-1.wav",
       "Path": "Media/224652438.wem",
-      "CachePath": "90/{90E7332E-2266-0140-5924-15129B55C4FE}.wem"
+      "CachePath": "B1/{B1C83603-268C-CBF5-3A64-F825A3C4EB34}.wem"
      },
      {
       "Id": "280573758",
@@ -49,7 +49,7 @@
       "Location": "Loose",
       "ShortName": "Bounce 23 Witch Laughs (Bounce) [2026-03-26 142918]-1.wav",
       "Path": "Media/280573758.wem",
-      "CachePath": "B8/{B857F7B2-B815-8A8E-4692-6CC9D943273C}.wem"
+      "CachePath": "EB/{EB517A7C-8D4B-5E57-6B4D-5BB22A9FECC0}.wem"
      },
      {
       "Id": "349053971",
@@ -58,7 +58,7 @@
       "Location": "Loose",
       "ShortName": "Bounce 22 Witch Laughs (Bounce) [2026-03-26 142920]-1.wav",
       "Path": "Media/349053971.wem",
-      "CachePath": "39/{39DCE42E-AB09-1BAF-3D97-77EB0256F6C0}.wem"
+      "CachePath": "21/{21C6847F-734A-9618-2897-87089981BE52}.wem"
      },
      {
       "Id": "656781149",
@@ -67,7 +67,7 @@
       "Location": "Loose",
       "ShortName": "Bounce 18 Witch Laughs (Bounce) [2026-03-26 142912]-1.wav",
       "Path": "Media/656781149.wem",
-      "CachePath": "15/{159D8757-CD2F-2C9C-4555-E1E69A583468}.wem"
+      "CachePath": "40/{4052E130-6ED2-D081-5F87-BBD19E892B13}.wem"
      },
      {
       "Id": "704645238",
@@ -76,7 +76,7 @@
       "Location": "Loose",
       "ShortName": "Bounce 23 Witch Laughs (Bounce) [2026-03-26 142917]-1.wav",
       "Path": "Media/704645238.wem",
-      "CachePath": "17/{17CEACB5-DDA3-7A98-BA96-8F0EB4453112}.wem"
+      "CachePath": "A0/{A0566696-ED14-E459-B26A-EC648051FCC9}.wem"
      },
      {
       "Id": "772329582",
@@ -85,7 +85,7 @@
       "Location": "Loose",
       "ShortName": "Bounce 22 Witch Laughs (Bounce) [2026-03-26 142921]-1.wav",
       "Path": "Media/772329582.wem",
-      "CachePath": "DF/{DF040F30-175C-3600-9FF2-357615E90BD3}.wem"
+      "CachePath": "B5/{B513518A-B4B2-232C-0B1E-89AB4D2775FB}.wem"
      }
     ],
     "Plugins": {
@@ -164,6 +164,6 @@
     ]
    }
   ],
-  "FileHash": "{B66A7D57-9FE9-8F57-EF9F-980280A0EE7F}"
+  "FileHash": "{F68CE0CB-99EA-7D13-B159-E3AE2F969516}"
  }
 }
