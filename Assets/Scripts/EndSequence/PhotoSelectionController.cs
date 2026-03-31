@@ -1,7 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+using System;
 using System.Collections.Generic;
+
+
+using TMPro;
 
 public class PhotoSelectionController : MonoBehaviour
 {
@@ -10,14 +14,24 @@ public class PhotoSelectionController : MonoBehaviour
     // how many featured photos should be selected
     private const int FEATURED_COUNT = 5;
 
+    private const float STICK_THRESHOLD = 0.5f; // how far stick to be pulled to move
+    private const float STICK_COOLDOWN = 0.2f; // time in seconds between each photo change when moving
+
     // USER INPUTS
 
     // AUDIO
 
     // GAME COMPONENTS
 
+    [SerializeField] private GameObject canvas;
+    [SerializeField] private GameObject sendButton;
     [SerializeField] private GameObject photoTemplate;
     [SerializeField] private GameObject photoList;
+
+    [SerializeField] private GameObject bigPhotoPreview;
+
+    [SerializeField] private TMP_Text countText;
+
     private List<GameObject> photoPreviews;
     private GridLayoutGroup listLayout;
 
@@ -36,33 +50,73 @@ public class PhotoSelectionController : MonoBehaviour
     private List<int> selectedPhotos;
     private int selectedCount;
 
+
+
+    private float last_stick;
+
     
     // definitely give each object a text child for the score that will be set when creating this list
 
     // LOGGING
 
-    // initialize the end sequence
-    void Init(List<Texture2D> gamePhotos)
+
+    public bool attemptSubmit(bool submitInput)
     {
+        return submitInput && (selectedCount == FEATURED_COUNT);
+    }
+
+    public List<int> getFeaturedIds()
+    {
+        return selectedPhotos;
+    }
+
+    public void toggleCanvas(bool enabled)
+    {
+        canvas.SetActive(enabled);
+    }
+
+    // initialize the end sequence
+    public void Init(List<Texture2D> gamePhotos)
+    {
+        // get how many columns are in the list
+        listLayout = photoList.GetComponent<GridLayoutGroup>();
+        listColumns = listLayout.constraintCount;
+
+        // get how many photos were taken
+        totalPhotos = gamePhotos.Count;
+
+        selectedPhotos = new List<int>();
+        // set current selected photo
+        currPhotoId = 0;
         // create the list of photo objects
+        photoPreviews = new List<GameObject>();
         populateList(gamePhotos);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // get how many columns are in the list
-        listLayout = photoList.GetComponent<GridLayoutGroup>();
-        listColumns = listLayout.constraintCount;
 
-        selectedPhotos = new List<int>();
-        // set current selected photo
-        currPhotoId = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
+        countText.text = string.Concat(selectedCount, "/", FEATURED_COUNT, " Photos Selected");
+
+        setBigPhotoPreview(currPhotoId);
+
+
+        if (selectedCount == FEATURED_COUNT)
+        {
+            sendButton.transform.Find("SendActive").gameObject.SetActive(true);
+        }
+        else
+        {
+            sendButton.transform.Find("SendActive").gameObject.SetActive(false);
+        }
+
+
         // HANDLE ENLARGING SELECTED PHOTO HERE (maybe)
 
         // remaining considerations:
@@ -75,17 +129,58 @@ public class PhotoSelectionController : MonoBehaviour
 
     // Add photos to the list
     // still should take scores to add to text children of photos
-    void populateList(List<Texture2D> gamePhotos)
+    private void populateList(List<Texture2D> gamePhotos)
     {
-        
+        Debug.Log("NEXT");
+        Debug.Log(gamePhotos.Count);
+        int i = 0;
+        foreach (Texture2D photo_texture in gamePhotos)
+        {
+            i += 1;
+            Debug.Log(i);
+            GameObject photo_obj = Instantiate(photoTemplate, photoList.transform);
+            RawImage image_obj = photo_obj.transform.Find("Image").GetComponent<RawImage>();
+            image_obj.texture = photo_texture;
+            photoPreviews.Add(photo_obj);
+        }
     }
 
-    void changeSelection(Vector2 input)
+    public void changeSelection(Vector2 input)
     {
-        
+        if (Time.time - last_stick < STICK_COOLDOWN)
+        {
+            return;
+        }
+
+        last_stick = Time.time;
+
+        toggleGlow(false, currPhotoId);
+
+        // change to a photo horizontally
+        // if the x direction is significant
+        if (Math.Abs(input.x) > STICK_THRESHOLD)
+        {
+            int idx_in_row = currPhotoId % listColumns; // which column we are in
+            int final_idx_of_row = (currPhotoId / listColumns != (totalPhotos - 1) / listColumns) ? listColumns - 1 : (totalPhotos - 1) % listColumns; // the last index in the current row (could be less in final row)
+            // i.e. it is always list columns 1 but may be less if we are in the final row (case 2)
+            int new_idx_in_row = Math.Clamp(idx_in_row + (input.x > 0 ? 1 : -1), 0, final_idx_of_row);
+            currPhotoId += new_idx_in_row - idx_in_row;
+        }
+
+        // change to a photo vertically
+        if (Math.Abs(input.y) > STICK_THRESHOLD)
+        {
+            // negative y is down, and photo id increases downwards.
+            int idx_in_cols = currPhotoId / listColumns; // which row we are in
+            int last_row_for_column = (totalPhotos - 1 - (currPhotoId % listColumns)) / listColumns; // the last row in the current column
+            int new_idx_in_cols = Math.Clamp(idx_in_cols + (input.y > 0 ? -1 : 1), 0,  last_row_for_column);
+            currPhotoId += listColumns * (new_idx_in_cols - idx_in_cols);
+        }
+
+        toggleGlow(true, currPhotoId);
     }
 
-    void selectCurrentPhoto()
+    public void selectCurrentPhoto()
     {   
         // can't select the current photo if it is currently selected or we are at max
         if (selectedPhotos.Contains(currPhotoId) || selectedCount >= FEATURED_COUNT)
@@ -93,12 +188,14 @@ public class PhotoSelectionController : MonoBehaviour
             return;
         }
 
+        selectedCount += 1;
+
         // otherwise, select it
         selectedPhotos.Add(currPhotoId);
-        brightenPhoto(currPhotoId);
+        dimPhoto(currPhotoId);
     }
 
-    void deselectCurrentPhoto()
+    public void deselectCurrentPhoto()
     {
         // can't do this if the current photo isn't selected
         if (!selectedPhotos.Contains(currPhotoId))
@@ -106,18 +203,37 @@ public class PhotoSelectionController : MonoBehaviour
             return;
         }
 
+        selectedCount -= 1;
+
         // remove the current photo
         selectedPhotos.Remove(currPhotoId);
-        dimPhoto(currPhotoId);
+        brightenPhoto(currPhotoId);
     }
 
     void brightenPhoto(int id)
     {
-        
+        GameObject photo = photoPreviews[id];
+        CanvasGroup canvas_group = photo.GetComponent<CanvasGroup>();
+        canvas_group.alpha = 1.0f;
     }
 
     void dimPhoto(int id)
     {
-        
+        GameObject photo = photoPreviews[id];
+        CanvasGroup canvas_group = photo.GetComponent<CanvasGroup>();
+        canvas_group.alpha = 0.5f;
+    }
+
+    void setBigPhotoPreview(int id)
+    {
+        RawImage target_img = photoPreviews[id].transform.Find("Image").GetComponent<RawImage>();
+        RawImage big_preview_img = bigPhotoPreview.transform.Find("Image").GetComponent<RawImage>();
+        big_preview_img.texture = target_img.texture;
+    }
+
+    void toggleGlow(bool enabled, int id)
+    {
+        GameObject glow = photoPreviews[id].transform.Find("Glow").gameObject;
+        glow.SetActive(enabled);
     }
 }
