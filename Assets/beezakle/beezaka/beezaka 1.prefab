@@ -88,6 +88,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0cf86e1827b7c824b8b42adb1d0a4bc3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1595863585984711819}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0cf86e1827b7c824b8b42adb1d0a4bc3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2532142923824781872}
   m_SourcePrefab: {fileID: 100100000, guid: 0cf86e1827b7c824b8b42adb1d0a4bc3, type: 3}
 --- !u!1 &2390931174643076358 stripped
 GameObject:
@@ -172,3 +175,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6f41f5795f299c47aa5e6a69b813423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimationScript
+--- !u!114 &2532142923824781872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2390931174643076358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72259199905c6403ab42a676a093139a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCAnimation
+  audioManager: {fileID: 0}
+  animator: {fileID: 2798621349688271090}

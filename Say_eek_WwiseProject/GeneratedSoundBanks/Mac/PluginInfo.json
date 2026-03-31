@@ -18,6 +18,13 @@
     "StaticLib": "AkMatrixReverbFX"
    },
    {
+    "LibName": "Wwise Pitch Shifter",
+    "LibId": "8912899",
+    "Type": "Effect",
+    "DLL": "AkPitchShifter",
+    "StaticLib": "AkPitchShifterFX"
+   },
+   {
     "LibName": "System",
     "LibId": "11403271",
     "Type": "AudioDevice"
@@ -28,6 +35,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{0DEB9D04-2CF5-475F-82E4-022500DF3C43}"
+  "FileHash": "{58C2EA5F-C49E-2A4C-3BEC-31C7DCCB1E9C}"
  }
 }

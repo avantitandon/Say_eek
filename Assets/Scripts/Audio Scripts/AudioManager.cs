@@ -18,6 +18,11 @@ public class AudioManager : MonoBehaviour
         [SerializeField] private AK.Wwise.Event playMainMusicSwitchContainer;
         private string currentBarSwitch = "Bar_01";
 
+    [Header("World Events")]
+        [SerializeField] AK.Wwise.Event playChurchBell;
+
+    [Header("HUD Events")]
+        [SerializeField] private AK.Wwise.Event playBossText;
 
     [Header("Player Events")]
         [SerializeField] private float maxSpeedStepInterval = 0.48f; //fullspeed
@@ -34,6 +39,7 @@ public class AudioManager : MonoBehaviour
         [SerializeField] private AK.Wwise.Event playBeezakaDialogue;
         bool beezakaEvent = true;
         [SerializeField] private AK.Wwise.Event playBeezakaFootstep;
+        [SerializeField] private AK.Wwise.Event playBeezakaFootstepSoft;
 
 
     [Header("Camera Events")]
@@ -53,6 +59,7 @@ public class AudioManager : MonoBehaviour
         [SerializeField] private float feetYWorldPosition = 0f;
 
         [SerializeField] private GameObject beezakaEmitter;
+        [SerializeField] private GameObject churchBellEmitter;
 
 
     [Header("Scene Objects")]
@@ -200,10 +207,48 @@ public class AudioManager : MonoBehaviour
         }
         else return;
     }
-    public void HandleBeezakaFootsteps()
+    public void HandleFootstep(GameObject npc, string currentAnimation)
+    //Use "Default" as the currentAnimation if there is no need for different animation states. Its ref. in NPCAnimationAudio script
+
     {
-        playBeezakaFootstep.Post(beezakaEmitter);
+        //BEEZAKA//
+        if (npc.name.Contains("beezaka"))
+        {
+            if (currentAnimation == "Default")
+            {
+                playBeezakaFootstep.Post(npc);
+                //Debug.Log("NORMAL FOOTSTEP" + npc.name);
+            }
+             else if (currentAnimation == "Idle")
+            {
+                playBeezakaFootstepSoft.Post(npc);
+                //Debug.Log("SOFT FOOTSTEP" + npc.name);
+            }
+        }
+
     }
+    
+
+    // WORLD Methods //
+    public void PlayChurchbell()
+    {
+        playChurchBell.Post(churchBellEmitter);
+    }
+
+
+    // HUD Methods //
+    public void PlayBossText()
+    {
+        playBossText.Post(player); 
+    }
+
+
+
+
+
+
+
+
+
+
 }
-
-

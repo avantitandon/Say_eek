@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{3B3CE729-D122-439D-A386-420D87E0A968}",
     "Language": "SFX",
-    "Hash": "{8BE8E55A-3FB5-911A-266F-7F5383DF5E6D}",
+    "Hash": "{00D66CF5-9AC8-1485-3555-A6011F297FA4}",
     "ObjectPath": "Play_MainMusicSwitchContainer",
     "ShortName": "Play_MainMusicSwitchContainer",
     "Path": "Event/Play_MainMusicSwitchContainer.bnk",
@@ -237,6 +237,6 @@
     ]
    }
   ],
-  "FileHash": "{512CA315-21D0-DBD7-8FDD-6BABB82A99C5}"
+  "FileHash": "{BAF515B0-9560-7580-0191-C0F7BEE33AE5}"
  }
 }
