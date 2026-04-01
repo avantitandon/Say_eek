@@ -1,0 +1,235 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1541866734",
+    "Type": "Event",
+    "GUID": "{D8529BAE-C24B-4540-A3BA-25956602C35E}",
+    "Language": "SFX",
+    "Hash": "{EBF3B066-4CA6-37C8-5E01-AE6462B9DBDB}",
+    "ObjectPath": "Play_Fountain",
+    "ShortName": "Play_Fountain",
+    "Path": "Event/Play_Fountain.bnk",
+    "Media": [
+     {
+      "Id": "49737691",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fountain_base_BL [2026-03-31 210933].wav",
+      "Path": "Media/49737691.wem",
+      "CachePath": "BC/{BC36A96C-BE82-6D52-3FB8-E55DA60059BD}.wem"
+     },
+     {
+      "Id": "340645004",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fountain_base_BR [2026-03-31 210935].wav",
+      "Path": "Media/340645004.wem",
+      "CachePath": "92/{92723F5F-4F46-6462-2374-0780210076EC}.wem"
+     },
+     {
+      "Id": "592303824",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fountain_base_FR [2026-03-31 210941].wav",
+      "Path": "Media/592303824.wem",
+      "CachePath": "40/{409B7824-6CA5-80E3-4EFD-6D3D1BFF3EEC}.wem"
+     },
+     {
+      "Id": "715834595",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_fountain_base_FL [2026-03-31 210938].wav",
+      "Path": "Media/715834595.wem",
+      "CachePath": "1B/{1BDB0D4C-8D38-D1B1-CF53-E30C24E7FA6F}.wem"
+     }
+    ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "272401638",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Containers\\Default Work Unit\\World SFX\\Fountain\\New Virtual Folder\\FountainBase\\[Effect Slot [1]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{C86C037E-A557-438F-B864-AF49FC5982B6}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      }
+     ],
+     "ShareSets": [
+      {
+       "Id": "4018905782",
+       "Name": "ListenerConeEQ",
+       "ObjectPath": "\\Effects\\Default Work Unit\\ListenerConeEQ",
+       "GUID": "{1055158E-9666-4073-AF90-C4597A82DE80}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "1541866734",
+      "Name": "Play_Fountain",
+      "ObjectPath": "\\Events\\Default Work Unit\\World\\Play_Fountain",
+      "GUID": "{D8529BAE-C24B-4540-A3BA-25956602C35E}",
+      "MaxAttenuation": "100",
+      "DurationType": "Infinite",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2623028164",
+         "Id": "1870080949",
+         "GUID": "{E4B19554-213F-4114-A9AA-2DEBB8F97FD2}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "340645004"
+         }
+        ],
+        "PluginRefs": {
+         "Custom": [
+          {
+           "Id": "272401638"
+          }
+         ],
+         "ShareSets": [
+          {
+           "Id": "4018905782"
+          }
+         ]
+        }
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2623028164",
+         "Id": "1802970377",
+         "GUID": "{4D381D96-A226-4E0D-A646-7866C01EB910}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "592303824"
+         }
+        ],
+        "PluginRefs": {
+         "Custom": [
+          {
+           "Id": "272401638"
+          }
+         ],
+         "ShareSets": [
+          {
+           "Id": "4018905782"
+          }
+         ]
+        }
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2623028164",
+         "Id": "1870080939",
+         "GUID": "{A6395BC1-35DE-4AF5-AAFF-2ED7E78EF5C0}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "49737691"
+         }
+        ],
+        "PluginRefs": {
+         "Custom": [
+          {
+           "Id": "272401638"
+          }
+         ],
+         "ShareSets": [
+          {
+           "Id": "4018905782"
+          }
+         ]
+        }
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2623028164",
+         "Id": "1802970391",
+         "GUID": "{7B45FFE0-9DF6-4748-9E76-3CA16901D140}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "715834595"
+         }
+        ],
+        "PluginRefs": {
+         "Custom": [
+          {
+           "Id": "272401638"
+          }
+         ],
+         "ShareSets": [
+          {
+           "Id": "4018905782"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "2035457160",
+      "Name": "ListenerCone",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\ListenerCone",
+      "GUID": "{BF03D322-83B3-4F06-A541-BF82DDE4E736}"
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "2623028164",
+      "Name": "FountainPosition",
+      "ObjectPath": "\\Switches\\Default Work Unit\\FountainPosition",
+      "GUID": "{5FC94CF4-E8E3-420E-ACB3-3D01E501B6E6}",
+      "Switches": [
+       {
+        "Id": "1802970377",
+        "Name": "FR",
+        "ObjectPath": "\\Switches\\Default Work Unit\\FountainPosition\\FR",
+        "GUID": "{4D381D96-A226-4E0D-A646-7866C01EB910}"
+       },
+       {
+        "Id": "1802970391",
+        "Name": "FL",
+        "ObjectPath": "\\Switches\\Default Work Unit\\FountainPosition\\FL",
+        "GUID": "{7B45FFE0-9DF6-4748-9E76-3CA16901D140}"
+       },
+       {
+        "Id": "1870080939",
+        "Name": "BL",
+        "ObjectPath": "\\Switches\\Default Work Unit\\FountainPosition\\BL",
+        "GUID": "{A6395BC1-35DE-4AF5-AAFF-2ED7E78EF5C0}"
+       },
+       {
+        "Id": "1870080949",
+        "Name": "BR",
+        "ObjectPath": "\\Switches\\Default Work Unit\\FountainPosition\\BR",
+        "GUID": "{E4B19554-213F-4114-A9AA-2DEBB8F97FD2}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{8C41624D-5EF4-4FAD-7C1E-C0893E197B3B}"
+ }
+}

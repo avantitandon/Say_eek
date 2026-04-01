@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{3252F208-C7C0-4ABC-94F4-406880EAE27A}",
     "Language": "SFX",
-    "Hash": "{93BC2E27-6FD4-879A-D55C-5391C96CA82D}",
+    "Hash": "{6417E24B-9AE6-583B-3CD6-4A0C4544FC4B}",
     "ObjectPath": "Play_Beezaka_Laughing",
     "ShortName": "Play_Beezaka_Laughing",
     "Path": "Event/Play_Beezaka_Laughing.bnk",
@@ -152,6 +152,6 @@
     ]
    }
   ],
-  "FileHash": "{5382B41E-E539-ADE8-3837-C0D70BFF9048}"
+  "FileHash": "{DA8AAB8E-D36E-064E-E2F5-62EDDF3A5D7F}"
  }
 }
