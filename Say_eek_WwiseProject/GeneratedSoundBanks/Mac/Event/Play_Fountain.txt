@@ -1,0 +1,19 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1541866734	Play_Fountain			\Default Work Unit\World\Play_Fountain	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2623028164	FountainPosition			\Default Work Unit\FountainPosition	
+
+Switch	ID	Name	Switch Group			Notes
+	1802970377	FR	FountainPosition			
+	1802970391	FL	FountainPosition			
+	1870080939	BL	FountainPosition			
+	1870080949	BR	FountainPosition			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2035457160	ListenerCone			\Default Work Unit\ListenerCone	
+
+Effect plug-ins	ID	Name	Type				Notes
+	272401638	Parametric EQ (Custom)	Wwise Parametric EQ			
+	4018905782	ListenerConeEQ	Wwise Parametric EQ			
+
