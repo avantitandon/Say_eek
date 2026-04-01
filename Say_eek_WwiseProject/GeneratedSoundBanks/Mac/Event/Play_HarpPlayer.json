@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{1DFEE0EA-D98A-498C-8A72-DAE25F0DB5D5}",
     "Language": "SFX",
-    "Hash": "{596D6653-FE0E-F413-C00F-500CCDCE9328}",
+    "Hash": "{2CDECB46-615E-5E2E-9578-5EDD8D20864A}",
     "ObjectPath": "Play_HarpPlayer",
     "ShortName": "Play_HarpPlayer",
     "Path": "Event/Play_HarpPlayer.bnk",
@@ -1805,6 +1805,6 @@
     ]
    }
   ],
-  "FileHash": "{5A303CF6-418A-3360-83C5-BDBFB190219F}"
+  "FileHash": "{9656DB95-A418-32FA-AA82-61861505B929}"
  }
 }

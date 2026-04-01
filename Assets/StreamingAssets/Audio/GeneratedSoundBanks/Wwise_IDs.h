@@ -28,6 +28,8 @@ namespace AK
         static const AkUniqueID PLAY_CAMERAZOOMOUT_BETATEMP = 1653393465U;
         static const AkUniqueID PLAY_CHURCHBELL_LOOP_ = 2759615908U;
         static const AkUniqueID PLAY_ENDSCOREMUSIC = 1600600422U;
+        static const AkUniqueID PLAY_FOOTSTEPSTART = 1175331064U;
+        static const AkUniqueID PLAY_FOUNTAIN = 1541866734U;
         static const AkUniqueID PLAY_HARPPLAYER = 1985769550U;
         static const AkUniqueID PLAY_MAINMUSIC = 1346240278U;
         static const AkUniqueID PLAY_MAINMUSICSWITCHCONTAINER = 3815700291U;
@@ -39,6 +41,7 @@ namespace AK
         static const AkUniqueID STOP_CAMERAZOOMOUT = 3252179076U;
         static const AkUniqueID STOP_ENDSCOREMUSIC = 261268628U;
         static const AkUniqueID STOP_FIRST_DANCE_IN_HELL___MAR10 = 4038005146U;
+        static const AkUniqueID STOP_FOOTSTEPSTART = 3495340762U;
     } // namespace EVENTS
 
     namespace STATES
@@ -101,6 +104,19 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace FOUNTAINPOSITION
+        {
+            static const AkUniqueID GROUP = 2623028164U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BL = 1870080939U;
+                static const AkUniqueID BR = 1870080949U;
+                static const AkUniqueID FL = 1802970391U;
+                static const AkUniqueID FR = 1802970377U;
+            } // namespace SWITCH
+        } // namespace FOUNTAINPOSITION
+
         namespace HARPSWITCH
         {
             static const AkUniqueID GROUP = 2581616850U;
