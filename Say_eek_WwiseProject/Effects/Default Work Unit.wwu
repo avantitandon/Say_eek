@@ -8,15 +8,16 @@
 						<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
 						<Property Name="PreDelay" Type="Real32" Value="0.2"/>
 						<Property Name="ProcessLFE" Type="bool" Value="False"/>
-						<Property Name="ReverbTime" Type="Real32" Value="1.5"/>
+						<Property Name="ReverbTime" Type="Real32" Value="0.5"/>
+						<Property Name="WetLevel" Type="Real32" Value="-30"/>
 					</PropertyList>
 				</Effect>
 				<Effect Name="ListenerConeEQ" ID="{1055158E-9666-4073-AF90-C4597A82DE80}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 					<PropertyList>
 						<Property Name="FilterTypeBand1" Type="int32" Value="5"/>
-						<Property Name="FrequencyBand1" Type="Real32" Value="2067"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="2552.644"/>
 						<Property Name="FrequencyBand3" Type="Real32" Value="582.689"/>
-						<Property Name="GainBand1" Type="Real32" Value="-11"/>
+						<Property Name="GainBand1" Type="Real32" Value="-3.772575"/>
 						<Property Name="GainBand3" Type="Real32" Value="0.15"/>
 					</PropertyList>
 					<ObjectLists>
@@ -44,7 +45,7 @@
 													</Point>
 													<Point>
 														<XPos>180</XPos>
-														<YPos>385.244</YPos>
+														<YPos>2166.3862</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>

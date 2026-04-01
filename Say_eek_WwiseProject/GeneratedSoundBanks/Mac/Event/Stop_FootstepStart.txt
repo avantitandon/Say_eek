@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3495340762	Stop_FootstepStart			\Default Work Unit\Footsteps\Stop_FootstepStart	
+

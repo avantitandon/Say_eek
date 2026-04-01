@@ -20,6 +20,9 @@ public class AudioManager : MonoBehaviour
 
     [Header("World Events")]
         [SerializeField] AK.Wwise.Event playChurchBell;
+        [SerializeField] AK.Wwise.Event playFountain;
+        bool fountainPlaying = false;
+        
 
     [Header("HUD Events")]
         [SerializeField] private AK.Wwise.Event playBossText;
@@ -30,6 +33,8 @@ public class AudioManager : MonoBehaviour
         [SerializeField] private float minMoveThreshold = 0.15f; //minmovement
         [SerializeField] private AK.Wwise.Event playRubbleFootstep;
         [SerializeField] private AK.Wwise.Event playStoneFootstep;
+        [SerializeField] private AK.Wwise.Event playStartFootstep;
+        [SerializeField] private AK.Wwise.Event stopStartFootstep;
         [Header("Footstep Settings")]
         [SerializeField] private float distanceToFeet = 0.5f;
         [SerializeField] private float emitterLifetime = 1f;
@@ -60,6 +65,10 @@ public class AudioManager : MonoBehaviour
 
         [SerializeField] private GameObject beezakaEmitter;
         [SerializeField] private GameObject churchBellEmitter;
+        [SerializeField] private GameObject fountainEmitterFL;
+        [SerializeField] private GameObject fountainEmitterFR;
+        [SerializeField] private GameObject fountainEmitterBL;
+        [SerializeField] private GameObject fountainEmitterBR;
 
 
     [Header("Scene Objects")]
@@ -85,6 +94,7 @@ public class AudioManager : MonoBehaviour
         AkSoundEngine.SetState("TutorialState", "Start");
 
         HandleNPCEvents();
+        HandleFountain();
     }
    void Update()
     {
@@ -140,13 +150,16 @@ public class AudioManager : MonoBehaviour
     }
 
     // CAMERA methods //
-    public void CameraCapture()
+    public void CameraCapture(int score)
     {
         playCameraCapture.Post(player);
+        if (score >= 8)
+        {
+            AkSoundEngine.SetSwitch("HarpSwitch", currentBarSwitch, player);
+            playHarpPlayer.Post(player);
+        }
 
-        // Harp strum w/ switch based on current bar cue
-        AkSoundEngine.SetSwitch("HarpSwitch", currentBarSwitch, player);
-        playHarpPlayer.Post(player);
+        
     }
     public void CameraUp()
     {
@@ -160,15 +173,14 @@ public class AudioManager : MonoBehaviour
     {
         playCameraDown.Post(player);
     }
-
     public void CameraZoomIn()
     {
         playCameraZoomIn.Post(player);
     }
     public void CameraZoomOut()
-{
-    playCameraZoomOut.Post(player);
-}
+    {
+        playCameraZoomOut.Post(player);
+    }
 
 
     // PLAYER Methods //
@@ -180,12 +192,18 @@ public class AudioManager : MonoBehaviour
         if (!isMoving)
         {
             footstepTimer = 0f;
+            stopStartFootstep.Post(player);
             return;
         }
 
         float currentStepInterval = maxSpeedStepInterval / moveAmount;
 
         footstepTimer += Time.deltaTime;
+        if (isMoving)
+        {
+            playStartFootstep.Post(player);
+            
+        }
 
         if (footstepTimer >= currentStepInterval)
         {
@@ -233,6 +251,20 @@ public class AudioManager : MonoBehaviour
     public void PlayChurchbell()
     {
         playChurchBell.Post(churchBellEmitter);
+    }
+    public void HandleFountain()
+    {
+        if (fountainPlaying) return;
+        fountainPlaying = true;
+
+        AkSoundEngine.SetSwitch("FountainPosition", "FL", fountainEmitterFL);
+        playFountain.Post(fountainEmitterFL);
+        AkSoundEngine.SetSwitch("FountainPosition", "FR", fountainEmitterFR);
+        playFountain.Post(fountainEmitterFR);
+        AkSoundEngine.SetSwitch("FountainPosition", "BL", fountainEmitterBL);
+        playFountain.Post(fountainEmitterBL);
+        AkSoundEngine.SetSwitch("FountainPosition", "BR", fountainEmitterBR);
+        playFountain.Post(fountainEmitterBR);
     }
 
 

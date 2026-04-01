@@ -49,8 +49,7 @@ public class PhotoManager : MonoBehaviour
         {
             photoCamera.targetTexture = photoTexture;
         }
-        //ref camer capture method from audio manager
-        audioManager.CameraCapture();
+        
 
         // "take" the photo (writes to rendertexture)
         photoCamera.Render();
@@ -63,6 +62,9 @@ public class PhotoManager : MonoBehaviour
 
         // get the photo's score with raytracing
         int score = ComputeScore();
+
+        //ref camer capture method from audio manager
+        audioManager.CameraCapture(score);
 
         return (score, photo);
     }
