@@ -171,6 +171,8 @@ MonoBehaviour:
   CameraUpOrNot: {fileID: 0}
   BeezakaSeekCamera: 0
   BeezakaTether: {fileID: 0}
+  beezakaportal: {fileID: 0}
+  Beehaviour: 0
 --- !u!114 &1595863585984711819
 MonoBehaviour:
   m_ObjectHideFlags: 0

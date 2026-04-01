@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: -6948337200686737120, guid: be1f95c6aac23aa468720d988207aafe, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -5504893536844069275, guid: c4ff94a6fbc276746a7e4bfb448e954c, type: 3}
     - target: {fileID: -5976856689895969400, guid: be1f95c6aac23aa468720d988207aafe, type: 3}
       propertyPath: m_Layer
       value: 6

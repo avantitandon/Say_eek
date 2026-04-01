@@ -9,7 +9,7 @@ public class beezakaAI : MonoBehaviour
     float CurrentTime = 0;
     public bool IsWaiting = false;
     public Vector3 desiredVelocity;
-    int CurrentPathIndex =-1;
+    public int CurrentPathIndex =-1;
      public NavMeshAgent bzNavMesh { get; private set; }
 
     public NPCPatrol patrolPath;
@@ -30,7 +30,7 @@ public class beezakaAI : MonoBehaviour
     bool BZattending = false;
     
     public int Beehaviour;
-
+    float spawnTime = 0f;
     //private State state;
     void Start()
     {
@@ -54,33 +54,40 @@ private void WhatShouldBeezDo()
 {   
     float velocity = bzNavMesh.velocity.magnitude;
     if (Beehaviour == 2)
-        {   
-            Debug.Log("beezaka start spawning");
-            Vector3 deltaPos = beezakaportal.transform.position - transform.position;
-            float spawnTime = 0f;
-            while (spawnTime < 1.0f)
-            {   
-                Debug.Log("beezaka going up the hellevator");
-                spawnTime += Time.deltaTime;
-                transform.position += deltaPos * Time.deltaTime;
+        {        
+            BZspawning = true;
+            Debug.Log("beezleteleportdebug!!!");
+            if(BZspawning && spawnTime <1.0f)
+            {   Debug.Log("beezaka start spawning");
+                Vector3 deltaPos = beezakaportal.transform.position - transform.position;
                 
-            if (velocity == 0 && (transform.position - beezakaportal.transform.position).magnitude <= 0.1f)
+            
+                while (spawnTime < 1.0f)
                 {   
-                    Debug.Log("beezaka reached her destination");
-                    //BZstate = 1;
-                    //BZspawning = false;
-                    //BZspawned = true;
-                    Beehaviour = 3;
-                    return;
+                    
+                    Debug.Log("beezaka going up the hellevator");
+                    spawnTime += Time.deltaTime;
+                    transform.position += deltaPos * Time.deltaTime;
+                    
+                    if (velocity > 0f)
+                        return;
                 }
-                return;
+                
+            
             }
+            else        
+            {   
+                
+                Beehaviour = 3;
+                BZspawning = false;
+                Debug.Log("beezaka reached her destination");
+            }
+            
         }
 
         //patrol paths here
         if (Beehaviour == 3)
-        {   Debug.Log("truly she is here....");
-
+        {   transform.position = beezakaportal.transform.position;
             if (CameraUpOrNot.CameraUp)
             {
                 BeezakaSeekCamera=true;
@@ -90,24 +97,24 @@ private void WhatShouldBeezDo()
                 BeezakaSeekCamera=false;
             }
 
-        if (BeezakaSeekCamera)
-        {   
-            bzNavMesh.speed = 12; 
-            if ((transform.position-BeezakaTether.transform.position).magnitude > 6)
-            {
-                transform.LookAt(BeezakaTether.transform.position);
-                bzNavMesh.destination = BeezakaTether.transform.position;              
-            }
-            else
-            {
-                
-                if ((transform.position-BeezakaTether.transform.position).magnitude < 1)
+            if (BeezakaSeekCamera)
+            {   
+                bzNavMesh.speed = 12; 
+                if ((transform.position-BeezakaTether.transform.position).magnitude > 6)
                 {
-                    transform.LookAt(player.transform.position);
-                    return;
+                    transform.LookAt(BeezakaTether.transform.position);
+                    bzNavMesh.destination = BeezakaTether.transform.position;              
                 }
-            }
-            return;
+                else
+                {
+                    
+                    if ((transform.position-BeezakaTether.transform.position).magnitude < 1)
+                    {
+                        transform.LookAt(player.transform.position);
+                        return;
+                    }
+                }
+                return;
             }
 
             if (IsWaiting)
@@ -125,22 +132,28 @@ private void WhatShouldBeezDo()
                     return;
                 }
             }
-                    
-
+            Debug.Log("beez is creeping");
+            
             m_PathDestinationNodeIndex = patrolPath.UpdatePathDestination(gameObject.transform, m_PathDestinationNodeIndex);
+
+            Vector3 nextDestination = patrolPath.GetDestinationOnPath(gameObject.transform, m_PathDestinationNodeIndex);
+
+            transform.LookAt(nextDestination);
+
+            SetNavDestination(nextDestination); 
+
+            
+            
             
             if (CurrentPathIndex != m_PathDestinationNodeIndex)
-            {
+            {   
+                Debug.Log("truly she is here....");
                 CurrentPathIndex = m_PathDestinationNodeIndex;
                 IsWaiting = true;
                 CurrentTime = 0;
                 return;
             }
-            Vector3 nextDestination = patrolPath.GetDestinationOnPath(gameObject.transform, m_PathDestinationNodeIndex);
-
-            transform.LookAt(nextDestination);
-
-            SetNavDestination(nextDestination);        
+                   
                     
             
         
