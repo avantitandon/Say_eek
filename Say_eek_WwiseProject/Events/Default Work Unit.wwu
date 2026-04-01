@@ -250,6 +250,38 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_FootstepStart" ID="{7E7D7D54-0AE0-49C0-A9F5-D9B5B0EA0890}">
+							<PropertyList>
+								<Property Name="InstanceLimit" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{6F43A299-40CF-40B2-B523-D7D86713168D}" ShortID="1063628057">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FootstepStart" ID="{05305726-5F3B-452F-BD47-C81F5CB6C30D}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_FootstepStart" ID="{BDDB3EB8-E487-4202-B559-790967B97340}">
+							<ChildrenList>
+								<Action Name="" ID="{614C53CF-993D-4B2F-8D44-76E9FD1FBAAA}" ShortID="240019730">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FootstepStart" ID="{05305726-5F3B-452F-BD47-C81F5CB6C30D}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{505A48C5-78A4-4B7B-9EE8-77DD6629B196}" ShortID="331096648">
@@ -486,6 +518,24 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Churchbell(loop)" ID="{CA8E0AE6-A73E-468C-B724-693012C1017E}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Fountain" ID="{D8529BAE-C24B-4540-A3BA-25956602C35E}">
+							<ChildrenList>
+								<Action Name="" ID="{C9688FF1-A980-4433-84E5-F3C12F5C47B3}" ShortID="126735541">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FountainBase" ID="{31622CA1-BE7A-490A-ADD9-1201BE713003}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4075A417-922C-4659-8047-A37AA1F93F5D}" ShortID="163342602">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FountainBase" ID="{31622CA1-BE7A-490A-ADD9-1201BE713003}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

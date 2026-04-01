@@ -9533,6 +9533,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 22f64705ca14e49a09ea8590c725166d, type: 2}
     - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: playFountain.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: e7051af604c8849888bff0e0b475240e, type: 2}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
       propertyPath: playFootsteps.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: 1500a337bffdd473897ca7c4ed36ff05, type: 2}
@@ -9569,9 +9573,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 0043789aa0e88484e9e1f64ab35ea26d, type: 2}
     - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: playStartFootstep.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: f938872aa38364e44a952a40d6a26b9a, type: 2}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
       propertyPath: playStoneFootstep.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: 1500a337bffdd473897ca7c4ed36ff05, type: 2}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: stopStartFootstep.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: c7a8791c8ba024913b1605653b08b79e, type: 2}
     - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
       propertyPath: playRubbleFootstep.WwiseObjectReference
       value: 

@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{224378E3-4957-4305-8576-F4EB130E563F}",
     "Language": "SFX",
-    "Hash": "{6CA4B5DD-970B-169C-3BF8-120CCD60FECD}",
+    "Hash": "{767E3965-5247-96C9-9B6B-3D6F738739AF}",
     "ObjectPath": "Play_BeezakaFootsteps",
     "ShortName": "Play_BeezakaFootsteps",
     "Path": "Event/Play_BeezakaFootsteps.bnk",
@@ -279,6 +279,6 @@
     ]
    }
   ],
-  "FileHash": "{6EA64456-9F6F-AF9F-A87D-CEC300939BE1}"
+  "FileHash": "{EF2B2E5F-1C0E-AED8-B2D2-F982D0E77B40}"
  }
 }

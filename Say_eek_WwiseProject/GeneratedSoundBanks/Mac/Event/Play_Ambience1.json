@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{94406FF3-99F7-41E5-91D8-8EC64B06C772}",
     "Language": "SFX",
-    "Hash": "{FDBF3600-A44B-2D73-FCAE-31AC8A886BDD}",
+    "Hash": "{FD16EE51-A497-A88E-09F5-0EA50F424BE5}",
     "ObjectPath": "Play_Ambience1",
     "ShortName": "Play_Ambience1",
     "Path": "Event/Play_Ambience1.bnk",
@@ -61,6 +61,6 @@
     ]
    }
   ],
-  "FileHash": "{FD45057E-5483-4297-B5FA-96CF87AF32D1}"
+  "FileHash": "{4532370F-B2F0-A62F-DEF3-624F4FBBAD8F}"
  }
 }

@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3495340762",
+    "Type": "Event",
+    "GUID": "{BDDB3EB8-E487-4202-B559-790967B97340}",
+    "Language": "SFX",
+    "Hash": "{8214E187-2DF9-39A9-C21D-66CB2DE7BF08}",
+    "ObjectPath": "Stop_FootstepStart",
+    "ShortName": "Stop_FootstepStart",
+    "Path": "Event/Stop_FootstepStart.bnk",
+    "Events": [
+     {
+      "Id": "3495340762",
+      "Name": "Stop_FootstepStart",
+      "ObjectPath": "\\Events\\Default Work Unit\\Footsteps\\Stop_FootstepStart",
+      "GUID": "{BDDB3EB8-E487-4202-B559-790967B97340}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{47FD02D2-BCDF-D62C-444D-A8AC9647C49A}"
+ }
+}
