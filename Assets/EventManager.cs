@@ -23,19 +23,21 @@ public class EventManager : MonoBehaviour
     public static event Action GazeboKissing;
 
     public GameObject controllerscript;
-    public float TimeElapsed;
+
     private float time;
+    //these funny booleans are maybe an inelegant solution but theyre just on/off toggles really. should not matter to any other function 
     bool djdom = false;
     bool idol = false;
     bool bhaddie = false;
     bool brides = false;
     bool beezaka = false;
+    bool GameStarted = false;
     
     void Awake()
     {
-        time = Time.time;
+        
         gameController = controllerscript.GetComponent<GameController>();
-        TimeElapsed = Time.time - gameController.roundStartTime;
+        GameController.GAMESTART += StartTimer;
 
     }
     /*private void HandleGame()
@@ -48,47 +50,52 @@ public class EventManager : MonoBehaviour
 
         float time_elapsed = Time.time - gameController.roundStartTime;
     }*/
+    private void StartTimer()
+    {   
+        time = Time.time;
+        GameStarted = true;
+    }   
     void Update()
     
-    {   
-        if (Time.time >= time + 1f && !djdom)
-        {
-            StageDomSolo?.Invoke();
-            Debug.Log("(em)calling  all dj  DOMS!!!!!");
-            djdom = true;
-        }   
-        
-        if (Time.time >= time + 100f && !idol)
-        {
-            //i  dont think EndInvoke works? just make the events last some seconds in their managers idt it matters
-            StagePlusIdol?.Invoke();
-            Debug.Log("(em)IDOL TIME!!!!! HAIIIIII!!!! :333");
-            idol = true;
+    {   if (GameStarted)
+        {   if (Time.time >= time + 1f && !djdom)
+            {
+                StageDomSolo?.Invoke();
+                Debug.Log("(em)calling  all dj  DOMS!!!!!");
+                djdom = true;
+            }   
             
-        }
-        if (Time.time >= time + 200f && !bhaddie)
-        {
-            
-            StagePlusBhaddie?.Invoke();
-            Debug.Log("(em)catch me out side,  how about it?");
-            bhaddie = true;
-            
-        }
-        if (Time.time >= time + 137.5f && !beezaka)
-        {
-            BEEZAKAPOCALYPSENOW?.Invoke();
-            Debug.Log("(em)BEEZAKAPOCALYPSENOW");
-            beezaka = true;
-            
-        }
-        if (Time.time >= time + 250f && !brides)
-        {
-            GazeboKissing?.Invoke();
-            Debug.Log("(em)YURIIIIII");
-            brides = true;
+            if (Time.time >= time + 100f && !idol)
+            {
+                //i  dont think EndInvoke works? just make the events last some seconds in their managers idt it matters
+                StagePlusIdol?.Invoke();
+                Debug.Log("(em)IDOL TIME!!!!! HAIIIIII!!!! :333");
+                idol = true;
+                
+            }
+            if (Time.time >= time + 200f && !bhaddie)
+            {
+                
+                StagePlusBhaddie?.Invoke();
+                Debug.Log("(em)catch me out side,  how about it?");
+                bhaddie = true;
+                
+            }
+            if (Time.time >= time + 137.5f && !beezaka)
+            {
+                BEEZAKAPOCALYPSENOW?.Invoke();
+                Debug.Log("(em)BEEZAKAPOCALYPSENOW");
+                beezaka = true;
+                
+            }
+            if (Time.time >= time + 250f && !brides)
+            {
+                GazeboKissing?.Invoke();
+                Debug.Log("(em)YURIIIIII");
+                brides = true;
+            }
         }
     }
-
     /*private void Update()
     {   
         
