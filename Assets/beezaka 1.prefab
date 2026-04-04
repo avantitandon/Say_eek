@@ -100,10 +100,10 @@ PrefabInstance:
       addedObject: {fileID: 4427761446122660348}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0cf86e1827b7c824b8b42adb1d0a4bc3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 131774604818196937}
+      addedObject: {fileID: 4430517378884826132}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0cf86e1827b7c824b8b42adb1d0a4bc3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4430517378884826132}
+      addedObject: {fileID: 131774604818196937}
   m_SourcePrefab: {fileID: 100100000, guid: 0cf86e1827b7c824b8b42adb1d0a4bc3, type: 3}
 --- !u!1 &180146391459734768 stripped
 GameObject:
@@ -154,18 +154,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
---- !u!114 &131774604818196937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 180146391459734768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6f41f5795f299c47aa5e6a69b813423, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AnimationScript
 --- !u!114 &4430517378884826132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,3 +179,15 @@ MonoBehaviour:
   BeezakaTether: {fileID: 0}
   beezakaportal: {fileID: 0}
   Beehaviour: 0
+--- !u!114 &131774604818196937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180146391459734768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f41f5795f299c47aa5e6a69b813423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationScript
