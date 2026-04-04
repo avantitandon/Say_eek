@@ -18,7 +18,7 @@ public class BeezakaManager : MonoBehaviour
     float spawnTime = 0f;
     public GameObject beezakaportal;
     float velocity;
-    public GameObject beezaka;
+    
     
     private int whatDIDbeezdo;
     void Start()
@@ -47,7 +47,7 @@ public class BeezakaManager : MonoBehaviour
             case WhatShouldBeezDo.Spawning:
                     Debug.Log("beezaka start spawning");
                 //while (whatShouldBeezDo == WhatShouldBeezDo.Spawning)
-                    beezaka.transform.position = beezakaportal.transform.position;
+                    //beezaka.transform.position = beezakaportal.transform.position;
                     whatShouldBeezDo  =  WhatShouldBeezDo.Creeping;
                 break;/*
                     

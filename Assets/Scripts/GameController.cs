@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using System;
 
 using System.Collections.Generic;
 
@@ -77,6 +78,8 @@ public class GameController : MonoBehaviour
 
     // sorry about messing up your flow martin, will clean up the code later!! want it working for the tut
     // Tutorial  code starts here
+
+    public static event Action GAMESTART;
 
 
     public enum TutorialStep
@@ -332,13 +335,15 @@ public class GameController : MonoBehaviour
 
 
     private void StartGame()
-    {
+    {   
+        
         gameState = State.Active;
         roundStartTime = Time.time;
         playerController.ResetState();
         playerController.SetGameplayInputEnabled(true);
         hudManager.SetPictureBossTextEnabled(true);
         Debug.Log("GameController: tutorial finished, gameplay enabled.");
+        GAMESTART?.Invoke();
     }
 
     private void StartEndSequence()

@@ -12,5 +12,6 @@ public class GazeboManager : MonoBehaviour
     private void BridesKissing()
     {
         Debug.Log("(em)(gazebo)Brides  are  kissing!!!!");
+        
     }
 }
