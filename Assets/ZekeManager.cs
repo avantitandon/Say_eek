@@ -101,11 +101,13 @@ public class ZekeManager : MonoBehaviour
             if (whatShouldZekeDo == WhatShouldZekeDo.Panic)
             {
                 Debug.Log("AHHHHHHHHH");
+                whatDIDzekedo = (int)whatShouldZekeDo;
             }
 
             if (whatShouldZekeDo == WhatShouldZekeDo.GOTOSPECIALSPOT)
             {
                 Debug.Log("GOGOGOGOGOGOGOGOGO");
+                whatDIDzekedo = (int)whatShouldZekeDo;
             }
             Z2Zcommunication();
         }
@@ -181,7 +183,7 @@ public class ZekeManager : MonoBehaviour
         Debug.Log("IDOL!!! THIS WAY!!!!");
         whatShouldZekeDo = WhatShouldZekeDo.SeekPlayer;
         EventLocation = new Vector3(stagelocation.position.x, stagelocation.position.y, stagelocation.position.z);
-        GoToDom = false;
+        
         
     }
     private void AnnounceBhaddie()
@@ -189,7 +191,7 @@ public class ZekeManager : MonoBehaviour
         Debug.Log("BHADDIE!!! THIS WAY!!!!!");
         whatShouldZekeDo = WhatShouldZekeDo.SeekPlayer;
         EventLocation = new Vector3(stagelocation.position.x, stagelocation.position.y, stagelocation.position.z);
-        GoToDom = false;
+        
         
     }
     
@@ -199,7 +201,7 @@ public class ZekeManager : MonoBehaviour
         
         EventLocation= new Vector3(SPECIAL_SPOT.position.x, SPECIAL_SPOT.position.y, SPECIAL_SPOT.position.z);
         whatShouldZekeDo = WhatShouldZekeDo.GOTOSPECIALSPOT;
-        GoToDom = false;
+        
 
         
         
