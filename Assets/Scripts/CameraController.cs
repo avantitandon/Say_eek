@@ -71,7 +71,11 @@ public class CameraController : MonoBehaviour
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, minY, maxY);
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0f);
-        transform.position = playerPosition + Vector3.up * CAM_HEIGHT_FROM_PLAYER;
+
+        // newpos
+        // take x and y of player, but keep height of camera from editor
+        // Vector3 newpos = new Vector3(playerPosition.x, playerPosition.y, transform.position.z);
+        // transform.position = newpos;
     }
 
     // call every frame to hold the camera up
