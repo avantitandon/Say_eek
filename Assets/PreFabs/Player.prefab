@@ -255,6 +255,8 @@ MonoBehaviour:
   stickerOverlayController: {fileID: 4038024817165189495}
   bossTextController: {fileID: 0}
   pictureBossTextController: {fileID: 0}
+  incomingCallPrompt: {fileID: 0}
+  incomingCallPromptShake: {fileID: 0}
   pictureBossMessageDuration: 1.5
   pictureBossTextEnabled: 1
 --- !u!1 &3307369355531649007
@@ -410,7 +412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6994138588148163104, guid: 3e05f9c879dbdc3468c991d0aa2aaba2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 6994138588148163104, guid: 3e05f9c879dbdc3468c991d0aa2aaba2, type: 3}
       propertyPath: m_LocalPosition.z
