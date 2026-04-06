@@ -106,15 +106,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "EnableGame",
-                    "type": "Button",
-                    "id": "8928b991-0a9c-47fa-9983-bcb53675bd32",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "ToggleCamera",
                     "type": "Button",
                     "id": "7b40566f-1323-4539-ac80-75d10cdec75b",
@@ -531,7 +522,7 @@
                 {
                     "name": "",
                     "id": "46eb0c1f-a34b-4f7c-8b25-65ca6567fc2e",
-                    "path": "<Gamepad>/buttonSouth",
+                    "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
@@ -574,28 +565,6 @@
                 },
                 {
                     "name": "",
-                    "id": "2e6ef6e2-7a53-4e69-ae2f-97b0a095fc48",
-                    "path": "<Keyboard>/r",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "EnableGame",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "c5f900f7-bca3-4145-bfc4-ffd251ceb589",
-                    "path": "<Gamepad>/buttonEast",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Gamepad",
-                    "action": "EnableGame",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "813340f2-69ca-454b-a1c0-cf6c65e8b1f6",
                     "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
@@ -630,7 +599,7 @@
                 {
                     "name": "",
                     "id": "8e86cddf-9065-4dec-a211-c23c7ef3c27e",
-                    "path": "<Gamepad>/dpad/left",
+                    "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
