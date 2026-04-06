@@ -11,6 +11,7 @@ public class Zeehaviours : MonoBehaviour
     public static event Action PanicHorn;
     public static event Action SPECIALHORN;
     public static event Action overHERE;
+    public static event Action WelcomeHorn;
     public Transform player;
     public Transform ZekeTether;
 
@@ -24,6 +25,10 @@ public class Zeehaviours : MonoBehaviour
     public int zekeisdoing;
     float distancetoplayer;
     int whatwaszekedoing;
+    float zeketimer;
+    bool welcome =  false;
+    float zeketurn;
+    public bool Waving = false;
 //1. find player
 //2. found player
 //3. find event
@@ -71,9 +76,14 @@ public class Zeehaviours : MonoBehaviour
     public void UnleashZeke()
     {
         GameStarted = true;
+        transform.LookAt(player.transform.position);
+        
+        WelcomeHorn?.Invoke();
     }
     public void WhatIsZekeDoing()
-    {
+    {   
+        //if (zekeisdoing == 1)
+        
         
         if (zekeisdoing == 2)
         {   Debug.Log("checkingforplayerposition");
@@ -85,22 +95,42 @@ public class Zeehaviours : MonoBehaviour
             if (FoundPlayer)
             {
                 transform.LookAt(player.transform.position);
-                BlowLittleHorn?.Invoke();
+                //zekeNavMesh.isStopped = true;
+                //zeketimer = Time.time;
+                //if (Time.time ==zeketimer + 3.5f)
+                {
+                    //zekeNavMesh.isStopped = false;
+                }
             }
+            
         }
         if (zekeisdoing ==3)
         {
             Debug.Log("little horn brrt!!!");
             transform.LookAt(player.transform.position);
             BlowLittleHorn?.Invoke();
-            
+            //zekeNavMesh.isStopped = true;
             FindEvent();
+            //zeketimer = Time.time;
+                //if (Time.time == zeketimer + 3.5f)
+                {
+                    //zekeNavMesh.isStopped = false;
+                }   
             
         }    
         if (zekeisdoing == 4)
         {
             overHERE?.Invoke();
             transform.LookAt(player.transform.position);
+            //zekeNavMesh.isStopped = true;
+            Waving = true;
+            zeketimer = Time.time;
+                if (Time.time == zeketimer + 6f)
+                {
+                    //zekeNavMesh.isStopped = false;
+                    Waving = false;
+                }
+            
 
         }
         if (zekeisdoing == 5)
@@ -115,9 +145,15 @@ public class Zeehaviours : MonoBehaviour
                     transform.LookAt(player.transform.position);
                     SPECIALHORN?.Invoke();
                     FindEvent();
-                    return;
+                    //zeketimer = Time.time;
+                    //zekeNavMesh.isStopped = true;
+                    //if (Time.time == zeketimer + 4f)
+                    {
+                        
+                        //zekeNavMesh.isStopped = false;
+                    }
                 }
-                return;
+                //return;
             }
             
         if (zekeisdoing == 6)
@@ -125,7 +161,7 @@ public class Zeehaviours : MonoBehaviour
             transform.LookAt(player.transform.position);
             PanicHorn?.Invoke();
             
-            return;
+            //return;
         }
     }
     void Update()
@@ -149,7 +185,7 @@ public class Zeehaviours : MonoBehaviour
                     transform.LookAt(player.transform.position);
                     
                     FoundPlayer = true;
-                    
+                    WhatIsZekeDoing();
                 }
                 else
                 {   
@@ -157,7 +193,7 @@ public class Zeehaviours : MonoBehaviour
                     FoundPlayer = false;
                 }
                 WhatIsZekeDoing();
-                }
+            }
             if (zekeisdoing == 5)
             {  
                 if (distancetoplayer < 10)
@@ -166,7 +202,7 @@ public class Zeehaviours : MonoBehaviour
                     transform.LookAt(player.transform.position);
                     
                     FoundPlayer = true;
-                    
+                    WhatIsZekeDoing();
                 }
                 else
                 {   
@@ -180,7 +216,7 @@ public class Zeehaviours : MonoBehaviour
                 WhatIsZekeDoing();
                 whatwaszekedoing = zekeisdoing;
             }
-        }    
+        } 
     }
    
    //i think it  would be neat if all of zeehaviours' switch cases triggered functions instead...
@@ -190,19 +226,28 @@ public class Zeehaviours : MonoBehaviour
         Debug.Log("lookingforplayer");
         
         zekeNavMesh.destination = ZekeTether.transform.position;
+        WhatIsZekeDoing();
     }
     private void FindEvent()
     {
         //find the location of the current event
 
-        
+        atEvent =  false;
         zekeNavMesh.destination = goherezeke;
         if (atEvent)
         {
             transform.LookAt(player.transform.position);
             BlowBigHorn?.Invoke();
+            WhatIsZekeDoing();
+            //zekeNavMesh.isStopped = true;
+            //zeketimer = Time.time;
+                //if (Time.time == zeketimer + 3.5f)
+                {
+                    //zekeNavMesh.isStopped = false;
+                }
             return;   
         }
+        //if
         
             //REMEMBER to make the OVERHERE!! animation play after the horn animations (not the beezaka one) play 
            

@@ -58,7 +58,7 @@ public class ZekeManager : MonoBehaviour
             Z2Zcommunication();
         }
         //checking if Zeke is currently chilling and  if he is close to the player
-        if (whatShouldZekeDo == WhatShouldZekeDo.ChillOut && (zeke.transform.position - player.transform.position).magnitude < 10f)
+        if (whatShouldZekeDo == WhatShouldZekeDo.ChillOut && (zeke.transform.position - player.transform.position).magnitude < 10f)// || //(whatShouldZekeDo == WhatShouldZekeDo.WaitStart && (zeke.transform.position - player.transform.position).magnitude < 10f))
         {   
             //checking for if its dom time and then if not check for state change
             
@@ -70,12 +70,12 @@ public class ZekeManager : MonoBehaviour
                 whatDIDzekedo = (int)whatShouldZekeDo;
                 GoToDom = false;
             }
-            else if ((int)whatShouldZekeDo != whatDIDzekedo)
-            {
+            //else if ((int)whatShouldZekeDo != whatDIDzekedo)
+            //{
                 
-                whatDIDzekedo = (int)whatShouldZekeDo;
-            }
-            else if ((int)whatShouldZekeDo == whatDIDzekedo)
+              //  whatDIDzekedo = (int)whatShouldZekeDo;
+            //}
+            else if (whatShouldZekeDo == WhatShouldZekeDo.ChillOut)
             {
                 whatShouldZekeDo = WhatShouldZekeDo.ChillOut;
             }
@@ -107,6 +107,7 @@ public class ZekeManager : MonoBehaviour
             if (whatShouldZekeDo == WhatShouldZekeDo.GOTOSPECIALSPOT)
             {
                 Debug.Log("GOGOGOGOGOGOGOGOGO");
+                EventLocation = new Vector3(SPECIAL_SPOT.position.x, SPECIAL_SPOT.position.y, SPECIAL_SPOT.position.z);
                 whatDIDzekedo = (int)whatShouldZekeDo;
             }
             Z2Zcommunication();

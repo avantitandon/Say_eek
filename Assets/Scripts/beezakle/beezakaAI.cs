@@ -27,7 +27,7 @@ public class beezakaAI : MonoBehaviour
     //bools for  controlling what  beezaka is doing and in what order
     bool BZspawning = false;
     bool BZspawned = false;
-    bool BZattending = false;
+    //bool BZattending = false;
     
     public int Beehaviour;
     float spawnTime = 0f;

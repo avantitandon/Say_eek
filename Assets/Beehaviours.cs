@@ -23,11 +23,11 @@ public class Beehaviours : MonoBehaviour
 
     //bools for  controlling what  beezaka is doing and in what order
     bool BZspawning = false;
-    bool BZspawned = false;
-    bool BZattending = false;
+    //bool BZspawned = false;
+    //bool BZattending = false;
     
     public int Beehaviour;
-    float spawnTime = 0f;
+    //float spawnTime = 0f;
     private bool IsCreeping = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

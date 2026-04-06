@@ -4,7 +4,7 @@ using UnityEngine.AI;
 public class WaitressMovement : MonoBehaviour
 {
     float period = 6;
-    float CurrentTime = 0;
+    //float CurrentTime = 0;
     public bool IsWaiting = false;
     public Vector3 desiredVelocity;
     int CurrentPathIndex =-1;
