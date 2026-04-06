@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 119850656}
   - component: {fileID: 119850655}
   m_Layer: 5
-  m_Name: Button
+  m_Name: CloseCredits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -276,7 +276,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 119850656}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1077969746}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: CloseCredits
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &119850656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -332,7 +344,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &146194102
 RectTransform:
   m_ObjectHideFlags: 0
@@ -373,7 +385,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: da13d8591e01c2c46a6b2650b014eb4d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 338494c163e72614f80e0e8a1e46a358, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1142,6 +1154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c0703b650823146bd31d2507acde8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
+  CreditsPopup: {fileID: 146194101}
 --- !u!4 &1077969747
 Transform:
   m_ObjectHideFlags: 0
@@ -1307,7 +1320,7 @@ GameObject:
   - component: {fileID: 1730117091}
   - component: {fileID: 1730117090}
   m_Layer: 5
-  m_Name: CreditsButton
+  m_Name: OpenCredits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1376,7 +1389,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1730117091}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1077969746}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: OpenCredits
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1730117091
 MonoBehaviour:
   m_ObjectHideFlags: 0
