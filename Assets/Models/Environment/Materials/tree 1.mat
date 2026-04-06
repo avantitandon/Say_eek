@@ -8,13 +8,11 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: tree 1
-  m_Shader: {fileID: -6465566751694194690, guid: 7d18586ae6af9984983e51a05c3a1c95, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 054b4c6e4f4bdf5478190df68d033a18, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
-  m_InvalidKeywords:
-  - _EMISSION
-  - _RECEIVE_SHADOWS_OFF
+  m_InvalidKeywords: []
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
@@ -118,6 +116,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_035ec80e4ce4482db779c67889dbf4b2_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: e852827610fe467438670fd578eeb058, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_409ab9867f73413c9680f7ffb4a9eada_Texture_1_Texture2D:
         m_Texture: {fileID: 2800000, guid: f16f453f22c6818488c3c96797fa3612, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -127,7 +129,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_fc22347cc94740c4bbeea23454555c34_Texture_1_Texture2D:
-        m_Texture: {fileID: 2800000, guid: d8a5e8a2e4cee0749a8709b8815221b8, type: 3}
+        m_Texture: {fileID: 2800000, guid: 30f09bec93ab84947a85cb82665bb1c7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
