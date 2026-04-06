@@ -27,4 +27,21 @@ public class NPCAnimationAudio : MonoBehaviour
         //this is calling the method IF there is an animator needed for the animation state 
         audioManager.HandleFootstep(this.gameObject, currentAnimation);
     }
+    public void ZekeHorn()
+    {
+        if (animator == null) 
+        {
+            Debug.Log("Animator is null for NPCAnimationAudio");
+            return;
+        }
+        string currentZekeAnimation = "";
+
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Zeke Welcome")) 
+        {
+            currentZekeAnimation = "Zeke Horn";
+        }
+        
+
+        audioManager.HandleZekeHorn(this.gameObject, currentZekeAnimation);
+    }
 }

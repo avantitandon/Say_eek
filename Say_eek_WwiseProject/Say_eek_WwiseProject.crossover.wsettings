@@ -173,7 +173,7 @@
 						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
-				<Property Name="SoundEngine\BusMapping\{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" Type="string" Value="{A6C6932E-39AB-4F8B-A959-16DD11FCB7B6}403187535"/>
+				<Property Name="SoundEngine\BusMapping\{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" Type="string" Value="{A6C6932E-39AB-4F8B-A959-16DD11FCB7B6}1714109656"/>
 				<Property Name="SwitchContainerEditorLocation\{31622CA1-BE7A-490A-ADD9-1201BE713003}\x64_Collapsed States" Type="string" Value=""/>
 				<Property Name="SwitchContainerEditorLocation\{672C4BFF-B62F-4320-9012-A2652007BDAA}\x64_Collapsed States" Type="string" Value=""/>
 				<Property Name="SwitchContainerEditorLocation\{734A667A-7F9B-4C64-989A-C8815FDF8332}\x64_Collapsed States" Type="string" Value=""/>
