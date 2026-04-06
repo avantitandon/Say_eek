@@ -44,6 +44,8 @@ public class PhotoSelectionController : MonoBehaviour
 
     private int totalPhotos;
 
+    private int targetPhotoCount;
+
     // photo ids are 0 through the max in the 
     private int currPhotoId;
     // list of integers of selected photos
@@ -62,7 +64,7 @@ public class PhotoSelectionController : MonoBehaviour
 
     public bool attemptSubmit(bool submitInput)
     {
-        return submitInput && (selectedCount == FEATURED_COUNT);
+        return submitInput && (selectedCount == targetPhotoCount);
     }
 
     public List<int> getFeaturedIds()
@@ -84,6 +86,7 @@ public class PhotoSelectionController : MonoBehaviour
 
         // get how many photos were taken
         totalPhotos = gamePhotos.Count;
+        targetPhotoCount = Math.Min(totalPhotos, FEATURED_COUNT);
 
         selectedPhotos = new List<int>();
         // set current selected photo
@@ -102,12 +105,12 @@ public class PhotoSelectionController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        countText.text = string.Concat(selectedCount, "/", FEATURED_COUNT, " Photos Selected");
+        countText.text = string.Concat(selectedCount, "/", targetPhotoCount, " Photos Selected");
 
         setBigPhotoPreview(currPhotoId);
 
 
-        if (selectedCount == FEATURED_COUNT)
+        if (selectedCount == targetPhotoCount)
         {
             sendButton.transform.Find("SendActive").gameObject.SetActive(true);
         }
@@ -183,7 +186,7 @@ public class PhotoSelectionController : MonoBehaviour
     public void selectCurrentPhoto()
     {   
         // can't select the current photo if it is currently selected or we are at max
-        if (selectedPhotos.Contains(currPhotoId) || selectedCount >= FEATURED_COUNT)
+        if (selectedPhotos.Contains(currPhotoId) || selectedCount >= targetPhotoCount)
         {
             return;
         }
