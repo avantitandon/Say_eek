@@ -6849,59 +6849,9 @@
 				</Folder>
 				<Folder Name="NPC Sounds" ID="{ADAF70B0-591C-4BBE-8658-75C8D6936198}" ShortID="643747334">
 					<ChildrenList>
-						<RandomSequenceContainer Name="Beezaka Laughing" ID="{2C07D402-1152-4E5F-AB15-1ED72AFD5702}" ShortID="151110948">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="InitialDelay" Type="Real64">
-									<ValueList>
-										<Value>2</Value>
-									</ValueList>
-								</Property>
-								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4.5">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{6DBFDAFB-4BCF-46E8-BA0C-42C34E0143C6}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="1"/>
-													<Property Name="Min" Type="Real64" Value="-2"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>2</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="NPC" ID="{4980D69D-782B-4A83-B337-2655A5FCEC29}" WorkUnitID="{0BD5C11C-5A4F-4B2F-8189-2638B122898F}"/>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-								</Reference>
-							</ReferenceList>
+						<Folder Name="Zeke" ID="{2AC4A81D-835C-4384-B5E7-945DD09156DB}" ShortID="633553816">
 							<ChildrenList>
-								<Sound Name="Bounce 22 Witch Laughs (Bounce) [2026-03-26 142920]-1" ID="{9D053A75-9AAA-41D8-AA10-046C2662F544}" ShortID="562441563">
-									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>80</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
+								<RandomSequenceContainer Name="ZekeHornBig" ID="{FE3AD8EE-4048-41EA-91B8-3EC25C3FF24F}" ShortID="207268819">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
@@ -6911,31 +6861,263 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Bounce 22 Witch Laughs (Bounce) [2026-03-26 142920]-1" ID="{A138C215-75E6-47F9-9613-36FE1605507C}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.134253952548956"/>
-												<Property Name="LoopBegin" Type="Real64" Value="0"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
+										<Sound Name="sfx_zeke_horn_big_01" ID="{1CAB76C6-C6EB-4034-9BBA-636A3196D78F}" ShortID="603042711">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_zeke_horn_big_01" ID="{DA03F674-412E-459C-8B17-2479C95962CF}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_zeke_horn_big_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="395338863"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_zeke_horn_big_01" ID="{DA03F674-412E-459C-8B17-2479C95962CF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_zeke_horn_big_02" ID="{DE3A6FAF-1318-4A84-889F-648FD1A3C571}" ShortID="796486805">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_zeke_horn_big_02" ID="{CCFFBC7F-2587-40B9-BB66-ECA8AF13D2C7}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_zeke_horn_big_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="589065798"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_zeke_horn_big_02" ID="{CCFFBC7F-2587-40B9-BB66-ECA8AF13D2C7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_zeke_horn_big_03" ID="{B55BB02E-6438-4EF7-8F82-6DF4D7049108}" ShortID="1060671912">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_zeke_horn_big_03" ID="{73AF67E7-C75A-4C9C-994C-0114371D91EB}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_zeke_horn_big_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="173141080"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_zeke_horn_big_03" ID="{73AF67E7-C75A-4C9C-994C-0114371D91EB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_zeke_horn_big_04" ID="{77DF8155-46A5-43D4-B647-2922031A4EFB}" ShortID="835162593">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_zeke_horn_big_04" ID="{B589231F-8839-4A6D-A86C-27F091390DC1}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_zeke_horn_big_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="12755166"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_zeke_horn_big_04" ID="{B589231F-8839-4A6D-A86C-27F091390DC1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="ZekeHornSmall" ID="{BFA26F80-FE5A-4F45-B323-8F5FC9CDA956}" ShortID="941850878">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_zeke_horn_small_01" ID="{A414E54B-CB44-4635-ACF7-8159E2A1E25F}" ShortID="753670915">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_zeke_horn_small_01" ID="{2AD3E05D-6D19-4127-9E1B-F49ED58806E1}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_zeke_horn_small_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="876932269"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_zeke_horn_small_01" ID="{2AD3E05D-6D19-4127-9E1B-F49ED58806E1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_zeke_horn_small_02" ID="{3BD6AF1F-7907-4FD1-B038-E8CC26858294}" ShortID="413779631">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_zeke_horn_small_02" ID="{C871D471-4422-48A1-9A09-5039A066D958}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_zeke_horn_small_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="543321894"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_zeke_horn_small_02" ID="{C871D471-4422-48A1-9A09-5039A066D958}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_zeke_horn_small_03" ID="{77C857E5-CF19-4099-92B1-EEB1DCE177FF}" ShortID="388751214">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_zeke_horn_small_03" ID="{39067725-558F-4480-8BF3-494076986B53}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_zeke_horn_small_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="494652532"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_zeke_horn_small_03" ID="{39067725-558F-4480-8BF3-494076986B53}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_zeke_horn_small_04" ID="{027DB1F7-C91D-4D78-A7DB-804890FF7F02}" ShortID="587414348">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_zeke_horn_small_04" ID="{926AF2AB-54B8-4F7D-BE2E-2C339A5FFAAC}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_zeke_horn_small_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="898267996"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_zeke_horn_small_04" ID="{926AF2AB-54B8-4F7D-BE2E-2C339A5FFAAC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_zeke_horn_small_05" ID="{62E777E6-2403-4D6B-AC94-CFE0AD0B649F}" ShortID="244402310">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_zeke_horn_small_05" ID="{FD73D1AE-A66E-4893-9CE7-1951F7FDAA08}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_zeke_horn_small_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="203460267"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_zeke_horn_small_05" ID="{FD73D1AE-A66E-4893-9CE7-1951F7FDAA08}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_zeke_horn_small_06" ID="{FB8B61E1-01F6-42F0-A0E0-CCBBB039FE67}" ShortID="713944721">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_zeke_horn_small_06" ID="{744DED08-0466-4A53-8D0A-A3EC79A4736B}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_zeke_horn_small_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="631298704"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_zeke_horn_small_06" ID="{744DED08-0466-4A53-8D0A-A3EC79A4736B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="sfx_zeke_horn_flyingAway" ID="{520C4729-D0E4-4E08-9BD7-1F11524943A7}" ShortID="81071170">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_zeke_horn_flyingAway" ID="{D3122897-91CD-48C7-BB93-040552BF9E2C}">
 											<Language>SFX</Language>
-											<AudioFile>Bounce 22 Witch Laughs (Bounce) [2026-03-26 142920]-1.wav</AudioFile>
+											<AudioFile>sfx_zeke_horn_flyingAway.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="349053971"/>
+												<MediaID ID="707098202"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Bounce 22 Witch Laughs (Bounce) [2026-03-26 142920]-1" ID="{A138C215-75E6-47F9-9613-36FE1605507C}" Platform="Linked"/>
+										<ActiveSource Name="sfx_zeke_horn_flyingAway" ID="{D3122897-91CD-48C7-BB93-040552BF9E2C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Bounce 22 Witch Laughs (Bounce) [2026-03-26 142921]-1" ID="{BE7A100F-ECDA-450B-83D3-2818F448AC53}" ShortID="368873580">
-									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>150</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
+								<Sound Name="sfx_zeke_horn_panic" ID="{99C42E01-848F-49E2-9A2F-117657CEAD62}" ShortID="326655131">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
@@ -6945,31 +7127,19 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Bounce 22 Witch Laughs (Bounce) [2026-03-26 142921]-1" ID="{A0052E9E-F0AB-482F-BB7E-9ADEA7430662}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.133839598850909"/>
-												<Property Name="LoopBegin" Type="Real64" Value="0"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
+										<AudioFileSource Name="sfx_zeke_horn_panic" ID="{EDEAFDA1-2809-4C37-B8B9-460FAE8529CB}">
 											<Language>SFX</Language>
-											<AudioFile>Bounce 22 Witch Laughs (Bounce) [2026-03-26 142921]-1.wav</AudioFile>
+											<AudioFile>sfx_zeke_horn_panic.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="772329582"/>
+												<MediaID ID="411014615"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Bounce 22 Witch Laughs (Bounce) [2026-03-26 142921]-1" ID="{A0052E9E-F0AB-482F-BB7E-9ADEA7430662}" Platform="Linked"/>
+										<ActiveSource Name="sfx_zeke_horn_panic" ID="{EDEAFDA1-2809-4C37-B8B9-460FAE8529CB}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Bounce 22 Witch Laughs (Bounce) [2026-03-26 142923]-1" ID="{BA6D719A-144B-406A-845C-52B5D7F89EB2}" ShortID="893039697">
-									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
+								<Sound Name="sfx_zeke_horn_welcome" ID="{5C89A4C4-5035-49D2-AF29-5E2401CA5718}" ShortID="510012357">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
@@ -6979,294 +7149,1109 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Bounce 22 Witch Laughs (Bounce) [2026-03-26 142923]-1" ID="{DA2550EF-046D-4FC3-97BC-59BB9FCCAD5A}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.180223884104666"/>
-												<Property Name="LoopBegin" Type="Real64" Value="0"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
+										<AudioFileSource Name="sfx_zeke_horn_welcome" ID="{2AF49F57-9D5D-4448-BB26-6BC57EF1B32F}">
 											<Language>SFX</Language>
-											<AudioFile>Bounce 22 Witch Laughs (Bounce) [2026-03-26 142923]-1.wav</AudioFile>
+											<AudioFile>sfx_zeke_horn_welcome.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="873477946"/>
+												<MediaID ID="672805524"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Bounce 22 Witch Laughs (Bounce) [2026-03-26 142923]-1" ID="{DA2550EF-046D-4FC3-97BC-59BB9FCCAD5A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Bounce 23 Witch Laughs (Bounce) [2026-03-26 142915]-1" ID="{CABFE303-D3F0-421D-ADBF-6C6FE59F939B}" ShortID="677437082">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>20</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Bounce 23 Witch Laughs (Bounce) [2026-03-26 142915]-1" ID="{0B4B58E4-B19F-434D-A89B-AE50DEA00B60}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.164774115660043"/>
-												<Property Name="LoopBegin" Type="Real64" Value="0"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Bounce 23 Witch Laughs (Bounce) [2026-03-26 142915]-1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="133179455"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Bounce 23 Witch Laughs (Bounce) [2026-03-26 142915]-1" ID="{0B4B58E4-B19F-434D-A89B-AE50DEA00B60}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Bounce 23 Witch Laughs (Bounce) [2026-03-26 142917]-1" ID="{8FD10E6C-5DA2-489D-BF1B-77D7876B6B19}" ShortID="266772370">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>10</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Bounce 23 Witch Laughs (Bounce) [2026-03-26 142917]-1" ID="{9472B252-66C5-43FA-A6B2-2D7A51AB5950}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.113648941267782"/>
-												<Property Name="LoopBegin" Type="Real64" Value="0"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Bounce 23 Witch Laughs (Bounce) [2026-03-26 142917]-1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="704645238"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Bounce 23 Witch Laughs (Bounce) [2026-03-26 142917]-1" ID="{9472B252-66C5-43FA-A6B2-2D7A51AB5950}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Bounce 23 Witch Laughs (Bounce) [2026-03-26 142918]-1" ID="{0C59B4DC-B1F7-4F13-A8F8-D5F55D7336A0}" ShortID="857251788">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>15</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Bounce 23 Witch Laughs (Bounce) [2026-03-26 142918]-1" ID="{1B9B4036-8AD0-4BFF-9F41-4471A605374D}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.0810295869546658"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Bounce 23 Witch Laughs (Bounce) [2026-03-26 142918]-1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="280573758"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Bounce 23 Witch Laughs (Bounce) [2026-03-26 142918]-1" ID="{1B9B4036-8AD0-4BFF-9F41-4471A605374D}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Bounce 18 Witch Laughs (Bounce) [2026-03-26 142909]-1" ID="{488C289E-E3F7-4480-AD40-3EB566CE3651}" ShortID="830457144">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Bounce 18 Witch Laughs (Bounce) [2026-03-26 142909]-1" ID="{4D8D0F7F-BDE7-4A93-87FA-02C31B03CD0A}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.232114421787547"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Bounce 18 Witch Laughs (Bounce) [2026-03-26 142909]-1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="224652438"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Bounce 18 Witch Laughs (Bounce) [2026-03-26 142909]-1" ID="{4D8D0F7F-BDE7-4A93-87FA-02C31B03CD0A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Bounce 18 Witch Laughs (Bounce) [2026-03-26 142911]-1" ID="{356FBD2D-03CF-411C-86DF-4C28EC0551AF}" ShortID="403552645">
-									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Bounce 18 Witch Laughs (Bounce) [2026-03-26 142911]-1" ID="{BC8EACAE-E01F-4827-96C1-9FB75058D406}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.385371614620884"/>
-												<Property Name="LoopBegin" Type="Real64" Value="0"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Bounce 18 Witch Laughs (Bounce) [2026-03-26 142911]-1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="191526671"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Bounce 18 Witch Laughs (Bounce) [2026-03-26 142911]-1" ID="{BC8EACAE-E01F-4827-96C1-9FB75058D406}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Bounce 18 Witch Laughs (Bounce) [2026-03-26 142912]-1" ID="{64F69B6D-0F89-4599-8FF5-A16308EA36B8}" ShortID="780802222">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Bounce 18 Witch Laughs (Bounce) [2026-03-26 142912]-1" ID="{63E0BC05-5D82-41F4-A229-F3F4A1E0AF47}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.251998931868498"/>
-												<Property Name="LoopBegin" Type="Real64" Value="0"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>Bounce 18 Witch Laughs (Bounce) [2026-03-26 142912]-1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="656781149"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Bounce 18 Witch Laughs (Bounce) [2026-03-26 142912]-1" ID="{63E0BC05-5D82-41F4-A229-F3F4A1E0AF47}" Platform="Linked"/>
+										<ActiveSource Name="sfx_zeke_horn_welcome" ID="{2AF49F57-9D5D-4448-BB26-6BC57EF1B32F}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
-							<PositioningInfo>
-								<Panner Name="" ID="{E93ABDF8-45C6-47E2-ABDE-B1DD809165EB}"/>
-							</PositioningInfo>
-							<ObjectLists>
-								<ObjectList Name="Effects">
-									<EffectSlot Name="" ID="{0D0B0CAB-7766-4833-81EA-5BE58E502B37}" ShortID="496620969">
-										<ReferenceList>
-											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-												<ObjectRef Name="Boost_3dB_100Hz" ID="{3EA7C9BD-6F9A-4000-A227-F86B5B4328EE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-											</Reference>
-										</ReferenceList>
-									</EffectSlot>
-									<EffectSlot Name="" ID="{4750FBAE-A5EC-4812-B73E-368A5BA45442}" ShortID="955388635">
-										<ReferenceList>
-											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-												<ObjectRef Name="ListenerConeEQ" ID="{1055158E-9666-4073-AF90-C4597A82DE80}" WorkUnitID="{1F5F240F-C21F-4A6B-A2EE-98372BFF171C}"/>
-											</Reference>
-										</ReferenceList>
-									</EffectSlot>
-								</ObjectList>
-								<ObjectList Name="RTPC">
-									<RTPC Name="" ID="{92534EC0-3A90-4287-ADDF-42536F7D3FEC}" ShortID="807440544">
-										<PropertyList>
-											<Property Name="PropertyName" Type="string" Value="MakeUpGain"/>
-										</PropertyList>
-										<ReferenceList>
-											<Reference Name="ControlInput">
-												<ObjectRef Name="ListenerCone" ID="{BF03D322-83B3-4F06-A541-BF82DDE4E736}" WorkUnitID="{802E5EDB-ADCF-44E6-915D-2040187550B2}"/>
-											</Reference>
-											<Reference Name="Curve">
-												<Custom>
-													<Curve Name="" ID="{A5886DDA-C9BF-4EB7-809B-98B1FC5A3D54}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>0.00014</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Exp3</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>180</XPos>
-																<YPos>-4.0085</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</RTPC>
-								</ObjectList>
-							</ObjectLists>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="BeezakaFootsteps" ID="{37E6D58D-AED7-4497-B497-641237643472}" ShortID="533543573">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-15</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="NPC" ID="{4980D69D-782B-4A83-B337-2655A5FCEC29}" WorkUnitID="{0BD5C11C-5A4F-4B2F-8189-2638B122898F}"/>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-								</Reference>
-							</ReferenceList>
+						</Folder>
+						<Folder Name="Beezaka" ID="{BC894A4F-911A-42F3-B331-2319AAD8FE21}" ShortID="103490595">
 							<ChildrenList>
-								<Sound Name="FOOTSTEP TEST SOUND" ID="{FC4A2C09-EC0A-41D1-9C26-272D7EFD0F96}" ShortID="328751672">
+								<RandomSequenceContainer Name="Beezaka Laughing" ID="{2C07D402-1152-4E5F-AB15-1ED72AFD5702}" ShortID="151110948">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="InitialDelay" Type="Real64">
 											<ValueList>
-												<Value>False</Value>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4.5">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{6DBFDAFB-4BCF-46E8-BA0C-42C34E0143C6}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="1"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="NPC" ID="{4980D69D-782B-4A83-B337-2655A5FCEC29}" WorkUnitID="{0BD5C11C-5A4F-4B2F-8189-2638B122898F}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Bounce 22 Witch Laughs (Bounce) [2026-03-26 142920]-1" ID="{9D053A75-9AAA-41D8-AA10-046C2662F544}" ShortID="562441563">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>80</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Bounce 22 Witch Laughs (Bounce) [2026-03-26 142920]-1" ID="{A138C215-75E6-47F9-9613-36FE1605507C}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.134253952548956"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Bounce 22 Witch Laughs (Bounce) [2026-03-26 142920]-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="349053971"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Bounce 22 Witch Laughs (Bounce) [2026-03-26 142920]-1" ID="{A138C215-75E6-47F9-9613-36FE1605507C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Bounce 22 Witch Laughs (Bounce) [2026-03-26 142921]-1" ID="{BE7A100F-ECDA-450B-83D3-2818F448AC53}" ShortID="368873580">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>150</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Bounce 22 Witch Laughs (Bounce) [2026-03-26 142921]-1" ID="{A0052E9E-F0AB-482F-BB7E-9ADEA7430662}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.133839598850909"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Bounce 22 Witch Laughs (Bounce) [2026-03-26 142921]-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="772329582"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Bounce 22 Witch Laughs (Bounce) [2026-03-26 142921]-1" ID="{A0052E9E-F0AB-482F-BB7E-9ADEA7430662}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Bounce 22 Witch Laughs (Bounce) [2026-03-26 142923]-1" ID="{BA6D719A-144B-406A-845C-52B5D7F89EB2}" ShortID="893039697">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Bounce 22 Witch Laughs (Bounce) [2026-03-26 142923]-1" ID="{DA2550EF-046D-4FC3-97BC-59BB9FCCAD5A}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.180223884104666"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Bounce 22 Witch Laughs (Bounce) [2026-03-26 142923]-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="873477946"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Bounce 22 Witch Laughs (Bounce) [2026-03-26 142923]-1" ID="{DA2550EF-046D-4FC3-97BC-59BB9FCCAD5A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Bounce 23 Witch Laughs (Bounce) [2026-03-26 142915]-1" ID="{CABFE303-D3F0-421D-ADBF-6C6FE59F939B}" ShortID="677437082">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>20</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Bounce 23 Witch Laughs (Bounce) [2026-03-26 142915]-1" ID="{0B4B58E4-B19F-434D-A89B-AE50DEA00B60}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.164774115660043"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Bounce 23 Witch Laughs (Bounce) [2026-03-26 142915]-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="133179455"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Bounce 23 Witch Laughs (Bounce) [2026-03-26 142915]-1" ID="{0B4B58E4-B19F-434D-A89B-AE50DEA00B60}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Bounce 23 Witch Laughs (Bounce) [2026-03-26 142917]-1" ID="{8FD10E6C-5DA2-489D-BF1B-77D7876B6B19}" ShortID="266772370">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Bounce 23 Witch Laughs (Bounce) [2026-03-26 142917]-1" ID="{9472B252-66C5-43FA-A6B2-2D7A51AB5950}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.113648941267782"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Bounce 23 Witch Laughs (Bounce) [2026-03-26 142917]-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="704645238"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Bounce 23 Witch Laughs (Bounce) [2026-03-26 142917]-1" ID="{9472B252-66C5-43FA-A6B2-2D7A51AB5950}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Bounce 23 Witch Laughs (Bounce) [2026-03-26 142918]-1" ID="{0C59B4DC-B1F7-4F13-A8F8-D5F55D7336A0}" ShortID="857251788">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>15</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Bounce 23 Witch Laughs (Bounce) [2026-03-26 142918]-1" ID="{1B9B4036-8AD0-4BFF-9F41-4471A605374D}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0810295869546658"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Bounce 23 Witch Laughs (Bounce) [2026-03-26 142918]-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="280573758"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Bounce 23 Witch Laughs (Bounce) [2026-03-26 142918]-1" ID="{1B9B4036-8AD0-4BFF-9F41-4471A605374D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Bounce 18 Witch Laughs (Bounce) [2026-03-26 142909]-1" ID="{488C289E-E3F7-4480-AD40-3EB566CE3651}" ShortID="830457144">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Bounce 18 Witch Laughs (Bounce) [2026-03-26 142909]-1" ID="{4D8D0F7F-BDE7-4A93-87FA-02C31B03CD0A}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.232114421787547"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Bounce 18 Witch Laughs (Bounce) [2026-03-26 142909]-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="224652438"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Bounce 18 Witch Laughs (Bounce) [2026-03-26 142909]-1" ID="{4D8D0F7F-BDE7-4A93-87FA-02C31B03CD0A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Bounce 18 Witch Laughs (Bounce) [2026-03-26 142911]-1" ID="{356FBD2D-03CF-411C-86DF-4C28EC0551AF}" ShortID="403552645">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Bounce 18 Witch Laughs (Bounce) [2026-03-26 142911]-1" ID="{BC8EACAE-E01F-4827-96C1-9FB75058D406}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.385371614620884"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Bounce 18 Witch Laughs (Bounce) [2026-03-26 142911]-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="191526671"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Bounce 18 Witch Laughs (Bounce) [2026-03-26 142911]-1" ID="{BC8EACAE-E01F-4827-96C1-9FB75058D406}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Bounce 18 Witch Laughs (Bounce) [2026-03-26 142912]-1" ID="{64F69B6D-0F89-4599-8FF5-A16308EA36B8}" ShortID="780802222">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Bounce 18 Witch Laughs (Bounce) [2026-03-26 142912]-1" ID="{63E0BC05-5D82-41F4-A229-F3F4A1E0AF47}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.251998931868498"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Bounce 18 Witch Laughs (Bounce) [2026-03-26 142912]-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="656781149"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Bounce 18 Witch Laughs (Bounce) [2026-03-26 142912]-1" ID="{63E0BC05-5D82-41F4-A229-F3F4A1E0AF47}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{E93ABDF8-45C6-47E2-ABDE-B1DD809165EB}"/>
+									</PositioningInfo>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<EffectSlot Name="" ID="{0D0B0CAB-7766-4833-81EA-5BE58E502B37}" ShortID="496620969">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<ObjectRef Name="Boost_3dB_100Hz" ID="{3EA7C9BD-6F9A-4000-A227-F86B5B4328EE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+											<EffectSlot Name="" ID="{4750FBAE-A5EC-4812-B73E-368A5BA45442}" ShortID="955388635">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<ObjectRef Name="ListenerConeEQ" ID="{1055158E-9666-4073-AF90-C4597A82DE80}" WorkUnitID="{1F5F240F-C21F-4A6B-A2EE-98372BFF171C}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</ObjectList>
+										<ObjectList Name="RTPC">
+											<RTPC Name="" ID="{92534EC0-3A90-4287-ADDF-42536F7D3FEC}" ShortID="807440544">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="MakeUpGain"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="ListenerCone" ID="{BF03D322-83B3-4F06-A541-BF82DDE4E736}" WorkUnitID="{802E5EDB-ADCF-44E6-915D-2040187550B2}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{A5886DDA-C9BF-4EB7-809B-98B1FC5A3D54}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0.00014</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>180</XPos>
+																		<YPos>-4.0085</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</ObjectList>
+									</ObjectLists>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="BeezakaBootsRattle" ID="{F7923535-C813-479F-95DC-33DD9EFEB7FD}" ShortID="889520707">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7BB1E569-6497-4175-A33C-C5B3BC89E049}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="250"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{063038F2-CEFB-49E0-AB55-816A9CFE509B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-8"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="NPC" ID="{4980D69D-782B-4A83-B337-2655A5FCEC29}" WorkUnitID="{0BD5C11C-5A4F-4B2F-8189-2638B122898F}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Bounce 11-sfx_highheel [2026-03-31 031027]-1" ID="{C1938F97-ED8E-4F03-B486-E306EE0E5681}" ShortID="798636613">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Bounce 11-sfx_highheel [2026-03-31 031027]-1" ID="{FB9A0938-F856-4F4E-BA39-3B06383E91B4}">
+													<Language>SFX</Language>
+													<AudioFile>Bounce 11-sfx_highheel [2026-03-31 031027]-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1019148564"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Bounce 11-sfx_highheel [2026-03-31 031027]-1" ID="{FB9A0938-F856-4F4E-BA39-3B06383E91B4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Bounce 11-sfx_highheel [2026-03-31 031023]-1" ID="{EC3A7985-4474-4CD9-9AE3-4D80CD793BC4}" ShortID="580744540">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Bounce 11-sfx_highheel [2026-03-31 031023]-1" ID="{390BAB1E-DB14-45BC-80C4-626BD057DA4C}">
+													<Language>SFX</Language>
+													<AudioFile>Bounce 11-sfx_highheel [2026-03-31 031023]-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="384870451"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Bounce 11-sfx_highheel [2026-03-31 031023]-1" ID="{390BAB1E-DB14-45BC-80C4-626BD057DA4C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Bounce 11-sfx_highheel [2026-03-31 031025]-1" ID="{1F89B58B-209E-4B49-A3CE-70F463C7F948}" ShortID="646864456">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Bounce 11-sfx_highheel [2026-03-31 031025]-1" ID="{F6D5DC4D-F811-43AF-8F28-AFEC93862159}">
+													<Language>SFX</Language>
+													<AudioFile>Bounce 11-sfx_highheel [2026-03-31 031025]-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="879154130"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Bounce 11-sfx_highheel [2026-03-31 031025]-1" ID="{F6D5DC4D-F811-43AF-8F28-AFEC93862159}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Bounce 11-sfx_highheel [2026-03-31 031026]-1" ID="{C5608D71-D2BB-471A-92D5-540472723C3F}" ShortID="257375888">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Bounce 11-sfx_highheel [2026-03-31 031026]-1" ID="{83D87806-CFD5-4117-898A-C4A38D0C8A51}">
+													<Language>SFX</Language>
+													<AudioFile>Bounce 11-sfx_highheel [2026-03-31 031026]-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="46176246"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Bounce 11-sfx_highheel [2026-03-31 031026]-1" ID="{83D87806-CFD5-4117-898A-C4A38D0C8A51}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<EffectSlot Name="" ID="{76D53243-6363-465E-AAD1-BB5E6AD80F7F}" ShortID="826241697">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<ObjectRef Name="ListenerConeEQ" ID="{1055158E-9666-4073-AF90-C4597A82DE80}" WorkUnitID="{1F5F240F-C21F-4A6B-A2EE-98372BFF171C}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+											<EffectSlot Name="" ID="{43CDADAB-8DAA-4788-8FAB-C4297C5308BD}" ShortID="422125811">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<ObjectRef Name="High_Pass_60Hz" ID="{F9627628-0B10-4272-BC30-D4C20423CB38}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+											<EffectSlot Name="" ID="{3108B007-9E60-48AB-A9B9-980D0151591A}" ShortID="465791263"/>
+											<EffectSlot Name="" ID="{D95218B7-96A3-42CB-96BC-234BDF68FF29}" ShortID="1053010556">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+														<ObjectRef Name="Octave_Up" ID="{A98F423C-EC97-49D8-8698-445CE91F24B7}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</ObjectList>
+										<ObjectList Name="RTPC">
+											<RTPC Name="" ID="{6A3C433D-9DA2-4950-A1A8-A061CAF2FA1D}" ShortID="585630254">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="MakeUpGain"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="ListenerCone" ID="{BF03D322-83B3-4F06-A541-BF82DDE4E736}" WorkUnitID="{802E5EDB-ADCF-44E6-915D-2040187550B2}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{FB017A5D-E560-4196-AAC6-9C1206D12427}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0.000139999999987594</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>180</XPos>
+																		<YPos>-4.0085</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</ObjectList>
+									</ObjectLists>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="BeezakaFootsteps" ID="{37E6D58D-AED7-4497-B497-641237643472}" ShortID="533543573">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="NPC" ID="{4980D69D-782B-4A83-B337-2655A5FCEC29}" WorkUnitID="{0BD5C11C-5A4F-4B2F-8189-2638B122898F}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="FOOTSTEP TEST SOUND" ID="{FC4A2C09-EC0A-41D1-9C26-272D7EFD0F96}" ShortID="328751672">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FOOTSTEP TEST SOUND" ID="{058216E4-E4BF-44DA-9BD5-EC731D454B24}">
+													<Language>SFX</Language>
+													<AudioFile>FOOTSTEP TEST SOUND.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="399048562"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FOOTSTEP TEST SOUND" ID="{058216E4-E4BF-44DA-9BD5-EC731D454B24}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_highheel [2026-03-31 023733]" ID="{A768CBBF-24A9-4097-B1DC-B294C68782D1}" ShortID="571595483">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_highheel [2026-03-31 023733]" ID="{A24C49AB-5254-45C3-8780-CF6B74E1A5D8}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_highheel [2026-03-31 023733].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="594479162"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_highheel [2026-03-31 023733]" ID="{A24C49AB-5254-45C3-8780-CF6B74E1A5D8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_highheel [2026-03-31 023734]" ID="{47F0579F-5392-470F-B7CB-907D8B8FF3D2}" ShortID="203555354">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_highheel [2026-03-31 023734]" ID="{33E6CF7A-73D5-48EB-A4BE-F3EBCE5C0017}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_highheel [2026-03-31 023734].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="951509437"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_highheel [2026-03-31 023734]" ID="{33E6CF7A-73D5-48EB-A4BE-F3EBCE5C0017}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_highheel [2026-03-31 023735]" ID="{EFC32CD7-FAC3-4D6F-8F92-612007AA502F}" ShortID="561998455">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_highheel [2026-03-31 023735]" ID="{C52FD0C7-22F0-4E9B-9B30-F4E1A9F6F6C2}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_highheel [2026-03-31 023735].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="829768501"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_highheel [2026-03-31 023735]" ID="{C52FD0C7-22F0-4E9B-9B30-F4E1A9F6F6C2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_highheel [2026-03-31 023737]" ID="{51ECD8AB-48E3-45A2-ABD7-044A7CFD116C}" ShortID="236830388">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_highheel [2026-03-31 023737]" ID="{B7C064E6-4CE7-4DE5-9CAD-19E881647CDA}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_highheel [2026-03-31 023737].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1059765292"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_highheel [2026-03-31 023737]" ID="{B7C064E6-4CE7-4DE5-9CAD-19E881647CDA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<EffectSlot Name="" ID="{CF7C6713-4F8F-4BEC-9383-6D2395D2EED0}" ShortID="175206156">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<ObjectRef Name="ListenerConeEQ" ID="{1055158E-9666-4073-AF90-C4597A82DE80}" WorkUnitID="{1F5F240F-C21F-4A6B-A2EE-98372BFF171C}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</ObjectList>
+										<ObjectList Name="RTPC">
+											<RTPC Name="" ID="{A2F7EE32-8691-49F2-B0D5-B3563D271474}" ShortID="466107306">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="MakeUpGain"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="ListenerCone" ID="{BF03D322-83B3-4F06-A541-BF82DDE4E736}" WorkUnitID="{802E5EDB-ADCF-44E6-915D-2040187550B2}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{F9F6955D-C422-4350-B794-4317251F1339}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0.000139999999987594</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Exp3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>180</XPos>
+																		<YPos>-4.0085</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</ObjectList>
+									</ObjectLists>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="BeezakaFootstepsRock" ID="{E9B4730E-EB58-4139-ACBC-D63629998D7D}" ShortID="693067715">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B17D9BE4-B574-4EB0-A79E-16412ED08753}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.48"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7D9BAD29-9431-44EB-B3A1-0CA955DF838A}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-20"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="NPC" ID="{4980D69D-782B-4A83-B337-2655A5FCEC29}" WorkUnitID="{0BD5C11C-5A4F-4B2F-8189-2638B122898F}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_footsteps_rocky_nl [2026-03-22 020544]" ID="{4927EF11-DF81-49F5-9CE1-5E9A11575A53}" ShortID="140331170">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footsteps_rocky_nl [2026-03-22 020544]" ID="{7150C923-F7BD-4EDA-98AB-60370691CBF7}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_footsteps_rocky_nl [2026-03-22 020544].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="380056452"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footsteps_rocky_nl [2026-03-22 020544]" ID="{7150C923-F7BD-4EDA-98AB-60370691CBF7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footsteps_rocky_nl [2026-03-22 020545]" ID="{0FD41970-0C84-4D18-9C3F-DF7B315FF554}" ShortID="695371177">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footsteps_rocky_nl [2026-03-22 020545]" ID="{047EAD5B-5A77-4114-8B6A-54791766BAD2}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_footsteps_rocky_nl [2026-03-22 020545].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="949030954"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footsteps_rocky_nl [2026-03-22 020545]" ID="{047EAD5B-5A77-4114-8B6A-54791766BAD2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footsteps_rocky_nl [2026-03-22 020546]" ID="{D58E441E-3680-4786-AA38-C8F789CB8191}" ShortID="194174568">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footsteps_rocky_nl [2026-03-22 020546]" ID="{899CAF99-3EE3-4219-BAE9-F939F5B7F117}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_footsteps_rocky_nl [2026-03-22 020546].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="409114040"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footsteps_rocky_nl [2026-03-22 020546]" ID="{899CAF99-3EE3-4219-BAE9-F939F5B7F117}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footsteps_rocky_nl [2026-03-22 020546]-1" ID="{AD911DA5-74C3-4230-A05E-1EE2E1BA2958}" ShortID="1066649320">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footsteps_rocky_nl [2026-03-22 020546]-1" ID="{6C6DBFDD-05F2-4E69-A0E6-0D0E2CDAF8D6}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_footsteps_rocky_nl [2026-03-22 020546]-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="229237371"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footsteps_rocky_nl [2026-03-22 020546]-1" ID="{6C6DBFDD-05F2-4E69-A0E6-0D0E2CDAF8D6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footsteps_rocky_nl [2026-03-22 020547]" ID="{CF8FA753-C74D-4C08-A3C1-E2F09BDBFA3B}" ShortID="423742593">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footsteps_rocky_nl [2026-03-22 020547]" ID="{858C2B85-C406-4105-962D-3C2AFF4D6825}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_footsteps_rocky_nl [2026-03-22 020547].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="112593444"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footsteps_rocky_nl [2026-03-22 020547]" ID="{858C2B85-C406-4105-962D-3C2AFF4D6825}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footsteps_rocky_nl [2026-03-22 020549]" ID="{0F3AA923-9598-42C2-BFBE-E27170CA4AD7}" ShortID="270188214">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footsteps_rocky_nl [2026-03-22 020549]" ID="{61979AB9-4833-4809-B542-49CF64901907}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_footsteps_rocky_nl [2026-03-22 020549].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="59244555"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footsteps_rocky_nl [2026-03-22 020549]" ID="{61979AB9-4833-4809-B542-49CF64901907}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footsteps_rocky_nl [2026-03-22 020549]-1" ID="{CBC60B73-1FE9-42E2-B21D-30746F8A8D25}" ShortID="790728963">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footsteps_rocky_nl [2026-03-22 020549]-1" ID="{1EB16FE6-E0A9-4BE4-BD0F-BEA611A55F94}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_footsteps_rocky_nl [2026-03-22 020549]-1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="442930982"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footsteps_rocky_nl [2026-03-22 020549]-1" ID="{1EB16FE6-E0A9-4BE4-BD0F-BEA611A55F94}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_footsteps_rocky_nl [2026-03-22 020550]" ID="{58B1C316-8126-4127-8DD3-4E655CCF3A64}" ShortID="837719312">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_footsteps_rocky_nl [2026-03-22 020550]" ID="{D0C292E4-856F-462D-AC8E-AC995EB0AEFD}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_footsteps_rocky_nl [2026-03-22 020550].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="154462330"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_footsteps_rocky_nl [2026-03-22 020550]" ID="{D0C292E4-856F-462D-AC8E-AC995EB0AEFD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<RTPC Name="" ID="{939B4F1E-B38B-4119-A0B1-FB17DF9EB9B7}" ShortID="112096008">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="PlayMechanismSpecialTransitionsValue"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="MoveAmount" ID="{BDE53784-FD07-4390-9DCC-D4D0DBDC6C30}" WorkUnitID="{802E5EDB-ADCF-44E6-915D-2040187550B2}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{7E929279-F38F-4EEC-B633-CC2BD36BCDBB}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</ObjectList>
+									</ObjectLists>
+								</RandomSequenceContainer>
+								<Sound Name="sfx_highheel_soft" ID="{0333EFDF-232F-4BC4-B871-3D568CEC231D}" ShortID="689901194">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-20</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -7279,95 +8264,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="FOOTSTEP TEST SOUND" ID="{058216E4-E4BF-44DA-9BD5-EC731D454B24}">
-											<Language>SFX</Language>
-											<AudioFile>FOOTSTEP TEST SOUND.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="399048562"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="FOOTSTEP TEST SOUND" ID="{058216E4-E4BF-44DA-9BD5-EC731D454B24}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_highheel [2026-03-31 023733]" ID="{A768CBBF-24A9-4097-B1DC-B294C68782D1}" ShortID="571595483">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_highheel [2026-03-31 023733]" ID="{A24C49AB-5254-45C3-8780-CF6B74E1A5D8}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_highheel [2026-03-31 023733].wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="594479162"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_highheel [2026-03-31 023733]" ID="{A24C49AB-5254-45C3-8780-CF6B74E1A5D8}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_highheel [2026-03-31 023734]" ID="{47F0579F-5392-470F-B7CB-907D8B8FF3D2}" ShortID="203555354">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_highheel [2026-03-31 023734]" ID="{33E6CF7A-73D5-48EB-A4BE-F3EBCE5C0017}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_highheel [2026-03-31 023734].wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="951509437"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_highheel [2026-03-31 023734]" ID="{33E6CF7A-73D5-48EB-A4BE-F3EBCE5C0017}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_highheel [2026-03-31 023735]" ID="{EFC32CD7-FAC3-4D6F-8F92-612007AA502F}" ShortID="561998455">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_highheel [2026-03-31 023735]" ID="{C52FD0C7-22F0-4E9B-9B30-F4E1A9F6F6C2}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_highheel [2026-03-31 023735].wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="829768501"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_highheel [2026-03-31 023735]" ID="{C52FD0C7-22F0-4E9B-9B30-F4E1A9F6F6C2}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_highheel [2026-03-31 023737]" ID="{51ECD8AB-48E3-45A2-ABD7-044A7CFD116C}" ShortID="236830388">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_highheel [2026-03-31 023737]" ID="{B7C064E6-4CE7-4DE5-9CAD-19E881647CDA}">
+										<AudioFileSource Name="sfx_highheel [2026-03-31 023737]" ID="{E7D139D5-50D0-4BE7-834C-1285827F28C3}">
 											<Language>SFX</Language>
 											<AudioFile>sfx_highheel [2026-03-31 023737].wav</AudioFile>
 											<MediaIDList>
@@ -7376,590 +8273,11 @@
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="sfx_highheel [2026-03-31 023737]" ID="{B7C064E6-4CE7-4DE5-9CAD-19E881647CDA}" Platform="Linked"/>
+										<ActiveSource Name="sfx_highheel [2026-03-31 023737]" ID="{E7D139D5-50D0-4BE7-834C-1285827F28C3}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="Effects">
-									<EffectSlot Name="" ID="{CF7C6713-4F8F-4BEC-9383-6D2395D2EED0}" ShortID="175206156">
-										<ReferenceList>
-											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-												<ObjectRef Name="ListenerConeEQ" ID="{1055158E-9666-4073-AF90-C4597A82DE80}" WorkUnitID="{1F5F240F-C21F-4A6B-A2EE-98372BFF171C}"/>
-											</Reference>
-										</ReferenceList>
-									</EffectSlot>
-								</ObjectList>
-								<ObjectList Name="RTPC">
-									<RTPC Name="" ID="{A2F7EE32-8691-49F2-B0D5-B3563D271474}" ShortID="466107306">
-										<PropertyList>
-											<Property Name="PropertyName" Type="string" Value="MakeUpGain"/>
-										</PropertyList>
-										<ReferenceList>
-											<Reference Name="ControlInput">
-												<ObjectRef Name="ListenerCone" ID="{BF03D322-83B3-4F06-A541-BF82DDE4E736}" WorkUnitID="{802E5EDB-ADCF-44E6-915D-2040187550B2}"/>
-											</Reference>
-											<Reference Name="Curve">
-												<Custom>
-													<Curve Name="" ID="{F9F6955D-C422-4350-B794-4317251F1339}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>0.000139999999987594</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Exp3</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>180</XPos>
-																<YPos>-4.0085</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</RTPC>
-								</ObjectList>
-							</ObjectLists>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="BeezakaBootsRattle" ID="{F7923535-C813-479F-95DC-33DD9EFEB7FD}" ShortID="889520707">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{7BB1E569-6497-4175-A33C-C5B3BC89E049}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="250"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-15</Value>
-									</ValueList>
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{063038F2-CEFB-49E0-AB55-816A9CFE509B}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Min" Type="Real64" Value="-8"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="NPC" ID="{4980D69D-782B-4A83-B337-2655A5FCEC29}" WorkUnitID="{0BD5C11C-5A4F-4B2F-8189-2638B122898F}"/>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Bounce 11-sfx_highheel [2026-03-31 031027]-1" ID="{C1938F97-ED8E-4F03-B486-E306EE0E5681}" ShortID="798636613">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Bounce 11-sfx_highheel [2026-03-31 031027]-1" ID="{FB9A0938-F856-4F4E-BA39-3B06383E91B4}">
-											<Language>SFX</Language>
-											<AudioFile>Bounce 11-sfx_highheel [2026-03-31 031027]-1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1019148564"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Bounce 11-sfx_highheel [2026-03-31 031027]-1" ID="{FB9A0938-F856-4F4E-BA39-3B06383E91B4}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Bounce 11-sfx_highheel [2026-03-31 031023]-1" ID="{EC3A7985-4474-4CD9-9AE3-4D80CD793BC4}" ShortID="580744540">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Bounce 11-sfx_highheel [2026-03-31 031023]-1" ID="{390BAB1E-DB14-45BC-80C4-626BD057DA4C}">
-											<Language>SFX</Language>
-											<AudioFile>Bounce 11-sfx_highheel [2026-03-31 031023]-1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="384870451"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Bounce 11-sfx_highheel [2026-03-31 031023]-1" ID="{390BAB1E-DB14-45BC-80C4-626BD057DA4C}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Bounce 11-sfx_highheel [2026-03-31 031025]-1" ID="{1F89B58B-209E-4B49-A3CE-70F463C7F948}" ShortID="646864456">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Bounce 11-sfx_highheel [2026-03-31 031025]-1" ID="{F6D5DC4D-F811-43AF-8F28-AFEC93862159}">
-											<Language>SFX</Language>
-											<AudioFile>Bounce 11-sfx_highheel [2026-03-31 031025]-1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="879154130"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Bounce 11-sfx_highheel [2026-03-31 031025]-1" ID="{F6D5DC4D-F811-43AF-8F28-AFEC93862159}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Bounce 11-sfx_highheel [2026-03-31 031026]-1" ID="{C5608D71-D2BB-471A-92D5-540472723C3F}" ShortID="257375888">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Bounce 11-sfx_highheel [2026-03-31 031026]-1" ID="{83D87806-CFD5-4117-898A-C4A38D0C8A51}">
-											<Language>SFX</Language>
-											<AudioFile>Bounce 11-sfx_highheel [2026-03-31 031026]-1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="46176246"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Bounce 11-sfx_highheel [2026-03-31 031026]-1" ID="{83D87806-CFD5-4117-898A-C4A38D0C8A51}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="Effects">
-									<EffectSlot Name="" ID="{76D53243-6363-465E-AAD1-BB5E6AD80F7F}" ShortID="826241697">
-										<ReferenceList>
-											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-												<ObjectRef Name="ListenerConeEQ" ID="{1055158E-9666-4073-AF90-C4597A82DE80}" WorkUnitID="{1F5F240F-C21F-4A6B-A2EE-98372BFF171C}"/>
-											</Reference>
-										</ReferenceList>
-									</EffectSlot>
-									<EffectSlot Name="" ID="{43CDADAB-8DAA-4788-8FAB-C4297C5308BD}" ShortID="422125811">
-										<ReferenceList>
-											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-												<ObjectRef Name="High_Pass_60Hz" ID="{F9627628-0B10-4272-BC30-D4C20423CB38}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-											</Reference>
-										</ReferenceList>
-									</EffectSlot>
-									<EffectSlot Name="" ID="{3108B007-9E60-48AB-A9B9-980D0151591A}" ShortID="465791263"/>
-									<EffectSlot Name="" ID="{D95218B7-96A3-42CB-96BC-234BDF68FF29}" ShortID="1053010556">
-										<ReferenceList>
-											<Reference Name="Effect" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
-												<ObjectRef Name="Octave_Up" ID="{A98F423C-EC97-49D8-8698-445CE91F24B7}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-											</Reference>
-										</ReferenceList>
-									</EffectSlot>
-								</ObjectList>
-								<ObjectList Name="RTPC">
-									<RTPC Name="" ID="{6A3C433D-9DA2-4950-A1A8-A061CAF2FA1D}" ShortID="585630254">
-										<PropertyList>
-											<Property Name="PropertyName" Type="string" Value="MakeUpGain"/>
-										</PropertyList>
-										<ReferenceList>
-											<Reference Name="ControlInput">
-												<ObjectRef Name="ListenerCone" ID="{BF03D322-83B3-4F06-A541-BF82DDE4E736}" WorkUnitID="{802E5EDB-ADCF-44E6-915D-2040187550B2}"/>
-											</Reference>
-											<Reference Name="Curve">
-												<Custom>
-													<Curve Name="" ID="{FB017A5D-E560-4196-AAC6-9C1206D12427}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>0.000139999999987594</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Exp3</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>180</XPos>
-																<YPos>-4.0085</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</RTPC>
-								</ObjectList>
-							</ObjectLists>
-						</RandomSequenceContainer>
-						<Sound Name="sfx_highheel_soft" ID="{0333EFDF-232F-4BC4-B871-3D568CEC231D}" ShortID="689901194">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-20</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="sfx_highheel [2026-03-31 023737]" ID="{E7D139D5-50D0-4BE7-834C-1285827F28C3}">
-									<Language>SFX</Language>
-									<AudioFile>sfx_highheel [2026-03-31 023737].wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="1059765292"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="sfx_highheel [2026-03-31 023737]" ID="{E7D139D5-50D0-4BE7-834C-1285827F28C3}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<RandomSequenceContainer Name="BeezakaFootstepsRock" ID="{E9B4730E-EB58-4139-ACBC-D63629998D7D}" ShortID="693067715">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
-								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{B17D9BE4-B574-4EB0-A79E-16412ED08753}"/>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.48"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-96</Value>
-									</ValueList>
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{7D9BAD29-9431-44EB-B3A1-0CA955DF838A}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Min" Type="Real64" Value="-20"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="NPC" ID="{4980D69D-782B-4A83-B337-2655A5FCEC29}" WorkUnitID="{0BD5C11C-5A4F-4B2F-8189-2638B122898F}"/>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="sfx_footsteps_rocky_nl [2026-03-22 020544]" ID="{4927EF11-DF81-49F5-9CE1-5E9A11575A53}" ShortID="140331170">
-									<PropertyList>
-										<Property Name="InitialDelay" Type="Real64">
-											<ValueList>
-												<Value>0.1</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footsteps_rocky_nl [2026-03-22 020544]" ID="{7150C923-F7BD-4EDA-98AB-60370691CBF7}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_footsteps_rocky_nl [2026-03-22 020544].wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="380056452"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footsteps_rocky_nl [2026-03-22 020544]" ID="{7150C923-F7BD-4EDA-98AB-60370691CBF7}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footsteps_rocky_nl [2026-03-22 020545]" ID="{0FD41970-0C84-4D18-9C3F-DF7B315FF554}" ShortID="695371177">
-									<PropertyList>
-										<Property Name="InitialDelay" Type="Real64">
-											<ValueList>
-												<Value>0.1</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footsteps_rocky_nl [2026-03-22 020545]" ID="{047EAD5B-5A77-4114-8B6A-54791766BAD2}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_footsteps_rocky_nl [2026-03-22 020545].wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="949030954"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footsteps_rocky_nl [2026-03-22 020545]" ID="{047EAD5B-5A77-4114-8B6A-54791766BAD2}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footsteps_rocky_nl [2026-03-22 020546]" ID="{D58E441E-3680-4786-AA38-C8F789CB8191}" ShortID="194174568">
-									<PropertyList>
-										<Property Name="InitialDelay" Type="Real64">
-											<ValueList>
-												<Value>0.1</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footsteps_rocky_nl [2026-03-22 020546]" ID="{899CAF99-3EE3-4219-BAE9-F939F5B7F117}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_footsteps_rocky_nl [2026-03-22 020546].wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="409114040"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footsteps_rocky_nl [2026-03-22 020546]" ID="{899CAF99-3EE3-4219-BAE9-F939F5B7F117}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footsteps_rocky_nl [2026-03-22 020546]-1" ID="{AD911DA5-74C3-4230-A05E-1EE2E1BA2958}" ShortID="1066649320">
-									<PropertyList>
-										<Property Name="InitialDelay" Type="Real64">
-											<ValueList>
-												<Value>0.1</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footsteps_rocky_nl [2026-03-22 020546]-1" ID="{6C6DBFDD-05F2-4E69-A0E6-0D0E2CDAF8D6}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_footsteps_rocky_nl [2026-03-22 020546]-1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="229237371"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footsteps_rocky_nl [2026-03-22 020546]-1" ID="{6C6DBFDD-05F2-4E69-A0E6-0D0E2CDAF8D6}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footsteps_rocky_nl [2026-03-22 020547]" ID="{CF8FA753-C74D-4C08-A3C1-E2F09BDBFA3B}" ShortID="423742593">
-									<PropertyList>
-										<Property Name="InitialDelay" Type="Real64">
-											<ValueList>
-												<Value>0.1</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footsteps_rocky_nl [2026-03-22 020547]" ID="{858C2B85-C406-4105-962D-3C2AFF4D6825}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_footsteps_rocky_nl [2026-03-22 020547].wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="112593444"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footsteps_rocky_nl [2026-03-22 020547]" ID="{858C2B85-C406-4105-962D-3C2AFF4D6825}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footsteps_rocky_nl [2026-03-22 020549]" ID="{0F3AA923-9598-42C2-BFBE-E27170CA4AD7}" ShortID="270188214">
-									<PropertyList>
-										<Property Name="InitialDelay" Type="Real64">
-											<ValueList>
-												<Value>0.1</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footsteps_rocky_nl [2026-03-22 020549]" ID="{61979AB9-4833-4809-B542-49CF64901907}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_footsteps_rocky_nl [2026-03-22 020549].wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="59244555"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footsteps_rocky_nl [2026-03-22 020549]" ID="{61979AB9-4833-4809-B542-49CF64901907}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footsteps_rocky_nl [2026-03-22 020549]-1" ID="{CBC60B73-1FE9-42E2-B21D-30746F8A8D25}" ShortID="790728963">
-									<PropertyList>
-										<Property Name="InitialDelay" Type="Real64">
-											<ValueList>
-												<Value>0.1</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footsteps_rocky_nl [2026-03-22 020549]-1" ID="{1EB16FE6-E0A9-4BE4-BD0F-BEA611A55F94}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_footsteps_rocky_nl [2026-03-22 020549]-1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="442930982"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footsteps_rocky_nl [2026-03-22 020549]-1" ID="{1EB16FE6-E0A9-4BE4-BD0F-BEA611A55F94}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_footsteps_rocky_nl [2026-03-22 020550]" ID="{58B1C316-8126-4127-8DD3-4E655CCF3A64}" ShortID="837719312">
-									<PropertyList>
-										<Property Name="InitialDelay" Type="Real64">
-											<ValueList>
-												<Value>0.1</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_footsteps_rocky_nl [2026-03-22 020550]" ID="{D0C292E4-856F-462D-AC8E-AC995EB0AEFD}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_footsteps_rocky_nl [2026-03-22 020550].wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="154462330"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_footsteps_rocky_nl [2026-03-22 020550]" ID="{D0C292E4-856F-462D-AC8E-AC995EB0AEFD}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="RTPC">
-									<RTPC Name="" ID="{939B4F1E-B38B-4119-A0B1-FB17DF9EB9B7}" ShortID="112096008">
-										<PropertyList>
-											<Property Name="PropertyName" Type="string" Value="PlayMechanismSpecialTransitionsValue"/>
-										</PropertyList>
-										<ReferenceList>
-											<Reference Name="ControlInput">
-												<ObjectRef Name="MoveAmount" ID="{BDE53784-FD07-4390-9DCC-D4D0DBDC6C30}" WorkUnitID="{802E5EDB-ADCF-44E6-915D-2040187550B2}"/>
-											</Reference>
-											<Reference Name="Curve">
-												<Custom>
-													<Curve Name="" ID="{7E929279-F38F-4EEC-B633-CC2BD36BCDBB}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="1"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>0</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>1</XPos>
-																<YPos>0</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</RTPC>
-								</ObjectList>
-							</ObjectLists>
-						</RandomSequenceContainer>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="World SFX" ID="{895BDB13-C838-4A94-8C9B-B215E2AD68DB}" ShortID="553465614">
