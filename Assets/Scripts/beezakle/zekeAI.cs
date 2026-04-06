@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.AI;
 using System;
 
+using System.Linq;
+
 public class zekeAI : MonoBehaviour
 {
     public NavMeshAgent ai;
@@ -20,8 +22,8 @@ public class zekeAI : MonoBehaviour
 
     public int ZekeBehaviour;
 
-    private GameObject[]POI;
-    private bool[] Visited;
+    private List<GameObject> POI;
+    private List<bool> Visited;
 
     public float aggro = 80;
     public bool ZekeSeekCamera = false;
@@ -42,17 +44,16 @@ public class zekeAI : MonoBehaviour
      */
     void Start()
     {
-        POI = GameObject.FindGameObjectsWithTag("POI");
-        Visited = new bool [POI.Length];
-        for (int i=0;i<Visited.Length;i++)
-        {
-            Visited[i]=false;
+        GameObject[] POIArr = GameObject.FindGameObjectsWithTag("POI");
+        POI = new List<GameObject>();
+        Visited = new List<bool>();
+        foreach (GameObject ob in POI) {
+            Visited.Add(false);
+            POI.Add(ob);
         }
 
         zekeAnim = GetComponent<Animator>();
         CameraUpOrNot = Main_Camera.GetComponent<CameraUpOrNot>();
-        
-        
     
     }
 
@@ -60,7 +61,7 @@ public class zekeAI : MonoBehaviour
     private void WhatShouldZekeDo()
     {   if (ZekeBehaviour == 1)
         {
-            for (int i = 0; i < POI.Length; i++)
+            foreach (int i in Enumerable.Range(0, POI.Count))
             {
                 GameObject Point = POI[i];
                 if (Visited[i])
