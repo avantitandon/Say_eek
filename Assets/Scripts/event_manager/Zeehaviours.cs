@@ -115,9 +115,14 @@ public class Zeehaviours : MonoBehaviour
                     transform.LookAt(player.transform.position);
                     SPECIALHORN?.Invoke();
                     FindEvent();
+                    
+                }
+                    if (!FoundPlayer)
+                {
+                    FindPlayer();
                     return;
                 }
-                return;
+                
             }
             
         if (zekeisdoing == 6)

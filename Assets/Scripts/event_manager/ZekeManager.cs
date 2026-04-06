@@ -57,6 +57,8 @@ public class ZekeManager : MonoBehaviour
             
             Z2Zcommunication();
         }
+
+
         //checking if Zeke is currently chilling and  if he is close to the player
         if (whatShouldZekeDo == WhatShouldZekeDo.ChillOut && (zeke.transform.position - player.transform.position).magnitude < 10f)
         {   
@@ -91,7 +93,7 @@ public class ZekeManager : MonoBehaviour
         }
         if ((int)whatShouldZekeDo != whatDIDzekedo)
         {
-               
+         //if what zeke should  do changes, and he was seeking,   he should still seek?
             if (whatShouldZekeDo == WhatShouldZekeDo.SeekPlayer)
             {
                 zeke.transform.LookAt(player.transform.position);
@@ -109,6 +111,8 @@ public class ZekeManager : MonoBehaviour
                 Debug.Log("GOGOGOGOGOGOGOGOGO");
                 whatDIDzekedo = (int)whatShouldZekeDo;
             }
+
+
             Z2Zcommunication();
         }
         
@@ -186,6 +190,7 @@ public class ZekeManager : MonoBehaviour
         
         
     }
+
     private void AnnounceBhaddie()
     {
         Debug.Log("BHADDIE!!! THIS WAY!!!!!");
@@ -194,13 +199,13 @@ public class ZekeManager : MonoBehaviour
         
         
     }
-    
+    //ouhhhhhhhh doooyyyyy every tume he has a new specal spot to go to he has to seek player.....
     private void AnnounceCeremony()
     {
         Debug.Log("BRIDES!!!! THIS WAY!!!!!");
         
         EventLocation= new Vector3(SPECIAL_SPOT.position.x, SPECIAL_SPOT.position.y, SPECIAL_SPOT.position.z);
-        whatShouldZekeDo = WhatShouldZekeDo.GOTOSPECIALSPOT;
+        whatShouldZekeDo = WhatShouldZekeDo.SeekPlayer;
         
 
         
