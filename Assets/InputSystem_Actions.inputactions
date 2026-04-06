@@ -131,6 +131,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "timeskip",
+                    "type": "Button",
+                    "id": "11e4c5ba-0d99-49ed-a325-6ff6aff3c7b4",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -637,6 +646,17 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "PhoneToggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "502674b1-09e3-49a2-8968-284d0e18adc1",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "timeskip",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

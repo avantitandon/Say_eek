@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 using System.Collections.Generic;
@@ -45,6 +46,10 @@ public class GameController : MonoBehaviour
         "Explore the venue and take a variety of photos, understood? Ghosts only.",
     };
 
+    // DEBUG INPUTS
+
+    InputAction timeskipAction;
+
     // AUDIO //
     [SerializeField] private AudioManager audioManager;
 
@@ -57,6 +62,9 @@ public class GameController : MonoBehaviour
     [SerializeField] private EndSeqManager endSeqManager;
 
     // VARIABLES //
+
+
+    [SerializeField] private bool debugMode;
 
     private State gameState;
     private float roundStartTime = 0.0f;
@@ -95,6 +103,8 @@ public class GameController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        timeskipAction = InputSystem.actions.FindAction("timeskip");
+
         // ensure we are starting with tutorial
         tutorialStep = TutorialStep.IntroDelay;
         tutorialStepStartTime = Time.unscaledTime;
@@ -289,6 +299,13 @@ public class GameController : MonoBehaviour
         if (photos_left <= 0 || (time_elapsed >= ROUND_DURATION_SECONDS))
         {
             StartEndSequence();
+        }
+
+
+        // handle debug input
+        if (timeskipAction.WasPressedThisFrame() && debugMode)
+        {
+            roundStartTime -= 60f;
         }
     }
 
