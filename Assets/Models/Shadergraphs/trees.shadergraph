@@ -540,7 +540,7 @@
     "m_Title": "Apply Dither Transparency Threshold",
     "m_Position": {
         "x": -707.3333740234375,
-        "y": 306.0
+        "y": 305.99993896484377
     }
 }
 
@@ -2830,8 +2830,8 @@
     "m_ObjectId": "e17638ac6bd1454689dd8bd6c23c010d",
     "m_Title": "Read Albedo texture, calculate pixel opacity",
     "m_Position": {
-        "x": -1020.6666259765625,
-        "y": -323.99993896484377
+        "x": -1020.6665649414063,
+        "y": -324.0
     }
 }
 

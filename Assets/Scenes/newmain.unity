@@ -6283,6 +6283,7 @@ GameObject:
   - component: {fileID: 388578053}
   - component: {fileID: 388578055}
   - component: {fileID: 388578054}
+  - component: {fileID: 388578056}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -6399,6 +6400,21 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &388578056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388578052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: com.cqf.urpvolumetricfog.runtime::VolumetricAdditionalLight
+  anisotropy: -0.71
+  scattering: 0.4
+  radius: 0.2
 --- !u!1 &413196646 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
@@ -7081,6 +7097,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 31.021
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 546b69ec663a78646b39d4c663e56f81, type: 2}
     - target: {fileID: 919132149155446097, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
       propertyPath: m_Name
       value: light (7)
@@ -7358,6 +7378,7 @@ GameObject:
   - component: {fileID: 608259994}
   - component: {fileID: 608259996}
   - component: {fileID: 608259995}
+  - component: {fileID: 608259997}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -7474,6 +7495,21 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &608259997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608259993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: com.cqf.urpvolumetricfog.runtime::VolumetricAdditionalLight
+  anisotropy: -0.71
+  scattering: 0.4
+  radius: 0.2
 --- !u!1001 &611654435
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7596,6 +7632,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 546b69ec663a78646b39d4c663e56f81, type: 2}
     - target: {fileID: 919132149155446097, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
       propertyPath: m_Name
       value: light (5)
@@ -7960,6 +8000,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 546b69ec663a78646b39d4c663e56f81, type: 2}
     - target: {fileID: 919132149155446097, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
       propertyPath: m_Name
       value: light (3)
@@ -8808,6 +8852,7 @@ GameObject:
   - component: {fileID: 794644417}
   - component: {fileID: 794644419}
   - component: {fileID: 794644418}
+  - component: {fileID: 794644420}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -8924,6 +8969,21 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &794644420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794644416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: com.cqf.urpvolumetricfog.runtime::VolumetricAdditionalLight
+  anisotropy: -0.71
+  scattering: 0.4
+  radius: 0.2
 --- !u!1001 &827759994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8980,6 +9040,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 546b69ec663a78646b39d4c663e56f81, type: 2}
     - target: {fileID: 919132149155446097, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
       propertyPath: m_Name
       value: light (4)
@@ -8990,8 +9054,16 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1151388028547126963, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1873907707}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1172512496}
   m_SourcePrefab: {fileID: 100100000, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
+--- !u!1 &827759995 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
+  m_PrefabInstance: {fileID: 827759994}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &830692402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10121,6 +10193,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 546b69ec663a78646b39d4c663e56f81, type: 2}
     - target: {fileID: 919132149155446097, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
       propertyPath: m_Name
       value: light
@@ -10800,6 +10876,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
   m_PrefabInstance: {fileID: 827759994}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1172512496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827759995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78821a4edf3ff784581ffa951f832a74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  target: {fileID: 2003349655}
 --- !u!1 &1194622412
 GameObject:
   m_ObjectHideFlags: 0
@@ -10842,6 +10931,7 @@ GameObject:
   - component: {fileID: 1201802214}
   - component: {fileID: 1201802216}
   - component: {fileID: 1201802215}
+  - component: {fileID: 1201802217}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -10958,6 +11048,21 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1201802217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201802213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: com.cqf.urpvolumetricfog.runtime::VolumetricAdditionalLight
+  anisotropy: -0.71
+  scattering: 1.4
+  radius: 0.2
 --- !u!4 &1215397792 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 517084205733436793, guid: c0200a1f684103e45836c7b61e3aac2b, type: 3}
@@ -12601,6 +12706,7 @@ GameObject:
   - component: {fileID: 1425956435}
   - component: {fileID: 1425956437}
   - component: {fileID: 1425956436}
+  - component: {fileID: 1425956438}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -12717,6 +12823,21 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1425956438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425956434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: com.cqf.urpvolumetricfog.runtime::VolumetricAdditionalLight
+  anisotropy: -0.71
+  scattering: 0.4
+  radius: 0.2
 --- !u!1001 &1429965165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12840,6 +12961,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 546b69ec663a78646b39d4c663e56f81, type: 2}
     - target: {fileID: 919132149155446097, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
       propertyPath: m_Name
       value: light (2)
@@ -12903,6 +13028,7 @@ GameObject:
   - component: {fileID: 1516496114}
   - component: {fileID: 1516496116}
   - component: {fileID: 1516496115}
+  - component: {fileID: 1516496117}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -13019,6 +13145,21 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1516496117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516496113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: com.cqf.urpvolumetricfog.runtime::VolumetricAdditionalLight
+  anisotropy: -0.71
+  scattering: 0.4
+  radius: 0.2
 --- !u!1 &1516953574
 GameObject:
   m_ObjectHideFlags: 0
@@ -13199,6 +13340,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 4.591
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 546b69ec663a78646b39d4c663e56f81, type: 2}
     - target: {fileID: 919132149155446097, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
       propertyPath: m_Name
       value: light (6)
@@ -14178,6 +14323,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: c4aaef52cc1d50d41900af8fd51f8ebf, type: 2}
+    - target: {fileID: 5436872380782511138, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5799237219763902720, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -14197,6 +14346,14 @@ PrefabInstance:
     - target: {fileID: 6655287457865418537, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6997695831593571485, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
+      propertyPath: m_RayTracingMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6997695831593571485, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8036862177145167368, guid: 0fff5227bdd9b6e4388184878c63af32, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -15510,6 +15667,7 @@ GameObject:
   - component: {fileID: 1873907707}
   - component: {fileID: 1873907709}
   - component: {fileID: 1873907708}
+  - component: {fileID: 1873907710}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -15626,6 +15784,21 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1873907710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873907706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c8bca95f7c947b4db5fb152a0d693d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: com.cqf.urpvolumetricfog.runtime::VolumetricAdditionalLight
+  anisotropy: -0.71
+  scattering: 0.4
+  radius: 0.2
 --- !u!1001 &1909084352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16958,6 +17131,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 546b69ec663a78646b39d4c663e56f81, type: 2}
     - target: {fileID: 919132149155446097, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
       propertyPath: m_Name
       value: light (1)
@@ -17508,6 +17685,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'newstage '
       objectReference: {fileID: 0}
+    - target: {fileID: 8437037820771374890, guid: fc84cc39c2cbe58469a76584f8e1e943, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: a02aa00feb04f6d45ba8eeae8e337de8, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
