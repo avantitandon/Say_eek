@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "com.cqf.outline": "file:C:/Users/laura/Downloads/Unity-URP-Outline-main/Unity-URP-Outline-main",
     "com.cqf.urpvolumetricfog": "file:C:/Users/laura/Downloads/Unity-URP-Volumetric-Light-0.5.9/Unity-URP-Volumetric-Light-0.5.9",
     "com.unity.ai.navigation": "2.0.10",
     "com.unity.cinemachine": "3.1.5",
