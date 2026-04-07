@@ -326,8 +326,7 @@ public class GameController : MonoBehaviour
 
         if (endSeqManager.IsComplete())
         {
-            string scene = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene(scene);
+            SceneManager.LoadScene("mainMenu");
         }
 
         //Debug.Log("Game Ended");

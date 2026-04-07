@@ -85,8 +85,8 @@ public class EndSeqManager : MonoBehaviour
     void Start()
     {
         changePhotoAction = InputSystem.actions.FindAction("changePhoto");
-        selectAction = InputSystem.actions.FindAction("pickPhoto");
-        deselectAction = InputSystem.actions.FindAction("unpickPhoto");
+        selectAction = InputSystem.actions.FindAction("PhoneToggle");
+        deselectAction = InputSystem.actions.FindAction("PhoneToggle");
         sendAction = InputSystem.actions.FindAction("submitPhotos");
         advanceTextAction = InputSystem.actions.FindAction("advanceText");
     }
@@ -107,6 +107,8 @@ public class EndSeqManager : MonoBehaviour
 
     private void HandleSelection()
     {
+        bool photoSelected = false;
+
         if (endSeqState != State.Selection)
         {
             return;
@@ -118,10 +120,10 @@ public class EndSeqManager : MonoBehaviour
         // select current photo
         if (selectAction.WasPressedThisFrame())
         {
-            photoSelectionController.selectCurrentPhoto();
+            photoSelected = photoSelectionController.selectCurrentPhoto();
         }
         // deselect current photo
-        else if (deselectAction.WasPressedThisFrame())
+        if (deselectAction.WasPressedThisFrame() && !photoSelected)
         {
             photoSelectionController.deselectCurrentPhoto();
         }

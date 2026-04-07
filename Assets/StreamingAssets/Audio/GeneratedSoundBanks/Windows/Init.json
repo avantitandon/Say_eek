@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{206AC75A-DE47-BC55-6A1B-A299ED7B016B}",
+    "Hash": "{A732CE62-0A59-269C-C8B1-2687F124615F}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -56,14 +56,594 @@
       "GUID": "{03F6CEC2-07DB-4DD6-A719-936291B9C02D}"
      },
      {
+      "Id": "2035457160",
+      "Name": "ListenerCone",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\ListenerCone",
+      "GUID": "{BF03D322-83B3-4F06-A541-BF82DDE4E736}"
+     },
+     {
       "Id": "2341644420",
       "Name": "AmbienceSpread",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\AmbienceSpread",
       "GUID": "{24F120A9-1730-448D-BB04-5ED932729CD5}"
+     },
+     {
+      "Id": "2913793422",
+      "Name": "MoveAmount",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MoveAmount",
+      "GUID": "{BDE53784-FD07-4390-9DCC-D4D0DBDC6C30}"
+     },
+     {
+      "Id": "2984997679",
+      "Name": "IsSlowWalking",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\IsSlowWalking",
+      "GUID": "{E6C8F175-6921-46CD-A5B3-FA96DE1C9C48}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "1762393188",
+      "Name": "StageState",
+      "ObjectPath": "\\States\\Default Work Unit\\StageState",
+      "GUID": "{0B13CB48-7005-4192-897C-91A26EAB8CF2}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\StageState\\None",
+        "GUID": "{A72DC104-B688-4E85-8097-2B04CA63D994}"
+       },
+       {
+        "Id": "1408961167",
+        "Name": "DjDevil",
+        "ObjectPath": "\\States\\Default Work Unit\\StageState\\DjDevil",
+        "GUID": "{B0C35606-7482-4A35-861F-1E71B9EC41A4}"
+       },
+       {
+        "Id": "3647113020",
+        "Name": "DjDevilRockstar",
+        "ObjectPath": "\\States\\Default Work Unit\\StageState\\DjDevilRockstar",
+        "GUID": "{E1B7E26C-3CC0-4776-A843-E7646B013991}"
+       }
+      ]
+     },
+     {
+      "Id": "2332787646",
+      "Name": "TutorialState",
+      "ObjectPath": "\\States\\Default Work Unit\\TutorialState",
+      "GUID": "{BD4AEB84-F90F-494B-9BBF-12E703688C82}",
+      "States": [
+       {
+        "Id": "529726532",
+        "Name": "End",
+        "ObjectPath": "\\States\\Default Work Unit\\TutorialState\\End",
+        "GUID": "{A0D21E91-69A6-4DBD-B376-1C099A2AC0E6}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\TutorialState\\None",
+        "GUID": "{5668DC51-E3CA-4481-AB22-EFCF7502E623}"
+       },
+       {
+        "Id": "945962381",
+        "Name": "Picture",
+        "ObjectPath": "\\States\\Default Work Unit\\TutorialState\\Picture",
+        "GUID": "{169AE084-A911-4E70-B68E-6E1CE7370089}"
+       },
+       {
+        "Id": "1281810935",
+        "Name": "Start",
+        "ObjectPath": "\\States\\Default Work Unit\\TutorialState\\Start",
+        "GUID": "{07F1CAE3-F0F1-48B4-823D-B00529B9435F}"
+       }
+      ]
+     },
+     {
+      "Id": "3686139462",
+      "Name": "Area",
+      "ObjectPath": "\\States\\Default Work Unit\\Area",
+      "GUID": "{68631624-C252-41ED-BBC6-D61D5294D3A9}",
+      "States": [
+       {
+        "Id": "71202558",
+        "Name": "Spawn",
+        "ObjectPath": "\\States\\Default Work Unit\\Area\\Spawn",
+        "GUID": "{3FDF8AF1-932C-442B-89B9-7893B01A1117}"
+       },
+       {
+        "Id": "359097558",
+        "Name": "SpawnStart",
+        "ObjectPath": "\\States\\Default Work Unit\\Area\\SpawnStart",
+        "GUID": "{960242BD-8341-4CDF-9AA8-1FD38379AA37}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\Area\\None",
+        "GUID": "{1B7F7CB3-B1C4-4A1D-85B6-6D74194B5EFC}"
+       },
+       {
+        "Id": "1063701865",
+        "Name": "Stage",
+        "ObjectPath": "\\States\\Default Work Unit\\Area\\Stage",
+        "GUID": "{57557D36-413E-454C-8506-2EF645298017}"
+       },
+       {
+        "Id": "1362338037",
+        "Name": "Fountain",
+        "ObjectPath": "\\States\\Default Work Unit\\Area\\Fountain",
+        "GUID": "{EC09C213-14DB-45A6-AFC8-960F45070C33}"
+       },
+       {
+        "Id": "2101617846",
+        "Name": "Brides",
+        "ObjectPath": "\\States\\Default Work Unit\\Area\\Brides",
+        "GUID": "{B7B63A58-C06A-43CB-B923-712C8EBF8219}"
+       },
+       {
+        "Id": "2943799864",
+        "Name": "Maze",
+        "ObjectPath": "\\States\\Default Work Unit\\Area\\Maze",
+        "GUID": "{EE2B974E-DB3D-4CD4-A748-4845A3453CD5}"
+       }
+      ]
+     },
+     {
+      "Id": "4091656514",
+      "Name": "GameState",
+      "ObjectPath": "\\States\\Default Work Unit\\GameState",
+      "GUID": "{BE15BF94-7AFA-41B5-9127-3A9A06B8171A}",
+      "States": [
+       {
+        "Id": "58138747",
+        "Name": "Active",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\Active",
+        "GUID": "{1A3A5B8C-2913-4C5A-A613-546CBFDA0A93}"
+       },
+       {
+        "Id": "529726532",
+        "Name": "End",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\End",
+        "GUID": "{946C7D51-16F4-4B76-85F2-40EC0B9CDE42}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\None",
+        "GUID": "{1CB5C13C-5044-41AD-BE6A-34A1EA47CEE9}"
+       },
+       {
+        "Id": "3762955427",
+        "Name": "Tutorial",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\Tutorial",
+        "GUID": "{37D1CC34-A0A7-402D-AFC1-E6A04B44B971}"
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "2581616850",
+      "Name": "HarpSwitch",
+      "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch",
+      "GUID": "{C928B950-D5E0-481D-86E9-E3ECD4A72F70}",
+      "Switches": [
+       {
+        "Id": "3603878640",
+        "Name": "Bar_58",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_58",
+        "GUID": "{832906BC-41C4-424B-871C-26E34AF35FD8}"
+       },
+       {
+        "Id": "3603878641",
+        "Name": "Bar_59",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_59",
+        "GUID": "{1261C55F-6E87-4563-8ED6-A2DE79D06013}"
+       },
+       {
+        "Id": "3603878648",
+        "Name": "Bar_50",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_50",
+        "GUID": "{75353567-CFEF-4B03-BE46-B5AEF4FE78E2}"
+       },
+       {
+        "Id": "3603878649",
+        "Name": "Bar_51",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_51",
+        "GUID": "{6197C8F0-6B71-4F31-9F42-20672789EF71}"
+       },
+       {
+        "Id": "3603878650",
+        "Name": "Bar_52",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_52",
+        "GUID": "{D58B2F5A-F8A7-44BB-8032-FC128F817326}"
+       },
+       {
+        "Id": "3603878651",
+        "Name": "Bar_53",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_53",
+        "GUID": "{90EB6899-D498-4FB8-BEAB-7DB2EEE943A9}"
+       },
+       {
+        "Id": "3603878652",
+        "Name": "Bar_54",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_54",
+        "GUID": "{12CE69E0-2FD6-4480-821F-104E8B842E75}"
+       },
+       {
+        "Id": "3603878653",
+        "Name": "Bar_55",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_55",
+        "GUID": "{8848B5D9-76A5-477E-8845-066B51A3D737}"
+       },
+       {
+        "Id": "3603878654",
+        "Name": "Bar_56",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_56",
+        "GUID": "{1E95AC12-CA3F-4D4F-97B2-A03F44B5A4F8}"
+       },
+       {
+        "Id": "3603878655",
+        "Name": "Bar_57",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_57",
+        "GUID": "{94DCF484-C61B-40FE-B970-2C8544728B68}"
+       },
+       {
+        "Id": "3620656226",
+        "Name": "Bar_49",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_49",
+        "GUID": "{210A41D9-B025-4624-BA53-191A8D638E3F}"
+       },
+       {
+        "Id": "3620656227",
+        "Name": "Bar_48",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_48",
+        "GUID": "{6A04211F-F23C-4DB7-97E3-3CF9BD242ED1}"
+       },
+       {
+        "Id": "3620656232",
+        "Name": "Bar_43",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_43",
+        "GUID": "{75D0A965-E7D5-488F-B6BB-88B7DB18DC37}"
+       },
+       {
+        "Id": "3620656233",
+        "Name": "Bar_42",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_42",
+        "GUID": "{78CCF225-D553-42FE-A950-2141B6F96463}"
+       },
+       {
+        "Id": "3620656234",
+        "Name": "Bar_41",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_41",
+        "GUID": "{DEB21510-1A38-4AA5-BA8E-49DA2285F502}"
+       },
+       {
+        "Id": "3620656235",
+        "Name": "Bar_40",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_40",
+        "GUID": "{3B562E5D-BBAA-49BB-9A14-A131CB2B51A9}"
+       },
+       {
+        "Id": "3620656236",
+        "Name": "Bar_47",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_47",
+        "GUID": "{714EDB08-14BA-4696-BF12-924CFFD28086}"
+       },
+       {
+        "Id": "3620656237",
+        "Name": "Bar_46",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_46",
+        "GUID": "{8EE71530-6F41-428C-9680-E715F52B440D}"
+       },
+       {
+        "Id": "3620656238",
+        "Name": "Bar_45",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_45",
+        "GUID": "{1B31B98E-B879-4FDE-A0CC-A1A104026E1C}"
+       },
+       {
+        "Id": "3620656239",
+        "Name": "Bar_44",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_44",
+        "GUID": "{913590D7-3F9F-42DD-8625-3BA627282442}"
+       },
+       {
+        "Id": "3654211504",
+        "Name": "Bar_61",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_61",
+        "GUID": "{D38E08C6-5AAE-4A09-9A3C-DE9E6720D1A8}"
+       },
+       {
+        "Id": "3654211505",
+        "Name": "Bar_60",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_60",
+        "GUID": "{F01B51CD-DAA0-447A-904B-E475BD183BC9}"
+       },
+       {
+        "Id": "3654211506",
+        "Name": "Bar_63",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_63",
+        "GUID": "{B14D68BA-329C-45A0-B3A7-4453A25FBDFD}"
+       },
+       {
+        "Id": "3654211507",
+        "Name": "Bar_62",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_62",
+        "GUID": "{2E56F634-2476-4DB4-8C0D-BF8C5C1F38DB}"
+       },
+       {
+        "Id": "3670989088",
+        "Name": "Bar_14",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_14",
+        "GUID": "{7E054714-572F-455F-9C5E-6E31A65476C4}"
+       },
+       {
+        "Id": "3670989089",
+        "Name": "Bar_15",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_15",
+        "GUID": "{F155FB5C-F045-4267-8964-897113EB3C23}"
+       },
+       {
+        "Id": "3670989090",
+        "Name": "Bar_16",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_16",
+        "GUID": "{FF1D7614-2E8E-4DCC-A00D-EC23EABD590E}"
+       },
+       {
+        "Id": "3670989091",
+        "Name": "Bar_17",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_17",
+        "GUID": "{E8E81F47-74F9-4F17-B3C5-E81A50A7C4CA}"
+       },
+       {
+        "Id": "3670989092",
+        "Name": "Bar_10",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_10",
+        "GUID": "{7AF7C223-150B-43CB-9B2B-C197369EC087}"
+       },
+       {
+        "Id": "3670989093",
+        "Name": "Bar_11",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_11",
+        "GUID": "{18301DB1-B351-4DCA-815B-31BF0AA53EAC}"
+       },
+       {
+        "Id": "3670989094",
+        "Name": "Bar_12",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_12",
+        "GUID": "{440B502A-B272-4F4C-AF14-22EF2055B59C}"
+       },
+       {
+        "Id": "3670989095",
+        "Name": "Bar_13",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_13",
+        "GUID": "{FC2A92D1-02BE-432D-9E82-8D98C407C5A5}"
+       },
+       {
+        "Id": "3670989100",
+        "Name": "Bar_18",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_18",
+        "GUID": "{381BFBDE-0FC9-4B6A-811A-6D3F724A9D00}"
+       },
+       {
+        "Id": "3670989101",
+        "Name": "Bar_19",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_19",
+        "GUID": "{32E9CD63-1419-438D-AEA6-1B2E4EE451CC}"
+       },
+       {
+        "Id": "3687766672",
+        "Name": "Bar_07",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_07",
+        "GUID": "{931ADB9E-78FB-48BA-B8B5-9D99388B2D75}"
+       },
+       {
+        "Id": "3687766673",
+        "Name": "Bar_06",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_06",
+        "GUID": "{D68F331C-C544-4E6E-9A8A-D4293F348510}"
+       },
+       {
+        "Id": "3687766674",
+        "Name": "Bar_05",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_05",
+        "GUID": "{D3B6E3BA-97B1-487C-A688-13F4E5DD5075}"
+       },
+       {
+        "Id": "3687766675",
+        "Name": "Bar_04",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_04",
+        "GUID": "{1DD6C622-BF90-49F4-B733-D563A18E4E0D}"
+       },
+       {
+        "Id": "3687766676",
+        "Name": "Bar_03",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_03",
+        "GUID": "{00BE21B0-736A-478F-A239-39DFE95A6B58}"
+       },
+       {
+        "Id": "3687766677",
+        "Name": "Bar_02",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_02",
+        "GUID": "{36166787-DF9C-4549-A1F5-BF74510F52ED}"
+       },
+       {
+        "Id": "3687766678",
+        "Name": "Bar_01",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_01",
+        "GUID": "{5FAF6CE1-0CEB-4090-A087-9EE3B4124C71}"
+       },
+       {
+        "Id": "3687766686",
+        "Name": "Bar_09",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_09",
+        "GUID": "{71CFA30B-622E-4DB0-86DF-DE1C30CB4DE5}"
+       },
+       {
+        "Id": "3687766687",
+        "Name": "Bar_08",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_08",
+        "GUID": "{951722F4-ACC3-4A0D-9554-2C8BBE500306}"
+       },
+       {
+        "Id": "3704544258",
+        "Name": "Bar_38",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_38",
+        "GUID": "{0E6E571F-10CC-4CDE-94A0-363D2038FF94}"
+       },
+       {
+        "Id": "3704544259",
+        "Name": "Bar_39",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_39",
+        "GUID": "{7964AF70-960F-41BA-8A4C-3F638DC42992}"
+       },
+       {
+        "Id": "3704544264",
+        "Name": "Bar_32",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_32",
+        "GUID": "{58D90F09-E92D-42FD-9902-FBD833D9455A}"
+       },
+       {
+        "Id": "3704544265",
+        "Name": "Bar_33",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_33",
+        "GUID": "{9BF47DCB-F106-4694-9392-E73D9321AC38}"
+       },
+       {
+        "Id": "3704544266",
+        "Name": "Bar_30",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_30",
+        "GUID": "{67D0ED93-8098-432F-B0EC-A657EEB1E524}"
+       },
+       {
+        "Id": "3704544267",
+        "Name": "Bar_31",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_31",
+        "GUID": "{B5BDC674-CED0-477D-A773-F3E728ED2BF8}"
+       },
+       {
+        "Id": "3704544268",
+        "Name": "Bar_36",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_36",
+        "GUID": "{4B451C32-481B-4E02-A4A6-0827FECC1677}"
+       },
+       {
+        "Id": "3704544269",
+        "Name": "Bar_37",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_37",
+        "GUID": "{5A6C74F5-2DC7-42BB-8DBC-C481A401C14D}"
+       },
+       {
+        "Id": "3704544270",
+        "Name": "Bar_34",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_34",
+        "GUID": "{BEFC26F5-B9A1-4C1A-A939-9CC627017CAB}"
+       },
+       {
+        "Id": "3704544271",
+        "Name": "Bar_35",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_35",
+        "GUID": "{953202CB-C578-4855-8681-0D3F8143C534}"
+       },
+       {
+        "Id": "3721321972",
+        "Name": "Bar_29",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_29",
+        "GUID": "{94361827-D4F5-4240-AF77-5FD68ABEF381}"
+       },
+       {
+        "Id": "3721321973",
+        "Name": "Bar_28",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_28",
+        "GUID": "{27E9CA9F-381C-47FB-90EF-4D31508EABA3}"
+       },
+       {
+        "Id": "3721321976",
+        "Name": "Bar_25",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_25",
+        "GUID": "{A59B9421-887E-47E8-A360-DD79E3559990}"
+       },
+       {
+        "Id": "3721321977",
+        "Name": "Bar_24",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_24",
+        "GUID": "{89CE74C5-F80B-4038-9620-EA4F7AE88048}"
+       },
+       {
+        "Id": "3721321978",
+        "Name": "Bar_27",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_27",
+        "GUID": "{55C84423-21B7-48CB-BB08-D6676A60B0AE}"
+       },
+       {
+        "Id": "3721321979",
+        "Name": "Bar_26",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_26",
+        "GUID": "{BD0B26DD-38F3-453C-BC3A-45E45201416A}"
+       },
+       {
+        "Id": "3721321980",
+        "Name": "Bar_21",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_21",
+        "GUID": "{890BDD9E-E379-4522-8488-AFA69F3A3CA2}"
+       },
+       {
+        "Id": "3721321981",
+        "Name": "Bar_20",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_20",
+        "GUID": "{DCBE9008-BAF6-457A-B252-F74E3AF08994}"
+       },
+       {
+        "Id": "3721321982",
+        "Name": "Bar_23",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_23",
+        "GUID": "{3F3BDB59-6461-4446-A67D-0CE9E1025B13}"
+       },
+       {
+        "Id": "3721321983",
+        "Name": "Bar_22",
+        "ObjectPath": "\\Switches\\Default Work Unit\\HarpSwitch\\Bar_22",
+        "GUID": "{41955AB5-C630-4C2D-8117-68FAE15CB5FA}"
+       }
+      ]
+     },
+     {
+      "Id": "2623028164",
+      "Name": "FountainPosition",
+      "ObjectPath": "\\Switches\\Default Work Unit\\FountainPosition",
+      "GUID": "{5FC94CF4-E8E3-420E-ACB3-3D01E501B6E6}",
+      "Switches": [
+       {
+        "Id": "1802970377",
+        "Name": "FR",
+        "ObjectPath": "\\Switches\\Default Work Unit\\FountainPosition\\FR",
+        "GUID": "{4D381D96-A226-4E0D-A646-7866C01EB910}"
+       },
+       {
+        "Id": "1802970391",
+        "Name": "FL",
+        "ObjectPath": "\\Switches\\Default Work Unit\\FountainPosition\\FL",
+        "GUID": "{7B45FFE0-9DF6-4748-9E76-3CA16901D140}"
+       },
+       {
+        "Id": "1870080939",
+        "Name": "BL",
+        "ObjectPath": "\\Switches\\Default Work Unit\\FountainPosition\\BL",
+        "GUID": "{A6395BC1-35DE-4AF5-AAFF-2ED7E78EF5C0}"
+       },
+       {
+        "Id": "1870080949",
+        "Name": "BR",
+        "ObjectPath": "\\Switches\\Default Work Unit\\FountainPosition\\BR",
+        "GUID": "{E4B19554-213F-4114-A9AA-2DEBB8F97FD2}"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{3FA46A50-F362-6653-4102-4A8BE593A249}"
+  "FileHash": "{9AF51712-51FB-FCF1-3E1B-678AAB815A25}"
  }
 }

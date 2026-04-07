@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2572452617	Play_Beezaka_Laughing			\Default Work Unit\NPCs\Play_Beezaka_Laughing	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2035457160	ListenerCone			\Default Work Unit\ListenerCone	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2547645744	Boost_3dB_100Hz	Wwise Parametric EQ			
+	4018905782	ListenerConeEQ	Wwise Parametric EQ			
+

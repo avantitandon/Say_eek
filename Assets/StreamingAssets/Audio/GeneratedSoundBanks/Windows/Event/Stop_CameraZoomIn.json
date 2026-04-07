@@ -18,7 +18,7 @@
      {
       "Id": "3484989405",
       "Name": "Stop_CameraZoomIn",
-      "ObjectPath": "\\Events\\Default Work Unit\\Camera\\Stop_CameraZoomIn",
+      "ObjectPath": "\\Events\\Default Work Unit\\Camera\\Zoom\\Stop_CameraZoomIn",
       "GUID": "{E7CED2FA-B1AF-418C-B406-B74FE94FDFBC}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
@@ -28,6 +28,6 @@
     ]
    }
   ],
-  "FileHash": "{3FA6B8E1-6409-C642-1C31-5E902DB3B47F}"
+  "FileHash": "{0637DF28-7B86-FDA0-3C85-59B449D73A33}"
  }
 }

@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "4038005146",
+    "Type": "Event",
+    "GUID": "{48E5D7D5-7153-469B-95C1-3A9FAC12C57A}",
+    "Language": "SFX",
+    "Hash": "{687E2C94-A4A5-8660-44CE-13ED69B822A2}",
+    "ObjectPath": "Stop_First_Dance_in_Hell___Mar10",
+    "ShortName": "Stop_First_Dance_in_Hell___Mar10",
+    "Path": "Event/Stop_First_Dance_in_Hell___Mar10.bnk",
+    "Events": [
+     {
+      "Id": "4038005146",
+      "Name": "Stop_First_Dance_in_Hell___Mar10",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\OLD\\Stop_First_Dance_in_Hell___Mar10",
+      "GUID": "{48E5D7D5-7153-469B-95C1-3A9FAC12C57A}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{55528423-8D4F-7AD2-2829-83D75B0E9106}"
+ }
+}

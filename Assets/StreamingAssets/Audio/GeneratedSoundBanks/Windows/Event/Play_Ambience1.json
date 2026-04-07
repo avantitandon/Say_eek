@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{94406FF3-99F7-41E5-91D8-8EC64B06C772}",
     "Language": "SFX",
-    "Hash": "{588EDB8E-CE57-3110-5533-AD638F2B13F6}",
+    "Hash": "{FDEF33CD-5D6C-EBC0-48E8-61C3299749E5}",
     "ObjectPath": "Play_Ambience1",
     "ShortName": "Play_Ambience1",
     "Path": "Event/Play_Ambience1.bnk",
@@ -22,7 +22,7 @@
       "Location": "Loose",
       "ShortName": "amb_birds_001.wav",
       "Path": "Media/282051045.wem",
-      "CachePath": "3A/{3A628B0D-585E-21CB-C298-8F7C5E2C74C5}.wem"
+      "CachePath": "6A/{6AA41965-5A48-74EF-7822-C147A45784FD}.wem"
      },
      {
       "Id": "526911781",
@@ -31,18 +31,16 @@
       "Location": "Loose",
       "ShortName": "amb_leaves_001.wav",
       "Path": "Media/526911781.wem",
-      "CachePath": "1C/{1CD7F50A-AF6C-2D9A-4167-4519FA246C8F}.wem"
+      "CachePath": "61/{615D5B5F-0423-9106-EBE9-6E5666E13069}.wem"
      }
     ],
     "Events": [
      {
       "Id": "1117071627",
       "Name": "Play_Ambience1",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_Ambience1",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\Play_Ambience1",
       "GUID": "{94406FF3-99F7-41E5-91D8-8EC64B06C772}",
-      "DurationType": "OneShot",
-      "DurationMin": "50",
-      "DurationMax": "50",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "282051045"
@@ -63,6 +61,6 @@
     ]
    }
   ],
-  "FileHash": "{18456412-1CD0-777F-F165-234904482C21}"
+  "FileHash": "{25682851-CFA6-5D13-C566-CDB8EF741E2F}"
  }
 }

@@ -1,0 +1,242 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3815700291",
+    "Type": "Event",
+    "GUID": "{3B3CE729-D122-439D-A386-420D87E0A968}",
+    "Language": "SFX",
+    "Hash": "{3A068C67-CE65-B5FD-7351-2C32F52E312F}",
+    "ObjectPath": "Play_MainMusicSwitchContainer",
+    "ShortName": "Play_MainMusicSwitchContainer",
+    "Path": "Event/Play_MainMusicSwitchContainer.bnk",
+    "Media": [
+     {
+      "Id": "137062371",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "mus_55BPM_2-4_MainMusic_Spawn_Transition_nl.wav",
+      "Path": "Media/137062371.wem",
+      "CachePath": "ED/{ED628477-2DA9-A716-D080-A6C6410F986B}.wem"
+     },
+     {
+      "Id": "171688400",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "mus_55BPM_2-4_MainMusic_Brides_lp.wav",
+      "Path": "Media/171688400.wem",
+      "CachePath": "96/{9693A44B-FACD-099E-33B6-29A4550A1E37}.wem"
+     },
+     {
+      "Id": "271321739",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "mus_55BPM_2-4_MainMusic_Tutorial_Base_lp.wav",
+      "Path": "Media/271321739.wem",
+      "CachePath": "E6/{E6E30294-3A19-6726-5211-36E599B7968A}.wem"
+     },
+     {
+      "Id": "291338750",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "mus_55BPM_2-4_MainMusic_Maze_lp.wav",
+      "Path": "Media/291338750.wem",
+      "CachePath": "50/{5057E126-57DD-DE15-8830-2AB3D2FA9F1B}.wem"
+     },
+     {
+      "Id": "471653955",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "mus_55BPM_2-4_MainMusic_Stage_DJDevil_lp.wav",
+      "Path": "Media/471653955.wem",
+      "CachePath": "DA/{DA687A4D-36A5-70FD-9126-57C23DFAC0C1}.wem"
+     },
+     {
+      "Id": "655361172",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "mus_55BPM_2-4_MainMusic_Tutorial_Add_lp.wav",
+      "Path": "Media/655361172.wem",
+      "CachePath": "19/{1986086C-A3D2-D0B1-BAC0-2E70BF681388}.wem"
+     },
+     {
+      "Id": "766821291",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "mus_55BPM_2-4_MainMusic_Fountain_lp.wav",
+      "Path": "Media/766821291.wem",
+      "CachePath": "F8/{F8D93801-78C8-5519-ACAE-EF77F0AFB037}.wem"
+     },
+     {
+      "Id": "849902755",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "mus_55BPM_2-4_MainMusic_Tutorial_Add_nl.wav",
+      "Path": "Media/849902755.wem",
+      "CachePath": "81/{81285A23-00FB-5A45-E9B0-7E16DC3B8D13}.wem"
+     },
+     {
+      "Id": "850757949",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "mus_55BPM_2-4_MainMusic_SpawnStart_nl [2026-03-21 041546].wav",
+      "Path": "Media/850757949.wem",
+      "CachePath": "AE/{AE75AB59-FE76-BA25-103F-B709D9A0FE52}.wem"
+     },
+     {
+      "Id": "951674725",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "mus_55BPM_2-4_MainMusic_Tutorial_Base_nl.wav",
+      "Path": "Media/951674725.wem",
+      "CachePath": "CC/{CC852A53-17AA-AACD-38F8-01D361EE6560}.wem"
+     },
+     {
+      "Id": "1031523600",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "mus_55BPM_2-4_MainMusic_Spawn_lp.wav",
+      "Path": "Media/1031523600.wem",
+      "CachePath": "C2/{C29FEEC8-CFAA-BD30-A5F0-22416BA99D5E}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3815700291",
+      "Name": "Play_MainMusicSwitchContainer",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_MainMusicSwitchContainer",
+      "GUID": "{3B3CE729-D122-439D-A386-420D87E0A968}",
+      "DurationType": "Infinite",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "2332787646",
+         "Id": "529726532",
+         "GUID": "{A0D21E91-69A6-4DBD-B376-1C099A2AC0E6}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "137062371"
+         },
+         {
+          "Id": "171688400"
+         },
+         {
+          "Id": "291338750"
+         },
+         {
+          "Id": "471653955"
+         },
+         {
+          "Id": "766821291"
+         },
+         {
+          "Id": "850757949"
+         },
+         {
+          "Id": "1031523600"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "2332787646",
+         "Id": "1281810935",
+         "GUID": "{07F1CAE3-F0F1-48B4-823D-B00529B9435F}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "271321739"
+         },
+         {
+          "Id": "655361172"
+         },
+         {
+          "Id": "849902755"
+         },
+         {
+          "Id": "951674725"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "2332787646",
+         "Id": "945962381",
+         "GUID": "{169AE084-A911-4E70-B68E-6E1CE7370089}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "271321739"
+         },
+         {
+          "Id": "655361172"
+         },
+         {
+          "Id": "849902755"
+         },
+         {
+          "Id": "951674725"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "2332787646",
+      "Name": "TutorialState",
+      "ObjectPath": "\\States\\Default Work Unit\\TutorialState",
+      "GUID": "{BD4AEB84-F90F-494B-9BBF-12E703688C82}",
+      "States": [
+       {
+        "Id": "529726532",
+        "Name": "End",
+        "ObjectPath": "\\States\\Default Work Unit\\TutorialState\\End",
+        "GUID": "{A0D21E91-69A6-4DBD-B376-1C099A2AC0E6}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\TutorialState\\None",
+        "GUID": "{5668DC51-E3CA-4481-AB22-EFCF7502E623}"
+       },
+       {
+        "Id": "945962381",
+        "Name": "Picture",
+        "ObjectPath": "\\States\\Default Work Unit\\TutorialState\\Picture",
+        "GUID": "{169AE084-A911-4E70-B68E-6E1CE7370089}"
+       },
+       {
+        "Id": "1281810935",
+        "Name": "Start",
+        "ObjectPath": "\\States\\Default Work Unit\\TutorialState\\Start",
+        "GUID": "{07F1CAE3-F0F1-48B4-823D-B00529B9435F}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{68AE898C-46AA-811A-8722-9EAF61DBA1FC}"
+ }
+}
