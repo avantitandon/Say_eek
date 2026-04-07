@@ -2729,6 +2729,59 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &5780272185983516702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4040593435528049619}
+  - component: {fileID: 4287839427455307491}
+  m_Layer: 0
+  m_Name: Cube (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4040593435528049619
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5780272185983516702}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.31388822, y: -0.6377411, z: 0.29113787, w: 0.6403119}
+  m_LocalPosition: {x: 18.66, y: 1.32, z: 21.14}
+  m_LocalScale: {x: 4.785672, y: 10.278855, z: 3.9235303}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2791418999141006179}
+  m_LocalEulerAnglesHint: {x: -1.755, y: -90.601, z: 50.675}
+--- !u!65 &4287839427455307491
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5780272185983516702}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5, y: 5, z: 1}
+  m_Center: {x: 0, y: 0, z: 0.0000019073486}
 --- !u!1 &5866957353463848002
 GameObject:
   m_ObjectHideFlags: 0
@@ -3666,6 +3719,59 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: 0.0000018179417}
+--- !u!1 &8919031428971608387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8638061367444853397}
+  - component: {fileID: 6270957298368441970}
+  m_Layer: 0
+  m_Name: Cube (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8638061367444853397
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8919031428971608387}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.29441726, y: -0.6469626, z: -0.31081805, w: 0.6309914}
+  m_LocalPosition: {x: 18.68, y: 1.19, z: -21.49}
+  m_LocalScale: {x: 4.785672, y: 10.278855, z: 3.9235303}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2791418999141006179}
+  m_LocalEulerAnglesHint: {x: -1.755, y: -90.601, z: -50.675}
+--- !u!65 &6270957298368441970
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8919031428971608387}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5, y: 5, z: 1}
+  m_Center: {x: 0, y: 0, z: 0.0000019073486}
 --- !u!1 &9019152386856878351
 GameObject:
   m_ObjectHideFlags: 0
@@ -31992,7 +32098,13 @@ PrefabInstance:
       addedObject: {fileID: 8893402635889342846}
     - targetCorrespondingSourceObject: {fileID: 444660615643814406, guid: 3457863626111a84282d0d31bb809cfa, type: 3}
       insertIndex: 7
+      addedObject: {fileID: 4040593435528049619}
+    - targetCorrespondingSourceObject: {fileID: 444660615643814406, guid: 3457863626111a84282d0d31bb809cfa, type: 3}
+      insertIndex: 8
       addedObject: {fileID: 4501936532964529743}
+    - targetCorrespondingSourceObject: {fileID: 444660615643814406, guid: 3457863626111a84282d0d31bb809cfa, type: 3}
+      insertIndex: 9
+      addedObject: {fileID: 8638061367444853397}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 963788830555373756, guid: 3457863626111a84282d0d31bb809cfa, type: 3}
       insertIndex: -1
