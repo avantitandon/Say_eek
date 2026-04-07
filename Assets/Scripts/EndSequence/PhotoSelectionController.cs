@@ -144,6 +144,12 @@ public class PhotoSelectionController : MonoBehaviour
             GameObject photo_obj = Instantiate(photoTemplate, photoList.transform);
             RawImage image_obj = photo_obj.transform.Find("Image").GetComponent<RawImage>();
             image_obj.texture = photo_texture;
+
+            if (i > listColumns * 3)
+            {
+                photo_obj.SetActive(false);
+            }
+
             photoPreviews.Add(photo_obj);
         }
     }
@@ -178,6 +184,18 @@ public class PhotoSelectionController : MonoBehaviour
             int last_row_for_column = (totalPhotos - 1 - (currPhotoId % listColumns)) / listColumns; // the last row in the current column
             int new_idx_in_cols = Math.Clamp(idx_in_cols + (input.y > 0 ? -1 : 1), 0,  last_row_for_column);
             currPhotoId += listColumns * (new_idx_in_cols - idx_in_cols);
+
+
+            // scroll through photos vertically
+            // how does this work if total photos is 0???
+            if (new_idx_in_cols > 0 && new_idx_in_cols < (totalPhotos - 1) / listColumns && new_idx_in_cols != idx_in_cols)
+            {
+                hideAllRows();
+                showRow(new_idx_in_cols - 1);
+                showRow(new_idx_in_cols);
+                showRow(new_idx_in_cols + 1);
+            }
+
         }
 
         toggleGlow(true, currPhotoId);
@@ -241,5 +259,36 @@ public class PhotoSelectionController : MonoBehaviour
     {
         GameObject glow = photoPreviews[id].transform.Find("Glow").gameObject;
         glow.SetActive(enabled);
+    }
+
+    void hideRow(int idx)
+    {
+        int rowStart = idx * listColumns;
+        int rowEnd = Math.Min((idx + 1) * listColumns, totalPhotos) - 1;
+
+        for (int i = rowStart; i <= rowEnd; i++)
+        {
+            photoPreviews[i].SetActive(false);
+        }
+
+    }
+
+    void showRow(int idx)
+    {
+        int rowStart = idx * listColumns;
+        int rowEnd = Math.Min((idx + 1) * listColumns, totalPhotos) - 1;
+
+        for (int i = rowStart; i <= rowEnd; i++)
+        {
+            photoPreviews[i].SetActive(true);
+        }
+    }
+
+    void hideAllRows()
+    {
+        for (int i = 0; i <= (totalPhotos - 1) / listColumns; i++)
+        {
+            hideRow(i);
+        }
     }
 }
