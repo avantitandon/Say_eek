@@ -108,6 +108,26 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  playZekeHornBig:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  playZekeHornSmall:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  playZekeHornWelcome:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  playZekeHornPanic:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  playZekeHornFlyAway:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   playCameraCapture:
     idInternal: 0
     valueGuidInternal: 
@@ -1342,7 +1362,7 @@ Transform:
   m_GameObject: {fileID: 3639617125838905857}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9999678, z: -0, w: -0.0080226}
-  m_LocalPosition: {x: 79.89, y: 0, z: 70.64}
+  m_LocalPosition: {x: 79.57, y: 0, z: 50.78}
   m_LocalScale: {x: 15.250999, y: 20, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
