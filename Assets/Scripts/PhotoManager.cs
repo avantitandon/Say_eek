@@ -163,7 +163,8 @@ public class PhotoManager : MonoBehaviour
 
         score = score + GetFinalScore(scoreMap);
 
-        return score;
+        // scaling down for levelup
+        return score / 2;
     }
 
 
