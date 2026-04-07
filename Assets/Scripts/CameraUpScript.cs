@@ -67,6 +67,11 @@ public class CameraUpScript : MonoBehaviour
     {
         if (anim == null) anim = GetComponentInChildren<Animator>();
         cameraOverlay.SetActive(false);
+
+        // need to reset so that new lawa object sets these when she calls start
+        // otherwise these are left at lawa from previous game/round, and game freezes
+        CameraUP = null;
+        CameraDOWN = null;
     }
 
     void Start()
