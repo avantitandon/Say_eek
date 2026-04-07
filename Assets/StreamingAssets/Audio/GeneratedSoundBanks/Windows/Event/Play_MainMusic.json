@@ -1,0 +1,46 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1346240278",
+    "Type": "Event",
+    "GUID": "{EBD8662F-C315-47A2-9D79-FFC72F6A60CA}",
+    "Language": "SFX",
+    "Hash": "{4AA3C588-70E1-127B-004B-3DC79B29335D}",
+    "ObjectPath": "Play_MainMusic",
+    "ShortName": "Play_MainMusic",
+    "Path": "Event/Play_MainMusic.bnk",
+    "Media": [
+     {
+      "Id": "709278586",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "First Dance in Hell - Mar10.wav",
+      "Path": "Media/709278586.wem",
+      "CachePath": "6F/{6F735D9B-D742-5A61-1F00-9B363F9765B2}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1346240278",
+      "Name": "Play_MainMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\OLD\\Play_MainMusic",
+      "GUID": "{EBD8662F-C315-47A2-9D79-FFC72F6A60CA}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "709278586"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{BCA0A7AD-5B16-1AB0-C163-05BF3A41BDA4}"
+ }
+}

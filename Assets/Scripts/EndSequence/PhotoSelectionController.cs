@@ -183,12 +183,13 @@ public class PhotoSelectionController : MonoBehaviour
         toggleGlow(true, currPhotoId);
     }
 
-    public void selectCurrentPhoto()
+    // return if photo was selected
+    public bool selectCurrentPhoto()
     {   
         // can't select the current photo if it is currently selected or we are at max
         if (selectedPhotos.Contains(currPhotoId) || selectedCount >= targetPhotoCount)
         {
-            return;
+            return false;
         }
 
         selectedCount += 1;
@@ -196,6 +197,8 @@ public class PhotoSelectionController : MonoBehaviour
         // otherwise, select it
         selectedPhotos.Add(currPhotoId);
         dimPhoto(currPhotoId);
+
+        return true;
     }
 
     public void deselectCurrentPhoto()

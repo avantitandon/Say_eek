@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4003335362	Play_RubbleFootstep			\Default Work Unit\Footsteps\Play_RubbleFootstep	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2913793422	MoveAmount			\Default Work Unit\MoveAmount	
+	2984997679	IsSlowWalking			\Default Work Unit\IsSlowWalking	
+
