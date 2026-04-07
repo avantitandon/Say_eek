@@ -20,11 +20,11 @@ public class BossTextController : MonoBehaviour
     [SerializeField] private float slideDuration = 0.2f;
     [SerializeField] private float slideOffsetX = 0f;
     [SerializeField] private float slideOffsetY = 140f;
-    [SerializeField] private string defaultInstructionMessage = "Press Tab/Left D-Pad to continue";
-    [SerializeField] private string lowScoreMessage = "That... has nothing in it.";
-    [SerializeField] private string t1Message = "...Interesting. Try framing it closer.";
-    [SerializeField] private string t2Message = "There's potential in this. Can you get closer?";
-    [SerializeField] private string t3Message = "Perfect. This might go viral.";
+    // [SerializeField] private string defaultInstructionMessage = "Press Tab/Left D-Pad to continue";
+    // [SerializeField] private string lowScoreMessage = "That... has nothing in it.";
+    // [SerializeField] private string t1Message = "...Interesting. Try framing it closer.";
+    // [SerializeField] private string t2Message = "There's potential in this. Can you get closer?";
+    // [SerializeField] private string t3Message = "Perfect. This might go viral.";
     private string[] dialogueLines;
     private int Currlineindex;
     private string instructionOverride;
@@ -36,6 +36,40 @@ public class BossTextController : MonoBehaviour
 
     public bool IsDialogueActive => gameObject.activeSelf;
     public bool IsDialogueComplete => dialogueLines == null || Currlineindex >= dialogueLines.Length;
+
+    // text fields
+    [SerializeField] private string[] zeroScoreMessages = {
+        "That… has nothing in it.",
+        "Scenery is great, but I need guests.",
+        "There’s no one here.",
+        "…Are you trying to get fired?"
+    };
+
+    [SerializeField] private string[] noneScoreMessages = {
+        "...OK.",
+        "Center your shot.",
+        "…Interesting. Try framing it closer.",
+        "Their faces aren’t clear enough."
+    };
+
+    [SerializeField] private string[] blueScoreMessages = {
+        "Try getting closer and center your shot.",
+        "Could be better. Focus on their faces.",
+        "There’s potential in this. Can you get closer?"
+    };
+
+    [SerializeField] private string[] purpleScoreMessages = {
+        "Not bad. This one’s doing well.",
+        "Looks good. But I think you can do even better.",
+        "Good. Almost perfect."
+    };
+
+    [SerializeField] private string[] goldScoreMessages = {
+        "Excellent. Get more like this.",
+        "Perfect. This might go viral.",
+        "Hiring you was a good choice. You know what you’re doing."
+    };
+    
 
     void Awake()
     {
@@ -259,7 +293,7 @@ public class BossTextController : MonoBehaviour
         }
     }
 
-// end coroutinr
+    // end coroutinr
     private IEnumerator AutoHideAfterDelay(float durationSeconds)
     {
         yield return new WaitForSecondsRealtime(durationSeconds);
@@ -278,6 +312,18 @@ public class BossTextController : MonoBehaviour
         autoHideRoutine = null;
     }
 
+    // get random messages from list of array for each type of message
+    private string GetRandomMessage(string[] messages)
+    {
+        if (messages == null || messages.Length == 0)
+        {
+            return "...";
+        }
+
+        return messages[Random.Range(0, messages.Length)];
+    }
+
+
     // Have score be sent to this 
     // copy pasted this from the hearts logic
 
@@ -285,19 +331,24 @@ public class BossTextController : MonoBehaviour
     {
         if (score > T3_THRESHOLD)
         {
-            return t3Message;
+            return GetRandomMessage(goldScoreMessages);
         }
 
         if (score > T2_THRESHOLD)
         {
-            return t2Message;
+            return GetRandomMessage(purpleScoreMessages);
         }
 
         if (score > T1_THRESHOLD)
         {
-            return t1Message;
+            return GetRandomMessage(blueScoreMessages);
         }
 
-        return lowScoreMessage;
+        if (score > 0)
+        {
+            return GetRandomMessage(noneScoreMessages);
+        }
+
+        return GetRandomMessage(zeroScoreMessages);
     }
 }
