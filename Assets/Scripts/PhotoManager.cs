@@ -114,10 +114,17 @@ public class PhotoManager : MonoBehaviour
             if (Physics.Raycast(ray, out hit, 1000f, layerMask: ~ignoreLayers))
             {
 
-                // if the ray hit the ghost layer, add to the score
-                if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Ghost"))
+                // the gameobject we hit
+                GameObject hitobj = hit.collider.gameObject;
+
+                // if the ray hit the ghost layer
+                if (hitobj.layer == LayerMask.NameToLayer("Ghost"))
                 {
-                    score = score + 1;
+                    // if the ghost object has a controller, take the score from there
+                    if (hitobj.TryGetComponent<GhostController>(out GhostController ghost))
+                    {
+                        score = score + ghost.baseScore;
+                    }
                 }
             }
 
