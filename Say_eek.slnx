@@ -6,6 +6,7 @@
   <Project Path="AK.Wwise.Unity.API.Editor.csproj" />
   <Project Path="AK.Wwise.Unity.ProjectDatabase.csproj" />
   <Project Path="AK.Wwise.Unity.Timeline.csproj" />
+  <Project Path="com.cqf.outline.csproj" />
   <Project Path="AK.Wwise.Unity.API.WwiseTypes.csproj" />
   <Project Path="AK.Wwise.Unity.Logging.csproj" />
   <Project Path="com.cqf.urpvolumetricfog.editor.csproj" />

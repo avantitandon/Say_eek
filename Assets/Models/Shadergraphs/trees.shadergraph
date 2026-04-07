@@ -103,12 +103,6 @@
             "m_Id": "a7cae2598020464e816136dc13abf0c6"
         },
         {
-            "m_Id": "ef056f0935f9485787c9ae8314ae4b3d"
-        },
-        {
-            "m_Id": "8b861af802f94c23a71755d3b238cbb6"
-        },
-        {
             "m_Id": "1a2983d93f1f44b284433964313e67dd"
         },
         {
@@ -396,12 +390,6 @@
             },
             {
                 "m_Id": "a7cae2598020464e816136dc13abf0c6"
-            },
-            {
-                "m_Id": "ef056f0935f9485787c9ae8314ae4b3d"
-            },
-            {
-                "m_Id": "8b861af802f94c23a71755d3b238cbb6"
             }
         ]
     },
@@ -468,7 +456,7 @@
     "m_ObjectId": "0145ae8c3c394790803441dcf5f0562a",
     "m_WorkflowMode": 1,
     "m_NormalDropOffSpace": 0,
-    "m_ClearCoat": true,
+    "m_ClearCoat": false,
     "m_BlendModePreserveSpecular": true
 }
 
@@ -551,7 +539,7 @@
     "m_ObjectId": "02492909ca444426b1a0fb730d1aa442",
     "m_Title": "Apply Dither Transparency Threshold",
     "m_Position": {
-        "x": -707.3334350585938,
+        "x": -707.3333740234375,
         "y": 306.0
     }
 }
@@ -628,10 +616,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 231.33338928222657,
-            "y": -894.6666259765625,
+            "x": 214.6666717529297,
+            "y": -897.333251953125,
             "width": 209.3333282470703,
-            "height": 362.6666259765625
+            "height": 362.66668701171877
         }
     },
     "m_Slots": [
@@ -818,22 +806,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "094ef27a87f04a068721dbc38d3eafad",
-    "m_Id": 0,
-    "m_DisplayName": "Coat Smoothness",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "CoatSmoothness",
-    "m_StageCapability": 2,
-    "m_Value": 1.0,
-    "m_DefaultValue": 1.0,
-    "m_Labels": [],
-    "m_LiteralMode": false
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "09c7e34f8e6a4b969542fc35b158168f",
     "m_Id": 0,
@@ -1006,10 +978,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 482.0000305175781,
-            "y": -529.3333740234375,
+            "x": 473.9999694824219,
+            "y": -738.6665649414063,
             "width": 56.000030517578128,
-            "height": 24.000030517578126
+            "height": 24.0
         }
     },
     "m_Slots": [
@@ -1494,22 +1466,6 @@
     "m_Property": {
         "m_Id": "0726f716da1c3a83b3e0e98135cd8037"
     }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "4aaf259a3be3464094104f7f6732fe3d",
-    "m_Id": 0,
-    "m_DisplayName": "Coat Mask",
-    "m_SlotType": 0,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "CoatMask",
-    "m_StageCapability": 2,
-    "m_Value": 0.0,
-    "m_DefaultValue": 0.0,
-    "m_Labels": [],
-    "m_LiteralMode": false
 }
 
 {
@@ -2001,40 +1957,6 @@
         "w": 0.0
     },
     "m_LiteralMode": false
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.BlockNode",
-    "m_ObjectId": "8b861af802f94c23a71755d3b238cbb6",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "SurfaceDescription.CoatSmoothness",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": 0.0,
-            "y": 0.0,
-            "width": 0.0,
-            "height": 0.0
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "094ef27a87f04a068721dbc38d3eafad"
-        }
-    ],
-    "synonyms": [],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_DismissedVersion": 0,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_SerializedDescriptor": "SurfaceDescription.CoatSmoothness"
 }
 
 {
@@ -2908,8 +2830,8 @@
     "m_ObjectId": "e17638ac6bd1454689dd8bd6c23c010d",
     "m_Title": "Read Albedo texture, calculate pixel opacity",
     "m_Position": {
-        "x": -1020.6666870117188,
-        "y": -324.0
+        "x": -1020.6666259765625,
+        "y": -323.99993896484377
     }
 }
 
@@ -2952,40 +2874,6 @@
         "w": 0.0
     },
     "m_LiteralMode": false
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.BlockNode",
-    "m_ObjectId": "ef056f0935f9485787c9ae8314ae4b3d",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "SurfaceDescription.CoatMask",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": 0.0,
-            "y": 0.0,
-            "width": 0.0,
-            "height": 0.0
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "4aaf259a3be3464094104f7f6732fe3d"
-        }
-    ],
-    "synonyms": [],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_DismissedVersion": 0,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_SerializedDescriptor": "SurfaceDescription.CoatMask"
 }
 
 {
