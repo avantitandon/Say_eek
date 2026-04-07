@@ -81,6 +81,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ead122ec297671e4cb519b69cb7c8d7d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8912704090167662028}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ead122ec297671e4cb519b69cb7c8d7d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6153082213704178105}
   m_SourcePrefab: {fileID: 100100000, guid: ead122ec297671e4cb519b69cb7c8d7d, type: 3}
 --- !u!1 &4362260464804102851 stripped
 GameObject:
@@ -156,3 +159,17 @@ MonoBehaviour:
   aggro: 80
   ZekeSeekCamera: 0
   TimedEvent: 0
+--- !u!114 &6153082213704178105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4362260464804102851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72259199905c6403ab42a676a093139a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCAnimationAudio
+  audioManager: {fileID: 0}
+  animator: {fileID: 4470227222756495179}

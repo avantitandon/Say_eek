@@ -1,5 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
-	2202958181	Play_ZekeHornFlyingAway			\Default Work Unit\NPCs\Zeke\Play_ZekeHornFlyingAway	
+	2757517682	Play_ZekeHorn			\Default Work Unit\NPCs\Zeke\Play_ZekeHorn	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	1381159505	ZekeHornSwitch			\Default Work Unit\ZekeHornSwitch	

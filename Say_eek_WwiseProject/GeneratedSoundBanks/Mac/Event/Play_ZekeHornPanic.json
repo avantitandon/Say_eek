@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{76645DFE-D304-4CF1-B610-88F474D29A70}",
     "Language": "SFX",
-    "Hash": "{0C8DA0C0-8992-700A-C64A-F22BDE2806F8}",
+    "Hash": "{C41D2331-AEDA-98E5-357E-AE324D96AD77}",
     "ObjectPath": "Play_ZekeHornPanic",
     "ShortName": "Play_ZekeHornPanic",
     "Path": "Event/Play_ZekeHornPanic.bnk",
@@ -40,9 +40,55 @@
        }
       ]
      }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "1381159505",
+      "Name": "ZekeHornSwitch",
+      "ObjectPath": "\\Switches\\Default Work Unit\\ZekeHornSwitch",
+      "GUID": "{7361EBBF-562C-418A-B12F-6C15B7C15E27}",
+      "Switches": [
+       {
+        "Id": "647611021",
+        "Name": "Big",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ZekeHornSwitch\\Big",
+        "GUID": "{F7F50AE2-D717-4D1A-8F9B-534E7EDACDB0}"
+       },
+       {
+        "Id": "1846755610",
+        "Name": "Small",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ZekeHornSwitch\\Small",
+        "GUID": "{25281008-73B4-407B-AA84-D42B4936F3D3}"
+       },
+       {
+        "Id": "2421980327",
+        "Name": "Welcome",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ZekeHornSwitch\\Welcome",
+        "GUID": "{06476F60-03AA-45C7-8DA0-4E56BAE04B6C}"
+       },
+       {
+        "Id": "2859959522",
+        "Name": "FlyAway",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ZekeHornSwitch\\FlyAway",
+        "GUID": "{65F40FEF-080C-439D-B87C-0741DA37C705}"
+       },
+       {
+        "Id": "3130232582",
+        "Name": "Panic",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ZekeHornSwitch\\Panic",
+        "GUID": "{6BD28F24-FDEF-40D6-A4E8-8ACB6BC55C48}"
+       },
+       {
+        "Id": "3721960695",
+        "Name": "NoHorn",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ZekeHornSwitch\\NoHorn",
+        "GUID": "{42C927BE-D8CB-42B5-A375-CBA0F258E257}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{ABE00A10-2935-CE02-C9E1-0614CBA95851}"
+  "FileHash": "{3E3768AE-985F-F61A-BDA8-EF002A313CED}"
  }
 }

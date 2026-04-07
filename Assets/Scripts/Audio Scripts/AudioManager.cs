@@ -46,11 +46,18 @@ public class AudioManager : MonoBehaviour
         bool beezakaEvent = true;
         [SerializeField] private AK.Wwise.Event playBeezakaFootstep;
         [SerializeField] private AK.Wwise.Event playBeezakaFootstepSoft;
+        
+        //OLD
         [SerializeField] private AK.Wwise.Event playZekeHornBig;
         [SerializeField] private AK.Wwise.Event playZekeHornSmall;
         [SerializeField] private AK.Wwise.Event playZekeHornWelcome;
         [SerializeField] private AK.Wwise.Event playZekeHornPanic;
         [SerializeField] private AK.Wwise.Event playZekeHornFlyAway;
+        //NEW
+        [SerializeField] private AK.Wwise.Event playZekeHorn;
+        string zekeHornState = "NoHorn";
+
+        
 
 
     [Header("Camera Events")]
@@ -70,7 +77,10 @@ public class AudioManager : MonoBehaviour
         [SerializeField] private float feetYWorldPosition = 0f;
 
         [SerializeField] private GameObject beezakaEmitter;
+        [SerializeField] private GameObject zekeEmitter;
+
         [SerializeField] private GameObject churchBellEmitter;
+        
         [SerializeField] private GameObject fountainEmitterFL;
         [SerializeField] private GameObject fountainEmitterFR;
         [SerializeField] private GameObject fountainEmitterBL;
@@ -80,6 +90,7 @@ public class AudioManager : MonoBehaviour
     [Header("Scene Objects")]
         [SerializeField] private GameObject player;
         [SerializeField] private GameObject beezaka; 
+        [SerializeField] private GameObject zeke;
 
 
 
@@ -117,6 +128,9 @@ public class AudioManager : MonoBehaviour
         
         Vector3 beezakaPosition = beezaka.transform.position;
         beezakaEmitter.transform.position = new Vector3(beezakaPosition.x, beezakaPosition.y, beezakaPosition.z);
+
+        Vector3 zekePostition = zeke.transform.position;
+        zekeEmitter.transform.position = new Vector3(zekePostition.x, zekePostition.y, zekePostition.z);
     }
 
 
@@ -295,70 +309,82 @@ public class AudioManager : MonoBehaviour
         playBossText.Post(player); 
     }
 
+
     // EVENT Methods //
+
+
+
+
     public void HandleZekeHorn(ZekeManager.WhatShouldZekeDo whatShouldZekeDo)
     {
         switch (whatShouldZekeDo)
         {   
-            case ZekeManager.WhatShouldZekeDo.BlowBigHorn:
-                AkSoundEngine.SetState("ZekeHornState", "Big");
+            case ZekeManager.WhatShouldZekeDo.WaitStart:
+                AkSoundEngine.SetSwitch("ZekeHornSwitch", "Welcome", zeke);
+                zekeHornState = "Welcome";
                 break;
-            case ZekeManager.WhatShouldZekeDo.BlowSmallHorn:
-                AkSoundEngine.SetState("ZekeHornState", "Small");
+            case ZekeManager.WhatShouldZekeDo.SeekPlayer:
+                AkSoundEngine.SetSwitch("ZekeHornSwitch", "NoHorn", zeke);
+                zekeHornState = "NoHorn";
                 break;
-            case ZekeManager.WhatShouldZekeDo.BlowWelcomeHorn:
-                AkSoundEngine.SetState("ZekeHornState", "Welcome");
+            case ZekeManager.WhatShouldZekeDo.SeekEvent:
+                AkSoundEngine.SetSwitch("ZekeHornSwitch", "FlyAway", zeke);
+                zekeHornState = "FlyAway";
                 break;
-            case ZekeManager.WhatShouldZekeDo.BlowPanicHorn:
-                AkSoundEngine.SetState("ZekeHornState", "Panic");
+            case ZekeManager.WhatShouldZekeDo.GOTOSPECIALSPOT:
+                AkSoundEngine.SetSwitch("ZekeHornSwitch", "FlyAway", zeke);
+                zekeHornState = "FlyAway";
                 break;
-            case ZekeManager.WhatShouldZekeDo.BlowFlyAwayHorn:
-                AkSoundEngine.SetState("ZekeHornState", "FlyAway");
+            case ZekeManager.WhatShouldZekeDo.ChillOut:
+                AkSoundEngine.SetSwitch("ZekeHornSwitch", "NoHorn", zeke);
+                zekeHornState = "NoHorn";
+                break;
+            case ZekeManager.WhatShouldZekeDo.Panic:
+                AkSoundEngine.SetSwitch("ZekeHornSwitch", "Panic", zeke );
+                zekeHornState = "Panic";
                 break;
         }
+
     }
     
     public void PlayZekeHorn(GameObject npc, string currentAnimation)
     {
-        playZekeHornBig.Post(npc);
+        if (zekeHornState == "NoHorn")
+        {
+            if (currentAnimation == "zeke little horn")
+            {
+                AkSoundEngine.SetSwitch("ZekeHornSwitch", "Small", zeke);
+            }
+            else if (currentAnimation == "zeke big horn")
+            {
+                AkSoundEngine.SetSwitch("ZekeHornSwitch", "Big", zeke);
+            }
+
+            
+            
+        }
+
+     //   else if (zekeHornState == "Welcome" && currentAnimation == "zeke welcome")
+     //   {
+     //       AkSoundEngine.SetState("ZekeHornState", "Welcome");
+    //    }
+    //    else if (zekeHornState == "Panic" && currentAnimation == "zeke panic horn")
+    //    {
+    //        AkSoundEngine.SetState("ZekeHornState", "Panic");
+    //    }
+    //    else if (zekeHornState == "FlyAway" && currentAnimation == "zeke over HERE horn")
+    //    {
+   //         AkSoundEngine.SetState("ZekeHornState", "FlyAway");
+    //    }
+    //    else if (currentAnimation == "zeke little horn")
+    //    {
+    //        AkSoundEngine.SetState("ZekeHornState", "Small");
+    //    }
+   //     else if (currentAnimation == "zeke big horn")
+   //     {
+    //        AkSoundEngine.SetState("ZekeHornState", "Big");
+    //    }
+
+        playZekeHorn.Post(zekeEmitter);
     }
-    
-
-
-    private void PlayZekeHornBig()
-    {
-        playZekeHornBig.Post(zeke);
-    }
-
-
-
-
-
-    private void PlayZekeHornBig()
-    {
-        playZekeHornBig.Post(zeke);
-    }
-    public void PlayZekeHornSmall()
-    {
-        playZekeHornSmall.Post(zeke);
-    }
-    public void PlayZekeHornWelcome()
-    {
-        playZekeHornWelcome.Post(zeke);
-    }
-    public void PlayZekeHornPanic()
-    {        
-        playZekeHornPanic.Post(zeke);
-    }
-    public void PlayZekeHornFlyAway()
-    {
-        playZekeHornFlyAway.Post(zeke);
-    }
-
-
-
-
-
-
-
 }

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3715f12cd9be34194833e6eb0a06c023, type: 3}
-  m_Name: C22FDEBC-0409-4AED-B29D-128481F25994
+  m_Name: 44644CD1-36AB-4E7D-AF6A-665C7542EFB2
   m_EditorClassIdentifier: AK.Wwise.Unity.API.WwiseTypes::WwiseEventReference
-  objectName: Play_ZekeHornBig
-  id: 4088120424
-  guid: C22FDEBC-0409-4AED-B29D-128481F25994
+  objectName: Play_ZekeHorn
+  id: 2757517682
+  guid: 44644CD1-36AB-4E7D-AF6A-665C7542EFB2
   IsInUserDefinedSoundBank: 0

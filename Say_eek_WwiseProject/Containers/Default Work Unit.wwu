@@ -6851,316 +6851,397 @@
 					<ChildrenList>
 						<Folder Name="Zeke" ID="{2AC4A81D-835C-4384-B5E7-945DD09156DB}" ShortID="633553816">
 							<ChildrenList>
-								<RandomSequenceContainer Name="ZekeHornBig" ID="{FE3AD8EE-4048-41EA-91B8-3EC25C3FF24F}" ShortID="207268819">
+								<SwitchContainer Name="ZekeHorn" ID="{1308BAF6-1892-4634-A06E-B8570D59BF11}" ShortID="792939694">
+									<PropertyList>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
 										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="sfx_zeke_horn_big_01" ID="{1CAB76C6-C6EB-4034-9BBA-636A3196D78F}" ShortID="603042711">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_zeke_horn_big_01" ID="{DA03F674-412E-459C-8B17-2479C95962CF}">
-													<Language>SFX</Language>
-													<AudioFile>sfx_zeke_horn_big_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="395338863"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_zeke_horn_big_01" ID="{DA03F674-412E-459C-8B17-2479C95962CF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_zeke_horn_big_02" ID="{DE3A6FAF-1318-4A84-889F-648FD1A3C571}" ShortID="796486805">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_zeke_horn_big_02" ID="{CCFFBC7F-2587-40B9-BB66-ECA8AF13D2C7}">
-													<Language>SFX</Language>
-													<AudioFile>sfx_zeke_horn_big_02.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="589065798"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_zeke_horn_big_02" ID="{CCFFBC7F-2587-40B9-BB66-ECA8AF13D2C7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_zeke_horn_big_03" ID="{B55BB02E-6438-4EF7-8F82-6DF4D7049108}" ShortID="1060671912">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_zeke_horn_big_03" ID="{73AF67E7-C75A-4C9C-994C-0114371D91EB}">
-													<Language>SFX</Language>
-													<AudioFile>sfx_zeke_horn_big_03.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="173141080"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_zeke_horn_big_03" ID="{73AF67E7-C75A-4C9C-994C-0114371D91EB}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_zeke_horn_big_04" ID="{77DF8155-46A5-43D4-B647-2922031A4EFB}" ShortID="835162593">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_zeke_horn_big_04" ID="{B589231F-8839-4A6D-A86C-27F091390DC1}">
-													<Language>SFX</Language>
-													<AudioFile>sfx_zeke_horn_big_04.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="12755166"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_zeke_horn_big_04" ID="{B589231F-8839-4A6D-A86C-27F091390DC1}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="ZekeHornSmall" ID="{BFA26F80-FE5A-4F45-B323-8F5FC9CDA956}" ShortID="941850878">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="NoHorn" ID="{42C927BE-D8CB-42B5-A375-CBA0F258E257}" WorkUnitID="{A5FDBD19-8B53-4A82-821E-C414AE6CDECF}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
 										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="sfx_zeke_horn_small_01" ID="{A414E54B-CB44-4635-ACF7-8159E2A1E25F}" ShortID="753670915">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_zeke_horn_small_01" ID="{2AD3E05D-6D19-4127-9E1B-F49ED58806E1}">
-													<Language>SFX</Language>
-													<AudioFile>sfx_zeke_horn_small_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="876932269"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_zeke_horn_small_01" ID="{2AD3E05D-6D19-4127-9E1B-F49ED58806E1}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_zeke_horn_small_02" ID="{3BD6AF1F-7907-4FD1-B038-E8CC26858294}" ShortID="413779631">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_zeke_horn_small_02" ID="{C871D471-4422-48A1-9A09-5039A066D958}">
-													<Language>SFX</Language>
-													<AudioFile>sfx_zeke_horn_small_02.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="543321894"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_zeke_horn_small_02" ID="{C871D471-4422-48A1-9A09-5039A066D958}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_zeke_horn_small_03" ID="{77C857E5-CF19-4099-92B1-EEB1DCE177FF}" ShortID="388751214">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_zeke_horn_small_03" ID="{39067725-558F-4480-8BF3-494076986B53}">
-													<Language>SFX</Language>
-													<AudioFile>sfx_zeke_horn_small_03.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="494652532"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_zeke_horn_small_03" ID="{39067725-558F-4480-8BF3-494076986B53}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_zeke_horn_small_04" ID="{027DB1F7-C91D-4D78-A7DB-804890FF7F02}" ShortID="587414348">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_zeke_horn_small_04" ID="{926AF2AB-54B8-4F7D-BE2E-2C339A5FFAAC}">
-													<Language>SFX</Language>
-													<AudioFile>sfx_zeke_horn_small_04.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="898267996"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_zeke_horn_small_04" ID="{926AF2AB-54B8-4F7D-BE2E-2C339A5FFAAC}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_zeke_horn_small_05" ID="{62E777E6-2403-4D6B-AC94-CFE0AD0B649F}" ShortID="244402310">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_zeke_horn_small_05" ID="{FD73D1AE-A66E-4893-9CE7-1951F7FDAA08}">
-													<Language>SFX</Language>
-													<AudioFile>sfx_zeke_horn_small_05.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="203460267"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_zeke_horn_small_05" ID="{FD73D1AE-A66E-4893-9CE7-1951F7FDAA08}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_zeke_horn_small_06" ID="{FB8B61E1-01F6-42F0-A0E0-CCBBB039FE67}" ShortID="713944721">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_zeke_horn_small_06" ID="{744DED08-0466-4A53-8D0A-A3EC79A4736B}">
-													<Language>SFX</Language>
-													<AudioFile>sfx_zeke_horn_small_06.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="631298704"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_zeke_horn_small_06" ID="{744DED08-0466-4A53-8D0A-A3EC79A4736B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<Sound Name="sfx_zeke_horn_flyingAway" ID="{520C4729-D0E4-4E08-9BD7-1F11524943A7}" ShortID="81071170">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="ZekeHornSwitch" ID="{7361EBBF-562C-418A-B12F-6C15B7C15E27}" WorkUnitID="{A5FDBD19-8B53-4A82-821E-C414AE6CDECF}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="sfx_zeke_horn_flyingAway" ID="{D3122897-91CD-48C7-BB93-040552BF9E2C}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_zeke_horn_flyingAway.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="707098202"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<RandomSequenceContainer Name="ZekeHornBig" ID="{FE3AD8EE-4048-41EA-91B8-3EC25C3FF24F}" ShortID="207268819">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_zeke_horn_big_01" ID="{1CAB76C6-C6EB-4034-9BBA-636A3196D78F}" ShortID="603042711">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_zeke_horn_big_01" ID="{DA03F674-412E-459C-8B17-2479C95962CF}">
+															<Language>SFX</Language>
+															<AudioFile>sfx_zeke_horn_big_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="395338863"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_zeke_horn_big_01" ID="{DA03F674-412E-459C-8B17-2479C95962CF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_zeke_horn_big_02" ID="{DE3A6FAF-1318-4A84-889F-648FD1A3C571}" ShortID="796486805">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_zeke_horn_big_02" ID="{CCFFBC7F-2587-40B9-BB66-ECA8AF13D2C7}">
+															<Language>SFX</Language>
+															<AudioFile>sfx_zeke_horn_big_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="589065798"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_zeke_horn_big_02" ID="{CCFFBC7F-2587-40B9-BB66-ECA8AF13D2C7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_zeke_horn_big_03" ID="{B55BB02E-6438-4EF7-8F82-6DF4D7049108}" ShortID="1060671912">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_zeke_horn_big_03" ID="{73AF67E7-C75A-4C9C-994C-0114371D91EB}">
+															<Language>SFX</Language>
+															<AudioFile>sfx_zeke_horn_big_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="173141080"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_zeke_horn_big_03" ID="{73AF67E7-C75A-4C9C-994C-0114371D91EB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_zeke_horn_big_04" ID="{77DF8155-46A5-43D4-B647-2922031A4EFB}" ShortID="835162593">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_zeke_horn_big_04" ID="{B589231F-8839-4A6D-A86C-27F091390DC1}">
+															<Language>SFX</Language>
+															<AudioFile>sfx_zeke_horn_big_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="12755166"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_zeke_horn_big_04" ID="{B589231F-8839-4A6D-A86C-27F091390DC1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="ZekeHornSmall" ID="{BFA26F80-FE5A-4F45-B323-8F5FC9CDA956}" ShortID="941850878">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_zeke_horn_small_01" ID="{A414E54B-CB44-4635-ACF7-8159E2A1E25F}" ShortID="753670915">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_zeke_horn_small_01" ID="{2AD3E05D-6D19-4127-9E1B-F49ED58806E1}">
+															<Language>SFX</Language>
+															<AudioFile>sfx_zeke_horn_small_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="876932269"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_zeke_horn_small_01" ID="{2AD3E05D-6D19-4127-9E1B-F49ED58806E1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_zeke_horn_small_02" ID="{3BD6AF1F-7907-4FD1-B038-E8CC26858294}" ShortID="413779631">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_zeke_horn_small_02" ID="{C871D471-4422-48A1-9A09-5039A066D958}">
+															<Language>SFX</Language>
+															<AudioFile>sfx_zeke_horn_small_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="543321894"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_zeke_horn_small_02" ID="{C871D471-4422-48A1-9A09-5039A066D958}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_zeke_horn_small_03" ID="{77C857E5-CF19-4099-92B1-EEB1DCE177FF}" ShortID="388751214">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_zeke_horn_small_03" ID="{39067725-558F-4480-8BF3-494076986B53}">
+															<Language>SFX</Language>
+															<AudioFile>sfx_zeke_horn_small_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="494652532"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_zeke_horn_small_03" ID="{39067725-558F-4480-8BF3-494076986B53}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_zeke_horn_small_04" ID="{027DB1F7-C91D-4D78-A7DB-804890FF7F02}" ShortID="587414348">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_zeke_horn_small_04" ID="{926AF2AB-54B8-4F7D-BE2E-2C339A5FFAAC}">
+															<Language>SFX</Language>
+															<AudioFile>sfx_zeke_horn_small_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="898267996"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_zeke_horn_small_04" ID="{926AF2AB-54B8-4F7D-BE2E-2C339A5FFAAC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_zeke_horn_small_05" ID="{62E777E6-2403-4D6B-AC94-CFE0AD0B649F}" ShortID="244402310">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_zeke_horn_small_05" ID="{FD73D1AE-A66E-4893-9CE7-1951F7FDAA08}">
+															<Language>SFX</Language>
+															<AudioFile>sfx_zeke_horn_small_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="203460267"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_zeke_horn_small_05" ID="{FD73D1AE-A66E-4893-9CE7-1951F7FDAA08}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_zeke_horn_small_06" ID="{FB8B61E1-01F6-42F0-A0E0-CCBBB039FE67}" ShortID="713944721">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_zeke_horn_small_06" ID="{744DED08-0466-4A53-8D0A-A3EC79A4736B}">
+															<Language>SFX</Language>
+															<AudioFile>sfx_zeke_horn_small_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="631298704"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_zeke_horn_small_06" ID="{744DED08-0466-4A53-8D0A-A3EC79A4736B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<Sound Name="sfx_zeke_horn_flyingAway" ID="{520C4729-D0E4-4E08-9BD7-1F11524943A7}" ShortID="81071170">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_zeke_horn_flyingAway" ID="{D3122897-91CD-48C7-BB93-040552BF9E2C}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_zeke_horn_flyingAway.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="707098202"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_zeke_horn_flyingAway" ID="{D3122897-91CD-48C7-BB93-040552BF9E2C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_zeke_horn_panic" ID="{99C42E01-848F-49E2-9A2F-117657CEAD62}" ShortID="326655131">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_zeke_horn_panic" ID="{EDEAFDA1-2809-4C37-B8B9-460FAE8529CB}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_zeke_horn_panic.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="411014615"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_zeke_horn_panic" ID="{EDEAFDA1-2809-4C37-B8B9-460FAE8529CB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="sfx_zeke_horn_welcome" ID="{5C89A4C4-5035-49D2-AF29-5E2401CA5718}" ShortID="510012357">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_zeke_horn_welcome" ID="{2AF49F57-9D5D-4448-BB26-6BC57EF1B32F}">
+													<Language>SFX</Language>
+													<AudioFile>sfx_zeke_horn_welcome.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="672805524"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_zeke_horn_welcome" ID="{2AF49F57-9D5D-4448-BB26-6BC57EF1B32F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_zeke_horn_flyingAway" ID="{D3122897-91CD-48C7-BB93-040552BF9E2C}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_zeke_horn_panic" ID="{99C42E01-848F-49E2-9A2F-117657CEAD62}" ShortID="326655131">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_zeke_horn_panic" ID="{EDEAFDA1-2809-4C37-B8B9-460FAE8529CB}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_zeke_horn_panic.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="411014615"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_zeke_horn_panic" ID="{EDEAFDA1-2809-4C37-B8B9-460FAE8529CB}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_zeke_horn_welcome" ID="{5C89A4C4-5035-49D2-AF29-5E2401CA5718}" ShortID="510012357">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B19FB23D-5EE5-4733-A937-C621241178B9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C327FEFD-9BE7-48A5-9625-5065A684274F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_zeke_horn_welcome" ID="{2AF49F57-9D5D-4448-BB26-6BC57EF1B32F}">
-											<Language>SFX</Language>
-											<AudioFile>sfx_zeke_horn_welcome.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="672805524"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_zeke_horn_welcome" ID="{2AF49F57-9D5D-4448-BB26-6BC57EF1B32F}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_zeke_horn_panic" ID="{99C42E01-848F-49E2-9A2F-117657CEAD62}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_zeke_horn_flyingAway" ID="{520C4729-D0E4-4E08-9BD7-1F11524943A7}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="ZekeHornSmall" ID="{BFA26F80-FE5A-4F45-B323-8F5FC9CDA956}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="sfx_zeke_horn_welcome" ID="{5C89A4C4-5035-49D2-AF29-5E2401CA5718}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="ZekeHornBig" ID="{FE3AD8EE-4048-41EA-91B8-3EC25C3FF24F}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Small" ID="{25281008-73B4-407B-AA84-D42B4936F3D3}"/>
+												<ItemList>
+													<ItemRef Name="ZekeHornSmall" ID="{BFA26F80-FE5A-4F45-B323-8F5FC9CDA956}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Panic" ID="{6BD28F24-FDEF-40D6-A4E8-8ACB6BC55C48}"/>
+												<ItemList>
+													<ItemRef Name="sfx_zeke_horn_panic" ID="{99C42E01-848F-49E2-9A2F-117657CEAD62}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Welcome" ID="{06476F60-03AA-45C7-8DA0-4E56BAE04B6C}"/>
+												<ItemList>
+													<ItemRef Name="sfx_zeke_horn_welcome" ID="{5C89A4C4-5035-49D2-AF29-5E2401CA5718}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Big" ID="{F7F50AE2-D717-4D1A-8F9B-534E7EDACDB0}"/>
+												<ItemList>
+													<ItemRef Name="ZekeHornBig" ID="{FE3AD8EE-4048-41EA-91B8-3EC25C3FF24F}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="FlyAway" ID="{65F40FEF-080C-439D-B87C-0741DA37C705}"/>
+												<ItemList>
+													<ItemRef Name="sfx_zeke_horn_flyingAway" ID="{520C4729-D0E4-4E08-9BD7-1F11524943A7}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Beezaka" ID="{BC894A4F-911A-42F3-B331-2319AAD8FE21}" ShortID="103490595">

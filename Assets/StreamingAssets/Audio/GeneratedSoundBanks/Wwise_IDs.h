@@ -36,6 +36,7 @@ namespace AK
         static const AkUniqueID PLAY_RUBBLEFOOTSTEP = 4003335362U;
         static const AkUniqueID PLAY_SFX_BOSS_TEXT__2026_03_31_055720_ = 1930652505U;
         static const AkUniqueID PLAY_STONEFOOTSTEP = 1749496171U;
+        static const AkUniqueID PLAY_ZEKEHORN = 2757517682U;
         static const AkUniqueID PLAY_ZEKEHORNBIG = 4088120424U;
         static const AkUniqueID PLAY_ZEKEHORNFLYINGAWAY = 2202958181U;
         static const AkUniqueID PLAY_ZEKEHORNPANIC = 4258823655U;
@@ -193,6 +194,21 @@ namespace AK
                 static const AkUniqueID BAR_63 = 3654211506U;
             } // namespace SWITCH
         } // namespace HARPSWITCH
+
+        namespace ZEKEHORNSWITCH
+        {
+            static const AkUniqueID GROUP = 1381159505U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BIG = 647611021U;
+                static const AkUniqueID FLYAWAY = 2859959522U;
+                static const AkUniqueID NOHORN = 3721960695U;
+                static const AkUniqueID PANIC = 3130232582U;
+                static const AkUniqueID SMALL = 1846755610U;
+                static const AkUniqueID WELCOME = 2421980327U;
+            } // namespace SWITCH
+        } // namespace ZEKEHORNSWITCH
 
     } // namespace SWITCHES
 

@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{14D9462C-E43C-4583-B1BC-708FEB3BCA48}",
     "Language": "SFX",
-    "Hash": "{B0725807-1525-39C9-2812-CA9E7F9DB3D4}",
+    "Hash": "{C6F20EA4-1B99-73CA-B8C7-347051739688}",
     "ObjectPath": "Play_ZekeHornBig",
     "ShortName": "Play_ZekeHornBig",
     "Path": "Event/Play_ZekeHornBig.bnk",
@@ -76,9 +76,55 @@
        }
       ]
      }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "1381159505",
+      "Name": "ZekeHornSwitch",
+      "ObjectPath": "\\Switches\\Default Work Unit\\ZekeHornSwitch",
+      "GUID": "{7361EBBF-562C-418A-B12F-6C15B7C15E27}",
+      "Switches": [
+       {
+        "Id": "647611021",
+        "Name": "Big",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ZekeHornSwitch\\Big",
+        "GUID": "{F7F50AE2-D717-4D1A-8F9B-534E7EDACDB0}"
+       },
+       {
+        "Id": "1846755610",
+        "Name": "Small",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ZekeHornSwitch\\Small",
+        "GUID": "{25281008-73B4-407B-AA84-D42B4936F3D3}"
+       },
+       {
+        "Id": "2421980327",
+        "Name": "Welcome",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ZekeHornSwitch\\Welcome",
+        "GUID": "{06476F60-03AA-45C7-8DA0-4E56BAE04B6C}"
+       },
+       {
+        "Id": "2859959522",
+        "Name": "FlyAway",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ZekeHornSwitch\\FlyAway",
+        "GUID": "{65F40FEF-080C-439D-B87C-0741DA37C705}"
+       },
+       {
+        "Id": "3130232582",
+        "Name": "Panic",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ZekeHornSwitch\\Panic",
+        "GUID": "{6BD28F24-FDEF-40D6-A4E8-8ACB6BC55C48}"
+       },
+       {
+        "Id": "3721960695",
+        "Name": "NoHorn",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ZekeHornSwitch\\NoHorn",
+        "GUID": "{42C927BE-D8CB-42B5-A375-CBA0F258E257}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{323AD661-5551-EF1A-4D84-A53F02EF41D4}"
+  "FileHash": "{9CDC0E26-4D65-2164-75FF-3521D18C58B5}"
  }
 }

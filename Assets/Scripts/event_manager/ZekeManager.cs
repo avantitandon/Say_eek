@@ -24,6 +24,12 @@ public class ZekeManager : MonoBehaviour
     public GameObject zeke;
     public Vector3 EventLocation;
     public Transform player;
+
+    // AUDIO //
+    [SerializeField] private AudioManager audioManager;
+
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -115,11 +121,11 @@ public class ZekeManager : MonoBehaviour
             Z2Zcommunication();
         }
 
-        //AUDIO ON UPDATE
+        //AUDIO ON UPDATE //
 
         audioManager.HandleZekeHorn(whatShouldZekeDo);
 
-        
+
         
 
 /*        //checking for state changes, therefore also checking for event changes
@@ -171,7 +177,7 @@ public class ZekeManager : MonoBehaviour
     private void Z2Zcommunication()
     {
         //ensures that functions are only called once, so zeehaviours knows what zeke should do when zeke needs to do something
-        Debug.Log("zeke to zeke");
+        Debug.Log("zeke to zeke:" + whatShouldZekeDo);
         zeehaviours.Z2Zrecieve(whatShouldZekeDo);
         
     }

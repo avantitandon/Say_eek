@@ -78,6 +78,16 @@
 						<Switch Name="BR" ID="{E4B19554-213F-4114-A9AA-2DEBB8F97FD2}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="ZekeHornSwitch" ID="{7361EBBF-562C-418A-B12F-6C15B7C15E27}">
+					<ChildrenList>
+						<Switch Name="Big" ID="{F7F50AE2-D717-4D1A-8F9B-534E7EDACDB0}"/>
+						<Switch Name="Small" ID="{25281008-73B4-407B-AA84-D42B4936F3D3}"/>
+						<Switch Name="Panic" ID="{6BD28F24-FDEF-40D6-A4E8-8ACB6BC55C48}"/>
+						<Switch Name="Welcome" ID="{06476F60-03AA-45C7-8DA0-4E56BAE04B6C}"/>
+						<Switch Name="FlyAway" ID="{65F40FEF-080C-439D-B87C-0741DA37C705}"/>
+						<Switch Name="NoHorn" ID="{42C927BE-D8CB-42B5-A375-CBA0F258E257}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

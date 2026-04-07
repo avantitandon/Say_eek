@@ -1,0 +1,288 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2757517682",
+    "Type": "Event",
+    "GUID": "{44644CD1-36AB-4E7D-AF6A-665C7542EFB2}",
+    "Language": "SFX",
+    "Hash": "{DEA30AC6-3259-DD07-02F7-5B5B665BF39C}",
+    "ObjectPath": "Play_ZekeHorn",
+    "ShortName": "Play_ZekeHorn",
+    "Path": "Event/Play_ZekeHorn.bnk",
+    "Media": [
+     {
+      "Id": "12755166",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_big_04.wav",
+      "Path": "Media/12755166.wem",
+      "CachePath": "07/{0795A065-7792-F387-596F-F371EE847FA8}.wem"
+     },
+     {
+      "Id": "173141080",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_big_03.wav",
+      "Path": "Media/173141080.wem",
+      "CachePath": "FE/{FE7BD68C-F092-645B-3F1D-39EFE735D6C3}.wem"
+     },
+     {
+      "Id": "203460267",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_small_05.wav",
+      "Path": "Media/203460267.wem",
+      "CachePath": "A9/{A907B388-B493-F4AF-C7CD-97237B02F6B5}.wem"
+     },
+     {
+      "Id": "395338863",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_big_01.wav",
+      "Path": "Media/395338863.wem",
+      "CachePath": "46/{46F97557-308C-54B2-C731-3154B7D3E57F}.wem"
+     },
+     {
+      "Id": "411014615",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_panic.wav",
+      "Path": "Media/411014615.wem",
+      "CachePath": "59/{59960418-F408-1367-3D2A-99D407ABC7F2}.wem"
+     },
+     {
+      "Id": "494652532",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_small_03.wav",
+      "Path": "Media/494652532.wem",
+      "CachePath": "12/{12C29AF4-B43B-F8A4-D1EF-BE0C41AF8364}.wem"
+     },
+     {
+      "Id": "543321894",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_small_02.wav",
+      "Path": "Media/543321894.wem",
+      "CachePath": "42/{42267874-685A-D0E6-C68F-6ACDDCCA450B}.wem"
+     },
+     {
+      "Id": "589065798",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_big_02.wav",
+      "Path": "Media/589065798.wem",
+      "CachePath": "2F/{2F5AAC66-D038-BCBB-D751-6B39758BD64F}.wem"
+     },
+     {
+      "Id": "631298704",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_small_06.wav",
+      "Path": "Media/631298704.wem",
+      "CachePath": "51/{519338E0-D036-1607-6F62-BA1CBF4FDE1F}.wem"
+     },
+     {
+      "Id": "672805524",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_welcome.wav",
+      "Path": "Media/672805524.wem",
+      "CachePath": "AB/{AB020FCD-026D-396E-D809-B8CA08A4B7A8}.wem"
+     },
+     {
+      "Id": "707098202",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_flyingAway.wav",
+      "Path": "Media/707098202.wem",
+      "CachePath": "98/{98E43426-973A-1CC9-C49B-0C7E1B85DC79}.wem"
+     },
+     {
+      "Id": "876932269",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_small_01.wav",
+      "Path": "Media/876932269.wem",
+      "CachePath": "4D/{4D48C7CE-7884-88D4-5701-7A7644747841}.wem"
+     },
+     {
+      "Id": "898267996",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_small_04.wav",
+      "Path": "Media/898267996.wem",
+      "CachePath": "35/{3552B0F5-6CF9-F4E2-5BC8-635EF996C019}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2757517682",
+      "Name": "Play_ZekeHorn",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Zeke\\Play_ZekeHorn",
+      "GUID": "{44644CD1-36AB-4E7D-AF6A-665C7542EFB2}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.546875",
+      "DurationMax": "2.625",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1381159505",
+         "Id": "1846755610",
+         "GUID": "{25281008-73B4-407B-AA84-D42B4936F3D3}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "203460267"
+         },
+         {
+          "Id": "494652532"
+         },
+         {
+          "Id": "543321894"
+         },
+         {
+          "Id": "631298704"
+         },
+         {
+          "Id": "876932269"
+         },
+         {
+          "Id": "898267996"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1381159505",
+         "Id": "3130232582",
+         "GUID": "{6BD28F24-FDEF-40D6-A4E8-8ACB6BC55C48}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "411014615"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1381159505",
+         "Id": "2421980327",
+         "GUID": "{06476F60-03AA-45C7-8DA0-4E56BAE04B6C}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "672805524"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1381159505",
+         "Id": "647611021",
+         "GUID": "{F7F50AE2-D717-4D1A-8F9B-534E7EDACDB0}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "12755166"
+         },
+         {
+          "Id": "173141080"
+         },
+         {
+          "Id": "395338863"
+         },
+         {
+          "Id": "589065798"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1381159505",
+         "Id": "2859959522",
+         "GUID": "{65F40FEF-080C-439D-B87C-0741DA37C705}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "707098202"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "1381159505",
+      "Name": "ZekeHornSwitch",
+      "ObjectPath": "\\Switches\\Default Work Unit\\ZekeHornSwitch",
+      "GUID": "{7361EBBF-562C-418A-B12F-6C15B7C15E27}",
+      "Switches": [
+       {
+        "Id": "647611021",
+        "Name": "Big",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ZekeHornSwitch\\Big",
+        "GUID": "{F7F50AE2-D717-4D1A-8F9B-534E7EDACDB0}"
+       },
+       {
+        "Id": "1846755610",
+        "Name": "Small",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ZekeHornSwitch\\Small",
+        "GUID": "{25281008-73B4-407B-AA84-D42B4936F3D3}"
+       },
+       {
+        "Id": "2421980327",
+        "Name": "Welcome",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ZekeHornSwitch\\Welcome",
+        "GUID": "{06476F60-03AA-45C7-8DA0-4E56BAE04B6C}"
+       },
+       {
+        "Id": "2859959522",
+        "Name": "FlyAway",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ZekeHornSwitch\\FlyAway",
+        "GUID": "{65F40FEF-080C-439D-B87C-0741DA37C705}"
+       },
+       {
+        "Id": "3130232582",
+        "Name": "Panic",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ZekeHornSwitch\\Panic",
+        "GUID": "{6BD28F24-FDEF-40D6-A4E8-8ACB6BC55C48}"
+       },
+       {
+        "Id": "3721960695",
+        "Name": "NoHorn",
+        "ObjectPath": "\\Switches\\Default Work Unit\\ZekeHornSwitch\\NoHorn",
+        "GUID": "{42C927BE-D8CB-42B5-A375-CBA0F258E257}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{7DDFF947-989D-EC58-6CBF-C98BCB3551F4}"
+ }
+}

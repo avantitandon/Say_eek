@@ -128,6 +128,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  playZekeHorn:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   playCameraCapture:
     idInternal: 0
     valueGuidInternal: 
@@ -159,6 +163,7 @@ MonoBehaviour:
   feetEmitter: {fileID: 5188557503325101693}
   feetYWorldPosition: 0
   beezakaEmitter: {fileID: 3564933643643155320}
+  zekeEmitter: {fileID: 1354494269706471513}
   churchBellEmitter: {fileID: 6501962270781770622}
   fountainEmitterFL: {fileID: 707308707683095333}
   fountainEmitterFR: {fileID: 9129384331910478159}
@@ -166,6 +171,7 @@ MonoBehaviour:
   fountainEmitterBR: {fileID: 9008416960532928950}
   player: {fileID: 0}
   beezaka: {fileID: 0}
+  zeke: {fileID: 0}
 --- !u!1 &620317980245466297
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,6 +635,37 @@ Transform:
   - {fileID: 3411568434231613292}
   m_Father: {fileID: 1263646039610663711}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1354494269706471513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3947526323082381554}
+  m_Layer: 0
+  m_Name: ZekeEmitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3947526323082381554
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354494269706471513}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.3210201, y: 10.1057, z: -35.73891}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2354399384700115923}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1527225584032006039
 GameObject:
   m_ObjectHideFlags: 0
@@ -850,6 +887,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7345749345691725331}
+  - {fileID: 3947526323082381554}
   m_Father: {fileID: 8281631571337489113}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2418578682286234113

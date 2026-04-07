@@ -1,3 +1,14 @@
 Event	ID	Name			Wwise Object Path	Notes
 	4088120424	Play_ZekeHornBig			\Default Work Unit\NPCs\Zeke\Play_ZekeHornBig	
 
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1381159505	ZekeHornSwitch			\Default Work Unit\ZekeHornSwitch	
+
+Switch	ID	Name	Switch Group			Notes
+	647611021	Big	ZekeHornSwitch			
+	1846755610	Small	ZekeHornSwitch			
+	2421980327	Welcome	ZekeHornSwitch			
+	2859959522	FlyAway	ZekeHornSwitch			
+	3130232582	Panic	ZekeHornSwitch			
+	3721960695	NoHorn	ZekeHornSwitch			
+
