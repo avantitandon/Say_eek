@@ -1,5 +1,9 @@
 using UnityEngine;
 
+
+// get the namespace with PhotoManager
+using PhotoSystem;
+
 public class CameraController : MonoBehaviour
 {
     // CONSTANTS //

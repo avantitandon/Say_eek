@@ -4792,6 +4792,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 85d6ff4c4d96d8d458fdd4c67a5ab15b, type: 3}
       insertIndex: -1
       addedObject: {fileID: -7387342183635597791}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 85d6ff4c4d96d8d458fdd4c67a5ab15b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2861992495088032808}
   m_SourcePrefab: {fileID: 100100000, guid: 85d6ff4c4d96d8d458fdd4c67a5ab15b, type: 3}
 --- !u!1 &9167218968404972662 stripped
 GameObject:
@@ -4877,3 +4880,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9aec5f9968b1d94589a3ca316727b42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NavGhosts
+  Gazebo: {x: 0, y: 0, z: 0}
+  player: {fileID: 0}
+--- !u!114 &2861992495088032808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9167218968404972662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd802affa984244e8fc19b32c64e26c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 14
+  isCelebrity: 0
+  baseScore: 2
+  isPlaceholder: 0

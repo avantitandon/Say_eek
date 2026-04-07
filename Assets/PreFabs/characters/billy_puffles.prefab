@@ -189,6 +189,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5563134530108996880}
+  - component: {fileID: 5960568884412129527}
   - component: {fileID: 2484505299256134017}
   m_Layer: 6
   m_Name: billy_puffles
@@ -215,6 +216,22 @@ Transform:
   - {fileID: 4590705467131472656}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5960568884412129527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5080035975576119210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd802affa984244e8fc19b32c64e26c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhostController
+  ID: 2
+  isCelebrity: 0
+  baseScore: 3
+  isPlaceholder: 0
 --- !u!135 &2484505299256134017
 SphereCollider:
   m_ObjectHideFlags: 0

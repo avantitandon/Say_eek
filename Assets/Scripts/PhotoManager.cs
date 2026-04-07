@@ -1,4 +1,17 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+
+// for summing across lists
+using System.Linq;
+
+
+
+namespace PhotoSystem
+{
+
+using ScoreMap = Dictionary<int, HitData>;
 
 public class PhotoManager : MonoBehaviour
 {
@@ -102,6 +115,7 @@ public class PhotoManager : MonoBehaviour
         RaycastHit hit;
 
         int score = 0;
+        ScoreMap scoreMap = new ScoreMap();
 
         // while the current coordinates are within the camera's view, send and tally rays
         while (pos.x < 1.0f && pos.y < 1.0f)
@@ -123,7 +137,7 @@ public class PhotoManager : MonoBehaviour
                     // if the ghost object has a controller, take the score from there
                     if (hitobj.TryGetComponent<GhostController>(out GhostController ghost))
                     {
-                        score = score + ghost.baseScore;
+                        ProcessHit(scoreMap, ghost, pos);
                     }
                 }
             }
@@ -144,6 +158,85 @@ public class PhotoManager : MonoBehaviour
             pos.y = Y_STEP * Mathf.Floor(x_dist);
         }
 
+
+        PenalizeProximity(scoreMap);
+
+        score = score + GetFinalScore(scoreMap);
+
         return score;
     }
+
+
+    // accumulate points contributed from ghost
+    void ProcessHit(ScoreMap scoreMap, GhostController ghost, Vector3 pos)
+    {
+        // if the ghost has been seen before
+        if (!scoreMap.ContainsKey(ghost.ID))
+        {
+            // can cast here because pos is supposed to be ints
+            scoreMap.Add(ghost.ID, new HitData(pos.x));
+
+        }
+        HitData hitdata = scoreMap[ghost.ID];
+
+        if (pos.x > hitdata.maxX)
+        {
+            hitdata.maxX = pos.x;
+        }
+        if (pos.x < hitdata.minX)
+        {
+            hitdata.minX = pos.x;
+        }
+
+        // increment score
+        hitdata.score += ghost.baseScore;
+
+        scoreMap[ghost.ID] = hitdata;
+    }
+
+    // penalize proximity
+    void PenalizeProximity(ScoreMap scoreMap)
+    {
+        ScoreMap origmap = new ScoreMap(scoreMap);
+        foreach (var (id, data) in origmap)
+        {
+            HitData hitdata = data;
+            
+            if (hitdata.maxX - hitdata.minX > 0.5f)
+            {
+                // Debug.Log(Screen.width * 2);
+                Debug.Log(hitdata.minX);
+                Debug.Log(hitdata.maxX);
+                hitdata.score = (int) (hitdata.score * 0.1f);
+            }
+            scoreMap[id] = hitdata;
+        }
+    }
+
+    // get final score
+    int GetFinalScore(ScoreMap scoreMap)
+    {
+        return scoreMap.Values.Sum(HitData => HitData.score);
+    }
+}
+
+
+// ok so this works magically
+// class/struct defined without monobehaviour has to come AFTER
+// monobehaviour class
+public struct HitData
+{
+    public HitData(float x)
+    {
+        minX = x;
+        maxX = x;
+        score = 0;
+    }
+
+    public float minX;
+    public float maxX;
+    public int score;
+}
+
+
 }
