@@ -45,6 +45,11 @@ public class AudioManager : MonoBehaviour
         bool beezakaEvent = true;
         [SerializeField] private AK.Wwise.Event playBeezakaFootstep;
         [SerializeField] private AK.Wwise.Event playBeezakaFootstepSoft;
+        [SerializeField] private AK.Wwise.Event playZekeHornBig;
+        [SerializeField] private AK.Wwise.Event playZekeHornSmall;
+        [SerializeField] private AK.Wwise.Event playZekeHornWelcome;
+        [SerializeField] private AK.Wwise.Event playZekeHornPanic;
+        [SerializeField] private AK.Wwise.Event playZekeHornFlyAway;
 
 
     [Header("Camera Events")]
@@ -244,6 +249,21 @@ public class AudioManager : MonoBehaviour
             }
         }
 
+    }
+
+    public void HandleZekeHorn(GameObject npc, string currentAnimation)
+    {
+        //if (currentAnimation == "Zeke Horn")
+        //{
+        //    playZekeHorn.Post(npc);
+        //}
+
+        
+        //if (npc.name.Contains("Zeke") && currentAnimation == "Zeke Horn")
+       // {
+        //    playBeezakaDialogue.Post(npc);
+       //     //Debug.Log("Zeke Horn" + npc.name);
+       // }
     }
     
 
