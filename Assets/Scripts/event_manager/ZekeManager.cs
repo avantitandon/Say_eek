@@ -8,7 +8,6 @@ public class ZekeManager : MonoBehaviour
     {
         WaitStart,
         SeekPlayer,
-        
         SeekEvent,
         GOTOSPECIALSPOT,
         ChillOut,
@@ -55,7 +54,7 @@ public class ZekeManager : MonoBehaviour
             whatDIDzekedo = (int)whatShouldZekeDo;
             
             
-            Z2Zcommunication();
+            Z2Zcommunication(); 
         }
 
 
@@ -115,6 +114,12 @@ public class ZekeManager : MonoBehaviour
 
             Z2Zcommunication();
         }
+
+        //AUDIO ON UPDATE
+
+        audioManager.HandleZekeHorn(whatShouldZekeDo);
+
+        
         
 
 /*        //checking for state changes, therefore also checking for event changes

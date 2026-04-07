@@ -36,12 +36,33 @@ public class NPCAnimationAudio : MonoBehaviour
         }
         string currentZekeAnimation = "";
 
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Zeke Welcome")) 
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("zeke little horn")) 
         {
-            currentZekeAnimation = "Zeke Horn";
+            currentZekeAnimation = "zeke little horn";
         }
-        
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("zeke big horn")) 
+        {
+            currentZekeAnimation = "zeke big horn";
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("zeke panic horn")) 
+        {
+            currentZekeAnimation = "zeke panic horn";
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("zeke SPECIAL EVENT")) 
+        {
+            currentZekeAnimation = "zeke SPECIAL EVENT horn";
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("zeke over HERE")) 
+        {
+            currentZekeAnimation = "zeke over HERE horn";
+        }
+        else if (animator.GetCurrentAnimatorStateInfo(0).IsName("zeke welcome")) 
+        {
+            currentZekeAnimation = "zeke welcome horn";
+        }
 
-        audioManager.HandleZekeHorn(this.gameObject, currentZekeAnimation);
+
+        audioManager.PlayZekeHorn(this.gameObject, currentZekeAnimation);
+        
     }
 }

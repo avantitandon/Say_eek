@@ -454,60 +454,123 @@
 				</Folder>
 				<Folder Name="NPCs" ID="{48DBD4FC-ADC8-44E9-B8BD-07EA3A35338A}" ShortID="815306913">
 					<ChildrenList>
-						<Event Name="Play_Beezaka_Laughing" ID="{3252F208-C7C0-4ABC-94F4-406880EAE27A}">
+						<Folder Name="Zeke" ID="{40A4105E-CFDF-4C73-BBC8-16DCFCF0195C}" ShortID="808334230">
 							<ChildrenList>
-								<Action Name="" ID="{E4DA0406-A2F3-4607-930A-39BA8F552F77}" ShortID="769906569">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Beezaka Laughing" ID="{2C07D402-1152-4E5F-AB15-1ED72AFD5702}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Event Name="Play_ZekeHornPanic" ID="{76645DFE-D304-4CF1-B610-88F474D29A70}">
+									<ChildrenList>
+										<Action Name="" ID="{F9FAA41E-0682-4A08-A8C8-2D1098E59A64}" ShortID="656854939">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_zeke_horn_panic" ID="{99C42E01-848F-49E2-9A2F-117657CEAD62}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_ZekeHornWelcome" ID="{C096CF2C-2B11-4689-8445-3F93BDA896E8}">
+									<ChildrenList>
+										<Action Name="" ID="{46B7F41B-2278-4F53-8DD1-CD8620EE4264}" ShortID="653557634">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_zeke_horn_welcome" ID="{5C89A4C4-5035-49D2-AF29-5E2401CA5718}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_ZekeHornBig" ID="{14D9462C-E43C-4583-B1BC-708FEB3BCA48}">
+									<ChildrenList>
+										<Action Name="" ID="{4AA905E8-D764-46A8-8C1B-514DE8A47CBE}" ShortID="332650609">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ZekeHornBig" ID="{FE3AD8EE-4048-41EA-91B8-3EC25C3FF24F}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_ZekeHornFlyingAway" ID="{EA9D5777-520B-4838-97A4-080ACCD041D0}">
+									<ChildrenList>
+										<Action Name="" ID="{A68728D7-62CE-41AE-A45A-BB32E7B2921F}" ShortID="993313342">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_zeke_horn_flyingAway" ID="{520C4729-D0E4-4E08-9BD7-1F11524943A7}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_ZekeHornSmall" ID="{6C178BD5-B077-413C-B59F-2DB48E597F63}">
+									<ChildrenList>
+										<Action Name="" ID="{A0B79252-E63D-4C8E-8849-133FE7707F9D}" ShortID="766436421">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="ZekeHornSmall" ID="{BFA26F80-FE5A-4F45-B323-8F5FC9CDA956}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
-						<Event Name="Play_BeezakaFootsteps" ID="{224378E3-4957-4305-8576-F4EB130E563F}">
+						</Folder>
+						<Folder Name="Beezaka" ID="{5499E483-EC78-4F26-A1D2-FFD939BE3684}" ShortID="529821596">
 							<ChildrenList>
-								<Action Name="" ID="{C090C477-225A-498F-8144-E6731F234638}" ShortID="779097989">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="BeezakaFootsteps" ID="{37E6D58D-AED7-4497-B497-641237643472}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{0A541290-2338-435C-AF3E-44D7D979D415}" ShortID="41827771">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="BeezakaBootsRattle" ID="{F7923535-C813-479F-95DC-33DD9EFEB7FD}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{36F6B5AE-B3C7-4489-ACB4-2821C6EBA7FB}" ShortID="997882052">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="BeezakaFootstepsRock" ID="{E9B4730E-EB58-4139-ACBC-D63629998D7D}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Event Name="Play_Beezaka_Laughing" ID="{3252F208-C7C0-4ABC-94F4-406880EAE27A}">
+									<ChildrenList>
+										<Action Name="" ID="{E4DA0406-A2F3-4607-930A-39BA8F552F77}" ShortID="769906569">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Beezaka Laughing" ID="{2C07D402-1152-4E5F-AB15-1ED72AFD5702}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_BeezakaFootsteps" ID="{224378E3-4957-4305-8576-F4EB130E563F}">
+									<ChildrenList>
+										<Action Name="" ID="{C090C477-225A-498F-8144-E6731F234638}" ShortID="779097989">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BeezakaFootsteps" ID="{37E6D58D-AED7-4497-B497-641237643472}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{0A541290-2338-435C-AF3E-44D7D979D415}" ShortID="41827771">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BeezakaBootsRattle" ID="{F7923535-C813-479F-95DC-33DD9EFEB7FD}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{36F6B5AE-B3C7-4489-ACB4-2821C6EBA7FB}" ShortID="997882052">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BeezakaFootstepsRock" ID="{E9B4730E-EB58-4139-ACBC-D63629998D7D}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_BeezakaFootstepsSoft" ID="{AFBC21C2-063E-4C1F-B64B-50FD3D95BB88}">
+									<ChildrenList>
+										<Action Name="" ID="{C6E72D21-D252-4481-9AD0-75EEE04A48BA}" ShortID="794063342">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BeezakaFootstepsRock" ID="{E9B4730E-EB58-4139-ACBC-D63629998D7D}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{FA155C23-A983-492E-BD80-D76E5CADF54F}" ShortID="427498834">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="sfx_highheel_soft" ID="{0333EFDF-232F-4BC4-B871-3D568CEC231D}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
-						<Event Name="Play_BeezakaFootstepsSoft" ID="{AFBC21C2-063E-4C1F-B64B-50FD3D95BB88}">
-							<ChildrenList>
-								<Action Name="" ID="{C6E72D21-D252-4481-9AD0-75EEE04A48BA}" ShortID="794063342">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="BeezakaFootstepsRock" ID="{E9B4730E-EB58-4139-ACBC-D63629998D7D}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{FA155C23-A983-492E-BD80-D76E5CADF54F}" ShortID="427498834">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="sfx_highheel_soft" ID="{0333EFDF-232F-4BC4-B871-3D568CEC231D}" WorkUnitID="{0479B030-3012-4385-8F59-7BBEA1865604}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="World" ID="{7858524C-4670-48E6-9E52-BADFFFD78057}" ShortID="495517472">

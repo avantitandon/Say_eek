@@ -1,0 +1,84 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "4088120424",
+    "Type": "Event",
+    "GUID": "{14D9462C-E43C-4583-B1BC-708FEB3BCA48}",
+    "Language": "SFX",
+    "Hash": "{B0725807-1525-39C9-2812-CA9E7F9DB3D4}",
+    "ObjectPath": "Play_ZekeHornBig",
+    "ShortName": "Play_ZekeHornBig",
+    "Path": "Event/Play_ZekeHornBig.bnk",
+    "Media": [
+     {
+      "Id": "12755166",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_big_04.wav",
+      "Path": "Media/12755166.wem",
+      "CachePath": "07/{0795A065-7792-F387-596F-F371EE847FA8}.wem"
+     },
+     {
+      "Id": "173141080",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_big_03.wav",
+      "Path": "Media/173141080.wem",
+      "CachePath": "FE/{FE7BD68C-F092-645B-3F1D-39EFE735D6C3}.wem"
+     },
+     {
+      "Id": "395338863",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_big_01.wav",
+      "Path": "Media/395338863.wem",
+      "CachePath": "46/{46F97557-308C-54B2-C731-3154B7D3E57F}.wem"
+     },
+     {
+      "Id": "589065798",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_big_02.wav",
+      "Path": "Media/589065798.wem",
+      "CachePath": "2F/{2F5AAC66-D038-BCBB-D751-6B39758BD64F}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4088120424",
+      "Name": "Play_ZekeHornBig",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Zeke\\Play_ZekeHornBig",
+      "GUID": "{14D9462C-E43C-4583-B1BC-708FEB3BCA48}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.8125",
+      "DurationMax": "2.125",
+      "MediaRefs": [
+       {
+        "Id": "12755166"
+       },
+       {
+        "Id": "173141080"
+       },
+       {
+        "Id": "395338863"
+       },
+       {
+        "Id": "589065798"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{60457D4C-56E4-704C-62BA-5A456D6FCEFA}"
+ }
+}

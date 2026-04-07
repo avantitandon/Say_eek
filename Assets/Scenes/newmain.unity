@@ -9672,6 +9672,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: deb8ae0eaec3a496d82ccc822dceca20, type: 2}
     - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: playZekeHornBig.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 2797537d004914b43b4503543e5ea8b6, type: 2}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
       propertyPath: playCameraActive.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: 7a77ec7c84c6842b089078630d3a59df, type: 2}
@@ -9696,6 +9700,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 1500a337bffdd473897ca7c4ed36ff05, type: 2}
     - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: playZekeHornPanic.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 4e47f2074627243b3a2ba88576df8360, type: 2}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: playZekeHornSmall.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 02902ae2271304a60b8edcc6478f5040, type: 2}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
       propertyPath: stopStartFootstep.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: c7a8791c8ba024913b1605653b08b79e, type: 2}
@@ -9711,6 +9723,14 @@ PrefabInstance:
       propertyPath: playBeezakaFootstep.WwiseObjectReference
       value: 
       objectReference: {fileID: 11400000, guid: 660e9c8e217e848c1ae4d025c968cf1f, type: 2}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: playZekeHornFlyAway.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 348bf7b2ee1b445cfa73cdee99d4cd26, type: 2}
+    - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
+      propertyPath: playZekeHornWelcome.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 42b663995c3b2465cbc3a9ead63b5045, type: 2}
     - target: {fileID: 7516107929183428955, guid: b6a4d950e856c4c0bbd9b96b4b184f4a, type: 3}
       propertyPath: playBeezakaFootstepSoft.WwiseObjectReference
       value: 

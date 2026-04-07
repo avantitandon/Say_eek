@@ -1,0 +1,108 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2801710007",
+    "Type": "Event",
+    "GUID": "{6C178BD5-B077-413C-B59F-2DB48E597F63}",
+    "Language": "SFX",
+    "Hash": "{CE86B195-C10C-5BEB-0E8F-0BFD3593AFB2}",
+    "ObjectPath": "Play_ZekeHornSmall",
+    "ShortName": "Play_ZekeHornSmall",
+    "Path": "Event/Play_ZekeHornSmall.bnk",
+    "Media": [
+     {
+      "Id": "203460267",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_small_05.wav",
+      "Path": "Media/203460267.wem",
+      "CachePath": "A9/{A907B388-B493-F4AF-C7CD-97237B02F6B5}.wem"
+     },
+     {
+      "Id": "494652532",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_small_03.wav",
+      "Path": "Media/494652532.wem",
+      "CachePath": "12/{12C29AF4-B43B-F8A4-D1EF-BE0C41AF8364}.wem"
+     },
+     {
+      "Id": "543321894",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_small_02.wav",
+      "Path": "Media/543321894.wem",
+      "CachePath": "42/{42267874-685A-D0E6-C68F-6ACDDCCA450B}.wem"
+     },
+     {
+      "Id": "631298704",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_small_06.wav",
+      "Path": "Media/631298704.wem",
+      "CachePath": "51/{519338E0-D036-1607-6F62-BA1CBF4FDE1F}.wem"
+     },
+     {
+      "Id": "876932269",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_small_01.wav",
+      "Path": "Media/876932269.wem",
+      "CachePath": "4D/{4D48C7CE-7884-88D4-5701-7A7644747841}.wem"
+     },
+     {
+      "Id": "898267996",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_small_04.wav",
+      "Path": "Media/898267996.wem",
+      "CachePath": "35/{3552B0F5-6CF9-F4E2-5BC8-635EF996C019}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2801710007",
+      "Name": "Play_ZekeHornSmall",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Zeke\\Play_ZekeHornSmall",
+      "GUID": "{6C178BD5-B077-413C-B59F-2DB48E597F63}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.546875",
+      "DurationMax": "0.84375",
+      "MediaRefs": [
+       {
+        "Id": "203460267"
+       },
+       {
+        "Id": "494652532"
+       },
+       {
+        "Id": "543321894"
+       },
+       {
+        "Id": "631298704"
+       },
+       {
+        "Id": "876932269"
+       },
+       {
+        "Id": "898267996"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{000C6EE8-F7C5-1AD6-8EB9-B1B3B274A694}"
+ }
+}

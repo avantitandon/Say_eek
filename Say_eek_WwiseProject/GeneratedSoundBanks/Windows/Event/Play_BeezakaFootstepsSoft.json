@@ -101,7 +101,7 @@
      {
       "Id": "1869899254",
       "Name": "Play_BeezakaFootstepsSoft",
-      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_BeezakaFootstepsSoft",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Beezaka\\Play_BeezakaFootstepsSoft",
       "GUID": "{AFBC21C2-063E-4C1F-B64B-50FD3D95BB88}",
       "DurationType": "OneShot",
       "DurationMin": "0.396875",
@@ -147,6 +147,6 @@
     ]
    }
   ],
-  "FileHash": "{030C15AB-0DBF-A213-CBAE-78855D19C1B7}"
+  "FileHash": "{134983BE-9D07-DF45-7B7F-28B6C41EEA17}"
  }
 }

@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{224378E3-4957-4305-8576-F4EB130E563F}",
     "Language": "SFX",
-    "Hash": "{767E3965-5247-96C9-9B6B-3D6F738739AF}",
+    "Hash": "{F7556D5F-51C1-23DF-D341-8B43B47CFCC0}",
     "ObjectPath": "Play_BeezakaFootsteps",
     "ShortName": "Play_BeezakaFootsteps",
     "Path": "Event/Play_BeezakaFootsteps.bnk",
@@ -192,7 +192,7 @@
      {
       "Id": "2291923122",
       "Name": "Play_BeezakaFootsteps",
-      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_BeezakaFootsteps",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Beezaka\\Play_BeezakaFootsteps",
       "GUID": "{224378E3-4957-4305-8576-F4EB130E563F}",
       "MaxAttenuation": "100",
       "DurationType": "OneShot",
@@ -279,6 +279,6 @@
     ]
    }
   ],
-  "FileHash": "{379C4CB3-1E0A-5F18-53E6-3888FEE4F9A2}"
+  "FileHash": "{944A2289-E184-5950-EC8D-B41C02566048}"
  }
 }

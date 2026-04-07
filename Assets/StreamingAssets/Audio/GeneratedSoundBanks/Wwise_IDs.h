@@ -36,6 +36,11 @@ namespace AK
         static const AkUniqueID PLAY_RUBBLEFOOTSTEP = 4003335362U;
         static const AkUniqueID PLAY_SFX_BOSS_TEXT__2026_03_31_055720_ = 1930652505U;
         static const AkUniqueID PLAY_STONEFOOTSTEP = 1749496171U;
+        static const AkUniqueID PLAY_ZEKEHORNBIG = 4088120424U;
+        static const AkUniqueID PLAY_ZEKEHORNFLYINGAWAY = 2202958181U;
+        static const AkUniqueID PLAY_ZEKEHORNPANIC = 4258823655U;
+        static const AkUniqueID PLAY_ZEKEHORNSMALL = 2801710007U;
+        static const AkUniqueID PLAY_ZEKEHORNWELCOME = 3459812310U;
         static const AkUniqueID STOP_AMBIENCE1 = 3294285673U;
         static const AkUniqueID STOP_CAMERAZOOMIN = 3484989405U;
         static const AkUniqueID STOP_CAMERAZOOMOUT = 3252179076U;

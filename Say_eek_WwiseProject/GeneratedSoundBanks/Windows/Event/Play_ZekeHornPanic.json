@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "4258823655",
+    "Type": "Event",
+    "GUID": "{76645DFE-D304-4CF1-B610-88F474D29A70}",
+    "Language": "SFX",
+    "Hash": "{0C8DA0C0-8992-700A-C64A-F22BDE2806F8}",
+    "ObjectPath": "Play_ZekeHornPanic",
+    "ShortName": "Play_ZekeHornPanic",
+    "Path": "Event/Play_ZekeHornPanic.bnk",
+    "Media": [
+     {
+      "Id": "411014615",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_panic.wav",
+      "Path": "Media/411014615.wem",
+      "CachePath": "59/{59960418-F408-1367-3D2A-99D407ABC7F2}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4258823655",
+      "Name": "Play_ZekeHornPanic",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Zeke\\Play_ZekeHornPanic",
+      "GUID": "{76645DFE-D304-4CF1-B610-88F474D29A70}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.875",
+      "DurationMax": "1.875",
+      "MediaRefs": [
+       {
+        "Id": "411014615"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{19D322C7-8DFA-D192-0C8C-8D73408F8017}"
+ }
+}

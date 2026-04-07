@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{3252F208-C7C0-4ABC-94F4-406880EAE27A}",
     "Language": "SFX",
-    "Hash": "{6417E24B-9AE6-583B-3CD6-4A0C4544FC4B}",
+    "Hash": "{4B27FC3E-A292-E1A0-F80A-21A2CED66136}",
     "ObjectPath": "Play_Beezaka_Laughing",
     "ShortName": "Play_Beezaka_Laughing",
     "Path": "Event/Play_Beezaka_Laughing.bnk",
@@ -103,7 +103,7 @@
      {
       "Id": "2572452617",
       "Name": "Play_Beezaka_Laughing",
-      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_Beezaka_Laughing",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Beezaka\\Play_Beezaka_Laughing",
       "GUID": "{3252F208-C7C0-4ABC-94F4-406880EAE27A}",
       "MaxAttenuation": "100",
       "DurationType": "Infinite",
@@ -152,6 +152,6 @@
     ]
    }
   ],
-  "FileHash": "{DA8AAB8E-D36E-064E-E2F5-62EDDF3A5D7F}"
+  "FileHash": "{F02F2AAE-7ECD-A61C-756F-B31FEF73DDA0}"
  }
 }

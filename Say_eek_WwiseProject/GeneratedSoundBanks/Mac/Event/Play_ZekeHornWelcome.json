@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3459812310",
+    "Type": "Event",
+    "GUID": "{C096CF2C-2B11-4689-8445-3F93BDA896E8}",
+    "Language": "SFX",
+    "Hash": "{F80512A4-7AE0-1F72-F4A4-D2B4059A7C50}",
+    "ObjectPath": "Play_ZekeHornWelcome",
+    "ShortName": "Play_ZekeHornWelcome",
+    "Path": "Event/Play_ZekeHornWelcome.bnk",
+    "Media": [
+     {
+      "Id": "672805524",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_welcome.wav",
+      "Path": "Media/672805524.wem",
+      "CachePath": "AB/{AB020FCD-026D-396E-D809-B8CA08A4B7A8}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3459812310",
+      "Name": "Play_ZekeHornWelcome",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Zeke\\Play_ZekeHornWelcome",
+      "GUID": "{C096CF2C-2B11-4689-8445-3F93BDA896E8}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.625",
+      "DurationMax": "2.625",
+      "MediaRefs": [
+       {
+        "Id": "672805524"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{3C6CB5EE-76FC-6C77-77F8-1BC740494947}"
+ }
+}

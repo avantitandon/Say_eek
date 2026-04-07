@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{D8529BAE-C24B-4540-A3BA-25956602C35E}",
     "Language": "SFX",
-    "Hash": "{EBF3B066-4CA6-37C8-5E01-AE6462B9DBDB}",
+    "Hash": "{C7B174B3-08AB-B333-9E08-1BA05BF5A032}",
     "ObjectPath": "Play_Fountain",
     "ShortName": "Play_Fountain",
     "Path": "Event/Play_Fountain.bnk",
@@ -230,6 +230,6 @@
     ]
    }
   ],
-  "FileHash": "{8C41624D-5EF4-4FAD-7C1E-C0893E197B3B}"
+  "FileHash": "{FCB38502-69A8-CEE2-2D4C-D50CCC5F73B9}"
  }
 }

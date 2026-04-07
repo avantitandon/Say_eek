@@ -39,6 +39,7 @@ public class AudioManager : MonoBehaviour
         [SerializeField] private float distanceToFeet = 0.5f;
         [SerializeField] private float emitterLifetime = 1f;
         private float footstepTimer = 0f;
+
     
     [Header("NPC Events")]
         [SerializeField] private AK.Wwise.Event playBeezakaDialogue;
@@ -98,8 +99,16 @@ public class AudioManager : MonoBehaviour
         AkSoundEngine.SetState("StageState", "DjDevil");
         AkSoundEngine.SetState("TutorialState", "Start");
 
+        //ZekeStates//
+        //Zeehaviours.BlowBigHorn += PlayZekeHornBig;
+        //Zeehaviours.BlowSmallHorn += PlayZekeHornSmall;
+        //Zeehaviours.BlowWelcomeHorn += PlayZekeHornWelcome;
+        //Zeehaviours.BlowPanicHorn += PlayZekeHornPanic;
+        //Zeehaviours.BlowFlyAwayHorn += PlayZekeHornFlyAway;
+
         HandleNPCEvents();
         HandleFountain();
+
     }
    void Update()
     {
@@ -229,6 +238,7 @@ public class AudioManager : MonoBehaviour
             beezakaEvent = false;
         }
         else return;
+
     }
     public void HandleFootstep(GameObject npc, string currentAnimation)
     //Use "Default" as the currentAnimation if there is no need for different animation states. Its ref. in NPCAnimationAudio script
@@ -250,20 +260,11 @@ public class AudioManager : MonoBehaviour
         }
 
     }
+    
 
     public void HandleZekeHorn(GameObject npc, string currentAnimation)
     {
-        //if (currentAnimation == "Zeke Horn")
-        //{
-        //    playZekeHorn.Post(npc);
-        //}
-
         
-        //if (npc.name.Contains("Zeke") && currentAnimation == "Zeke Horn")
-       // {
-        //    playBeezakaDialogue.Post(npc);
-       //     //Debug.Log("Zeke Horn" + npc.name);
-       // }
     }
     
 
@@ -294,8 +295,65 @@ public class AudioManager : MonoBehaviour
         playBossText.Post(player); 
     }
 
+    // EVENT Methods //
+    public void HandleZekeHorn(ZekeManager.WhatShouldZekeDo whatShouldZekeDo)
+    {
+        switch (whatShouldZekeDo)
+        {   
+            case ZekeManager.WhatShouldZekeDo.BlowBigHorn:
+                AkSoundEngine.SetState("ZekeHornState", "Big");
+                break;
+            case ZekeManager.WhatShouldZekeDo.BlowSmallHorn:
+                AkSoundEngine.SetState("ZekeHornState", "Small");
+                break;
+            case ZekeManager.WhatShouldZekeDo.BlowWelcomeHorn:
+                AkSoundEngine.SetState("ZekeHornState", "Welcome");
+                break;
+            case ZekeManager.WhatShouldZekeDo.BlowPanicHorn:
+                AkSoundEngine.SetState("ZekeHornState", "Panic");
+                break;
+            case ZekeManager.WhatShouldZekeDo.BlowFlyAwayHorn:
+                AkSoundEngine.SetState("ZekeHornState", "FlyAway");
+                break;
+        }
+    }
+    
+    public void PlayZekeHorn(GameObject npc, string currentAnimation)
+    {
+        playZekeHornBig.Post(npc);
+    }
+    
 
 
+    private void PlayZekeHornBig()
+    {
+        playZekeHornBig.Post(zeke);
+    }
+
+
+
+
+
+    private void PlayZekeHornBig()
+    {
+        playZekeHornBig.Post(zeke);
+    }
+    public void PlayZekeHornSmall()
+    {
+        playZekeHornSmall.Post(zeke);
+    }
+    public void PlayZekeHornWelcome()
+    {
+        playZekeHornWelcome.Post(zeke);
+    }
+    public void PlayZekeHornPanic()
+    {        
+        playZekeHornPanic.Post(zeke);
+    }
+    public void PlayZekeHornFlyAway()
+    {
+        playZekeHornFlyAway.Post(zeke);
+    }
 
 
 

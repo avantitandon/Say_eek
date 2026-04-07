@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2202958181",
+    "Type": "Event",
+    "GUID": "{EA9D5777-520B-4838-97A4-080ACCD041D0}",
+    "Language": "SFX",
+    "Hash": "{39B290E1-E54F-E292-57B9-73C55C464179}",
+    "ObjectPath": "Play_ZekeHornFlyingAway",
+    "ShortName": "Play_ZekeHornFlyingAway",
+    "Path": "Event/Play_ZekeHornFlyingAway.bnk",
+    "Media": [
+     {
+      "Id": "707098202",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_zeke_horn_flyingAway.wav",
+      "Path": "Media/707098202.wem",
+      "CachePath": "98/{98E43426-973A-1CC9-C49B-0C7E1B85DC79}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2202958181",
+      "Name": "Play_ZekeHornFlyingAway",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Zeke\\Play_ZekeHornFlyingAway",
+      "GUID": "{EA9D5777-520B-4838-97A4-080ACCD041D0}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.5",
+      "DurationMax": "2.5",
+      "MediaRefs": [
+       {
+        "Id": "707098202"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{C6AB8092-EF2C-2E1C-BA58-1A0132290E0D}"
+ }
+}
