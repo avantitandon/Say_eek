@@ -1,11 +1,5 @@
 {
   "dependencies": {
-    "com.cqf.outline": {
-      "version": "file:C:/Users/laura/Downloads/Unity-URP-Outline-main/Unity-URP-Outline-main",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {}
-    },
     "com.cqf.urpvolumetricfog": {
       "version": "file:com.cqf.urpvolumetricfog",
       "depth": 0,

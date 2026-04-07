@@ -914,8 +914,8 @@ Transform:
   m_GameObject: {fileID: 210241426}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -25.23, z: -25.57}
-  m_LocalScale: {x: 1, y: 0.3345693, z: 1}
+  m_LocalPosition: {x: 0, y: -24.7, z: -25.57}
+  m_LocalScale: {x: 1, y: 0.49218, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1409639731}
@@ -1083,7 +1083,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 18.4
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -1135,7 +1135,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSpeed:
       serializedVersion: 2
-      minMaxState: 3
+      minMaxState: 1
       scalar: 2
       minScalar: 0
       maxCurve:
@@ -1188,23 +1188,23 @@ ParticleSystem:
         m_RotationOrder: 4
     startColor:
       serializedVersion: 2
-      minMaxState: 1
+      minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
       maxColor: {r: 0.6522913, g: 0.5803922, b: 0.7372549, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.28240064, g: 0.23415111, b: 0.5842535, a: 1}
-        key1: {r: 0.227451, g: 0.1764706, b: 0.5529412, a: 1}
-        key2: {r: 0.22835405, g: 0.17647058, b: 0.5529412, a: 0}
+        key0: {r: 0.227451, g: 0.1764706, b: 0.5529412, a: 1}
+        key1: {r: 0.22835405, g: 0.17647058, b: 0.5529412, a: 1}
+        key2: {r: 1, g: 1, b: 1, a: 0}
         key3: {r: 1, g: 1, b: 1, a: 0}
         key4: {r: 1, g: 1, b: 1, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
-        ctime0: 4369
-        ctime1: 9509
-        ctime2: 18633
-        ctime3: 38807
+        ctime0: 9509
+        ctime1: 18633
+        ctime2: 38807
+        ctime3: 39321
         ctime4: 39321
         ctime5: 0
         ctime6: 0
@@ -1219,7 +1219,7 @@ ParticleSystem:
         atime7: 0
         m_Mode: 0
         m_ColorSpace: 0
-        m_NumColorKeys: 5
+        m_NumColorKeys: 4
         m_NumAlphaKeys: 2
       minGradient:
         serializedVersion: 2
@@ -1412,7 +1412,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startRotationX:
       serializedVersion: 2
-      minMaxState: 1
+      minMaxState: 3
       scalar: 3.1415927
       minScalar: 0
       maxCurve:
@@ -1465,7 +1465,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startRotationY:
       serializedVersion: 2
-      minMaxState: 1
+      minMaxState: 3
       scalar: 3.1415927
       minScalar: 0
       maxCurve:
@@ -1518,7 +1518,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startRotation:
       serializedVersion: 2
-      minMaxState: 1
+      minMaxState: 3
       scalar: 3.1415927
       minScalar: 0
       maxCurve:
