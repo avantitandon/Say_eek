@@ -674,11 +674,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
-  AlphaDithering: {fileID: 1958759509}
-  spectrawareness: 0
-  rend: {fileID: 994635919}
-  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
-  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!4 &124045966 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7451118562677664717, guid: 11ed14994e18db648bd945f7e5568bb5, type: 3}
@@ -6698,29 +6693,6 @@ MonoBehaviour:
   anisotropy: -0.71
   scattering: 0.4
   radius: 0.2
---- !u!1 &413196646 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
-  m_PrefabInstance: {fileID: 496577983}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &413196647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 413196646}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78821a4edf3ff784581ffa951f832a74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  target: {fileID: 2003349655}
---- !u!4 &413196648 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
-  m_PrefabInstance: {fileID: 496577983}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &396790712
 GameObject:
   m_ObjectHideFlags: 0
@@ -6884,6 +6856,29 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 269603181}
   m_SourcePrefab: {fileID: 100100000, guid: 6aef5bcf0dbb3184090c1fbad32eb7f3, type: 3}
+--- !u!1 &413196646 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
+  m_PrefabInstance: {fileID: 496577983}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &413196647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413196646}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78821a4edf3ff784581ffa951f832a74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  target: {fileID: 2003349655}
+--- !u!4 &413196648 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
+  m_PrefabInstance: {fileID: 496577983}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &434035455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9920,6 +9915,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5704770115247409141, guid: 8a88527a7073ef440b4256a7f0193cdf, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 779599360}
     - target: {fileID: 6207874813889762443, guid: 8a88527a7073ef440b4256a7f0193cdf, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -10140,11 +10139,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2da16265435632478517274ab5574ff, type: 3}
---- !u!4 &694292139 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2359566174100893666, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
-  m_PrefabInstance: {fileID: 810360615}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &707458827
 GameObject:
   m_ObjectHideFlags: 0
@@ -10273,11 +10267,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
-  AlphaDithering: {fileID: 1958759509}
-  spectrawareness: 0
-  rend: {fileID: 994635919}
-  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
-  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!1001 &749284462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11021,6 +11010,67 @@ MonoBehaviour:
   anisotropy: -0.71
   scattering: 0.4
   radius: 0.2
+--- !u!1001 &810360615
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1235756611483252700, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359566174100893666, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -134.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359566174100893666, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.4324145
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359566174100893666, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -44.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359566174100893666, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359566174100893666, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359566174100893666, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359566174100893666, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359566174100893666, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359566174100893666, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359566174100893666, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5739585864503087394, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
+      propertyPath: m_Name
+      value: POI (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
 --- !u!1001 &827759994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11101,67 +11151,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 59a0bd3895cc1a14084353ac5b2d3771, type: 3}
   m_PrefabInstance: {fileID: 827759994}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &810360615
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1235756611483252700, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2359566174100893666, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -134.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 2359566174100893666, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 7.4324145
-      objectReference: {fileID: 0}
-    - target: {fileID: 2359566174100893666, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -44.66
-      objectReference: {fileID: 0}
-    - target: {fileID: 2359566174100893666, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2359566174100893666, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2359566174100893666, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2359566174100893666, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2359566174100893666, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2359566174100893666, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2359566174100893666, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5739585864503087394, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
-      propertyPath: m_Name
-      value: POI (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3d306544def6d7a43bf3876df07dc62e, type: 3}
 --- !u!1001 &830692402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11961,11 +11950,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -7029948723529949830, guid: 9ad60821a8c819c4c94a22a3c83e356e, type: 3}
   m_PrefabInstance: {fileID: 1401105242}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &994635919 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: -7918335002988649766, guid: 9ad60821a8c819c4c94a22a3c83e356e, type: 3}
-  m_PrefabInstance: {fileID: 1401105242}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &994635920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11978,11 +11962,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
-  AlphaDithering: {fileID: 1958759509}
-  spectrawareness: 0
-  rend: {fileID: 994635919}
-  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
-  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!4 &1008263654 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8855757604585796298, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
@@ -13265,11 +13244,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
-  AlphaDithering: {fileID: 1958759509}
-  spectrawareness: 0
-  rend: {fileID: 994635919}
-  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
-  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!1001 &1279951851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13420,11 +13394,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -8961359253771211100, guid: 9ad60821a8c819c4c94a22a3c83e356e, type: 3}
   m_PrefabInstance: {fileID: 1279951851}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &1279951854 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: -7918335002988649766, guid: 9ad60821a8c819c4c94a22a3c83e356e, type: 3}
-  m_PrefabInstance: {fileID: 1279951851}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1279951855 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7029948723529949830, guid: 9ad60821a8c819c4c94a22a3c83e356e, type: 3}
@@ -13457,11 +13426,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
-  AlphaDithering: {fileID: 1958759509}
-  spectrawareness: 0
-  rend: {fileID: 1279951854}
-  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
-  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!114 &1279951860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13474,11 +13438,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
-  AlphaDithering: {fileID: 1958759509}
-  spectrawareness: 0
-  rend: {fileID: 1279951854}
-  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
-  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!114 &1279951861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13491,11 +13450,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
-  AlphaDithering: {fileID: 1958759509}
-  spectrawareness: 0
-  rend: {fileID: 1279951854}
-  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
-  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!95 &1279951862
 Animator:
   serializedVersion: 7
@@ -15105,11 +15059,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
-  AlphaDithering: {fileID: 1958759509}
-  spectrawareness: 0
-  rend: {fileID: 1279951854}
-  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
-  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!4 &1503268782 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 75547782544656967, guid: d36ab8aa116fb864bafafb8c6cf1f3e2, type: 3}
@@ -18220,11 +18169,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1909084361}
   m_SourcePrefab: {fileID: 100100000, guid: 9ad60821a8c819c4c94a22a3c83e356e, type: 3}
---- !u!23 &1909084355 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: -7918335002988649766, guid: 9ad60821a8c819c4c94a22a3c83e356e, type: 3}
-  m_PrefabInstance: {fileID: 1909084352}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1909084356 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7029948723529949830, guid: 9ad60821a8c819c4c94a22a3c83e356e, type: 3}
@@ -18257,11 +18201,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
-  AlphaDithering: {fileID: 1958759509}
-  spectrawareness: 0
-  rend: {fileID: 1909084355}
-  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
-  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!114 &1909084361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18274,11 +18213,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
-  AlphaDithering: {fileID: 1958759509}
-  spectrawareness: 0
-  rend: {fileID: 1909084355}
-  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
-  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!114 &1909084362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18291,11 +18225,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
-  AlphaDithering: {fileID: 1958759509}
-  spectrawareness: 0
-  rend: {fileID: 1909084355}
-  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
-  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!95 &1909084363
 Animator:
   serializedVersion: 7
@@ -18494,11 +18423,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
-  AlphaDithering: {fileID: 1958759509}
-  spectrawareness: 0
-  rend: {fileID: 1993856341}
-  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
-  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!1001 &1941641474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19032,11 +18956,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -8961359253771211100, guid: 9ad60821a8c819c4c94a22a3c83e356e, type: 3}
   m_PrefabInstance: {fileID: 1993856338}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &1993856341 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: -7918335002988649766, guid: 9ad60821a8c819c4c94a22a3c83e356e, type: 3}
-  m_PrefabInstance: {fileID: 1993856338}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1993856342 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7029948723529949830, guid: 9ad60821a8c819c4c94a22a3c83e356e, type: 3}
@@ -19069,11 +18988,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
-  AlphaDithering: {fileID: 1958759509}
-  spectrawareness: 0
-  rend: {fileID: 1993856341}
-  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
-  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!114 &1993856347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19086,11 +19000,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
-  AlphaDithering: {fileID: 1958759509}
-  spectrawareness: 0
-  rend: {fileID: 1993856341}
-  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
-  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!114 &1993856348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19103,11 +19012,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
-  AlphaDithering: {fileID: 1958759509}
-  spectrawareness: 0
-  rend: {fileID: 1993856341}
-  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
-  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!95 &1993856349
 Animator:
   serializedVersion: 7
