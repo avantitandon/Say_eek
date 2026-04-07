@@ -674,6 +674,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
+  AlphaDithering: {fileID: 1958759509}
+  spectrawareness: 0
+  rend: {fileID: 0}
+  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
+  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!4 &124045966 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7451118562677664717, guid: 11ed14994e18db648bd945f7e5568bb5, type: 3}
@@ -9843,10 +9848,18 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 2714870605656383868, guid: 8a88527a7073ef440b4256a7f0193cdf, type: 3}
+      propertyPath: AlphaDithering
+      value: 
+      objectReference: {fileID: 1958759509}
     - target: {fileID: 2959102636386146195, guid: 8a88527a7073ef440b4256a7f0193cdf, type: 3}
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3271471227865071149, guid: 8a88527a7073ef440b4256a7f0193cdf, type: 3}
+      propertyPath: AlphaDithering
+      value: 
+      objectReference: {fileID: 1958759509}
     - target: {fileID: 3422825901707159248, guid: 8a88527a7073ef440b4256a7f0193cdf, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -9919,6 +9932,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 779599360}
+    - target: {fileID: 6070704770276754528, guid: 8a88527a7073ef440b4256a7f0193cdf, type: 3}
+      propertyPath: AlphaDithering
+      value: 
+      objectReference: {fileID: 1958759509}
     - target: {fileID: 6207874813889762443, guid: 8a88527a7073ef440b4256a7f0193cdf, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -9927,6 +9944,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7376976998317708106, guid: 8a88527a7073ef440b4256a7f0193cdf, type: 3}
+      propertyPath: AlphaDithering
+      value: 
+      objectReference: {fileID: 1958759509}
     - target: {fileID: 8782756576354245057, guid: 8a88527a7073ef440b4256a7f0193cdf, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -10267,6 +10288,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
+  AlphaDithering: {fileID: 1958759509}
+  spectrawareness: 0
+  rend: {fileID: 0}
+  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
+  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!1001 &749284462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11962,6 +11988,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
+  AlphaDithering: {fileID: 1958759509}
+  spectrawareness: 0
+  rend: {fileID: 0}
+  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
+  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!4 &1008263654 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8855757604585796298, guid: d1e51b655b6d25e45a8fa736e84a3aa5, type: 3}
@@ -13244,6 +13275,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
+  AlphaDithering: {fileID: 1958759509}
+  spectrawareness: 0
+  rend: {fileID: 0}
+  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
+  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!1001 &1279951851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13426,6 +13462,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
+  AlphaDithering: {fileID: 1958759509}
+  spectrawareness: 0
+  rend: {fileID: 0}
+  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
+  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!114 &1279951860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13438,6 +13479,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
+  AlphaDithering: {fileID: 1958759509}
+  spectrawareness: 0
+  rend: {fileID: 0}
+  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
+  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!114 &1279951861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13450,6 +13496,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
+  AlphaDithering: {fileID: 1958759509}
+  spectrawareness: 0
+  rend: {fileID: 0}
+  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
+  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!95 &1279951862
 Animator:
   serializedVersion: 7
@@ -15059,6 +15110,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
+  AlphaDithering: {fileID: 1958759509}
+  spectrawareness: 0
+  rend: {fileID: 0}
+  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
+  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!4 &1503268782 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 75547782544656967, guid: d36ab8aa116fb864bafafb8c6cf1f3e2, type: 3}
@@ -18201,6 +18257,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
+  AlphaDithering: {fileID: 1958759509}
+  spectrawareness: 0
+  rend: {fileID: 0}
+  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
+  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!114 &1909084361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18213,6 +18274,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
+  AlphaDithering: {fileID: 1958759509}
+  spectrawareness: 0
+  rend: {fileID: 0}
+  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
+  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!114 &1909084362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18225,6 +18291,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
+  AlphaDithering: {fileID: 1958759509}
+  spectrawareness: 0
+  rend: {fileID: 0}
+  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
+  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!95 &1909084363
 Animator:
   serializedVersion: 7
@@ -18423,6 +18494,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
+  AlphaDithering: {fileID: 1958759509}
+  spectrawareness: 0
+  rend: {fileID: 0}
+  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
+  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!1001 &1941641474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18988,6 +19064,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
+  AlphaDithering: {fileID: 1958759509}
+  spectrawareness: 0
+  rend: {fileID: 0}
+  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
+  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!114 &1993856347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19000,6 +19081,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
+  AlphaDithering: {fileID: 1958759509}
+  spectrawareness: 0
+  rend: {fileID: 0}
+  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
+  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!114 &1993856348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19012,6 +19098,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fad39f43384af546bb3fe5068798d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuraVisibility
+  AlphaDithering: {fileID: 1958759509}
+  spectrawareness: 0
+  rend: {fileID: 0}
+  newMaterial: {fileID: 2100000, guid: 792a6e07e18b2aa409643524fd14c958, type: 2}
+  oldMaterial: {fileID: 2100000, guid: 976f5d82283da9f44a193c53bf05039d, type: 2}
 --- !u!95 &1993856349
 Animator:
   serializedVersion: 7
