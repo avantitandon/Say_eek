@@ -63,6 +63,8 @@ public class GameController : MonoBehaviour
 
     [SerializeField] private EndSeqManager endSeqManager;
 
+    [SerializeField] private GameObject tutorialCollision;
+
     // VARIABLES //
 
 
@@ -139,6 +141,8 @@ public class GameController : MonoBehaviour
         {
             return;
         }
+
+        tutorialCollision.SetActive(true);
 
         switch (tutorialStep)
         {
@@ -343,6 +347,8 @@ public class GameController : MonoBehaviour
         hudManager.SetPictureBossTextEnabled(true);
         Debug.Log("GameController: tutorial finished, gameplay enabled.");
         GAMESTART?.Invoke();
+
+        tutorialCollision.SetActive(false);
     }
 
     private void StartEndSequence()
