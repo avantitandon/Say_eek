@@ -1,0 +1,71 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1985769550	Play_HarpPlayer			\Default Work Unit\Music\Play_HarpPlayer	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2581616850	HarpSwitch			\Default Work Unit\HarpSwitch	
+
+Switch	ID	Name	Switch Group			Notes
+	3603878640	Bar_58	HarpSwitch			
+	3603878641	Bar_59	HarpSwitch			
+	3603878648	Bar_50	HarpSwitch			
+	3603878649	Bar_51	HarpSwitch			
+	3603878650	Bar_52	HarpSwitch			
+	3603878651	Bar_53	HarpSwitch			
+	3603878652	Bar_54	HarpSwitch			
+	3603878653	Bar_55	HarpSwitch			
+	3603878654	Bar_56	HarpSwitch			
+	3603878655	Bar_57	HarpSwitch			
+	3620656226	Bar_49	HarpSwitch			
+	3620656227	Bar_48	HarpSwitch			
+	3620656232	Bar_43	HarpSwitch			
+	3620656233	Bar_42	HarpSwitch			
+	3620656234	Bar_41	HarpSwitch			
+	3620656235	Bar_40	HarpSwitch			
+	3620656236	Bar_47	HarpSwitch			
+	3620656237	Bar_46	HarpSwitch			
+	3620656238	Bar_45	HarpSwitch			
+	3620656239	Bar_44	HarpSwitch			
+	3654211504	Bar_61	HarpSwitch			
+	3654211505	Bar_60	HarpSwitch			
+	3654211506	Bar_63	HarpSwitch			
+	3654211507	Bar_62	HarpSwitch			
+	3670989088	Bar_14	HarpSwitch			
+	3670989089	Bar_15	HarpSwitch			
+	3670989090	Bar_16	HarpSwitch			
+	3670989091	Bar_17	HarpSwitch			
+	3670989092	Bar_10	HarpSwitch			
+	3670989093	Bar_11	HarpSwitch			
+	3670989094	Bar_12	HarpSwitch			
+	3670989095	Bar_13	HarpSwitch			
+	3670989100	Bar_18	HarpSwitch			
+	3670989101	Bar_19	HarpSwitch			
+	3687766672	Bar_07	HarpSwitch			
+	3687766673	Bar_06	HarpSwitch			
+	3687766674	Bar_05	HarpSwitch			
+	3687766675	Bar_04	HarpSwitch			
+	3687766676	Bar_03	HarpSwitch			
+	3687766677	Bar_02	HarpSwitch			
+	3687766678	Bar_01	HarpSwitch			
+	3687766686	Bar_09	HarpSwitch			
+	3687766687	Bar_08	HarpSwitch			
+	3704544258	Bar_38	HarpSwitch			
+	3704544259	Bar_39	HarpSwitch			
+	3704544264	Bar_32	HarpSwitch			
+	3704544265	Bar_33	HarpSwitch			
+	3704544266	Bar_30	HarpSwitch			
+	3704544267	Bar_31	HarpSwitch			
+	3704544268	Bar_36	HarpSwitch			
+	3704544269	Bar_37	HarpSwitch			
+	3704544270	Bar_34	HarpSwitch			
+	3704544271	Bar_35	HarpSwitch			
+	3721321972	Bar_29	HarpSwitch			
+	3721321973	Bar_28	HarpSwitch			
+	3721321976	Bar_25	HarpSwitch			
+	3721321977	Bar_24	HarpSwitch			
+	3721321978	Bar_27	HarpSwitch			
+	3721321979	Bar_26	HarpSwitch			
+	3721321980	Bar_21	HarpSwitch			
+	3721321981	Bar_20	HarpSwitch			
+	3721321982	Bar_23	HarpSwitch			
+	3721321983	Bar_22	HarpSwitch			
+

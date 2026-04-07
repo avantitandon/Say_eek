@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2759615908",
+    "Type": "Event",
+    "GUID": "{B34FED38-666E-49E7-9F1C-D60F4486CC1F}",
+    "Language": "SFX",
+    "Hash": "{5E594AE1-DE89-18A8-1C04-D7F17A710253}",
+    "ObjectPath": "Play_Churchbell_loop_",
+    "ShortName": "Play_Churchbell_loop_",
+    "Path": "Event/Play_Churchbell_loop_.bnk",
+    "Media": [
+     {
+      "Id": "607917682",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_churchbell_realistic [2026-03-31 050023].wav",
+      "Path": "Media/607917682.wem",
+      "CachePath": "7B/{7BCA6F88-9DAB-1E51-E6AE-FBD6D0F2E071}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2759615908",
+      "Name": "Play_Churchbell_loop_",
+      "ObjectPath": "\\Events\\Default Work Unit\\World\\Play_Churchbell_loop_",
+      "GUID": "{B34FED38-666E-49E7-9F1C-D60F4486CC1F}",
+      "DurationType": "OneShot",
+      "DurationMin": "11.808604",
+      "DurationMax": "11.808604",
+      "MediaRefs": [
+       {
+        "Id": "607917682"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{B3614A3C-BD53-C9ED-16B2-40BB33C44123}"
+ }
+}

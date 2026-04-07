@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "261268628",
+    "Type": "Event",
+    "GUID": "{394B4D7E-939D-407B-9F59-C90DCF3E229A}",
+    "Language": "SFX",
+    "Hash": "{B51A95C0-D09B-0227-0A2C-A05D6EE693F7}",
+    "ObjectPath": "Stop_ENDSCOREMUSIC",
+    "ShortName": "Stop_ENDSCOREMUSIC",
+    "Path": "Event/Stop_ENDSCOREMUSIC.bnk",
+    "Events": [
+     {
+      "Id": "261268628",
+      "Name": "Stop_ENDSCOREMUSIC",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\OLD\\Stop_ENDSCOREMUSIC",
+      "GUID": "{394B4D7E-939D-407B-9F59-C90DCF3E229A}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{CB2ED697-8443-C521-355C-ED2BCB524E8C}"
+ }
+}

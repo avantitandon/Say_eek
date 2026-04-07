@@ -1,0 +1,60 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2825339271",
+    "Type": "Event",
+    "GUID": "{B40EF29A-E628-417A-B108-709FD07A281C}",
+    "Language": "SFX",
+    "Hash": "{9A53D14C-C61E-69A7-9E11-E50415B20F6A}",
+    "ObjectPath": "Play_CameraDown",
+    "ShortName": "Play_CameraDown",
+    "Path": "Event/Play_CameraDown.bnk",
+    "Media": [
+     {
+      "Id": "758388812",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_camera_flap_close.wav",
+      "Path": "Media/758388812.wem",
+      "CachePath": "80/{80FE4807-AEED-4C23-697A-630C71DF6827}.wem"
+     },
+     {
+      "Id": "901638200",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_camera_flash_close.wav",
+      "Path": "Media/901638200.wem",
+      "CachePath": "81/{814A8DE4-4A7B-C3BC-399D-DAA9BB92FAAB}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2825339271",
+      "Name": "Play_CameraDown",
+      "ObjectPath": "\\Events\\Default Work Unit\\Camera\\Activity\\Play_CameraDown",
+      "GUID": "{B40EF29A-E628-417A-B108-709FD07A281C}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.10458333",
+      "DurationMax": "0.10458333",
+      "MediaRefs": [
+       {
+        "Id": "758388812"
+       },
+       {
+        "Id": "901638200"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{F8E6D22A-DB6B-A5E5-C5EB-FCE54F90B00A}"
+ }
+}

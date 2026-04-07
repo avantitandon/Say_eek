@@ -1,0 +1,231 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "4003335362",
+    "Type": "Event",
+    "GUID": "{C688E6E1-BB09-446C-ABC9-9EA22EF301E3}",
+    "Language": "SFX",
+    "Hash": "{E89C7DAF-E76E-62E3-25FD-B4E2A17D7D16}",
+    "ObjectPath": "Play_RubbleFootstep",
+    "ShortName": "Play_RubbleFootstep",
+    "Path": "Event/Play_RubbleFootstep.bnk",
+    "Media": [
+     {
+      "Id": "8893099",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_footstep_leaves_nl_03.wav",
+      "Path": "Media/8893099.wem",
+      "CachePath": "72/{7286E35A-C771-1769-603F-7F8A799C13BE}.wem"
+     },
+     {
+      "Id": "59244555",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_footsteps_rocky_nl [2026-03-22 020549].wav",
+      "Path": "Media/59244555.wem",
+      "CachePath": "F4/{F45E7981-2E34-4F4D-689A-290ED57E78FC}.wem"
+     },
+     {
+      "Id": "83740562",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_footstep_leaves_nl_05.wav",
+      "Path": "Media/83740562.wem",
+      "CachePath": "01/{01DB88F9-13AF-5AE2-8723-7DAE4CE02205}.wem"
+     },
+     {
+      "Id": "112593444",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_footsteps_rocky_nl [2026-03-22 020547].wav",
+      "Path": "Media/112593444.wem",
+      "CachePath": "D4/{D438B44E-C6CE-90B4-8C04-CB61FFD3A352}.wem"
+     },
+     {
+      "Id": "130826581",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_footstep_leaves_nl_07.wav",
+      "Path": "Media/130826581.wem",
+      "CachePath": "75/{758A24BD-C511-6DDC-C852-3FC03B4DE276}.wem"
+     },
+     {
+      "Id": "154462330",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_footsteps_rocky_nl [2026-03-22 020550].wav",
+      "Path": "Media/154462330.wem",
+      "CachePath": "8E/{8E97FAAB-90B0-455B-FEC3-157A17DE5242}.wem"
+     },
+     {
+      "Id": "229237371",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_footsteps_rocky_nl [2026-03-22 020546]-1.wav",
+      "Path": "Media/229237371.wem",
+      "CachePath": "80/{80FD3C49-3C42-AC30-1ED8-9D9DA7022B69}.wem"
+     },
+     {
+      "Id": "380056452",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_footsteps_rocky_nl [2026-03-22 020544].wav",
+      "Path": "Media/380056452.wem",
+      "CachePath": "E2/{E2B7EBC1-898C-045A-59FD-2AC619E9F65F}.wem"
+     },
+     {
+      "Id": "409114040",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_footsteps_rocky_nl [2026-03-22 020546].wav",
+      "Path": "Media/409114040.wem",
+      "CachePath": "98/{98508C80-E206-438C-719F-5AEAAB4803E2}.wem"
+     },
+     {
+      "Id": "442930982",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_footsteps_rocky_nl [2026-03-22 020549]-1.wav",
+      "Path": "Media/442930982.wem",
+      "CachePath": "F3/{F32CBC27-15EE-0D8A-D663-2CCF447A65FF}.wem"
+     },
+     {
+      "Id": "543362049",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_footstep_leaves_nl_06.wav",
+      "Path": "Media/543362049.wem",
+      "CachePath": "16/{1688D733-1D29-1229-C4C7-BAAAD8E1372E}.wem"
+     },
+     {
+      "Id": "671572995",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_footstep_leaves_nl_01.wav",
+      "Path": "Media/671572995.wem",
+      "CachePath": "01/{011E7344-9099-866A-A22D-182290FE8850}.wem"
+     },
+     {
+      "Id": "895363010",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_footstep_leaves_nl_04.wav",
+      "Path": "Media/895363010.wem",
+      "CachePath": "F7/{F78AC406-262C-B6CE-2EFC-A9765BC29F5B}.wem"
+     },
+     {
+      "Id": "949030954",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_footsteps_rocky_nl [2026-03-22 020545].wav",
+      "Path": "Media/949030954.wem",
+      "CachePath": "0A/{0A67C736-2EF1-B621-B39A-543BC399737B}.wem"
+     },
+     {
+      "Id": "952479663",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_footstep_leaves_nl_02.wav",
+      "Path": "Media/952479663.wem",
+      "CachePath": "E9/{E931759D-ED7B-63B6-7496-5136B75EBC07}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4003335362",
+      "Name": "Play_RubbleFootstep",
+      "ObjectPath": "\\Events\\Default Work Unit\\Footsteps\\Play_RubbleFootstep",
+      "GUID": "{C688E6E1-BB09-446C-ABC9-9EA22EF301E3}",
+      "MaxAttenuation": "100",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0777577",
+      "DurationMax": "1.3017013",
+      "MediaRefs": [
+       {
+        "Id": "8893099"
+       },
+       {
+        "Id": "59244555"
+       },
+       {
+        "Id": "83740562"
+       },
+       {
+        "Id": "112593444"
+       },
+       {
+        "Id": "130826581"
+       },
+       {
+        "Id": "154462330"
+       },
+       {
+        "Id": "229237371"
+       },
+       {
+        "Id": "380056452"
+       },
+       {
+        "Id": "409114040"
+       },
+       {
+        "Id": "442930982"
+       },
+       {
+        "Id": "543362049"
+       },
+       {
+        "Id": "671572995"
+       },
+       {
+        "Id": "895363010"
+       },
+       {
+        "Id": "949030954"
+       },
+       {
+        "Id": "952479663"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "2913793422",
+      "Name": "MoveAmount",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MoveAmount",
+      "GUID": "{BDE53784-FD07-4390-9DCC-D4D0DBDC6C30}"
+     },
+     {
+      "Id": "2984997679",
+      "Name": "IsSlowWalking",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\IsSlowWalking",
+      "GUID": "{E6C8F175-6921-46CD-A5B3-FA96DE1C9C48}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{670E8A6E-BB3E-8030-C5F4-7BC03B7E9D20}"
+ }
+}

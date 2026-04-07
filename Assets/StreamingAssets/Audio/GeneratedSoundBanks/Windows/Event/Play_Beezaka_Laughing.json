@@ -1,0 +1,157 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2572452617",
+    "Type": "Event",
+    "GUID": "{3252F208-C7C0-4ABC-94F4-406880EAE27A}",
+    "Language": "SFX",
+    "Hash": "{6417E24B-9AE6-583B-3CD6-4A0C4544FC4B}",
+    "ObjectPath": "Play_Beezaka_Laughing",
+    "ShortName": "Play_Beezaka_Laughing",
+    "Path": "Event/Play_Beezaka_Laughing.bnk",
+    "Media": [
+     {
+      "Id": "133179455",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Bounce 23 Witch Laughs (Bounce) [2026-03-26 142915]-1.wav",
+      "Path": "Media/133179455.wem",
+      "CachePath": "58/{58344346-4461-A552-7E0B-D1F0CFCE3003}.wem"
+     },
+     {
+      "Id": "224652438",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Bounce 18 Witch Laughs (Bounce) [2026-03-26 142909]-1.wav",
+      "Path": "Media/224652438.wem",
+      "CachePath": "B1/{B1C83603-268C-CBF5-3A64-F825A3C4EB34}.wem"
+     },
+     {
+      "Id": "280573758",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Bounce 23 Witch Laughs (Bounce) [2026-03-26 142918]-1.wav",
+      "Path": "Media/280573758.wem",
+      "CachePath": "EB/{EB517A7C-8D4B-5E57-6B4D-5BB22A9FECC0}.wem"
+     },
+     {
+      "Id": "349053971",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Bounce 22 Witch Laughs (Bounce) [2026-03-26 142920]-1.wav",
+      "Path": "Media/349053971.wem",
+      "CachePath": "21/{21C6847F-734A-9618-2897-87089981BE52}.wem"
+     },
+     {
+      "Id": "656781149",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Bounce 18 Witch Laughs (Bounce) [2026-03-26 142912]-1.wav",
+      "Path": "Media/656781149.wem",
+      "CachePath": "40/{4052E130-6ED2-D081-5F87-BBD19E892B13}.wem"
+     },
+     {
+      "Id": "704645238",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Bounce 23 Witch Laughs (Bounce) [2026-03-26 142917]-1.wav",
+      "Path": "Media/704645238.wem",
+      "CachePath": "A0/{A0566696-ED14-E459-B26A-EC648051FCC9}.wem"
+     },
+     {
+      "Id": "772329582",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Bounce 22 Witch Laughs (Bounce) [2026-03-26 142921]-1.wav",
+      "Path": "Media/772329582.wem",
+      "CachePath": "B5/{B513518A-B4B2-232C-0B1E-89AB4D2775FB}.wem"
+     }
+    ],
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2547645744",
+       "Name": "Boost_3dB_100Hz",
+       "ObjectPath": "\\Effects\\Factory Effects\\Parametric EQ\\Shelving EQ\\Low Shelf\\Boost_3dB_100Hz",
+       "GUID": "{3EA7C9BD-6F9A-4000-A227-F86B5B4328EE}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
+      {
+       "Id": "4018905782",
+       "Name": "ListenerConeEQ",
+       "ObjectPath": "\\Effects\\Default Work Unit\\ListenerConeEQ",
+       "GUID": "{1055158E-9666-4073-AF90-C4597A82DE80}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "2572452617",
+      "Name": "Play_Beezaka_Laughing",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPCs\\Play_Beezaka_Laughing",
+      "GUID": "{3252F208-C7C0-4ABC-94F4-406880EAE27A}",
+      "MaxAttenuation": "100",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "133179455"
+       },
+       {
+        "Id": "224652438"
+       },
+       {
+        "Id": "280573758"
+       },
+       {
+        "Id": "349053971"
+       },
+       {
+        "Id": "656781149"
+       },
+       {
+        "Id": "704645238"
+       },
+       {
+        "Id": "772329582"
+       }
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2547645744"
+        },
+        {
+         "Id": "4018905782"
+        }
+       ]
+      }
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "2035457160",
+      "Name": "ListenerCone",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\ListenerCone",
+      "GUID": "{BF03D322-83B3-4F06-A541-BF82DDE4E736}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{C776E0F1-6FFC-B1B8-195B-41CD478DD624}"
+ }
+}

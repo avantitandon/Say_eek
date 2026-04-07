@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{4345C293-4B11-429C-A5C2-F99CA1893650}",
     "Language": "SFX",
-    "Hash": "{B0C8469D-9075-66E1-0D5C-79BF2CD610DB}",
+    "Hash": "{FB2A908B-0234-C037-6037-826AC753C13B}",
     "ObjectPath": "Play_amb_water_001",
     "ShortName": "Play_amb_water_001",
     "Path": "Event/Play_amb_water_001.bnk",
@@ -41,7 +41,7 @@
      {
       "Id": "4200714142",
       "Name": "Play_amb_water_001",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_amb_water_001",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\Play_amb_water_001",
       "GUID": "{4345C293-4B11-429C-A5C2-F99CA1893650}",
       "MaxAttenuation": "75",
       "DurationType": "Infinite",
@@ -61,6 +61,6 @@
     ]
    }
   ],
-  "FileHash": "{507EADA2-4401-6478-CDFD-D41D667E3A86}"
+  "FileHash": "{618AE3C7-2A7C-1A6E-DCFE-4B53E782859D}"
  }
 }

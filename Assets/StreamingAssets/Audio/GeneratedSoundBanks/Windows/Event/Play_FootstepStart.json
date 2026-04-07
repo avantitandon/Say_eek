@@ -1,0 +1,122 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1175331064",
+    "Type": "Event",
+    "GUID": "{7E7D7D54-0AE0-49C0-A9F5-D9B5B0EA0890}",
+    "Language": "SFX",
+    "Hash": "{FFFA0033-5496-6F2C-498E-DE311A22AB76}",
+    "ObjectPath": "Play_FootstepStart",
+    "ShortName": "Play_FootstepStart",
+    "Path": "Event/Play_FootstepStart.bnk",
+    "Media": [
+     {
+      "Id": "98312570",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_footstep_stony_nl_02.wav",
+      "Path": "Media/98312570.wem",
+      "CachePath": "02/{02252B89-4BF1-132B-9305-E92A50A5412F}.wem"
+     },
+     {
+      "Id": "404653251",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_footstep_stony_nl_01.wav",
+      "Path": "Media/404653251.wem",
+      "CachePath": "6E/{6EC2BB79-F776-7981-85C9-889D76398D10}.wem"
+     },
+     {
+      "Id": "558416445",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_footstep_stony_nl_05.wav",
+      "Path": "Media/558416445.wem",
+      "CachePath": "14/{142AA8CB-C340-DA82-0E4A-C68AEAB640C6}.wem"
+     },
+     {
+      "Id": "692004553",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_footstep_stony_nl_04.wav",
+      "Path": "Media/692004553.wem",
+      "CachePath": "5B/{5B335822-E4BC-112F-F3B1-38B987D77B36}.wem"
+     },
+     {
+      "Id": "725283265",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_footstep_stony_nl_06.wav",
+      "Path": "Media/725283265.wem",
+      "CachePath": "71/{7116046A-A98B-541A-7FD4-8517DC45450C}.wem"
+     },
+     {
+      "Id": "787841457",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "sfx_footstep_stony_nl_03.wav",
+      "Path": "Media/787841457.wem",
+      "CachePath": "D4/{D48A058C-6B52-E0AB-D3DF-ECBE6762B21C}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1175331064",
+      "Name": "Play_FootstepStart",
+      "ObjectPath": "\\Events\\Default Work Unit\\Footsteps\\Play_FootstepStart",
+      "GUID": "{7E7D7D54-0AE0-49C0-A9F5-D9B5B0EA0890}",
+      "DurationType": "OneShot",
+      "DurationMin": "18000.363",
+      "DurationMax": "18000.602",
+      "MediaRefs": [
+       {
+        "Id": "98312570"
+       },
+       {
+        "Id": "404653251"
+       },
+       {
+        "Id": "558416445"
+       },
+       {
+        "Id": "692004553"
+       },
+       {
+        "Id": "725283265"
+       },
+       {
+        "Id": "787841457"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "2913793422",
+      "Name": "MoveAmount",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MoveAmount",
+      "GUID": "{BDE53784-FD07-4390-9DCC-D4D0DBDC6C30}"
+     },
+     {
+      "Id": "2984997679",
+      "Name": "IsSlowWalking",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\IsSlowWalking",
+      "GUID": "{E6C8F175-6921-46CD-A5B3-FA96DE1C9C48}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{5F1556BC-488E-0ACD-8CD8-C0FC5AEA2244}"
+ }
+}
