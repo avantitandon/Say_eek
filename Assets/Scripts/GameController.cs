@@ -64,6 +64,8 @@ public class GameController : MonoBehaviour
     [SerializeField] private EndSeqManager endSeqManager;
 
     [SerializeField] private GameObject tutorialCollision;
+    [SerializeField] private GameObject controlsUI;
+    [SerializeField] private GameObject statusUI;
 
     // VARIABLES //
 
@@ -143,6 +145,8 @@ public class GameController : MonoBehaviour
         }
 
         tutorialCollision.SetActive(true);
+        statusUI.SetActive(false);
+        controlsUI.SetActive(true);
 
         switch (tutorialStep)
         {
@@ -349,6 +353,8 @@ public class GameController : MonoBehaviour
         GAMESTART?.Invoke();
 
         tutorialCollision.SetActive(false);
+        statusUI.SetActive(true);
+        controlsUI.SetActive(true);
     }
 
     private void StartEndSequence()
@@ -362,5 +368,9 @@ public class GameController : MonoBehaviour
         List<Texture2D> photos = playerController.GetPhotos();
         endSeqManager.Init(scores, photos);
         //player.SetActive(false); // only do this after using it
+
+
+        statusUI.SetActive(false);
+        controlsUI.SetActive(false);
     }
 }
