@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System;
 
 public class CameraUpScript : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class CameraUpScript : MonoBehaviour
         Up,
         Falling
     }
+    public static event Action CameraUP;
+    public static event Action CameraDOWN;
 
     // CONSTANTS //
 
@@ -74,6 +77,7 @@ public class CameraUpScript : MonoBehaviour
     void Update()
     {
 
+
     }
 
     // call this function every frame that the camera key is held down
@@ -95,7 +99,7 @@ public class CameraUpScript : MonoBehaviour
         {
             // get the current animation state
             var st = anim.GetCurrentAnimatorStateInfo(layer);
-
+            ;
             // if we are at the top, stop
             if (st.normalizedTime >= holdStart)
             { // holding at holdNormalized
@@ -104,6 +108,7 @@ public class CameraUpScript : MonoBehaviour
                 cameraOverlay.SetActive(true);
                 cameraModel.SetActive(false);
                 anim.speed = 0f;
+                CameraUP?.Invoke();
                 state = State.Up;
                 audioManager.CameraActive();
                 LogPlaytest("Camera active.");
@@ -131,6 +136,7 @@ public class CameraUpScript : MonoBehaviour
 
             state = State.Falling;
             audioManager.CameraDown();
+            
             LogPlaytest("Camera moving down.");
         }
         // if the camera is falling, check if it is done
@@ -142,6 +148,7 @@ public class CameraUpScript : MonoBehaviour
             // if the camera finished falling
             if (st.IsName(stateName) && st.normalizedTime >= 1f) {
                 state = State.Down;
+                CameraDOWN?.Invoke();
                 LogPlaytest("Camera idle/down.");
             }
         }

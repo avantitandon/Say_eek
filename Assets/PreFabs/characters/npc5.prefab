@@ -4788,7 +4788,10 @@ PrefabInstance:
       addedObject: {fileID: -1638944157515423813}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 85d6ff4c4d96d8d458fdd4c67a5ab15b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4640020244174936590}
+      addedObject: {fileID: 2584289126175931793}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 85d6ff4c4d96d8d458fdd4c67a5ab15b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7387342183635597791}
   m_SourcePrefab: {fileID: 100100000, guid: 85d6ff4c4d96d8d458fdd4c67a5ab15b, type: 3}
 --- !u!1 &9167218968404972662 stripped
 GameObject:
@@ -4840,29 +4843,37 @@ CapsuleCollider:
   m_Height: 3
   m_Direction: 1
   m_Center: {x: 0, y: 2, z: 0.1}
---- !u!114 &4640020244174936590
+--- !u!195 &2584289126175931793
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9167218968404972662}
+  m_Enabled: 1
+  m_AgentTypeID: -334000983
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &-7387342183635597791
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9167218968404972662}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2984f59c289574145afe99135499b9b4, type: 3}
+  m_Script: {fileID: 11500000, guid: a9aec5f9968b1d94589a3ca316727b42, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GhostMovementController
-  moveSpeed: 1.5
-  roamRadius: 4
-  arrivalDistance: 0.2
-  minRetargetTime: 1.2
-  maxRetargetTime: 3.2
-  turnSpeed: 6
-  bobAmplitude: 0.1
-  bobFrequency: 1.6
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  groundProbeHeight: 3
-  groundProbeDistance: 10
-  maxTargetPickAttempts: 20
+  m_EditorClassIdentifier: Assembly-CSharp::NavGhosts
